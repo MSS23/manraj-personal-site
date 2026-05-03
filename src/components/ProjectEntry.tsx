@@ -3,7 +3,63 @@
 import { useEffect, useId, useRef, useState } from "react";
 import type { Project, ProjectDetailBlock } from "@/data/projects";
 
-function DetailBlock({ block }: { block: ProjectDetailBlock }) {
+const isExternalHref = (href?: string) => !!href && /^https?:\/\//.test(href);
+
+function ZoomableImage({
+  src,
+  alt,
+  href,
+  className,
+  onZoom,
+  showOverlay,
+}: {
+  src: string;
+  alt: string;
+  href?: string;
+  className?: string;
+  onZoom: (src: string, alt: string) => void;
+  showOverlay?: boolean;
+}) {
+  // External hrefs keep the open-in-new-tab behaviour. Local hrefs (or no href) become click-to-zoom.
+  if (isExternalHref(href)) {
+    return (
+      <a href={href} target="_blank" rel="noopener noreferrer" className={className}>
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img src={src} alt={alt} loading="lazy" decoding="async" />
+        {showOverlay && (
+          <span className="entry-figure-overlay" aria-hidden="true">
+            Open ↗
+          </span>
+        )}
+      </a>
+    );
+  }
+  return (
+    <button
+      type="button"
+      className={`zoom-trigger${className ? " " + className : ""}`}
+      onClick={() => onZoom(src, alt)}
+      aria-label={`Zoom: ${alt}`}
+      suppressHydrationWarning
+    >
+      {/* eslint-disable-next-line @next/next/no-img-element */}
+      <img src={src} alt={alt} loading="lazy" decoding="async" />
+      {showOverlay && (
+        <span className="entry-figure-overlay" aria-hidden="true">
+          Zoom ⤢
+        </span>
+      )}
+    </button>
+  );
+}
+
+function DetailBlock({
+  block,
+  onZoom,
+}: {
+  block: ProjectDetailBlock;
+  onZoom: (src: string, alt: string) => void;
+}) {
   switch (block.kind) {
     case "h4":
       return <h4>{block.text}</h4>;
@@ -33,15 +89,13 @@ function DetailBlock({ block }: { block: ProjectDetailBlock }) {
         <div className="entry-detail-figures stacked">
           {block.figures.map((fig, i) => (
             <figure key={i}>
-              {fig.href ? (
-                <a href={fig.href} target="_blank" rel="noopener noreferrer" className="figure-shot">
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src={fig.src} alt={fig.alt} loading="lazy" decoding="async" />
-                </a>
-              ) : (
-                /* eslint-disable-next-line @next/next/no-img-element */
-                <img src={fig.src} alt={fig.alt} loading="lazy" decoding="async" />
-              )}
+              <ZoomableImage
+                src={fig.src}
+                alt={fig.alt}
+                href={fig.href}
+                className="figure-shot"
+                onZoom={onZoom}
+              />
               {fig.caption && (
                 <figcaption dangerouslySetInnerHTML={{ __html: fig.caption }} />
               )}
@@ -57,6 +111,25 @@ export function ProjectEntry({ project }: { project: Project }) {
   const reactId = useId();
   const [expanded, setExpanded] = useState(false);
   const panelRef = useRef<HTMLDivElement | null>(null);
+  const [zoom, setZoom] = useState<{ src: string; alt: string } | null>(null);
+
+  const openZoom = (src: string, alt: string) => setZoom({ src, alt });
+  const closeZoom = () => setZoom(null);
+
+  // Close zoom on Escape and lock body scroll while open.
+  useEffect(() => {
+    if (!zoom) return;
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === "Escape") closeZoom();
+    };
+    document.addEventListener("keydown", onKey);
+    const prevOverflow = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+    return () => {
+      document.removeEventListener("keydown", onKey);
+      document.body.style.overflow = prevOverflow;
+    };
+  }, [zoom]);
 
   // Auto-expand if the URL hash points at this entry on load or hash change.
   useEffect(() => {
@@ -116,32 +189,14 @@ export function ProjectEntry({ project }: { project: Project }) {
 
         {project.lead && (
           <figure className="entry-figure">
-            {project.lead.href ? (
-              <a
-                href={project.lead.href}
-                target={project.lead.href.startsWith("http") ? "_blank" : undefined}
-                rel={project.lead.href.startsWith("http") ? "noopener noreferrer" : undefined}
-                className="entry-figure-lead"
-              >
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
-                  src={project.lead.src}
-                  alt={project.lead.alt}
-                  loading="lazy"
-                  decoding="async"
-                  width={1440}
-                  height={900}
-                />
-                <span className="entry-figure-overlay" aria-hidden="true">
-                  Open ↗
-                </span>
-              </a>
-            ) : (
-              <span className="entry-figure-lead">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src={project.lead.src} alt={project.lead.alt} loading="lazy" decoding="async" />
-              </span>
-            )}
+            <ZoomableImage
+              src={project.lead.src}
+              alt={project.lead.alt}
+              href={project.lead.href}
+              className="entry-figure-lead"
+              onZoom={openZoom}
+              showOverlay
+            />
           </figure>
         )}
 
@@ -177,11 +232,40 @@ export function ProjectEntry({ project }: { project: Project }) {
         >
           <div className="entry-detail-inner">
             {project.detail.map((block, i) => (
-              <DetailBlock key={i} block={block} />
+              <DetailBlock key={i} block={block} onZoom={openZoom} />
             ))}
           </div>
         </div>
       </article>
+
+      {zoom && (
+        <div
+          className="zoom-overlay"
+          role="dialog"
+          aria-modal="true"
+          aria-label={zoom.alt}
+          onClick={closeZoom}
+        >
+          <button
+            type="button"
+            className="zoom-close"
+            onClick={(e) => {
+              e.stopPropagation();
+              closeZoom();
+            }}
+            aria-label="Close"
+          >
+            ✕
+          </button>
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src={zoom.src}
+            alt={zoom.alt}
+            onClick={(e) => e.stopPropagation()}
+            decoding="async"
+          />
+        </div>
+      )}
     </li>
   );
 }
