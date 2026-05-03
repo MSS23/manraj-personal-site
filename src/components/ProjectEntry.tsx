@@ -1,0 +1,187 @@
+"use client";
+
+import { useEffect, useId, useRef, useState } from "react";
+import type { Project, ProjectDetailBlock } from "@/data/projects";
+
+function DetailBlock({ block }: { block: ProjectDetailBlock }) {
+  switch (block.kind) {
+    case "h4":
+      return <h4>{block.text}</h4>;
+    case "p":
+      return <p dangerouslySetInnerHTML={{ __html: block.html }} />;
+    case "ul":
+      return (
+        <ul>
+          {block.items.map((html, i) => (
+            <li key={i} dangerouslySetInnerHTML={{ __html: html }} />
+          ))}
+        </ul>
+      );
+    case "stat-row":
+      return (
+        <div className="stat-row">
+          {block.stats.map((s, i) => (
+            <div key={i} className="stat">
+              <span className="stat-num">{s.num}</span>
+              <span className="stat-label">{s.label}</span>
+            </div>
+          ))}
+        </div>
+      );
+    case "figure-stack":
+      return (
+        <div className="entry-detail-figures stacked">
+          {block.figures.map((fig, i) => (
+            <figure key={i}>
+              {fig.href ? (
+                <a href={fig.href} target="_blank" rel="noopener noreferrer" className="figure-shot">
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img src={fig.src} alt={fig.alt} loading="lazy" decoding="async" />
+                </a>
+              ) : (
+                /* eslint-disable-next-line @next/next/no-img-element */
+                <img src={fig.src} alt={fig.alt} loading="lazy" decoding="async" />
+              )}
+              {fig.caption && (
+                <figcaption dangerouslySetInnerHTML={{ __html: fig.caption }} />
+              )}
+            </figure>
+          ))}
+        </div>
+      );
+  }
+}
+
+export function ProjectEntry({ project }: { project: Project }) {
+  const detailId = `detail-${project.id.replace(/^entry-/, "")}`;
+  const reactId = useId();
+  const [expanded, setExpanded] = useState(false);
+  const panelRef = useRef<HTMLDivElement | null>(null);
+
+  // Auto-expand if the URL hash points at this entry on load or hash change.
+  useEffect(() => {
+    const checkHash = () => {
+      if (typeof window === "undefined") return;
+      const hashId = window.location.hash.replace(/^#/, "");
+      if (hashId === project.id && !expanded) {
+        setExpanded(true);
+        // Defer scroll so the panel has a chance to render.
+        requestAnimationFrame(() => {
+          const el = document.getElementById(project.id);
+          el?.scrollIntoView({ behavior: "smooth", block: "start" });
+        });
+      }
+    };
+    checkHash();
+    window.addEventListener("hashchange", checkHash);
+    return () => window.removeEventListener("hashchange", checkHash);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [project.id]);
+
+  // Sync URL hash when expanded so the case study is shareable.
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+    if (expanded) {
+      const next = `#${project.id}`;
+      if (window.location.hash !== next) {
+        history.replaceState(null, "", window.location.pathname + window.location.search + next);
+      }
+    } else if (window.location.hash === `#${project.id}`) {
+      history.replaceState(null, "", window.location.pathname + window.location.search);
+    }
+  }, [expanded, project.id]);
+
+  const toggle = () => setExpanded((v) => !v);
+
+  return (
+    <li className="entry" id={project.id}>
+      <div className="entry-folio">
+        <span className="entry-folio-mark">№</span>
+        <span className="entry-folio-num">{project.folio}</span>
+      </div>
+      <article className="entry-body">
+        <header className="entry-head">
+          <h3>
+            {project.titleHref ? (
+              <a href={project.titleHref} target="_blank" rel="noopener noreferrer">
+                {project.title}
+              </a>
+            ) : (
+              project.title
+            )}
+          </h3>
+          <span className="entry-tag">{project.tag}</span>
+        </header>
+        <p className="entry-desc">{project.description}</p>
+
+        {project.lead && (
+          <figure className="entry-figure">
+            {project.lead.href ? (
+              <a
+                href={project.lead.href}
+                target={project.lead.href.startsWith("http") ? "_blank" : undefined}
+                rel={project.lead.href.startsWith("http") ? "noopener noreferrer" : undefined}
+                className="entry-figure-lead"
+              >
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src={project.lead.src}
+                  alt={project.lead.alt}
+                  loading="lazy"
+                  decoding="async"
+                  width={1440}
+                  height={900}
+                />
+                <span className="entry-figure-overlay" aria-hidden="true">
+                  Open ↗
+                </span>
+              </a>
+            ) : (
+              <span className="entry-figure-lead">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img src={project.lead.src} alt={project.lead.alt} loading="lazy" decoding="async" />
+              </span>
+            )}
+          </figure>
+        )}
+
+        <ul className="entry-meta">
+          {project.meta.map((m, i) => (
+            <li key={i}>
+              <span>{m.label}</span>
+              <em dangerouslySetInnerHTML={{ __html: m.valueHtml }} />
+            </li>
+          ))}
+        </ul>
+
+        <button
+          className="entry-toggle"
+          type="button"
+          aria-expanded={expanded}
+          aria-controls={detailId}
+          onClick={toggle}
+          suppressHydrationWarning
+        >
+          <span className="toggle-label-open">{project.toggleOpenLabel ?? "Read the case study"}</span>
+          <span className="toggle-label-close">Hide details</span>
+          <span className="toggle-chevron" aria-hidden="true">↓</span>
+        </button>
+
+        <div
+          ref={panelRef}
+          className="entry-detail"
+          id={detailId}
+          hidden={!expanded}
+          aria-labelledby={reactId}
+          style={{ height: expanded ? "auto" : 0 }}
+        >
+          <div className="entry-detail-inner">
+            {project.detail.map((block, i) => (
+              <DetailBlock key={i} block={block} />
+            ))}
+          </div>
+        </div>
+      </article>
+    </li>
+  );
+}
