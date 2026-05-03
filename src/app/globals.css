@@ -603,6 +603,23 @@ a { color: inherit; text-decoration: none; }
   transition: color 0.25s ease;
 }
 .entry-head h3 a { color: inherit; }
+.entry-head-link {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0.32em;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.2s ease, color 0.2s ease;
+}
+.entry-head-link:hover { color: var(--blue); border-bottom-color: var(--blue); }
+.entry-head-link:focus-visible { outline: 2px solid var(--blue); outline-offset: 4px; border-radius: 2px; }
+.entry-head-arrow {
+  font-family: var(--font-jetbrains-mono), ui-monospace, Menlo, monospace;
+  font-size: 0.72em;
+  opacity: 0.5;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+.entry-head-link:hover .entry-head-arrow { opacity: 1; transform: translate(1px, -1px); }
 .entry-tag {
   font-family: var(--font-jetbrains-mono), ui-monospace, Menlo, monospace;
   font-size: 0.72rem;

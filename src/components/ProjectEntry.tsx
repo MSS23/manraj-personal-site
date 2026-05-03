@@ -3,37 +3,22 @@
 import { useEffect, useId, useRef, useState } from "react";
 import type { Project, ProjectDetailBlock } from "@/data/projects";
 
-const isExternalHref = (href?: string) => !!href && /^https?:\/\//.test(href);
-
+// Every image on the site has a single, predictable behaviour: clicking opens
+// the lightbox. Navigation to live sites lives on the title link and the meta
+// row, never on the image — keeps the click contract obvious for everyone.
 function ZoomableImage({
   src,
   alt,
-  href,
   className,
   onZoom,
   showOverlay,
 }: {
   src: string;
   alt: string;
-  href?: string;
   className?: string;
   onZoom: (src: string, alt: string) => void;
   showOverlay?: boolean;
 }) {
-  // External hrefs keep the open-in-new-tab behaviour. Local hrefs (or no href) become click-to-zoom.
-  if (isExternalHref(href)) {
-    return (
-      <a href={href} target="_blank" rel="noopener noreferrer" className={className}>
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img src={src} alt={alt} loading="lazy" decoding="async" />
-        {showOverlay && (
-          <span className="entry-figure-overlay" aria-hidden="true">
-            Open ↗
-          </span>
-        )}
-      </a>
-    );
-  }
   return (
     <button
       type="button"
@@ -92,7 +77,6 @@ function DetailBlock({
               <ZoomableImage
                 src={fig.src}
                 alt={fig.alt}
-                href={fig.href}
                 className="figure-shot"
                 onZoom={onZoom}
               />
@@ -176,8 +160,14 @@ export function ProjectEntry({ project }: { project: Project }) {
         <header className="entry-head">
           <h3>
             {project.titleHref ? (
-              <a href={project.titleHref} target="_blank" rel="noopener noreferrer">
+              <a
+                href={project.titleHref}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="entry-head-link"
+              >
                 {project.title}
+                <span className="entry-head-arrow" aria-hidden="true">↗</span>
               </a>
             ) : (
               project.title
@@ -192,7 +182,6 @@ export function ProjectEntry({ project }: { project: Project }) {
             <ZoomableImage
               src={project.lead.src}
               alt={project.lead.alt}
-              href={project.lead.href}
               className="entry-figure-lead"
               onZoom={openZoom}
               showOverlay

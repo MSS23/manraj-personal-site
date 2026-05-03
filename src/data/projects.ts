@@ -72,7 +72,6 @@ export const projects: Project[] = [
     lead: {
       src: "/assets/work/vgc-team-report/team-report-hero.png",
       alt: "A team report. Overview of the team being analysed.",
-      href: "https://pokemonvgcteamreport.com/s/TRjVuD8B",
     },
     meta: [
       { label: "Stack", valueHtml: "TypeScript, Postgres, web app" },
@@ -124,21 +123,18 @@ export const projects: Project[] = [
             alt: "Notable offensive damage calcs against the meta.",
             caption:
               "<strong>Per-Pokémon page.</strong> Each Pokémon gets its own slide: an overview, the moves, the stat spread, and a dropdown for notable offensive and defensive calcs underneath.",
-            href: "https://pokemonvgcteamreport.com/s/TRjVuD8B",
           },
           {
             src: "/assets/work/vgc-team-report/team-report-defensive-calcs.png",
             alt: "Defensive calcs. What each Pokémon survives.",
             caption:
               "<strong>Defensive calcs.</strong> The other side of the page: what each Pokémon lives, what it doesn't, and which EV spreads earn their keep.",
-            href: "https://pokemonvgcteamreport.com/s/TRjVuD8B",
           },
           {
             src: "/assets/work/vgc-team-report/team-report-matchups.png",
             alt: "Match-up sheet. How this team fares across the meta.",
             caption:
               "<strong>Match-up sheets.</strong> A condensed view of how the team performs against the most-played teams in the format: who wins, who loses, and where to plan around.",
-            href: "https://pokemonvgcteamreport.com/s/TRjVuD8B",
           },
         ],
       },
@@ -157,7 +153,6 @@ export const projects: Project[] = [
     lead: {
       src: "/assets/work/vgc-translation/hero.png",
       alt: "VGC Team Analyser. Landing page with Japanese-to-English translation engine.",
-      href: "https://pokemonvgctranslation.streamlit.app/",
     },
     meta: [
       { label: "Stack", valueHtml: "Python, Streamlit, Google Gemini 2.5" },
@@ -205,7 +200,6 @@ export const projects: Project[] = [
     lead: {
       src: "/assets/work/pokemon-crm/portfolio.png",
       alt: "PokéCRM Portfolio view. Net worth, 12-month chart, top winners and losers.",
-      href: "/assets/work/pokemon-crm/portfolio.png",
     },
     meta: [
       { label: "Stack", valueHtml: "Vanilla HTML, CSS, JavaScript · localStorage" },
@@ -409,7 +403,6 @@ export const projects: Project[] = [
     lead: {
       src: "/assets/work/google-review-responder/canvas-overview.png",
       alt: "n8n canvas. Manual trigger to four format branches.",
-      href: "/assets/work/google-review-responder/canvas-overview.png",
     },
     meta: [
       { label: "Stack", valueHtml: "n8n (self-hosted), Google Gemini Flash, JS Code nodes" },
@@ -458,21 +451,18 @@ export const projects: Project[] = [
           {
             src: "/assets/work/google-review-responder/canvas-overview.png",
             alt: "n8n canvas. Manual Trigger through to four format branches.",
-            href: "/assets/work/google-review-responder/canvas-overview.png",
             caption:
               "<strong>The canvas.</strong> Manual Trigger → Sample Review → Client Config → Build Prompt → Gemini API → Parse Response → Switch by classification. Four format branches on the right line up with the four classifications: praise, constructive, policy violation, ambiguous.",
           },
           {
             src: "/assets/work/google-review-responder/client-config-node.png",
             alt: "Client Config node. JavaScript code with editable client fields.",
-            href: "/assets/work/google-review-responder/client-config-node.png",
             caption:
               "<strong>The one node a non-developer edits.</strong> Business name, address, services, voice, the forbid list, the remedy guidance. Onboarding a new client is a single edit on a single node — no template forks, no per-client workflows.",
           },
           {
             src: "/assets/work/google-review-responder/execution-output.png",
             alt: "Execution output. Structured JSON next to a Gmail-style draft preview.",
-            href: "/assets/work/google-review-responder/execution-output.png",
             caption:
               "<strong>What comes out of an execution.</strong> Left: the structured JSON Gemini returns — classification, confidence, reasoning, draft, alternative, owner notes. Right: how that payload would render as the Gmail draft an owner reviews before posting. Human-in-the-loop, by design.",
           },
@@ -503,7 +493,6 @@ export const projects: Project[] = [
     lead: {
       src: "/assets/work/oddonos/home.png",
       alt: "Oddono's home page. Editorial hero, product story, and shop locator entry.",
-      href: "https://oddonos-gelati-demo.vercel.app/",
     },
     meta: [
       { label: "Stack", valueHtml: "HTML, CSS, vanilla JavaScript" },
@@ -553,21 +542,18 @@ export const projects: Project[] = [
             alt: "Flavours page. Editorial menu with a quick flavour-finder block.",
             caption:
               "<strong>Flavours.</strong> Set up like a menu, not a product grid. A short flavour-finder underneath answers one question and routes you to a match.",
-            href: "https://oddonos-gelati-demo.vercel.app/flavors.html",
           },
           {
             src: "/assets/work/oddonos/shops.png",
             alt: "Shops page. Sortable list of all seven shop locations.",
             caption:
               "<strong>Shops.</strong> A list, not a map. Sorts by distance from the visitor's location with one click. No third-party map library, no API key, instant load.",
-            href: "https://oddonos-gelati-demo.vercel.app/shops.html",
           },
           {
             src: "/assets/work/oddonos/wholesale.png",
             alt: "Wholesale page. Pitch and intake form for restaurants and cafés.",
             caption:
               "<strong>Wholesale.</strong> Pitch above the fold, intake form below. The page a buyer for a restaurant or hotel actually needs to read.",
-            href: "https://oddonos-gelati-demo.vercel.app/wholesale.html",
           },
         ],
       },
