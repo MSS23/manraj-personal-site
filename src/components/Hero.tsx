@@ -3,7 +3,7 @@ export function Hero() {
     <section className="hero" id="top">
       <div className="hero-inner">
         <div className="hero-meta">
-          <span>I build AI and automation systems. These are some of mine.</span>
+          <span>I build apps with AI and talk AI &amp; automation. These are some of mine.</span>
         </div>
 
         <h1 className="display">
@@ -14,9 +14,9 @@ export function Hero() {
         </h1>
 
         <p className="dek">
-          AI and automation, embedded in the way I work. Tools that augment a
-          workflow. Agents that run themselves. The occasional thing built for
-          the games I play.
+          AI and automation built into my own workflow. Tools that take a job
+          off my desk, scheduled agents that drain a queue overnight, plus a
+          few projects built around the games I play.
         </p>
 
         <div className="hero-actions">

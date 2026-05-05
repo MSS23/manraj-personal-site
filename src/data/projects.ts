@@ -35,21 +35,21 @@ export const buckets: Record<BucketId, { index: string; title: string; lede: str
     index: "01",
     title: "Pokémon, made smarter",
     lede:
-      "I compete in Pokémon VGC. The format is full of repetitive analysis, so I built the tools I wished existed: damage maths against the meta, Japanese-to-English translation of the deepest write-ups, and a CRM for the people working trade nights.",
+      "I compete in Pokémon VGC. The format is full of repetitive analysis, so I built the tools I wished existed: damage maths against the meta, Japanese-to-English translation of the deepest write-ups, and a CRM for traders working the floor at trade nights.",
     count: "3 projects",
   },
   workflows: {
     index: "02",
     title: "AI-augmented workflows",
     lede:
-      "Scheduled agents and tools that hand the boring half of my work to a machine. Personal infrastructure I run on my own projects, not at scale for anyone else.",
+      "Scheduled agents and tools that hand the boring half of my work to a machine. Personal infrastructure I run on my own projects.",
     count: "3 projects",
   },
   brand: {
     index: "03",
     title: "Brand & web",
     lede:
-      "Static-site work for places I love. Built without a framework so it stays light, loads fast, and outlives the next JavaScript fashion.",
+      "Static-site work for places I love. Built without a framework so it stays light and loads fast.",
     count: "1 project",
   },
 };
@@ -235,7 +235,7 @@ export const projects: Project[] = [
           "<strong>No backend.</strong> Pure HTML/CSS/JS. State lives in <code>localStorage</code> with a versioned key and a graceful migration path so old saves don't break new schemas.",
           "<strong>One global error guard.</strong> If anything throws mid-render, a banner appears with a one-click \"Reset Demo\". The demo can never paint itself into a corner.",
           "<strong>Hash routing.</strong> Each tab is a hash route, so deep links work and back/forward buttons behave naturally.",
-          "<strong>SVG charts hand-rolled.</strong> No charting library. The Portfolio chart is a single inline SVG with two polylines (value and cost basis), a gradient area fill, and grid lines. Loads instantly.",
+          "<strong>SVG charts hand-rolled.</strong> No charting library. The Portfolio chart is a single inline SVG with two polylines (value and cost basis), a gradient area fill, and grid lines.",
           "<strong>Mobile-first Trade Night.</strong> The action grid collapses 3 → 2 → 2 columns down to phone width. Sidebar tucks behind a hamburger. Tested on an actual iPhone before I called it done.",
         ],
       },
@@ -346,7 +346,7 @@ export const projects: Project[] = [
           { num: "2", label: "format systems, one calc engine" },
         ],
       },
-      { kind: "h4", text: "What I actually use it for" },
+      { kind: "h4", text: "What I use it for" },
       {
         kind: "p",
         html: "Damage and survival maths, in Claude Desktop. It saves me opening Showdown's calc and re-entering the same context every time.",
@@ -399,7 +399,7 @@ export const projects: Project[] = [
     title: "Google Review Draft Responder · n8n",
     tag: "Local · self-hosted",
     description:
-      "A Node.js prototype I'd written for classifying Google reviews and drafting owner-voice replies, ported into a single self-hosted n8n workflow on my own machine. The point of the port wasn't the output — it was seeing the same logic as a canvas, because that's the form a non-developer can read, edit, and trust.",
+      "A Node.js prototype I'd written for classifying Google reviews and drafting owner-voice replies, ported into a single self-hosted n8n workflow on my own machine. Same logic, drawn as a canvas a non-developer can read, edit, and trust.",
     lead: {
       src: "/assets/work/google-review-responder/canvas-overview.png",
       alt: "n8n canvas. Manual trigger to four format branches.",
@@ -415,18 +415,18 @@ export const projects: Project[] = [
       { kind: "h4", text: "Why bother porting it" },
       {
         kind: "p",
-        html: "I'd already built the responder as a Node.js CLI plus a small dashboard. The maths and the prompt were good. The problem was that handing a CLI to a non-developer is a closed door. n8n's canvas is the opposite: every step is a labelled node, every input and output is inspectable, and changing the client config is a single edit on a single node. The port was an exercise in turning my own working code into something a future operator could read without me.",
+        html: "I'd already built the responder as a Node.js CLI plus a small dashboard. The maths and the prompt were good, but a CLI is unreadable to a non-developer. n8n's canvas is the opposite: every step is a labelled node, every input and output is inspectable, and changing the client config is a single edit on a single node. The port turned my working code into something a future operator could read without me.",
       },
       { kind: "h4", text: "What it does, end to end" },
       {
         kind: "ul",
         items: [
           "<strong>Manual Trigger → Sample Review.</strong> A 2★ review sits in the workflow as a placeholder. In production this slot is a webhook or a scheduled scraper.",
-          "<strong>Client Config (Code).</strong> One node holds everything client-specific — name, address, services, voice, the forbid list, the remedy guidance. The whole workflow becomes generic the moment you edit this one node.",
+          "<strong>Client Config (Code).</strong> One node holds everything client-specific: name, address, services, voice, the forbid list, the remedy guidance. The workflow becomes generic the moment you edit this one node.",
           "<strong>Build Prompt (Code).</strong> Assembles the system prompt from the config and the review, then packages a Gemini request body. Optional fields (legal entity, founded, online offer, contact) render conditionally so a half-filled config still produces a clean prompt.",
           "<strong>Gemini API (HTTP Request).</strong> Calls <code>gemini-flash-latest</code> with <code>responseMimeType: application/json</code>. Authenticates via a Header Auth credential I created and bound from the n8n REST API, not by leaking the key into the URL.",
-          "<strong>Parse Response (Code).</strong> Surfaces real upstream errors (auth failures, safety blocks, no candidates) instead of swallowing them. The first version of this node masked a 403 as \"Unknown error [line 11]\". Worth the rewrite.",
-          "<strong>Switch by classification.</strong> Routes to one of four format branches: <em>PRAISE</em>, <em>CONSTRUCTIVE_NEGATIVE</em>, <em>POLICY_VIOLATION</em>, <em>AMBIGUOUS</em>. Each branch builds the payload an owner-approval email would carry — subject, draft, alternative, owner notes, and a deep link.",
+          "<strong>Parse Response (Code).</strong> Surfaces real upstream errors (auth failures, safety blocks, no candidates) instead of swallowing them. The first version of this node masked a 403 as \"Unknown error [line 11]\", which forced the rewrite.",
+          "<strong>Switch by classification.</strong> Routes to one of four format branches: <em>PRAISE</em>, <em>CONSTRUCTIVE_NEGATIVE</em>, <em>POLICY_VIOLATION</em>, <em>AMBIGUOUS</em>. Each branch builds the payload an owner-approval email would carry: subject, draft, alternative, owner notes, and a deep link.",
         ],
       },
       { kind: "h4", text: "What's interesting under the hood" },
@@ -435,7 +435,7 @@ export const projects: Project[] = [
         items: [
           "<strong>Structured-output JSON, end to end.</strong> Gemini is told to return one object with a fixed shape (classification, confidence, reasoning, draft, alternative, owner notes). Parse Response trusts the schema; downstream nodes wire to specific fields rather than blobs of text.",
           "<strong>Self-contained import.</strong> The system prompt and the policy taxonomy are inlined into the Code nodes, not pulled from external files. Drop the JSON into any n8n instance and it runs.",
-          "<strong>Driven from outside the canvas.</strong> Every change in this build was made via n8n's REST API — workflow created with <code>POST /workflows</code>, credential created with <code>POST /credentials</code> and bound to the HTTP node, updates pushed with <code>PUT</code>. The canvas is what an operator sees; the API is what an automated agent uses to ship.",
+          "<strong>Driven from outside the canvas.</strong> Every change in this build was made via n8n's REST API: workflow created with <code>POST /workflows</code>, credential created with <code>POST /credentials</code> and bound to the HTTP node, updates pushed with <code>PUT</code>. Operators see the canvas; an automated agent ships through the API.",
           "<strong>Validation before deploy.</strong> Each draft of the workflow JSON went through the n8n-mcp validator (typeVersion checks, expression linting, connection sanity). Cheaper than a failed execution.",
           "<strong>Human-in-the-loop preserved.</strong> The workflow stops at \"draft for review\". The four format branches are the seam where a Gmail → Create Draft node plugs in: the LLM never publishes anything customer-visible, the owner approves before posting.",
         ],
@@ -443,7 +443,7 @@ export const projects: Project[] = [
       { kind: "h4", text: "What it looks like" },
       {
         kind: "p",
-        html: "Rendered from the actual workflow JSON running on my machine — same nodes, same connections, same colour-coding as the canvas in n8n.",
+        html: "Rendered from the actual workflow JSON running on my machine: same nodes, same connections, same colour-coding as the canvas in n8n.",
       },
       {
         kind: "figure-stack",
@@ -458,25 +458,25 @@ export const projects: Project[] = [
             src: "/assets/work/google-review-responder/client-config-node.png",
             alt: "Client Config node. JavaScript code with editable client fields.",
             caption:
-              "<strong>The one node a non-developer edits.</strong> Business name, address, services, voice, the forbid list, the remedy guidance. Onboarding a new client is a single edit on a single node — no template forks, no per-client workflows.",
+              "<strong>The one node a non-developer edits.</strong> Business name, address, services, voice, the forbid list, the remedy guidance. Onboarding a new client is a single edit on a single node. No template forks, no per-client workflows.",
           },
           {
             src: "/assets/work/google-review-responder/execution-output.png",
             alt: "Execution output. Structured JSON next to a Gmail-style draft preview.",
             caption:
-              "<strong>What comes out of an execution.</strong> Left: the structured JSON Gemini returns — classification, confidence, reasoning, draft, alternative, owner notes. Right: how that payload would render as the Gmail draft an owner reviews before posting. Human-in-the-loop, by design.",
+              "<strong>What comes out of an execution.</strong> Left: the structured JSON Gemini returns (classification, confidence, reasoning, draft, alternative, owner notes). Right: how that payload would render as the Gmail draft an owner reviews before posting. The owner approves before anything publishes.",
           },
         ],
       },
       { kind: "h4", text: "The two-track learning" },
       {
         kind: "p",
-        html: "The reason I keep building these in pairs (a working app and an n8n workflow) is that they teach different things. The app teaches you exactly what's happening — every line of code is yours. The workflow teaches you what survives translation — anything that depended on a hidden assumption breaks the moment you have to draw it as nodes. The auth pattern, the error handling, the way config flows through the prompt: all three got cleaner in the canvas version because the canvas refused to hide them.",
+        html: "I build these in pairs (a working app and an n8n workflow) because they teach different things. The app shows what is happening line by line. The workflow shows what survives translation; anything resting on a hidden assumption breaks the moment you draw it as nodes. The auth pattern, the error handling, and the way config flows through the prompt all got cleaner in the canvas version because the canvas refused to hide them.",
       },
       { kind: "h4", text: "Status" },
       {
         kind: "p",
-        html: "Runs on my own machine, against my own Gemini key. Not deployed publicly — local n8n is a workshop, not a service. The original Node.js version is a separate piece in my own folder structure; this entry is specifically about what changed when I moved it to a canvas.",
+        html: "Runs on my own machine, against my own Gemini key. Not deployed publicly: local n8n is a workshop. The original Node.js version is a separate piece in my own folder structure; this entry is specifically about what changed when I moved it to a canvas.",
       },
     ],
   },
@@ -489,7 +489,7 @@ export const projects: Project[] = [
     titleHref: "https://oddonos-gelati-demo.vercel.app/",
     tag: "Personal demo · unaffiliated",
     description:
-      "An unsolicited seven-page static site I built for Oddono's, a London gelato shop I'm a regular at. They didn't ask for it. I've never spoken to them about it. I'm a customer with their loyalty card who looked at their existing site one evening, thought it could be sharper, and built a version of what I'd want it to be. Nothing about this has been shipped to or pitched at the business — it's a personal exercise that stays a personal exercise unless they ever ask.",
+      "An unsolicited seven-page static site I built for Oddono's, a London gelato shop I'm a regular at. They didn't ask for it. I've never spoken to them about it. I'm a customer with their loyalty card who looked at their existing site one evening, thought it could be sharper, and built a version of what I'd want it to be. Nothing here has been shipped to or pitched at the business; it stays a personal exercise unless they ever ask.",
     lead: {
       src: "/assets/work/oddonos/home.png",
       alt: "Oddono's home page. Editorial hero, product story, and shop locator entry.",
@@ -509,7 +509,7 @@ export const projects: Project[] = [
       },
       {
         kind: "p",
-        html: "<strong>To be completely clear: this is unsolicited and unaffiliated.</strong> I have not spoken to anyone at Oddono's about it. They have not asked for a redesign. Nothing here has been pitched, sent, or shipped to the business. It is a personal exercise — me liking a brand enough to design a site for it the way you'd cover a song you love. If they ever want to look at it I'd be delighted; until then it's a sketch in public.",
+        html: "<strong>To be clear: this is unsolicited and unaffiliated.</strong> I have not spoken to anyone at Oddono's about it. They have not asked for a redesign. Nothing here has been pitched, sent, or shipped to the business. It is me liking a brand enough to design a site for it the way you might cover a song you love. If they ever want to look at it I'd be delighted; until then it stays a sketch in public.",
       },
       { kind: "h4", text: "What's there" },
       {
@@ -553,14 +553,14 @@ export const projects: Project[] = [
             src: "/assets/work/oddonos/wholesale.png",
             alt: "Wholesale page. Pitch and intake form for restaurants and cafés.",
             caption:
-              "<strong>Wholesale.</strong> Pitch above the fold, intake form below. The page a buyer for a restaurant or hotel actually needs to read.",
+              "<strong>Wholesale.</strong> Pitch above the fold, intake form below. The page a buyer for a restaurant or hotel needs to read.",
           },
         ],
       },
       { kind: "h4", text: "Status" },
       {
         kind: "p",
-        html: "Live and clickable as a personal demo, hosted on a generic Vercel subdomain — not on any Oddono's domain, not under any Oddono's branding agreement. The form fields don't submit anywhere, the imagery is placeholder, and there is no \"production\" version because Oddono's hasn't engaged me to build one. If you're from Oddono's and you've stumbled onto this: hello, I'm a fan, this exists with no expectation, take whatever's useful or ignore it entirely.",
+        html: "Live and clickable as a personal demo, hosted on a generic Vercel subdomain. It does not sit on any Oddono's domain or under any branding agreement. The form fields don't submit anywhere, the imagery is placeholder, and there is no \"production\" version because Oddono's hasn't engaged me to build one. If you're from Oddono's and you've stumbled onto this: hello, I'm a fan, this exists with no expectation, take whatever's useful or ignore it entirely.",
       },
     ],
   },

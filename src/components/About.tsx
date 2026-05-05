@@ -8,18 +8,18 @@ export function About() {
       <div className="about-grid">
         <div className="about-body">
           <h2 className="serif-heading">
-            I build with AI to augment the way I work.
+            Builder, competitor, padel addict.
           </h2>
 
           <ol className="about-numbered">
             <li>
               <span className="about-num" aria-hidden="true">01</span>
               <p className="lead">
-                <span className="dropcap">I</span>&apos;m a builder. Most of what I make
-                sits at the intersection of AI and the work in front of me:
-                tools that take a job I&apos;d otherwise put off, workflows that
-                run themselves, and the occasional thing built around the
-                games I play.
+                <span className="dropcap">I</span>&apos;m Manraj, a builder based in
+                West London. Most of what I make sits at the intersection of
+                AI and the work in front of me: tools that take a job
+                I&apos;d otherwise put off, workflows that run themselves, and
+                the occasional thing built around the games I play.
               </p>
             </li>
             <li>
@@ -27,26 +27,52 @@ export function About() {
               <p>
                 Some of the projects on this page are personal infrastructure.
                 Scheduled Claude routines that prep my day, drain a queue,
-                refresh a dataset overnight. Less to remember, more time on
-                the work that actually matters.
+                refresh a dataset overnight, so I can spend my evenings on
+                the projects on this page instead of the chores around them.
               </p>
             </li>
             <li>
               <span className="about-num" aria-hidden="true">03</span>
               <p>
-                Some of them are Pokémon-shaped. I compete in Pokémon VGC,
-                and the format is full of repetitive analysis: damage maths,
-                speed tiers, threat coverage. So I built the tools I wished
-                existed, for myself first and the community second.
+                I compete in Pokémon VGC, the official doubles format, and
+                travel to regional tournaments when I can. The format is full
+                of repetitive analysis: damage maths, speed tiers, threat
+                coverage. So I built the tools I wished existed, for myself
+                first and the community second.
               </p>
             </li>
             <li>
               <span className="about-num" aria-hidden="true">04</span>
               <p>
-                The thread running through all of it is the same: AI embedded
-                inside a workflow, doing the boring half so the interesting
-                half gets attention. I write up the projects I&apos;m proud of here,
-                and the things I learn from them over on Substack.
+                Off the keyboard, I&apos;m a padel addict. If I&apos;m not at
+                a court I&apos;m probably trying to book one. Before that I
+                co-hosted and edited <em>The DMC Podcast</em> with my mate
+                Joseph for three seasons. Twenty-three episodes on personal
+                development, mental health, and trying to be better.
+              </p>
+            </li>
+            <li>
+              <span className="about-num" aria-hidden="true">05</span>
+              <p>
+                I write the longer thoughts on{" "}
+                <a
+                  href="https://mannyssidhu.substack.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Substack
+                </a>{" "}
+                and post the shorter ones on{" "}
+                <a
+                  href="https://www.tiktok.com/@manrajtalks"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  TikTok as @manrajtalks
+                </a>
+                . The thread through all of it is the same: AI inside a
+                workflow, taking the parts of the job I never want to do
+                again.
               </p>
             </li>
           </ol>
@@ -67,8 +93,8 @@ export function About() {
           <p className="aside-title">At a glance</p>
           <dl className="facts">
             <div>
-              <dt>What this is</dt>
-              <dd>A personal notebook</dd>
+              <dt>Based in</dt>
+              <dd>West London</dd>
             </div>
             <div>
               <dt>Mostly</dt>
@@ -79,8 +105,24 @@ export function About() {
               <dd>TypeScript, Python, Postgres, n8n</dd>
             </div>
             <div>
+              <dt>Competing</dt>
+              <dd>Pokémon VGC regionals</dd>
+            </div>
+            <div>
+              <dt>Off-screen</dt>
+              <dd>Padel, badly and often</dd>
+            </div>
+            <div>
               <dt>Writing</dt>
               <dd>Substack, shipping more this year</dd>
+            </div>
+            <div>
+              <dt>Short-form</dt>
+              <dd>TikTok, @manrajtalks</dd>
+            </div>
+            <div>
+              <dt>Podcast</dt>
+              <dd>The DMC Podcast, 3 seasons on Spotify</dd>
             </div>
           </dl>
         </aside>
