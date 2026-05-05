@@ -8,8 +8,8 @@ export function Writing() {
         Where I <em>publish.</em>
       </h2>
       <p className="section-lede">
-        Long-form on Substack, short clips on TikTok. I post when I have
-        something to say.
+        Long-form on Substack, conversations on the podcast, short clips on
+        TikTok. I post when I have something to say.
       </p>
 
       <div className="links">
@@ -29,6 +29,24 @@ export function Writing() {
             in real work, and where I get it wrong.
           </p>
           <p className="link-card-cta">mannyssidhu.substack.com</p>
+        </a>
+
+        <a
+          className="link-card"
+          href="https://open.spotify.com/show/5lS5DvT73hfAvxMPVfM91b"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <div className="link-card-row">
+            <span>Podcast</span>
+            <span className="link-card-arrow" aria-hidden="true">→</span>
+          </div>
+          <h3 className="link-card-title">Spotify</h3>
+          <p className="link-card-desc">
+            Long-form interviews I host with people I find interesting. Past
+            guests include Ali Abdaal and MkLeo.
+          </p>
+          <p className="link-card-cta">Listen on Spotify</p>
         </a>
 
         <a

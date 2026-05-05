@@ -29,6 +29,11 @@ export function Colophon() {
             </a>
           </li>
           <li>
+            <a href="https://open.spotify.com/show/5lS5DvT73hfAvxMPVfM91b" target="_blank" rel="noopener noreferrer">
+              Podcast
+            </a>
+          </li>
+          <li>
             <a href="https://www.tiktok.com/@manrajtalks" target="_blank" rel="noopener noreferrer">
               TikTok
             </a>
