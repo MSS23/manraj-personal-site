@@ -47,7 +47,7 @@ export function About() {
                 Off the keyboard, I&apos;m a padel addict. If I&apos;m not at
                 a court I&apos;m probably trying to book one. Before that I
                 co-hosted and edited <em>The DMC Podcast</em> with my mate
-                Joseph for three seasons. Twenty-three episodes on personal
+                Joseph for three seasons. 127 episodes on personal
                 development, mental health, and trying to be better.
               </p>
             </li>

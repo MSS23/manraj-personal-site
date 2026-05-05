@@ -59,9 +59,9 @@ export function Writing() {
         </h3>
         <p className="podcast-lede">
           A personal development show I co-hosted and edited with my mate
-          Joseph. Twenty-three episodes across three seasons on trust, mental
-          health, morning routines, and trying to be better. We wrapped in
-          2023; the archive is still up on Spotify.
+          Joseph. 127 episodes across three seasons on trust, mental health,
+          morning routines, and trying to be better. We wrapped in 2023; the
+          archive is still up on Spotify.
         </p>
         <a
           className="link-card podcast-card"
@@ -75,7 +75,7 @@ export function Writing() {
           </div>
           <h3 className="link-card-title">The DMC Podcast</h3>
           <p className="link-card-desc">
-            Three seasons, twenty-three episodes, archived on Spotify.
+            Three seasons, 127 episodes, archived on Spotify.
           </p>
           <p className="link-card-cta">Listen on Spotify</p>
         </a>
