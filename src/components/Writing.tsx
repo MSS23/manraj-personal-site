@@ -8,27 +8,32 @@ export function Writing() {
         Where I <em>publish.</em>
       </h2>
       <p className="section-lede">
-        Long-form on Substack, short clips on Instagram. I post when I have
+        Long-form on Substack, short clips on TikTok. I post when I have
         something to say.
       </p>
 
       <div className="links">
-        <div className="link-card link-card-soon" aria-disabled="true">
+        <a
+          className="link-card"
+          href="https://mannyssidhu.substack.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <div className="link-card-row">
             <span>Newsletter</span>
-            <span className="link-card-arrow" aria-hidden="true">soon</span>
+            <span className="link-card-arrow" aria-hidden="true">→</span>
           </div>
           <h3 className="link-card-title">Substack</h3>
           <p className="link-card-desc">
             Essays on what I learn while building. How I use AI and automation
             in real work, and where I get it wrong.
           </p>
-          <p className="link-card-cta">Drafting the first essay</p>
-        </div>
+          <p className="link-card-cta">mannyssidhu.substack.com</p>
+        </a>
 
         <a
           className="link-card"
-          href="https://www.instagram.com/mannyssidhu/"
+          href="https://www.tiktok.com/@manrajtalks"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -36,12 +41,12 @@ export function Writing() {
             <span>Updates</span>
             <span className="link-card-arrow" aria-hidden="true">→</span>
           </div>
-          <h3 className="link-card-title">Instagram</h3>
+          <h3 className="link-card-title">TikTok</h3>
           <p className="link-card-desc">
-            Screenshots and short clips of work in progress before it becomes
-            a full write-up.
+            Short clips on what I&apos;m building, what I&apos;m learning, and the
+            occasional VGC take.
           </p>
-          <p className="link-card-cta">@mannyssidhu</p>
+          <p className="link-card-cta">@manrajtalks</p>
         </a>
       </div>
     </section>

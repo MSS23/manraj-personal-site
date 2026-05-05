@@ -24,6 +24,16 @@ export function Colophon() {
             </a>
           </li>
           <li>
+            <a href="https://mannyssidhu.substack.com/" target="_blank" rel="noopener noreferrer">
+              Substack
+            </a>
+          </li>
+          <li>
+            <a href="https://www.tiktok.com/@manrajtalks" target="_blank" rel="noopener noreferrer">
+              TikTok
+            </a>
+          </li>
+          <li>
             <a href="mailto:contact@manrajssidhu.com">Email</a>
           </li>
         </ul>
