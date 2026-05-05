@@ -25,8 +25,8 @@ export function Writing() {
           </div>
           <h3 className="link-card-title">Substack</h3>
           <p className="link-card-desc">
-            Essays on what I learn while building: how I use AI and
-            automation in real work, and where I get it wrong.
+            Essays on what I learn while building: AI and automation on
+            personal projects, and where I get it wrong.
           </p>
           <p className="link-card-cta">Read on Substack</p>
         </a>
