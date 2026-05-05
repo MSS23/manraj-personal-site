@@ -44,7 +44,7 @@ export function Writing() {
           <h3 className="link-card-title">TikTok</h3>
           <p className="link-card-desc">
             Short clips on what I&apos;m building, what I&apos;m learning,
-            and the occasional VGC take.
+            and the occasional life advice.
           </p>
           <p className="link-card-cta">Watch on TikTok</p>
         </a>
