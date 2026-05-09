@@ -5,7 +5,7 @@ export function Writing() {
         <span>§</span> Writing
       </p>
       <h2 className="serif-heading">
-        Where I <em>publish.</em>
+        Notes from the <em>workbench.</em>
       </h2>
       <p className="section-lede">
         Long-form on Substack, short clips on TikTok. I post when I have
@@ -25,8 +25,8 @@ export function Writing() {
           </div>
           <h3 className="link-card-title">Substack</h3>
           <p className="link-card-desc">
-            Essays on what I learn while building: AI and automation on
-            personal projects, and where I get it wrong.
+            Essays on what I learn while building, and where I get it
+            wrong.
           </p>
           <p className="link-card-cta">Read on Substack</p>
         </a>

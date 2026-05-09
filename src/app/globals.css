@@ -239,8 +239,24 @@ a { color: inherit; text-decoration: none; }
   line-height: 1.4;
 }
 @media (max-width: 720px) {
-  .hero-stats { grid-template-columns: 1fr; gap: 16px; margin-top: 40px; padding-top: 18px; }
-  .hero-stats li { grid-template-columns: auto 1fr; align-items: baseline; gap: 14px; }
+  .hero-stats {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 18px;
+    margin-top: 40px;
+    padding-top: 18px;
+  }
+  .hero-stats li {
+    grid-template-columns: 1fr;
+    align-items: start;
+    gap: 6px;
+  }
+  .hero-stat-num { font-size: clamp(1.4rem, 7vw, 2rem); }
+  .hero-stat-label { font-size: 0.66rem; letter-spacing: 0.06em; }
+  .hero { padding: 80px var(--gutter) 60px; }
+}
+@media (max-width: 480px) {
+  .hero-stats { gap: 12px; }
+  .hero-stat-label { font-size: 0.62rem; }
 }
 
 /* ─────────────────────────────────────────────────────────────
@@ -282,6 +298,11 @@ a { color: inherit; text-decoration: none; }
 }
 @media (prefers-reduced-motion: reduce) {
   .marquee-track { animation: none; }
+}
+@media (max-width: 720px) {
+  .marquee { margin: 56px 0 16px; padding: 14px 0; }
+  .marquee-track { animation-duration: 42s; gap: 22px; }
+  .marquee-item { font-size: clamp(1.1rem, 5vw, 1.5rem); }
 }
 
 /* ─────────────────────────────────────────────────────────────
@@ -534,7 +555,7 @@ a { color: inherit; text-decoration: none; }
 }
 @media (max-width: 720px) {
   .work-bucket-row { grid-template-columns: auto 1fr; gap: 12px; }
-  .work-bucket-count { grid-column: 1 / -1; grid-row: 2; margin-top: 4px; }
+  .work-bucket-count { display: none; }
 }
 
 .works {
@@ -1090,4 +1111,369 @@ a { color: inherit; text-decoration: none; }
   outline: 2px solid var(--blue);
   outline-offset: 3px;
   border-radius: 4px;
+}
+
+/* ─────────────────────────────────────────────────────────────
+   Motion: hero entrance, scroll reveals, masthead pill,
+   project-entry smooth expand, hover polish, ornament reveal
+───────────────────────────────────────────────────────────── */
+
+/* Hero entrance — pure CSS keyframe so it runs on load, no JS needed. */
+@keyframes hero-rise {
+  from { opacity: 0; transform: translateY(8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes hero-rise-strong {
+  from { opacity: 0; transform: translateY(14px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes hero-fade-soft {
+  from { opacity: 0; transform: translateY(3px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.hero .hero-meta,
+.hero .display .line,
+.hero .dek,
+.hero .hero-actions,
+.hero .hero-stats {
+  animation: hero-rise 0.55s cubic-bezier(.2,.7,.2,1) both;
+}
+.hero .display .line { animation-name: hero-rise-strong; }
+.hero .hero-meta                      { animation-delay: 60ms; }
+.hero .display .line:nth-child(1)     { animation-delay: 140ms; }
+.hero .display .line:nth-child(2)     { animation-delay: 240ms; }
+.hero .dek                            { animation-delay: 380ms; }
+.hero .hero-actions                   { animation-delay: 500ms; }
+.hero .hero-stats                     { animation-delay: 620ms; }
+
+/* Stat numbers do a soft per-item ink-fill once the stats container lands. */
+.hero-stats li .hero-stat-num,
+.hero-stats li .hero-stat-label {
+  animation: hero-fade-soft 0.6s cubic-bezier(.2,.7,.2,1) both;
+}
+.hero-stats li:nth-child(1) .hero-stat-num   { animation-delay: 720ms; }
+.hero-stats li:nth-child(2) .hero-stat-num   { animation-delay: 800ms; }
+.hero-stats li:nth-child(3) .hero-stat-num   { animation-delay: 880ms; }
+.hero-stats li:nth-child(1) .hero-stat-label { animation-delay: 820ms; }
+.hero-stats li:nth-child(2) .hero-stat-label { animation-delay: 900ms; }
+.hero-stats li:nth-child(3) .hero-stat-label { animation-delay: 980ms; }
+
+/* Tabular figures on numbers so they don't jiggle. */
+.hero-stat-num,
+.stat-num,
+.work-bucket-index,
+.entry-folio-num {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Reveal wrapper is a layout-only div now. Animation removed to keep the
+   site reliable across browsers, SSR, screenshots, and JS-disabled users.
+   Hero entrance + hover states + smooth project expand carry the craft. */
+.reveal { display: contents; }
+
+/* Masthead: switch border to box-shadow (no reflow flash) and
+   add the sliding active-section pill. */
+.masthead { border-bottom: 0; box-shadow: 0 1px 0 transparent; transition: box-shadow 0.25s ease, background 0.25s ease; }
+.masthead.is-scrolled { box-shadow: 0 1px 0 var(--border); }
+.nav { position: relative; }
+.nav-pill {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  height: calc(1em + 14px);
+  transform: translateY(-50%);
+  background: var(--bg-hover);
+  border-radius: 8px;
+  z-index: 0;
+  transition:
+    transform 0.36s cubic-bezier(.2,.7,.2,1),
+    width 0.36s cubic-bezier(.2,.7,.2,1),
+    opacity 0.25s ease;
+  pointer-events: none;
+  margin-left: -10px;
+  padding: 0 10px;
+  box-sizing: content-box;
+}
+.nav a { position: relative; z-index: 1; transition: color 0.2s ease; }
+.nav a:hover, .nav a.is-active { color: var(--text); }
+
+/* Marquee: pause on hover so people can read it. */
+.marquee:hover .marquee-track,
+.marquee:focus-within .marquee-track {
+  animation-play-state: paused;
+}
+
+/* Project entry: animate expand/collapse via grid-template-rows trick. */
+.entry-detail {
+  display: grid;
+  grid-template-rows: 0fr;
+  opacity: 0;
+  transition:
+    grid-template-rows 0.42s cubic-bezier(.2,.7,.2,1),
+    opacity 0.32s ease,
+    margin 0.42s cubic-bezier(.2,.7,.2,1);
+  margin-top: 0;
+}
+.entry-detail.is-open {
+  grid-template-rows: 1fr;
+  opacity: 1;
+  margin-top: 4px;
+}
+.entry-detail-grid {
+  min-height: 0;
+  overflow: hidden;
+}
+
+/* Folio number subtle weight shift on entry hover. */
+.entry-folio-num {
+  font-variation-settings: "SOFT" 30, "opsz" 144;
+  transition:
+    color 0.25s ease,
+    transform 0.3s cubic-bezier(.2,.7,.2,1),
+    font-variation-settings 0.4s ease;
+}
+.entry:hover .entry-folio-num {
+  font-variation-settings: "SOFT" 80, "opsz" 60;
+}
+
+/* Link cards: lift the CTA pill on card hover so the secondary action breathes. */
+.link-card {
+  position: relative;
+  transition:
+    border-color 0.25s ease,
+    transform 0.32s cubic-bezier(.2,.7,.2,1),
+    box-shadow 0.32s ease;
+}
+.link-card:hover { transform: translateY(-3px); }
+
+/* Email line: thicker rule via inset shadow (no layout shift) + arrow travel. */
+.email-line {
+  position: relative;
+  border-bottom-color: transparent;
+  box-shadow: inset 0 -1px 0 var(--border-strong);
+  transition:
+    color 0.22s ease,
+    box-shadow 0.28s cubic-bezier(.2,.7,.2,1),
+    letter-spacing 0.32s ease;
+}
+.email-line span[aria-hidden="true"] {
+  display: inline-block;
+  transition: transform 0.32s cubic-bezier(.2,.7,.2,1);
+}
+.email-line:hover {
+  color: var(--blue);
+  box-shadow: inset 0 -2px 0 var(--blue);
+  letter-spacing: -0.005em;
+}
+.email-line:hover span[aria-hidden="true"] { transform: translateX(6px); }
+
+/* Contact prompts — soft list of "good reasons to write". */
+.contact-prompts {
+  list-style: none;
+  margin: 0 0 32px;
+  padding: 0;
+  display: grid;
+  gap: 8px;
+  text-align: center;
+  font-size: 0.96rem;
+  color: var(--text-muted);
+  max-width: 56ch;
+}
+.contact-prompts li {
+  position: relative;
+  padding: 8px 14px;
+  border-radius: 8px;
+  transition: color 0.2s ease, background 0.2s ease;
+}
+.contact-prompts li:hover {
+  color: var(--text);
+  background: var(--bg-hover);
+}
+
+/* About — collapsible items 02-05. Lead always visible; rest expands. */
+.about-rest {
+  display: grid;
+  grid-template-rows: 0fr;
+  opacity: 0;
+  transition:
+    grid-template-rows 0.45s cubic-bezier(.2,.7,.2,1),
+    opacity 0.32s ease,
+    margin 0.45s cubic-bezier(.2,.7,.2,1);
+  margin-top: 0;
+}
+.about-rest.is-open {
+  grid-template-rows: 1fr;
+  opacity: 1;
+  margin-top: 28px;
+}
+.about-rest-grid {
+  min-height: 0;
+  overflow: hidden;
+}
+.about-numbered-rest {
+  margin: 0;
+  padding: 0;
+}
+/* Spacing between the lead li and the rest list when expanded. */
+.about-numbered-rest > li:first-child { margin-top: 0; }
+
+.about-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 24px;
+  padding: 8px 14px;
+  background: transparent;
+  border: 1px solid var(--border-strong);
+  border-radius: 8px;
+  cursor: pointer;
+  color: var(--text);
+  font-size: 0.86rem;
+  font-weight: 500;
+  font-family: inherit;
+  transition:
+    background 0.2s ease,
+    border-color 0.2s ease,
+    color 0.2s ease,
+    transform 0.2s ease;
+}
+.about-toggle:hover {
+  background: var(--bg-hover);
+  border-color: var(--border-strong);
+  color: var(--blue);
+}
+.about-toggle:focus-visible {
+  outline: 2px solid var(--blue);
+  outline-offset: 3px;
+}
+.about-toggle-chevron {
+  display: inline-block;
+  font-family: var(--font-jetbrains-mono), ui-monospace, Menlo, monospace;
+  transition: transform 0.3s cubic-bezier(.2,.7,.2,1);
+}
+.about-toggle[aria-expanded="true"] .about-toggle-chevron {
+  transform: rotate(180deg);
+}
+
+/* Portrait — gentler zoom on aside hover, with a faint inner ring. */
+.portrait {
+  transition:
+    transform 0.55s cubic-bezier(.2,.7,.2,1),
+    box-shadow 0.45s ease;
+}
+.about-aside:hover .portrait {
+  transform: translateY(-2px) scale(1.03);
+  box-shadow:
+    0 0 0 6px var(--bg-elevated),
+    0 0 0 7px var(--blue-soft),
+    0 18px 40px -12px rgba(35, 131, 226, 0.18);
+}
+
+/* Kill animation if the user prefers reduced motion. */
+@media (prefers-reduced-motion: reduce) {
+  .reveal { opacity: 1 !important; transform: none !important; transition: none !important; }
+  .hero .hero-meta,
+  .hero .display .line,
+  .hero .dek,
+  .hero .hero-actions,
+  .hero .hero-stats,
+  .hero-stats li .hero-stat-num,
+  .hero-stats li .hero-stat-label {
+    animation: none !important;
+    opacity: 1 !important;
+    transform: none !important;
+  }
+  .nav-pill { transition: none !important; }
+  .entry-detail,
+  .about-rest { transition: none !important; }
+}
+
+/* ─────────────────────────────────────────────────────────────
+   Mobile / responsive polish
+───────────────────────────────────────────────────────────── */
+@media (max-width: 720px) {
+  :root { --gutter: 22px; }
+
+  .section { padding: 60px var(--gutter); }
+
+  .display { font-size: clamp(3.4rem, 16vw, 5.5rem); margin-bottom: 24px; letter-spacing: -0.035em; }
+  .dek { font-size: 1.04rem; line-height: 1.55; margin-bottom: 28px; }
+  .hero-meta { font-size: 0.86rem; margin-bottom: 22px; }
+  .hero-actions .btn { padding: 11px 16px; font-size: 0.9rem; }
+
+  .serif-heading { font-size: clamp(1.5rem, 6.5vw, 2rem); margin-bottom: 24px; }
+
+  .about-numbered { gap: 22px; }
+  .about-numbered > li { grid-template-columns: 40px 1fr; gap: 8px; }
+  .about-num { font-size: 1.15rem; padding-top: 0.36em; }
+  .about-body p { font-size: 1rem; line-height: 1.65; }
+  .about-body p.lead { font-size: 1.08rem; }
+  .about-body .dropcap { font-size: 2.8rem; padding: 0.04em 0.1em 0 0; }
+  .about-aside { padding: 22px; border-radius: 12px; }
+  .about-toggle { width: 100%; justify-content: center; }
+  .about-toggle .about-toggle-label { flex: 1; text-align: center; }
+
+  .approach-body p { font-size: 0.98rem; line-height: 1.65; }
+
+  .work-bucket { margin-bottom: 56px; }
+  .work-bucket-head { margin-bottom: 22px; }
+  .work-bucket-lede { font-size: 0.93rem; }
+
+  .links { grid-template-columns: 1fr; gap: 14px; }
+  .link-card { padding: 20px; }
+  .link-card-title { font-size: 1.3rem; }
+  .link-card-cta { min-width: 0; width: 100%; padding: 8px 14px; font-size: 0.7rem; }
+
+  .podcast-block { margin-top: 56px; padding-top: 36px; }
+
+  .contact-prompts {
+    margin: 0 auto 28px;
+    font-size: 0.9rem;
+    text-align: left;
+    padding: 0 4px;
+  }
+  .contact-prompts li { padding: 10px 12px; line-height: 1.5; }
+  .email-line { font-size: clamp(1.15rem, 6vw, 1.6rem); flex-wrap: nowrap; }
+
+  .colophon-links { gap: 14px 18px; flex-wrap: wrap; }
+
+  /* Tighten reveal travel on mobile so animations don't feel sluggish. */
+  .reveal { transform: translateY(10px); }
+}
+
+@media (max-width: 480px) {
+  .display { font-size: clamp(3rem, 18vw, 4.4rem); }
+  .hero { padding: 60px var(--gutter) 48px; }
+  .hero-actions { gap: 10px; width: 100%; }
+  .hero-actions .btn { flex: 1; justify-content: center; min-width: 0; }
+  .entry { padding: 18px; }
+  .entry-folio-num { font-size: 1.6rem; }
+  .entry-toggle { width: 100%; justify-content: center; }
+  .entry-toggle .toggle-label-open,
+  .entry-toggle .toggle-label-close { flex: 1; text-align: center; }
+  .work-bucket-kicker { font-size: clamp(1.5rem, 7vw, 1.9rem); }
+  .work-bucket-index { font-size: clamp(1.6rem, 7vw, 2.2rem); }
+  .email-line {
+    font-size: clamp(1rem, 5.4vw, 1.4rem);
+    word-break: break-all;
+  }
+}
+
+/* Touch-target floor for any small inline link / button on small screens. */
+@media (hover: none) and (pointer: coarse) {
+  .btn, .entry-toggle, .about-toggle, .link-card-cta, .colophon-links a {
+    min-height: 40px;
+  }
+  /* Disable all hover-only effects on touch — they get stuck on tap. */
+  .entry:hover .entry-folio-num,
+  .entry:hover h3,
+  .link-card:hover,
+  .about-aside:hover .portrait,
+  .marquee:hover .marquee-track,
+  .entry-figure-lead:hover img,
+  .entry-figure-lead:hover .entry-figure-overlay {
+    transform: none;
+    color: inherit;
+  }
+  .marquee:hover .marquee-track { animation-play-state: running; }
 }

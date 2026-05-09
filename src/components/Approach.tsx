@@ -6,7 +6,7 @@ export function Approach() {
       </p>
       <div className="approach-grid">
         <h2 className="serif-heading approach-heading">
-          A few things I believe about building.
+          How I build.
         </h2>
         <div className="approach-body">
           <p>
@@ -26,13 +26,14 @@ export function Approach() {
             <strong>Trust the boring tech.</strong> Postgres, plain HTML,
             vanilla JavaScript, a Python script on a cron. I reach for the
             shiny thing once the boring thing runs out of road, which is
-            rarer than you&apos;d think.
+            rarer than the discourse suggests.
           </p>
           <p>
-            <strong>Verify against ground truth.</strong> The VGC MCP has
-            1,199 tests pinned to Pokémon Showdown&apos;s reference output,
-            because every damage number it returns has to match the
-            authoritative engine bit-for-bit before I&apos;ll ship it.
+            <strong>Bit-for-bit, or it doesn&apos;t ship.</strong> The VGC
+            MCP has 1,199 tests pinned to Pokémon Showdown&apos;s reference
+            output, because every damage number it returns has to match the
+            authoritative engine before I&apos;ll trust it in someone
+            else&apos;s game plan.
           </p>
         </div>
       </div>

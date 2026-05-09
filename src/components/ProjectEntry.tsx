@@ -206,23 +206,24 @@ export function ProjectEntry({ project }: { project: Project }) {
           onClick={toggle}
           suppressHydrationWarning
         >
-          <span className="toggle-label-open">{project.toggleOpenLabel ?? "Read the case study"}</span>
+          <span className="toggle-label-open">{project.toggleOpenLabel ?? "How I built this"}</span>
           <span className="toggle-label-close">Hide details</span>
           <span className="toggle-chevron" aria-hidden="true">↓</span>
         </button>
 
         <div
           ref={panelRef}
-          className="entry-detail"
+          className={`entry-detail ${expanded ? "is-open" : ""}`}
           id={detailId}
-          hidden={!expanded}
           aria-labelledby={reactId}
-          style={{ height: expanded ? "auto" : 0 }}
+          aria-hidden={!expanded}
         >
-          <div className="entry-detail-inner">
-            {project.detail.map((block, i) => (
-              <DetailBlock key={i} block={block} onZoom={openZoom} />
-            ))}
+          <div className="entry-detail-grid">
+            <div className="entry-detail-inner">
+              {project.detail.map((block, i) => (
+                <DetailBlock key={i} block={block} onZoom={openZoom} />
+              ))}
+            </div>
           </div>
         </div>
       </article>
