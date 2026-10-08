@@ -4,17 +4,15 @@
   "kind": "carousel",
   "date": "2026-10-05",
   "series": "Claude Skills Week",
-  "episode": "episode not numbered in the source",
+  "episode": "08",
   "pillar": "Claude & skills",
   "hook": "Talk for 3 minutes, get a finished post",
   "keyword": "VOICE",
-  "summary": "INSTAGRAM\nTalk for 3 minutes, get a finished post.",
+  "summary": "Talk for 3 minutes, get a finished post.",
   "body": [
-    "INSTAGRAM\nTalk for 3 minutes, get a finished post.",
+    "Talk for 3 minutes, get a finished post.",
     "My voice-to-post workflow with Claude, for when I can't face a blank page.\nRecord one idea as a voice note, paste the transcript into Claude, and tell it to keep your wording.\nThe prompt is on slide 4. Save this one.",
-    "Tools: Claude (https://claude.ai) + any dictation app or voice memo.\nFree weekly guide: Life With AI · link in bio. Follow @manrajtalks for practical Claude tips you can use the same day.",
-    "TIKTOK\nTalk for 3 minutes, get a finished post. The Claude prompt is on slide 4. Save this one.",
-    "CTA KEYWORD: none (source CTA kept as is: \"Save this one\" + follow + free weekly guide link in bio)\nSERIES: Claude Skills Week · episode not numbered in the source"
+    "Tools: Claude (https://claude.ai) + any dictation app or voice memo.\nFree weekly guide: Life With AI · link in bio. Follow @manrajtalks for practical Claude tips you can use the same day."
   ],
   "tags": [
     "claudeai",

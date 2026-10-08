@@ -1,0 +1,38 @@
+{
+  "slug": "33-four-apps-lessons",
+  "title": "4 apps with a full-time job",
+  "kind": "carousel",
+  "date": "2026-10-05",
+  "series": "Consultant to Builder",
+  "episode": "02",
+  "pillar": "Building in public",
+  "hook": "4 apps with a full-time job",
+  "keyword": "STACK",
+  "summary": "I shipped 4 apps with a full-time job. You don't need more time. You need fewer decisions.",
+  "body": [
+    "I shipped 4 apps with a full-time job. You don't need more time. You need fewer decisions.",
+    "1. Pick a niche you're obsessed with. 2. AI writes the code, you still need taste. 3. Ship it ugly.",
+    "runlocke.com · draftpokemon.com · pokemonvgcteamreport.com",
+    "Comment STACK and I'll DM you my setup."
+  ],
+  "tags": [
+    "buildinpublic",
+    "indiehacker",
+    "sideproject",
+    "ai",
+    "manrajtalks",
+    "mtc2b02"
+  ],
+  "links": {},
+  "slides": [
+    "/notes/33-four-apps-lessons/1.jpg",
+    "/notes/33-four-apps-lessons/2.jpg",
+    "/notes/33-four-apps-lessons/3.jpg",
+    "/notes/33-four-apps-lessons/4.jpg",
+    "/notes/33-four-apps-lessons/5.jpg",
+    "/notes/33-four-apps-lessons/6.jpg",
+    "/notes/33-four-apps-lessons/7.jpg"
+  ],
+  "cover": "/notes/33-four-apps-lessons/cover.jpg",
+  "style": "house"
+}

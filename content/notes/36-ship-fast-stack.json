@@ -8,14 +8,12 @@
   "pillar": "Building in public",
   "hook": "The stack I use to ship side projects fast",
   "keyword": "STACK",
-  "summary": "INSTAGRAM\nThe fastest stack is the one you don't have to learn. Here's the boring one I ship every side project on.",
+  "summary": "The fastest stack is the one you don't have to learn. Here's the boring one I ship every side project on.",
   "body": [
-    "INSTAGRAM\nThe fastest stack is the one you don't have to learn. Here's the boring one I ship every side project on.",
+    "The fastest stack is the one you don't have to learn. Here's the boring one I ship every side project on.",
     "Frontend: Next.js + TypeScript. Huge ecosystem, AI writes it well, types catch its mistakes early.\nBackend: Supabase. Postgres, auth, storage and row-level security from day one, pgvector when you want AI features.\nShipping: Vercel for a preview URL on every change, Sentry for errors, PostHog for what people actually use.\nClaude as the pair programmer.",
     "Next.js: https://nextjs.org\nTypeScript: https://www.typescriptlang.org\nSupabase: https://supabase.com\nVercel: https://vercel.com\nSentry: https://sentry.io\nPostHog: https://posthog.com\nClaude: https://claude.ai",
-    "Comment STACK and I'll send you my side project stack, with links.",
-    "TIKTOK\nThe boring stack I ship every side project on. Comment STACK and I'll send it to you, with links.",
-    "CTA KEYWORD: STACK (new: the source carousel had no CTA slide or caption to copy)\nSERIES: The Stack (source tagged it \"Building in public\"; no episode number found)"
+    "Comment STACK and I'll send you my side project stack, with links."
   ],
   "tags": [
     "nextjs",

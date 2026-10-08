@@ -4,18 +4,16 @@
   "kind": "carousel",
   "date": "2026-10-05",
   "series": "Claude Skills Week",
-  "episode": "episode not numbered (the original carried no number)",
+  "episode": "13",
   "pillar": "Claude & skills",
   "hook": "Never google an Excel formula again",
   "keyword": "FORMULA",
-  "summary": "INSTAGRAM\nNever google an Excel formula again.",
+  "summary": "Never google an Excel formula again.",
   "body": [
-    "INSTAGRAM\nNever google an Excel formula again.",
+    "Never google an Excel formula again.",
     "Describe what you want in plain English. Claude writes the formula and explains how it works.\n3 uses: write formulas, explain someone else's, clean messy data. Plus the one rule: test before you trust it.",
     "Claude: https://claude.ai\nGoogle Sheets: https://sheets.google.com\nExcel: https://www.microsoft.com/microsoft-365/excel",
-    "Save this one for the next time you hit #N/A.\nFollow @manrajtalks for practical Claude tips you can use the same day. Free weekly guide: Life With AI, link in bio.",
-    "TIKTOK\nNever google an Excel formula again. Plain English in, formula out with Claude. Save this one.",
-    "CTA KEYWORD: none (same CTA as the original: save + follow + Life With AI link in bio)\nSERIES: Claude Skills Week · episode not numbered (the original carried no number)"
+    "Save this one for the next time you hit #N/A.\nFollow @manrajtalks for practical Claude tips you can use the same day. Free weekly guide: Life With AI, link in bio."
   ],
   "tags": [
     "n",

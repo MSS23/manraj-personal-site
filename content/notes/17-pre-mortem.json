@@ -8,21 +8,18 @@
   "pillar": "Claude & skills",
   "hook": "The pre-mortem prompt",
   "keyword": "PREMORTEM",
-  "summary": "INSTAGRAM\nThe pre-mortem prompt: imagine your plan already failed, then fix the causes before they happen.",
+  "summary": "The pre-mortem prompt: imagine your plan already failed, then fix the causes before they happen.",
   "body": [
-    "INSTAGRAM\nThe pre-mortem prompt: imagine your plan already failed, then fix the causes before they happen.",
+    "The pre-mortem prompt: imagine your plan already failed, then fix the causes before they happen.",
     "Asking \"what could go wrong?\" gets polite answers. Asking \"why did it fail?\" gets honest ones.\nPaste the prompt into Claude, name your plan, then turn each cause into one cheap guardrail.\nUse it for decisions worth an hour of thought: changing jobs, launching an app, pricing, hiring.",
-    "Save this one. Follow @manrajtalks for practical Claude tips you can use the same day.\nFree weekly guide: Life With AI · link in bio",
-    "TIKTOK\nThe pre-mortem prompt: imagine your plan already failed, then fix the causes first. Save this one.",
-    "CTA KEYWORD: none (the original CTA is save + follow + weekly guide link in bio, kept as is)\nSERIES: Claude Skills Week (no episode number on the original, none added)"
+    "Save this one. Follow @manrajtalks for practical Claude tips you can use the same day.\nFree weekly guide: Life With AI · link in bio"
   ],
   "tags": [
     "claudeai",
     "aiprompts",
     "decisionmaking",
     "premortem",
-    "aitools",
-    "aitips"
+    "aitools"
   ],
   "links": {},
   "slides": [

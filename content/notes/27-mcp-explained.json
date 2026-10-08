@@ -1,0 +1,38 @@
+{
+  "slug": "27-mcp-explained",
+  "title": "MCP: why AI can suddenly use your tools",
+  "kind": "carousel",
+  "date": "2026-10-05",
+  "series": "Agent Notes",
+  "episode": "09",
+  "pillar": "AI & automation",
+  "hook": "MCP: why AI can suddenly use your tools",
+  "keyword": "MCP",
+  "summary": "MCP is why AI can suddenly use your tools.",
+  "body": [
+    "MCP is why AI can suddenly use your tools.",
+    "Model Context Protocol is a standard plug between AI and tools. I built one, vgc-mcp, so Claude can run exact Pokémon damage calcs. It has 1,199+ automated tests.",
+    "MCP: modelcontextprotocol.io · vgc-mcp: github.com/MSS23/vgc-mcp",
+    "Comment MCP and I'll DM you my starter notes."
+  ],
+  "tags": [
+    "mcp",
+    "aiagents",
+    "claudeai",
+    "llm",
+    "manrajtalks",
+    "mtagent09"
+  ],
+  "links": {},
+  "slides": [
+    "/notes/27-mcp-explained/1.jpg",
+    "/notes/27-mcp-explained/2.jpg",
+    "/notes/27-mcp-explained/3.jpg",
+    "/notes/27-mcp-explained/4.jpg",
+    "/notes/27-mcp-explained/5.jpg",
+    "/notes/27-mcp-explained/6.jpg",
+    "/notes/27-mcp-explained/7.jpg"
+  ],
+  "cover": "/notes/27-mcp-explained/cover.jpg",
+  "style": "house"
+}

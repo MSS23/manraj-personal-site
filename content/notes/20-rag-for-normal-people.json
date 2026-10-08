@@ -8,21 +8,18 @@
   "pillar": "AI & automation",
   "hook": "Make AI answer from your own documents",
   "keyword": "RAG",
-  "summary": "INSTAGRAM\nRAG for normal people: how to make AI answer from your own documents, with sources.",
+  "summary": "RAG for normal people: how to make AI answer from your own documents, with sources.",
   "body": [
-    "INSTAGRAM\nRAG for normal people: how to make AI answer from your own documents, with sources.",
+    "RAG for normal people: how to make AI answer from your own documents, with sources.",
     "Ask ChatGPT about your refund policy and it guesses. Confidently.\nRAG fixes that: search your docs first, hand the AI the relevant bits, make it answer only from those and quote where it found it.\nNo model training. Update a doc and it knows.",
-    "Comment RAG and I'll show you one I built, step by step.\nFree weekly guide: Life With AI, link in bio.",
-    "TIKTOK\nHow to make AI answer from your own documents. RAG without the jargon. Comment RAG and I'll show you one I built, step by step.",
-    "CTA KEYWORD: RAG\nSERIES: Agent Notes (episode number not set: check the Carousel Library before posting)"
+    "Comment RAG and I'll show you one I built, step by step.\nFree weekly guide: Life With AI, link in bio."
   ],
   "tags": [
     "rag",
     "aiagents",
     "retrievalaugmentedgeneration",
     "chatgpt",
-    "aiforbusiness",
-    "aitips"
+    "aiforbusiness"
   ],
   "links": {},
   "slides": [

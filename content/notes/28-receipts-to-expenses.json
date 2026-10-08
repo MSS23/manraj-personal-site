@@ -1,0 +1,38 @@
+{
+  "slug": "28-receipts-to-expenses",
+  "title": "Snap a receipt. It files itself.",
+  "kind": "carousel",
+  "date": "2026-10-05",
+  "series": "Agent Notes",
+  "episode": "10",
+  "pillar": "AI & automation",
+  "hook": "Snap a receipt. It files itself.",
+  "keyword": "RECEIPT",
+  "summary": "Snap a receipt and it files itself.",
+  "body": [
+    "Snap a receipt and it files itself.",
+    "Send a photo, AI reads the merchant, date, amount and category, and a row lands in your expenses sheet. Low-confidence ones come to you.",
+    "n8n: n8n.io",
+    "Comment RECEIPT and I'll DM you the template."
+  ],
+  "tags": [
+    "automation",
+    "n8n",
+    "personalfinance",
+    "aiautomation",
+    "manrajtalks",
+    "mtagent10"
+  ],
+  "links": {},
+  "slides": [
+    "/notes/28-receipts-to-expenses/1.jpg",
+    "/notes/28-receipts-to-expenses/2.jpg",
+    "/notes/28-receipts-to-expenses/3.jpg",
+    "/notes/28-receipts-to-expenses/4.jpg",
+    "/notes/28-receipts-to-expenses/5.jpg",
+    "/notes/28-receipts-to-expenses/6.jpg",
+    "/notes/28-receipts-to-expenses/7.jpg"
+  ],
+  "cover": "/notes/28-receipts-to-expenses/cover.jpg",
+  "style": "house"
+}

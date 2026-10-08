@@ -10,11 +10,17 @@
   "keyword": null,
   "summary": "",
   "body": [],
-  "tags": [],
+  "tags": [
+    "travel",
+    "fyp",
+    "brown",
+    "tech",
+    "app"
+  ],
   "links": {
     "tiktok": "https://www.tiktok.com/@manrajtalks/video/7678079469273369878"
   },
   "slides": [],
-  "cover": null,
+  "cover": "/notes/posthog-and-sentry-2-tools-you-need/cover.jpg",
   "views": 262
 }

@@ -8,13 +8,11 @@
   "pillar": "Claude & skills",
   "hook": "Stop asking AI to summarise this",
   "keyword": "ACTIONS",
-  "summary": "INSTAGRAM\nStop asking AI to summarise. Ask for decisions, actions, open questions and risks instead.",
+  "summary": "Stop asking AI to summarise. Ask for decisions, actions, open questions and risks instead.",
   "body": [
-    "INSTAGRAM\nStop asking AI to summarise. Ask for decisions, actions, open questions and risks instead.",
+    "Stop asking AI to summarise. Ask for decisions, actions, open questions and risks instead.",
     "A summary is just a shorter wall of text. These two prompts get you what was decided, who does what by when, and what's still unclear.\nWorks in Claude (claude.ai) or ChatGPT (chatgpt.com) on email threads, meeting transcripts, Slack threads, reports and contracts.",
-    "Save this one, and follow @manrajtalks for practical Claude tips you can use the same day.\nFree weekly guide: Life With AI · link in bio",
-    "TIKTOK\nStop asking AI to \"summarise this\". Ask for decisions, actions and questions instead. Save this one.",
-    "CTA KEYWORD: none (the original CTA is Save this one + Follow @manrajtalks + Life With AI guide link in bio; kept as is)\nSERIES: Claude Skills Week (no episode number on the original)"
+    "Save this one, and follow @manrajtalks for practical Claude tips you can use the same day.\nFree weekly guide: Life With AI · link in bio"
   ],
   "tags": [
     "claudeai",

@@ -1,0 +1,38 @@
+{
+  "slug": "41-vgc-mcp",
+  "title": "I gave Claude a Pokémon damage calculator",
+  "kind": "carousel",
+  "date": "2026-10-05",
+  "series": "Built With AI",
+  "episode": "06",
+  "pillar": "AI x Pokémon",
+  "hook": "I gave Claude a Pokémon damage calculator",
+  "keyword": "CALC",
+  "summary": "AI is confidently wrong at damage calcs. So I gave Claude a real calculator.",
+  "body": [
+    "AI is confidently wrong at damage calcs. So I gave Claude a real calculator.",
+    "vgc-mcp is my open-source MCP server for Pokémon VGC: exact damage and speed calcs. Python, hosted on Render, 1,199+ automated tests.",
+    "github.com/MSS23/vgc-mcp",
+    "Comment CALC and I'll DM you the repo."
+  ],
+  "tags": [
+    "pokemonvgc",
+    "mcp",
+    "claudeai",
+    "opensource",
+    "manrajtalks",
+    "mtbwa06"
+  ],
+  "links": {},
+  "slides": [
+    "/notes/41-vgc-mcp/1.jpg",
+    "/notes/41-vgc-mcp/2.jpg",
+    "/notes/41-vgc-mcp/3.jpg",
+    "/notes/41-vgc-mcp/4.jpg",
+    "/notes/41-vgc-mcp/5.jpg",
+    "/notes/41-vgc-mcp/6.jpg",
+    "/notes/41-vgc-mcp/7.jpg"
+  ],
+  "cover": "/notes/41-vgc-mcp/cover.jpg",
+  "style": "house"
+}

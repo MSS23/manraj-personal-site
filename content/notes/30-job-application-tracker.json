@@ -4,18 +4,16 @@
   "kind": "carousel",
   "date": "2026-10-05",
   "series": "Automate This",
-  "episode": "Ep. 06",
+  "episode": "12",
   "pillar": "AI & automation",
   "hook": "Let your inbox track job applications",
   "keyword": "JOBS",
-  "summary": "INSTAGRAM\nApplied to 30 jobs and lost track of every single one?",
+  "summary": "Applied to 30 jobs and lost track of every single one?",
   "body": [
-    "INSTAGRAM\nApplied to 30 jobs and lost track of every single one?",
+    "Applied to 30 jobs and lost track of every single one?",
     "Let your inbox keep the tracker for you.\nGmail trigger in n8n, an AI step that classifies each email (applied, interview, rejected or offer), a sheet with one row per application, and a nudge after 7 days of silence.\nBonus: when an interview lands, AI drafts a one-page brief on the company and role.\nYou can build it in one evening.",
     "Tools: n8n https://n8n.io · Gmail · Google Sheets https://sheets.google.com",
-    "Got a boring task? Comment it below and I might automate it in the next episode.\nSmall business? DM me AUDIT.",
-    "TIKTOK\n30 applications, no idea where any of them are? Let your inbox track it for you. Comment your boring task and I might automate it next. #n8n #aiautomation #jobsearch #jobhunting",
-    "CTA KEYWORD: none (comment your task) · DM keyword: AUDIT\nSERIES: Automate This · Ep. 06"
+    "Got a boring task? Comment it below and I might automate it in the next episode.\nSmall business? DM me AUDIT."
   ],
   "tags": [
     "n8n",

@@ -3,26 +3,24 @@
   "title": "Where should a small business start with AI?",
   "kind": "carousel",
   "date": "2026-10-05",
-  "series": "AI for Small Business (no episode; 29 had no series tag)",
+  "series": "Agent Notes",
   "episode": "11",
   "pillar": "AI & automation",
   "hook": "Where should a small business start with AI?",
   "keyword": "AUDIT",
-  "summary": "Where should a small business start with AI? The 5-step audit I'd run before buying any tool.",
+  "summary": "Where should a small business start with AI? Not by buying a tool.",
   "body": [
-    "Where should a small business start with AI? The 5-step audit I'd run before buying any tool.",
-    "\"We should use AI\" is not a plan. Most businesses start with a tool. Start with the work instead.",
-    "1. Map a normal week: every task that happens more than once, who does it, how long it takes.\n2. Score each task: hours per week × how boring it is × how low-risk it is.\n3. Automate one thing properly. One working automation beats ten half-built ones.\n4. Measure the hours saved for a month.\n5. Repeat with the next task.",
-    "Save this for your next planning day.",
-    "Want me to do this for you? I run these audits for small businesses. DM me AUDIT and I'll tell you where to start.",
-    "Free weekly guide: Life With AI · link in bio"
+    "Where should a small business start with AI? Not by buying a tool.",
+    "Run a 5-step audit: list tasks, add hours, mark repeats, score the risk, pick one. Most hours, lowest risk wins.",
+    "Comment AUDIT and I'll DM you the audit sheet."
   ],
   "tags": [
     "smallbusiness",
-    "aiautomation",
+    "ai",
+    "automation",
     "aiforbusiness",
-    "businessautomation",
-    "aitools"
+    "manrajtalks",
+    "mtagent11"
   ],
   "links": {},
   "slides": [
@@ -35,5 +33,5 @@
     "/notes/29-ai-audit/7.jpg"
   ],
   "cover": "/notes/29-ai-audit/cover.jpg",
-  "style": "ai_herway"
+  "style": "house"
 }

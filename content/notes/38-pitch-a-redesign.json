@@ -3,26 +3,24 @@
   "title": "I redesigned a local business's website before they asked",
   "kind": "carousel",
   "date": "2026-10-05",
-  "series": "Building in Public (episode unnumbered, as in the original)",
+  "series": "Built With AI",
   "episode": "05",
   "pillar": "Building in public",
   "hook": "I redesigned a local business's website before they asked",
   "keyword": "PITCH",
-  "summary": "INSTAGRAM\nNobody reads a pitch deck. Everyone clicks a link to their own business.",
+  "summary": "Nobody wants to read your pitch deck.",
   "body": [
-    "INSTAGRAM\nNobody reads a pitch deck. Everyone clicks a link to their own business.",
-    "I redesigned a local business's website before they asked. Here's the whole pitch:\n1. Go there and take your own photos\n2. Build the demo fast with AI, mobile-first\n3. Send one short, human message with the link",
-    "Save this for the message template on slide 5.\nFollow @manrajtalks for weekly build logs. Free weekly guide: Life With AI, link in bio.",
-    "TIKTOK\nI redesigned a local business's website before they asked. Demo, not a deck. Follow for the build logs.",
-    "CTA: Follow @manrajtalks + Life With AI weekly guide (link in bio). No comment keyword (kept from the original).\nSERIES: Building in Public (episode unnumbered, as in the original)"
+    "Nobody wants to read your pitch deck.",
+    "I took photos in a local shop, built a demo site with AI and sent the live link, offering to build it out to their vision.",
+    "Comment PITCH and I'll DM you the email template."
   ],
   "tags": [
-    "buildinpublic",
+    "freelance",
     "webdesign",
-    "aitools",
-    "freelancewebdesign",
-    "localbusiness",
-    "freelance"
+    "buildinpublic",
+    "smallbusiness",
+    "manrajtalks",
+    "mtbwa05"
   ],
   "links": {},
   "slides": [
@@ -35,5 +33,5 @@
     "/notes/38-pitch-a-redesign/7.jpg"
   ],
   "cover": "/notes/38-pitch-a-redesign/cover.jpg",
-  "style": "tweetpaper"
+  "style": "house"
 }

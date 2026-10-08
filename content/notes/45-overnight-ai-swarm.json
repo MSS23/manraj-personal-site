@@ -8,14 +8,12 @@
   "pillar": "Building in public",
   "hook": "24 AI agents build my app overnight",
   "keyword": "SWARM",
-  "summary": "INSTAGRAM\nAI agents work on my app while I sleep. How my overnight swarm works, and why a human still approves every change.",
+  "summary": "AI agents work on my app while I sleep. How my overnight swarm works, and why a human still approves every change.",
   "body": [
-    "INSTAGRAM\nAI agents work on my app while I sleep. How my overnight swarm works, and why a human still approves every change.",
+    "AI agents work on my app while I sleep. How my overnight swarm works, and why a human still approves every change.",
     "Every night ~24 Claude Code sub-agents pick up Linear tickets in two waves (research, then implement) and leave one draft PR on a fresh branch. Discord pings me with my coffee. Nothing merges without me.",
     "Tools: Claude Code (claude.com/claude-code) · Linear (linear.app) · Vercel (vercel.com) · PostHog (posthog.com) · Discord (discord.com), all connected through MCP.",
-    "Comment SWARM and I'll break down how it is wired up.",
-    "TIKTOK\nAI agents work on my app while I sleep. Comment SWARM and I'll break down how it is wired up. #claudecode #aiagents #buildinpublic #mcp",
-    "CTA KEYWORD: SWARM\nSERIES: Building in public (same tag as the house version; no episode number on the original)"
+    "Comment SWARM and I'll break down how it is wired up."
   ],
   "tags": [
     "claudecode",
