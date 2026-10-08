@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Fraunces, Inter, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
+import "./notes.css";
 
 const fraunces = Fraunces({
   subsets: ["latin"],

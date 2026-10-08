@@ -1,18 +1,22 @@
 "use client";
 
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
 
 const navItems = [
-  { id: "about", label: "About" },
-  { id: "approach", label: "Approach" },
-  { id: "work", label: "Work" },
-  { id: "elsewhere", label: "Writing" },
-  { id: "contact", label: "Contact" },
+  { id: "about", href: "/#about", label: "About" },
+  { id: "approach", href: "/#approach", label: "Approach" },
+  { id: "work", href: "/#work", label: "Work" },
+  { id: "notes", href: "/notes", label: "Notes" },
+  { id: "contact", href: "/#contact", label: "Contact" },
 ];
 
 export function Masthead() {
+  const pathname = usePathname();
+  const onNotes = pathname.startsWith("/notes");
   const [scrolled, setScrolled] = useState(false);
-  const [active, setActive] = useState<string | null>(null);
+  const [active, setActive] = useState<string | null>(onNotes ? "notes" : null);
   const navRef = useRef<HTMLElement | null>(null);
   const [pill, setPill] = useState<{ left: number; width: number } | null>(null);
 
@@ -23,7 +27,12 @@ export function Masthead() {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
+  // Scrollspy on the home page only; on /notes the Notes link stays lit.
   useEffect(() => {
+    if (onNotes) {
+      setActive("notes");
+      return;
+    }
     if (!("IntersectionObserver" in window)) return;
     const sections = navItems
       .map((n) => document.getElementById(n.id))
@@ -40,7 +49,7 @@ export function Masthead() {
     );
     sections.forEach((s) => spy.observe(s));
     return () => spy.disconnect();
-  }, []);
+  }, [onNotes]);
 
   // Measure the active link and slide the pill underneath it.
   useEffect(() => {
@@ -50,19 +59,14 @@ export function Masthead() {
         setPill(null);
         return;
       }
-      const link = nav.querySelector<HTMLAnchorElement>(
-        `a[data-id="${active}"]`,
-      );
+      const link = nav.querySelector<HTMLAnchorElement>(`a[data-id="${active}"]`);
       if (!link) {
         setPill(null);
         return;
       }
       const navRect = nav.getBoundingClientRect();
       const linkRect = link.getBoundingClientRect();
-      setPill({
-        left: linkRect.left - navRect.left,
-        width: linkRect.width,
-      });
+      setPill({ left: linkRect.left - navRect.left, width: linkRect.width });
     };
     measure();
     window.addEventListener("resize", measure);
@@ -72,31 +76,29 @@ export function Masthead() {
   return (
     <header className={`masthead ${scrolled ? "is-scrolled" : ""}`}>
       <div className="masthead-inner">
-        <a href="#top" className="mark" aria-label="Home">
+        <Link href="/#top" className="mark" aria-label="Home">
           <span className="mark-glyph">M</span>
           <span className="mark-rule" />
           <span className="mark-text">AI consultant · side projects</span>
-        </a>
+        </Link>
         <nav className="nav" aria-label="Primary" ref={navRef}>
           {pill && (
             <span
               className="nav-pill"
               aria-hidden="true"
-              style={{
-                transform: `translateX(${pill.left}px)`,
-                width: `${pill.width}px`,
-              }}
+              style={{ transform: `translateX(${pill.left}px)`, width: `${pill.width}px` }}
             />
           )}
           {navItems.map((item) => (
-            <a
+            <Link
               key={item.id}
-              href={`#${item.id}`}
+              href={item.href}
               data-id={item.id}
               className={active === item.id ? "is-active" : ""}
+              aria-current={active === item.id ? "page" : undefined}
             >
               {item.label}
-            </a>
+            </Link>
           ))}
         </nav>
       </div>

@@ -1,50 +1,69 @@
+import Link from "next/link";
+import { FollowRow } from "@/components/FollowRow";
+import { NoteCard } from "@/components/NoteCard";
+import { getNotes } from "@/lib/notes";
+
 export function Writing() {
+  const notes = getNotes();
+  const latest = notes.slice(0, 3);
+  const carousels = notes.filter((n) => n.kind === "carousel").length;
+  const reels = notes.length - carousels;
+
   return (
     <section id="elsewhere" className="section">
       <p className="kicker">
-        <span>§</span> Writing
+        <span>§</span> Notes
       </p>
       <h2 className="serif-heading">
         Notes from the <em>workbench.</em>
       </h2>
       <p className="section-lede">
-        Long-form on Substack, short clips on TikTok. I post when I have
-        something to say.
+        {notes.length
+          ? `${carousels} carousels and ${reels} reels on building with AI, all collected here. The newest three:`
+          : "Carousels and reels on building with AI. Long-form on Substack, short clips on TikTok and Instagram."}
       </p>
 
+      {latest.length > 0 && (
+        <>
+          <div className="notes-grid notes-grid-home">
+            {latest.map((n) => (
+              <NoteCard key={n.slug} note={n} />
+            ))}
+          </div>
+          <p className="notes-all">
+            <Link href="/notes" className="btn">
+              All {notes.length} notes →
+            </Link>
+          </p>
+        </>
+      )}
+
+      <div className="follow-block">
+        <p className="kicker follow-kicker">
+          <span>§</span> Follow along
+        </p>
+        <FollowRow />
+      </div>
+
       <div className="links">
-        <a
-          className="link-card"
-          href="https://mannyssidhu.substack.com/"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <a className="link-card" href="https://mannyssidhu.substack.com/" target="_blank" rel="noopener noreferrer">
           <div className="link-card-row">
             <span>Newsletter</span>
             <span className="link-card-arrow" aria-hidden="true">→</span>
           </div>
           <h3 className="link-card-title">Substack</h3>
-          <p className="link-card-desc">
-            Essays on what I learn while building, and where I get it
-            wrong.
-          </p>
+          <p className="link-card-desc">Essays on what I learn while building, and where I get it wrong.</p>
           <p className="link-card-cta">Read on Substack</p>
         </a>
 
-        <a
-          className="link-card"
-          href="https://www.tiktok.com/@manrajtalks"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <a className="link-card" href="https://www.tiktok.com/@manrajtalks" target="_blank" rel="noopener noreferrer">
           <div className="link-card-row">
             <span>Short-form</span>
             <span className="link-card-arrow" aria-hidden="true">→</span>
           </div>
           <h3 className="link-card-title">TikTok</h3>
           <p className="link-card-desc">
-            Short clips on what I&apos;m building, what I&apos;m learning,
-            and the occasional life advice.
+            Short clips on what I&apos;m building, what I&apos;m learning, and the occasional life advice.
           </p>
           <p className="link-card-cta">Watch on TikTok</p>
         </a>
@@ -58,10 +77,9 @@ export function Writing() {
           Before all this, <em>The DMC Podcast.</em>
         </h3>
         <p className="podcast-lede">
-          A personal development show I co-hosted and edited with my mate
-          Joseph. 127 episodes across three seasons on trust, mental health,
-          morning routines, and trying to be better. We wrapped in 2023; the
-          archive is still up on Spotify.
+          A personal development show I co-hosted and edited with my mate Joseph. 127 episodes across three seasons on
+          trust, mental health, morning routines, and trying to be better. We wrapped in 2023; the archive is still up
+          on Spotify.
         </p>
         <a
           className="link-card podcast-card"
@@ -74,9 +92,7 @@ export function Writing() {
             <span className="link-card-arrow" aria-hidden="true">→</span>
           </div>
           <h3 className="link-card-title">The DMC Podcast</h3>
-          <p className="link-card-desc">
-            Three seasons, 127 episodes, archived on Spotify.
-          </p>
+          <p className="link-card-desc">Three seasons, 127 episodes, archived on Spotify.</p>
           <p className="link-card-cta">Listen on Spotify</p>
         </a>
       </div>
