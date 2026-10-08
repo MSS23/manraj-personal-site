@@ -1,0 +1,39 @@
+{
+  "slug": "51-agent-trace-phoenix",
+  "title": "Your AI agent is lying to you",
+  "kind": "carousel",
+  "date": "2026-10-08",
+  "series": "Agent Notes",
+  "episode": "14",
+  "pillar": "AI & automation",
+  "hook": "Your AI agent is lying to you",
+  "keyword": "TRACE",
+  "summary": "The agent said \"done\". The trace said \"500 error\".",
+  "body": [
+    "The agent said \"done\". The trace said \"500 error\".",
+    "AI agents fail quietly. A tool errors, returns nothing, or gets skipped, and the final message still sounds sure of itself.",
+    "Tracing shows every step: the prompt, the tool input, the output, the error. I use Arize Phoenix for this. It's free, open source and runs on your laptop.",
+    "Slide 6 is the 5-point checklist I run on every agent trace. Save it.",
+    "Tools:\nArize Phoenix: https://phoenix.arize.com\nPhoenix on GitHub: https://github.com/Arize-ai/phoenix\nLangGraph: https://www.langchain.com/langgraph",
+    "Comment \"TRACE\" and I'll DM you the checklist and the setup code."
+  ],
+  "tags": [
+    "aiagents",
+    "langgraph",
+    "llmobservability",
+    "aidevelopers",
+    "mtagent14"
+  ],
+  "links": {},
+  "slides": [
+    "/notes/51-agent-trace-phoenix/1.jpg",
+    "/notes/51-agent-trace-phoenix/2.jpg",
+    "/notes/51-agent-trace-phoenix/3.jpg",
+    "/notes/51-agent-trace-phoenix/4.jpg",
+    "/notes/51-agent-trace-phoenix/5.jpg",
+    "/notes/51-agent-trace-phoenix/6.jpg",
+    "/notes/51-agent-trace-phoenix/7.jpg"
+  ],
+  "cover": "/notes/51-agent-trace-phoenix/cover.jpg",
+  "style": "sebai"
+}

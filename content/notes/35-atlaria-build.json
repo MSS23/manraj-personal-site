@@ -1,0 +1,40 @@
+{
+  "slug": "35-atlaria-build",
+  "title": "Building a travel app in public",
+  "kind": "carousel",
+  "date": "2026-10-05",
+  "series": "Built With AI",
+  "episode": "Atlaria (episode number not checked, see notes)",
+  "pillar": "Building in public",
+  "hook": "Building a travel app in public",
+  "keyword": "ATLARIA",
+  "summary": "INSTAGRAM\nBuilding a travel app in public: the honest version.",
+  "body": [
+    "INSTAGRAM\nBuilding a travel app in public: the honest version.",
+    "Atlaria is a 3D globe of everywhere you've been. Every trip, every photo, pinned to where it happened.\nOne repo for web and mobile: Next.js, a static export into Capacitor, Supabase, Vercel, Sentry and PostHog.\nIt crashed right after launch. Sentry showed me where. Fixed by Day 26.\nAnd the build videos beat my advice clips: around 700 views each vs about 315.",
+    "Tools: nextjs.org · capacitorjs.com · supabase.com · vercel.com · sentry.io · posthog.com",
+    "Follow the build: weekly build logs with honest numbers, wins and things that broke.\nFree weekly guide: Life With AI, link in bio.",
+    "TIKTOK\nBuilding a travel app in public: the honest version. The stack, what broke, what worked. Follow the build 🌍",
+    "CTA KEYWORD: none (follow CTA, kept from the original)\nSERIES: Built With AI · Atlaria (episode number not checked, see notes)"
+  ],
+  "tags": [
+    "buildinpublic",
+    "nextjs",
+    "supabase",
+    "indiehacker",
+    "aidevelopers",
+    "appdev"
+  ],
+  "links": {},
+  "slides": [
+    "/notes/35-atlaria-build/1.jpg",
+    "/notes/35-atlaria-build/2.jpg",
+    "/notes/35-atlaria-build/3.jpg",
+    "/notes/35-atlaria-build/4.jpg",
+    "/notes/35-atlaria-build/5.jpg",
+    "/notes/35-atlaria-build/6.jpg",
+    "/notes/35-atlaria-build/7.jpg"
+  ],
+  "cover": "/notes/35-atlaria-build/cover.jpg",
+  "style": "manrajtalks"
+}

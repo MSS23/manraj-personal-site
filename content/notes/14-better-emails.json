@@ -1,0 +1,41 @@
+{
+  "slug": "14-better-emails",
+  "title": "Emails people actually reply to",
+  "kind": "carousel",
+  "date": "2026-10-05",
+  "series": "Claude Skills Week (no episode number on the original)",
+  "episode": "15",
+  "pillar": "Claude & skills",
+  "hook": "Emails people actually reply to",
+  "keyword": "EMAIL",
+  "summary": "INSTAGRAM\nOne prompt for emails people actually reply to: shorter, clearer, ask up front, still sounds like you.",
+  "body": [
+    "INSTAGRAM\nOne prompt for emails people actually reply to: shorter, clearer, ask up front, still sounds like you.",
+    "Most emails bury the ask under three paragraphs of context. This prompt moves it into the first two lines, halves the length and gives you a warm and a direct version to pick from.",
+    "The prompt (paste into Claude, claude.ai):\n\"Rewrite this to be shorter and clearer. Keep my tone. Give me 2 versions: one warm, one direct. Put the ask in the first 2 lines. [paste draft]\"",
+    "Tricky one? Slide 4 has the prompt for saying no, chasing and pushing back.",
+    "Save this one. Follow @manrajtalks for practical Claude tips you can use the same day.\nFree weekly guide: Life With AI · link in bio",
+    "TIKTOK\nOne prompt for emails people actually reply to. Save it, paste your draft, send. Free weekly guide: Life With AI, link in bio.",
+    "CTA KEYWORD: none (the original CTA is Save this one + Follow + Life With AI guide link in bio; kept as is)\nSERIES: Claude Skills Week (no episode number on the original)"
+  ],
+  "tags": [
+    "claudeai",
+    "aiprompts",
+    "emailtips",
+    "aiproductivity",
+    "claude",
+    "productivity"
+  ],
+  "links": {},
+  "slides": [
+    "/notes/14-better-emails/1.jpg",
+    "/notes/14-better-emails/2.jpg",
+    "/notes/14-better-emails/3.jpg",
+    "/notes/14-better-emails/4.jpg",
+    "/notes/14-better-emails/5.jpg",
+    "/notes/14-better-emails/6.jpg",
+    "/notes/14-better-emails/7.jpg"
+  ],
+  "cover": "/notes/14-better-emails/cover.jpg",
+  "style": "manrajtalks"
+}

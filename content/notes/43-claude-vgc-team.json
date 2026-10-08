@@ -1,0 +1,40 @@
+{
+  "slug": "43-claude-vgc-team",
+  "title": "Using Claude to build a VGC team",
+  "kind": "carousel",
+  "date": "2026-10-05",
+  "series": "The Stack",
+  "episode": "21",
+  "pillar": "AI x Pokémon",
+  "hook": "Using Claude to build a VGC team",
+  "keyword": "TEAM",
+  "summary": "INSTAGRAM\nUsing Claude to build a VGC team the right way: AI for ideas, tools for maths, you for the final call.",
+  "body": [
+    "INSTAGRAM\nUsing Claude to build a VGC team the right way: AI for ideas, tools for maths, you for the final call.",
+    "Claude is great at threat lists, partner ideas and game plans.\nIt is bad at damage ranges, speed tiers and EV spreads. It guesses.\nSo I connected it to a calculator with an MCP server I built, vgc-mcp, and now it runs real calcs mid-conversation.",
+    "Claude: https://claude.ai\nMCP connectors: https://claude.ai/settings/connectors",
+    "What is your core? Drop it in the comments and I'll ask Claude for partners.",
+    "TIKTOK\nUsing Claude to build a VGC team the right way: AI for ideas, tools for maths. What is your core? Drop it below and I'll ask Claude for partners.",
+    "CTA KEYWORD\nNone (same as the original): comment your core, e.g. \"Incineroar + Flutter Mane\".",
+    "SERIES\nAI x Pokémon (no episode number on the original, none added)"
+  ],
+  "tags": [
+    "vgc",
+    "pokemonvgc",
+    "claudeai",
+    "mcp",
+    "aitools"
+  ],
+  "links": {},
+  "slides": [
+    "/notes/43-claude-vgc-team/1.jpg",
+    "/notes/43-claude-vgc-team/2.jpg",
+    "/notes/43-claude-vgc-team/3.jpg",
+    "/notes/43-claude-vgc-team/4.jpg",
+    "/notes/43-claude-vgc-team/5.jpg",
+    "/notes/43-claude-vgc-team/6.jpg",
+    "/notes/43-claude-vgc-team/7.jpg"
+  ],
+  "cover": "/notes/43-claude-vgc-team/cover.jpg",
+  "style": "manrajtalks"
+}

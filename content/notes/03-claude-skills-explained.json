@@ -1,0 +1,34 @@
+{
+  "slug": "03-claude-skills-explained",
+  "title": "Claude Skills in 60 seconds",
+  "kind": "carousel",
+  "date": "2026-10-05",
+  "series": "Claude Skills Week",
+  "episode": "03",
+  "pillar": "Claude & skills",
+  "hook": "Claude Skills in 60 seconds",
+  "keyword": "SKILL",
+  "summary": "Claude Skills in 60 seconds: teach it a task once and it follows the same playbook every time. Which skill would you build first?",
+  "body": [
+    "Claude Skills in 60 seconds: teach it a task once and it follows the same playbook every time. Which skill would you build first?"
+  ],
+  "tags": [
+    "claude",
+    "ai",
+    "aitools",
+    "productivity",
+    "manrajtalks"
+  ],
+  "links": {},
+  "slides": [
+    "/notes/03-claude-skills-explained/1.jpg",
+    "/notes/03-claude-skills-explained/2.jpg",
+    "/notes/03-claude-skills-explained/3.jpg",
+    "/notes/03-claude-skills-explained/4.jpg",
+    "/notes/03-claude-skills-explained/5.jpg",
+    "/notes/03-claude-skills-explained/6.jpg",
+    "/notes/03-claude-skills-explained/7.jpg"
+  ],
+  "cover": "/notes/03-claude-skills-explained/cover.jpg",
+  "style": "manrajtalks"
+}

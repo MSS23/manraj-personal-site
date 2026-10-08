@@ -1,0 +1,34 @@
+{
+  "slug": "02-claude-projects",
+  "title": "Stop re-explaining yourself to Claude",
+  "kind": "carousel",
+  "date": "2026-10-05",
+  "series": "Claude Skills Week",
+  "episode": "02",
+  "pillar": "Claude & skills",
+  "hook": "Stop re-explaining yourself to Claude",
+  "keyword": "PROJECT",
+  "summary": "Stop re-explaining yourself to Claude. Set up a Project once and every chat starts with your context.",
+  "body": [
+    "Stop re-explaining yourself to Claude. Set up a Project once and every chat starts with your context."
+  ],
+  "tags": [
+    "claude",
+    "ai",
+    "aitools",
+    "productivity",
+    "manrajtalks"
+  ],
+  "links": {},
+  "slides": [
+    "/notes/02-claude-projects/1.jpg",
+    "/notes/02-claude-projects/2.jpg",
+    "/notes/02-claude-projects/3.jpg",
+    "/notes/02-claude-projects/4.jpg",
+    "/notes/02-claude-projects/5.jpg",
+    "/notes/02-claude-projects/6.jpg",
+    "/notes/02-claude-projects/7.jpg"
+  ],
+  "cover": "/notes/02-claude-projects/cover.jpg",
+  "style": "manrajtalks"
+}

@@ -1,0 +1,39 @@
+{
+  "slug": "18-automate-invoices",
+  "title": "Invoice admin in 4 n8n nodes",
+  "kind": "carousel",
+  "date": "2026-10-05",
+  "series": "Automate This",
+  "episode": "Ep. 1",
+  "pillar": "AI & automation",
+  "hook": "Invoice admin in 4 n8n nodes",
+  "keyword": "INVOICE",
+  "summary": "INSTAGRAM\nCompanies pay consultants for this. It's 4 nodes in n8n.",
+  "body": [
+    "INSTAGRAM\nCompanies pay consultants for this. It's 4 nodes in n8n.",
+    "I used to be a consultant at PwC. This is the whole invoice workflow:\nGmail trigger → AI extract → Google Sheets → Slack.\nAsk the AI step for JSON, not a paragraph, and every field drops straight into your sheet.\nBuild it once and the rest are copy and tweak: receipts, supplier forms, contract emails.",
+    "n8n: https://n8n.io\nGoogle Sheets: https://sheets.google.com\nSlack: https://slack.com",
+    "Want the workflow? Comment INVOICE and I'll send you the n8n template.\nGot a boring task? Comment it for the next episode.",
+    "TIKTOK\nCompanies pay consultants for this. It's 4 nodes in n8n. Comment INVOICE and I'll send you the template.",
+    "CTA KEYWORD: INVOICE\nSERIES: Automate This · Ep. 1"
+  ],
+  "tags": [
+    "n8n",
+    "automation",
+    "aiagents",
+    "invoiceautomation",
+    "nocode"
+  ],
+  "links": {},
+  "slides": [
+    "/notes/18-automate-invoices/1.jpg",
+    "/notes/18-automate-invoices/2.jpg",
+    "/notes/18-automate-invoices/3.jpg",
+    "/notes/18-automate-invoices/4.jpg",
+    "/notes/18-automate-invoices/5.jpg",
+    "/notes/18-automate-invoices/6.jpg",
+    "/notes/18-automate-invoices/7.jpg"
+  ],
+  "cover": "/notes/18-automate-invoices/cover.jpg",
+  "style": "manrajtalks"
+}

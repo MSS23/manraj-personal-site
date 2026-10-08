@@ -1,0 +1,39 @@
+{
+  "slug": "22-meeting-notes-to-tasks",
+  "title": "Meeting ends. Tasks are already assigned.",
+  "kind": "carousel",
+  "date": "2026-10-05",
+  "series": "Automate This",
+  "episode": "03",
+  "pillar": "AI & automation",
+  "hook": "Meeting ends. Tasks are already assigned.",
+  "keyword": "TASKS",
+  "summary": "INSTAGRAM\nMeeting ends. Tasks are already assigned.",
+  "body": [
+    "INSTAGRAM\nMeeting ends. Tasks are already assigned.",
+    "Everyone agrees on actions, nobody writes them down, and next week it's the same meeting. So I let a workflow do it:\n1. Transcript lands from your meeting recorder\n2. AI pulls out owner, task, due date (and ignores \"we should probably…\")\n3. Tasks get created in Notion, Asana or Linear\n4. A summary goes to the team channel",
+    "n8n: https://n8n.io\nNotion: https://notion.so\nAsana: https://asana.com\nLinear: https://linear.app",
+    "Got a boring task? Comment it below and I might automate it in the next episode.\nSmall business? DM me AUDIT.",
+    "TIKTOK\nMeeting ends. Tasks are already assigned. Got a boring task? Comment it and I might automate it next.",
+    "CTA KEYWORD: none (original CTA kept: \"Comment your task\" + \"Small business? DM me AUDIT\")\nSERIES: Automate This · 03"
+  ],
+  "tags": [
+    "n8n",
+    "aiautomation",
+    "meetingnotes",
+    "productivity",
+    "aiagents"
+  ],
+  "links": {},
+  "slides": [
+    "/notes/22-meeting-notes-to-tasks/1.jpg",
+    "/notes/22-meeting-notes-to-tasks/2.jpg",
+    "/notes/22-meeting-notes-to-tasks/3.jpg",
+    "/notes/22-meeting-notes-to-tasks/4.jpg",
+    "/notes/22-meeting-notes-to-tasks/5.jpg",
+    "/notes/22-meeting-notes-to-tasks/6.jpg",
+    "/notes/22-meeting-notes-to-tasks/7.jpg"
+  ],
+  "cover": "/notes/22-meeting-notes-to-tasks/cover.jpg",
+  "style": "manrajtalks"
+}

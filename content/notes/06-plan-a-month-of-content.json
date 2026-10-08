@@ -1,0 +1,41 @@
+{
+  "slug": "06-plan-a-month-of-content",
+  "title": "Plan a month of content in one afternoon",
+  "kind": "carousel",
+  "date": "2026-10-05",
+  "series": "The Stack",
+  "episode": "27",
+  "pillar": "Claude & skills",
+  "hook": "Plan a month of content in one afternoon",
+  "keyword": "PLAN",
+  "summary": "53 carousels. Only 15 ideas. I stopped hunting for new ones.",
+  "body": [
+    "53 carousels. Only 15 ideas. I stopped hunting for new ones.",
+    "Once a month I pick one topic and give Claude my proof: the reel transcript, a few screenshots, numbers I can show. It turns that into 10 posts, two each as a how-to, a mistake, an opinion, a checklist and a story. Then I spread them over four weeks in my Notion content calendar.",
+    "Every post gets its own numbered folder, so I can see which ideas keep paying off.",
+    "The prompt is on slide 8. Save it for your next planning day.",
+    "Tools:\nClaude: https://claude.ai\nNotion: https://www.notion.com",
+    "Comment \"PLAN\" and I'll DM you the full prompt and my four-week calendar layout."
+  ],
+  "tags": [
+    "contentplanning",
+    "claudeai",
+    "contentcalendar",
+    "contentstrategy",
+    "aitools"
+  ],
+  "links": {},
+  "slides": [
+    "/notes/06-plan-a-month-of-content/1.jpg",
+    "/notes/06-plan-a-month-of-content/2.jpg",
+    "/notes/06-plan-a-month-of-content/3.jpg",
+    "/notes/06-plan-a-month-of-content/4.jpg",
+    "/notes/06-plan-a-month-of-content/5.jpg",
+    "/notes/06-plan-a-month-of-content/6.jpg",
+    "/notes/06-plan-a-month-of-content/7.jpg",
+    "/notes/06-plan-a-month-of-content/8.jpg",
+    "/notes/06-plan-a-month-of-content/9.jpg"
+  ],
+  "cover": "/notes/06-plan-a-month-of-content/cover.jpg",
+  "style": "manrajtalks"
+}

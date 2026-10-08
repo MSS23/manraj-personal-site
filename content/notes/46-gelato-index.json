@@ -1,0 +1,38 @@
+{
+  "slug": "46-gelato-index",
+  "title": "Rating London gelato like a data scientist",
+  "kind": "carousel",
+  "date": "2026-10-05",
+  "series": "Gelato Index",
+  "episode": "launch episode (no number on the original)",
+  "pillar": "Life",
+  "hook": "Rating London gelato like a data scientist",
+  "keyword": "GELATO",
+  "summary": "INSTAGRAM\nEvery \"best gelato in London\" list is vibes. So I'm scoring them properly.",
+  "body": [
+    "INSTAGRAM\nEvery \"best gelato in London\" list is vibes. So I'm scoring them properly.",
+    "The Gelato Index starts now.\nFour scores, weighted: texture 30%, flavour 30%, value 20%, vibe 20%.\nSame test flavour everywhere (pistachio), plus one wildcard. Scores out of 10, then weighted.\nAI picks where I go next and has to argue for it. I check whether it was right.",
+    "Where should I go first? Comment your favourite London gelato spot. Top comment gets scored first.\nFollow for the leaderboard.",
+    "TIKTOK\nRating London gelato like a data scientist. Comment a spot, top comment gets scored first.",
+    "CTA: comment a spot (no DM keyword; the comments pick the next shop)\nSERIES: Gelato Index · launch episode (no number on the original)"
+  ],
+  "tags": [
+    "londonfood",
+    "gelato",
+    "londongelato",
+    "ai",
+    "datascience"
+  ],
+  "links": {},
+  "slides": [
+    "/notes/46-gelato-index/1.jpg",
+    "/notes/46-gelato-index/2.jpg",
+    "/notes/46-gelato-index/3.jpg",
+    "/notes/46-gelato-index/4.jpg",
+    "/notes/46-gelato-index/5.jpg",
+    "/notes/46-gelato-index/6.jpg",
+    "/notes/46-gelato-index/7.jpg"
+  ],
+  "cover": "/notes/46-gelato-index/cover.jpg",
+  "style": "manrajtalks"
+}

@@ -1,0 +1,39 @@
+{
+  "slug": "21-enquiry-replies",
+  "title": "Reply to every enquiry in minutes",
+  "kind": "carousel",
+  "date": "2026-10-05",
+  "series": "Automate This",
+  "episode": "02",
+  "pillar": "AI & automation",
+  "hook": "Reply to every enquiry in minutes",
+  "keyword": "REPLY",
+  "summary": "Automate This, ep. 2: reply to every enquiry in minutes. AI drafts it, you approve it.",
+  "body": [
+    "Automate This, ep. 2: reply to every enquiry in minutes. AI drafts it, you approve it.",
+    "An enquiry lands at 9pm. You see it two days later. They've already booked someone else.",
+    "The fix: n8n catches the form or email, AI drafts a reply from your real prices, FAQs and past replies, and you approve it on your phone in one tap. Nothing customer-facing goes out without you.",
+    "Slide 6 has the 4-step setup. Save it for the afternoon you build it.",
+    "Tools:\nn8n: https://n8n.io\nTelegram: https://telegram.org\nSlack: https://slack.com",
+    "Got a boring task? Comment it below and I might automate it in the next episode.\nSmall business? DM me \"AUDIT\"."
+  ],
+  "tags": [
+    "n8n",
+    "aiautomation",
+    "smallbusiness",
+    "aiagents",
+    "automation"
+  ],
+  "links": {},
+  "slides": [
+    "/notes/21-enquiry-replies/1.jpg",
+    "/notes/21-enquiry-replies/2.jpg",
+    "/notes/21-enquiry-replies/3.jpg",
+    "/notes/21-enquiry-replies/4.jpg",
+    "/notes/21-enquiry-replies/5.jpg",
+    "/notes/21-enquiry-replies/6.jpg",
+    "/notes/21-enquiry-replies/7.jpg"
+  ],
+  "cover": "/notes/21-enquiry-replies/cover.jpg",
+  "style": "manrajtalks"
+}

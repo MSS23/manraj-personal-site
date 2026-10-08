@@ -1,0 +1,40 @@
+{
+  "slug": "24-n8n-vs-zapier-vs-make",
+  "title": "n8n vs Zapier vs Make",
+  "kind": "carousel",
+  "date": "2026-10-05",
+  "series": "The Stack",
+  "episode": "episode number not set (Notion not checked; the original had no series tag)",
+  "pillar": "AI & automation",
+  "hook": "n8n vs Zapier vs Make",
+  "keyword": "N8N",
+  "summary": "INSTAGRAM\nn8n vs Zapier vs Make: which one should you actually use? An honest take from someone who builds automations for work.",
+  "body": [
+    "INSTAGRAM\nn8n vs Zapier vs Make: which one should you actually use? An honest take from someone who builds automations for work.",
+    "Zapier: best if you just want it to work. Make: best for visual, multi-step flows. n8n: best for builders and AI workflows (what I use).\nPick by who maintains it. And the tool matters less than the process: map the task on paper, automate one small part, switch tools later if needed.",
+    "Zapier: https://zapier.com\nMake: https://www.make.com\nn8n: https://n8n.io",
+    "Which do you use? Tell me in the comments and why.\nFree weekly guide: Life With AI, link in bio.",
+    "TIKTOK\nn8n vs Zapier vs Make: which should you use? Which do you use? Tell me in the comments and why.",
+    "CTA KEYWORD: none (comment question \"Which do you use?\" + follow, kept from the original)\nSERIES: The Stack · episode number not set (Notion not checked; the original had no series tag)"
+  ],
+  "tags": [
+    "n8n",
+    "zapier",
+    "makecom",
+    "aiautomation",
+    "workflowautomation",
+    "automation"
+  ],
+  "links": {},
+  "slides": [
+    "/notes/24-n8n-vs-zapier-vs-make/1.jpg",
+    "/notes/24-n8n-vs-zapier-vs-make/2.jpg",
+    "/notes/24-n8n-vs-zapier-vs-make/3.jpg",
+    "/notes/24-n8n-vs-zapier-vs-make/4.jpg",
+    "/notes/24-n8n-vs-zapier-vs-make/5.jpg",
+    "/notes/24-n8n-vs-zapier-vs-make/6.jpg",
+    "/notes/24-n8n-vs-zapier-vs-make/7.jpg"
+  ],
+  "cover": "/notes/24-n8n-vs-zapier-vs-make/cover.jpg",
+  "style": "manrajtalks"
+}

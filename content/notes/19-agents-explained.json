@@ -1,0 +1,38 @@
+{
+  "slug": "19-agents-explained",
+  "title": "AI agents, explained without the hype",
+  "kind": "carousel",
+  "date": "2026-10-05",
+  "series": "Agent Notes",
+  "episode": "(no episode on the original 19; check Notion before posting)",
+  "pillar": "AI & automation",
+  "hook": "AI agents, explained without the hype",
+  "keyword": "AGENT",
+  "summary": "Most tasks don't need an AI agent. Here's how to tell.",
+  "body": [
+    "Most tasks don't need an AI agent. Here's how to tell.",
+    "Chatbot, workflow, agent: three levels, and most people jump straight to the third.\nA chatbot answers. A workflow follows your steps. An agent chooses its own.\nIf you can draw the steps on a napkin, build the workflow first.",
+    "Slide 6 is the order I build in. Save it.",
+    "Questions about agents? Drop them below. I build these for a living, so I'll answer the good ones in a video.",
+    "Free weekly guide: Life With AI, link in bio."
+  ],
+  "tags": [
+    "aiagents",
+    "aiautomation",
+    "n8n",
+    "workflowautomation",
+    "aiexplained"
+  ],
+  "links": {},
+  "slides": [
+    "/notes/19-agents-explained/1.jpg",
+    "/notes/19-agents-explained/2.jpg",
+    "/notes/19-agents-explained/3.jpg",
+    "/notes/19-agents-explained/4.jpg",
+    "/notes/19-agents-explained/5.jpg",
+    "/notes/19-agents-explained/6.jpg",
+    "/notes/19-agents-explained/7.jpg"
+  ],
+  "cover": "/notes/19-agents-explained/cover.jpg",
+  "style": "manrajtalks"
+}

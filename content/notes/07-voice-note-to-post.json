@@ -1,0 +1,38 @@
+{
+  "slug": "07-voice-note-to-post",
+  "title": "Talk for 3 minutes, get a finished post",
+  "kind": "carousel",
+  "date": "2026-10-05",
+  "series": "Claude Skills Week",
+  "episode": "episode not numbered in the source",
+  "pillar": "Claude & skills",
+  "hook": "Talk for 3 minutes, get a finished post",
+  "keyword": "VOICE",
+  "summary": "INSTAGRAM\nTalk for 3 minutes, get a finished post.",
+  "body": [
+    "INSTAGRAM\nTalk for 3 minutes, get a finished post.",
+    "My voice-to-post workflow with Claude, for when I can't face a blank page.\nRecord one idea as a voice note, paste the transcript into Claude, and tell it to keep your wording.\nThe prompt is on slide 4. Save this one.",
+    "Tools: Claude (https://claude.ai) + any dictation app or voice memo.\nFree weekly guide: Life With AI · link in bio. Follow @manrajtalks for practical Claude tips you can use the same day.",
+    "TIKTOK\nTalk for 3 minutes, get a finished post. The Claude prompt is on slide 4. Save this one.",
+    "CTA KEYWORD: none (source CTA kept as is: \"Save this one\" + follow + free weekly guide link in bio)\nSERIES: Claude Skills Week · episode not numbered in the source"
+  ],
+  "tags": [
+    "claudeai",
+    "aitools",
+    "contentcreation",
+    "voicenotes",
+    "aiworkflow"
+  ],
+  "links": {},
+  "slides": [
+    "/notes/07-voice-note-to-post/1.jpg",
+    "/notes/07-voice-note-to-post/2.jpg",
+    "/notes/07-voice-note-to-post/3.jpg",
+    "/notes/07-voice-note-to-post/4.jpg",
+    "/notes/07-voice-note-to-post/5.jpg",
+    "/notes/07-voice-note-to-post/6.jpg",
+    "/notes/07-voice-note-to-post/7.jpg"
+  ],
+  "cover": "/notes/07-voice-note-to-post/cover.jpg",
+  "style": "manrajtalks"
+}

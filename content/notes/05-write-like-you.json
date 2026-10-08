@@ -1,0 +1,40 @@
+{
+  "slug": "05-write-like-you",
+  "title": "Make Claude write like you",
+  "kind": "carousel",
+  "date": "2026-10-05",
+  "series": "Claude Skills Week",
+  "episode": "05",
+  "pillar": "Claude & skills",
+  "hook": "Make Claude write like you",
+  "keyword": "VOICE",
+  "summary": "INSTAGRAM\nHow to make Claude write like you, not like the internet.",
+  "body": [
+    "INSTAGRAM\nHow to make Claude write like you, not like the internet.",
+    "AI writing sounds like everyone because it's averaging the whole internet. Give it you instead:\n1. Feed it your 3 best posts and ask for your style as rules\n2. Turn the rules into a style guide (add your banned words)\n3. Use it every time, then do one human pass",
+    "Claude: https://claude.ai",
+    "Save this one. Follow @manrajtalks for practical Claude tips you can use the same day.\nFree weekly guide: Life With AI · link in bio",
+    "TIKTOK\nHow to make Claude write like you, not like the internet. Save this one for your next post.",
+    "CTA KEYWORD: none (original CTA kept: \"Save this one\" + follow + free weekly guide link in bio)\nSERIES: Claude Skills Week · 05"
+  ],
+  "tags": [
+    "claudeai",
+    "aiwriting",
+    "contentcreation",
+    "chatgptprompts",
+    "aitools",
+    "contentcreator"
+  ],
+  "links": {},
+  "slides": [
+    "/notes/05-write-like-you/1.jpg",
+    "/notes/05-write-like-you/2.jpg",
+    "/notes/05-write-like-you/3.jpg",
+    "/notes/05-write-like-you/4.jpg",
+    "/notes/05-write-like-you/5.jpg",
+    "/notes/05-write-like-you/6.jpg",
+    "/notes/05-write-like-you/7.jpg"
+  ],
+  "cover": "/notes/05-write-like-you/cover.jpg",
+  "style": "manrajtalks"
+}

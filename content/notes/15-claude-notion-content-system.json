@@ -1,0 +1,40 @@
+{
+  "slug": "15-claude-notion-content-system",
+  "title": "My content system: Notion + Claude",
+  "kind": "carousel",
+  "date": "2026-10-05",
+  "series": "Building in public (original carousel 15 had no series episode; tag kept as \"BUILDING IN PUBLIC\", no number)",
+  "episode": "16",
+  "pillar": "Claude & skills",
+  "hook": "My content system: Notion + Claude",
+  "keyword": "STUDIO",
+  "summary": "INSTAGRAM\nMy content system: a Notion board from idea to posted, with Claude handling script review and stats.",
+  "body": [
+    "INSTAGRAM\nMy content system: a Notion board from idea to posted, with Claude handling script review and stats.",
+    "Every video is one card that moves: idea, scripting, filming, editing, scheduled, posted.\nClaude does the boring parts: bulk script review, pulling my Metricool numbers into Notion, spotting which hooks perform.\nEvery post gets a score (Hit 700+, Solid 400-699, Low under 400). Build updates with the app on screen average about 700 views. Advice clips with no product: about 315.",
+    "Tools: Notion https://www.notion.so · Claude https://claude.ai · Metricool https://metricool.com",
+    "Comment NOTION and I'll share how my board is set up.",
+    "TIKTOK\nMy content system: Notion + Claude. App on screen gets ~700 views, advice clips ~315. Comment NOTION and I'll share how my board is set up.",
+    "CTA KEYWORD: NOTION\nSERIES: Building in public (original carousel 15 had no series episode; tag kept as \"BUILDING IN PUBLIC\", no number)"
+  ],
+  "tags": [
+    "notion",
+    "claudeai",
+    "contentsystem",
+    "aitools",
+    "buildinpublic",
+    "contentcreator"
+  ],
+  "links": {},
+  "slides": [
+    "/notes/15-claude-notion-content-system/1.jpg",
+    "/notes/15-claude-notion-content-system/2.jpg",
+    "/notes/15-claude-notion-content-system/3.jpg",
+    "/notes/15-claude-notion-content-system/4.jpg",
+    "/notes/15-claude-notion-content-system/5.jpg",
+    "/notes/15-claude-notion-content-system/6.jpg",
+    "/notes/15-claude-notion-content-system/7.jpg"
+  ],
+  "cover": "/notes/15-claude-notion-content-system/cover.jpg",
+  "style": "manrajtalks"
+}

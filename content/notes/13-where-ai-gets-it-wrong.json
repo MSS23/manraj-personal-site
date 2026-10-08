@@ -1,0 +1,38 @@
+{
+  "slug": "13-where-ai-gets-it-wrong",
+  "title": "4 ways AI gets things wrong",
+  "kind": "carousel",
+  "date": "2026-10-05",
+  "series": "Claude Skills Week (no episode number on the original)",
+  "episode": "14",
+  "pillar": "Claude & skills",
+  "hook": "4 ways AI gets things wrong",
+  "keyword": "CHECK",
+  "summary": "4 ways AI gets things wrong, from someone who builds with it every day, and how to check each one.",
+  "body": [
+    "4 ways AI gets things wrong, from someone who builds with it every day, and how to check each one.",
+    "Confident wrong facts. Made-up sources. Maths in its head. Out-of-date info.",
+    "Slide 2 is the one question I ask before I trust an answer. Slide 6 is the rule I work by.",
+    "Claude: https://claude.ai",
+    "Save this one. Follow @manrajtalks for practical Claude tips you can use the same day.\nFree weekly guide: Life With AI, link in bio."
+  ],
+  "tags": [
+    "claudeai",
+    "aitips",
+    "chatgpt",
+    "aihallucinations",
+    "learnai"
+  ],
+  "links": {},
+  "slides": [
+    "/notes/13-where-ai-gets-it-wrong/1.jpg",
+    "/notes/13-where-ai-gets-it-wrong/2.jpg",
+    "/notes/13-where-ai-gets-it-wrong/3.jpg",
+    "/notes/13-where-ai-gets-it-wrong/4.jpg",
+    "/notes/13-where-ai-gets-it-wrong/5.jpg",
+    "/notes/13-where-ai-gets-it-wrong/6.jpg",
+    "/notes/13-where-ai-gets-it-wrong/7.jpg"
+  ],
+  "cover": "/notes/13-where-ai-gets-it-wrong/cover.jpg",
+  "style": "manrajtalks"
+}

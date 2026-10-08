@@ -1,0 +1,40 @@
+{
+  "slug": "11-learn-anything-faster",
+  "title": "Use Claude as a tutor",
+  "kind": "carousel",
+  "date": "2026-10-05",
+  "series": "The Stack",
+  "episode": "12",
+  "pillar": "Claude & skills",
+  "hook": "Use Claude as a tutor",
+  "keyword": "TUTOR",
+  "summary": "INSTAGRAM\nUse Claude as a tutor, not an answer machine. The prompt that makes it teach instead of tell.",
+  "body": [
+    "INSTAGRAM\nUse Claude as a tutor, not an answer machine. The prompt that makes it teach instead of tell.",
+    "Getting answers is not learning. If Claude does the thinking, you remember nothing by tomorrow.\nSlide 3 is the tutor prompt. Fill in your topic and what you already know.\nSlide 6 is a 7-day plan: one topic, one week.",
+    "Claude: https://claude.ai",
+    "Save this one, and follow for practical Claude tips you can use the same day.\nFree weekly guide: Life With AI · link in bio",
+    "TIKTOK\nUse Claude as a tutor, not an answer machine. The tutor prompt is on slide 3. Save it for later.",
+    "CTA KEYWORD\nNone. The original CTA is \"Save this one\" + follow + Life With AI guide in bio, kept as is.",
+    "SERIES\nClaude Skills Week (no episode number on the original; none added)"
+  ],
+  "tags": [
+    "claudeai",
+    "learnwithai",
+    "aitools",
+    "studytips",
+    "anthropic"
+  ],
+  "links": {},
+  "slides": [
+    "/notes/11-learn-anything-faster/1.jpg",
+    "/notes/11-learn-anything-faster/2.jpg",
+    "/notes/11-learn-anything-faster/3.jpg",
+    "/notes/11-learn-anything-faster/4.jpg",
+    "/notes/11-learn-anything-faster/5.jpg",
+    "/notes/11-learn-anything-faster/6.jpg",
+    "/notes/11-learn-anything-faster/7.jpg"
+  ],
+  "cover": "/notes/11-learn-anything-faster/cover.jpg",
+  "style": "manrajtalks"
+}

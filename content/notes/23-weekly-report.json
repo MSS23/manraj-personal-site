@@ -1,0 +1,39 @@
+{
+  "slug": "23-weekly-report",
+  "title": "The weekly report that writes itself",
+  "kind": "carousel",
+  "date": "2026-10-05",
+  "series": "Automate This",
+  "episode": "Ep. 4",
+  "pillar": "AI & automation",
+  "hook": "The weekly report that writes itself",
+  "keyword": "REPORT",
+  "summary": "INSTAGRAM\nThe weekly report that writes itself. Every Monday at 8am, in your inbox.",
+  "body": [
+    "INSTAGRAM\nThe weekly report that writes itself. Every Monday at 8am, in your inbox.",
+    "Automate This, ep. 4.\nSchedule → pull the numbers → AI writes the summary → email to the team.\nAsk the AI step for \"so what\", not a recap. Numbers come from code, words from AI.\nStart with the one report you hate most.",
+    "n8n: https://n8n.io",
+    "Got a boring task? Comment it below and I might automate it in the next episode.\nSmall business? DM me AUDIT.",
+    "TIKTOK\nThe weekly report that writes itself, every Monday at 8am. Got a boring task? Comment it and I might automate it next.",
+    "CTA KEYWORD: none (comment your task); DM keyword AUDIT\nSERIES: Automate This · Ep. 4"
+  ],
+  "tags": [
+    "automation",
+    "n8n",
+    "ai",
+    "smallbusiness",
+    "manrajtalks"
+  ],
+  "links": {},
+  "slides": [
+    "/notes/23-weekly-report/1.jpg",
+    "/notes/23-weekly-report/2.jpg",
+    "/notes/23-weekly-report/3.jpg",
+    "/notes/23-weekly-report/4.jpg",
+    "/notes/23-weekly-report/5.jpg",
+    "/notes/23-weekly-report/6.jpg",
+    "/notes/23-weekly-report/7.jpg"
+  ],
+  "cover": "/notes/23-weekly-report/cover.jpg",
+  "style": "manrajtalks"
+}

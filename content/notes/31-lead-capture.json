@@ -1,0 +1,39 @@
+{
+  "slug": "31-lead-capture",
+  "title": "Never lose a lead in your inbox again",
+  "kind": "carousel",
+  "date": "2026-10-05",
+  "series": "Automate This",
+  "episode": "07",
+  "pillar": "AI & automation",
+  "hook": "Never lose a lead in your inbox again",
+  "keyword": "LEADS",
+  "summary": "Automate This, ep. 7: never lose a lead in your inbox again.",
+  "body": [
+    "Automate This, ep. 7: never lose a lead in your inbox again.",
+    "Someone fills in your form. It sits in a busy inbox. You see it tomorrow and they've moved on.",
+    "The fix: n8n catches the form, AI scores the lead 1-5 with a one-line reason, the CRM record is created with notes, and anything 4+ pings you on your phone. The scoring prompt is on slide 4.",
+    "Pair it with episode 2 (auto-drafted replies) and you're answering in minutes. Slide 6 has the 4-step setup. Save it for the afternoon you build it.",
+    "Tools:\nn8n: https://n8n.io\nTypeform: https://www.typeform.com\nNotion: https://www.notion.so\nHubSpot: https://www.hubspot.com\nAirtable: https://www.airtable.com\nSlack: https://slack.com\nTelegram: https://telegram.org",
+    "Got a boring task? Comment it below and I might automate it in the next episode.\nSmall business? DM me \"AUDIT\"."
+  ],
+  "tags": [
+    "n8n",
+    "aiautomation",
+    "leadgeneration",
+    "smallbusiness",
+    "aiagents"
+  ],
+  "links": {},
+  "slides": [
+    "/notes/31-lead-capture/1.jpg",
+    "/notes/31-lead-capture/2.jpg",
+    "/notes/31-lead-capture/3.jpg",
+    "/notes/31-lead-capture/4.jpg",
+    "/notes/31-lead-capture/5.jpg",
+    "/notes/31-lead-capture/6.jpg",
+    "/notes/31-lead-capture/7.jpg"
+  ],
+  "cover": "/notes/31-lead-capture/cover.jpg",
+  "style": "softgirl"
+}

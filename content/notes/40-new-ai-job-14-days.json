@@ -1,0 +1,38 @@
+{
+  "slug": "40-new-ai-job-14-days",
+  "title": "New AI job, never used LangGraph",
+  "kind": "carousel",
+  "date": "2026-10-05",
+  "series": "14 Days to LangGraph",
+  "episode": "01   (Day 1)",
+  "pillar": "Building in public",
+  "hook": "New AI job, never used LangGraph",
+  "keyword": "GRAPH",
+  "summary": "I start a new AI job in 14 days and I've never used LangGraph. Learning it in public, every day.",
+  "body": [
+    "I start a new AI job in 14 days and I've never used LangGraph. Learning it in public, every day.",
+    "I've built agents before with other tools. This team uses LangChain and LangGraph. So instead of panicking, a plan:\nWeek 1: fundamentals. Graphs, nodes, state.\nWeek 2: build one real agent end to end in Cursor, then break it on purpose.",
+    "Slide 5 is the exact prompt I'm using to make Claude my tutor. Save it.",
+    "Tools:\nLangGraph: https://www.langchain.com/langgraph\nLangChain: https://www.langchain.com\nCursor: https://cursor.com\nClaude: https://claude.ai",
+    "Follow @manrajtalks for daily updates. Day 2 drops tomorrow.\nFree weekly guide: Life With AI, link in bio."
+  ],
+  "tags": [
+    "langgraph",
+    "aiagents",
+    "learninpublic",
+    "langchain",
+    "aidevelopers"
+  ],
+  "links": {},
+  "slides": [
+    "/notes/40-new-ai-job-14-days/1.jpg",
+    "/notes/40-new-ai-job-14-days/2.jpg",
+    "/notes/40-new-ai-job-14-days/3.jpg",
+    "/notes/40-new-ai-job-14-days/4.jpg",
+    "/notes/40-new-ai-job-14-days/5.jpg",
+    "/notes/40-new-ai-job-14-days/6.jpg",
+    "/notes/40-new-ai-job-14-days/7.jpg"
+  ],
+  "cover": "/notes/40-new-ai-job-14-days/cover.jpg",
+  "style": "manrajtalks"
+}

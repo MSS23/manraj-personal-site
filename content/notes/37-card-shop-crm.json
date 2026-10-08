@@ -1,0 +1,40 @@
+{
+  "slug": "37-card-shop-crm",
+  "title": "Building a CRM for Pokémon card shops",
+  "kind": "carousel",
+  "date": "2026-10-05",
+  "series": "Building in public (no episode number on the original)",
+  "episode": "04",
+  "pillar": "Building in public",
+  "hook": "Building a CRM for Pokémon card shops",
+  "keyword": "CARDS",
+  "summary": "INSTAGRAM\nPokémon card shops run on memory. So I'm building them a CRM.",
+  "body": [
+    "INSTAGRAM\nPokémon card shops run on memory. So I'm building them a CRM.",
+    "It started with a conversation in a local shop. Prices move daily, deals happen across WhatsApp and Discord, and most shops don't track stock properly.",
+    "The owner asked for three things: scan a card and see its price, match new stock to want lists, and track which contacts are hot, cold or reliable.",
+    "How I'm building it: talk to a real shop first, write the spec as markdown, then build with Claude Code (https://claude.com/claude-code). Demo first, then production.",
+    "Follow @manrajtalks for weekly build logs with honest numbers, wins and things that broke. Free weekly guide, Life With AI, is in my bio.",
+    "TIKTOK\nPokémon card shops run on memory. So I'm building them a CRM. Follow for the weekly build logs. #pokemontcg #buildinpublic #claudecode #aidevelopment",
+    "CTA KEYWORD: none (follow CTA, kept from the original: \"Follow the build\" + Life With AI guide, link in bio)\nSERIES: Building in public (no episode number on the original)"
+  ],
+  "tags": [
+    "pokemontcg",
+    "buildinpublic",
+    "claudecode",
+    "aidevelopment",
+    "smallbusinesscrm"
+  ],
+  "links": {},
+  "slides": [
+    "/notes/37-card-shop-crm/1.jpg",
+    "/notes/37-card-shop-crm/2.jpg",
+    "/notes/37-card-shop-crm/3.jpg",
+    "/notes/37-card-shop-crm/4.jpg",
+    "/notes/37-card-shop-crm/5.jpg",
+    "/notes/37-card-shop-crm/6.jpg",
+    "/notes/37-card-shop-crm/7.jpg"
+  ],
+  "cover": "/notes/37-card-shop-crm/cover.jpg",
+  "style": "manrajtalks"
+}

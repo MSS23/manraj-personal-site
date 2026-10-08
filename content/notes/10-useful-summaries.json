@@ -1,0 +1,38 @@
+{
+  "slug": "10-useful-summaries",
+  "title": "Stop asking AI to summarise this",
+  "kind": "carousel",
+  "date": "2026-10-05",
+  "series": "Claude Skills Week (no episode number on the original)",
+  "episode": "11",
+  "pillar": "Claude & skills",
+  "hook": "Stop asking AI to summarise this",
+  "keyword": "ACTIONS",
+  "summary": "INSTAGRAM\nStop asking AI to summarise. Ask for decisions, actions, open questions and risks instead.",
+  "body": [
+    "INSTAGRAM\nStop asking AI to summarise. Ask for decisions, actions, open questions and risks instead.",
+    "A summary is just a shorter wall of text. These two prompts get you what was decided, who does what by when, and what's still unclear.\nWorks in Claude (claude.ai) or ChatGPT (chatgpt.com) on email threads, meeting transcripts, Slack threads, reports and contracts.",
+    "Save this one, and follow @manrajtalks for practical Claude tips you can use the same day.\nFree weekly guide: Life With AI · link in bio",
+    "TIKTOK\nStop asking AI to \"summarise this\". Ask for decisions, actions and questions instead. Save this one.",
+    "CTA KEYWORD: none (the original CTA is Save this one + Follow @manrajtalks + Life With AI guide link in bio; kept as is)\nSERIES: Claude Skills Week (no episode number on the original)"
+  ],
+  "tags": [
+    "claudeai",
+    "aiprompts",
+    "aiproductivity",
+    "promptengineering",
+    "aitools"
+  ],
+  "links": {},
+  "slides": [
+    "/notes/10-useful-summaries/1.jpg",
+    "/notes/10-useful-summaries/2.jpg",
+    "/notes/10-useful-summaries/3.jpg",
+    "/notes/10-useful-summaries/4.jpg",
+    "/notes/10-useful-summaries/5.jpg",
+    "/notes/10-useful-summaries/6.jpg",
+    "/notes/10-useful-summaries/7.jpg"
+  ],
+  "cover": "/notes/10-useful-summaries/cover.jpg",
+  "style": "manrajtalks"
+}

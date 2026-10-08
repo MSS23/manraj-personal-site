@@ -1,0 +1,39 @@
+{
+  "slug": "49-what-ai-devs-do",
+  "title": "What an AI developer actually does all day",
+  "kind": "carousel",
+  "date": "2026-10-05",
+  "series": "Consultant to Builder",
+  "episode": "04",
+  "pillar": "Life",
+  "hook": "What an AI developer actually does all day",
+  "keyword": "DEV",
+  "summary": "INSTAGRAM\nWhat an AI developer actually does all day: less sci-fi, more plumbing.",
+  "body": [
+    "INSTAGRAM\nWhat an AI developer actually does all day: less sci-fi, more plumbing.",
+    "Most of us don't train models. We build pipelines, write and test prompts, run evals and talk to the people who'll use it.\nThe part nobody mentions: checking the output. Getting AI to work once is easy. Getting it to work reliably is the job.",
+    "Questions about the job? Ask in the comments. I'll answer the best ones in a video.\nFree weekly guide: Life With AI, link in bio.",
+    "TIKTOK\nWhat an AI developer actually does all day. Less sci-fi, more plumbing. Questions about the job? Ask below, I'll answer the best ones in a video.",
+    "CTA KEYWORD\nnone (open \"ask in the comments\" CTA, kept from the original)",
+    "SERIES\nDay in the life · 49 (restyle of 49-what-ai-devs-do, style manrajtalks)"
+  ],
+  "tags": [
+    "techcareers",
+    "aideveloper",
+    "softwareengineer",
+    "ai",
+    "manrajtalks"
+  ],
+  "links": {},
+  "slides": [
+    "/notes/49-what-ai-devs-do/1.jpg",
+    "/notes/49-what-ai-devs-do/2.jpg",
+    "/notes/49-what-ai-devs-do/3.jpg",
+    "/notes/49-what-ai-devs-do/4.jpg",
+    "/notes/49-what-ai-devs-do/5.jpg",
+    "/notes/49-what-ai-devs-do/6.jpg",
+    "/notes/49-what-ai-devs-do/7.jpg"
+  ],
+  "cover": "/notes/49-what-ai-devs-do/cover.jpg",
+  "style": "manrajtalks"
+}
