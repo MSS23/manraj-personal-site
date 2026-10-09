@@ -49,6 +49,13 @@
 .note-card:hover .note-card-media img { transform: scale(1.03); }
 .note-card-reel .note-card-media { aspect-ratio: 3 / 4; } /* reel covers are 3:4, keep the on-screen text */
 .note-card-reel .note-card-media img { object-position: center; }
+/* Reel playing inside a card: the embed fills the media slot, no frame of its own */
+.note-card-reel .note-card-media:has(iframe) { aspect-ratio: 9 / 16; }
+.note-card .reel-frame { max-width: none; gap: 0; height: 100%; }
+.note-card .reel-frame iframe, .note-card .reel-poster { height: 100%; aspect-ratio: auto; border: 0; border-radius: 0; box-shadow: none; }
+.note-card .reel-play { width: 52px; height: 52px; }
+.note-card .reel-open { display: none; }
+.note-card-body { text-decoration: none; color: inherit; }
 .note-card-blank {
   width: 100%; height: 100%; display: grid; place-items: center;
   font-family: var(--font-fraunces), Georgia, serif; font-style: italic; font-size: 64px; color: var(--border-strong);
