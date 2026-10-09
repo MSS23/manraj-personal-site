@@ -7,6 +7,7 @@ import { NoteCard } from "@/components/NoteCard";
 import { ProjectEntry } from "@/components/ProjectEntry";
 import { bucketOrder, buckets, projects } from "@/data/projects";
 import { describeNotes, getNotes } from "@/lib/notes";
+import { liveStats, withLive } from "@/lib/live";
 
 export const metadata: Metadata = {
   title: "Portfolio · Manraj Sidhu",
@@ -21,7 +22,8 @@ export const metadata: Metadata = {
   },
 };
 
-export default function PortfolioPage() {
+export default async function PortfolioPage() {
+  const live = await liveStats();
   const notes = getNotes();
   const latest = notes.slice(0, 6);
   return (
@@ -65,7 +67,7 @@ export default function PortfolioPage() {
                 </header>
                 <ol className="works">
                   {items.map((p) => (
-                    <ProjectEntry key={p.id} project={p} />
+                    <ProjectEntry key={p.id} project={withLive(p, live)} />
                   ))}
                 </ol>
               </div>

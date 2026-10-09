@@ -29,7 +29,7 @@ export type Project = {
   bucket: BucketId;
 };
 
-export type BucketId = "pokemon" | "workflows" | "brand";
+export type BucketId = "pokemon" | "products" | "workflows" | "brand";
 
 export const buckets: Record<BucketId, { index: string; title: string; lede: string; count: string }> = {
   pokemon: {
@@ -37,17 +37,24 @@ export const buckets: Record<BucketId, { index: string; title: string; lede: str
     title: "Pokémon, made smarter",
     lede:
       "I compete in Pokémon VGC. The format is full of repetitive analysis, so I built the tools I wished existed: damage maths against the meta, Japanese-to-English translation of the deepest write-ups, and a CRM for traders working the floor at trade nights.",
-    count: "3 projects",
+    count: "5 projects",
+  },
+  products: {
+    index: "02",
+    title: "Products",
+    lede:
+      "Apps I run as a business under Sidhu Studios Ltd. Real users, real support inbox, real compliance paperwork.",
+    count: "1 project",
   },
   workflows: {
-    index: "02",
+    index: "03",
     title: "AI-augmented workflows",
     lede:
       "Scheduled agents and tools that hand the boring half of my work to a machine. Personal infrastructure I run on my own projects.",
-    count: "3 projects",
+    count: "5 projects",
   },
   brand: {
-    index: "03",
+    index: "04",
     title: "Brand & web",
     lede:
       "Static-site work for places I love. Built without a framework so it stays light and loads fast.",
@@ -55,7 +62,7 @@ export const buckets: Record<BucketId, { index: string; title: string; lede: str
   },
 };
 
-export const bucketOrder: BucketId[] = ["pokemon", "workflows", "brand"];
+export const bucketOrder: BucketId[] = ["pokemon", "products", "workflows", "brand"];
 
 const linkHtml = (href: string, label: string) =>
   `<a href="${href}" target="_blank" rel="noopener noreferrer">${label}&nbsp;↗</a>`;
@@ -68,7 +75,7 @@ export const projects: Project[] = [
     title: "VGC Team Report",
     titleHref: "https://pokemonvgcteamreport.com/",
     tag: "Live · ~80 users",
-    result: "~80 players using it, and the report I ran my own team on at EUIC 2026.",
+    result: "{{vgcUsers}} players signed up, {{vgcActive30d}} active this month, and the report I ran my own team on at EUIC 2026.",
     description:
       "A team-building site for competitive Pokémon VGC players. Paste any Showdown team, get a full report: damage maths against the meta, speed analysis, threat coverage, win conditions. Started as a spreadsheet I kept rewriting for myself, then grew into something other players started using.",
     lead: {
@@ -110,7 +117,7 @@ export const projects: Project[] = [
       { kind: "h4", text: "How it grew" },
       {
         kind: "p",
-        html: "Zero paid marketing. Most of the early traction came from posting my own teams on Reddit. Where most players share a Showdown paste, I'd link a full team report instead, so anyone reading could see the damage maths, speed tiers, and threat coverage I was building around. The reports did the selling; word-of-mouth did the rest. About 80 active players, growing steadily, and the kind of feedback I want: \"this saved me an hour of maths before locals.\"",
+        html: "Zero paid marketing. Most of the early traction came from posting my own teams on Reddit. Where most players share a Showdown paste, I'd link a full team report instead, so anyone reading could see the damage maths, speed tiers, and threat coverage I was building around. The reports did the selling; word-of-mouth did the rest. {{vgcUsers}} players signed up so far ({{vgcActive30d}} active in the last 30 days, pulled live from Clerk), and the kind of feedback I want: \"this saved me an hour of maths before locals.\"",
       },
       { kind: "h4", text: "Inside a team report" },
       {
@@ -569,6 +576,161 @@ export const projects: Project[] = [
       {
         kind: "p",
         html: "Live and clickable as a personal demo, hosted on a generic Vercel subdomain. It does not sit on any Oddono's domain or under any branding agreement. The form fields don't submit anywhere, the imagery is placeholder, and there is no \"production\" version because Oddono's hasn't engaged me to build one. If you're from Oddono's and you've stumbled onto this: hello, I'm a fan, this exists with no expectation, take whatever's useful or ignore it entirely.",
+      },
+    ],
+  },
+
+  // ── 08 — Pokémon Draft League ─────────────────────────────────────────
+  {
+    id: "entry-draft-league",
+    folio: "08",
+    title: "Pokémon Draft League · Real-time draft simulator",
+    titleHref: "https://pokemon-draft-simulator.vercel.app",
+    tag: "Live · Next.js + Supabase",
+    result: "{{draftUsers}} sign-ups, and the app my own league drafts on.",
+    description:
+      "A draft room for Pokémon leagues. Snake or auction formats, Reg G / H and Champions pools with the banlists baked in, a 1,000+ Pokémon database with real-time legality checks, and guest links so a whole league can draft without everyone making an account.",
+    meta: [
+      { label: "Stack", valueHtml: "Next.js, Supabase realtime, Clerk, Vercel" },
+      { label: "Role", valueHtml: "Solo, design through deploy" },
+      { label: "Link", valueHtml: linkHtml("https://pokemon-draft-simulator.vercel.app", "pokemon-draft-simulator.vercel.app") },
+      { label: "Code", valueHtml: linkHtml("https://github.com/MSS23/pokemon-draft-simulator", "github.com/MSS23/pokemon-draft-simulator") },
+    ],
+    bucket: "pokemon",
+    detail: [
+      { kind: "h4", text: "What it does" },
+      {
+        kind: "ul",
+        items: [
+          "<strong>Two draft formats.</strong> Snake with automatic turn progression, or auction with live bidding and countdown timers.",
+          "<strong>Official pools.</strong> VGC Reg G and H, Smogon tiers, and Pokémon Champions Reg M-B / M-C (the 23 M-C species were added the week the regulation dropped).",
+          "<strong>Live for everyone in the room.</strong> Picks sync over Supabase WebSockets; guests join from a shared link, no registration.",
+          "<strong>Auto-pick and wishlists.</strong> A priority list drafts for you when the clock runs out, with budget tracking and coverage analysis as you go.",
+          "<strong>Player profiles.</strong> Career record, titles, nationality and season history on a public page per player.",
+        ],
+      },
+      { kind: "h4", text: "Status" },
+      {
+        kind: "p",
+        html: "Live and in use, with a fix queue I'm working through in public: the production sign-in flow is the current job. The tickets are in Notion and the fixes become content.",
+      },
+    ],
+  },
+
+  // ── 09 — RunLocke ──────────────────────────────────────────────────────
+  {
+    id: "entry-runlocke",
+    folio: "09",
+    title: "RunLocke · Pokémon challenge-run tracker",
+    titleHref: "https://runlocke-mss23s-projects.vercel.app",
+    tag: "Beta · Next.js + Supabase",
+    result: "Every game, every trainer, one Hall of Fame.",
+    description:
+      "Track, share and compare Pokémon challenge runs: Nuzlockes, speedruns, full completions. Log encounters and deaths as you play, publish the champion team with historical sprites or real TCG card art, and compare runs with other players on community boards.",
+    meta: [
+      { label: "Stack", valueHtml: "Next.js App Router, Tailwind v4, Clerk, Supabase, PostHog" },
+      { label: "Role", valueHtml: "Solo, design through deploy" },
+      { label: "Link", valueHtml: linkHtml("https://runlocke-mss23s-projects.vercel.app", "runlocke") },
+    ],
+    bucket: "pokemon",
+    detail: [
+      { kind: "h4", text: "What's interesting under the hood" },
+      {
+        kind: "ul",
+        items: [
+          "<strong>Team showcase.</strong> Up to six Pokémon as era-correct sprites (resolved from PokéAPI, labelled by the games' first release) or English TCG and TCG Pocket card printings (resolved from TCGdex). Download as a high-res PNG or share a link that carries the choices in the URL fragment, no database needed.",
+          "<strong>Works without a backend.</strong> Game reference pages and the Teams editor run with no database; tracking and community boards switch on with Supabase, sign-in with Clerk.",
+          "<strong>Guard rails.</strong> Provider outages and missing artwork surface in the editor, and incomplete designs can't be exported. A test/live key mismatch fails early with a readable message.",
+        ],
+      },
+    ],
+  },
+
+  // ── 10 — Atlaria ───────────────────────────────────────────────────────
+  {
+    id: "entry-atlaria",
+    folio: "10",
+    title: "Atlaria · Social travel journal on a 3D globe",
+    titleHref: "https://atlaria.app",
+    tag: "Live · Sidhu Studios Ltd",
+    result: "Launched on the web first; iOS and Android shells share the same code.",
+    description:
+      "Build albums of photos and places and watch them land on an interactive 3D globe, with follows, likes, comments, a wishlist and travel stats. My first product with a company behind it: Online Safety Act assessment, moderation runbook and ICO registration included.",
+    meta: [
+      { label: "Stack", valueHtml: "Next.js 15, Supabase (Postgres + RLS, auth, storage), react-globe.gl / Three.js, Capacitor 7" },
+      { label: "Ops", valueHtml: "PostHog (EU, consent-gated), Sentry, Playwright smoke tests in CI, Vercel" },
+      { label: "Link", valueHtml: linkHtml("https://atlaria.app", "atlaria.app") },
+    ],
+    bucket: "products",
+    detail: [
+      { kind: "h4", text: "How it's built" },
+      {
+        kind: "ul",
+        items: [
+          "<strong>Web first.</strong> The Vercel app is the production target; the Capacitor iOS and Android shells wrap a static export of the same UI, so one codebase ships everywhere.",
+          "<strong>Row-level security everywhere.</strong> Supabase RLS policies are the authorisation layer, with migrations applied in numeric order and documented in the repo.",
+          "<strong>Compliance as code.</strong> The Online Safety Act assessment, moderation runbook and pre-launch checklist live in <code>docs/</code> next to the code, with live-verified statuses.",
+          "<strong>Built in public.</strong> The build log is a running series on Instagram and TikTok; the roadmap and tickets are in Notion.",
+        ],
+      },
+    ],
+  },
+
+  // ── 11 — Hermes content engine ─────────────────────────────────────────
+  {
+    id: "entry-hermes",
+    folio: "11",
+    title: "Hermes · A content team that is one Telegram bot",
+    tag: "Running daily · Claude + Hermes",
+    result: "Every reel I record gets subtitles, captions, a carousel twin and a posting slot without me opening a laptop.",
+    description:
+      "Drop a raw clip in a Drive folder from my phone. A Claude Opus agent edits it, writes the captions, builds a carousel version in each house style, and sends the lot to Telegram for a one-tap approval. Approved posts are scheduled to Instagram and TikTok and logged in the Notion content calendar. The posts you see on this site arrive the same way.",
+    meta: [
+      { label: "Stack", valueHtml: "Hermes gateway, Claude Code agents, ffmpeg, Playwright, Telegram, Metricool, Notion" },
+      { label: "Role", valueHtml: "Solo, and the only user" },
+      { label: "Runs", valueHtml: "~50 agent runs a day, each with a cost line in the Telegram usage report" },
+    ],
+    bucket: "workflows",
+    detail: [
+      { kind: "h4", text: "What's interesting under the hood" },
+      {
+        kind: "ul",
+        items: [
+          "<strong>One agent per clip.</strong> Heavy jobs run as separate Claude Code sessions with pidfiles, a queue and a daily budget, so a bad edit never blocks the next one.",
+          "<strong>Approval is the product.</strong> Every output is a Telegram card with ✅ / ✏️ / ℹ️ buttons. Nothing posts without a tap.",
+          "<strong>Privacy guard rails.</strong> Agents are denied Gmail, Calendar and Drive by default; a hook blocks private Notion pages; emails and phone numbers are scrubbed before anything reaches Telegram.",
+          "<strong>Instagram Trial Reels.</strong> Reels go out as a Trial Reel and a regular Reel at the same minute, because trials reach non-followers.",
+          "<strong>Self-healing.</strong> A watchdog restarts the gateway and remounts Drive; a GitHub Actions heartbeat pings Telegram if the PC goes quiet.",
+        ],
+      },
+    ],
+  },
+
+  // ── 12 — Padel Finder MCP ──────────────────────────────────────────────
+  {
+    id: "entry-padel-mcp",
+    folio: "12",
+    title: "Padel Finder MCP · Court availability for AI assistants",
+    titleHref: "https://github.com/MSS23/padel-mcp",
+    tag: "Open source · TypeScript",
+    result: "\"Find me a court tonight under £40\" answered inside Claude, Goose or ChatGPT.",
+    description:
+      "An MCP server over the Playtomic API. Find venues near a location, check slots, compare prices, find the cheapest hour of the week, save favourites and set availability alerts. The padel addiction, automated.",
+    meta: [
+      { label: "Stack", valueHtml: "TypeScript, MCP, Playtomic API, Nominatim geocoding" },
+      { label: "Clients", valueHtml: "Claude, Goose MCP-UI, ChatGPT Apps" },
+      { label: "Code", valueHtml: linkHtml("https://github.com/MSS23/padel-mcp", "github.com/MSS23/padel-mcp") },
+    ],
+    bucket: "workflows",
+    detail: [
+      { kind: "h4", text: "Tools" },
+      {
+        kind: "ul",
+        items: [
+          "<strong>Search.</strong> <code>find_nearby_courts</code>, <code>check_availability</code>, <code>find_available_games</code>, <code>compare_prices</code>.",
+          "<strong>Planning.</strong> <code>search_by_duration</code>, <code>get_weekly_availability</code>, <code>find_cheapest_time</code>, <code>get_peak_hours</code>.",
+          "<strong>Habits.</strong> Favourite venues with a one-call <code>quick_book_check</code>, and availability alerts for the slots you actually want.",
+        ],
       },
     ],
   },

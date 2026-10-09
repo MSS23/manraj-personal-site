@@ -1,10 +1,14 @@
 import Link from "next/link";
 import { ProjectCard } from "./ProjectCard";
 import { bucketOrder, projects } from "@/data/projects";
+import { withLive, type Live } from "@/lib/live";
 
-export function Work() {
+export function Work({ live }: { live: Live }) {
   // One project per bucket; the full case studies are on /portfolio.
-  const featured = bucketOrder.map((b) => projects.find((p) => p.bucket === b)).filter((p) => p !== undefined);
+  const featured = bucketOrder
+    .map((b) => projects.find((p) => p.bucket === b))
+    .filter((p) => p !== undefined)
+    .map((p) => withLive(p, live));
   return (
     <section id="work" className="section">
       <p className="kicker">
@@ -13,7 +17,7 @@ export function Work() {
       <h2 className="serif-heading work-heading">
         Things I&apos;ve built.
         <br />
-        <em style={{ color: "var(--text-muted)" }}>Three to start with. The full case studies are on the portfolio.</em>
+        <em style={{ color: "var(--text-muted)" }}>One from each shelf. The full case studies are on the portfolio.</em>
       </h2>
       <div className="notes-grid notes-grid-home">
         {featured.map((p) => (

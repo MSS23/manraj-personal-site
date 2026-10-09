@@ -7,8 +7,10 @@ import { Masthead } from "@/components/Masthead";
 import { Reveal } from "@/components/Reveal";
 import { Work } from "@/components/Work";
 import { Writing } from "@/components/Writing";
+import { liveStats } from "@/lib/live";
 
-export default function HomePage() {
+export default async function HomePage() {
+  const live = await liveStats();
   return (
     <>
       <a className="skip" href="#main">
@@ -16,12 +18,12 @@ export default function HomePage() {
       </a>
       <Masthead />
       <main id="main">
-        <Hero />
+        <Hero live={live} />
         <Reveal><About /></Reveal>
         <Reveal><hr className="rule" data-ornament="❦" /></Reveal>
         <Reveal><Approach /></Reveal>
         <Reveal><hr className="rule" data-ornament="❦" /></Reveal>
-        <Reveal><Work /></Reveal>
+        <Reveal><Work live={live} /></Reveal>
         <Reveal><hr className="rule" data-ornament="✦" /></Reveal>
         <Reveal><Writing /></Reveal>
         <Reveal><hr className="rule" data-ornament="✦" /></Reveal>

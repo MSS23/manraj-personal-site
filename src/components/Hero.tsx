@@ -1,9 +1,11 @@
 import { projects } from "@/data/projects";
 import { getNotes } from "@/lib/notes";
+import { fmt, type Live } from "@/lib/live";
 
-export function Hero() {
+export function Hero({ live }: { live: Live }) {
   const stats = [
     { num: String(projects.length), label: "projects shipped" },
+    { num: fmt(live.vgcUsers), label: "players on VGC Team Report" },
     { num: String(getNotes().length), label: "reels on building in public" },
     { num: "18th", label: "EUIC 2026, Pokémon VGC" },
   ];
