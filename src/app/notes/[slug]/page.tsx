@@ -6,6 +6,7 @@ import { FollowRow } from "@/components/FollowRow";
 import { Masthead } from "@/components/Masthead";
 import { NoteCard } from "@/components/NoteCard";
 import { SlideDeck } from "@/components/SlideDeck";
+import { SubstackForm } from "@/components/SubstackForm";
 import { TikTokEmbed } from "@/components/TikTokEmbed";
 import { formatDate, getNote, getNotes, KIND_LABEL, tiktokId } from "@/lib/notes";
 
@@ -145,6 +146,7 @@ export default async function NotePage({ params }: { params: Promise<Params> }) 
               <div className="note-follow">
                 <p className="note-follow-label">Follow for the next one</p>
                 <FollowRow compact />
+                <SubstackForm />
               </div>
             </div>
           </div>

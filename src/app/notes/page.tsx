@@ -3,6 +3,7 @@ import { Colophon } from "@/components/Colophon";
 import { FollowRow } from "@/components/FollowRow";
 import { Masthead } from "@/components/Masthead";
 import { NotesGrid } from "@/components/NotesGrid";
+import { SubstackForm } from "@/components/SubstackForm";
 import { describeNotes, getNotes, getSeries } from "@/lib/notes";
 
 export const metadata: Metadata = {
@@ -39,6 +40,7 @@ export default function NotesPage() {
             here, or follow along where they land first.
           </p>
           <FollowRow />
+          <SubstackForm compact />
         </section>
         <section className="section notes-body" aria-label="All notes">
           <NotesGrid notes={notes} series={series} />

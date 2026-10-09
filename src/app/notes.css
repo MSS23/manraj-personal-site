@@ -260,3 +260,14 @@
 /* Portfolio (/portfolio): what I've done, the projects, the latest posts, where to find me */
 .follow-x:hover .follow-icon { background: var(--text); color: #fff; }
 .folio-section { padding-top: 0 !important; }
+
+/* Home project cards reuse the note card; screenshots are landscape */
+.project-card .note-card-media { aspect-ratio: 16 / 10; }
+.project-card .note-card-media img { object-position: center top; }
+.project-card .note-card-summary { -webkit-line-clamp: 3; }
+
+/* Substack sign-up embed */
+.substack-form { margin-top: 26px; }
+.substack-form iframe { width: 100%; max-width: 480px; height: 320px; border: 1px solid var(--border); border-radius: 14px; background: var(--bg-elevated); display: block; }
+.substack-form.is-compact { margin-top: 18px; }
+.substack-form.is-compact iframe { height: 150px; max-width: 560px; }
