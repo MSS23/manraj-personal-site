@@ -70,7 +70,7 @@ export const projects: Project[] = [
     description:
       "A team-building site for competitive Pokémon VGC players. Paste any Showdown team, get a full report: damage maths against the meta, speed analysis, threat coverage, win conditions. Started as a spreadsheet I kept rewriting for myself, then grew into something other players started using.",
     lead: {
-      src: "/assets/work/vgc-team-report/team-report-hero.png",
+      src: "/assets/work/vgc-team-report/team-report-hero.webp",
       alt: "A team report. Overview of the team being analysed.",
     },
     meta: [
@@ -119,19 +119,19 @@ export const projects: Project[] = [
         kind: "figure-stack",
         figures: [
           {
-            src: "/assets/work/vgc-team-report/team-report-notable-calcs.png",
+            src: "/assets/work/vgc-team-report/team-report-notable-calcs.webp",
             alt: "Notable offensive damage calcs against the meta.",
             caption:
               "<strong>Per-Pokémon page.</strong> Each Pokémon gets its own slide: an overview, the moves, the stat spread, and a dropdown for notable offensive and defensive calcs underneath.",
           },
           {
-            src: "/assets/work/vgc-team-report/team-report-defensive-calcs.png",
+            src: "/assets/work/vgc-team-report/team-report-defensive-calcs.webp",
             alt: "Defensive calcs. What each Pokémon survives.",
             caption:
               "<strong>Defensive calcs.</strong> The other side of the page: what each Pokémon lives, what it doesn't, and which EV spreads earn their keep.",
           },
           {
-            src: "/assets/work/vgc-team-report/team-report-matchups.png",
+            src: "/assets/work/vgc-team-report/team-report-matchups.webp",
             alt: "Match-up sheet. How this team fares across the meta.",
             caption:
               "<strong>Match-up sheets.</strong> A condensed view of how the team performs against the most-played teams in the format: who wins, who loses, and where to plan around.",
@@ -151,7 +151,7 @@ export const projects: Project[] = [
     description:
       "The Japanese VGC scene publishes the deepest team write-ups on the planet, and almost none of it gets translated. This Streamlit app takes a Japanese VGC article (URL or pasted text), runs it through Gemini, and gives you the full team breakdown in English: Pokémon, EVs, items, moves, and the strategy notes.",
     lead: {
-      src: "/assets/work/vgc-translation/hero.png",
+      src: "/assets/work/vgc-translation/hero.webp",
       alt: "VGC Team Analyser. Landing page with Japanese-to-English translation engine.",
     },
     meta: [
@@ -198,7 +198,7 @@ export const projects: Project[] = [
     description:
       "A small, fast CRM for Pokémon card traders and solo vendors, the people working the floor at a trade night. I love Pokémon, and after going to a few of those nights I noticed the same problem repeating: collections live in a binder, trades live in someone's head, DMs are scattered across four apps, and the spreadsheet someone started never survives a real Friday. PokéCRM is the version of the tool I'd want traders and vendors to have in their hand at the table.",
     lead: {
-      src: "/assets/work/pokemon-crm/portfolio.png",
+      src: "/assets/work/pokemon-crm/portfolio.webp",
       alt: "PokéCRM Portfolio view. Net worth, 12-month chart, top winners and losers.",
     },
     meta: [
@@ -244,25 +244,25 @@ export const projects: Project[] = [
         kind: "figure-stack",
         figures: [
           {
-            src: "/assets/work/pokemon-crm/tradenight-active.png",
+            src: "/assets/work/pokemon-crm/tradenight-active.webp",
             alt: "Trade Night Mode. Live session with big-button actions.",
             caption:
               "<strong>Trade Night Mode.</strong> Start a session when you arrive. The black strip up top tracks trades, money in, and elapsed time. Six big actions cover everything you'd reach for at a table.",
           },
           {
-            src: "/assets/work/pokemon-crm/mobile-tradenight-active.png",
+            src: "/assets/work/pokemon-crm/mobile-tradenight-active.webp",
             alt: "Trade Night Mode on mobile. Same controls, two-column layout.",
             caption:
               "<strong>Same view on a phone.</strong> Two-column action grid, hamburger nav, big tap targets. This is the form factor a trader holds at the table.",
           },
           {
-            src: "/assets/work/pokemon-crm/collection.png",
+            src: "/assets/work/pokemon-crm/collection.webp",
             alt: "My Collection. Personal cards with ROI per card.",
             caption:
               "<strong>My Collection.</strong> What I own, what I paid, what it's worth now, ROI per card. The yellow banner is the one rule that matters: this is your stash, not shop inventory.",
           },
           {
-            src: "/assets/work/pokemon-crm/dashboard.png",
+            src: "/assets/work/pokemon-crm/dashboard.webp",
             alt: "PokéCRM dashboard. KPIs, revenue chart, market movers, recent activity.",
             caption:
               "<strong>Dashboard.</strong> The shop-side overview when I switch out of personal-vendor mode: active trades, inventory value, unread DMs, trust alerts.",
@@ -401,7 +401,7 @@ export const projects: Project[] = [
     description:
       "A Node.js prototype I'd written for classifying Google reviews and drafting owner-voice replies, ported into a single self-hosted n8n workflow on my own machine. Same logic, drawn as a canvas a non-developer can read, edit, and trust.",
     lead: {
-      src: "/assets/work/google-review-responder/canvas-overview.png",
+      src: "/assets/work/google-review-responder/canvas-overview.webp",
       alt: "n8n canvas. Manual trigger to four format branches.",
     },
     meta: [
@@ -449,19 +449,19 @@ export const projects: Project[] = [
         kind: "figure-stack",
         figures: [
           {
-            src: "/assets/work/google-review-responder/canvas-overview.png",
+            src: "/assets/work/google-review-responder/canvas-overview.webp",
             alt: "n8n canvas. Manual Trigger through to four format branches.",
             caption:
               "<strong>The canvas.</strong> Manual Trigger → Sample Review → Client Config → Build Prompt → Gemini API → Parse Response → Switch by classification. Four format branches on the right line up with the four classifications: praise, constructive, policy violation, ambiguous.",
           },
           {
-            src: "/assets/work/google-review-responder/client-config-node.png",
+            src: "/assets/work/google-review-responder/client-config-node.webp",
             alt: "Client Config node. JavaScript code with editable client fields.",
             caption:
               "<strong>The one node a non-developer edits.</strong> Business name, address, services, voice, the forbid list, the remedy guidance. Onboarding a new client is a single edit on a single node. No template forks, no per-client workflows.",
           },
           {
-            src: "/assets/work/google-review-responder/execution-output.png",
+            src: "/assets/work/google-review-responder/execution-output.webp",
             alt: "Execution output. Structured JSON next to a Gmail-style draft preview.",
             caption:
               "<strong>What comes out of an execution.</strong> Left: the structured JSON Gemini returns (classification, confidence, reasoning, draft, alternative, owner notes). Right: how that payload would render as the Gmail draft an owner reviews before posting. The owner approves before anything publishes.",
@@ -491,7 +491,7 @@ export const projects: Project[] = [
     description:
       "An unsolicited seven-page static site I built for Oddono's, a London gelato shop I'm a regular at. They didn't ask for it. I've never spoken to them about it. I'm a customer with their loyalty card who looked at their existing site one evening, thought it could be sharper, and built a version of what I'd want it to be. Nothing here has been shipped to or pitched at the business; it stays a personal exercise unless they ever ask.",
     lead: {
-      src: "/assets/work/oddonos/home.png",
+      src: "/assets/work/oddonos/home.webp",
       alt: "Oddono's home page. Editorial hero, product story, and shop locator entry.",
     },
     meta: [
@@ -538,19 +538,19 @@ export const projects: Project[] = [
         kind: "figure-stack",
         figures: [
           {
-            src: "/assets/work/oddonos/flavors.png",
+            src: "/assets/work/oddonos/flavors.webp",
             alt: "Flavours page. Editorial menu with a quick flavour-finder block.",
             caption:
               "<strong>Flavours.</strong> Set up like a menu, not a product grid. A short flavour-finder underneath answers one question and routes you to a match.",
           },
           {
-            src: "/assets/work/oddonos/shops.png",
+            src: "/assets/work/oddonos/shops.webp",
             alt: "Shops page. Sortable list of all seven shop locations.",
             caption:
               "<strong>Shops.</strong> A list, not a map. Sorts by distance from the visitor's location with one click. No third-party map library, no API key, instant load.",
           },
           {
-            src: "/assets/work/oddonos/wholesale.png",
+            src: "/assets/work/oddonos/wholesale.webp",
             alt: "Wholesale page. Pitch and intake form for restaurants and cafés.",
             caption:
               "<strong>Wholesale.</strong> Pitch above the fold, intake form below. The page a buyer for a restaurant or hotel needs to read.",

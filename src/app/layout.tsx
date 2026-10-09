@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Fraunces, Inter, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import "./notes.css";
+import { SOCIALS } from "@/components/FollowRow";
 
 const fraunces = Fraunces({
   subsets: ["latin"],
@@ -24,12 +25,14 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Manraj Sidhu · Personal site",
+  metadataBase: new URL("https://manrajssidhu.com"),
+  title: "Manraj Sidhu · AI consultant and builder",
   description:
-    "Manraj Sidhu. Side projects in AI and automation: VGC tools, Claude routines, MCP servers, brand sites.",
+    "Manraj Sidhu, AI consultant. Agents, automations and tools built with Claude, MCP and n8n, plus the reels and notes on how they were made.",
   authors: [{ name: "Manraj Sidhu" }],
+  alternates: { canonical: "/", types: { "application/rss+xml": "/feed.xml" } },
   openGraph: {
-    title: "Manraj Sidhu · Personal site",
+    title: "Manraj Sidhu · AI consultant and builder",
     description:
       "Side projects in AI and automation: VGC tools, Claude routines, MCP servers, brand sites.",
     type: "website",
@@ -45,7 +48,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Manraj Sidhu · Personal site",
+    title: "Manraj Sidhu · AI consultant and builder",
     description:
       "Side projects in AI and automation: VGC tools, Claude routines, MCP servers, brand sites.",
     images: ["https://manrajssidhu.com/assets/og-image.png"],
@@ -55,10 +58,24 @@ export const metadata: Metadata = {
   },
 };
 
+const PERSON = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  name: "Manraj Sidhu",
+  url: "https://manrajssidhu.com",
+  image: "https://manrajssidhu.com/assets/portrait.webp",
+  jobTitle: "AI consultant",
+  description: "Builds agents, automations and tools with Claude, MCP and n8n. Competes in Pokémon VGC.",
+  sameAs: SOCIALS.map((s) => s.href),
+};
+
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className={`${fraunces.variable} ${inter.variable} ${jetbrainsMono.variable}`}>
-      <body>{children}</body>
+      <body>
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(PERSON) }} />
+        {children}
+      </body>
     </html>
   );
 }

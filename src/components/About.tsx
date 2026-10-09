@@ -115,7 +115,7 @@ export function About() {
           <figure className="portrait">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
-              src="/assets/portrait.png"
+              src="/assets/portrait.webp"
               alt="Portrait of Manraj Sidhu."
               width={160}
               height={160}
