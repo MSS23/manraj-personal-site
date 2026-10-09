@@ -189,6 +189,11 @@ export function ProjectEntry({ project }: { project: Project }) {
           </figure>
         )}
 
+        <p className="entry-result">
+          <span>Result</span>
+          <em>{project.result}</em>
+        </p>
+
         <ul className="entry-meta">
           {project.meta.map((m, i) => (
             <li key={i}>

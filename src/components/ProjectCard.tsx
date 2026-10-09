@@ -22,6 +22,9 @@ export function ProjectCard({ project }: { project: Project }) {
         </p>
         <h3 className="note-card-title">{project.title}</h3>
         <p className="note-card-summary">{project.description}</p>
+        <p className="note-card-result">
+          <span>Result</span> {project.result}
+        </p>
       </div>
     </Link>
   );

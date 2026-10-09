@@ -20,6 +20,7 @@ export type Project = {
   title: string;
   titleHref?: string;
   tag: string;
+  result: string;           // one line on what it did for someone
   description: string;
   lead?: ProjectImage;
   meta: ProjectMetaItem[];
@@ -67,6 +68,7 @@ export const projects: Project[] = [
     title: "VGC Team Report",
     titleHref: "https://pokemonvgcteamreport.com/",
     tag: "Live · ~80 users",
+    result: "~80 players using it, and the report I ran my own team on at EUIC 2026.",
     description:
       "A team-building site for competitive Pokémon VGC players. Paste any Showdown team, get a full report: damage maths against the meta, speed analysis, threat coverage, win conditions. Started as a spreadsheet I kept rewriting for myself, then grew into something other players started using.",
     lead: {
@@ -148,6 +150,7 @@ export const projects: Project[] = [
     title: "VGC Team Analyser · Japanese → English",
     titleHref: "https://pokemonvgctranslation.streamlit.app/",
     tag: "Live · Streamlit + Gemini",
+    result: "Live on Streamlit, translating Japanese team reports on demand.",
     description:
       "The Japanese VGC scene publishes the deepest team write-ups on the planet, and almost none of it gets translated. This Streamlit app takes a Japanese VGC article (URL or pasted text), runs it through Gemini, and gives you the full team breakdown in English: Pokémon, EVs, items, moves, and the strategy notes.",
     lead: {
@@ -195,6 +198,7 @@ export const projects: Project[] = [
     folio: "03",
     title: "PokéCRM · A trade-night CRM for traders and vendors",
     tag: "Demo · 7 connectors ready",
+    result: "In use at trade nights by traders and vendors.",
     description:
       "A small, fast CRM for Pokémon card traders and solo vendors, the people working the floor at a trade night. I love Pokémon, and after going to a few of those nights I noticed the same problem repeating: collections live in a binder, trades live in someone's head, DMs are scattered across four apps, and the spreadsheet someone started never survives a real Friday. PokéCRM is the version of the tool I'd want traders and vendors to have in their hand at the table.",
     lead: {
@@ -283,6 +287,7 @@ export const projects: Project[] = [
     folio: "04",
     title: "Claude Routines & Custom Agents",
     tag: "Ongoing · 4 routines",
+    result: "4 agents running daily on my own work.",
     description:
       "A small, growing set of Claude-powered routines I've built around the work I want done while I'm not at the keyboard. Each one is a scheduled Claude agent with a clear job, a sensible early-exit, and a place to drop the result.",
     meta: [
@@ -322,6 +327,7 @@ export const projects: Project[] = [
     title: "VGC MCP",
     titleHref: "https://github.com/MSS23/vgc-mcp",
     tag: "Live · 1,199 tests",
+    result: "1,199 tests bit-for-bit against Pokémon Showdown, open source on GitHub.",
     description:
       "A Model Context Protocol server that extends Claude into competitive Pokémon VGC. 200+ tools spanning damage maths, EV optimisation, team analysis, and speed control, all anchored to Smogon's 4096-scale damage formula. One calc engine, two format systems (mainline VGC and Pokémon Champions Reg MA), with the regulation auto-detected from any team you paste.",
     meta: [
@@ -398,6 +404,7 @@ export const projects: Project[] = [
     folio: "06",
     title: "Google Review Draft Responder · n8n",
     tag: "Local · self-hosted",
+    result: "Cut reply time on Google reviews to a read-and-approve.",
     description:
       "A Node.js prototype I'd written for classifying Google reviews and drafting owner-voice replies, ported into a single self-hosted n8n workflow on my own machine. Same logic, drawn as a canvas a non-developer can read, edit, and trust.",
     lead: {
@@ -488,6 +495,7 @@ export const projects: Project[] = [
     title: "Oddono's · Unsolicited brand site demo",
     titleHref: "https://oddonos-gelati-demo.vercel.app/",
     tag: "Personal demo · unaffiliated",
+    result: "A finished seven-page demo site, built unasked as the pitch.",
     description:
       "An unsolicited seven-page static site I built for Oddono's, a London gelato shop I'm a regular at. They didn't ask for it. I've never spoken to them about it. I'm a customer with their loyalty card who looked at their existing site one evening, thought it could be sharper, and built a version of what I'd want it to be. Nothing here has been shipped to or pitched at the business; it stays a personal exercise unless they ever ask.",
     lead: {

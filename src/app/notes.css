@@ -265,7 +265,9 @@
 /* Home project cards reuse the note card; screenshots are landscape */
 .project-card .note-card-media { aspect-ratio: 16 / 10; }
 .project-card .note-card-media img { object-position: center top; }
-.project-card .note-card-summary { -webkit-line-clamp: 3; }
+.project-card .note-card-summary { -webkit-line-clamp: 2; }
+.note-card-result { margin: 4px 0 0; padding-top: 8px; border-top: 1px solid var(--border); font-size: 12.5px; line-height: 1.45; color: var(--text); }
+.note-card-result span { font-family: var(--font-jetbrains-mono), monospace; font-size: 10px; letter-spacing: .08em; text-transform: uppercase; color: var(--blue-text); margin-right: 6px; }
 
 /* Substack sign-up embed */
 .substack-form { margin-top: 26px; }
