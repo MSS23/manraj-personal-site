@@ -73,7 +73,7 @@ export function About() {
                   <p>
                     I write the longer thoughts on{" "}
                     <a
-                      href="https://mannyssidhu.substack.com/"
+                      href="https://substack.com/@manrajtalks"
                       target="_blank"
                       rel="noopener noreferrer"
                     >

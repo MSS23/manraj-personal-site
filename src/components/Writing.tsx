@@ -46,7 +46,7 @@ export function Writing() {
       </div>
 
       <div className="links">
-        <a className="link-card" href="https://mannyssidhu.substack.com/" target="_blank" rel="noopener noreferrer">
+        <a className="link-card" href="https://substack.com/@manrajtalks" target="_blank" rel="noopener noreferrer">
           <div className="link-card-row">
             <span>Newsletter</span>
             <span className="link-card-arrow" aria-hidden="true">→</span>

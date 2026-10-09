@@ -37,7 +37,7 @@ export function Colophon() {
             </a>
           </li>
           <li>
-            <a href="https://mannyssidhu.substack.com/" target="_blank" rel="noopener noreferrer">
+            <a href="https://substack.com/@manrajtalks" target="_blank" rel="noopener noreferrer">
               Substack
             </a>
           </li>

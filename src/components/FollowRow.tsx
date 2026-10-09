@@ -3,7 +3,7 @@ export const SOCIALS = [
   { id: "tiktok", label: "TikTok", handle: "@manrajtalks", href: "https://www.tiktok.com/@manrajtalks" },
   { id: "x", label: "X", handle: "@manrajtalks", href: "https://x.com/manrajtalks" },
   { id: "linkedin", label: "LinkedIn", handle: "manraj-sidhu", href: "https://www.linkedin.com/in/manraj-sidhu/" },
-  { id: "substack", label: "Substack", handle: "mannyssidhu", href: "https://mannyssidhu.substack.com/" },
+  { id: "substack", label: "Substack", handle: "@manrajtalks", href: "https://substack.com/@manrajtalks" },
   { id: "github", label: "GitHub", handle: "MSS23", href: "https://github.com/MSS23" },
 ] as const;
 
