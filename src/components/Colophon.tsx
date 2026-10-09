@@ -14,8 +14,21 @@ export function Colophon() {
         <p className="colophon-name">Manraj Sidhu</p>
         <ul className="colophon-links" aria-label="Elsewhere">
           <li>
+            <a href="/portfolio">Portfolio</a>
+          </li>
+          <li>
             <a href="https://www.linkedin.com/in/manraj-sidhu/" target="_blank" rel="noopener noreferrer">
               LinkedIn
+            </a>
+          </li>
+          <li>
+            <a href="https://x.com/manrajtalks" target="_blank" rel="noopener noreferrer">
+              X
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/manrajtalks/" target="_blank" rel="noopener noreferrer">
+              Instagram
             </a>
           </li>
           <li>

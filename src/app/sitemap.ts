@@ -8,6 +8,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   return [
     { url: "https://manrajssidhu.com", lastModified: new Date(), priority: 1 },
     { url: "https://manrajssidhu.com/notes", lastModified: notes[0] ? new Date(notes[0].date) : new Date(), priority: 0.9 },
+    { url: "https://manrajssidhu.com/portfolio", lastModified: notes[0] ? new Date(notes[0].date) : new Date(), priority: 0.9 },
     ...notes.map((n) => ({ url: `https://manrajssidhu.com/notes/${n.slug}`, lastModified: new Date(n.date), priority: 0.7 })),
   ];
 }

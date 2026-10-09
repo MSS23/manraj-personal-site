@@ -1,6 +1,7 @@
 export const SOCIALS = [
   { id: "instagram", label: "Instagram", handle: "@manrajtalks", href: "https://www.instagram.com/manrajtalks/" },
   { id: "tiktok", label: "TikTok", handle: "@manrajtalks", href: "https://www.tiktok.com/@manrajtalks" },
+  { id: "x", label: "X", handle: "@manrajtalks", href: "https://x.com/manrajtalks" },
   { id: "linkedin", label: "LinkedIn", handle: "manraj-sidhu", href: "https://www.linkedin.com/in/manraj-sidhu/" },
   { id: "substack", label: "Substack", handle: "mannyssidhu", href: "https://mannyssidhu.substack.com/" },
   { id: "github", label: "GitHub", handle: "MSS23", href: "https://github.com/MSS23" },
@@ -17,6 +18,11 @@ const ICONS: Record<(typeof SOCIALS)[number]["id"], React.ReactNode> = {
   tiktok: (
     <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
       <path d="M16.5 3c.3 2.3 1.7 3.9 4 4.1v3.1c-1.5 0-2.9-.5-4-1.3v6.3A5.7 5.7 0 1 1 10.8 9.5c.4 0 .8 0 1.1.1v3.2a2.6 2.6 0 1 0 1.5 2.4V3h3.1z" />
+    </svg>
+  ),
+  x: (
+    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+      <path d="M17.5 3h3l-7 8 8.2 10h-6.4l-5-6.5L4.6 21h-3l7.5-8.6L1.3 3h6.5l4.5 6 5.2-6zm-1.1 16.2h1.7L6.7 4.7H4.9l11.5 14.5z" />
     </svg>
   ),
   linkedin: (

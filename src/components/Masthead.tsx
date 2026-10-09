@@ -9,14 +9,16 @@ const navItems = [
   { id: "approach", href: "/#approach", label: "Approach" },
   { id: "work", href: "/#work", label: "Work" },
   { id: "notes", href: "/notes", label: "Notes" },
+  { id: "portfolio", href: "/portfolio", label: "Portfolio" },
   { id: "contact", href: "/#contact", label: "Contact" },
 ];
 
 export function Masthead() {
   const pathname = usePathname();
-  const onNotes = pathname.startsWith("/notes");
+  const page = pathname.startsWith("/notes") ? "notes" : pathname.startsWith("/portfolio") ? "portfolio" : null;
+  const onNotes = page !== null;
   const [scrolled, setScrolled] = useState(false);
-  const [active, setActive] = useState<string | null>(onNotes ? "notes" : null);
+  const [active, setActive] = useState<string | null>(page);
   const navRef = useRef<HTMLElement | null>(null);
   const [pill, setPill] = useState<{ left: number; width: number } | null>(null);
 
@@ -30,7 +32,7 @@ export function Masthead() {
   // Scrollspy on the home page only; on /notes the Notes link stays lit.
   useEffect(() => {
     if (onNotes) {
-      setActive("notes");
+      setActive(page);
       return;
     }
     if (!("IntersectionObserver" in window)) return;
@@ -49,7 +51,7 @@ export function Masthead() {
     );
     sections.forEach((s) => spy.observe(s));
     return () => spy.disconnect();
-  }, [onNotes]);
+  }, [onNotes, page]);
 
   // Measure the active link and slide the pill underneath it.
   useEffect(() => {
