@@ -23,6 +23,16 @@ export type Note = {
   style?: string;
 };
 
+/** "33 reels and 2 carousels": kinds with a count, biggest first. */
+export function describeNotes(notes: Pick<Note, "kind">[]): string {
+  const counts = new Map<NoteKind, number>();
+  for (const n of notes) counts.set(n.kind, (counts.get(n.kind) ?? 0) + 1);
+  const parts = [...counts.entries()]
+    .sort((a, b) => b[1] - a[1])
+    .map(([k, c]) => `${c} ${KIND_LABEL[k].toLowerCase()}${c === 1 ? "" : "s"}`);
+  return parts.length > 1 ? `${parts.slice(0, -1).join(", ")} and ${parts.at(-1)}` : (parts[0] ?? "");
+}
+
 export function formatDate(iso: string): string {
   return new Date(iso + (iso.length === 10 ? "T12:00:00Z" : "")).toLocaleDateString("en-GB", {
     day: "numeric",

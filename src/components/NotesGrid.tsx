@@ -36,40 +36,47 @@ export function NotesGrid({ notes, series }: { notes: Note[]; series: string[] }
     [notes, kind, show, q],
   );
 
-  const chips: { id: Filter; label: string }[] = [
-    { id: "all", label: "All" },
-    { id: "carousel", label: "Carousels" },
-    { id: "reel", label: "Reels" },
-    { id: "newsletter", label: "Newsletters" },
-  ];
+  const chips: { id: Filter; label: string }[] = (
+    [
+      { id: "all", label: "All" },
+      { id: "carousel", label: "Carousels" },
+      { id: "reel", label: "Reels" },
+      { id: "newsletter", label: "Newsletters" },
+    ] as const
+  ).filter((c) => counts[c.id] > 0);
+  const oneKind = chips.length <= 2; // "All" + one kind says nothing: hide the chips
 
   return (
     <>
       <div className="notes-toolbar" role="group" aria-label="Filter notes">
-        <div className="notes-chips">
-          {chips.map((c) => (
-            <button
-              key={c.id}
-              type="button"
-              className={`notes-chip ${kind === c.id ? "is-on" : ""}`}
-              aria-pressed={kind === c.id}
-              onClick={() => setKind(c.id)}
-            >
-              {c.label} <span className="notes-chip-count">{counts[c.id]}</span>
-            </button>
-          ))}
-        </div>
-        <label className="notes-select">
-          <span className="sr-only">Series</span>
-          <select value={show} onChange={(e) => setShow(e.target.value)}>
-            <option value="">All series</option>
-            {series.map((s) => (
-              <option key={s} value={s}>
-                {s}
-              </option>
+        {!oneKind && (
+          <div className="notes-chips">
+            {chips.map((c) => (
+              <button
+                key={c.id}
+                type="button"
+                className={`notes-chip ${kind === c.id ? "is-on" : ""}`}
+                aria-pressed={kind === c.id}
+                onClick={() => setKind(c.id)}
+              >
+                {c.label} <span className="notes-chip-count">{counts[c.id]}</span>
+              </button>
             ))}
-          </select>
-        </label>
+          </div>
+        )}
+        {series.length > 0 && (
+          <label className="notes-select">
+            <span className="sr-only">Series</span>
+            <select value={show} onChange={(e) => setShow(e.target.value)}>
+              <option value="">All series</option>
+              {series.map((s) => (
+                <option key={s} value={s}>
+                  {s}
+                </option>
+              ))}
+            </select>
+          </label>
+        )}
         <label className="notes-search">
           <span className="sr-only">Search notes</span>
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true">

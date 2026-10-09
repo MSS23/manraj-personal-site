@@ -1,13 +1,11 @@
 import Link from "next/link";
 import { FollowRow } from "@/components/FollowRow";
 import { NoteCard } from "@/components/NoteCard";
-import { getNotes } from "@/lib/notes";
+import { describeNotes, getNotes } from "@/lib/notes";
 
 export function Writing() {
   const notes = getNotes();
   const latest = notes.slice(0, 3);
-  const carousels = notes.filter((n) => n.kind === "carousel").length;
-  const reels = notes.length - carousels;
 
   return (
     <section id="elsewhere" className="section">
@@ -19,7 +17,7 @@ export function Writing() {
       </h2>
       <p className="section-lede">
         {notes.length
-          ? `${carousels} carousels and ${reels} reels on building with AI, all collected here. The newest three:`
+          ? `${describeNotes(notes)} on building with AI, all collected here. The newest three:`
           : "Carousels and reels on building with AI. Long-form on Substack, short clips on TikTok and Instagram."}
       </p>
 

@@ -47,6 +47,7 @@
   transition: transform .5s ease;
 }
 .note-card:hover .note-card-media img { transform: scale(1.03); }
+.note-card-reel .note-card-media { aspect-ratio: 3 / 4; } /* reel covers are 3:4, keep the on-screen text */
 .note-card-reel .note-card-media img { object-position: center; }
 .note-card-blank {
   width: 100%; height: 100%; display: grid; place-items: center;

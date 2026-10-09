@@ -3,15 +3,15 @@ import { Colophon } from "@/components/Colophon";
 import { FollowRow } from "@/components/FollowRow";
 import { Masthead } from "@/components/Masthead";
 import { NotesGrid } from "@/components/NotesGrid";
-import { getNotes, getSeries } from "@/lib/notes";
+import { describeNotes, getNotes, getSeries } from "@/lib/notes";
 
 export const metadata: Metadata = {
   title: "Notes · Manraj Sidhu",
-  description: "Every carousel and reel I've posted about building with AI, in one place. Swipe the slides, watch the reels, follow along.",
+  description: "Every reel and post I've put out about building with AI, in one place. Watch them here and follow along on TikTok, Instagram, X and Substack.",
   alternates: { canonical: "https://manrajssidhu.com/notes", types: { "application/rss+xml": "https://manrajssidhu.com/feed.xml" } },
   openGraph: {
     title: "Notes · Manraj Sidhu",
-    description: "Every carousel and reel I've posted about building with AI, in one place.",
+    description: "Every reel and post I've put out about building with AI, in one place.",
     url: "https://manrajssidhu.com/notes",
     type: "website",
   },
@@ -20,9 +20,6 @@ export const metadata: Metadata = {
 export default function NotesPage() {
   const notes = getNotes();
   const series = getSeries();
-  const carousels = notes.filter((n) => n.kind === "carousel").length;
-  const reels = notes.filter((n) => n.kind === "reel").length;
-  const newsletters = notes.length - carousels - reels;
   return (
     <>
       <a className="skip" href="#main">
@@ -38,10 +35,10 @@ export default function NotesPage() {
             Everything I&apos;ve posted, <em>in one place.</em>
           </h1>
           <p className="section-lede">
-            {carousels} carousels, {reels} reels{newsletters ? ` and ${newsletters} newsletter${newsletters === 1 ? "" : "s"}` : ""} on building with AI: Claude, agents, n8n, the apps I ship and what
-            goes wrong. Swipe the slides here, or open any of them on TikTok and Instagram.
+            {describeNotes(notes)} on building with AI: Claude, agents, the apps I ship and what goes wrong. Watch them
+            here, or follow along where they land first.
           </p>
-          <FollowRow compact />
+          <FollowRow />
         </section>
         <section className="section notes-body" aria-label="All notes">
           <NotesGrid notes={notes} series={series} />

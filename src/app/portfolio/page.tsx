@@ -6,7 +6,7 @@ import { Masthead } from "@/components/Masthead";
 import { NoteCard } from "@/components/NoteCard";
 import { ProjectEntry } from "@/components/ProjectEntry";
 import { bucketOrder, buckets, projects } from "@/data/projects";
-import { getNotes } from "@/lib/notes";
+import { describeNotes, getNotes } from "@/lib/notes";
 
 export const metadata: Metadata = {
   title: "Portfolio · Manraj Sidhu",
@@ -24,8 +24,6 @@ export const metadata: Metadata = {
 export default function PortfolioPage() {
   const notes = getNotes();
   const latest = notes.slice(0, 6);
-  const carousels = notes.filter((n) => n.kind === "carousel").length;
-  const reels = notes.length - carousels;
   return (
     <>
       <a className="skip" href="#main">
@@ -83,7 +81,7 @@ export default function PortfolioPage() {
             The latest <em>posts.</em>
           </h2>
           <p className="section-lede">
-            {carousels} carousels and {reels} reels. Every post lands here the moment it goes out.
+            {describeNotes(notes)}. Every post lands here the moment it goes out.
           </p>
           <div className="notes-grid">
             {latest.map((n) => (
@@ -125,7 +123,7 @@ export default function PortfolioPage() {
             </a>
             <a className="link-card" href="https://www.instagram.com/manrajtalks/" target="_blank" rel="noopener noreferrer">
               <div className="link-card-row">
-                <span>Carousels &amp; reels</span>
+                <span>Reels &amp; posts</span>
                 <span className="link-card-arrow" aria-hidden="true">→</span>
               </div>
               <h3 className="link-card-title">Instagram</h3>
