@@ -6,11 +6,9 @@ import { useEffect, useRef, useState } from "react";
 
 const navItems = [
   { id: "about", href: "/#about", label: "About" },
-  { id: "approach", href: "/#approach", label: "Approach" },
   { id: "work", href: "/#work", label: "Work" },
   { id: "notes", href: "/notes", label: "Notes" },
   { id: "portfolio", href: "/portfolio", label: "Portfolio" },
-  { id: "contact", href: "/#contact", label: "Contact" },
 ];
 
 export function Masthead() {
@@ -81,8 +79,9 @@ export function Masthead() {
         <Link href="/#top" className="mark" aria-label="Home">
           <span className="mark-glyph">M</span>
           <span className="mark-rule" />
-          <span className="mark-text">AI agents &amp; automations for small teams</span>
+          <span className="mark-text">Manraj Sidhu</span>
         </Link>
+        <div className="masthead-right">
         <nav className="nav" aria-label="Primary" ref={navRef}>
           {pill && (
             <span
@@ -103,6 +102,10 @@ export function Masthead() {
             </Link>
           ))}
         </nav>
+        <Link href="/#contact" className="btn nav-cta">
+          Work with me
+        </Link>
+        </div>
       </div>
     </header>
   );

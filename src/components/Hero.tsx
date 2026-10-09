@@ -10,6 +10,10 @@ export function Hero() {
   return (
     <section className="hero" id="top">
       <div className="hero-inner">
+        <figure className="hero-portrait">
+          <img src="/assets/portrait-hero.webp" alt="Manraj Sidhu" width={800} height={800} fetchPriority="high" decoding="async" />
+        </figure>
+        <div className="hero-copy">
         <div className="hero-meta">
           <span>I build AI agents and automations for small teams.</span>
         </div>
@@ -43,6 +47,7 @@ export function Hero() {
             </li>
           ))}
         </ul>
+        </div>
       </div>
     </section>
   );

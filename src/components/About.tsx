@@ -28,6 +28,26 @@ export function About() {
                 my own work first, so I know where it breaks.
               </p>
             </li>
+                <li>
+              <span className="about-num" aria-hidden="true">02</span>
+              <p>
+                My own setup is the test bed. Scheduled Claude routines
+                prep my day, drain a queue and refresh a dataset
+                overnight. If a workflow survives a month on my desk,
+                it&apos;s ready for someone else&apos;s.
+              </p>
+            </li>
+            <li>
+              <span className="about-num" aria-hidden="true">03</span>
+              <p>
+                I compete in Pokémon VGC, the official doubles format,
+                and travel to regional tournaments when I can. The
+                format is full of repetitive analysis: damage maths,
+                speed tiers, threat coverage. So I built the tools I
+                wished existed, for myself first and the community
+                second.
+              </p>
+            </li>
           </ol>
 
           <div
@@ -36,27 +56,7 @@ export function About() {
             aria-hidden={!expanded}
           >
             <div className="about-rest-grid">
-              <ol className="about-numbered about-numbered-rest" start={2}>
-                <li>
-                  <span className="about-num" aria-hidden="true">02</span>
-                  <p>
-                    My own setup is the test bed. Scheduled Claude routines
-                    prep my day, drain a queue and refresh a dataset
-                    overnight. If a workflow survives a month on my desk,
-                    it&apos;s ready for someone else&apos;s.
-                  </p>
-                </li>
-                <li>
-                  <span className="about-num" aria-hidden="true">03</span>
-                  <p>
-                    I compete in Pokémon VGC, the official doubles format,
-                    and travel to regional tournaments when I can. The
-                    format is full of repetitive analysis: damage maths,
-                    speed tiers, threat coverage. So I built the tools I
-                    wished existed, for myself first and the community
-                    second.
-                  </p>
-                </li>
+              <ol className="about-numbered about-numbered-rest" start={4}>
                 <li>
                   <span className="about-num" aria-hidden="true">04</span>
                   <p>
