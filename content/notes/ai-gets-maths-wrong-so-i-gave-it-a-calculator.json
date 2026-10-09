@@ -1,0 +1,22 @@
+{
+  "slug": "ai-gets-maths-wrong-so-i-gave-it-a-calculator",
+  "title": "AI gets maths wrong. So I gave it a calculator.",
+  "kind": "newsletter",
+  "date": "2026-10-09",
+  "series": "Built With AI",
+  "episode": null,
+  "pillar": "Claude & skills",
+  "hook": "Stop asking AI to remember facts. Give it something to look them up in.",
+  "keyword": null,
+  "summary": "Stop asking AI to remember facts. Give it something to look them up in.",
+  "body": [
+    "Ask a chatbot whether your Pokémon survives a hit and it answers straight away, dead certain. Often it's wrong. It never sounds wrong, which is the bit that catches you.",
+    "People say AI is too unreliable for real work. On its own, fair enough. Plugged into a real tool, it's a different thing, and hardly anyone plugs it in."
+  ],
+  "tags": [],
+  "links": {
+    "substack": "https://mannyssidhu.substack.com/p/ai-gets-maths-wrong-so-i-gave-it-a-calculator"
+  },
+  "slides": [],
+  "cover": null
+}

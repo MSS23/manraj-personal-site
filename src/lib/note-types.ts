@@ -1,5 +1,7 @@
 /** Shared between server and client components: no node imports here. */
-export type NoteKind = "carousel" | "reel";
+export type NoteKind = "carousel" | "reel" | "newsletter";
+
+export const KIND_LABEL: Record<NoteKind, string> = { carousel: "Carousel", reel: "Reel", newsletter: "Newsletter" };
 
 export type Note = {
   slug: string;

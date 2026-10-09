@@ -7,7 +7,7 @@ import { Masthead } from "@/components/Masthead";
 import { NoteCard } from "@/components/NoteCard";
 import { SlideDeck } from "@/components/SlideDeck";
 import { TikTokEmbed } from "@/components/TikTokEmbed";
-import { formatDate, getNote, getNotes, tiktokId } from "@/lib/notes";
+import { formatDate, getNote, getNotes, KIND_LABEL, tiktokId } from "@/lib/notes";
 
 type Params = { slug: string };
 
@@ -94,7 +94,7 @@ export default async function NotePage({ params }: { params: Promise<Params> }) 
 
             <div className="note-text">
               <p className="kicker">
-                <span>§</span> {note.kind === "carousel" ? "Carousel" : "Reel"}
+                <span>§</span> {KIND_LABEL[note.kind]}
                 {note.series ? ` · ${note.series}${note.episode ? ` ${note.episode}` : ""}` : ""}
               </p>
               <h1 className="serif-heading note-title">{note.title}</h1>
@@ -128,7 +128,7 @@ export default async function NotePage({ params }: { params: Promise<Params> }) 
                 <div className="note-platforms">
                   {live.map((p) => (
                     <a key={p.key} className={`btn ${p.key === live[0].key ? "" : "btn-quiet"}`} href={note.links[p.key]} target="_blank" rel="noopener noreferrer">
-                      {note.kind === "reel" ? "Watch" : "See it"} on {p.label} ↗
+                      {note.kind === "reel" ? "Watch" : note.kind === "newsletter" ? "Read it" : "See it"} on {p.label} ↗
                     </a>
                   ))}
                 </div>

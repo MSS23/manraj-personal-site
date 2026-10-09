@@ -21,7 +21,8 @@ export default function NotesPage() {
   const notes = getNotes();
   const series = getSeries();
   const carousels = notes.filter((n) => n.kind === "carousel").length;
-  const reels = notes.length - carousels;
+  const reels = notes.filter((n) => n.kind === "reel").length;
+  const newsletters = notes.length - carousels - reels;
   return (
     <>
       <a className="skip" href="#main">
@@ -37,7 +38,7 @@ export default function NotesPage() {
             Everything I&apos;ve posted, <em>in one place.</em>
           </h1>
           <p className="section-lede">
-            {carousels} carousels and {reels} reels on building with AI: Claude, agents, n8n, the apps I ship and what
+            {carousels} carousels, {reels} reels{newsletters ? ` and ${newsletters} newsletter${newsletters === 1 ? "" : "s"}` : ""} on building with AI: Claude, agents, n8n, the apps I ship and what
             goes wrong. Swipe the slides here, or open any of them on TikTok and Instagram.
           </p>
           <FollowRow compact />

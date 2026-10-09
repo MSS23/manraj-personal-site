@@ -1,8 +1,8 @@
 import Link from "next/link";
-import { formatDate, type Note } from "@/lib/note-types";
+import { formatDate, KIND_LABEL, type Note } from "@/lib/note-types";
 
 export function NoteCard({ note }: { note: Note }) {
-  const label = note.kind === "carousel" ? `${note.slides.length} slides` : "Reel";
+  const label = note.kind === "carousel" ? `${note.slides.length} slides` : KIND_LABEL[note.kind];
   return (
     <Link href={`/notes/${note.slug}`} className={`note-card note-card-${note.kind}`}>
       <div className="note-card-media">
