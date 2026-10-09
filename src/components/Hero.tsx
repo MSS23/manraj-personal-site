@@ -3,7 +3,7 @@ export function Hero() {
     <section className="hero" id="top">
       <div className="hero-inner">
         <div className="hero-meta">
-          <span>I build with AI. Mostly tools that pull work off my own desk.</span>
+          <span>I build AI agents and automations for small teams.</span>
         </div>
 
         <h1 className="display">
@@ -14,8 +14,8 @@ export function Hero() {
         </h1>
 
         <p className="dek">
-          Tools that take a job off my desk. Agents that drain a queue while
-          I sleep. A few projects built around the games I play.
+          Agents that take a job off your desk. Workflows that run while you
+          sleep. Built with Claude, MCP and n8n, tested on my own work first.
         </p>
 
         <div className="hero-actions">
@@ -23,7 +23,7 @@ export function Hero() {
             See the projects
           </a>
           <a href="#contact" className="btn btn-quiet">
-            Get in touch
+            Work with me
           </a>
         </div>
 

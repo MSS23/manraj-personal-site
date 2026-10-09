@@ -35,7 +35,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Manraj Sidhu · AI consultant and builder",
     description:
-      "Side projects in AI and automation: VGC tools, Claude routines, MCP servers, brand sites.",
+      "AI consultant. Agents, automations and tools built with Claude, MCP and n8n for small teams.",
     type: "website",
     url: "https://manrajssidhu.com",
     images: [
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
         url: "https://manrajssidhu.com/assets/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Manraj Sidhu, AI consultant. Side projects, written up plainly.",
+        alt: "Manraj Sidhu, AI consultant. Agents and automations for small teams.",
       },
     ],
   },
@@ -51,7 +51,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Manraj Sidhu · AI consultant and builder",
     description:
-      "Side projects in AI and automation: VGC tools, Claude routines, MCP servers, brand sites.",
+      "AI consultant. Agents, automations and tools built with Claude, MCP and n8n for small teams.",
     images: ["https://manrajssidhu.com/assets/og-image.png"],
   },
   icons: {

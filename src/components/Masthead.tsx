@@ -81,7 +81,7 @@ export function Masthead() {
         <Link href="/#top" className="mark" aria-label="Home">
           <span className="mark-glyph">M</span>
           <span className="mark-rule" />
-          <span className="mark-text">AI consultant · side projects</span>
+          <span className="mark-text">AI agents &amp; automations for small teams</span>
         </Link>
         <nav className="nav" aria-label="Primary" ref={navRef}>
           {pill && (

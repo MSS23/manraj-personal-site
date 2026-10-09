@@ -14,18 +14,18 @@ export function About() {
       <div className="about-grid">
         <div className="about-body">
           <h2 className="serif-heading">
-            Builder, competitor, padel addict.
+            I build the boring half, so you don&apos;t have to.
           </h2>
 
           <ol className="about-numbered">
             <li>
               <span className="about-num" aria-hidden="true">01</span>
               <p className="lead">
-                <span className="dropcap">I</span>&apos;m Manraj. I build
-                with AI, mostly against the work in front of me: tools
-                that take a job I&apos;d otherwise put off, workflows
-                that run themselves, and the occasional thing built
-                around the games I play.
+                <span className="dropcap">I</span>&apos;m Manraj, an AI
+                consultant. I build agents and automations for small
+                teams: the enquiry replies, the reports, the data refreshes,
+                the admin that eats a week. Everything on this site I ran on
+                my own work first, so I know where it breaks.
               </p>
             </li>
           </ol>
@@ -40,10 +40,10 @@ export function About() {
                 <li>
                   <span className="about-num" aria-hidden="true">02</span>
                   <p>
-                    Some of these are personal infrastructure. Scheduled
-                    Claude routines that prep my day, drain a queue,
-                    refresh a dataset overnight, so my evenings go to
-                    building instead of the admin around it.
+                    My own setup is the test bed. Scheduled Claude routines
+                    prep my day, drain a queue and refresh a dataset
+                    overnight. If a workflow survives a month on my desk,
+                    it&apos;s ready for someone else&apos;s.
                   </p>
                 </li>
                 <li>
@@ -127,7 +127,7 @@ export function About() {
           <dl className="facts">
             <div>
               <dt>Working on</dt>
-              <dd>AI &amp; automation, mostly</dd>
+              <dd>Agents &amp; automations for small teams</dd>
             </div>
             <div>
               <dt>Tools</dt>
