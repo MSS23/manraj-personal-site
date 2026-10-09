@@ -273,4 +273,5 @@
 .substack-form { margin-top: 26px; }
 .substack-form iframe { width: 100%; max-width: 480px; height: 320px; border: 1px solid var(--border); border-radius: 14px; background: var(--bg-elevated); display: block; }
 .substack-form.is-compact { margin-top: 18px; }
+.newsletter-block .substack-form { margin-top: 4px; }
 .substack-form.is-compact iframe { height: 150px; max-width: 560px; }

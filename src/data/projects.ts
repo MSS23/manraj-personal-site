@@ -659,7 +659,7 @@ export const projects: Project[] = [
     meta: [
       { label: "Stack", valueHtml: "Next.js 15, Supabase (Postgres + RLS, auth, storage), react-globe.gl / Three.js, Capacitor 7" },
       { label: "Ops", valueHtml: "PostHog (EU, consent-gated), Sentry, Playwright smoke tests in CI, Vercel" },
-      { label: "Link", valueHtml: linkHtml("https://atlaria.app", "atlaria.app") },
+      { label: "Link", valueHtml: linkHtml("https://atlaria.app", "atlaria.app") + " · " + linkHtml("https://atlaria.web.app", "atlaria.web.app") },
     ],
     bucket: "products",
     detail: [

@@ -1,17 +1,17 @@
 const items = [
   "Claude",
+  "Claude Code",
   "MCP",
-  "TypeScript",
-  "Python 3.13",
-  "Postgres",
   "n8n",
-  "FastMCP",
-  "Streamlit",
-  "Gemini 2.5",
-  "Pydantic",
-  "Render",
+  "TypeScript",
+  "Next.js",
+  "Python",
+  "Postgres",
+  "Supabase",
+  "Clerk",
+  "Vercel",
+  "Hermes",
   "Pokémon VGC",
-  "Brand sites",
 ];
 
 export function Marquee() {

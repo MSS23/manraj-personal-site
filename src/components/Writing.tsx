@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { FollowRow } from "@/components/FollowRow";
 import { NoteCard } from "@/components/NoteCard";
+import { SubstackForm } from "@/components/SubstackForm";
 import { describeNotes, getNotes } from "@/lib/notes";
 
 export function Writing() {
@@ -35,6 +36,20 @@ export function Writing() {
           </p>
         </>
       )}
+
+      <div className="podcast-block newsletter-block" id="newsletter">
+        <p className="kicker podcast-kicker">
+          <span>§</span> Newsletter
+        </p>
+        <h3 className="serif-heading podcast-heading">
+          The longer version, <em>by email.</em>
+        </h3>
+        <p className="podcast-lede">
+          One email when something is worth your time: what I built, what broke, what I&apos;d do differently. No
+          schedule, no filler.
+        </p>
+        <SubstackForm compact />
+      </div>
 
       <div className="follow-block">
         <p className="kicker follow-kicker">
