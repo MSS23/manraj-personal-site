@@ -3,6 +3,7 @@ import { Approach } from "@/components/Approach";
 import { Colophon } from "@/components/Colophon";
 import { Contact } from "@/components/Contact";
 import { Hero } from "@/components/Hero";
+import { Marquee } from "@/components/Marquee";
 import { Masthead } from "@/components/Masthead";
 import { Reveal } from "@/components/Reveal";
 import { Work } from "@/components/Work";
@@ -19,6 +20,7 @@ export default async function HomePage() {
       <Masthead />
       <main id="main">
         <Hero live={live} />
+        <Marquee />
         <Reveal><About /></Reveal>
         <Reveal><hr className="rule" data-ornament="❦" /></Reveal>
         <Reveal><Approach /></Reveal>

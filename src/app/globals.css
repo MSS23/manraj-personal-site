@@ -285,8 +285,47 @@ a { color: inherit; text-decoration: none; }
 /* ─────────────────────────────────────────────────────────────
    Marquee
 ───────────────────────────────────────────────────────────── */
+.marquee {
+  width: 100%;
+  overflow: hidden;
+  margin: 80px 0 24px;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  padding: 18px 0;
+  background: var(--bg-soft);
+  position: relative;
+  -webkit-mask-image: linear-gradient(90deg, transparent 0, #000 12%, #000 88%, transparent 100%);
+          mask-image: linear-gradient(90deg, transparent 0, #000 12%, #000 88%, transparent 100%);
+}
+.marquee-track {
+  display: inline-flex;
+  gap: 28px;
+  align-items: center;
+  white-space: nowrap;
+  animation: marquee 64s linear infinite;
+  will-change: transform;
+}
+.marquee-item {
+  font-family: var(--font-fraunces), Georgia, serif;
+  font-style: italic;
+  font-weight: 500;
+  font-size: clamp(1.4rem, 2.4vw, 1.9rem);
+  letter-spacing: -0.01em;
+  color: var(--text);
+  font-variation-settings: "SOFT" 80, "opsz" 144;
+}
+.marquee-dot { font-size: 0.6rem; color: var(--blue); line-height: 1; }
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
 @media (prefers-reduced-motion: reduce) {
   .marquee-track { animation: none; }
+}
+@media (max-width: 720px) {
+  .marquee { margin: 56px 0 16px; padding: 14px 0; }
+  .marquee-track { animation-duration: 42s; gap: 22px; }
+  .marquee-item { font-size: clamp(1.1rem, 5vw, 1.5rem); }
 }
 
 /* ─────────────────────────────────────────────────────────────
@@ -1077,7 +1116,7 @@ a { color: inherit; text-decoration: none; }
 @media print {
   :root { --bg: #ffffff; --bg-elevated: #ffffff; --bg-soft: #ffffff; }
   html, body { background: #ffffff !important; color: #000 !important; font-size: 11pt; }
-  .masthead, .hero-actions, .entry-toggle, .entry-figure-overlay, .colophon-links { display: none !important; }
+  .masthead, .marquee, .hero-actions, .entry-toggle, .entry-figure-overlay, .colophon-links { display: none !important; }
   .entry-detail { height: auto !important; opacity: 1 !important; }
   *, *::before, *::after { animation: none !important; transition: none !important; }
   .section { padding: 12pt 0 !important; max-width: 100% !important; }
@@ -1180,6 +1219,11 @@ a { color: inherit; text-decoration: none; }
 .nav a { position: relative; z-index: 1; transition: color 0.2s ease; }
 .nav a:hover, .nav a.is-active { color: var(--text); }
 
+/* Marquee: pause on hover so people can read it. */
+.marquee:hover .marquee-track,
+.marquee:focus-within .marquee-track {
+  animation-play-state: paused;
+}
 
 /* Project entry: animate expand/collapse via grid-template-rows trick. */
 .entry-detail {
