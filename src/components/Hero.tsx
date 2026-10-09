@@ -1,4 +1,12 @@
+import { projects } from "@/data/projects";
+import { getNotes } from "@/lib/notes";
+
 export function Hero() {
+  const stats = [
+    { num: String(projects.length), label: "projects shipped" },
+    { num: String(getNotes().length), label: "reels on building in public" },
+    { num: "18th", label: "EUIC 2026, Pokémon VGC" },
+  ];
   return (
     <section className="hero" id="top">
       <div className="hero-inner">
@@ -28,18 +36,12 @@ export function Hero() {
         </div>
 
         <ul className="hero-stats" aria-label="At a glance">
-          <li>
-            <span className="hero-stat-num">6</span>
-            <span className="hero-stat-label">shipped projects</span>
-          </li>
-          <li>
-            <span className="hero-stat-num">1,199</span>
-            <span className="hero-stat-label">tests passing on the VGC MCP</span>
-          </li>
-          <li>
-            <span className="hero-stat-num">4</span>
-            <span className="hero-stat-label">scheduled agents in rotation</span>
-          </li>
+          {stats.map((st) => (
+            <li key={st.label}>
+              <span className="hero-stat-num">{st.num}</span>
+              <span className="hero-stat-label">{st.label}</span>
+            </li>
+          ))}
         </ul>
       </div>
     </section>

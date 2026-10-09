@@ -154,6 +154,7 @@
 
 /* Note page */
 .note-page .section, .notes-page .notes-head { padding-top: 120px; }
+@media (max-width: 880px) { .note-page .section, .notes-page .notes-head { padding-top: 132px; } }
 .notes-page .notes-head { padding-bottom: 20px; }
 .note-crumbs { margin-bottom: 26px; font-size: 13.5px; }
 .note-crumbs a { color: var(--text-muted); text-decoration: none; }

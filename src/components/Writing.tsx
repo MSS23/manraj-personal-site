@@ -43,30 +43,6 @@ export function Writing() {
         <FollowRow />
       </div>
 
-      <div className="links">
-        <a className="link-card" href="https://substack.com/@manrajtalks" target="_blank" rel="noopener noreferrer">
-          <div className="link-card-row">
-            <span>Newsletter</span>
-            <span className="link-card-arrow" aria-hidden="true">→</span>
-          </div>
-          <h3 className="link-card-title">Substack</h3>
-          <p className="link-card-desc">Essays on what I learn while building, and where I get it wrong.</p>
-          <p className="link-card-cta">Read on Substack</p>
-        </a>
-
-        <a className="link-card" href="https://www.tiktok.com/@manrajtalks" target="_blank" rel="noopener noreferrer">
-          <div className="link-card-row">
-            <span>Short-form</span>
-            <span className="link-card-arrow" aria-hidden="true">→</span>
-          </div>
-          <h3 className="link-card-title">TikTok</h3>
-          <p className="link-card-desc">
-            Short clips on what I&apos;m building, what I&apos;m learning, and the occasional life advice.
-          </p>
-          <p className="link-card-cta">Watch on TikTok</p>
-        </a>
-      </div>
-
       <div className="podcast-block">
         <p className="kicker podcast-kicker">
           <span>§</span> Podcast archive
@@ -79,19 +55,8 @@ export function Writing() {
           trust, mental health, morning routines, and trying to be better. We wrapped in 2023; the archive is still up
           on Spotify.
         </p>
-        <a
-          className="link-card podcast-card"
-          href="https://open.spotify.com/show/5lS5DvT73hfAvxMPVfM91b"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <div className="link-card-row">
-            <span>Podcast</span>
-            <span className="link-card-arrow" aria-hidden="true">→</span>
-          </div>
-          <h3 className="link-card-title">The DMC Podcast</h3>
-          <p className="link-card-desc">Three seasons, 127 episodes, archived on Spotify.</p>
-          <p className="link-card-cta">Listen on Spotify</p>
+        <a className="btn btn-quiet" href="https://open.spotify.com/show/5lS5DvT73hfAvxMPVfM91b" target="_blank" rel="noopener noreferrer">
+          Listen on Spotify ↗
         </a>
       </div>
     </section>
