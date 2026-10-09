@@ -585,15 +585,19 @@ export const projects: Project[] = [
     id: "entry-draft-league",
     folio: "08",
     title: "Pokémon Draft League · Real-time draft simulator",
-    titleHref: "https://pokemon-draft-simulator.vercel.app",
+    titleHref: "https://draftpokemon.com",
     tag: "Live · Next.js + Supabase",
     result: "{{draftUsers}} sign-ups, and the app my own league drafts on.",
     description:
       "A draft room for Pokémon leagues. Snake or auction formats, Reg G / H and Champions pools with the banlists baked in, a 1,000+ Pokémon database with real-time legality checks, and guest links so a whole league can draft without everyone making an account.",
+    lead: {
+      src: "/assets/work/draft-league/home.webp",
+      alt: "Pokémon Draft League. Landing page: draft leagues for competitive Pokémon.",
+    },
     meta: [
       { label: "Stack", valueHtml: "Next.js, Supabase realtime, Clerk, Vercel" },
       { label: "Role", valueHtml: "Solo, design through deploy" },
-      { label: "Link", valueHtml: linkHtml("https://pokemon-draft-simulator.vercel.app", "pokemon-draft-simulator.vercel.app") },
+      { label: "Link", valueHtml: linkHtml("https://draftpokemon.com", "draftpokemon.com") },
       { label: "Code", valueHtml: linkHtml("https://github.com/MSS23/pokemon-draft-simulator", "github.com/MSS23/pokemon-draft-simulator") },
     ],
     bucket: "pokemon",
@@ -609,10 +613,25 @@ export const projects: Project[] = [
           "<strong>Player profiles.</strong> Career record, titles, nationality and season history on a public page per player.",
         ],
       },
+      {
+        kind: "figure-stack",
+        figures: [
+          {
+            src: "/assets/work/draft-league/lobby.webp",
+            alt: "Public lobby. Open drafts and leagues anyone can join by code.",
+            caption: "<strong>Public lobby.</strong> Live drafts with their format and pick count. Join by code, or create your own.",
+          },
+          {
+            src: "/assets/work/draft-league/about.webp",
+            alt: "About page. Why the draft league exists and the formats it supports.",
+            caption: "<strong>Why it exists.</strong> Draft leagues used to live in Google Sheets and Discord threads. This replaced both.",
+          },
+        ],
+      },
       { kind: "h4", text: "Status" },
       {
         kind: "p",
-        html: "Live and in use, with a fix queue I'm working through in public: the production sign-in flow is the current job. The tickets are in Notion and the fixes become content.",
+        html: "Live at draftpokemon.com with {{draftUsers}} sign-ups and counting. The fix queue is in Notion and the fixes become content.",
       },
     ],
   },
@@ -622,18 +641,42 @@ export const projects: Project[] = [
     id: "entry-runlocke",
     folio: "09",
     title: "RunLocke · Pokémon challenge-run tracker",
-    titleHref: "https://runlocke-mss23s-projects.vercel.app",
-    tag: "Beta · Next.js + Supabase",
+    titleHref: "https://www.runlocke.com",
+    tag: "Live · Next.js + Supabase",
     result: "Every game, every trainer, one Hall of Fame.",
     description:
       "Track, share and compare Pokémon challenge runs: Nuzlockes, speedruns, full completions. Log encounters and deaths as you play, publish the champion team with historical sprites or real TCG card art, and compare runs with other players on community boards.",
+    lead: {
+      src: "/assets/work/runlocke/home.webp",
+      alt: "RunLocke. Landing page: your Pokémon runs, on the record.",
+    },
     meta: [
       { label: "Stack", valueHtml: "Next.js App Router, Tailwind v4, Clerk, Supabase, PostHog" },
       { label: "Role", valueHtml: "Solo, design through deploy" },
-      { label: "Link", valueHtml: linkHtml("https://runlocke-mss23s-projects.vercel.app", "runlocke") },
+      { label: "Link", valueHtml: linkHtml("https://www.runlocke.com", "runlocke.com") },
     ],
     bucket: "pokemon",
     detail: [
+      {
+        kind: "figure-stack",
+        figures: [
+          {
+            src: "/assets/work/runlocke/hall.webp",
+            alt: "Hall of Fame. Verified champion teams across every game.",
+            caption: "<strong>Hall of Fame.</strong> Every verified run that made it to the end, with the champion six and where each was caught.",
+          },
+          {
+            src: "/assets/work/runlocke/run.webp",
+            alt: "A single run page with the champion six and the full team history.",
+            caption: "<strong>A run.</strong> The champion team up top, then every Pokémon that was on the team along the way.",
+          },
+          {
+            src: "/assets/work/runlocke/teams.webp",
+            alt: "Teams page. Champion teams shown as sprites or Pokémon cards.",
+            caption: "<strong>Teams.</strong> Community squads as era-correct sprites or real card printings, exportable as a PNG.",
+          },
+        ],
+      },
       { kind: "h4", text: "What's interesting under the hood" },
       {
         kind: "ul",
@@ -656,6 +699,10 @@ export const projects: Project[] = [
     result: "Launched on the web first; iOS and Android shells share the same code.",
     description:
       "Build albums of photos and places and watch them land on an interactive 3D globe, with follows, likes, comments, a wishlist and travel stats. My first product with a company behind it: Online Safety Act assessment, moderation runbook and ICO registration included.",
+    lead: {
+      src: "/assets/work/atlaria/home.webp",
+      alt: "Atlaria. Landing page: keep the places that made you, on a 3D globe.",
+    },
     meta: [
       { label: "Stack", valueHtml: "Next.js 15, Supabase (Postgres + RLS, auth, storage), react-globe.gl / Three.js, Capacitor 7" },
       { label: "Ops", valueHtml: "PostHog (EU, consent-gated), Sentry, Playwright smoke tests in CI, Vercel" },
@@ -663,6 +710,21 @@ export const projects: Project[] = [
     ],
     bucket: "products",
     detail: [
+      {
+        kind: "figure-stack",
+        figures: [
+          {
+            src: "/assets/work/atlaria/discover.webp",
+            alt: "Discover. The community globe with pins, countries and travellers counted.",
+            caption: "<strong>Discover.</strong> Every public album is a pin on the shared globe. Spin it, find a place, read the story.",
+          },
+          {
+            src: "/assets/work/atlaria/demo.webp",
+            alt: "Demo account. A read-only feed and globe you can explore before signing up.",
+            caption: "<strong>Try it first.</strong> A read-only demo account shows the feed, the globe and a sample trip before anyone creates an account.",
+          },
+        ],
+      },
       { kind: "h4", text: "How it's built" },
       {
         kind: "ul",
