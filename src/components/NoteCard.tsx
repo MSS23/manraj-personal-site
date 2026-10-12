@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { TikTokEmbed } from "@/components/TikTokEmbed";
-import { formatDate, KIND_LABEL, tiktokId, type Note } from "@/lib/note-types";
+import { formatDate, isVideo, KIND_LABEL, reelEmbed, type Note } from "@/lib/note-types";
 
 function Body({ note }: { note: Note }) {
   return (
@@ -23,13 +23,14 @@ function Body({ note }: { note: Note }) {
 }
 
 export function NoteCard({ note }: { note: Note }) {
-  const tt = note.kind === "reel" ? tiktokId(note.links.tiktok) : undefined;
-  if (tt && note.links.tiktok) {
+  const video = isVideo(note.kind);
+  const em = video ? reelEmbed(note.links) : undefined;
+  if (em) {
     // Reels play in place: a button can't live inside a link, so only the text links to the note.
     return (
-      <article className="note-card note-card-reel">
+      <article className={`note-card note-card-reel note-card-${note.kind}`}>
         <div className="note-card-media">
-          <TikTokEmbed id={tt} cover={note.cover ?? undefined} title={note.title} url={note.links.tiktok} />
+          <TikTokEmbed {...em} cover={note.cover ?? undefined} title={note.title} />
         </div>
         <Link href={`/notes/${note.slug}`} className="note-card-body">
           <Body note={note} />
@@ -39,7 +40,7 @@ export function NoteCard({ note }: { note: Note }) {
   }
   const label = note.kind === "carousel" ? `${note.slides.length} slides` : KIND_LABEL[note.kind];
   return (
-    <Link href={`/notes/${note.slug}`} className={`note-card note-card-${note.kind}`}>
+    <Link href={`/notes/${note.slug}`} className={`note-card ${video ? "note-card-reel " : ""}note-card-${note.kind}`}>
       <div className="note-card-media">
         {note.cover ? (
           <img src={note.cover} alt="" loading="lazy" decoding="async" />
@@ -49,7 +50,7 @@ export function NoteCard({ note }: { note: Note }) {
           </div>
         )}
         <span className="note-card-badge">
-          {note.kind === "reel" && (
+          {video && (
             <svg width="10" height="10" viewBox="0 0 10 10" aria-hidden="true">
               <path d="M2 1.5v7l6-3.5z" fill="currentColor" />
             </svg>

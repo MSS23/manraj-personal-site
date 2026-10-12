@@ -1,7 +1,10 @@
 /** Shared between server and client components: no node imports here. */
-export type NoteKind = "carousel" | "reel" | "newsletter";
+export type NoteKind = "carousel" | "reel" | "motion" | "newsletter";
 
-export const KIND_LABEL: Record<NoteKind, string> = { carousel: "Carousel", reel: "Reel", newsletter: "Newsletter" };
+export const KIND_LABEL: Record<NoteKind, string> = { carousel: "Carousel", reel: "Reel", motion: "Motion reel", newsletter: "Newsletter" };
+
+/** Reels and motion reels: video posts that play in place. */
+export const isVideo = (kind: NoteKind) => kind === "reel" || kind === "motion";
 
 export type Note = {
   slug: string;
@@ -44,4 +47,18 @@ export function formatDate(iso: string): string {
 /** TikTok video id from a post URL, for the embed player. */
 export function tiktokId(url?: string): string | undefined {
   return url?.match(/\/video\/(\d+)/)?.[1];
+}
+
+/** Instagram shortcode from a reel or post URL. */
+export function instagramId(url?: string): string | undefined {
+  return url?.match(/\/(?:reel|reels|p)\/([\w-]+)/)?.[1];
+}
+
+/** The player for a video note: TikTok when it is there (plays without a login), else Instagram. */
+export function reelEmbed(links: Note["links"]): { src: string; name: "TikTok" | "Instagram"; url: string } | undefined {
+  const tt = tiktokId(links.tiktok);
+  if (tt && links.tiktok) return { src: `https://www.tiktok.com/embed/v2/${tt}?autoplay=1`, name: "TikTok", url: links.tiktok };
+  const ig = instagramId(links.instagram);
+  if (ig && links.instagram) return { src: `https://www.instagram.com/p/${ig}/embed/`, name: "Instagram", url: links.instagram };
+  return undefined;
 }

@@ -17,6 +17,7 @@ export function NotesGrid({ notes, series }: { notes: Note[]; series: string[] }
       all: notes.length,
       carousel: notes.filter((n) => n.kind === "carousel").length,
       reel: notes.filter((n) => n.kind === "reel").length,
+      motion: notes.filter((n) => n.kind === "motion").length,
       newsletter: notes.filter((n) => n.kind === "newsletter").length,
     }),
     [notes],
@@ -41,6 +42,7 @@ export function NotesGrid({ notes, series }: { notes: Note[]; series: string[] }
       { id: "all", label: "All" },
       { id: "carousel", label: "Carousels" },
       { id: "reel", label: "Reels" },
+      { id: "motion", label: "Motion reels" },
       { id: "newsletter", label: "Newsletters" },
     ] as const
   ).filter((c) => counts[c.id] > 0);

@@ -8,7 +8,7 @@ import { NoteCard } from "@/components/NoteCard";
 import { SlideDeck } from "@/components/SlideDeck";
 import { SubstackForm } from "@/components/SubstackForm";
 import { TikTokEmbed } from "@/components/TikTokEmbed";
-import { formatDate, getNote, getNotes, KIND_LABEL, tiktokId } from "@/lib/notes";
+import { formatDate, getNote, getNotes, isVideo, KIND_LABEL, reelEmbed } from "@/lib/notes";
 
 type Params = { slug: string };
 
@@ -67,7 +67,8 @@ export default async function NotePage({ params }: { params: Promise<Params> }) 
   const newer = notes[idx - 1];
   const older = notes[idx + 1];
   const related = notes.filter((n) => n.slug !== note.slug && n.series && n.series === note.series).slice(0, 3);
-  const tt = tiktokId(note.links.tiktok);
+  const video = isVideo(note.kind);
+  const em = video ? reelEmbed(note.links) : undefined;
   const live = PLATFORMS.filter((p) => note.links[p.key]);
 
   return (
@@ -86,8 +87,8 @@ export default async function NotePage({ params }: { params: Promise<Params> }) 
             <div className="note-media">
               {note.kind === "carousel" && note.slides.length > 0 ? (
                 <SlideDeck slides={note.slides} title={note.title} />
-              ) : tt && note.links.tiktok ? (
-                <TikTokEmbed id={tt} cover={note.cover ?? undefined} title={note.title} url={note.links.tiktok} />
+              ) : em ? (
+                <TikTokEmbed {...em} cover={note.cover ?? undefined} title={note.title} />
               ) : note.cover ? (
                 <img className="note-cover" src={note.cover} alt="" />
               ) : null}
@@ -129,7 +130,7 @@ export default async function NotePage({ params }: { params: Promise<Params> }) 
                 <div className="note-platforms">
                   {live.map((p) => (
                     <a key={p.key} className={`btn ${p.key === live[0].key ? "" : "btn-quiet"}`} href={note.links[p.key]} target="_blank" rel="noopener noreferrer">
-                      {note.kind === "reel" ? "Watch" : note.kind === "newsletter" ? "Read it" : "See it"} on {p.label} ↗
+                      {video ? "Watch" : note.kind === "newsletter" ? "Read it" : "See it"} on {p.label} ↗
                     </a>
                   ))}
                 </div>
