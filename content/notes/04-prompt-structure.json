@@ -3,21 +3,21 @@
   "title": "The 5-part prompt",
   "kind": "carousel",
   "date": "2026-10-05",
-  "series": "Claude Skills Week",
-  "episode": "04",
+  "series": "The Stack",
+  "episode": "05",
   "pillar": "Claude & skills",
   "hook": "The 5-part prompt",
   "keyword": "PROMPT",
-  "summary": "The 5-part prompt structure I use for almost everything: context, task, constraints, format, example. Save it for your next prompt.",
+  "summary": "The 5-part prompt I use for almost everything. Steal the structure, swap in your task.\nContext, task, constraints, format, example. Vague prompt in, vague answer out; this fixes it.\nSave this one and follow @manrajtalks for practical Claude tips you can use the same day.\nFree weekly guide: Life With AI (link in bio)",
   "body": [
-    "The 5-part prompt structure I use for almost everything: context, task, constraints, format, example. Save it for your next prompt."
+    "The 5-part prompt I use for almost everything. Steal the structure, swap in your task.\nContext, task, constraints, format, example. Vague prompt in, vague answer out; this fixes it.\nSave this one and follow @manrajtalks for practical Claude tips you can use the same day.\nFree weekly guide: Life With AI (link in bio)"
   ],
   "tags": [
     "claude",
+    "promptengineering",
     "ai",
-    "aitools",
-    "productivity",
-    "manrajtalks"
+    "chatgpt",
+    "aitips"
   ],
   "links": {},
   "slides": [
@@ -30,5 +30,5 @@
     "/notes/04-prompt-structure/7.jpg"
   ],
   "cover": "/notes/04-prompt-structure/cover.jpg",
-  "style": "manrajtalks"
+  "style": "ai_herway"
 }

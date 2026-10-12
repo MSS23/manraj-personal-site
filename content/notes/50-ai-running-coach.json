@@ -8,19 +8,19 @@
   "pillar": "Life",
   "hook": "Use AI as a running coach",
   "keyword": "RUN",
-  "summary": "Use AI as a running coach without getting injured: give it your real week, ask for easy runs and rest.",
+  "summary": "Most free running plans assume you run 6 times a week and never have a bad day.",
   "body": [
-    "Use AI as a running coach without getting injured: give it your real week, ask for easy runs and rest.",
-    "Most free plans assume 6 runs a week and no bad days. Then you miss two sessions and quit.\nSlide 1 is the prompt. Fill in your runs, your longest run, your goal and your weeks.\nSlide 6 is the weekly check-in that keeps the plan honest.\nAI plans, your body decides: pain that does not go away is a physio question, not a prompt.",
-    "Works in ChatGPT (https://chatgpt.com) or Claude (https://claude.ai).",
-    "Running anything soon? Tell me your goal and I'll ask AI for your first week.\nFollow @manrajtalks for more AI for real life."
+    "Most free running plans assume you run 6 times a week and never have a bad day.",
+    "So I give AI my real week instead: which days I can run, my weekly distance and longest run, the goal, and the other sport I play.\nThen I ask for mostly easy runs, rest days, and a plan that adjusts when I miss a week. Because you will.\nOne rule: AI plans, your body decides. Pain that won't go away is a physio question, not a prompt.",
+    "Works in ChatGPT (chatgpt.com) or Claude (claude.ai). Both prompts are on slides 1 and 6, save this for your next block.",
+    "Running anything soon? Comment your goal and I'll ask AI for your first week."
   ],
   "tags": [
-    "aitools",
-    "runningcoach",
+    "airunningcoach",
     "runningplan",
-    "chatgpt",
-    "claudeai"
+    "chatgptprompts",
+    "aiforreallife",
+    "couchto5k"
   ],
   "links": {},
   "slides": [
@@ -33,5 +33,5 @@
     "/notes/50-ai-running-coach/7.jpg"
   ],
   "cover": "/notes/50-ai-running-coach/cover.jpg",
-  "style": "manrajtalks"
+  "style": "michaelaiacademy2"
 }

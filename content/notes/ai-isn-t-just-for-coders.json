@@ -8,15 +8,25 @@
   "pillar": "Claude & skills",
   "hook": "AI and using AI should not just be for developers, it should be for everyone.",
   "keyword": "CLAUDE",
-  "summary": "Metricool: scheduled Sun 22:54 IG + TikTok (+ IG trial reel)",
+  "summary": "How I use Claude AI for everyday tasks (no coding needed) 👇",
   "body": [
-    "Metricool: scheduled Sun 22:54 IG + TikTok (+ IG trial reel)"
+    "How I use Claude AI for everyday tasks (no coding needed) 👇",
+    "AI shouldn't only be for developers. Here are 3 ways I use it for normal life admin:",
+    "1. Google Drive clean-up. Claude's Google Drive connector sorted my mess into folders and flagged files to review before deleting.\n2. Notion dashboard. Claude connects to Notion, so I just talk to it and it tidies my content and planning pages.\n3. Email triage. Claude reads my inbox and pulls out what actually needs a reply, so mornings feel a lot lighter.",
+    "Bonus: I talk to it with Wispr Flow instead of typing.",
+    "Comment CLAUDE and I'll send you how I set it up."
   ],
-  "tags": [],
+  "tags": [
+    "claudeai",
+    "aitools",
+    "notion",
+    "techtok"
+  ],
   "links": {
-    "instagram": "https://www.instagram.com/reel/DeXq-X6jozY/"
+    "instagram": "https://www.instagram.com/reel/DeXq-X6jozY/",
+    "tiktok": "https://www.tiktok.com/@manrajtalks/video/7695532048437513494"
   },
   "slides": [],
-  "cover": null,
+  "cover": "/notes/ai-isn-t-just-for-coders/cover.jpg",
   "views": null
 }
