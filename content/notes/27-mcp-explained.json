@@ -8,20 +8,16 @@
   "pillar": "AI & automation",
   "hook": "MCP: why AI can suddenly use your tools",
   "keyword": "MCP",
-  "summary": "MCP is why AI can suddenly use your tools.",
+  "summary": "MCP: why AI can suddenly use your tools.\nAI used to be stuck in a chat box. It could talk about your calendar, your files, your database. It just couldn't touch them.\nMCP (Model Context Protocol) is a standard plug between AI apps and tools. Build the connection once, use it everywhere.\nI built an MCP server for Pokémon damage calcs: open source, Python, 1,199+ automated tests.\nTry it: open your AI app's connectors, connect one tool you use daily, ask it to do something real.\nWant to see it work? Comment MCP and I'll show the server in action.\nFree weekly guide: Life With AI, link in bio.",
   "body": [
-    "MCP is why AI can suddenly use your tools.",
-    "Model Context Protocol is a standard plug between AI and tools. I built one, vgc-mcp, so Claude can run exact Pokémon damage calcs. It has 1,199+ automated tests.",
-    "MCP: modelcontextprotocol.io · vgc-mcp: github.com/MSS23/vgc-mcp",
-    "Comment MCP and I'll DM you my starter notes."
+    "MCP: why AI can suddenly use your tools.\nAI used to be stuck in a chat box. It could talk about your calendar, your files, your database. It just couldn't touch them.\nMCP (Model Context Protocol) is a standard plug between AI apps and tools. Build the connection once, use it everywhere.\nI built an MCP server for Pokémon damage calcs: open source, Python, 1,199+ automated tests.\nTry it: open your AI app's connectors, connect one tool you use daily, ask it to do something real.\nWant to see it work? Comment MCP and I'll show the server in action.\nFree weekly guide: Life With AI, link in bio."
   ],
   "tags": [
     "mcp",
     "aiagents",
-    "claudeai",
-    "llm",
-    "manrajtalks",
-    "mtagent09"
+    "claude",
+    "modelcontextprotocol",
+    "agentsexplained"
   ],
   "links": {},
   "slides": [
@@ -34,5 +30,5 @@
     "/notes/27-mcp-explained/7.jpg"
   ],
   "cover": "/notes/27-mcp-explained/cover.jpg",
-  "style": "house"
+  "style": "manrajtalks"
 }

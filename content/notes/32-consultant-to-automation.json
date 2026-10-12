@@ -8,18 +8,18 @@
   "pillar": "AI & automation",
   "hook": "What companies pay consultants for that you can automate",
   "keyword": "CONSULT",
-  "summary": "What companies pay consultants for that you can automate, from an ex-PwC consultant.",
+  "summary": "What companies pay consultants for that you can automate.",
   "body": [
-    "What companies pay consultants for that you can automate, from an ex-PwC consultant.",
-    "A lot of consulting is repeat work: status reports, data pulls, slide formatting, meeting notes, first drafts.\nAutomate anything that follows a template. Keep the judgement calls human.\nStart with your most boring recurring task: write the steps down, find the template, automate the gathering first.",
-    "What eats your week? Comment it below and I might automate it in the next episode.\nSmall business? DM me AUDIT."
+    "What companies pay consultants for that you can automate.",
+    "I did this work at PwC. Status reports, data pulls, first drafts: billable, but very repeatable. The judgement calls stay human.",
+    "What eats your week? Comment TASK and I might automate it in the next episode. Small business? DM me AUDIT."
   ],
   "tags": [
     "aiautomation",
     "consulting",
     "n8n",
     "aiagents",
-    "workflowautomation"
+    "manrajtalks"
   ],
   "links": {},
   "slides": [
@@ -32,5 +32,5 @@
     "/notes/32-consultant-to-automation/7.jpg"
   ],
   "cover": "/notes/32-consultant-to-automation/cover.jpg",
-  "style": "manrajtalks"
+  "style": "ai_herway"
 }

@@ -8,20 +8,15 @@
   "pillar": "AI x Pokémon",
   "hook": "I gave Claude a Pokémon damage calculator",
   "keyword": "CALC",
-  "summary": "AI is confidently wrong at damage calcs. So I gave Claude a real calculator.",
+  "summary": "I gave Claude a Pokémon damage calculator.\nWhy AI needs tools for exact maths, and the open-source MCP server I built.\nComment MCP and I'll send you the link.",
   "body": [
-    "AI is confidently wrong at damage calcs. So I gave Claude a real calculator.",
-    "vgc-mcp is my open-source MCP server for Pokémon VGC: exact damage and speed calcs. Python, hosted on Render, 1,199+ automated tests.",
-    "github.com/MSS23/vgc-mcp",
-    "Comment CALC and I'll DM you the repo."
+    "I gave Claude a Pokémon damage calculator.\nWhy AI needs tools for exact maths, and the open-source MCP server I built.\nComment MCP and I'll send you the link."
   ],
   "tags": [
-    "pokemonvgc",
     "mcp",
-    "claudeai",
-    "opensource",
-    "manrajtalks",
-    "mtbwa06"
+    "claude",
+    "pokemonvgc",
+    "aitools"
   ],
   "links": {},
   "slides": [
@@ -34,5 +29,5 @@
     "/notes/41-vgc-mcp/7.jpg"
   ],
   "cover": "/notes/41-vgc-mcp/cover.jpg",
-  "style": "house"
+  "style": "manrajtalks"
 }

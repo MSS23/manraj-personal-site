@@ -3,25 +3,21 @@
   "title": "Snap a receipt. It files itself.",
   "kind": "carousel",
   "date": "2026-10-05",
-  "series": "Agent Notes",
+  "series": "Automate This, ep. 5",
   "episode": "10",
   "pillar": "AI & automation",
   "hook": "Snap a receipt. It files itself.",
   "keyword": "RECEIPT",
-  "summary": "Snap a receipt and it files itself.",
+  "summary": "Snap a receipt. It files itself.\nNo more shoebox of receipts at month end. Photo to a Telegram bot, AI reads merchant, date, total, VAT and category, a row lands in your expenses sheet, and you get a monthly summary.\nTools: Telegram, an AI model with JSON output, Google Sheets.\nGot a boring task? Comment it below and I might automate it in the next episode. Small business? DM me AUDIT.",
   "body": [
-    "Snap a receipt and it files itself.",
-    "Send a photo, AI reads the merchant, date, amount and category, and a row lands in your expenses sheet. Low-confidence ones come to you.",
-    "n8n: n8n.io",
-    "Comment RECEIPT and I'll DM you the template."
+    "Snap a receipt. It files itself.\nNo more shoebox of receipts at month end. Photo to a Telegram bot, AI reads merchant, date, total, VAT and category, a row lands in your expenses sheet, and you get a monthly summary.\nTools: Telegram, an AI model with JSON output, Google Sheets.\nGot a boring task? Comment it below and I might automate it in the next episode. Small business? DM me AUDIT."
   ],
   "tags": [
     "automation",
-    "n8n",
-    "personalfinance",
-    "aiautomation",
-    "manrajtalks",
-    "mtagent10"
+    "ai",
+    "aiagents",
+    "expenses",
+    "ukbusiness"
   ],
   "links": {},
   "slides": [
@@ -34,5 +30,5 @@
     "/notes/28-receipts-to-expenses/7.jpg"
   ],
   "cover": "/notes/28-receipts-to-expenses/cover.jpg",
-  "style": "house"
+  "style": "leadwithzoe"
 }
