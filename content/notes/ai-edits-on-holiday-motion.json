@@ -1,0 +1,28 @@
+{
+  "slug": "ai-edits-on-holiday-motion",
+  "title": "My AI edits my videos on holiday",
+  "kind": "motion",
+  "date": "2026-10-14",
+  "series": "Agent Notes",
+  "episode": null,
+  "pillar": "AI & automation",
+  "hook": "My AI edits my videos on holiday",
+  "keyword": "TELEGRAM",
+  "summary": "How do you run AI agents while you're on holiday? My AI edits my videos and my PC never leaves the house.\nAn old laptop connects to my PC at home, so all the power and compute stays there. Hermes (an AI agent harness) runs the jobs: video edits, my Notion board clean-up and Telegram messages. Every edit lands in Telegram as a preview and I watch it on my phone. Claude Code straight on my phone was too finicky.\nManraj Sidhu, AI developer, shows the real setup.\nComment TELEGRAM and I'll show you how I set it up. Follow @manrajtalks",
+  "body": [
+    "How do you run AI agents while you're on holiday? My AI edits my videos and my PC never leaves the house.\nAn old laptop connects to my PC at home, so all the power and compute stays there. Hermes (an AI agent harness) runs the jobs: video edits, my Notion board clean-up and Telegram messages. Every edit lands in Telegram as a preview and I watch it on my phone. Claude Code straight on my phone was too finicky.\nManraj Sidhu, AI developer, shows the real setup.\nComment TELEGRAM and I'll show you how I set it up. Follow @manrajtalks"
+  ],
+  "tags": [
+    "aiagents",
+    "claudecode",
+    "hermesagent",
+    "telegrambot",
+    "manrajtalks"
+  ],
+  "links": {
+    "instagram": "https://www.instagram.com/reel/Dee4Z8ZlWFq/"
+  },
+  "slides": [],
+  "cover": "/notes/ai-edits-on-holiday-motion/cover.jpg",
+  "views": 13
+}
