@@ -1,0 +1,28 @@
+{
+  "slug": "posthog-session-replay-carousel",
+  "title": "Stop reading page views.",
+  "kind": "reel",
+  "date": "2026-10-15",
+  "series": "The Stack",
+  "episode": null,
+  "pillar": "Building in public",
+  "hook": "Stop reading page views.",
+  "keyword": "POSTHOG",
+  "summary": "Metricool: scheduled Thu 15 Oct 13:00 IG + TikTok (8 slides: 1333-posthog-session-replay)",
+  "body": [
+    "Metricool: scheduled Thu 15 Oct 13:00 IG + TikTok (8 slides: 1333-posthog-session-replay)"
+  ],
+  "tags": [
+    "posthog",
+    "webdevelopment",
+    "buildinpublic",
+    "manrajtalks"
+  ],
+  "links": {
+    "tiktok": "https://www.tiktok.com/@manrajtalks/video/7696863802658245910",
+    "instagram": "https://www.instagram.com/p/Deg6qD2iAne/"
+  },
+  "slides": [],
+  "cover": "/notes/posthog-session-replay-carousel/cover.jpg",
+  "views": 700
+}
