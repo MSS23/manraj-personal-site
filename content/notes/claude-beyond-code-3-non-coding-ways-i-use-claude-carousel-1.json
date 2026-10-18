@@ -12,11 +12,17 @@
   "body": [
     "Metricool: scheduled Mon 12 Oct 13:00 IG + IG trial reel + TikTok. 3 ways I use Claude that aren't coding."
   ],
-  "tags": [],
+  "tags": [
+    "claudeai",
+    "aitools",
+    "notion",
+    "productivity"
+  ],
   "links": {
-    "instagram": "https://www.instagram.com/p/DeZMIHojQ-i/"
+    "instagram": "https://www.instagram.com/p/DeZMIHojQ-i/",
+    "tiktok": "https://www.tiktok.com/@manrajtalks/video/7697714219977821462"
   },
   "slides": [],
-  "cover": null,
-  "views": 8
+  "cover": "/notes/claude-beyond-code-3-non-coding-ways-i-use-claude-carousel-1/cover.jpg",
+  "views": 743
 }
