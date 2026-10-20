@@ -1,0 +1,27 @@
+{
+  "slug": "how-my-team-stopped-shipping-broken-code",
+  "title": "How my team stopped shipping broken code",
+  "kind": "reel",
+  "date": "2026-10-19",
+  "series": null,
+  "episode": null,
+  "pillar": "Claude & skills",
+  "hook": "As an AI developer, there's one thing I did that helped my whole team push code that wasn't broken (on screen: how my team stopped shipping broken code, with one Claude plugin)",
+  "keyword": "PLUGIN",
+  "summary": "Claude Code plugins stopped my team pushing broken PRs to GitHub.",
+  "body": [
+    "Claude Code plugins stopped my team pushing broken PRs to GitHub.",
+    "We had a lot of PRs going up with errors and bugs. The fix was one Claude plugin: a backpack of tools and rules Claude loads every session.",
+    "Now when anyone on the team commits, the plugin kicks in, verifies and checks everything works as intended, and only then does the PR go to GitHub.",
+    "Plugins are guardrails. They make sure your implementation is correct before anyone else has to review it.",
+    "How would you use a Claude plugin in your workflow? Comment PLUGIN with your idea 👇"
+  ],
+  "tags": [],
+  "links": {
+    "instagram": "https://www.instagram.com/reel/Deq_9Hqleux/",
+    "tiktok": "https://www.tiktok.com/@manrajtalks/video/7698317282887355670"
+  },
+  "slides": [],
+  "cover": "/notes/how-my-team-stopped-shipping-broken-code/cover.jpg",
+  "views": 766
+}
