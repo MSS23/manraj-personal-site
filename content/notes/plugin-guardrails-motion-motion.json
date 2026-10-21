@@ -1,0 +1,33 @@
+{
+  "slug": "plugin-guardrails-motion-motion",
+  "title": "Stop hoping reviewers catch bugs",
+  "kind": "motion",
+  "date": "2026-10-20",
+  "series": null,
+  "episode": null,
+  "pillar": "Claude & skills",
+  "hook": "Stop hoping reviewers catch bugs",
+  "keyword": "PLUGIN",
+  "summary": "Stop hoping reviewers catch bugs: a Claude Code plugin checks every commit before the PR goes to GitHub.",
+  "body": [
+    "Stop hoping reviewers catch bugs: a Claude Code plugin checks every commit before the PR goes to GitHub.",
+    "Our PRs kept landing with errors in them. The fix was one Claude plugin: a backpack of tools and rules Claude loads every session. Now every commit triggers it, it verifies and checks that everything works, and only then does the PR go up.",
+    "Plugins are guardrails. The code is correct before anyone else has to review it.",
+    "I'm Manraj Sidhu, AI developer, and this is the real setup my team uses.\nBuilt with @claudeai @github",
+    "Which plugin would you build? Comment PLUGIN with your idea.\nFollow @manrajtalks"
+  ],
+  "tags": [
+    "ai",
+    "claudecode",
+    "aicoding",
+    "devtools",
+    "manrajtalks"
+  ],
+  "links": {
+    "tiktok": "https://www.tiktok.com/@manrajtalks/video/7698842946342259990",
+    "instagram": "https://www.instagram.com/reel/DeupX2RCDco/"
+  },
+  "slides": [],
+  "cover": "/notes/plugin-guardrails-motion-motion/cover.jpg",
+  "views": 336
+}
