@@ -11,7 +11,10 @@ export function Colophon() {
   return (
     <footer className="colophon proof">
       <div className="container colophon-inner">
-        <p className="colophon-name">Manraj Sidhu</p>
+        <div className="colophon-mast">
+          <p className="colophon-name">Manraj Sidhu</p>
+          <p className="colophon-role">AI engineer. Agents, automations and products, built in public.</p>
+        </div>
         <ul className="colophon-links" aria-label="Elsewhere">
           <li>
             <a href="/portfolio">Portfolio</a>

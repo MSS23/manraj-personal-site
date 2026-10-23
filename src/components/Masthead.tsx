@@ -102,7 +102,7 @@ export function Masthead() {
           ))}
         </nav>
         <Link href="/#contact" className="btn btn-quiet nav-cta">
-          Work with me
+          Get in touch
         </Link>
         </div>
       </div>

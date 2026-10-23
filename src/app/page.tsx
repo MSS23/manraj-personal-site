@@ -2,6 +2,7 @@ import { About } from "@/components/About";
 import { Approach } from "@/components/Approach";
 import { Colophon } from "@/components/Colophon";
 import { Contact } from "@/components/Contact";
+import { Expertise } from "@/components/Expertise";
 import { Figures, Hero } from "@/components/Hero";
 import { Masthead } from "@/components/Masthead";
 import { Reveal } from "@/components/Reveal";
@@ -20,6 +21,7 @@ export default async function HomePage() {
       <main id="main">
         <Hero live={live} />
         <Reveal><Work live={live} /></Reveal>
+        <Reveal><Expertise /></Reveal>
         <Reveal><About /></Reveal>
         <Reveal><Figures live={live} /></Reveal>
         <Reveal><Approach /></Reveal>

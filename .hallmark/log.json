@@ -1,6 +1,45 @@
 [
  {
   "mode": "redesign",
+  "depth": "polish",
+  "scope": "site",
+  "shape": "Index-First",
+  "theme": "studio",
+  "axes": "light/roman-serif/cool",
+  "hero": "Stage",
+  "nav": "masthead bar, five links, Get in touch",
+  "footer": "index columns with a role line",
+  "imagery": "the product and the owner's screenshots",
+  "photos": [],
+  "entry": "positioning: AI engineer, portfolio first, expertise rows, contact as a conversation",
+  "fingerprint": "ps-positioning-2026-10-23",
+  "sections": [
+   "Hero",
+   "Index",
+   "Expertise",
+   "About",
+   "Figures",
+   "How I build",
+   "Notes",
+   "Contact"
+  ],
+  "signature": "the live product on the proof sheet",
+  "waived": [
+   "42",
+   "44c",
+   "39b",
+   "49b",
+   "3",
+   "79",
+   "83",
+   "8",
+   "7b"
+  ],
+  "prompt": "AI engineer positioning, portfolio-first home and contact; no offer language",
+  "date": "2026-10-23"
+ },
+ {
+  "mode": "redesign",
   "depth": "full",
   "scope": "site",
   "shape": "Index-First",

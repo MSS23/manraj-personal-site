@@ -22,6 +22,9 @@ export const metadata: Metadata = {
   },
 };
 
+/** The three that show the range first: a product with real users, an MCP server with its tests, a pipeline that runs daily. */
+const SELECTED = ["entry-vgc", "entry-mcp", "entry-hermes"] as const;
+
 export default async function PortfolioPage() {
   const live = await liveStats();
   const notes = getNotes();
@@ -37,6 +40,33 @@ export default async function PortfolioPage() {
           <h1>What I&apos;ve built, and what I post.</h1>
           <p className="lead">The projects and the posts in one place, and where to follow along.</p>
           <FollowRow />
+        </section>
+
+        <section className="container section folio-section" id="selected" aria-labelledby="selected-h">
+          <div className="section-head">
+            <h2 id="selected-h">Start with these three.</h2>
+            <p className="lead">A product with real users, an MCP server with its tests, and a pipeline that runs every day.</p>
+          </div>
+          <ol className="offers offers-3">
+            {SELECTED.map((id) => {
+              const p = projects.find((x) => x.id === id);
+              if (!p) return null;
+              const live_ = withLive(p, live);
+              return (
+                <li key={id} className="offer">
+                  <h3>
+                    <a href={`#${id}`} className="entry-head-link">
+                      {p.title.split(" · ")[0]}
+                    </a>
+                  </h3>
+                  <p>{live_.result}</p>
+                  <p className="offer-proof">
+                    <a href={`#${id}`}>Read the case study</a>
+                  </p>
+                </li>
+              );
+            })}
+          </ol>
         </section>
 
         <section className="container section folio-section" id="projects" aria-labelledby="projects-h">

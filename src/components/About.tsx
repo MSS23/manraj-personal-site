@@ -33,7 +33,7 @@ export function About() {
           <ol className="about-numbered">
             <li>
               <p className="lead">
-                I&apos;m Manraj, an AI consultant. I build agents and automations for small teams: the enquiry
+                I&apos;m Manraj, an AI engineer. I build agents and automations for small teams: the enquiry
                 replies, the reports, the data refreshes, the admin that eats a week. Everything on this site I ran
                 on my own work first, so I know where it breaks.
               </p>
@@ -102,7 +102,7 @@ export function About() {
         <dl className="facts">
             <div>
               <dt>Working on</dt>
-              <dd>Agents &amp; automations for small teams</dd>
+              <dd>Agents, automation pipelines and AI enablement for teams</dd>
             </div>
             <div>
               <dt>Tools</dt>

@@ -11,13 +11,13 @@ export function Hero({ live }: { live: Live }) {
       <div className="container hero-inner">
         <div className="stage-copy">
           <h1>I build the boring half.</h1>
-          <p className="lead">Agents and automations for small teams, tested on my own work first.</p>
+          <p className="lead">AI engineer: agents, automations and products, tested on my own work first.</p>
           <div className="hero-actions">
-            <a href="#work" className="btn">
-              See the projects
+            <a href="/portfolio" className="btn">
+              See the portfolio
             </a>
             <a href="#contact" className="btn btn-quiet">
-              Work with me
+              Get in touch
             </a>
           </div>
         </div>

@@ -20,15 +20,15 @@ const geist = Geist({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://manrajssidhu.com"),
-  title: "Manraj Sidhu · AI consultant and builder",
+  title: "Manraj Sidhu · AI engineer",
   description:
-    "Manraj Sidhu, AI consultant. Agents, automations and tools built with Claude, MCP and n8n, plus the reels and notes on how they were made.",
+    "Manraj Sidhu, AI engineer. Agents, MCP servers, automation pipelines and shipped products built with Claude, MCP and n8n, plus the reels and notes on how they were made.",
   authors: [{ name: "Manraj Sidhu" }],
   alternates: { canonical: "/", types: { "application/rss+xml": "/feed.xml" } },
   openGraph: {
-    title: "Manraj Sidhu · AI consultant and builder",
+    title: "Manraj Sidhu · AI engineer",
     description:
-      "AI consultant. Agents, automations and tools built with Claude, MCP and n8n for small teams.",
+      "AI engineer. Agents, MCP servers, automation pipelines and shipped products built with Claude, MCP and n8n.",
     type: "website",
     url: "https://manrajssidhu.com",
     images: [
@@ -36,15 +36,15 @@ export const metadata: Metadata = {
         url: "https://manrajssidhu.com/assets/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Manraj Sidhu, AI consultant. Agents and automations for small teams.",
+        alt: "Manraj Sidhu, AI engineer. Agents, automations and products.",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Manraj Sidhu · AI consultant and builder",
+    title: "Manraj Sidhu · AI engineer",
     description:
-      "AI consultant. Agents, automations and tools built with Claude, MCP and n8n for small teams.",
+      "AI engineer. Agents, MCP servers, automation pipelines and shipped products built with Claude, MCP and n8n.",
     images: ["https://manrajssidhu.com/assets/og-image.png"],
   },
   icons: {
@@ -58,8 +58,8 @@ const PERSON = {
   name: "Manraj Sidhu",
   url: "https://manrajssidhu.com",
   image: "https://manrajssidhu.com/assets/portrait.webp",
-  jobTitle: "AI consultant",
-  description: "Builds agents, automations and tools with Claude, MCP and n8n. Competes in Pokémon VGC.",
+  jobTitle: "AI engineer",
+  description: "Builds agents, MCP servers, automation pipelines and products with Claude, MCP and n8n. Competes in Pokémon VGC.",
   sameAs: SOCIALS.map((s) => s.href),
 };
 

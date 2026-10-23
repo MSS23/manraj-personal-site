@@ -24,6 +24,10 @@ The locked system. Every Hallmark run reads this first and pages share it. Chang
 ```
 The spacing scale, the type scale, the easings and the durations are the scaffold's and live in `tokens.css`. Fonts load through `next/font/google` in `src/app/layout.tsx`.
 
+## Positioning
+- The owner is an AI engineer. The site reads as a professional's portfolio with an easy contact: no services, prices, hire or consulting language anywhere (the owner's request). Areas of practice are stated as what gets built (`#expertise`), each pointing at the project that shows it.
+- Home order: Stage hero (portfolio first, contact second) · Index · Expertise · About · Figures · How I build · Notes · Contact (a short mailto form, the email, LinkedIn). /portfolio opens with the three that show the range.
+
 ## Material
 - The proof ground (`.proof`: dot grid under grain) on the hero, the nav and the footer only; clean paper elsewhere.
 - Crop marks (`.crop`) on every printed piece: a sheet, a photograph, a card. Put the class on an unclipped wrapper, never on the `data-slot` itself.

@@ -1,27 +1,33 @@
+import { ContactForm } from "@/components/ContactForm";
+
+const EMAIL = "contact@manrajssidhu.com";
+
 export function Contact() {
   return (
     <section id="contact" className="section">
       <div className="container contact">
-        <h2>Let&apos;s take something off your plate.</h2>
+        <h2>Get in touch.</h2>
         <p className="lead contact-lede">
-          If your team has a job that eats hours every week and should be running itself, tell me what it is. Short
-          email, no pitch deck needed.
+          Questions about any of the projects, an idea to collaborate on, a talk, or a conversation about agents or
+          VGC. A short email is plenty.
         </p>
 
-        <p className="contact-open">
-          <strong>Open to:</strong> contract builds (an agent or automation, scoped and shipped), AI consulting (what
-          to automate first, what to leave alone), and the odd conversation about agents or VGC.
-        </p>
-
-        <ul className="contact-prompts" aria-label="Good reasons to write">
-          <li>Got a process that lives in someone&apos;s head and a spreadsheet?</li>
-          <li>Tried an AI tool, it half worked, and you want it to actually work?</li>
-          <li>Building an agent and want a second pair of eyes?</li>
-        </ul>
-
-        <a href="mailto:contact@manrajssidhu.com" className="email-line">
-          <span>contact@manrajssidhu.com</span>
-        </a>
+        <div className="contact-split">
+          <ContactForm />
+          <div className="contact-channels">
+            <p className="label">Or write directly</p>
+            <a href={`mailto:${EMAIL}?subject=${encodeURIComponent("Hello from your site")}`} className="email-line">
+              <span>{EMAIL}</span>
+            </a>
+            <p className="contact-channel-note">
+              Prefer LinkedIn?{" "}
+              <a href="https://www.linkedin.com/in/manraj-sidhu/" target="_blank" rel="noopener noreferrer">
+                Message me there
+              </a>
+              .
+            </p>
+          </div>
+        </div>
       </div>
     </section>
   );
