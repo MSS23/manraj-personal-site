@@ -14,20 +14,12 @@ const items = [
   "Pokémon VGC",
 ];
 
+/** The stack, as one row of the facts list. Used to be a looping marquee under the hero. */
 export function Marquee() {
-  // Render the list twice for a seamless loop.
-  const doubled = [...items, ...items];
-
   return (
-    <div className="marquee" aria-hidden="true">
-      <div className="marquee-track">
-        {doubled.map((label, i) => (
-          <span key={`${label}-${i}`} style={{ display: "inline-flex", alignItems: "center", gap: 28 }}>
-            <span className="marquee-item">{label}</span>
-            <span className="marquee-dot">●</span>
-          </span>
-        ))}
-      </div>
+    <div className="marquee">
+      <dt>Stack</dt>
+      <dd>{items.join(", ")}</dd>
     </div>
   );
 }

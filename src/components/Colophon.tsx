@@ -9,8 +9,8 @@ export function Colophon() {
   }, []);
 
   return (
-    <footer className="colophon">
-      <div className="colophon-inner">
+    <footer className="colophon proof">
+      <div className="container colophon-inner">
         <p className="colophon-name">Manraj Sidhu</p>
         <ul className="colophon-links" aria-label="Elsewhere">
           <li>
@@ -36,6 +36,8 @@ export function Colophon() {
               GitHub
             </a>
           </li>
+        </ul>
+        <ul className="colophon-links" aria-label="Listen and write">
           <li>
             <a href="https://substack.com/@manrajtalks" target="_blank" rel="noopener noreferrer">
               Substack
@@ -55,9 +57,7 @@ export function Colophon() {
             <a href="mailto:contact@manrajssidhu.com">Email</a>
           </li>
         </ul>
-        <p className="colophon-meta">
-          {year ? `© ${year} Manraj Sidhu.` : "© Manraj Sidhu."}
-        </p>
+        <p className="colophon-meta">{year ? `© ${year} Manraj Sidhu.` : "© Manraj Sidhu."}</p>
       </div>
     </footer>
   );

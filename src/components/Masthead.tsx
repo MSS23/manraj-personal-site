@@ -76,11 +76,9 @@ export function Masthead() {
 
   return (
     <header className={`masthead ${scrolled ? "is-scrolled" : ""}`}>
-      <div className="masthead-inner">
+      <div className="container masthead-inner">
         <Link href="/#top" className="mark" aria-label="Home">
-          <span className="mark-glyph">M</span>
-          <span className="mark-rule" />
-          <span className="mark-text">Manraj Sidhu</span>
+          <span className="mark-glyph">Manraj Sidhu</span>
         </Link>
         <div className="masthead-right">
         <nav className="nav" aria-label="Primary" ref={navRef}>
@@ -103,7 +101,7 @@ export function Masthead() {
             </Link>
           ))}
         </nav>
-        <Link href="/#contact" className="btn nav-cta">
+        <Link href="/#contact" className="btn btn-quiet nav-cta">
           Work with me
         </Link>
         </div>

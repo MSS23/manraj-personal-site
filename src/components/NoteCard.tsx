@@ -2,22 +2,30 @@ import Link from "next/link";
 import { TikTokEmbed } from "@/components/TikTokEmbed";
 import { formatDate, isVideo, KIND_LABEL, reelEmbed, type Note } from "@/lib/note-types";
 
+/** The first sentence or so of the summary; the whole text is on the note page. */
+function blurb(text: string): string {
+  const flat = text.replace(/\s+/g, " ").trim();
+  if (flat.length <= 150) return flat;
+  const cut = flat.slice(0, 150);
+  return cut.slice(0, Math.max(cut.lastIndexOf(" "), 100)) + "…";
+}
+
 function Body({ note }: { note: Note }) {
   return (
     <>
+      <h3 className="note-card-title">{note.title}</h3>
       <p className="note-card-meta">
         {note.series ? (
           <span className="note-card-series">
             {note.series}
-            {note.episode ? ` · ${note.episode}` : ""}
+            {note.episode ? ` ${note.episode}` : ""}
           </span>
         ) : (
           <span className="note-card-series">{note.pillar ?? "Note"}</span>
         )}
         <time dateTime={note.date}>{formatDate(note.date)}</time>
       </p>
-      <h3 className="note-card-title">{note.title}</h3>
-      {note.summary && <p className="note-card-summary">{note.summary}</p>}
+      {note.summary && <p className="note-card-summary">{blurb(note.summary)}</p>}
     </>
   );
 }

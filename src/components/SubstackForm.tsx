@@ -9,6 +9,9 @@ export function SubstackForm({ compact = false }: { compact?: boolean }) {
         loading="lazy"
         scrolling="no"
       />
+      <a className="substack-link" href="https://mannyssidhu.substack.com" target="_blank" rel="noopener noreferrer">
+        Or subscribe on Substack
+      </a>
     </div>
   );
 }

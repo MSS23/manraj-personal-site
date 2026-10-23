@@ -28,22 +28,24 @@ export default function NotesPage() {
       </a>
       <Masthead />
       <main id="main" className="notes-page">
-        <section className="section notes-head" id="notes">
-          <p className="kicker">
-            <span>§</span> Notes
-          </p>
-          <h1 className="serif-heading">
-            Everything I&apos;ve posted, <em>in one place.</em>
-          </h1>
-          <p className="section-lede">
+        <section className="container notes-head" id="notes">
+          <h1>Everything I&apos;ve posted, in one place.</h1>
+          <p className="lead">
             {describeNotes(notes)} on building with AI: Claude, agents, the apps I ship and what goes wrong. Watch them
             here, or follow along where they land first.
           </p>
-          <FollowRow />
-          <SubstackForm compact />
         </section>
-        <section className="section notes-body" aria-label="All notes">
+        <section className="container notes-body" aria-label="All notes">
           <NotesGrid notes={notes} series={series} />
+        </section>
+        <section className="container section" aria-label="Follow along">
+          <div className="section-head is-stacked">
+            <h2>Follow for the next one.</h2>
+          </div>
+          <div className="notes-close">
+            <FollowRow />
+            <SubstackForm />
+          </div>
         </section>
       </main>
       <Colophon />

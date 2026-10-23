@@ -17,7 +17,7 @@ export function TikTokEmbed({ src, name, cover, title, url }: { src: string; nam
         />
       ) : (
         <button type="button" className="reel-poster" onClick={() => setOn(true)} aria-label={`Play ${title}`}>
-          {cover ? <img src={cover} alt="" decoding="async" /> : <span className="reel-poster-blank">M</span>}
+          {cover ? <img src={cover} alt="" decoding="async" /> : <span className="reel-poster-blank">{title}</span>}
           <span className="reel-play" aria-hidden="true">
             <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor">
               <path d="M8 5v14l11-7z" />
@@ -27,7 +27,7 @@ export function TikTokEmbed({ src, name, cover, title, url }: { src: string; nam
         </button>
       )}
       <a className="reel-open" href={url} target="_blank" rel="noopener noreferrer">
-        Open on {name} ↗
+        Open on {name}
       </a>
     </div>
   );

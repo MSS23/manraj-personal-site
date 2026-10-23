@@ -1,0 +1,44 @@
+[
+ {
+  "mode": "redesign",
+  "depth": "full",
+  "scope": "site",
+  "shape": "Index-First",
+  "theme": "studio",
+  "genre": "editorial",
+  "axes": "light/roman-serif/warm",
+  "hero": "Stage",
+  "nav": "masthead bar",
+  "footer": "index columns",
+  "imagery": "the product, 12 screenshots of the user own apps and the user portrait, crop-marked",
+  "photos": [],
+  "entry": "stage hero with the live product",
+  "fingerprint": "stage hero / index rows / split about / figures / rows / rail / ledger / statement close",
+  "sections": [
+   "Hero",
+   "Index",
+   "Split",
+   "Figures",
+   "Rows",
+   "Rail",
+   "Ledger",
+   "Statement",
+   "Footer"
+  ],
+  "signature": "the live product on the proof sheet with its live player count, then an index of twelve projects that opens into its case",
+  "waived": [
+   "42",
+   "83",
+   "8",
+   "44c",
+   "39b",
+   "49b",
+   "3",
+   "79"
+  ],
+  "prompt": "Personal site of an AI consultant who builds agents and automations for small teams and competes in Pokemon VGC",
+  "draw": "c9bd69",
+  "deal": "3/3, seed personal-consultant-who-builds-9b3d·1118baf2·2026-10-23·r0",
+  "date": "2026-10-23"
+ }
+]

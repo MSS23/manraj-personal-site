@@ -1,27 +1,20 @@
 import { Analytics } from "@vercel/analytics/next";
 import type { Metadata } from "next";
-import { Fraunces, Inter, JetBrains_Mono } from "next/font/google";
+import { Geist, Hedvig_Letters_Serif } from "next/font/google";
 import "./globals.css";
 import "./notes.css";
 import { SOCIALS } from "@/components/FollowRow";
 
-const fraunces = Fraunces({
+const hedvig = Hedvig_Letters_Serif({
   subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700"],
-  style: ["normal", "italic"],
-  variable: "--font-fraunces",
+  weight: "400",
+  variable: "--font-hedvig",
   display: "swap",
 });
-const inter = Inter({
-  subsets: ["latin"],
-  weight: ["400", "500", "600"],
-  variable: "--font-inter",
-  display: "swap",
-});
-const jetbrainsMono = JetBrains_Mono({
+const geist = Geist({
   subsets: ["latin"],
   weight: ["400", "500"],
-  variable: "--font-jetbrains-mono",
+  variable: "--font-geist",
   display: "swap",
 });
 
@@ -55,7 +48,7 @@ export const metadata: Metadata = {
     images: ["https://manrajssidhu.com/assets/og-image.png"],
   },
   icons: {
-    icon: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='18' fill='%23fbfbfa'/%3E%3Ctext x='50' y='72' text-anchor='middle' font-size='72' font-family='Georgia,serif' font-style='italic' fill='%232383e2'%3EM%3C/text%3E%3C/svg%3E",
+    icon: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='18' fill='%23fbfbfa'/%3E%3Ctext x='50' y='72' text-anchor='middle' font-size='72' font-family='Georgia,serif' fill='%231b2230'%3EM%3C/text%3E%3C/svg%3E",
   },
 };
 
@@ -72,7 +65,7 @@ const PERSON = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className={`${fraunces.variable} ${inter.variable} ${jetbrainsMono.variable}`}>
+    <html lang="en" className={`${hedvig.variable} ${geist.variable}`}>
       <body>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(PERSON) }} />
         {children}

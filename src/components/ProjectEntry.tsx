@@ -31,7 +31,7 @@ function ZoomableImage({
       <img src={src} alt={alt} loading="lazy" decoding="async" />
       {showOverlay && (
         <span className="entry-figure-overlay" aria-hidden="true">
-          Zoom ⤢
+          Zoom
         </span>
       )}
     </button>
@@ -152,33 +152,60 @@ export function ProjectEntry({ project }: { project: Project }) {
 
   return (
     <li className="entry" id={project.id}>
-      <div className="entry-folio">
-        <span className="entry-folio-mark">№</span>
-        <span className="entry-folio-num">{project.folio}</span>
-      </div>
-      <article className="entry-body">
-        <header className="entry-head">
-          <h3>
-            {project.titleHref ? (
-              <a
-                href={project.titleHref}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="entry-head-link"
-              >
-                {project.title}
-                <span className="entry-head-arrow" aria-hidden="true">↗</span>
-              </a>
-            ) : (
-              project.title
-            )}
-          </h3>
-          <span className="entry-tag">{project.tag}</span>
-        </header>
-        <p className="entry-desc">{project.description}</p>
+      <article className="entry-row">
+        <div className="entry-folio">
+          <span className="entry-folio-mark">№</span>
+          <span className="entry-folio-num">{project.folio}</span>
+        </div>
+        <div className="entry-body">
+          <header className="entry-head">
+            <h3 id={reactId}>
+              {project.titleHref ? (
+                <a href={project.titleHref} target="_blank" rel="noopener noreferrer" className="entry-head-link">
+                  {project.title}
+                </a>
+              ) : (
+                project.title
+              )}
+            </h3>
+            <span className="entry-tag">{project.tag.split(" · ").join(", ")}</span>
+          </header>
+          <p className="entry-desc">{project.description}</p>
+
+          <p className="entry-result">
+            <span>Result</span>
+            <em>{project.result}</em>
+          </p>
+
+          <ul className="entry-meta">
+            {project.meta.map((m, i) => (
+              <li key={i}>
+                <span>{m.label}</span>
+                <em dangerouslySetInnerHTML={{ __html: m.valueHtml.replace(/&nbsp;↗/g, "") }} />
+              </li>
+            ))}
+          </ul>
+
+          <button
+            className="entry-toggle"
+            type="button"
+            aria-expanded={expanded}
+            aria-controls={detailId}
+            onClick={toggle}
+            suppressHydrationWarning
+          >
+            <span className="toggle-label-open">{project.toggleOpenLabel ?? "How I built this"}</span>
+            <span className="toggle-label-close">Hide details</span>
+            <span className="toggle-chevron" aria-hidden="true">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M6 9l6 6 6-6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+              </svg>
+            </span>
+          </button>
+        </div>
 
         {project.lead && (
-          <figure className="entry-figure">
+          <figure className="entry-figure crop">
             <ZoomableImage
               src={project.lead.src}
               alt={project.lead.alt}
@@ -186,52 +213,26 @@ export function ProjectEntry({ project }: { project: Project }) {
               onZoom={openZoom}
               showOverlay
             />
+            <figcaption className="readout">16 : 10</figcaption>
           </figure>
         )}
+      </article>
 
-        <p className="entry-result">
-          <span>Result</span>
-          <em>{project.result}</em>
-        </p>
-
-        <ul className="entry-meta">
-          {project.meta.map((m, i) => (
-            <li key={i}>
-              <span>{m.label}</span>
-              <em dangerouslySetInnerHTML={{ __html: m.valueHtml }} />
-            </li>
-          ))}
-        </ul>
-
-        <button
-          className="entry-toggle"
-          type="button"
-          aria-expanded={expanded}
-          aria-controls={detailId}
-          onClick={toggle}
-          suppressHydrationWarning
-        >
-          <span className="toggle-label-open">{project.toggleOpenLabel ?? "How I built this"}</span>
-          <span className="toggle-label-close">Hide details</span>
-          <span className="toggle-chevron" aria-hidden="true">↓</span>
-        </button>
-
-        <div
-          ref={panelRef}
-          className={`entry-detail ${expanded ? "is-open" : ""}`}
-          id={detailId}
-          aria-labelledby={reactId}
-          aria-hidden={!expanded}
-        >
-          <div className="entry-detail-grid">
-            <div className="entry-detail-inner">
-              {project.detail.map((block, i) => (
-                <DetailBlock key={i} block={block} onZoom={openZoom} />
-              ))}
-            </div>
+      <div
+        ref={panelRef}
+        className={`entry-detail ${expanded ? "is-open" : ""}`}
+        id={detailId}
+        aria-labelledby={reactId}
+        aria-hidden={!expanded}
+      >
+        <div className="entry-detail-grid">
+          <div className="entry-detail-inner">
+            {project.detail.map((block, i) => (
+              <DetailBlock key={i} block={block} onZoom={openZoom} />
+            ))}
           </div>
         </div>
-      </article>
+      </div>
 
       {zoom && (
         <div
@@ -250,7 +251,9 @@ export function ProjectEntry({ project }: { project: Project }) {
             }}
             aria-label="Close"
           >
-            ✕
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M6 6l12 12M18 6L6 18" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
+            </svg>
           </button>
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img

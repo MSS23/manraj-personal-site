@@ -20,21 +20,19 @@ const PRINCIPLES = [
 export function Approach() {
   return (
     <section id="approach" className="section">
-      <p className="kicker">
-        <span>§</span> How I work
-      </p>
-      <h2 className="serif-heading">
-        How I <em>build.</em>
-      </h2>
-      <ol className="approach-list">
-        {PRINCIPLES.map((p, i) => (
-          <li key={p.title} className="approach-card">
-            <span className="approach-num" aria-hidden="true">0{i + 1}</span>
-            <h3 className="approach-title">{p.title}</h3>
-            <p>{p.text}</p>
-          </li>
-        ))}
-      </ol>
+      <div className="container">
+        <div className="section-head is-stacked">
+          <h2>How I build.</h2>
+        </div>
+        <ol className="approach-list">
+          {PRINCIPLES.map((p) => (
+            <li key={p.title} className="approach-card">
+              <h3 className="approach-title">{p.title}</h3>
+              <p>{p.text}</p>
+            </li>
+          ))}
+        </ol>
+      </div>
     </section>
   );
 }

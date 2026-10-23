@@ -78,9 +78,9 @@ export default async function NotePage({ params }: { params: Promise<Params> }) 
       </a>
       <Masthead />
       <main id="main" className="note-page">
-        <article className="section note">
+        <article className="container note">
           <nav className="note-crumbs" aria-label="Breadcrumb">
-            <Link href="/notes">← All notes</Link>
+            <Link href="/notes">All notes</Link>
           </nav>
 
           <div className="note-layout">
@@ -95,16 +95,16 @@ export default async function NotePage({ params }: { params: Promise<Params> }) 
             </div>
 
             <div className="note-text">
-              <p className="kicker">
-                <span>§</span> {KIND_LABEL[note.kind]}
-                {note.series ? ` · ${note.series}${note.episode ? ` ${note.episode}` : ""}` : ""}
-              </p>
-              <h1 className="serif-heading note-title">{note.title}</h1>
+              <h1 className="note-title">{note.title}</h1>
               <p className="note-meta">
                 <time dateTime={note.date}>{formatDate(note.date)}</time>
-                {note.pillar && <span>· {note.pillar}</span>}
+                <span>
+                  {KIND_LABEL[note.kind]}
+                  {note.series ? `, ${note.series}${note.episode ? ` ${note.episode}` : ""}` : ""}
+                </span>
+                {note.pillar && <span>{note.pillar}</span>}
                 {typeof note.views === "number" && note.views > 0 && (
-                  <span>· {note.views.toLocaleString("en-GB")} views</span>
+                  <span>{note.views.toLocaleString("en-GB")} views</span>
                 )}
               </p>
 
@@ -130,7 +130,7 @@ export default async function NotePage({ params }: { params: Promise<Params> }) 
                 <div className="note-platforms">
                   {live.map((p) => (
                     <a key={p.key} className={`btn ${p.key === live[0].key ? "" : "btn-quiet"}`} href={note.links[p.key]} target="_blank" rel="noopener noreferrer">
-                      {video ? "Watch" : note.kind === "newsletter" ? "Read it" : "See it"} on {p.label} ↗
+                      {video ? "Watch" : note.kind === "newsletter" ? "Read it" : "See it"} on {p.label}
                     </a>
                   ))}
                 </div>
@@ -155,7 +155,7 @@ export default async function NotePage({ params }: { params: Promise<Params> }) 
           <nav className="note-pager" aria-label="More notes">
             {older ? (
               <Link href={`/notes/${older.slug}`} className="note-pager-link">
-                <span>← Older</span>
+                <span>Older</span>
                 <strong>{older.title}</strong>
               </Link>
             ) : (
@@ -163,7 +163,7 @@ export default async function NotePage({ params }: { params: Promise<Params> }) 
             )}
             {newer ? (
               <Link href={`/notes/${newer.slug}`} className="note-pager-link is-next">
-                <span>Newer →</span>
+                <span>Newer</span>
                 <strong>{newer.title}</strong>
               </Link>
             ) : (
@@ -173,9 +173,7 @@ export default async function NotePage({ params }: { params: Promise<Params> }) 
 
           {related.length > 0 && (
             <section className="note-related" aria-label={`More from ${note.series}`}>
-              <p className="kicker">
-                <span>§</span> More from {note.series}
-              </p>
+              <h2>More from {note.series}</h2>
               <div className="notes-grid">
                 {related.map((n) => (
                   <NoteCard key={n.slug} note={n} />
