@@ -1,0 +1,33 @@
+{
+  "slug": "agent-rules-motion-motion",
+  "title": "The 5 things my AI agents are banned from doing",
+  "kind": "motion",
+  "date": "2026-10-22",
+  "series": null,
+  "episode": null,
+  "pillar": null,
+  "hook": "The 5 things my AI agents are banned from doing",
+  "keyword": "RULES",
+  "summary": "24 AI agents ran overnight. One draft PR by breakfast. Zero writes to main.\nAI agent guardrails are the whole product: these are the 5 things my agents are banned from doing.",
+  "body": [
+    "24 AI agents ran overnight. One draft PR by breakfast. Zero writes to main.\nAI agent guardrails are the whole product: these are the 5 things my agents are banned from doing.",
+    "1. Never write to main. Every agent opens a pull request, I merge.\n2. Never delete anything. Not a file, not a row.\n3. Never post without my tap. They draft, I approve from my phone.\n4. Never pay, never message a person, unless I asked for that exact thing.\n5. My data never leaves this PC. Emails, clients, numbers, never in a search box.",
+    "Anyone can run 24 agents. Few can sleep while they do.",
+    "I'm Manraj Sidhu, AI developer, and this is the real build.\nBuilt with @claudeai",
+    "Comment RULES for the full rule set. Follow @manrajtalks"
+  ],
+  "tags": [
+    "aiagents",
+    "claudecode",
+    "aiautomation",
+    "ai",
+    "manrajtalks"
+  ],
+  "links": {
+    "tiktok": "https://www.tiktok.com/@manrajtalks/video/7699538721833733379",
+    "instagram": "https://www.instagram.com/reel/DezelRFiq7u/"
+  },
+  "slides": [],
+  "cover": "/notes/agent-rules-motion-motion/cover.jpg",
+  "views": 725
+}
