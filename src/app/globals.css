@@ -32,6 +32,7 @@
 /* Hallmark · reworded contact "Let's take something off your plate." to "Get in touch." with a new lead; dropped the "Open to:" paragraph and the three "Got a process..." prompts · they read as an offer */
 /* Hallmark · added #expertise (What I work on: four areas, each pointing at the project that shows it) after the index, and "Start with these three" on /portfolio · the hire anatomy puts what the studio does after the work */
 /* Hallmark · dropped #work · the primary action now goes to /portfolio; the index it pointed at sits directly under the hero and the nav still links /#work */
+/* Hallmark · reordered the index and the portfolio shelves by request: Agents and MCP servers, Automation pipelines, Shipped products, Brand & web; the Japanese translator and PokéCRM sit last on their shelf · shelf titles reworded from "Pokémon, made smarter" / "Products" / "AI-augmented workflows" · hero caption now names the product's accounts, shared reports and PDF export */
 @import "./tokens.css";
 @import "./base.css" layer(base);
 @tailwind base;

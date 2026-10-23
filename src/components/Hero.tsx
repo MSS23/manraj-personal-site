@@ -31,7 +31,7 @@ export function Hero({ live }: { live: Live }) {
             </div>
             <span className="hero-guide" aria-hidden="true" />
             <figcaption>
-              <span className="label">VGC Team Report, {fmt(live.vgcUsers)} players signed up</span>
+              <span className="label">VGC Team Report, a shipped web app: accounts, shared reports, PDF export, {fmt(live.vgcUsers)} players signed up</span>
               <span className="readout">3 : 2</span>
             </figcaption>
           </figure>
