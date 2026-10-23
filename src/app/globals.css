@@ -1,6 +1,6 @@
 /* Hallmark · shape: Index-First · genre: editorial · theme: Studio (deal 3/3, seed personal-consultant-who-builds-9b3d·1118baf2·2026-10-23·r0) · redesign: full · draw: c9bd69 (swapped: shape Map/Diagram to Index-First, hero Poster to Stage; no diagram and no 2400px photograph in the material)
  * hero: Stage (/), Index (/notes, /portfolio), Settled (/notes/[slug]) · nav: masthead bar, the wordmark in Hedvig and five links under an ink rule · footer: index columns (elsewhere, contact) · imagery: the product, 12 screenshots of the user's own apps and the user's portrait, crop-marked · signature: the live product on the proof sheet with its live player count, then an index of twelve projects that opens into its case
- * axes: light/roman-serif/warm · posture: restrained · job: hire · contrast: pass · fold: pass · hero-review: in-thread · 2 findings · 2 resolved · finish-review: subagent · 8 findings · 6 resolved 2 for the owner (the ~80 users tag beside the live 220, the n8n canvas capture) · v2.0.0 */
+ * axes: light/roman-serif/cool · posture: restrained · job: hire · contrast: pass · fold: pass · hero-review: in-thread · 2 findings · 2 resolved · finish-review: subagent · 8 findings · 6 resolved 2 for the owner (the ~80 users tag beside the live 220, the n8n canvas capture) · v2.0.0 */
 /* Hallmark · pre-emit critique: P4 H4 E4 S4 R4 V4 · weakest: R, the home page kept nine sections; the stack marquee became one row of the facts list and the three hero stats a figures strip, nothing else was added */
 /* Hallmark · waive 42 · nav: wordmark, five links, one quiet contact; named in the stamp · the site has five real destinations and the hire anatomy puts the contact in the nav */
 /* Hallmark · waive 44c · the Stage visual bleeds off the right edge by one gutter and stands 64px from the text · the report screen is wider than its seven columns and runs to the edge */
@@ -22,11 +22,18 @@
 /* Hallmark · dismissed 23 · the hero guide is a 1px construction rule under the figure, read against the 1280 fold · Studio draws its construction in orange lines, never fills */
 /* Hallmark · dismissed 28a · the first image on every page is the hero shot with fetchpriority high; the portrait, note covers and project leads sit below the fold · lazy is right below the fold */
 /* Hallmark · answered F7 · printed pieces share one recipe on purpose: a 3px sheet with crop marks for pictures, a 2px rule box for quiet controls · the proof sheet is one material */
+/* Hallmark · colours: the site's previous palette, kept by request · #fbfbfa / #f7f6f3 / #f1f1ef / #fff as paper, #37352f ink, #ededec rule, #2383e2 for lines and #1768b0 for the filled button and the focus ring · the one nudge: #787774 text-muted sits at 4.3:1 on paper, so ink-2 and muted are #6f6e6b (4.9:1) */
+/* Hallmark · waive 7b · --color-paper-hi and --color-accent-ink are #ffffff · the site's previous palette has pure white as its elevated surface and the button's text, kept by request */
+/* Hallmark · dismissed 41 · accent-ink (#fff) sits only on accent-fill (#1768b0, 5.8:1), never on accent (#2383e2), which draws lines */
 @import "./tokens.css";
 @import "./base.css" layer(base);
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* The scaffold's responsive scale lives in base.css inside layer(base), where the unlayered :root in tokens.css outranks it; restate it here. */
+@media (max-width: 60rem) { :root { --gutter: 24px; --section-gap-s: 80px; --section-gap: 96px; --section-gap-l: 120px; } }
+@media (max-width: 40rem) { :root { --gutter: 16px; --section-gap-s: 56px; --section-gap: 72px; --section-gap-l: 96px; --gap-columns: 16px; } }
 
 /* ── Ground ─────────────────────────────────────────────── */
 /* Tailwind's preflight and its .container are unlayered; restate the scaffold's container and type roles after them. */
@@ -62,12 +69,12 @@ iframe:focus-visible { outline: 2px solid var(--color-focus); outline-offset: 2p
 .btn {
   position: relative; display: inline-flex; align-items: center; justify-content: center; gap: var(--space-xs);
   min-height: 48px; padding: 0 var(--space-lg); border: var(--rule-hair) solid var(--color-ink); border-radius: 2px;
-  background: var(--color-accent); color: var(--color-accent-ink); font: 500 var(--text-md)/1 var(--font-body);
+  background: var(--color-accent-fill); color: var(--color-accent-ink); font: 500 var(--text-md)/1 var(--font-body);
   white-space: nowrap; text-decoration: none; cursor: pointer;
   transition: background-color var(--dur-short) var(--ease-out), transform var(--dur-micro) var(--ease-out);
 }
 .btn::after { content: ""; position: absolute; inset: 2px; border: var(--rule-hair) solid var(--color-mark); pointer-events: none; }
-.btn:hover { background: color-mix(in oklab, var(--color-accent) 86%, var(--color-paper)); }
+.btn:hover { background: color-mix(in oklab, var(--color-accent-fill) 86%, var(--color-ink)); }
 .btn:active { transform: translateY(1px); }
 .btn:focus-visible { outline: 2px solid var(--color-focus); outline-offset: 3px; }
 .btn:disabled, .btn[aria-disabled="true"] { opacity: 0.55; cursor: not-allowed; transform: none; }
@@ -97,6 +104,16 @@ a:hover { text-decoration-color: var(--color-accent); }
   .nav { flex: 1 1 auto; min-width: 0; gap: var(--space-md); overflow-x: auto; scrollbar-width: none; }
   .masthead .nav-cta { flex-shrink: 0; }
   .nav-pill { display: none; }
+}
+/* Phones: the wordmark and the contact action on one row, the links on their own full-width row that scrolls. */
+@media (max-width: 40rem) {
+  .masthead-inner { display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: center; column-gap: var(--space-md); row-gap: 0; padding-block: var(--space-xs) 0; }
+  .masthead-right { display: contents; }
+  .mark { grid-row: 1; grid-column: 1; min-height: 44px; align-items: center; }
+  .masthead .nav-cta { grid-row: 1; grid-column: 2; }
+  .nav { grid-row: 2; grid-column: 1 / -1; margin-inline: calc(-1 * var(--gutter)); padding-inline: var(--gutter); gap: var(--space-lg); }
+  .nav a { display: inline-flex; align-items: center; min-height: 44px; padding: 0; }
+  .nav a.is-active { box-shadow: inset 0 -2px var(--color-accent); }
 }
 
 /* ── Hero: Stage ────────────────────────────────────────── */
@@ -163,9 +180,11 @@ a:hover { text-decoration-color: var(--color-accent); }
 .facts > div { display: grid; grid-template-columns: minmax(0, 2fr) minmax(0, 9fr); gap: var(--gap-columns); padding-block: var(--space-sm); border-bottom: var(--rule-hair) solid var(--color-rule); font-size: var(--text-sm); }
 .facts dt { color: var(--color-muted); }
 .facts dd { margin: 0; color: var(--color-ink); }
+@media (max-width: 40rem) { .facts > div { grid-template-columns: minmax(0, 1fr); gap: var(--space-3xs); } }
 .about-body { display: grid; gap: var(--space-xl); }
 .about-numbered { list-style: none; margin: 0; padding: 0; counter-reset: about; display: grid; gap: var(--space-lg); }
 .about-numbered > li { counter-increment: about; display: grid; grid-template-columns: var(--space-2xl) minmax(0, 1fr); gap: var(--space-md); }
+@media (max-width: 60rem) { .about-numbered > li { grid-template-columns: var(--space-xl) minmax(0, 1fr); } }
 .about-numbered > li::before { content: counter(about, decimal-leading-zero); font-family: var(--font-display); font-size: var(--text-lg); line-height: 1.55; color: var(--color-muted); font-variant-numeric: tabular-nums; }
 .about-numbered p { max-width: 58ch; color: var(--color-ink-2); }
 .about-numbered p.lead { font-size: var(--text-lead); line-height: 1.45; color: var(--color-ink); }
@@ -229,8 +248,8 @@ a:hover { text-decoration-color: var(--color-accent); }
 .follow-icon { display: inline-grid; place-items: center; width: 20px; height: 20px; color: var(--color-ink); }
 .follow-icon svg { width: 20px; height: 20px; }
 .follow-text { display: grid; line-height: 1.2; }
-.follow-label { font-size: var(--text-sm); }
-.follow-handle { font-size: var(--text-xs); color: var(--color-muted); }
+.follow-label { font-size: var(--text-sm); white-space: nowrap; }
+.follow-handle { font-size: var(--text-xs); color: var(--color-muted); white-space: nowrap; }
 .follow-row.is-compact .follow-link { min-height: 44px; }
 
 /* Contact: statement */
@@ -242,6 +261,7 @@ a:hover { text-decoration-color: var(--color-accent); }
 .email-line { display: inline-flex; align-items: baseline; gap: var(--space-md); max-width: 100%; font-family: var(--font-display); font-size: var(--text-section); line-height: 1.1; letter-spacing: var(--tracking-display); color: var(--color-ink); text-decoration: none; overflow-wrap: anywhere; border-bottom: 2px solid var(--color-ink); transition: border-color var(--dur-short) var(--ease-out); }
 .email-line:hover { border-bottom-color: var(--color-accent); }
 @media (max-width: 60rem) { .contact-prompts { grid-template-columns: minmax(0, 1fr); gap: var(--space-sm); } .email-line { font-size: var(--text-2xl); } }
+@media (max-width: 40rem) { .email-line { display: block; font-size: clamp(1.25rem, 6.8vw, var(--text-2xl)); white-space: nowrap; } }
 
 /* Colophon: index columns on the proof */
 .colophon { margin-top: var(--section-gap-l); border-top: var(--rule-hair) solid var(--color-ink); }
@@ -340,6 +360,12 @@ a:hover { text-decoration-color: var(--color-accent); }
   .entry-detail-inner > * { grid-column: 1; }
   .stat-row { grid-template-columns: minmax(0, 1fr); }
   .work-bucket-count { display: none; }
+}
+@media (max-width: 40rem) {
+  .entry-row { grid-template-columns: minmax(0, 1fr); row-gap: var(--space-md); }
+  .entry-row:not(:has(.entry-figure)) .entry-body { grid-column: 1; }
+  .entry-figure { grid-column: 1; }
+  .entry-result { grid-template-columns: minmax(0, 1fr); gap: var(--space-3xs); }
 }
 
 /* Where to find me: rows of links */

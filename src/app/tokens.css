@@ -9,10 +9,10 @@
   --color-error: oklch(52% 0.19 27); --color-success: oklch(50% 0.12 150);
   --container: 1440px; --gutter: 64px; --gap-columns: 32px; --section-gap-s: 120px; --section-gap: 144px; --section-gap-l: 176px;
   --z-base: 1; --z-raised: 10; --z-dropdown: 100; --z-sticky: 200; --z-sticky-nav: 300; --z-modal: 400; --z-toast: 500; --z-tooltip: 600;
-  --color-paper: oklch(97.2% 0.006 215); --color-paper-2: oklch(94% 0.009 215); --color-paper-3: oklch(90.5% 0.011 215); --color-paper-hi: oklch(99% 0.004 215);
-  --color-ink: oklch(16% 0.032 250); --color-ink-2: oklch(34% 0.022 245); --color-muted: oklch(49% 0.018 240);
-  --color-rule: oklch(84% 0.010 225);
-  --color-accent: oklch(68% 0.172 50); --color-accent-ink: oklch(16% 0.032 250); --color-focus: oklch(52% 0.15 48);
+  --color-paper: #fbfbfa; --color-paper-2: #f7f6f3; --color-paper-3: #f1f1ef; --color-paper-hi: #ffffff; --color-paper-deep: #f4f3ef;
+  --color-ink: #37352f; --color-ink-2: #6f6e6b; --color-muted: #6f6e6b;
+  --color-rule: #ededec; --color-rule-strong: #d6d5d2;
+  --color-accent: #2383e2; --color-accent-fill: #1768b0; --color-accent-soft: #e7f3f8; --color-accent-ink: #ffffff; --color-focus: #1768b0;
   --color-dot: color-mix(in oklab, var(--color-ink) 20%, transparent); --color-mark: color-mix(in oklab, var(--color-ink) 72%, transparent);
   --font-display: var(--font-hedvig), "Hedvig Letters Serif", ui-serif, Georgia, serif; --font-body: var(--font-geist), "Geist", ui-sans-serif, system-ui, sans-serif;
   --radius-card: 3px; --radius-pill: 3px; --rule-hair: 1px;
