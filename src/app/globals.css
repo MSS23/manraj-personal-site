@@ -34,6 +34,7 @@
 /* Hallmark · dropped #work · the primary action now goes to /portfolio; the index it pointed at sits directly under the hero and the nav still links /#work */
 /* Hallmark · reordered the index and the portfolio shelves by request: Agents and MCP servers, Automation pipelines, Shipped products, Brand & web; the Japanese translator and PokéCRM sit last on their shelf · shelf titles reworded from "Pokémon, made smarter" / "Products" / "AI-augmented workflows" · hero caption now names the product's accounts, shared reports and PDF export */
 /* Hallmark · reordered the home sections by request: Hero, About, Figures, Index, Expertise, How I build, Notes, Contact · About now sits directly under the hero */
+/* Hallmark · hero now leads with the portrait (head on seven columns, the portrait on five, no bleed) by request; the VGC Team Report screen left the hero and stays on the index and the portfolio; About lost its duplicate portrait and reads as one column */
 @import "./tokens.css";
 @import "./base.css" layer(base);
 @tailwind base;
@@ -128,11 +129,13 @@ a:hover { text-decoration-color: var(--color-accent); }
 /* ── Hero: Stage ────────────────────────────────────────── */
 .hero { position: relative; overflow: visible; }
 .hero.proof { padding-bottom: var(--space-md); mask-image: linear-gradient(var(--color-ink) 85%, transparent); -webkit-mask-image: linear-gradient(var(--color-ink) 85%, transparent); }
-.hero-inner { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: var(--space-2xl); align-items: center; min-height: calc(100svh - var(--nav-h)); padding-block: var(--space-2xl); }
+.hero-inner { display: grid; grid-template-columns: minmax(0, 7fr) minmax(0, 5fr); gap: var(--space-2xl); align-items: center; min-height: calc(100svh - var(--nav-h)); padding-block: var(--space-2xl); }
 .stage-copy { display: grid; gap: var(--space-lg); }
 .stage-copy h1 { max-width: 12ch; }
 .hero-actions { display: flex; gap: var(--space-sm); flex-wrap: wrap; }
-.hero-figure { position: relative; margin: 0 calc(-1 * var(--gutter)) 0 0; }
+.hero-figure { position: relative; margin: 0; }
+.hero-portrait .shot { aspect-ratio: 4 / 5; }
+.hero-portrait .shot > img { width: 100%; height: 100%; object-fit: cover; object-position: center 30%; }
 .hero-figure .sheet { box-shadow: var(--shadow-sheet); border-radius: var(--radius-card); }
 .hero-figure .shot { aspect-ratio: 3 / 2; border-radius: var(--radius-card); }
 .hero-figure .shot > img { object-position: top; outline: var(--rule-hair) solid color-mix(in oklab, var(--color-ink) 8%, transparent); outline-offset: -1px; }
@@ -177,8 +180,8 @@ a:hover { text-decoration-color: var(--color-accent); }
 }
 
 /* About: split */
-.about-grid { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: var(--gap-columns); align-items: start; }
-.about-body { padding-left: var(--space-2xl); }
+.about-grid { display: grid; grid-template-columns: minmax(0, 1fr); gap: var(--gap-columns); align-items: start; }
+.about-body { padding-left: 0; max-width: 68ch; }
 .about-aside { display: grid; gap: var(--space-xl); }
 .about-grid > .facts { grid-column: 1 / -1; margin-top: var(--space-xl); }
 .portrait { margin: 0; border-radius: var(--radius-card); box-shadow: var(--shadow-sheet); }

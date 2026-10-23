@@ -2,9 +2,7 @@ import { projects } from "@/data/projects";
 import { getNotes } from "@/lib/notes";
 import { fmt, type Live } from "@/lib/live";
 
-const vgc = projects.find((p) => p.id === "entry-vgc");
-
-/** Stage hero: the head on five columns, the live product on seven, crop-marked on the proof sheet. */
+/** Stage hero: the head on seven columns, the portrait on five, crop-marked on the proof sheet. */
 export function Hero({ live }: { live: Live }) {
   return (
     <section className="hero proof" id="top">
@@ -22,20 +20,19 @@ export function Hero({ live }: { live: Live }) {
           </div>
         </div>
 
-        {vgc?.lead && (
-          <figure className="hero-figure">
-            <div className="sheet crop">
-              <div className="shot" data-slot="hero" data-kind="product" data-alt="The main screen of the product you want to lead with">
-                <img src={vgc.lead.src} alt={vgc.lead.alt} width={2000} height={1250} fetchPriority="high" decoding="async" />
-              </div>
+        <figure className="hero-figure hero-portrait">
+          <div className="sheet crop">
+            <div className="shot">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img src="/assets/portrait-hero.webp" alt="Portrait of Manraj Sidhu." width={800} height={800} fetchPriority="high" decoding="async" />
             </div>
-            <span className="hero-guide" aria-hidden="true" />
-            <figcaption>
-              <span className="label">VGC Team Report, a shipped web app: accounts, shared reports, PDF export, {fmt(live.vgcUsers)} players signed up</span>
-              <span className="readout">3 : 2</span>
-            </figcaption>
-          </figure>
-        )}
+          </div>
+          <span className="hero-guide" aria-hidden="true" />
+          <figcaption>
+            <span className="label">Manraj Sidhu, AI engineer</span>
+            <span className="readout">4 : 5</span>
+          </figcaption>
+        </figure>
       </div>
     </section>
   );

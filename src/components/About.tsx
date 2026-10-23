@@ -9,23 +9,6 @@ export function About() {
   return (
     <section id="about" className="section">
       <div className="container about-grid">
-        <aside className="about-aside">
-          <figure className="portrait crop">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
-              src="/assets/portrait-hero.webp"
-              alt="Portrait of Manraj Sidhu."
-              width={800}
-              height={800}
-              loading="lazy"
-              decoding="async"
-            />
-          </figure>
-          <p className="portrait-caption">
-            <span className="label">Manraj Sidhu</span>
-            <span className="readout">4 : 5</span>
-          </p>
-        </aside>
 
         <div className="about-body">
           <h2>Run on my own work first.</h2>
