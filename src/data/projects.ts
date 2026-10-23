@@ -340,7 +340,7 @@ export const projects: Project[] = [
     folio: "06",
     title: "VGC Team Report",
     titleHref: "https://pokemonvgcteamreport.com/",
-    tag: "Live · ~80 users",
+    tag: "Live",
     result: "{{vgcUsers}} players signed up, {{vgcActive30d}} active this month, and the report I ran my own team on at EUIC 2026.",
     description:
       "A team-building site for competitive Pokémon VGC players. Paste any Showdown team, get a full report: damage maths against the meta, speed analysis, threat coverage, win conditions. Started as a spreadsheet I kept rewriting for myself, then grew into something other players started using.",
