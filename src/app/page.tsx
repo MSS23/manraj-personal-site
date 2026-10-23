@@ -20,10 +20,10 @@ export default async function HomePage() {
       <Masthead />
       <main id="main">
         <Hero live={live} />
-        <Reveal><Work live={live} /></Reveal>
-        <Reveal><Expertise /></Reveal>
         <Reveal><About /></Reveal>
         <Reveal><Figures live={live} /></Reveal>
+        <Reveal><Work live={live} /></Reveal>
+        <Reveal><Expertise /></Reveal>
         <Reveal><Approach /></Reveal>
         <Reveal><Writing /></Reveal>
         <Reveal><Contact /></Reveal>
