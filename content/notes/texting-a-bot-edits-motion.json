@@ -1,0 +1,32 @@
+{
+  "slug": "texting-a-bot-edits-motion",
+  "title": "Stop editing your reels at a desk.",
+  "kind": "motion",
+  "date": "2026-10-23",
+  "series": "Agent Notes",
+  "episode": null,
+  "pillar": "AI & automation",
+  "hook": "Stop editing your reels at a desk.",
+  "keyword": "HERMES",
+  "summary": "Edit reels from your phone with a Telegram bot: stop editing at a desk.",
+  "body": [
+    "Edit reels from your phone with a Telegram bot: stop editing at a desk.",
+    "I drop raw clips in Google Drive, a Hermes bot picks them up and runs my Claude video-editing skill, 3 reels at once. Telegram pings me the time left, and if I don't like one I text back and it re-edits. The catch: my PC has to stay on.",
+    "I'm Manraj Sidhu, AI developer, and this is the real setup.\nBuilt with @claudeai",
+    "Comment HERMES for the setup. Follow @manrajtalks"
+  ],
+  "tags": [
+    "ai",
+    "aiautomation",
+    "claudecode",
+    "videoediting",
+    "manrajtalks"
+  ],
+  "links": {
+    "tiktok": "https://www.tiktok.com/@manrajtalks/video/7699910522530991382",
+    "instagram": "https://www.instagram.com/reel/De2Dm1kFDek/"
+  },
+  "slides": [],
+  "cover": "/notes/texting-a-bot-edits-motion/cover.jpg",
+  "views": 277
+}

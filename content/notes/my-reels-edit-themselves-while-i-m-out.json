@@ -1,0 +1,26 @@
+{
+  "slug": "my-reels-edit-themselves-while-i-m-out",
+  "title": "My reels edit themselves while I'm out",
+  "kind": "reel",
+  "date": "2026-10-23",
+  "series": "Automate This",
+  "episode": null,
+  "pillar": "AI & automation",
+  "hook": "I heard about Hermes ages ago but I didn't know how to use it.",
+  "keyword": "HERMES",
+  "summary": "AI video editing from my phone: a Hermes bot on Telegram + a Claude skill.",
+  "body": [
+    "AI video editing from my phone: a Hermes bot on Telegram + a Claude skill.",
+    "I heard about Hermes ages ago and had no idea how to use it. So I got Claude in the terminal to build me a Hermes bot, and now it lives on my Telegram.",
+    "How it works:\n1. I upload my raw clips to Google Drive\n2. Hermes picks them up and runs my Claude video-editing skill (my PC just needs to be on)\n3. Telegram pings me with status updates: how long it'll take and how many videos are processing (it does 3 at the same time)\n4. Don't like the edit? I text back and it restyles it in real time",
+    "Comment HERMES and I'll show you exactly what I built."
+  ],
+  "tags": [],
+  "links": {
+    "tiktok": "https://www.tiktok.com/@manrajtalks/video/7699801553162521878",
+    "instagram": "https://www.instagram.com/reel/De1TDAbDdND/"
+  },
+  "slides": [],
+  "cover": "/notes/my-reels-edit-themselves-while-i-m-out/cover.jpg",
+  "views": 843
+}
