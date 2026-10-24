@@ -298,14 +298,14 @@ h1 em, h2 em, h3 em { font-style: italic; font-weight: 500; color: var(--color-a
 .contact-form textarea::placeholder, .contact-form input::placeholder { color: var(--color-muted); }
 .contact-form-foot { display: grid; gap: var(--space-sm); justify-items: start; }
 .contact-form-help { max-width: 48ch; font-size: var(--text-sm); color: var(--color-muted); }
-.contact-channels { display: grid; gap: var(--space-md); align-content: start; }
+.contact-channels { display: grid; gap: var(--space-md); align-content: start; container-type: inline-size; }
 .contact-channel-note { color: var(--color-ink-2); }
 .contact-channel-note a { color: var(--color-ink); }
-.email-line { display: inline-flex; align-items: baseline; gap: var(--space-md); max-width: 100%; font-family: var(--font-display); font-size: var(--text-section); line-height: 1.1; letter-spacing: var(--tracking-display); color: var(--color-ink); text-decoration: none; overflow-wrap: anywhere; border-bottom: 2px solid var(--color-ink); transition: border-color var(--dur-short) var(--ease-out); }
+/* One line at every width: the size follows the column (cqi), never the viewport, and the address never breaks mid-word. */
+.email-line { display: inline-block; max-width: 100%; font-family: var(--font-display); font-size: clamp(1.25rem, 7.8cqi, var(--text-section)); line-height: 1.1; letter-spacing: var(--tracking-display); color: var(--color-ink); text-decoration: none; white-space: nowrap; border-bottom: 2px solid var(--color-ink); transition: border-color var(--dur-short) var(--ease-out); }
 .email-line:hover { border-bottom-color: var(--color-accent); }
-@media (max-width: 60rem) { .contact-split { grid-template-columns: minmax(0, 1fr); } .email-line { font-size: var(--text-2xl); } }
+@media (max-width: 60rem) { .contact-split { grid-template-columns: minmax(0, 1fr); } }
 @media (max-width: 40rem) { .contact-form-row { grid-template-columns: minmax(0, 1fr); } }
-@media (max-width: 40rem) { .email-line { display: block; font-size: clamp(1.25rem, 6.8vw, var(--text-2xl)); white-space: nowrap; } }
 
 /* Colophon: index columns on the proof */
 .colophon { margin-top: var(--section-gap-l); border-top: var(--rule-hair) solid var(--color-ink); }
