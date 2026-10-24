@@ -101,7 +101,7 @@ export function Masthead() {
             </Link>
           ))}
         </nav>
-        <Link href="/#contact" className="btn btn-quiet nav-cta">
+        <Link href="/#contact" className="btn nav-cta">
           Get in touch
         </Link>
         </div>

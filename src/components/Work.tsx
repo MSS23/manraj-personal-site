@@ -10,7 +10,7 @@ export function Work({ live }: { live: Live }) {
     <section id="work" className="section">
       <div className="container">
         <div className="section-head">
-          <h2>Twelve projects, four shelves.</h2>
+          <h2>Twelve projects, <em>four shelves</em>.</h2>
           <p className="lead">Each row opens into its case study on the portfolio.</p>
         </div>
         <ol className="index">

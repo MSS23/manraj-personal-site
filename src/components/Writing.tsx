@@ -12,7 +12,7 @@ export function Writing() {
     <section id="elsewhere" className="section">
       <div className="container">
         <div className="section-head">
-          <h2>Notes from the workbench.</h2>
+          <h2>Notes from the <em>workbench</em>.</h2>
           <p className="lead">
             {notes.length
               ? `${describeNotes(notes)} on building with AI, all collected here. The newest six:`
@@ -43,7 +43,7 @@ export function Writing() {
       <div className="container section-s">
         <div className="ledger">
           <div className="ledger-row" id="newsletter">
-            <h3>The longer version, by email.</h3>
+            <h3>The longer version, <em>by email</em>.</h3>
             <div className="ledger-body">
               <p>
                 One email when something is worth your time: what I built, what broke, what I&apos;d do differently.

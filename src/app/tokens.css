@@ -14,11 +14,11 @@
   --color-rule: #ededec; --color-rule-strong: #d6d5d2;
   --color-accent: #2383e2; --color-accent-fill: #1768b0; --color-accent-soft: #e7f3f8; --color-accent-ink: #ffffff; --color-focus: #1768b0;
   --color-dot: color-mix(in oklab, var(--color-ink) 20%, transparent); --color-mark: color-mix(in oklab, var(--color-ink) 72%, transparent);
-  --font-display: var(--font-hedvig), "Hedvig Letters Serif", ui-serif, Georgia, serif; --font-body: var(--font-geist), "Geist", ui-sans-serif, system-ui, sans-serif;
-  --radius-card: 3px; --radius-pill: 3px; --rule-hair: 1px;
-  --shadow-card: none;
+  --font-display: var(--font-fraunces), "Fraunces", ui-serif, Georgia, serif; --font-body: var(--font-geist), "Geist", ui-sans-serif, system-ui, sans-serif;
+  --radius-card: 12px; --radius-pill: 8px; --rule-hair: 1px;
+  --shadow-card: 0 1px 2px color-mix(in oklab, var(--color-ink) 6%, transparent), 0 12px 32px -16px color-mix(in oklab, var(--color-ink) 28%, transparent);
   --shadow-sheet: 1px 2px 0 color-mix(in oklab, var(--color-ink) 7%, transparent), 10px 18px 36px -14px color-mix(in oklab, var(--color-ink) 32%, transparent);
-  --tracking-display: -0.022em; --display-weight: 400;
+  --tracking-display: -0.025em; --display-weight: 500;
   --nav-h: 72px;
   --grain: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='g'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0.1 0 0 0 0 0.12 0 0 0 0 0.16 0 0 0 0.05 0'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23g)'/%3E%3C/svg%3E");
   --color-scrim: color-mix(in oklab, var(--color-ink) 92%, transparent);

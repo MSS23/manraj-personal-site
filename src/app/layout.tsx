@@ -1,14 +1,16 @@
 import { Analytics } from "@vercel/analytics/next";
 import type { Metadata } from "next";
-import { Geist, Hedvig_Letters_Serif } from "next/font/google";
+import { Fraunces, Geist } from "next/font/google";
 import "./globals.css";
 import "./notes.css";
 import { SOCIALS } from "@/components/FollowRow";
 
-const hedvig = Hedvig_Letters_Serif({
+const fraunces = Fraunces({
   subsets: ["latin"],
-  weight: "400",
-  variable: "--font-hedvig",
+  weight: "variable",
+  style: ["normal", "italic"],
+  axes: ["SOFT", "opsz"],
+  variable: "--font-fraunces",
   display: "swap",
 });
 const geist = Geist({
@@ -65,7 +67,7 @@ const PERSON = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className={`${hedvig.variable} ${geist.variable}`}>
+    <html lang="en" className={`${fraunces.variable} ${geist.variable}`}>
       <body>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(PERSON) }} />
         {children}

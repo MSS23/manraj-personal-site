@@ -1,6 +1,7 @@
 /* Hallmark · shape: Index-First · genre: editorial · theme: Studio (deal 3/3, seed personal-consultant-who-builds-9b3d·1118baf2·2026-10-23·r0) · redesign: full · draw: c9bd69 (swapped: shape Map/Diagram to Index-First, hero Poster to Stage; no diagram and no 2400px photograph in the material)
  * hero: Stage (/), Index (/notes, /portfolio), Settled (/notes/[slug]) · nav: masthead bar, the wordmark in Hedvig and five links under an ink rule · footer: index columns (elsewhere, contact) · imagery: the product, 12 screenshots of the user's own apps and the user's portrait, crop-marked · signature: the live product on the proof sheet with its live player count, then an index of twelve projects that opens into its case
  * axes: light/roman-serif/cool · posture: restrained · surface: absolute · job: hire · contrast: pass · fold: pass · hero-review: in-thread · 2 findings · 2 resolved · finish-review: subagent · 8 findings · 6 resolved 2 for the owner (the ~80 users tag beside the live 220, the n8n canvas capture) · v2.0.0 */
+/* Hallmark · waive 38i · the hero name sets its second line in the accent italic and four section heads one italic word · the owner asked for the old site's blue italic back (2026-10-24), its one recognisable brand move */
 /* Hallmark · pre-emit critique: P4 H4 E4 S4 R4 V4 · weakest: R, the home page kept nine sections; the stack marquee became one row of the facts list and the three hero stats a figures strip, nothing else was added */
 /* Hallmark · waive 42 · nav: wordmark, five links, one quiet contact; named in the stamp · the site has five real destinations and the hire anatomy puts the contact in the nav */
 /* Hallmark · waive 44c · the Stage visual bleeds off the right edge by one gutter and stands 64px from the text · the report screen is wider than its seven columns and runs to the edge */
@@ -78,18 +79,17 @@ iframe:focus-visible { outline: 2px solid var(--color-focus); outline-offset: 2p
 /* ── Controls: printed ──────────────────────────────────── */
 .btn {
   position: relative; display: inline-flex; align-items: center; justify-content: center; gap: var(--space-xs);
-  min-height: 48px; padding: 0 var(--space-lg); border: var(--rule-hair) solid var(--color-ink); border-radius: 2px;
-  background: var(--color-accent-fill); color: var(--color-accent-ink); font: 500 var(--text-md)/1 var(--font-body);
+  min-height: 48px; padding: 0 var(--space-lg); border: var(--rule-hair) solid transparent; border-radius: var(--radius-pill);
+  background: var(--color-accent); color: var(--color-accent-ink); font: 500 var(--text-md)/1 var(--font-body);
   white-space: nowrap; text-decoration: none; cursor: pointer;
   transition: background-color var(--dur-short) var(--ease-out), transform var(--dur-micro) var(--ease-out);
 }
-.btn::after { content: ""; position: absolute; inset: 2px; border: var(--rule-hair) solid var(--color-mark); pointer-events: none; }
-.btn:hover { background: color-mix(in oklab, var(--color-accent-fill) 86%, var(--color-ink)); }
+.btn:hover { background: var(--color-accent-fill); }
 .btn:active { transform: translateY(1px); }
 .btn:focus-visible { outline: 2px solid var(--color-focus); outline-offset: 3px; }
 .btn:disabled, .btn[aria-disabled="true"] { opacity: 0.55; cursor: not-allowed; transform: none; }
 .btn[aria-busy="true"] { cursor: progress; }
-.btn-quiet { background: var(--color-paper-hi); color: var(--color-ink); }
+.btn-quiet { background: var(--color-paper-hi); color: var(--color-ink); border-color: var(--color-rule-strong); }
 .btn-quiet:hover { background: var(--color-paper-2); }
 .btn-small { min-height: 44px; padding: 0 var(--space-md); font-size: var(--text-sm); }
 a:hover { text-decoration-color: var(--color-accent); }
@@ -103,10 +103,10 @@ a:hover { text-decoration-color: var(--color-accent); }
 .mark-rule { display: none; }
 .mark-text { font-size: var(--text-sm); color: var(--color-muted); }
 .masthead-right { display: flex; align-items: center; gap: var(--space-xl); }
-.nav { position: relative; display: flex; gap: var(--space-lg); }
-.nav a { position: relative; z-index: var(--z-base); padding: var(--space-xs) 0; font-size: var(--text-sm); color: var(--color-ink-2); text-decoration: none; white-space: nowrap; transition: color var(--dur-short) var(--ease-out); }
+.nav { position: relative; display: flex; gap: var(--space-2xs); }
+.nav a { position: relative; z-index: var(--z-base); padding: var(--space-xs) var(--space-sm); border-radius: var(--radius-pill); font-size: var(--text-sm); color: var(--color-ink-2); text-decoration: none; white-space: nowrap; transition: color var(--dur-short) var(--ease-out); }
 .nav a:hover, .nav a.is-active { color: var(--color-ink); }
-.nav-pill { position: absolute; left: 0; bottom: 0; height: 2px; background: var(--color-accent); transition: transform var(--dur-short) var(--ease-out); }
+.nav-pill { position: absolute; left: 0; top: 0; bottom: 0; background: var(--color-paper-3); border-radius: var(--radius-pill); transition: transform var(--dur-short) var(--ease-out); }
 .masthead .nav-cta { min-height: 40px; padding: 0 var(--space-md); font-size: var(--text-sm); }
 @media (max-width: 60rem) {
   .masthead-inner { flex-wrap: wrap; row-gap: 0; padding-block: var(--space-sm); }
@@ -122,8 +122,8 @@ a:hover { text-decoration-color: var(--color-accent); }
   .mark { grid-row: 1; grid-column: 1; min-height: 44px; align-items: center; }
   .masthead .nav-cta { grid-row: 1; grid-column: 2; }
   .nav { grid-row: 2; grid-column: 1 / -1; margin-inline: calc(-1 * var(--gutter)); padding-inline: var(--gutter); gap: var(--space-lg); }
-  .nav a { display: inline-flex; align-items: center; min-height: 44px; padding: 0; }
-  .nav a.is-active { box-shadow: inset 0 -2px var(--color-accent); }
+  .nav a { display: inline-flex; align-items: center; min-height: 44px; padding: 0 var(--space-sm); }
+  .nav a.is-active { background: var(--color-paper-3); }
 }
 
 /* ── Hero: Stage ────────────────────────────────────────── */
@@ -132,6 +132,13 @@ a:hover { text-decoration-color: var(--color-accent); }
 .hero-inner { display: grid; grid-template-columns: minmax(0, 7fr) minmax(0, 5fr); gap: var(--space-2xl); align-items: center; min-height: calc(100svh - var(--nav-h)); padding-block: var(--space-2xl); }
 .stage-copy { display: grid; gap: var(--space-lg); }
 .stage-copy h1 { max-width: 12ch; }
+.stage-copy h1 .line { display: block; }
+h1, h2, h3 { font-variation-settings: "SOFT" 100, "opsz" 144; }
+h1 em, h2 em, h3 em { font-style: italic; font-weight: 500; color: var(--color-accent); }
+.stage-copy h1 { font-size: clamp(3.5rem, 7.5vw + 0.5rem, 7.5rem); font-weight: 600; line-height: 0.98; }
+.hero-portrait .sheet { border-radius: 16px; overflow: hidden; }
+.hero-portrait .shot { border-radius: 16px; }
+.figure-num.is-live { color: var(--color-accent); }
 .hero-actions { display: flex; gap: var(--space-sm); flex-wrap: wrap; }
 .hero-figure { position: relative; margin: 0; }
 .hero-portrait .shot { aspect-ratio: 4 / 5; }
@@ -223,7 +230,7 @@ a:hover { text-decoration-color: var(--color-accent); }
 /* Approach: rows */
 .approach-list { list-style: none; margin: 0; padding: 0; counter-reset: how; border-top: var(--rule-hair) solid var(--color-ink); }
 .approach-card { counter-increment: how; display: grid; grid-template-columns: var(--space-2xl) minmax(0, 4fr) minmax(0, 7fr); gap: var(--gap-columns); padding-block: var(--space-xl); border-bottom: var(--rule-hair) solid var(--color-rule); }
-.approach-card::before { content: counter(how, decimal-leading-zero); font-family: var(--font-display); font-size: var(--text-lg); color: var(--color-muted); font-variant-numeric: tabular-nums; }
+.approach-card::before { content: counter(how, decimal-leading-zero); font-family: var(--font-display); font-style: italic; font-size: var(--text-lg); color: var(--color-accent); font-variant-numeric: tabular-nums; }
 .approach-title { font-size: var(--text-title); }
 .approach-card p { max-width: 58ch; color: var(--color-ink-2); }
 @media (max-width: 60rem) { .approach-card { grid-template-columns: var(--space-xl) minmax(0, 1fr); row-gap: var(--space-sm); } .approach-card p { grid-column: 2; } }

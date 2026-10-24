@@ -22,7 +22,7 @@ export function Approach() {
     <section id="approach" className="section">
       <div className="container">
         <div className="section-head is-stacked">
-          <h2>How I build.</h2>
+          <h2>How I <em>build</em>.</h2>
         </div>
         <ol className="approach-list">
           {PRINCIPLES.map((p) => (
