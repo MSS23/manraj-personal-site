@@ -286,9 +286,9 @@ h1 em, h2 em, h3 em { font-style: italic; font-weight: 500; color: var(--color-a
 /* Contact: statement */
 .contact { display: grid; gap: var(--space-xl); }
 .contact-lede { max-width: 52ch; }
-.contact-split { display: grid; grid-template-columns: minmax(0, 7fr) minmax(0, 5fr); gap: var(--space-2xl) var(--gap-columns); align-items: start; padding-top: var(--space-xl); border-top: var(--rule-hair) solid var(--color-ink); }
+.contact-split { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: var(--space-2xl) var(--gap-columns); align-items: start; padding-top: var(--space-xl); border-top: var(--rule-hair) solid var(--color-ink); }
 .contact-form { display: grid; gap: var(--space-md); }
-.contact-form-row { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--space-md); }
+.contact-form-row { display: grid; grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr)); gap: var(--space-md); }
 .contact-form label { display: grid; gap: var(--space-2xs); font-size: var(--text-sm); color: var(--color-ink-2); }
 .contact-form input, .contact-form textarea { width: 100%; min-height: 48px; padding: var(--space-sm) var(--space-md); border: var(--rule-hair) solid var(--color-muted); border-radius: var(--radius-card); background: var(--color-paper-hi); color: var(--color-ink); font-size: var(--text-md); outline: 2px solid transparent; outline-offset: -3px; transition: border-color var(--dur-short) var(--ease-out); }
 .contact-form textarea { resize: vertical; }
@@ -305,7 +305,6 @@ h1 em, h2 em, h3 em { font-style: italic; font-weight: 500; color: var(--color-a
 .email-line { display: inline-block; max-width: 100%; font-family: var(--font-display); font-size: clamp(1.25rem, 7.8cqi, var(--text-section)); line-height: 1.1; letter-spacing: var(--tracking-display); color: var(--color-ink); text-decoration: none; white-space: nowrap; border-bottom: 2px solid var(--color-ink); transition: border-color var(--dur-short) var(--ease-out); }
 .email-line:hover { border-bottom-color: var(--color-accent); }
 @media (max-width: 60rem) { .contact-split { grid-template-columns: minmax(0, 1fr); } }
-@media (max-width: 40rem) { .contact-form-row { grid-template-columns: minmax(0, 1fr); } }
 
 /* Colophon: index columns on the proof */
 .colophon { margin-top: var(--section-gap-l); border-top: var(--rule-hair) solid var(--color-ink); }
