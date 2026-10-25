@@ -1,0 +1,32 @@
+{
+  "slug": "plugin-guardrails-explainer-motion",
+  "title": "Claude Code plugins stopped my team pushing broken PRs.",
+  "kind": "motion",
+  "date": "2026-10-24",
+  "series": null,
+  "episode": null,
+  "pillar": "Claude & skills",
+  "hook": "Claude Code plugins stopped my team pushing broken PRs.",
+  "keyword": "PLUGIN",
+  "summary": "Claude Code plugins stopped my team pushing broken PRs to GitHub.",
+  "body": [
+    "Claude Code plugins stopped my team pushing broken PRs to GitHub.",
+    "We had a lot of PRs going up with errors and bugs. The fix was one plugin: a backpack of tools and rules that Claude loads whenever a session is active. When anyone commits, the plugin wakes up, checks the code works as intended, and only then does the PR go to GitHub. Reviewers still review, they just read working code first.",
+    "I'm Manraj Sidhu, AI developer, and this is my real team setup.",
+    "Comment PLUGIN and tell me the first thing you would check. Follow @manrajtalks"
+  ],
+  "tags": [
+    "claudecode",
+    "aicoding",
+    "softwaredeveloper",
+    "devtools",
+    "manrajtalks"
+  ],
+  "links": {
+    "tiktok": "https://www.tiktok.com/@manrajtalks/video/7700362300183727363",
+    "instagram": "https://www.instagram.com/reel/De5MCVaj4dS/"
+  },
+  "slides": [],
+  "cover": "/notes/plugin-guardrails-explainer-motion/cover.jpg",
+  "views": 359
+}

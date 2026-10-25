@@ -1,0 +1,29 @@
+{
+  "slug": "claude-stopped-guessing-my-vgc-team-motion",
+  "title": "Claude stopped guessing my VGC team",
+  "kind": "motion",
+  "date": "2026-10-25",
+  "series": null,
+  "episode": null,
+  "pillar": "Pokémon VGC",
+  "hook": "How do you stop AI guessing your Pokémon VGC team? Give Claude real calculators.",
+  "keyword": "VGC",
+  "summary": "How do you stop AI guessing your Pokémon VGC team? Give Claude real calculators.\nI built 157 tools (vgc-mcp, live as Manny VGC Calc): it finds the three threats my team loses to, shows who outspeeds who, checks real usage, breaks down my replays, fixes one spread with exact EVs and writes the lead pair and game plan. You still choose the team.\nI'm Manraj Sidhu, AI developer, and this is my real VGC stack.\nBuilt with @claudeai\nComment VGC and I'll send you the server link. Follow @manrajtalks",
+  "body": [
+    "How do you stop AI guessing your Pokémon VGC team? Give Claude real calculators.\nI built 157 tools (vgc-mcp, live as Manny VGC Calc): it finds the three threats my team loses to, shows who outspeeds who, checks real usage, breaks down my replays, fixes one spread with exact EVs and writes the lead pair and game plan. You still choose the team.\nI'm Manraj Sidhu, AI developer, and this is my real VGC stack.\nBuilt with @claudeai\nComment VGC and I'll send you the server link. Follow @manrajtalks"
+  ],
+  "tags": [
+    "ai",
+    "claudecode",
+    "vgc",
+    "pokemon",
+    "manrajtalks"
+  ],
+  "links": {
+    "tiktok": "https://www.tiktok.com/@manrajtalks/video/7700370583627926806",
+    "instagram": "https://www.instagram.com/reel/De5Pv_-ij8Q/"
+  },
+  "slides": [],
+  "cover": "/notes/claude-stopped-guessing-my-vgc-team-motion/cover.jpg",
+  "views": 374
+}
