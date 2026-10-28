@@ -1,0 +1,32 @@
+{
+  "slug": "how-i-know-when-my-app-breaks-not-more-testing-sentry-motion",
+  "title": "How I know when my app breaks: not more testing, Sentry.",
+  "kind": "motion",
+  "date": "2026-10-28",
+  "series": "The Stack",
+  "episode": null,
+  "pillar": null,
+  "hook": "Your app breaks. Who tells you?",
+  "keyword": "SENTRY",
+  "summary": "Sentry error tracking: how I know when my app breaks, not more testing.",
+  "body": [
+    "Sentry error tracking: how I know when my app breaks, not more testing.",
+    "Tests check your code once, before it ships. Nothing checks it once it's live. Sentry does: when I stopped a project on Vercel it flagged \"this website is no longer reachable\", and it caught the globe in Atlaria not loading for people.\nI'm Manraj Sidhu, AI developer, and this is the real build.",
+    "Setup is five steps: run the wizard, add an uptime monitor, send alerts to Slack or email, upload source maps, throw a test error. Save this before you ship again.\nWhich dev myth would you call out? \"Just test it more\" is mine.",
+    "Comment SENTRY and I'll send you the link.\nFollow @manrajtalks for more of The Stack."
+  ],
+  "tags": [
+    "sentry",
+    "webdev",
+    "errortracking",
+    "buildinpublic",
+    "manrajtalks"
+  ],
+  "links": {
+    "instagram": "https://www.instagram.com/reel/DfCR2A_AE1q/",
+    "tiktok": "https://www.tiktok.com/@manrajtalks/video/7701672368028142870"
+  },
+  "slides": [],
+  "cover": "/notes/how-i-know-when-my-app-breaks-not-more-testing-sentry-motion/cover.jpg",
+  "views": null
+}
