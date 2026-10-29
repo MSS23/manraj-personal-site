@@ -37,7 +37,7 @@ export const buckets: Record<BucketId, { index: string; title: string; lede: str
     title: "Agents and MCP servers",
     lede:
       "Tools that extend Claude into a domain, and scheduled agents that run on my own work every day. Each one is tested against a reference before it ships.",
-    count: "3 projects",
+    count: "5 projects",
   },
   pipelines: {
     index: "02",
@@ -214,10 +214,65 @@ export const projects: Project[] = [
     ],
   },
 
-  // ── 04 — Hermes content engine ─────────────────────────────────────────
+  // ── 04 — Trade Bot ───────────────────────────────────────────────────
+  {
+    id: "entry-trade-bot",
+    folio: "04",
+    title: "Trade Bot · Paper-trading agent with a Telegram approve button",
+    tag: "Private repo · paper only",
+    result: "Claude proposes the trade, I approve it in Telegram, and it lands on a practice account.",
+    description:
+      "A Claude agent wired through MCP servers to three practice venues: Bybit testnet for crypto, OANDA practice for forex and Alpaca paper for stocks. It reads the market, commits to a structured call with entry, stop and take-profit, and waits. Nothing executes until I tap Approve in Telegram. A FastAPI + Next.js dashboard shows the desks, and a backtester checks whether a strategy deserves a place before it gets one. It is a research project, not financial advice.",
+    meta: [
+      { label: "Stack", valueHtml: "Python, FastAPI, MCP, Claude, Next.js, Telegram" },
+      { label: "Venues", valueHtml: "Bybit testnet, OANDA practice, Alpaca paper" },
+      { label: "Role", valueHtml: "Solo, idea through ship" },
+    ],
+    bucket: "agents",
+    detail: [
+      { kind: "h4", text: "What's interesting under the hood" },
+      {
+        kind: "ul",
+        items: [
+          "<strong>Signals only.</strong> The agent never trades on its own. Every order is a Telegram card with an Approve button.",
+          "<strong>One MCP server per venue.</strong> Bybit, OANDA and Alpaca each sit behind their own adapter, so a strategy file never touches an exchange API.",
+          "<strong>Honest backtests.</strong> The best systematic edge so far, RSI-2 mean reversion on index futures, is walk-forward tested from 2000 to 2026. It is real but modest and sits below the 1.5 Sharpe bar I set for going further, so it stays on paper.",
+        ],
+      },
+    ],
+  },
+
+  // ── 05 — Crypto Price Tracker ────────────────────────────────────────
+  {
+    id: "entry-crypto-mcp",
+    folio: "05",
+    title: "Crypto Price Tracker · A ChatGPT App over MCP",
+    tag: "Private repo · TypeScript",
+    result: "Ask ChatGPT for a coin's price and get a live card back instead of a paragraph.",
+    description:
+      "An MCP server over the CoinGecko API with a React widget that renders inside ChatGPT. Live prices, 24-hour change and market-cap rank come back as a card in the chat. A small build to learn how ChatGPT Apps and MCP UI fit together.",
+    meta: [
+      { label: "Stack", valueHtml: "TypeScript, MCP, CoinGecko API, React, Tailwind" },
+      { label: "Client", valueHtml: "ChatGPT Apps" },
+      { label: "Role", valueHtml: "Solo" },
+    ],
+    bucket: "agents",
+    detail: [
+      { kind: "h4", text: "What it does" },
+      {
+        kind: "ul",
+        items: [
+          "<strong>Prices.</strong> Live price, 24-hour change and market-cap rank for any coin CoinGecko lists.",
+          "<strong>UI in the chat.</strong> The answer is a React card rendered by ChatGPT, not text.",
+        ],
+      },
+    ],
+  },
+
+  // ── 06 — Hermes content engine ─────────────────────────────────────────
   {
     id: "entry-hermes",
-    folio: "04",
+    folio: "06",
     title: "Hermes · A content team that is one Telegram bot",
     tag: "Running daily · Claude + Hermes",
     result: "Every reel I record gets subtitles, captions, a carousel twin and a posting slot without me opening a laptop.",
@@ -244,10 +299,10 @@ export const projects: Project[] = [
     ],
   },
 
-  // ── 05 — Google Review Draft Responder (n8n) ──────────────────────────
+  // ── 07 — Google Review Draft Responder (n8n) ──────────────────────────
   {
     id: "entry-review-responder",
-    folio: "05",
+    folio: "07",
     title: "Google Review Draft Responder · n8n",
     tag: "Local · self-hosted",
     result: "Cut reply time on Google reviews to a read-and-approve.",
@@ -311,7 +366,7 @@ export const projects: Project[] = [
             src: "/assets/work/google-review-responder/client-config-node.webp",
             alt: "Client Config node. JavaScript code with editable client fields.",
             caption:
-              "<strong>The one node a non-developer edits.</strong> Business name, address, services, voice, the forbid list, the remedy guidance. Onboarding a new client is a single edit on a single node. No template forks, no per-client workflows.",
+              "<strong>The one node a non-developer edits.</strong> Business name, address, services, voice, the forbid list, the remedy guidance. Pointing it at a different business is a single edit on a single node. No template forks, no per-client workflows.",
           },
           {
             src: "/assets/work/google-review-responder/execution-output.webp",
@@ -334,10 +389,10 @@ export const projects: Project[] = [
     ],
   },
 
-  // ── 06 — VGC Team Report ──────────────────────────────────────────────
+  // ── 08 — VGC Team Report ──────────────────────────────────────────────
   {
     id: "entry-vgc",
-    folio: "06",
+    folio: "08",
     title: "VGC Team Report",
     titleHref: "https://pokemonvgcteamreport.com/",
     tag: "Live",
@@ -416,10 +471,10 @@ export const projects: Project[] = [
     ],
   },
 
-  // ── 07 — Atlaria ───────────────────────────────────────────────────────
+  // ── 09 — Atlaria ───────────────────────────────────────────────────────
   {
     id: "entry-atlaria",
-    folio: "07",
+    folio: "09",
     title: "Atlaria · Social travel journal on a 3D globe",
     titleHref: "https://atlaria.app",
     tag: "Live · Sidhu Studios Ltd",
@@ -465,10 +520,10 @@ export const projects: Project[] = [
     ],
   },
 
-  // ── 08 — Pokémon Draft League ─────────────────────────────────────────
+  // ── 10 — Pokémon Draft League ─────────────────────────────────────────
   {
     id: "entry-draft-league",
-    folio: "08",
+    folio: "10",
     title: "Pokémon Draft League · Real-time draft simulator",
     titleHref: "https://draftpokemon.com",
     tag: "Live · Next.js + Supabase",
@@ -521,10 +576,10 @@ export const projects: Project[] = [
     ],
   },
 
-  // ── 09 — RunLocke ──────────────────────────────────────────────────────
+  // ── 11 — RunLocke ──────────────────────────────────────────────────────
   {
     id: "entry-runlocke",
-    folio: "09",
+    folio: "11",
     title: "RunLocke · Pokémon challenge-run tracker",
     titleHref: "https://www.runlocke.com",
     tag: "Live · Next.js + Supabase",
@@ -574,10 +629,10 @@ export const projects: Project[] = [
     ],
   },
 
-  // ── 10 — VGC Team Analyser ────────────────────────────────────────────
+  // ── 12 — VGC Team Analyser ────────────────────────────────────────────
   {
     id: "entry-vgc-translation",
-    folio: "10",
+    folio: "12",
     title: "VGC Team Analyser · Japanese → English",
     titleHref: "https://pokemonvgctranslation.streamlit.app/",
     tag: "Live · Streamlit + Gemini",
@@ -623,10 +678,10 @@ export const projects: Project[] = [
     ],
   },
 
-  // ── 11 — PokéCRM ──────────────────────────────────────────────────────
+  // ── 13 — PokéCRM ──────────────────────────────────────────────────────
   {
     id: "entry-pokecrm",
-    folio: "11",
+    folio: "13",
     title: "PokéCRM · A trade-night CRM for traders and vendors",
     tag: "Demo · 7 connectors ready",
     result: "In use at trade nights by traders and vendors.",
@@ -712,14 +767,14 @@ export const projects: Project[] = [
     ],
   },
 
-  // ── 12 — Oddono's ─────────────────────────────────────────────────────
+  // ── 14 — Oddono's ─────────────────────────────────────────────────────
   {
     id: "entry-oddonos",
-    folio: "12",
+    folio: "14",
     title: "Oddono's · Unsolicited brand site demo",
     titleHref: "https://oddonos-gelati-demo.vercel.app/",
     tag: "Personal demo · unaffiliated",
-    result: "A finished seven-page demo site, built unasked as the pitch.",
+    result: "A finished seven-page demo site, built unasked, for fun.",
     description:
       "An unsolicited seven-page static site I built for Oddono's, a London gelato shop I'm a regular at. They didn't ask for it. I've never spoken to them about it. I'm a customer with their loyalty card who looked at their existing site one evening, thought it could be sharper, and built a version of what I'd want it to be. Nothing here has been shipped to or pitched at the business; it stays a personal exercise unless they ever ask.",
     lead: {
@@ -792,7 +847,7 @@ export const projects: Project[] = [
       { kind: "h4", text: "Status" },
       {
         kind: "p",
-        html: "Live and clickable as a personal demo, hosted on a generic Vercel subdomain. It does not sit on any Oddono's domain or under any branding agreement. The form fields don't submit anywhere, the imagery is placeholder, and there is no \"production\" version because Oddono's hasn't engaged me to build one. If you're from Oddono's and you've stumbled onto this: hello, I'm a fan, this exists with no expectation, take whatever's useful or ignore it entirely.",
+        html: "Live and clickable as a personal demo, hosted on a generic Vercel subdomain. It does not sit on any Oddono's domain or under any branding agreement. The form fields don't submit anywhere, the imagery is placeholder, and there is no \"production\" version: it is a personal exercise. If you're from Oddono's and you've stumbled onto this: hello, I'm a fan, this exists with no expectation, take whatever's useful or ignore it entirely.",
       },
     ],
   },
