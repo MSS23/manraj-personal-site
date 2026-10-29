@@ -1,0 +1,23 @@
+{
+  "slug": "sentry-error-tracking-how-do-you-know-your-app-works",
+  "title": "Sentry error tracking: how do you know your app works?",
+  "kind": "reel",
+  "date": "2026-10-28",
+  "series": "The Stack",
+  "episode": null,
+  "pillar": "Building in public",
+  "hook": "You're not going to know whether your application works or not.",
+  "keyword": "SENTRY",
+  "summary": "Metricool: scheduled Wed 2026-10-28 11:00 IG + TikTok",
+  "body": [
+    "Metricool: scheduled Wed 2026-10-28 11:00 IG + TikTok"
+  ],
+  "tags": [],
+  "links": {
+    "tiktok": "https://www.tiktok.com/@manrajtalks/video/7701672368028142870",
+    "instagram": "https://www.instagram.com/reel/DfCR2A_AE1q/"
+  },
+  "slides": [],
+  "cover": "/notes/sentry-error-tracking-how-do-you-know-your-app-works/cover.jpg",
+  "views": null
+}
