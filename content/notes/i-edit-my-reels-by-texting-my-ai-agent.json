@@ -1,0 +1,25 @@
+{
+  "slug": "i-edit-my-reels-by-texting-my-ai-agent",
+  "title": "I edit my reels by texting my AI agent",
+  "kind": "reel",
+  "date": "2026-10-29",
+  "series": "Automate This",
+  "episode": null,
+  "pillar": "AI & automation",
+  "hook": "I've got my Hermes agent to be able to edit my videos via text.",
+  "keyword": "VIDEO",
+  "summary": "AI video editing by text: I reply to my reel on Telegram and my AI agent re-edits it while I'm out.",
+  "body": [
+    "AI video editing by text: I reply to my reel on Telegram and my AI agent re-edits it while I'm out.",
+    "Here's how it works:\n1. Hermes sends me a preview of the edit on Telegram (version 3)\n2. I reply with what I want changed\n3. Hermes spins up Claude Code on my computer at home and makes the edits\n4. Version 4 lands on Telegram and in my Google Drive \"edit for CapCut\" folder\n5. I do a final voice clean-up in CapCut and post",
+    "Comment VIDEO EDIT and I'll send you how it's set up."
+  ],
+  "tags": [],
+  "links": {
+    "instagram": "https://www.instagram.com/reel/DfE2q9GCKN6/",
+    "tiktok": "https://www.tiktok.com/@manrajtalks/video/7702043667808193814"
+  },
+  "slides": [],
+  "cover": "/notes/i-edit-my-reels-by-texting-my-ai-agent/cover.jpg",
+  "views": null
+}
