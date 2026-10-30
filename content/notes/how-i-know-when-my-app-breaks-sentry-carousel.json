@@ -1,0 +1,23 @@
+{
+  "slug": "how-i-know-when-my-app-breaks-sentry-carousel",
+  "title": "Stop testing more to know when your app breaks.",
+  "kind": "reel",
+  "date": "2026-10-29",
+  "series": "The Stack",
+  "episode": null,
+  "pillar": "Building in public",
+  "hook": "Stop testing more to know when your app breaks.",
+  "keyword": "SENTRY",
+  "summary": "Metricool: scheduled Thu 2026-10-29 13:00 IG + TikTok. Motion carousel, 7 slides x 7 s silent loops (1080x1350). Folder: G:/My Drive/06 Content Creation/ManrajTalks/carousel-reels/how-i-know-when/\n1. Stop testing harder. / Tests can't see what your users see. - Masked type\n2. Tested isn't monitored. (Test it, Ship it, It breaks) - Spring stack\n3. Who's watching it live? (focus on 'Nothing') - Glass focus\n4. I paused my site. Sentry caught it. - uptime bars + alert pill\n5. The globe broke. Sentry flagged it. - Card to workspace\n6. Set it up in one sitting. (wizard command + 5 steps) - Search to results\n7. CTA: SENTRY - house CTA",
+  "body": [
+    "Metricool: scheduled Thu 2026-10-29 13:00 IG + TikTok. Motion carousel, 7 slides x 7 s silent loops (1080x1350). Folder: G:/My Drive/06 Content Creation/ManrajTalks/carousel-reels/how-i-know-when/\n1. Stop testing harder. / Tests can't see what your users see. - Masked type\n2. Tested isn't monitored. (Test it, Ship it, It breaks) - Spring stack\n3. Who's watching it live? (focus on 'Nothing') - Glass focus\n4. I paused my site. Sentry caught it. - uptime bars + alert pill\n5. The globe broke. Sentry flagged it. - Card to workspace\n6. Set it up in one sitting. (wizard command + 5 steps) - Search to results\n7. CTA: SENTRY - house CTA"
+  ],
+  "tags": [],
+  "links": {
+    "tiktok": "https://www.tiktok.com/@manrajtalks/video/7702074474379660566",
+    "instagram": "https://www.instagram.com/p/DfFEgoSiNu0/"
+  },
+  "slides": [],
+  "cover": null,
+  "views": 604
+}
