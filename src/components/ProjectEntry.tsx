@@ -97,8 +97,15 @@ export function ProjectEntry({ project }: { project: Project }) {
   const panelRef = useRef<HTMLDivElement | null>(null);
   const [zoom, setZoom] = useState<{ src: string; alt: string } | null>(null);
 
-  const openZoom = (src: string, alt: string) => setZoom({ src, alt });
-  const closeZoom = () => setZoom(null);
+  const opener = useRef<HTMLElement | null>(null); // focus goes back where it came from on close
+  const openZoom = (src: string, alt: string) => {
+    opener.current = document.activeElement as HTMLElement | null;
+    setZoom({ src, alt });
+  };
+  const closeZoom = () => {
+    setZoom(null);
+    opener.current?.focus();
+  };
 
   // Close zoom on Escape and lock body scroll while open.
   useEffect(() => {
@@ -245,6 +252,7 @@ export function ProjectEntry({ project }: { project: Project }) {
           <button
             type="button"
             className="zoom-close"
+            autoFocus
             onClick={(e) => {
               e.stopPropagation();
               closeZoom();
