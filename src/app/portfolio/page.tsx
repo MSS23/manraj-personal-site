@@ -82,7 +82,7 @@ export default async function PortfolioPage() {
                   <div className="work-bucket-row">
                     <p className="work-bucket-index" aria-hidden="true">{bucket.index}</p>
                     <h3 className="work-bucket-kicker">{bucket.title}</h3>
-                    <p className="work-bucket-count" aria-hidden="true">{bucket.count}</p>
+                    <p className="work-bucket-count" aria-hidden="true">{items.length} project{items.length === 1 ? "" : "s"}</p>
                   </div>
                 </header>
                 <ol className="works">

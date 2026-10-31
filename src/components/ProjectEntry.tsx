@@ -177,12 +177,14 @@ export function ProjectEntry({ project }: { project: Project }) {
             </h3>
             <span className="entry-tag">{project.tag.split(" · ").join(", ")}</span>
           </header>
-          <p className="entry-desc">{project.description}</p>
+          {project.description && <p className="entry-desc">{project.description}</p>}
 
-          <p className="entry-result">
-            <span>Result</span>
-            <em>{project.result}</em>
-          </p>
+          {project.result && (
+            <p className="entry-result">
+              <span>Result</span>
+              <em>{project.result}</em>
+            </p>
+          )}
 
           <ul className="entry-meta">
             {project.meta.map((m, i) => (

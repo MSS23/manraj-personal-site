@@ -31,34 +31,30 @@ export type Project = {
 
 export type BucketId = "agents" | "pipelines" | "products" | "brand";
 
-export const buckets: Record<BucketId, { index: string; title: string; lede: string; count: string }> = {
+export const buckets: Record<BucketId, { index: string; title: string; lede: string }> = {
   agents: {
     index: "01",
     title: "Agents and MCP servers",
     lede:
-      "Tools that extend Claude into a domain, and scheduled agents that run on my own work every day. Each one is tested against a reference before it ships.",
-    count: "5 projects",
+      "Tools that extend Claude into a domain, and scheduled agents that run on my own work every day. Each one is tested against a reference before it ships.",
   },
   pipelines: {
     index: "02",
     title: "Automation pipelines",
     lede:
-      "Workflows that take a job end to end: a raw clip becomes a scheduled reel, a Google review becomes a drafted reply to approve.",
-    count: "2 projects",
+      "Workflows that take a job end to end: a raw clip becomes a scheduled reel, a Google review becomes a drafted reply to approve.",
   },
   products: {
     index: "03",
     title: "Shipped products",
     lede:
-      "Web and mobile apps with real users, a support inbox and compliance paperwork, run under Sidhu Studios Ltd. Most of them serve the Pokémon VGC community I compete in.",
-    count: "6 projects",
+      "Web and mobile apps with real users, a support inbox and compliance paperwork, run under Sidhu Studios Ltd. Most of them serve the Pokémon VGC community I compete in.",
   },
   brand: {
     index: "04",
     title: "Brand & web",
     lede:
-      "Static-site work for places I love. Built without a framework so it stays light and loads fast.",
-    count: "1 project",
+      "Static-site work for places I love. Built without a framework so it stays light and loads fast.",
   },
 };
 

@@ -1,6 +1,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import type { Note } from "@/lib/note-types";
+import { WORST_NOTES } from "@/data/notes-worst";
 
 export * from "@/lib/note-types";
 
@@ -19,6 +20,8 @@ export function getNotes(): Note[] {
     .filter((n) => Object.values(n.links).some(Boolean)) // posted somewhere; drafts stay out until site.py publish adds a link
     .map((n) => (n.cover?.startsWith("/") && !fs.existsSync(path.join(process.cwd(), "public", n.cover)) ? { ...n, cover: null } : n)) // missing file: blank poster, not a broken image
     .sort((a, b) => (a.date < b.date ? 1 : a.date > b.date ? -1 : a.slug < b.slug ? 1 : -1));
+  // dev-only: BREAK_UI=1 next dev adds the break-ui fixtures as /notes/w1…w5
+  if (process.env.NODE_ENV !== "production" && process.env.BREAK_UI === "1") cache = [...WORST_NOTES, ...cache];
   return cache;
 }
 
