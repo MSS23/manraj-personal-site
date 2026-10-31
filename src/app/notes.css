@@ -37,7 +37,7 @@
 .note-card-media > img { width: 100%; height: 100%; object-fit: cover; outline: var(--rule-hair) solid color-mix(in oklab, var(--color-ink) 8%, transparent); outline-offset: -1px; }
 .note-card-blank { display: grid; place-items: center; width: 100%; height: 100%; font-family: var(--font-display); font-size: var(--text-display); color: var(--color-paper-3); }
 .note-card-badge { position: absolute; left: var(--space-sm); bottom: var(--space-sm); z-index: var(--z-raised); display: inline-flex; align-items: center; gap: var(--space-2xs); padding: var(--space-2xs) var(--space-xs); background: var(--color-paper-hi); border: var(--rule-hair) solid var(--color-rule); border-radius: 2px; font-size: var(--text-xs); color: var(--color-ink); }
-.note-card-body { display: grid; gap: var(--space-xs); align-content: start; color: inherit; text-decoration: none; }
+.note-card-body { overflow-wrap: anywhere; display: grid; gap: var(--space-xs); align-content: start; color: inherit; text-decoration: none; }
 .note-card-meta { display: flex; justify-content: space-between; gap: var(--space-md); font-size: var(--text-sm); color: var(--color-muted); }
 .note-card-meta time { white-space: nowrap; font-variant-numeric: tabular-nums; }
 .note-card-title { font-size: var(--text-lg); line-height: 1.3; }
@@ -54,7 +54,7 @@
 .reel-frame iframe { width: 100%; height: 100%; border: 0; background: var(--color-ink); }
 .reel-poster { position: relative; display: block; width: 100%; height: 100%; padding: 0; border: 0; background: var(--color-paper-2); cursor: pointer; font: inherit; color: inherit; }
 .reel-poster img { width: 100%; height: 100%; object-fit: cover; }
-.reel-poster-blank { display: grid; align-content: start; width: 100%; height: 100%; padding: calc(var(--space-xl) + var(--space-md)) var(--space-lg) var(--space-3xl); font-family: var(--font-display); font-size: var(--text-2xl); line-height: 1.3; letter-spacing: var(--tracking-display); color: var(--color-paper); text-align: left; text-wrap: balance; background: var(--color-ink); }
+.reel-poster-blank { overflow-wrap: anywhere; display: grid; align-content: start; width: 100%; height: 100%; padding: calc(var(--space-xl) + var(--space-md)) var(--space-lg) var(--space-3xl); font-family: var(--font-display); font-size: var(--text-2xl); line-height: 1.3; letter-spacing: var(--tracking-display); color: var(--color-paper); text-align: left; text-wrap: balance; background: var(--color-ink); }
 .reel-poster:has(.reel-poster-blank) .reel-play { border-color: var(--color-paper); background: var(--color-ink-2); }
 .reel-play { position: absolute; right: var(--space-sm); bottom: var(--space-sm); display: grid; place-items: center; width: 56px; height: 56px; border: var(--rule-hair) solid var(--color-paper); border-radius: 2px; background: var(--color-scrim); color: var(--color-paper); transition: background-color var(--dur-short) var(--ease-out); }
 @media (hover: hover) and (pointer: fine) { .reel-poster:hover .reel-play { background: var(--color-ink); } }

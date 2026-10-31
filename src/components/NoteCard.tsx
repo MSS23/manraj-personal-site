@@ -46,7 +46,7 @@ export function NoteCard({ note }: { note: Note }) {
       </article>
     );
   }
-  const label = note.kind === "carousel" ? `${note.slides.length} slides` : KIND_LABEL[note.kind];
+  const label = note.kind === "carousel" ? note.slides.length > 1 ? `${note.slides.length} slides` : KIND_LABEL.carousel : KIND_LABEL[note.kind];
   return (
     <Link href={`/notes/${note.slug}`} className={`note-card ${video ? "note-card-reel " : ""}note-card-${note.kind}`}>
       <div className="note-card-media">

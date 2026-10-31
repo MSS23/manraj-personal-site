@@ -96,7 +96,7 @@ export function NotesGrid({ notes, series }: { notes: Note[]; series: string[] }
       </div>
 
       <p className="notes-count" aria-live="polite">
-        {shown.length === notes.length ? `${notes.length} notes` : `${shown.length} of ${notes.length} notes`}
+        {shown.length === notes.length ? `${notes.length} note${notes.length === 1 ? "" : "s"}` : `${shown.length} of ${notes.length} notes`}
       </p>
 
       {shown.length ? (

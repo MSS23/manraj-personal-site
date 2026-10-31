@@ -17,6 +17,7 @@ export function getNotes(): Note[] {
     .filter((f) => f.endsWith(".json"))
     .map((f) => JSON.parse(fs.readFileSync(path.join(DIR, f), "utf8")) as Note)
     .filter((n) => Object.values(n.links).some(Boolean)) // posted somewhere; drafts stay out until site.py publish adds a link
+    .map((n) => (n.cover?.startsWith("/") && !fs.existsSync(path.join(process.cwd(), "public", n.cover)) ? { ...n, cover: null } : n)) // missing file: blank poster, not a broken image
     .sort((a, b) => (a.date < b.date ? 1 : a.date > b.date ? -1 : a.slug < b.slug ? 1 : -1));
   return cache;
 }
