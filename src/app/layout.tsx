@@ -1,5 +1,5 @@
 import { Analytics } from "@vercel/analytics/next";
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Fraunces, Geist } from "next/font/google";
 import "./globals.css";
 import "./notes.css";
@@ -19,6 +19,9 @@ const geist = Geist({
   variable: "--font-geist",
   display: "swap",
 });
+
+// light-only site: one theme-color matching the masthead paper
+export const viewport: Viewport = { themeColor: "#fbfbfa" };
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://manrajssidhu.com"),

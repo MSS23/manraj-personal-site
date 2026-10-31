@@ -87,6 +87,7 @@ export function NotesGrid({ notes, series }: { notes: Note[]; series: string[] }
           </svg>
           <input
             type="search"
+            enterKeyHint="search"
             placeholder="Search: claude, n8n, agents…"
             value={query}
             onChange={(e) => setQuery(e.target.value)}
