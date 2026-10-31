@@ -11,7 +11,7 @@
 @media (max-width: 60rem) { .notes-close { grid-template-columns: minmax(0, 1fr); } .notes-close .substack-form { grid-column: 1; } }
 .notes-toolbar { display: flex; flex-wrap: wrap; align-items: center; gap: var(--space-sm); padding-bottom: var(--space-md); border-bottom: var(--rule-hair) solid var(--color-ink); }
 .notes-chips { display: flex; flex-wrap: wrap; gap: var(--space-xs); }
-.notes-chip { display: inline-flex; align-items: center; gap: var(--space-xs); min-height: 44px; padding: 0 var(--space-md); border: var(--rule-hair) solid var(--color-rule); border-radius: 2px; background: var(--color-paper-hi); color: var(--color-ink); font-size: var(--text-sm); cursor: pointer; transition: border-color var(--dur-short) var(--ease-out), background-color var(--dur-short) var(--ease-out); }
+.notes-chip { display: inline-flex; align-items: center; gap: var(--space-xs); min-height: 44px; padding: 0 var(--space-md); border: var(--rule-hair) solid var(--color-rule); border-radius: 2px; background: var(--color-paper-hi); color: var(--color-ink); font-size: var(--text-sm); cursor: pointer; transition: border-color var(--dur-short) var(--ease-out), background-color var(--dur-short) var(--ease-out), transform var(--dur-micro) var(--ease-out); }
 .notes-chip:hover { border-color: var(--color-ink); }
 .notes-chip:active { transform: translateY(1px); }
 .notes-chip.is-on { background: var(--color-ink); border-color: var(--color-ink); color: var(--color-paper); }
@@ -57,7 +57,7 @@
 .reel-poster-blank { display: grid; align-content: start; width: 100%; height: 100%; padding: calc(var(--space-xl) + var(--space-md)) var(--space-lg) var(--space-3xl); font-family: var(--font-display); font-size: var(--text-2xl); line-height: 1.3; letter-spacing: var(--tracking-display); color: var(--color-paper); text-align: left; text-wrap: balance; background: var(--color-ink); }
 .reel-poster:has(.reel-poster-blank) .reel-play { border-color: var(--color-paper); background: var(--color-ink-2); }
 .reel-play { position: absolute; right: var(--space-sm); bottom: var(--space-sm); display: grid; place-items: center; width: 56px; height: 56px; border: var(--rule-hair) solid var(--color-paper); border-radius: 2px; background: var(--color-scrim); color: var(--color-paper); transition: background-color var(--dur-short) var(--ease-out); }
-.reel-poster:hover .reel-play { background: var(--color-ink); }
+@media (hover: hover) and (pointer: fine) { .reel-poster:hover .reel-play { background: var(--color-ink); } }
 .reel-poster:focus-visible { outline: 2px solid var(--color-focus); outline-offset: 3px; }
 .reel-poster-label { position: absolute; left: var(--space-sm); bottom: var(--space-sm); padding: var(--space-2xs) var(--space-xs); background: var(--color-paper-hi); border: var(--rule-hair) solid var(--color-rule); border-radius: 2px; font-size: var(--text-xs); color: var(--color-ink); }
 .reel-open { position: absolute; right: var(--space-sm); top: var(--space-sm); z-index: var(--z-raised); padding: var(--space-2xs) var(--space-xs); background: var(--color-paper-hi); border: var(--rule-hair) solid var(--color-rule); border-radius: 2px; font-size: var(--text-xs); color: var(--color-ink); text-decoration: none; }
@@ -112,7 +112,7 @@
 .deck-track::-webkit-scrollbar { display: none; }
 .deck-slide { flex: 0 0 100%; scroll-snap-align: start; }
 .deck-slide img { width: 100%; height: 100%; object-fit: contain; }
-.deck-arrow { position: absolute; top: 50%; display: grid; place-items: center; width: 44px; height: 44px; transform: translateY(-50%); border: var(--rule-hair) solid var(--color-rule); border-radius: 2px; background: var(--color-paper-hi); color: var(--color-ink); cursor: pointer; transition: border-color var(--dur-short) var(--ease-out), opacity var(--dur-short) var(--ease-out); }
+.deck-arrow { position: absolute; top: 50%; display: grid; place-items: center; width: 44px; height: 44px; transform: translateY(-50%); border: var(--rule-hair) solid var(--color-rule); border-radius: 2px; background: var(--color-paper-hi); color: var(--color-ink); cursor: pointer; transition: border-color var(--dur-short) var(--ease-out), opacity var(--dur-short) var(--ease-out), transform var(--dur-micro) var(--ease-out); }
 .deck-arrow:hover { border-color: var(--color-ink); }
 .deck-arrow:active { transform: translateY(calc(-50% + 1px)); }
 .deck-arrow:disabled { opacity: 0.4; cursor: not-allowed; }
