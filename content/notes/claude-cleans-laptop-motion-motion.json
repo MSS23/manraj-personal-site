@@ -7,7 +7,7 @@
   "episode": null,
   "pillar": "Claude & skills",
   "hook": "Clean up my laptop with Claude",
-  "keyword": "CLEANUP",
+  "keyword": null,
   "summary": "Metricool: scheduled Sat 17 Oct 21:00 IG + TikTok (IG reel without a sound: catalog 403; TikTok pushes to phone, autoPublish off)\nSilent motion reel, 38 s, 6 scenes.\nDrive: G:/My Drive/06 Content Creation/ManrajTalks/carousel-reels/claude-cleans-laptop/reel.mp4. Same topic as the filmed reel row claude-cleans-laptop.",
   "body": [
     "Metricool: scheduled Sat 17 Oct 21:00 IG + TikTok (IG reel without a sound: catalog 403; TikTok pushes to phone, autoPublish off)\nSilent motion reel, 38 s, 6 scenes.\nDrive: G:/My Drive/06 Content Creation/ManrajTalks/carousel-reels/claude-cleans-laptop/reel.mp4. Same topic as the filmed reel row claude-cleans-laptop."
@@ -21,17 +21,15 @@
   "cover": "/notes/claude-cleans-laptop-motion-motion/cover.jpg",
   "views": 835,
   "guide": [
-    "Use Claude Code to sort the files on your laptop and in Google Drive into a review folder, without deleting anything. You need Claude Code installed, a terminal, and access to the folders you want tidied.",
-    "1. Install Claude Code from Anthropic and open a terminal in the folder you want to tidy.",
-    "1. Ask Claude to scan the folder and list what is there: file types, sizes, duplicates and old files.",
-    "1. Tell Claude your rules for what counts as clutter, such as duplicates, installers, old downloads and empty folders.",
-    "1. Have Claude create a folder called \"To Be Deleted\" inside the folder you are tidying.",
-    "1. Ask Claude to move the files that match your rules into that folder, and never to delete anything.",
-    "1. Repeat on each laptop folder and hard drive, then on Google Drive, either through the Drive desktop app's synced folder or by moving files into a review folder in Drive itself.",
-    "1. Open \"To Be Deleted\", check what is in it, and move back anything you want to keep.",
-    "1. When you are happy, delete the folder yourself.",
-    "Watch out: Claude only moves files and never deletes. You do the deleting, and only after you have looked through the folder.",
-    "## Prompt to build your own",
-    "```\nYou are helping me tidy my files safely. Work in <folder path> on my <Windows/Mac/Linux> computer. I use <Google Drive for desktop / no cloud storage>.\nStep 1: scan the folder and report file types, total sizes, duplicates and files not opened since <date or \"a year ago\">. Do not change anything yet.\nStep 2: propose a list of rules for what counts as clutter, using these as a start: <duplicates, installers, old downloads, empty folders>. Wait for my approval of the rules.\nStep 3: create a folder called \"To Be Deleted\" inside <folder path>. Move every file that matches the approved rules into it, keeping the original sub-folder structure so I can put things back.\nHard rules: never delete, overwrite or rename any file. Never touch files outside <folder path>. If two files would clash, stop and ask me.\nFinish by returning a log of everything you moved (original path, new path, reason) and the total space the folder now holds, so I can review it and delete it myself.\n```"
+    "Use Claude Code in a terminal to sort the files on an old laptop and a Google Drive, while keeping a folder of files you review and delete yourself. You need Claude Code installed, a laptop with files to sort, and Google Drive for desktop so your Drive appears as a normal folder.",
+    "1. Install Claude Code from Anthropic and open a terminal in the folder you want tidied, such as Documents or Downloads.",
+    "1. Install Google Drive for desktop so your Drive shows up as a folder on the laptop that Claude Code can read.",
+    "1. Ask Claude Code to list what is there first: file types, sizes, duplicates and anything it cannot identify, without moving anything yet.",
+    "1. Create a folder called \"To Be Deleted\" and tell Claude Code to move files it thinks are junk or duplicates into it rather than deleting them.",
+    "1. Ask Claude Code to sort the remaining files into clear folders by type or project, and to explain each rule before it applies it.",
+    "1. Repeat the same process on your external hard drives, one at a time, with each drive plugged in.",
+    "1. Open \"To Be Deleted\" yourself, look through it, and delete what you are sure about.",
+    "Watch out: never give Claude Code permission to delete files, because the \"To Be Deleted\" folder is what keeps every final decision with you.",
+    "## Prompt to build your own"
   ]
 }

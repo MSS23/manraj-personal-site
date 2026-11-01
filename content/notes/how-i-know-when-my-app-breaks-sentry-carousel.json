@@ -7,7 +7,7 @@
   "episode": null,
   "pillar": "Building in public",
   "hook": "Stop testing more to know when your app breaks.",
-  "keyword": "SENTRY",
+  "keyword": null,
   "summary": "Metricool: scheduled Thu 2026-10-29 13:00 IG + TikTok. Motion carousel, 7 slides x 7 s silent loops (1080x1350). Folder: G:/My Drive/06 Content Creation/ManrajTalks/carousel-reels/how-i-know-when/\n1. Stop testing harder. / Tests can't see what your users see. - Masked type\n2. Tested isn't monitored. (Test it, Ship it, It breaks) - Spring stack\n3. Who's watching it live? (focus on 'Nothing') - Glass focus\n4. I paused my site. Sentry caught it. - uptime bars + alert pill\n5. The globe broke. Sentry flagged it. - Card to workspace\n6. Set it up in one sitting. (wizard command + 5 steps) - Search to results\n7. CTA: SENTRY - house CTA",
   "body": [
     "Metricool: scheduled Thu 2026-10-29 13:00 IG + TikTok. Motion carousel, 7 slides x 7 s silent loops (1080x1350). Folder: G:/My Drive/06 Content Creation/ManrajTalks/carousel-reels/how-i-know-when/\n1. Stop testing harder. / Tests can't see what your users see. - Masked type\n2. Tested isn't monitored. (Test it, Ship it, It breaks) - Spring stack\n3. Who's watching it live? (focus on 'Nothing') - Glass focus\n4. I paused my site. Sentry caught it. - uptime bars + alert pill\n5. The globe broke. Sentry flagged it. - Card to workspace\n6. Set it up in one sitting. (wizard command + 5 steps) - Search to results\n7. CTA: SENTRY - house CTA"
@@ -21,17 +21,15 @@
   "cover": null,
   "views": 711,
   "guide": [
-    "Add live error and uptime monitoring to your app so you hear about breakages from an alert, not from a user. You need a deployed app, a free Sentry account and Claude Code or ChatGPT (Codex).",
-    "1. Create a free account at Sentry and make a new project for your app's framework.",
-    "1. Run Sentry's setup wizard command in your app's folder; it installs the SDK and adds the config for you.",
-    "1. Add your Sentry project key as an environment variable in your host, such as Vercel, and redeploy.",
-    "1. Turn on Sentry's uptime monitoring and point it at your live site's address.",
-    "1. Set an alert rule that sends errors and downtime to your email or phone.",
-    "1. Break something on purpose, such as pausing the site or throwing a test error, and check the alert arrives.",
-    "1. Open the issue in Sentry to see the failing page and stack trace, then fix it.",
-    "Watch out: passing tests only prove the cases you thought of, so check that the alert fires on the live site before you trust it.",
-    "## Prompt to build your own",
-    "```\nYou are helping me add production monitoring to my web app. My app is <describe app and framework>, deployed on <Vercel / other host>, and my code is in <repo or folder>. I have a free Sentry account and I use <Claude Code / ChatGPT Codex>.\nDo the following:\n1. Install and configure the Sentry SDK for my framework, using Sentry's setup wizard where it applies.\n2. Read the Sentry key from an environment variable, never hard-code it, and tell me where to set it on my host.\n3. Add one safe test route or button that throws a deliberate error so I can confirm Sentry receives it.\n4. Explain how to switch on Sentry uptime monitoring for <my live URL> and create an alert rule that notifies <my email or phone>.\n5. Give me a short checklist to prove it works: trigger the test error, pause or break the site, and confirm each alert arrives.\nConstraints: change as few files as possible, keep my existing code working, and do not commit secrets. Return the list of files changed, the exact commands I need to run, and the settings I must click through in Sentry.\n```",
-    "Ponytail note: I couldn't confirm Sentry's exact wizard command or current free-tier limits from the source, so the guide stays generic there. Check them against Sentry's docs before publishing."
+    "Add error tracking to your app so you hear about breakages before your users do. You need a deployed web app (for example on Vercel) and a free Sentry account.",
+    "1. Create a free account at Sentry and add a new project for your app's framework (for example Next.js).",
+    "1. Install the Sentry SDK in your app by following the setup steps Sentry shows for that framework.",
+    "1. Add the project's DSN (the key Sentry gives you) as an environment variable in your host, such as Vercel, then redeploy.",
+    "1. Trigger a test error on purpose and check that it appears in the Sentry Issues list.",
+    "1. Add an uptime monitor in Sentry for your site's URL, so you are alerted when it stops responding.",
+    "1. Set up email alerts for new issues and for the uptime monitor.",
+    "1. Break something deliberately, such as pausing the project on Vercel, and confirm the \"site not reachable\" alert arrives.",
+    "Watch out: testing alone will not tell you whether your app works for real people, so confirm alerts actually reach you before you rely on them, and never publish your DSN-linked environment variables in public code.",
+    "## Prompt to build your own"
   ]
 }

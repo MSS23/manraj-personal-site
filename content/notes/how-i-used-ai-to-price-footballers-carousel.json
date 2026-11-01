@@ -7,7 +7,7 @@
   "episode": null,
   "pillar": "AI & automation",
   "hook": "How I used AI to price footballers",
-  "keyword": "FOOTBALL",
+  "keyword": "AI",
   "summary": "Metricool: scheduled Tue 2026-10-27 13:00 IG + TikTok (1411-ai-price-footballers-house, 7 slides)",
   "body": [
     "Metricool: scheduled Tue 2026-10-27 13:00 IG + TikTok (1411-ai-price-footballers-house, 7 slides)"
@@ -21,15 +21,16 @@
   "cover": null,
   "views": 301,
   "guide": [
-    "This shows how to get an AI model to put a price on a footballer from public data and then check the result. You need ChatGPT (Codex) or Claude Code, and a spreadsheet or CSV file of player data you are allowed to use.",
-    "1. Pick one question, such as \"what is a fair transfer fee for this player?\", and a short list of players to test it on.",
-    "1. Collect public data for each player into a CSV file: age, position, contract length, minutes played, goals and assists, and the fee actually paid where there is one.",
-    "1. Ask ChatGPT (Codex) or Claude Code to write a script that reads the CSV and builds a simple pricing model from the players whose fees are known.",
-    "1. Run the model on the players you held back and compare its prices with the real fees.",
-    "1. Ask the assistant to explain which inputs moved each price most, so you can sanity-check the reasoning.",
-    "1. Turn the best examples into a short visual, with a CapCut video or a carousel showing player, model price and real price.",
-    "Watch out: a model only repeats patterns in the data you give it, so treat its prices as estimates, show your inputs, and never present them as fact.",
-    "## Prompt to build your own",
-    "```\nYou are helping me build a small tool that estimates the market price of footballers using public data.\nI have a CSV file called <data file> with these columns: <list your columns, e.g. age, position, contract years left, minutes, goals, assists, known transfer fee>. I use <ChatGPT (Codex) or Claude Code> and can run Python on my own computer.\nPlease:\n1. Write a Python script that loads the CSV, cleans missing values and splits the players with a known fee into training and test sets.\n2. Fit a simple, explainable model (for example linear regression or gradient boosting) to predict the fee.\n3. Print the predicted and real fee for each test player, and the average error.\n4. Show which columns influenced the prediction most, in plain English.\n5. Save the results to a new CSV I can chart.\nConstraints: use only the data I provide, do not invent figures, keep the code short and commented, and tell me clearly where the model is unreliable. Return the full script, the command to run it, and a short explanation of how to read the output.\n```"
+    "This guide shows how to point machine learning at football. You need a laptop, a free ChatGPT or Claude account (or Codex or Claude Code), and a football dataset you can download.",
+    "1. Pick one of the two projects: predict a player's market value, or predict the formation the other team will play.",
+    "1. Find a public Premier League dataset, such as a downloadable CSV of player stats and market values or of match lineups, and save it in a Google Drive folder.",
+    "1. Ask ChatGPT (Codex) or Claude Code to open the file and describe the columns, the missing values and what each row represents.",
+    "1. Decide what you are predicting (the market value, or the formation) and which columns the model may use as inputs.",
+    "1. Ask the assistant to split the data into training and test sets, then train a simple model in Python with scikit-learn.",
+    "1. Compare the model's predictions with the real values on the test set and ask the assistant to explain which inputs mattered most.",
+    "1. Improve one thing at a time, such as adding a new input or trying a different model, and re-run the same comparison.",
+    "1. Put the results in a chart and a short write-up so someone else can follow what you did.",
+    "Watch out: Premier League data is far easier to find than lower-league data, so start there, and never judge the model on the same rows it trained on.",
+    "## Prompt to build your own"
   ]
 }

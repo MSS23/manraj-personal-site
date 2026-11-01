@@ -21,16 +21,15 @@
   "cover": "/notes/i-edit-my-reels-by-texting-my-hermes-agent-motion/cover.jpg",
   "views": 781,
   "guide": [
-    "Edit short videos from your phone by messaging an AI agent that runs an editing assistant on your own computer; you need a Telegram bot, an always-on computer with Claude Code and ffmpeg, a Google Drive folder and CapCut.",
-    "1. Create a Telegram bot with BotFather and connect it to an open-source agent framework (or a small script) running on the computer at home.",
-    "1. Have the agent send each draft video to you on Telegram as a preview, labelled with its version number.",
-    "1. Reply to the preview in plain text with the changes you want, such as \"cut the pause after the hook\" or \"make the captions bigger\".",
-    "1. Let the agent pass your message to Claude Code on that computer, which edits the video with ffmpeg and saves a new version.",
-    "1. Have the agent send the finished cut back to you on Telegram and copy it into a Google Drive folder.",
-    "1. Open that file in CapCut on your phone, clean up the voice yourself, listen to the audio, then post.",
-    "Watch out: let the agent do the cutting only; check the audio by ear in CapCut before you post.",
-    "## Prompt to build your own",
-    "```\nYou are helping me build a phone-controlled video editing workflow. I have a Telegram account, a computer that stays switched on at home with <operating system>, Claude Code installed, ffmpeg installed, a Google Drive folder called <folder name>, and CapCut on my phone.\nBuild a small agent that does the following:\n1. Watches a folder on my computer for draft videos named <draft file pattern>.\n2. Sends each draft to me on Telegram through a bot, with a version number in the message.\n3. Treats my next text reply as edit instructions, starts Claude Code on the computer with those instructions and the latest video, and has it make the edit with ffmpeg and save it as the next version.\n4. Sends the finished version back on Telegram and copies it into my Google Drive folder.\nConstraints: only respond to my Telegram user, keep the bot token in an environment variable, never overwrite earlier versions, and do not touch audio unless I ask. Return the full code, setup steps for the Telegram bot and Google Drive access, and one example conversation.\n```",
-    "Not checked: I didn't verify that the generic steps match how his setup actually works beyond the script."
+    "Edit your videos by replying to a preview in Telegram, with an AI agent running a coding assistant on a computer at home to make the changes. You need a Telegram bot, an always-on computer with Claude Code and ffmpeg installed, an agent framework that can call Claude Code, and Google Drive.",
+    "1. Create a Telegram bot with BotFather and connect it to an open-source agent framework running on your home computer.",
+    "1. Install Claude Code and ffmpeg on that computer, and give the agent permission to start Claude Code in a folder that holds your video project.",
+    "1. Have the agent send each draft to you in Telegram as a numbered version, such as version 3.",
+    "1. Reply to that video in Telegram with what you want changed, for example \"cut the pause after the hook\".",
+    "1. Make the agent pass your reply and the current version to Claude Code, which edits the video with ffmpeg and saves it as the next version.",
+    "1. Have the agent send the new version back to you in Telegram and upload it to a Google Drive folder you have set aside for finishing in CapCut.",
+    "1. Open that file in CapCut, clean up or enhance the voice, and post.",
+    "Watch out: Only let the bot answer your own Telegram account, and keep Claude Code limited to the video project folder, so nobody else can send commands to your computer.",
+    "## Prompt to build your own"
   ]
 }

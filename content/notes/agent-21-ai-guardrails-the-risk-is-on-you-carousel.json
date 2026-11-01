@@ -7,7 +7,7 @@
   "episode": null,
   "pillar": "AI & automation",
   "hook": "Stop running AI without guardrails.",
-  "keyword": "GUARDRAIL",
+  "keyword": null,
   "summary": "Metricool: scheduled Mon 2026-10-26 13:00 IG + TikTok\nMyth: \"AI is smart enough to handle the risk for you.\"\nOne thing: the risk is on you, so set guardrails first.\nDrive: G:/My Drive/06 Content Creation/ManrajTalks/Carousels/1409-ai-risk-guardrails/",
   "body": [
     "Metricool: scheduled Mon 2026-10-26 13:00 IG + TikTok\nMyth: \"AI is smart enough to handle the risk for you.\"\nOne thing: the risk is on you, so set guardrails first.\nDrive: G:/My Drive/06 Content Creation/ManrajTalks/Carousels/1409-ai-risk-guardrails/"
@@ -21,16 +21,15 @@
   "cover": null,
   "views": 87,
   "guide": [
-    "Put limits around an AI tool before it acts, so a mistake costs you little. You need an AI assistant (ChatGPT, Codex or Claude Code) and a clear idea of what the AI is and is not allowed to touch.",
-    "1. Write down what the AI is for, and list the actions it must never take on its own, such as sending emails, deleting files, spending money or publishing.",
-    "1. Give the AI the least access it needs: a single Google Drive folder or one Notion page, not your whole account.",
-    "1. Use a test copy or a draft area first, so early mistakes land somewhere harmless.",
-    "1. Add an approval step before anything outward-facing, for example the AI posts its proposed action to Telegram and waits for you to reply yes.",
-    "1. Set hard limits where the tool allows them, such as a spending cap, a daily run limit or read-only permissions.",
-    "1. Keep a simple log of what the AI did and when, so you can check it and undo it.",
-    "1. Review the log after the first few runs, then loosen the limits only where it has behaved well.",
-    "Watch out: the AI will not judge risk for you, because the risk stays with you, so set the guardrails before you run it, not after something goes wrong.",
-    "## Prompt to build your own",
-    "```\nYou are helping me set up guardrails for an AI workflow before I run it. The task I want the AI to do is <describe the task>. The tools I use are <for example ChatGPT, Claude Code, Google Drive, Notion, Telegram>.\nPlease produce:\n1. A list of actions the AI may do on its own, actions that need my approval, and actions it must never do, based on <what could go wrong, for example sending messages, deleting files, spending money>.\n2. The minimum permissions and access it needs in each tool, and how to set them up with the tools I named.\n3. An approval step for anything outward-facing, using <my approval channel, for example Telegram or email>, where the AI waits for my yes before acting.\n4. Hard limits I can set, such as <spending cap, daily run limit, read-only access>.\n5. A simple log format recording what the AI did, when, and how to undo it.\nKeep it in plain English and use only tools I already have. Start with a short checklist I can follow today, then give any setup steps or code I need. Do not assume the AI will manage risk for me.\n```"
+    "AI guardrails are limits you set so an AI agent can only cost you what you chose to risk. You need an AI agent or automation, a clear idea of what it may do, and a way to switch it off.",
+    "1. Write down the worst outcome in one sentence, for example \"the bot loses the whole £1,500 I put in\".",
+    "1. Set a hard cap on what the agent can spend or lose, using the limit your platform offers, such as a spending cap, a funded amount, or a stop-loss order on a trading account.",
+    "1. Limit the agent's permissions to the minimum, for example read-only access first, and a separate account or API key that only holds the money or data you can afford to lose.",
+    "1. Add a human approval step for anything irreversible, such as sending money, emailing customers or deleting records, using a confirmation message in Telegram or a review step in your automation tool.",
+    "1. Log every action the agent takes in a spreadsheet, Notion or Supabase table so you can see what it did and why.",
+    "1. Add a kill switch, such as a single setting or a revoked API key, that stops the agent immediately.",
+    "1. Test with a tiny amount or dummy data for a week before you raise the limits.",
+    "Watch out: the post's example was putting $2k into an AI trading bot with no stop loss, which can lose all of it, and the responsibility is yours, not the AI's.",
+    "## Prompt to build your own"
   ]
 }

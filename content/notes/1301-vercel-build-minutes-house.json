@@ -7,7 +7,7 @@
   "episode": null,
   "pillar": null,
   "hook": "",
-  "keyword": "VERCEL",
+  "keyword": null,
   "summary": "Metricool: scheduled Sun 2026-10-25 13:00 IG + TikTok\n2 Vercel settings before your bill grows: drop Turbo builds, add an Ignored Build Step. CTA: VERCEL.",
   "body": [
     "Metricool: scheduled Sun 2026-10-25 13:00 IG + TikTok\n2 Vercel settings before your bill grows: drop Turbo builds, add an Ignored Build Step. CTA: VERCEL."
@@ -21,17 +21,16 @@
   "cover": null,
   "views": 252,
   "guide": [
-    "Cut the build minutes Vercel bills you for by changing two project settings. You need a Vercel project connected to a Git repository.",
-    "1. Open your project in the Vercel dashboard and go to Settings, then the build and deployment section.",
-    "1. Check which build machine the project uses, and switch off the Turbo (faster, higher-priced) build machine if you don't need it.",
-    "1. Rebuild once on the standard machine and compare the build time and cost with the Turbo run before you decide to keep it off.",
-    "1. In the Git settings, find the Ignored Build Step and set a command that tells Vercel when to skip a build.",
-    "1. Make that command skip builds when nothing the site uses has changed, for example only a README or notes file.",
-    "1. Push a change that should be skipped and one that shouldn't, and check in the Deployments tab that the first is cancelled and the second builds.",
-    "1. Look at your usage and billing page after a few days to confirm the build minutes are falling.",
-    "Watch out: an Ignored Build Step that is too broad will skip builds you need, so test it on both kinds of change before you rely on it.",
-    "## Prompt to build your own",
-    "```\nYou are helping me reduce my Vercel build costs. I have a Vercel project called <project name> connected to a <GitHub/GitLab/Bitbucket> repository, and my app is built with <framework, e.g. Next.js>. I am not an expert, so explain each step in plain English.\nDo three things:\n1. Tell me exactly where in the Vercel dashboard to check which build machine my project uses, and how to switch from a Turbo build machine to the standard one.\n2. Write an Ignored Build Step command for my repository that skips a deployment when the only files changed are <files or folders that don't affect the site, e.g. docs, README, notes>. Explain how Vercel reads the command's exit code, and where in the project settings I paste it.\n3. Give me a short test plan: one change that should be skipped, one that should build, and what I should see in the Deployments tab for each.\nConstraints: use only standard Vercel settings, don't change my application code, and warn me of any case where the command could skip a build I need. Return the command in one code block, then the numbered steps.\n```",
-    "I wrote this from the post's two settings only. I haven't checked the current Vercel dashboard wording for the build machine setting, so the menu names may differ slightly."
+    "This cuts your Vercel bill by lowering the build machine size and stopping every GitHub push from triggering a build. You need a Vercel account with a project connected to a GitHub repository.",
+    "1. Open the Vercel dashboard, go to Usage and look at build minutes per project to find which projects spend the most.",
+    "1. Open that project's Settings, go to the build and deployment section and find the build machine setting.",
+    "1. Change the build machine from the fastest option (turbo) to the lowest one if you can wait a little longer for each deploy.",
+    "1. Decide which pushes deserve a build, for example only the main branch, or only commits that change the app itself rather than notes or docs.",
+    "1. Add that rule to the project with Vercel's Ignored Build Step, a short script or command that tells Vercel to skip the build when a push doesn't need one.",
+    "1. Push a small change on a branch you excluded and check that Vercel skips the deployment.",
+    "1. Push a real change to the branch you kept and check that it still builds and deploys.",
+    "1. Look at build minutes again after a week or two to confirm the numbers have dropped.",
+    "Watch out: the fastest build machine is the default on new projects and the minutes add up quickly, so check both settings when you first create a site, not after a surprise bill.",
+    "## Prompt to build your own"
   ]
 }

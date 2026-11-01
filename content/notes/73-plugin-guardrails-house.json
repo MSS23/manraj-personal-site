@@ -21,16 +21,15 @@
   "cover": null,
   "views": 342,
   "guide": [
-    "A Claude Code plugin that checks work before it becomes a pull request, so broken changes get stopped early. You need Claude Code, a Git repository on GitHub, and a test or lint command your project already runs.",
-    "1. Write down the checks a pull request must pass, such as tests, type checks, lint, and no secrets in the diff.",
-    "1. Create a Claude Code plugin folder and add a plugin manifest so Claude Code can load it.",
-    "1. Add a hook in the plugin that runs your test and lint commands before Claude Code commits or opens a pull request, and blocks the step if they fail.",
-    "1. Add a short skill or slash command that tells Claude to review its own diff against your checklist before it asks to open the pull request.",
-    "1. Add a pull request template or a GitHub Actions workflow that repeats the same checks, so the rule also holds when you are not using Claude Code.",
-    "1. Install the plugin in a test repository and ask Claude to make a change you know will break a test, then confirm the guardrail stops it.",
-    "1. Fix any check that blocks good work, then install the plugin in your real repository.",
-    "Watch out: a guardrail that only asks Claude to be careful does not stop anything, so make the hook fail with a clear message and test it with a change that is meant to break.",
-    "## Prompt to build your own",
-    "```\nYou are helping me build a Claude Code plugin that stops broken pull requests before they are opened.\nMy setup: a <language or framework> project on GitHub, with <test command> for tests and <lint or type-check command> for code quality. I use Claude Code on <Windows, Mac or Linux>.\nBuild a plugin that contains:\n1. A plugin manifest with the name <plugin name> and a short description.\n2. A hook that runs my test and lint commands before Claude Code commits or opens a pull request, and blocks the step with a clear message if either fails.\n3. A skill or slash command that makes Claude review its own diff against this checklist: <my checklist, for example no secrets, tests added for new code, no unrelated changes>.\n4. An optional GitHub Actions workflow that runs the same checks on every pull request.\nConstraints: keep it small, use only built-in Claude Code plugin features, and do not touch files outside the plugin folder and the workflow file. Do not store any keys in the plugin.\nReturn the full folder structure, the contents of each file, the steps to install the plugin, and a way to test that a deliberately broken change gets blocked.\n```"
+    "Add a commit-time check to Claude Code so broken code is caught before a pull request reaches GitHub. You need Claude Code, a GitHub repository and a test or lint command your project already runs.",
+    "1. Decide what \"not broken\" means for your project, for example the tests pass, the linter is clean and the build succeeds.",
+    "1. Put those checks behind one command you can run locally, such as an npm script or a Makefile target.",
+    "1. Package the checks as a Claude Code plugin, bundling the rules Claude should follow and the tools it may call, such as a skill or a command that runs your checks.",
+    "1. Add a hook in the plugin that fires when Claude is about to commit, runs the check command and blocks the commit if it fails.",
+    "1. Install the plugin for everyone on the team, for example through a shared plugin marketplace or by committing the plugin settings to the repository.",
+    "1. Commit a deliberately broken change on a test branch and confirm the commit is stopped and Claude is told why.",
+    "1. Once it behaves, let Claude fix the failure and commit again so the pull request goes to GitHub only after the checks pass.",
+    "Watch out: a plugin only guards sessions where it is installed, so keep a matching check in GitHub Actions as a backstop for anyone who commits without it.",
+    "## Prompt to build your own"
   ]
 }

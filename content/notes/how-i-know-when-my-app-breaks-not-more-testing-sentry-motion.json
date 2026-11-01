@@ -30,15 +30,15 @@
   "cover": "/notes/how-i-know-when-my-app-breaks-not-more-testing-sentry-motion/cover.jpg",
   "views": 740,
   "guide": [
-    "Set up error and uptime monitoring so you hear about a broken app from a tool, not from a user. You need a live web app (for example on Vercel), a free Sentry account and a Slack workspace or an email address.",
-    "1. Create a project in Sentry for your framework and run the Sentry install wizard in your app's folder.",
-    "1. Add an uptime monitor in Sentry that checks your live URL, so you are told if the site stops being reachable.",
-    "1. Send alerts to Slack or email so a failure reaches you without you opening a dashboard.",
-    "1. Upload source maps so errors point to your real code rather than minified output.",
-    "1. Throw a deliberate test error in the app and confirm it appears in Sentry and triggers an alert.",
-    "1. Stop a test deployment on Vercel and confirm the \"no longer reachable\" alert arrives.",
-    "Watch out: tests only check your code once, before it ships, so don't treat a passing test run as a sign the live app is healthy.",
-    "## Prompt to build your own",
-    "```\nYou are helping me add live error and uptime monitoring to my web app using Sentry. Do not just suggest more tests.\nMy app: <describe the app and framework, e.g. Next.js>. It is hosted on <hosting provider, e.g. Vercel>. I want alerts sent to <Slack channel or email address>.\nWalk me through, and write any code or config needed for:\n1. Running the Sentry install wizard for my framework.\n2. Adding an uptime monitor for <my live URL>.\n3. Routing alerts to my chosen channel.\n4. Uploading source maps as part of my build.\n5. Adding a safe test error I can trigger and then remove.\nConstraints: use only the free tier features unless I say otherwise, keep secrets such as the Sentry auth token in environment variables and never in code, and tell me exactly which commands to run and where. Finish with a short checklist I can use to confirm each alert actually arrives.\n```"
+    "Add error tracking to your app so you hear about breakages before your users do. You need a deployed web app (for example on Vercel) and a free Sentry account.",
+    "1. Create a free account at Sentry and add a new project for your app's framework (for example Next.js).",
+    "1. Install the Sentry SDK in your app by following the setup steps Sentry shows for that framework.",
+    "1. Add the project's DSN (the key Sentry gives you) as an environment variable in your host, such as Vercel, then redeploy.",
+    "1. Trigger a test error on purpose and check that it appears in the Sentry Issues list.",
+    "1. Add an uptime monitor in Sentry for your site's URL, so you are alerted when it stops responding.",
+    "1. Set up email alerts for new issues and for the uptime monitor.",
+    "1. Break something deliberately, such as pausing the project on Vercel, and confirm the \"site not reachable\" alert arrives.",
+    "Watch out: testing alone will not tell you whether your app works for real people, so confirm alerts actually reach you before you rely on them, and never publish your DSN-linked environment variables in public code.",
+    "## Prompt to build your own"
   ]
 }

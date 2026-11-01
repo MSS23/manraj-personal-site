@@ -21,16 +21,15 @@
   "cover": null,
   "views": 51,
   "guide": [
-    "Use one AI model to build your app and a second, cheaper one for a single narrow job, instead of hunting for the \"best\" AI. You need Claude Code (or ChatGPT / Codex), an OpenAI API key and a small project to build.",
-    "1. Pick the one job your app needs an AI to do at run time, such as summarising a message or tagging an email.",
-    "1. Open Claude Code and have it build the app itself: the screens, the database and the glue between them.",
-    "1. Create an API key on the OpenAI platform and keep it in your host's environment settings, not in your code.",
-    "1. Ask Claude Code to add one function that sends the input to a GPT model with a short instruction and returns a fixed, structured answer.",
-    "1. Keep GPT out of everything else, so the rest of the app never depends on a model's judgement.",
-    "1. Deploy the app on Vercel, with Supabase for the data if you need a database.",
-    "1. Test the single GPT call with ten real inputs and tighten the instruction until the answers stay consistent.",
-    "Watch out: do not give one model every job; Claude builds the app, GPT gets one defined task, and a vague task is where the answers go wrong.",
-    "## Prompt to build your own",
-    "```\nYou are my senior developer. Build a small web app that does <what the app does> for <who uses it>.\nTools I have: Claude Code or ChatGPT (Codex), an OpenAI API key, a Vercel account and optionally a Supabase project.\nRequirements:\n- You write the whole app: pages, data storage and the glue between them.\n- Add exactly one AI feature: <the single job, e.g. \"tag each incoming message as urgent, normal or low\">. Put it in one function that calls a GPT model with a short, fixed instruction and returns a structured answer (JSON with a small set of allowed values).\n- No other part of the app may depend on a model's output. If the call fails or returns something invalid, fall back to a safe default and log the error.\n- Read the API key from an environment variable. Never put it in the code or in the repository.\n- Deploy to Vercel and give me the environment variable names to set.\nReturn: the project structure, the code for each file, the instruction text you send to the model, and ten example inputs with expected outputs so I can test the AI call before launch. Ask me before you assume anything about <my data or workflow>.\n```"
+    "Use one AI model for most of your app-building and a second only where it does one job better. You need a Claude plan (Claude Code or the Claude app), a ChatGPT subscription if you want a second model, and a place to host the app, such as Vercel.",
+    "1. List what your app needs to do, separating the build work (pages, logic, database) from any features that call an AI model while the app runs.",
+    "1. Pick one main model for the build work, such as Claude Code, and give it your whole project so it keeps one consistent style.",
+    "1. Choose a paid plan only once you hit usage limits on the free one, since heavy daily building is what justifies a higher tier such as Claude Max.",
+    "1. Ask the main model to build the app step by step, testing each page or feature before moving on.",
+    "1. For any single feature the main model handles badly, such as a simulation or a specific type of generated content, try the same task in ChatGPT and keep whichever result is better.",
+    "1. If you keep both, call the second model from your app through the OpenAI API, with the key stored as an environment variable in your host (for example Vercel).",
+    "1. Deploy with Vercel and test the feature that uses the second model on a live preview before you share it.",
+    "Watch out: Using two models adds cost and complexity, so only add the second one for a feature where you have seen it do clearly better, and never put API keys in code you publish.",
+    "## Prompt to build your own"
   ]
 }

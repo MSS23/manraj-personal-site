@@ -7,7 +7,7 @@
   "episode": null,
   "pillar": "Pokémon VGC",
   "hook": "How do you stop AI guessing your Pokémon VGC team? Give Claude real calculators.",
-  "keyword": "VGC",
+  "keyword": "BUILD",
   "summary": "How do you stop AI guessing your Pokémon VGC team? Give Claude real calculators.\nI built 157 tools (vgc-mcp, live as Manny VGC Calc): it finds the three threats my team loses to, shows who outspeeds who, checks real usage, breaks down my replays, fixes one spread with exact EVs and writes the lead pair and game plan. You still choose the team.\nI'm Manraj Sidhu, AI developer, and this is my real VGC stack.\nBuilt with @claudeai\nComment VGC and I'll send you the server link. Follow @manrajtalks",
   "body": [
     "How do you stop AI guessing your Pokémon VGC team? Give Claude real calculators.\nI built 157 tools (vgc-mcp, live as Manny VGC Calc): it finds the three threats my team loses to, shows who outspeeds who, checks real usage, breaks down my replays, fixes one spread with exact EVs and writes the lead pair and game plan. You still choose the team.\nI'm Manraj Sidhu, AI developer, and this is my real VGC stack.\nBuilt with @claudeai\nComment VGC and I'll send you the server link. Follow @manrajtalks"
@@ -27,17 +27,15 @@
   "cover": "/notes/claude-stopped-guessing-my-vgc-team-motion/cover.jpg",
   "views": 374,
   "guide": [
-    "This gives Claude real Pokémon VGC calculators to call, so its answers come from calculations instead of guesses. You need Claude (Claude Code or the Claude app with connectors), a way to host a small MCP server, and a damage-calculation library.",
-    "1. Pick a damage-calculation library and a usage-statistics source, and wrap them as tools in an MCP (Model Context Protocol) server, using the official MCP SDK in Python or TypeScript.",
-    "1. Write one tool per job: damage calcs, speed tiers, usage stats, replay analysis, spread building and team legality. The post's server ended up with 157 tools.",
-    "1. Add a tool that takes a pasted team and finds the three threats it loses to, by running damage calcs against common opposing sets.",
-    "1. Add a speed-tier tool that shows who outspeeds whom, and a usage tool that returns what players actually run.",
-    "1. Add a replay tool that reads a battle log and breaks down why you lost, and a spread tool that returns exact EVs for one Pokémon.",
-    "1. Have Claude finish by writing the lead pair and game plan from those tool results.",
-    "1. Deploy the server somewhere reachable, such as Vercel, and add it to Claude as a custom connector or to Claude Code as an MCP server.",
-    "1. Paste one team and check that each of the six steps returns tool output rather than prose.",
-    "Watch out: Claude sounds sure of itself, but damage is maths, so make it call the calculators for every number and keep the final team choice with you.",
-    "## Prompt to build your own",
-    "```\nYou are helping me build an MCP server that gives Claude real Pokémon VGC calculators, so it stops guessing about my team.\nI use <Claude Code or Claude app> and I am comfortable with <Python or TypeScript>. I will host it on <Vercel or another host>.\nBuild the server with the official MCP SDK. Use an open-source damage calculator, <damage library>, and usage statistics from <usage data source>. Expose these tools: damage calcs, speed comparison, usage stats, replay analysis from a pasted battle log, an exact-EV spread builder for one Pokémon, and team legality checks.\nAdd a prepare-team tool that takes a pasted team and returns the three threats it loses to, who outspeeds whom, what opponents actually run, and one suggested spread with exact EVs. Claude then writes a lead pair and game plan from those results.\nConstraints: every number must come from a calculation, never from the model. Make clear in tool descriptions that the user chooses the final team. Keep each tool small with typed inputs.\nReturn the project structure, the code, setup steps, how to deploy it, how to connect it to <my Claude client>, and a test using <my sample team>.\n```"
+    "Build a small app or site around something you already care about, using an AI coding assistant to do the heavy lifting. You need ChatGPT (Codex) or Claude Code, plus a free Vercel account and, if the app stores data, a free Supabase project.",
+    "1. Pick one thing you care about (travel, a collection, a local shop, your money, your wardrobe) and write one sentence on what the app should do for it.",
+    "1. List the two or three screens or features that sentence needs, and drop everything else.",
+    "1. Ask ChatGPT (Codex) or Claude Code to scaffold the app with those screens and run it on your computer.",
+    "1. If the app needs to remember things, such as a card collection or user posts, create a Supabase project and ask the assistant to connect it and create the tables.",
+    "1. Add one feature at a time and check it works before asking for the next, for example showing what each card in your collection is worth.",
+    "1. Publish it on Vercel so you can open it on your phone and share the link.",
+    "1. When you get stuck, paste the exact error message back into the assistant and ask it to explain the cause before it changes anything.",
+    "Watch out: do not start from \"I should learn AI\". Start from something you care about, because that is what keeps you going through the hard parts.",
+    "## Prompt to build your own"
   ]
 }

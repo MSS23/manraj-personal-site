@@ -27,16 +27,16 @@
   "cover": "/notes/ai-football-two-ideas-motion/cover.jpg",
   "views": 269,
   "guide": [
-    "Point a machine learning model at a football question you care about, such as predicting a player's price from his stats or predicting an opponent's formation. You need ChatGPT (Codex) or Claude Code, a free Python setup, and a public football dataset.",
-    "1. Pick a hobby you already follow and find one call people argue about, such as what a player is worth or what shape the other team will play.",
-    "1. Turn that argument into a prediction: for example, player stats in, transfer price out, or match data in, opposing formation out.",
-    "1. Start with the Premier League, because its data is easy to find and lower league data is hard to get.",
-    "1. Download a public dataset of player stats and fees, or match and lineup data, from a source whose licence allows reuse.",
-    "1. Ask ChatGPT (Codex) or Claude Code to clean the data and train a simple model, for example linear regression or a random forest in scikit-learn.",
-    "1. Hold back part of the data as a test set and check how far the predictions miss on matches or players the model has not seen.",
-    "1. Ask the assistant where AI could speed up the rest of the work, such as collecting data or comparing models, and add only what helps.",
-    "Watch out: start with one league, because thin data from smaller leagues will make the model unreliable.",
-    "## Prompt to build your own",
-    "```\nYou are helping me build a small machine learning project about football. I am a beginner and I use <ChatGPT/Codex or Claude Code> with Python on <Windows/Mac/Linux>.\nGoal: predict <a player's transfer price from his stats / the opposing team's formation from match data> for the <Premier League>.\nPlease do the following:\n1. Suggest two or three public datasets I can legally use for <the chosen league and seasons>, and tell me which columns I need.\n2. Write Python code with pandas and scikit-learn to load and clean the data, then train a simple baseline model.\n3. Split the data into training and test sets, and report one clear error measure in plain English.\n4. Show which inputs matter most to the prediction.\n5. Suggest one improvement I could try next.\nConstraints: keep the code short and commented, explain each step in plain English, and do not use data I am not allowed to reuse. Return the full code, how to run it, and a short summary of what the results mean and where they could be wrong.\n```"
+    "This guide shows how to point machine learning at football. You need a laptop, a free ChatGPT or Claude account (or Codex or Claude Code), and a football dataset you can download.",
+    "1. Pick one of the two projects: predict a player's market value, or predict the formation the other team will play.",
+    "1. Find a public Premier League dataset, such as a downloadable CSV of player stats and market values or of match lineups, and save it in a Google Drive folder.",
+    "1. Ask ChatGPT (Codex) or Claude Code to open the file and describe the columns, the missing values and what each row represents.",
+    "1. Decide what you are predicting (the market value, or the formation) and which columns the model may use as inputs.",
+    "1. Ask the assistant to split the data into training and test sets, then train a simple model in Python with scikit-learn.",
+    "1. Compare the model's predictions with the real values on the test set and ask the assistant to explain which inputs mattered most.",
+    "1. Improve one thing at a time, such as adding a new input or trying a different model, and re-run the same comparison.",
+    "1. Put the results in a chart and a short write-up so someone else can follow what you did.",
+    "Watch out: Premier League data is far easier to find than lower-league data, so start there, and never judge the model on the same rows it trained on.",
+    "## Prompt to build your own"
   ]
 }

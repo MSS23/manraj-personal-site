@@ -7,7 +7,7 @@
   "episode": null,
   "pillar": "Claude & skills",
   "hook": "Stop asking AI to build it. Let it interview you.",
-  "keyword": "INTERVIEW",
+  "keyword": null,
   "summary": "Metricool: scheduled Wed 2026-10-28 13:00 IG + TikTok. Motion carousel (7 slides). Final design: house (public slides 1268-ai-interview-house). Source folder: G:/My Drive/06 Content Creation/ManrajTalks/carousel-reels/carousel-the-one-ai/",
   "body": [
     "Metricool: scheduled Wed 2026-10-28 13:00 IG + TikTok. Motion carousel (7 slides). Final design: house (public slides 1268-ai-interview-house). Source folder: G:/My Drive/06 Content Creation/ManrajTalks/carousel-reels/carousel-the-one-ai/"
@@ -21,17 +21,15 @@
   "cover": null,
   "views": 719,
   "guide": [
-    "This turns the AI into an interviewer, so it asks you questions before it builds anything. You need ChatGPT (Codex) or Claude Code, plus a few minutes to answer questions.",
-    "1. Open ChatGPT (Codex) or Claude Code and say what you want in one rough sentence, without describing how it should work.",
-    "1. Tell the assistant not to build anything yet and to ask you questions one at a time instead.",
-    "1. Answer in plain words, including who it is for, what it should do, and what \"done\" looks like.",
-    "1. Tell it to point out anything you have not decided, such as where the data lives, who can see it, and what happens when something fails.",
-    "1. Ask it to write a short spec in your own words and read it back to you.",
-    "1. Correct anything wrong in the spec, then tell it to build from the spec.",
-    "1. Test the result, and when something is off, answer one more round of its questions rather than rewriting your request.",
-    "Watch out: if you let it start building after your first sentence, it fills every gap with a guess, so keep the \"do not build yet\" instruction in place until you have approved the spec.",
-    "## Prompt to build your own",
-    "```\nYou are my interviewer before you are my builder. I want to make: <one-sentence idea>.\nDo not write any code or produce the final thing yet. Ask me questions one at a time, waiting for my answer each time. Cover who it is for, what it must do, what it must never do, the tools and accounts I already have (<tools I use, e.g. Google Drive, Notion, Telegram, Vercel>), where the data comes from and goes, and what could go wrong. If an answer is vague, ask a follow-up. Stop asking when you could build it without guessing, and tell me when you reach that point.\nThen write a plain-English spec of no more than one page: the goal, the steps in order, the tools involved, and anything still undecided. Ask me to confirm or correct it. Only after I say \"approved\" should you build it, step by step, telling me how to test each step.\nMy experience level is <beginner / some coding>. Use British spelling and avoid jargon.\n```",
-    "I only had the title, hook and a one-line description of the post. The steps are the general interview-first method, not anything specific from the slides."
+    "Use an AI assistant to interview you into a clear set of requirements before it builds anything. You need ChatGPT (Codex) or Claude Code, and a rough idea of what you want to end up with.",
+    "1. Write the end goal in one or two sentences: what the finished thing does and who uses it.",
+    "1. Open ChatGPT (Codex) or Claude Code and ask it to interview you, one question at a time, working backwards from that goal.",
+    "1. Answer its questions about the architecture: what the pieces are, what talks to what, and in what order.",
+    "1. Ask it to question you on the cloud platform too (AWS, Google Cloud or Microsoft Azure) and why that one fits.",
+    "1. Say \"I don't know\" when you are unsure and ask it to explain the options in plain English, so you understand the structure.",
+    "1. Ask it to write everything up as one requirements document, then read it and correct anything wrong.",
+    "1. Start a fresh chat or session, paste in the finished requirements and ask the assistant to build from them.",
+    "Watch out: if you let the AI decide everything without understanding the structure, you cannot diagnose problems later, so only accept answers you can explain back.",
+    "## Prompt to build your own"
   ]
 }
