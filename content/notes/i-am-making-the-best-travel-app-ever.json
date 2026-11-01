@@ -7,9 +7,12 @@
   "episode": null,
   "pillar": "Building in public",
   "hook": "",
-  "keyword": null,
-  "summary": "",
-  "body": [],
+  "keyword": "TRAVEL",
+  "summary": "TikTok caption: I am making the best travel applicaton ever #desi #travelapp #travel #brown #advice",
+  "body": [
+    "TikTok caption: I am making the best travel applicaton ever #desi #travelapp #travel #brown #advice",
+    "Transcript (auto, from the TikTok video): I'm taking on a huge challenge and I want to make the best possible travel and globe application when it comes to sharing experiences, moments and memories with the people important to you. I love the fact that my family bought me scratch maps and other items like this which really showcase where I've been but unless they've obviously seen the map itself they don't get to see the experiences, the moments, the memories and that is something I wanted to tackle. Instagram is great for photos but really and truly when it comes to travel timeline and where you went to where you've been in 2019 and what it looks like from 2026 and all the places you've jumped around and how those places even change should you revisit them. It's not really great to use Instagram as a platform given that you only have the highlight section in your stories and the thing is that I wanted to tackle this problem and I started to build an application. It's a web app and in the background as on top of my head you probably see a Spotify wrapped version of what your travel timeline looks like and if that's something you're interested in comment below."
+  ],
   "tags": [],
   "links": {
     "tiktok": "https://www.tiktok.com/@manrajtalks/video/7675009614575914273"
@@ -17,5 +20,18 @@
   "slides": [],
   "cover": "/notes/i-am-making-the-best-travel-app-ever/cover.jpg",
   "views": 899,
-  "guide": null
+  "guide": [
+    "This builds a web app where a person's trips sit on a globe and a timeline, with photos, notes and a year-in-review summary. You need a ChatGPT (Codex) or Claude Code account, a free Vercel account and a free Supabase account.",
+    "1. Write down who the app is for, what they log (place, dates, photos, a short note) and who they share it with.",
+    "1. Ask Claude Code or Codex to scaffold a web app with a Next.js front end and deploy it to Vercel.",
+    "1. Create a Supabase project with tables for trips, places and photos, and use Supabase Storage for the images.",
+    "1. Add an interactive globe or map that pins each place, using an open-source mapping library such as MapLibre GL or globe.gl.",
+    "1. Build a timeline view that groups places by year, so someone can see 2019 next to 2026 and compare revisits.",
+    "1. Add sharing, so a trip or the whole timeline can be sent to family through a private link.",
+    "1. Add a year-in-review page that counts countries, cities and photos per year and shows them as simple cards.",
+    "1. Test it with your own real trips before you share it with anyone.",
+    "Watch out: Photos can carry exact location data, so check what you store and turn on Supabase Row Level Security before sharing any link.",
+    "## Prompt to build your own",
+    "```\nYou are my senior full-stack developer. Build a web app called <app name> where I can record my travels and share them with <who I share with>. Use Next.js for the front end, Supabase for the database, authentication and photo storage, and deploy to Vercel. I have <Codex or Claude Code> and can run commands on <Windows, Mac or Linux>.\nFeatures: an interactive globe or map pinning every place I have visited; a timeline grouped by year so I can compare my trips across years and see how a place changed when I revisited; a page per trip with photos, dates and a short note; private share links; and a year-in-review page with counts of countries, cities and photos per year.\nConstraints: keep it simple and build in small steps, starting with the data model and one working trip page. Enable Supabase Row Level Security on every table. Strip or ignore photo location data unless I choose to keep it. Do not hard-code any keys; use environment variables and tell me where to set them.\nReturn the data model first and wait for my approval. Then give me the commands, the files and a short checklist to test it with <number> of my own trips.\n```"
+  ]
 }

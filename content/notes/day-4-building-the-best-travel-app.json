@@ -7,9 +7,12 @@
   "episode": null,
   "pillar": "Building in public",
   "hook": "",
-  "keyword": null,
-  "summary": "",
-  "body": [],
+  "keyword": "TRAVEL APP",
+  "summary": "TikTok caption: Building the best travel app in the world - Day 4 #travelapp #app #brown #desi #traveltok",
+  "body": [
+    "TikTok caption: Building the best travel app in the world - Day 4 #travelapp #app #brown #desi #traveltok",
+    "Transcript (auto, from the TikTok video): It's day number four. It's been a little bit tough if I'm honest with you We're trying to make the best globe social media apps basically a place Where people can connect talk about or share the albums of places that they've been to see the travel Compatibility between all your friends and family. That's a great feature as well A lot of people have been loving the scanning of falsehoods, but it's been a little bit tough at the moment I've got people to sign up. I've got the buy-in. I'm just looking to promote it more and more and this is kind of part of my journey in terms of building out applications and pushing them online and and seeing where they go What happens to them and I want to share the honest truth about how these things are going Some of it is I pay a decent amount money to actually get these things live and get them up and running And I'm willing to offset those kind of costs because this is something important to me and I know there's gonna be pro features in the future, but this is the star of the journey and It's not a sprint. It's a marathon and I can't wait to let everyone else to see how it all ends up"
+  ],
   "tags": [],
   "links": {
     "tiktok": "https://www.tiktok.com/@manrajtalks/video/7677679416725572886"
@@ -17,5 +20,17 @@
   "slides": [],
   "cover": "/notes/day-4-building-the-best-travel-app/cover.jpg",
   "views": 268,
-  "guide": null
+  "guide": [
+    "This is a social travel app: users share albums of places they've been and see travel compatibility with friends and family. It's built with an AI coding assistant and put live with a hosted back end. You need a ChatGPT (Codex) or Claude Code account, a Supabase project, a Vercel account and a domain.",
+    "1. Write one paragraph on what the app does and the two or three features that make it different, such as shared place albums and a compatibility score between friends.",
+    "1. Ask Claude Code or ChatGPT (Codex) to build a first version of the app from that paragraph, with sign-up and login.",
+    "1. Create a Supabase project for user accounts, albums and places, and ask the assistant to connect the app to it.",
+    "1. Deploy the app to Vercel and attach your domain so people can sign up from a real link.",
+    "1. Work through the app with a few real people, fix what breaks, and ask the assistant to add the next feature on your list.",
+    "1. Share the link and film your progress each day, including the costs and what isn't working yet.",
+    "1. Track what you pay each month for hosting, the domain and AI tools, so you know what the app costs before you add paid features.",
+    "Watch out: sign-ups and promotion are slower than building, so plan time for getting the app in front of people and keep an eye on the running costs.",
+    "## Prompt to build your own",
+    "```\nYou are my senior full-stack developer. Build the first version of a social travel app called <app name> where people sign up, create albums of places they have visited, and see a travel compatibility score with friends and family based on shared places. I use <ChatGPT Codex or Claude Code>. I have a Supabase account, a Vercel account and the domain <my domain>.\nPlease do the following:\n1. Propose a simple stack (web app, Supabase for auth and data) and list the tables you need for users, albums, places and friendships.\n2. Build sign-up, login, an album page where I can add places and photos, a friends list, and a compatibility page that compares two people's places.\n3. Show me how to connect the app to Supabase, keep keys in environment variables, and deploy to Vercel with my domain.\n4. Add basic checks so one user cannot see or edit another user's private albums.\nKeep it as small as possible and build one feature at a time, stopping for me to test after each. Return the file structure, the code, the exact setup steps, and a list of monthly costs I should expect for hosting, database and domain.\n```"
+  ]
 }

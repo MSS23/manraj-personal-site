@@ -7,9 +7,12 @@
   "episode": null,
   "pillar": "Building in public",
   "hook": "",
-  "keyword": null,
-  "summary": "",
-  "body": [],
+  "keyword": "REDDIT",
+  "summary": "TikTok caption: Reddit has been super useful for distribution when advertising this social media travel app I made! app: atlaria.app #brown #traveltok #app #southasian #business",
+  "body": [
+    "TikTok caption: Reddit has been super useful for distribution when advertising this social media travel app I made! app: atlaria.app #brown #traveltok #app #southasian #business",
+    "Transcript (auto, from the TikTok video): It's day 11 of building the best social media app for traveling We've actually put stuff on to Reddit and shared with the community what this application looks like and we've got some feedback And that's been really great. I've actually added a demo account to the website at Laurier app I'll put the link up above here and in the Caption and the comments below This is something I've really enjoyed doing a lot of people said they liked the concept But they didn't really get a chance to see what it's really about and it's that kind of feedback that really helps Grab the buy-in of people who want to be using this application and want to be involved and Reddit's been a great place for me I use the R-side projects Reddit page and people come back and really supported the movement for this application So I just want to give a big shout out to them and this is more about that marketing and distribution piece I was talking about when it comes to building out this application and what this journey is all about I hope you stay tuned for more about what we've got for this application moving forward"
+  ],
   "tags": [],
   "links": {
     "tiktok": "https://www.tiktok.com/@manrajtalks/video/7681056206823181590"
@@ -17,5 +20,17 @@
   "slides": [],
   "cover": "/notes/reddit-for-distribution/cover.jpg",
   "views": 243,
-  "guide": null
+  "guide": [
+    "Post your app or project to relevant Reddit communities, then turn the feedback into a demo people can try. You need a live app or site, a Reddit account, and a free demo login.",
+    "1. Pick one or two subreddits for side projects or your niche, and read each one's rules on self-promotion before you post.",
+    "1. Write a post that says what the app does, who it is for and what stage it is at, with a screenshot or short clip.",
+    "1. Ask a direct question, such as what is missing or confusing, so replies give you feedback rather than a few upvotes.",
+    "1. Note down the recurring comments, especially people who liked the idea but could not see how it works.",
+    "1. Add a demo account to your site (for example with Supabase Auth, or a read-only sample login) so visitors can click around without signing up.",
+    "1. Put the demo link in your short-video caption, the pinned comment and your bio, and tell the Reddit thread you added it.",
+    "1. Reply to every comment, and keep a list of what people ask for to shape the next build.",
+    "Watch out: Subreddits remove posts that read as ads, so lead with the build and the question, and never use a demo account that exposes real user data.",
+    "## Prompt to build your own",
+    "```\nYou are helping me turn feedback from Reddit into a public demo for my app. I am not a developer, so explain each step plainly and give me copy-and-paste code.\nMy app is <describe the app in one sentence>. It is built with <tools, for example Next.js on Vercel with Supabase>. My audience is <who it is for>. The subreddit I plan to post in is <subreddit name>.\nPlease do three things:\n1. Draft a Reddit post for <subreddit name> that follows self-promotion etiquette: what I built, who it is for, what stage it is at, and one specific question asking for feedback. Keep it under 200 words and avoid sales language.\n2. Show me how to add a demo account to my app: a pre-made login with sample data only, read-only where possible, and no access to any real user's information. Give the exact steps for my stack.\n3. Write a short caption and a pinned-comment line that point to the demo link <demo URL>.\nReturn the three pieces separately, and finish with a short checklist of what to test before I share the demo publicly.\n```"
+  ]
 }

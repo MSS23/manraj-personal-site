@@ -7,9 +7,12 @@
   "episode": null,
   "pillar": "Lifestyle",
   "hook": "",
-  "keyword": null,
-  "summary": "",
-  "body": [],
+  "keyword": "APK",
+  "summary": "TikTok caption: Day 21: a lot of time was spent recovering from Diljits concert 😭 #wembley #southasian #punjabi #traveltok #diljitdosanjh",
+  "body": [
+    "TikTok caption: Day 21: a lot of time was spent recovering from Diljits concert 😭 #wembley #southasian #punjabi #traveltok #diljitdosanjh",
+    "Transcript (auto, from the TikTok video): This is day 21 of building the biggest and best application in the world. And in today's video, it's going to be very short because I'm going to be completely honest with you. And it's just been one of those days when I actually went to DOG's concert, which was really good. But others just didn't know work on my app at all. And that's just the truth. I think I want to be as honest and transparent about my journey as much as possible. A lot of my time today was not spent working on it. And I've not even taken a look at the... I've got like an APK version that's on my phone now. So I can take a look at what the Android app version looks like. I did a couple of changes yesterday just before the concert started. So I was on cloud code when it comes to what I did. But yeah, that's just the truth. I've just been super busy with that kind of stuff. And I just wanted to be completely real with you all who have been following my journey. And day 21 was not very successful. But we keep it stepping and keep it moving."
+  ],
   "tags": [],
   "links": {
     "tiktok": "https://www.tiktok.com/@manrajtalks/video/7685161538113588502"
@@ -17,5 +20,17 @@
   "slides": [],
   "cover": "/notes/day-21-recovering-from-diljit-s-concert/cover.jpg",
   "views": 327,
-  "guide": null
+  "guide": [
+    "This is a plain account of a day with no building done, plus how to keep a project moving on days like that. You need an app project, Claude Code or Codex, and an Android phone.",
+    "1. Open your app project in Claude Code and ask it to build an Android debug APK, which is an installable test copy of the app.",
+    "1. Copy the APK to your Android phone with Google Drive or a USB cable, then open it to install it.",
+    "1. Turn on \"Install unknown apps\" for the app you opened the file from, if Android blocks the install.",
+    "1. Use the app on the phone before you change any code, and write down what looks wrong or feels slow.",
+    "1. Before a busy day, ask Claude Code to make a small change, check it runs, and write a short note of what changed and what to do next.",
+    "1. Keep that note in Notion or in a file in the project, so the next session starts from it.",
+    "1. If you miss a day, say so in your log and pick up from the note without trying to catch up.",
+    "Watch out: install only an APK you built yourself, and don't spend a free evening on a big change you can't test on the phone.",
+    "## Prompt to build your own",
+    "```\nYou are helping me build a working Android build of my app and a simple progress log.\nMy setup: <app type, e.g. React Native / Expo / Flutter / native Android>, project folder <path to my project>, Windows or Mac <my computer>, Android phone <phone model>, Claude Code or Codex as the assistant.\nDo the following:\n1. Inspect the project and tell me the exact command to produce an Android debug APK. If the project needs tools installed first (Android Studio, Java, an Expo or EAS account), list them and ask before installing anything.\n2. Run the build once I agree, and tell me where the APK file is saved.\n3. Give me plain steps to move the APK to my phone and install it, including the Android \"Install unknown apps\" setting.\n4. Create a short file in the project called PROGRESS.md with three headings: Done today, Broken or unfinished, Next step. Fill it in from the current state of the code.\n5. Explain how I update PROGRESS.md at the end of each work session in under two minutes.\nConstraints: do not change my app code, do not publish anything to a store, and do not ask for passwords or keys. Return the commands, the file path of the APK, and the contents of PROGRESS.md.\n```"
+  ]
 }

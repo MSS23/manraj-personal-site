@@ -7,9 +7,12 @@
   "episode": null,
   "pillar": "Lifestyle",
   "hook": "",
-  "keyword": null,
-  "summary": "",
-  "body": [],
+  "keyword": "ASK",
+  "summary": "TikTok caption: Day 14 If you want to go after your dreams, you have to be able to show some courage and go after your dreams #punjabi #traveltok #app #technology #southasian",
+  "body": [
+    "TikTok caption: Day 14 If you want to go after your dreams, you have to be able to show some courage and go after your dreams #punjabi #traveltok #app #technology #southasian",
+    "Transcript (auto, from the TikTok video): This is day 14 of building the best and biggest social media app for travel, and I'll be honest today's video is a little bit different. I wanted to talk a little bit holistically about concepts and things that I think are really important. And sometimes in this case it's going to be, sometimes you're going to be a little bit shameless about the things that you want in life. And straight off this video is because I'm hilarious now because I'm posting it. I'm probably going to reach out to everyone on WhatsApp that I have and just send out a message saying, look, I've built this application. It might be something of interest. If that's what you care about, let me know. We'll sign up to it or look at the demo account and see if you're interested. And I think that's a lost art. Really, I think we're scared and we don't want to be seen a certain type of way. And I've learned that for me personally, I know that I hold myself to high standard and integrity is super important. But sometimes you've got to be a little bit shameless because you're working towards your goals. And you've got to just ask and maybe in one of those contacts, my life changes, or this application really gets some massive feedback that can really be a needable mover even. And sometimes you just have to do that. And I think that in a day and age where a lot of people are scared to take on these challenges or aren't sure about whether they should go and ask their mates to support them and stuff. Just be shameless about it and ask them anyway. If they don't want to support, they wouldn't do it. They did and you asked and also they've done it. And they don't need to be initiated and that's also fine. But sometimes you've got to ask and if you don't ask, you don't get. That's a little bit about me. A little bit different about the videos compared to what we talk about with this application. It's called Agiloria.app. I'll put up the link above my head and you'll see it throughout this video. But thank you for the support and just be a little bit shameless."
+  ],
   "tags": [],
   "links": {
     "tiktok": "https://www.tiktok.com/@manrajtalks/video/7682143025274948886"
@@ -17,5 +20,19 @@
   "slides": [],
   "cover": "/notes/day-14-courage-to-chase-dreams/cover.jpg",
   "views": 242,
-  "guide": null
+  "guide": [
+    "This is a repeatable way to turn a finished app into a short outreach message to your own contacts, so people can try it and give feedback. You need an app with a live link, a demo account, and your phone contacts or WhatsApp.",
+    "1. Put the app on a public link, for example by deploying it with Vercel.",
+    "1. Create a demo account in the app so a stranger can look around without signing up.",
+    "1. Write a two-sentence message: what the app is, and one clear thing you want (a sign-up or some feedback).",
+    "1. Ask ChatGPT or Claude to give you three versions of the message in your own voice, then pick the one that sounds like you.",
+    "1. Export your contacts into a Google Sheet and mark who the message suits, such as friends, former colleagues or people in your target audience.",
+    "1. Send each message in WhatsApp yourself, one person at a time, with their name at the top.",
+    "1. Log who replied and what they said in the same Google Sheet, and fix whatever they flag in the app.",
+    "1. Send a short thank-you to everyone who replied, then repeat with the next group.",
+    "Watch out: send every message by hand to people who know you; bulk-sending to a list breaks WhatsApp's rules and can get your number banned.",
+    "## Prompt to build your own",
+    "```\nYou are helping me ask my own contacts to try an app I have built. The app is <app name>, it does <one-line description>, and the link is <app URL>. There is a demo account: <demo login details, or \"none yet\">. My audience is <who the app is for>. I have my contacts in <Google Sheet / phone contacts / WhatsApp>.\nPlease do the following:\n1. Write three short WhatsApp messages (under 50 words each) in a warm, direct, non-salesy tone. Each should say what the app is, give the link, and make one clear ask: <sign up / try the demo / reply with feedback>.\n2. Suggest a simple Google Sheet layout with columns for name, group, message sent, replied, feedback and next step.\n3. Draft a short thank-you reply and a follow-up for people who do not answer after a week.\n4. Give me a checklist for sending manually, one person at a time, with no bulk-sending tools.\nUse British spelling. Do not use hype or emoji. Return the messages, the sheet columns and the checklist as separate sections.\n```",
+    "Skipped: nothing checked beyond the source; the post is a story about asking, so steps 5–8 are my suggested way to act on it, not what he did."
+  ]
 }

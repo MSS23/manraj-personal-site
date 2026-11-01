@@ -7,9 +7,12 @@
   "episode": null,
   "pillar": "Lifestyle",
   "hook": "",
-  "keyword": null,
-  "summary": "",
-  "body": [],
+  "keyword": "SYSTEMS",
+  "summary": "TikTok caption: Having the right systems will change your life. Also Lindt Cookie definitely the best thing in that menu #punjabi #southasian #advice #motivation #brown",
+  "body": [
+    "TikTok caption: Having the right systems will change your life. Also Lindt Cookie definitely the best thing in that menu #punjabi #southasian #advice #motivation #brown",
+    "Transcript (auto, from the TikTok video): Just another video that's completely separate to the day 16 and it's sort of just around systems I feel like personally for me I didn't have great systems and whether that was for my health whether that was for building applications and there's some something I learned for myself personally was to be able to create great results You need to have great systems and the systems effectively Produce the results and it's just a matter of those input. I knew that I'd have a great system when it came to my health I used to go running a lot and do a lot of exercise and I go to gym But like I didn't really have a clear understanding. Okay, this is what I need to eat This is what I need to do now I've got a system whereby I know how much protein I need to eat what my carbs are. I measure if you want my fitness power Yes, I'm a bit of a freak about it But at the end of the day now that I've got a system in place I'm seeing the results and that's the same with the stuff with the application I've got systems that monitor like where the things are going down of there's bugs or their problems and Those are giving me as feedback to be like, by the way, you need to fix this bug or if someone gives you feedback on the app I automatically send it to myself and that's a system in place to continually Improve these things that make them better. Look at your life. Look at the systems that you have in place currently My old systems were had dessert like three times a week That was an old operating system and the new one is have Ones that we may be but but sometimes maybe less than that Well, if you want to desert making more health for yourself at home rather than going to treat singing and link cookie dough Because don't get wrong is my favorite one. Just think about how you're operating and what system do you currently have in place and Start changing your operating system. We start changing everything else"
+  ],
   "tags": [],
   "links": {
     "tiktok": "https://www.tiktok.com/@manrajtalks/video/7682923097162370326"
@@ -17,5 +20,18 @@
   "slides": [],
   "cover": "/notes/having-the-right-systems-lindt-cookie/cover.jpg",
   "views": 241,
-  "guide": null
+  "guide": [
+    "This is a feedback loop that sends bugs and user feedback from your app to you automatically, so you fix problems without having to remember to check. You need a live app, an error-monitoring tool, a feedback form and a messaging app.",
+    "1. Add an error-monitoring tool such as Sentry to your app so crashes and bugs are recorded as they happen.",
+    "1. Add a simple feedback form or button inside the app, or a shared inbox, where users can report problems or ideas.",
+    "1. Create a Telegram bot with BotFather and note its token and your chat ID.",
+    "1. Use an automation tool such as n8n or Zapier, or a small Vercel serverless function, to receive each new error alert and feedback message.",
+    "1. Have that automation send you a Telegram message containing what happened, where it happened and a link to the details.",
+    "1. Log every item in a Notion database with a status column such as New, Fixing and Done.",
+    "1. Review the database once a week and fix the most frequent or most serious item first.",
+    "1. Apply the same idea outside work: write down the inputs you control (for example food and training) and measure them, so the results become predictable.",
+    "Watch out: Keep the token and keys in environment variables rather than in your code, and send alerts only for new or repeated problems so the messages stay useful and you do not start ignoring them.",
+    "## Prompt to build your own",
+    "```\nYou are helping me build a small feedback and bug-alert system for my app. I am not a developer by trade, so explain each step briefly and give me copy-and-paste code.\nMy app is <describe app and tech stack>. I have accounts with <Sentry or another error-monitoring tool>, <Telegram>, <Notion>, and <Vercel, n8n or Zapier>.\nBuild this flow:\n1. Capture errors from the app using <error-monitoring tool> and add a simple in-app feedback form for users.\n2. Send every new error and every feedback submission to a webhook that I host on <Vercel, n8n or Zapier>.\n3. From that webhook, post a short Telegram message to my chat with what happened, where it happened and a link to the details.\n4. Also add a row to a Notion database with the date, source (error or feedback), summary, link and a status of New.\nConstraints:\n- Keep all tokens and keys in environment variables, never in the code.\n- Do not send duplicate alerts for the same error within an hour.\n- Keep it as simple as possible, with no extra features.\nReturn: a step-by-step setup list, all the code and workflow configuration I need, the Notion database properties to create, and a quick way to test that each alert arrives.\n```"
+  ]
 }

@@ -7,9 +7,12 @@
   "episode": null,
   "pillar": "Building in public",
   "hook": "",
-  "keyword": null,
-  "summary": "",
-  "body": [],
+  "keyword": "TRAVEL APP",
+  "summary": "TikTok caption: Building the best travel app in the world, distribution is the main part now! this is what we are working towards to ensure we get more feedback and listen to our users! #brown #tech #traveltok #southasian #travelapp",
+  "body": [
+    "TikTok caption: Building the best travel app in the world, distribution is the main part now! this is what we are working towards to ensure we get more feedback and listen to our users! #brown #tech #traveltok #southasian #travelapp",
+    "Transcript (auto, from the TikTok video): This is day nine of the challenge. I do apologize for not recording. I got a little bit busy But we're at the pod distribution distribution is obviously an important part of Building out an application because you can make something amazing But no one knows about it and I'm at the stage now where I'm starting to distribute a little bit more I put up a post already on side projects to talk about this travel app I'm obviously doing this whole a challenge as we speak to kind of boost up some engagement and understanding of what this Applications about if you don't know about this challenge I'm effectively building out and have built out a shareable travel memories Application so you have like a globe and you share the globe with other people and you can see the Compatibility between two people that go traveling a bit of a Instagram for travel Application and I want to make it super big and that's the journey that we're on But this is just me sharing a little bit about what today's goal was and it's about marketing and making sure that You're posting and sharing content about what you're building You"
+  ],
   "tags": [],
   "links": {
     "tiktok": "https://www.tiktok.com/@manrajtalks/video/7680283072008326422"
@@ -17,5 +20,18 @@
   "slides": [],
   "cover": "/notes/distribution-is-the-main-part-now/cover.jpg",
   "views": 696,
-  "guide": null
+  "guide": [
+    "This post is about getting a finished app in front of people. You need an app you've built, a short video of it, and accounts on the platforms you want to post to.",
+    "1. Write down one clear sentence on what your app does and who it's for, so every post says the same thing.",
+    "1. Ask ChatGPT (Codex) or Claude Code to draft three short post ideas from that sentence, each showing one feature.",
+    "1. Record a short phone video of the feature working and trim it in CapCut.",
+    "1. Schedule the clip to your chosen platforms with Metricool so it goes out without you being at your phone.",
+    "1. Post the same story in the communities where your users already are, such as side-project groups.",
+    "1. Ask viewers directly what they'd change, and keep a list of the replies in Notion.",
+    "1. Review that list weekly and turn the most repeated request into your next feature.",
+    "Watch out: A good app that nobody has seen gets no feedback, so set a daily slot for posting and keep to it, even on a busy day.",
+    "## Prompt to build your own",
+    "```\nYou are helping me promote an app I have already built. My app is <app name>. It does <one sentence>, for <target user>. I use <ChatGPT / Claude Code>, CapCut, Metricool and Notion. Please do the following. First, write a one-sentence description of the app in plain English and check it makes sense to someone who has never heard of it. Second, suggest seven short video ideas, one per day, each showing a single feature, with a spoken script of no more than 60 words and a caption. Third, design a Notion database to record feedback with the columns date, platform, comment, feature requested and status, plus a simple weekly review routine that picks the most requested feature. Fourth, give me a posting checklist for Metricool covering platforms, times and captions. Use British spelling, no hype and no hashtags. Return the description, the seven ideas, the database layout and the checklist as separate sections.\n```",
+    "Ponytail note: I only used the post's own content, so the steps are generic; I didn't check which platforms the source post actually used besides TikTok and side-project communities."
+  ]
 }

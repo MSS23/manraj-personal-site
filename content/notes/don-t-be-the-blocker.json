@@ -7,9 +7,12 @@
   "episode": null,
   "pillar": "Lifestyle",
   "hook": "",
-  "keyword": null,
-  "summary": "",
-  "body": [],
+  "keyword": "BUILD",
+  "summary": "TikTok caption: Don't let yourself be the blocker in the pursuit of building something great  #traveltok #southasian #app #dev #brown",
+  "body": [
+    "TikTok caption: Don't let yourself be the blocker in the pursuit of building something great  #traveltok #southasian #app #dev #brown",
+    "Transcript (auto, from the TikTok video): This is day 21. Today's day has been learning and unlearning really about perfection and expectations and standards and at the start it's great like you want an application that you're building to look amazing, feel amazing, have that feel good factor but now that I'm moving over from the website of things to have like the web application works as intended I'm quite happy with it. I want to look to put this onto Android and iOS and I've messaged some people about that. I've looked at like oh this animation would go crazy if it went hail. This new feature would be amazing to have on this Android or iOS version however I think personally for me it's stripping away those over complicated features and making sure it works as intended and given the tool's work as intended look to release them on the app store on the on both platforms and making sure that it adheres to the compliance and that's one thing I realise myself personally when it comes to using social media. I use my social media as a means to learn a lot more and have it help me facilitate this journey and I want you guys just in general when it comes to building things or thinking about making that next step in your life make sure you have the right social media impacting you. Day 21 mobile versions on my phone at the moment so I'm going to show some friends tonight when I see them and we'll get some more feedback and we'll see what we can do moving forward."
+  ],
   "tags": [],
   "links": {
     "tiktok": "https://www.tiktok.com/@manrajtalks/video/7684655018858859779"
@@ -17,5 +20,17 @@
   "slides": [],
   "cover": "/notes/don-t-be-the-blocker/cover.jpg",
   "views": 708,
-  "guide": null
+  "guide": [
+    "This is a way to build an app in public without letting perfectionism hold you back. You need an idea for an app, an AI coding assistant such as Claude Code or Codex, and a few friends willing to try it.",
+    "1. Build the web version first with Claude Code or Codex, and host it on Vercel so you can test it in a browser.",
+    "1. Write down every feature you want, then mark which ones the app needs to work as intended.",
+    "1. Cut the extras, such as fancy animations and nice-to-have features, and put them in a \"later\" list in Notion.",
+    "1. Ask Claude Code or Codex to turn the working web app into an Android and iOS version, for example with Expo (React Native).",
+    "1. Read the App Store and Google Play review guidelines before you submit, and check your app against them.",
+    "1. Install the mobile version on your own phone, and show it to a few friends to get honest feedback.",
+    "1. Use the feedback to pick the next one or two things to build, and take them from the \"later\" list.",
+    "Watch out: Adding every impressive feature before you release is how you become the blocker, so ship what works first and add the rest once people have used it.",
+    "## Prompt to build your own",
+    "```\nYou are helping me turn my working web app into a simple mobile app and release it without over-building. My app is <describe the app in one sentence>, and the web version is built with <framework, for example Next.js> and hosted on <host, for example Vercel>. I have <Claude Code or Codex> and I am targeting <Android, iOS, or both>.\nPlease do the following:\n1. Read my web app and list every feature it has.\n2. Split the features into \"must have for it to work as intended\" and \"nice to have later\". Ask me before cutting anything.\n3. Recommend a cross-platform approach, such as Expo (React Native), and explain why in plain English.\n4. Build the mobile version using only the must-have features, reusing my existing backend, <backend, for example Supabase>.\n5. Give me a checklist of the App Store and Google Play review requirements my app needs to meet, and flag anything in my app that might fail them.\n6. Give me steps to install a test build on my own phone so I can show friends.\nKeep the code as simple as possible and do not add features I did not ask for. Return the feature split, the plan, the code changes, the compliance checklist and the test-build steps.\n```"
+  ]
 }

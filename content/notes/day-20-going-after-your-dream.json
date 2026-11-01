@@ -7,9 +7,12 @@
   "episode": null,
   "pillar": "Lifestyle",
   "hook": "",
-  "keyword": null,
-  "summary": "",
-  "body": [],
+  "keyword": "TRAVEL APP",
+  "summary": "TikTok caption: it's going to take a lot to go after your dream - day 20 #punjabi #southasian #brown #app #traveltok",
+  "body": [
+    "TikTok caption: it's going to take a lot to go after your dream - day 20 #punjabi #southasian #brown #app #traveltok",
+    "Transcript (auto, from the TikTok video): It is day 20 of building the best and biggest travel social media app in the world I'll be honest. It's had its trials and tribulations a lot of these things I wasn't actually sure I was gonna be able to do and that's the truth And I think a lot of these things when it comes to going on this journey of building an application of building something That you care about is great. Send yourself. You're gonna encounter some of these troubles I didn't know how to do some of these things. I'll be honest I've been using code for a lot of this process and pay for the food max plan Which for some people is a lot of money and I get that and to be honest with you I was willing to make certain sacrifices to make sure that I was able to build this up And I wanted to be honest with people about what's going into this tool What is it really about what my best interest are? I want to build this into a business I wanted to be able to monetize this in some type of way of capacity But to be honest with you, I love traveling and people always ask me about where I'm going to And what place I've been to what pictures I have of those places and I think having them on a globe where People would share where they've been on an album just makes that a lot easier and we're able to stay very connected And see each other's journeys and robbers scrolling through your Instagram highlights of someone else's account They're on this basic school and they're not knowing where to go and they're needing to message them That's kind of the friction I'm dealing with personally and that's kind of why I brought the application And this is just a bit around the storyline around Astoria and this is day 20 and we're making moves and we're making plays and I hope you all too"
+  ],
   "tags": [],
   "links": {
     "tiktok": "https://www.tiktok.com/@manrajtalks/video/7684419864152296726"
@@ -17,5 +20,18 @@
   "slides": [],
   "cover": "/notes/day-20-going-after-your-dream/cover.jpg",
   "views": 229,
-  "guide": null
+  "guide": [
+    "This is a build-in-public travel app where friends pin the places they have been on a globe and share photo albums, so nobody has to message them to ask where to go. You need an AI coding assistant, a free Supabase account and a free Vercel account.",
+    "1. Write down the one friction the app removes, for example \"friends ask me where I have been and I have no easy way to show them\", in a single sentence.",
+    "1. Ask Claude Code or ChatGPT (Codex) to scaffold a Next.js web app and deploy it to Vercel so you have a live link from day one.",
+    "1. Create a Supabase project for sign-in and a database with three tables: users, places (name, latitude, longitude, date visited) and photos linked to a place.",
+    "1. Add a 3D globe view with an open-source library such as globe.gl or react-globe.gl, and plot each saved place as a pin.",
+    "1. Let a signed-in user add a place and upload photos to Supabase Storage, and show them as an album when a pin is clicked.",
+    "1. Add a follow or friend list so people can open each other's globes, which replaces scrolling through someone's Instagram highlights.",
+    "1. Ship a small slice each day, test it on your phone, and record what broke so the next day's prompt can fix it.",
+    "Watch out: Subscription costs add up (the post mentions a top-tier Claude plan that is a lot of money for some), so start on a cheaper plan, set a monthly cap and only upgrade once you are hitting real limits.",
+    "## Prompt to build your own",
+    "```\nYou are my coding assistant. Build a travel-sharing web app called <app name> where people pin places they have visited on a 3D globe and share photo albums with friends. I am a <beginner / developer> and I have <ChatGPT (Codex) / Claude Code>, a Supabase account and a Vercel account.\nRequirements:\n- Next.js with TypeScript, deployed to Vercel from a GitHub repository.\n- Supabase Auth for sign-in, a Postgres schema for users, places (name, latitude, longitude, date visited) and photos, and Supabase Storage for image uploads. Add row-level security so users can only edit their own data.\n- A globe view using react-globe.gl with a pin for each place; clicking a pin opens that place's photo album.\n- A friends feature so a user can follow another user and view their globe.\n- Work in small steps. Finish one step, tell me how to test it on my phone, then wait for me before the next.\nReturn the project plan first, then the SQL for the schema, then the code for step one, and list any accounts or keys I need to create, using placeholders rather than real secrets.\n```",
+    "Skipped: nothing was checked against the app itself, since the source is only a spoken transcript; the globe, friends and storage steps are my reasonable build of what the post describes, not stated details."
+  ]
 }

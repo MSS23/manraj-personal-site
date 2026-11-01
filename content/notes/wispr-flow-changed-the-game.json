@@ -7,9 +7,12 @@
   "episode": null,
   "pillar": "AI & automation",
   "hook": "",
-  "keyword": null,
-  "summary": "",
-  "body": [],
+  "keyword": "VOICE",
+  "summary": "TikTok caption: Wispr Flow Has Changed The Game For Me When It Comes To Building My Apps #brown #punjabi #traveltok #travel #app",
+  "body": [
+    "TikTok caption: Wispr Flow Has Changed The Game For Me When It Comes To Building My Apps #brown #punjabi #traveltok #travel #app",
+    "Transcript (auto, from the TikTok video): On day 16 of building the biggest and greatest social media app for travel, the one thing that I realized was the best investment, in my opinion. Don't get me wrong, the AI has probably been the best investment and the most expensive, but something that's crazy is that I can literally click control, windows, spacebar, and now I'm talking to my computer, and if I look at my application, I can see that there's like a read-only demo sign that's just above the globe. And I could literally say, for the read-only demo sign above the globe, can you please change that and move the bottom bar to be a little bit higher, because it's being blocked off by the globe bar on the globe page. And literally once I click on control, windows, space, it's transcribed everything I've just said. That's like my best investment, using speech to text, whisper flow, that is the application I use to help me to rate my ideas or speak into my computer because my typing speed is a bottleneck, let's just be honest. And that's something that I notice about myself, and if you have really cool ideas and you're not sure about how to communicate, what to type out, I use whisper flow and it's probably like 10x my productivity, I use it for basically everything. Besides messages, when I actually want to message people, no anyone who sees this that knows me, you're not getting messaged by AI and I do not intend to do that."
+  ],
   "tags": [],
   "links": {
     "tiktok": "https://www.tiktok.com/@manrajtalks/video/7682913219563752726"
@@ -17,5 +20,18 @@
   "slides": [],
   "cover": "/notes/wispr-flow-changed-the-game/cover.jpg",
   "views": 711,
-  "guide": null
+  "guide": [
+    "This shows how to dictate your instructions to an AI coding assistant instead of typing them. You need a computer, a speech-to-text app such as Wispr Flow, and an AI builder such as Claude Code or Codex.",
+    "1. Install Wispr Flow, or another dictation app that types into any window, and give it microphone permission.",
+    "1. Set a push-to-talk hotkey that you can press with one hand while looking at your screen.",
+    "1. Open the app you are building and the AI assistant you build it with, side by side.",
+    "1. Look at the screen, then press the hotkey and say what you want changed, naming the exact element and where it sits (for example, \"the banner above the globe\").",
+    "1. Say the problem and the fix together, such as what is blocked, by what, and where it should move.",
+    "1. Check that the transcript landed in the assistant's input box, fix any misheard words, and send it.",
+    "1. Reload the app, see whether the change worked, then dictate the next small change.",
+    "1. Keep typing for messages to real people, and use dictation for prompts to the assistant.",
+    "Watch out: dictate one specific change at a time and read the transcript before you send it, because a misheard word can send the assistant to the wrong part of the app.",
+    "## Prompt to build your own",
+    "```\nYou are helping me set up a voice-first way to build software. I use <speech-to-text app, e.g. Wispr Flow> on <Windows or Mac>, and I build <my app or website> with <ChatGPT/Codex or Claude Code>. I am a <beginner or experienced> builder and my typing is slower than my thinking.\nWrite me a one-page routine I can follow. Include:\n1. How to set up the dictation app, choose a push-to-talk hotkey and test the microphone.\n2. A short template for dictating one change request, covering which screen, which element, what is wrong and what I want instead.\n3. Three example dictated requests for <my app type>, written the way a person would say them aloud.\n4. A quick checklist to read the transcript before sending, including common misheard words to look out for.\n5. A rule for when I should type instead of dictate.\nKeep it in plain English with no jargon, and keep each step to one sentence. If you need anything else from me first, ask before you write.\n```"
+  ]
 }

@@ -7,9 +7,12 @@
   "episode": null,
   "pillar": "Building in public",
   "hook": "",
-  "keyword": null,
-  "summary": "",
-  "body": [],
+  "keyword": "TRAVEL APP",
+  "summary": "TikTok caption: The Best Travel App #app #desi #brown #travel #tech",
+  "body": [
+    "TikTok caption: The Best Travel App #app #desi #brown #travel #tech",
+    "Transcript (auto, from the TikTok video): I think not enough people talk about building application, obviously lot of people say you can vibe code, you can make it really easily, it'll be really quick and all these things but and it is true that is the case and everyone has a different idea of what great or good is and everyone has different tastes but I think my biggest regret really and truly is that I didn't release this application sooner and I didn't really buy the bullet when I needed to and that is why I'm looking to release it this weekend. A lot of friends have told me to improve, a lot of people have given me their feedback and I really appreciate that but it's just at a point where you're in inertia and you're not making decisions and now I've decided to take a leap of faith this is day 3 of building the best travel app possible and I will be releasing a version of this application this weekend."
+  ],
   "tags": [],
   "links": {
     "tiktok": "https://www.tiktok.com/@manrajtalks/video/7675881261230984470"
@@ -17,5 +20,19 @@
   "slides": [],
   "cover": "/notes/the-best-travel-app/cover.jpg",
   "views": 762,
-  "guide": null
+  "guide": [
+    "Turn a travel app idea into a first version you can put in front of real people this weekend, using an AI coding assistant to do the building.",
+    "You need: ChatGPT (Codex) or Claude Code, a free Vercel account, a free Supabase account, and a few friends willing to give honest feedback.",
+    "1. Write one sentence on who the app is for and the one trip problem it solves, and cut every feature that does not serve that sentence.",
+    "1. Ask ChatGPT (Codex) or Claude Code to scaffold a web app from that sentence, with a simple home screen and a single core flow.",
+    "1. Add Supabase for sign-in and to store trips, places or saved items, so your data lives somewhere real from day one.",
+    "1. Run the app on your own machine and use it for a real or imagined trip, noting what feels slow, confusing or missing.",
+    "1. Deploy it to Vercel so you have a live link that opens on a phone.",
+    "1. Pick a release date, such as this weekend, and send the link to a handful of friends before you feel ready.",
+    "1. Collect their feedback in one list, fix the top three issues, and release the next version.",
+    "Watch out: Waiting until the app feels great is the trap, because feedback from friends is useful but endless, and inertia sets in once you stop making decisions, so set a date and ship a version on it.",
+    "## Prompt to build your own",
+    "```\nYou are my coding assistant. Help me build and ship a first version of a travel app for <who it is for> that solves <one specific trip problem>. I have a <ChatGPT (Codex) or Claude Code> setup, a Vercel account and a Supabase account, and I am a <beginner/intermediate> developer.\nBuild a web app that works well on a phone. Include only these features: <feature 1>, <feature 2>, <feature 3>. Use Supabase for sign-in and to store <trips/places/saved items>. Do not add anything beyond this list.\nWork in small steps. First propose the file structure and the database tables, then wait for my approval. After that, build one screen at a time and tell me how to run it locally and check it works.\nWhen it is ready, walk me through deploying to Vercel and connecting the Supabase environment variables safely, without putting secrets in the code.\nFinish by giving me a short checklist for releasing version one on <release date> and a simple way to collect feedback from <number> friends.\n```",
+    "Skipped: nothing checked against the repo, as this was a text-only task. Risk: the source gives no stack, so the tools named (Vercel, Supabase) are suggestions, not what the post used."
+  ]
 }

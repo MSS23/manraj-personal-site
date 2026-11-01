@@ -7,9 +7,12 @@
   "episode": null,
   "pillar": "Building in public",
   "hook": "",
-  "keyword": null,
-  "summary": "",
-  "body": [],
+  "keyword": "TRAVEL APP",
+  "summary": "TikTok caption: Day 13: Building the best travel social media app #punjabi #travel #app #southasian #traveltok",
+  "body": [
+    "TikTok caption: Day 13: Building the best travel social media app #punjabi #travel #app #southasian #traveltok",
+    "Transcript (auto, from the TikTok video): It's day 13 of building the best and biggest travel social media app in the world I've put out like a link for product hunt, which is the same platform whereby you can share when you're going to launch out any Application I have already launched this application But just wanted to share it with the wider community and those who are involved in the investment side as well as People who really enjoy technology and that's kind of where I'm at at the moment I suppose the people read it again you go an extra feedback the demo accounts are really good people really enjoyed the read access only To the demo accounts if you want to see what that looks like and that links to my previous video around like this globe and The Spotify Raps feature of the application, which is like the biggest selling point That's something you enjoyed go on to Astoria app and you'll be able to see all of that stuff on the try this demo Or try demo account and you'll be able to see everything but just say thank you to everyone I've put stuff on to product hunt said there's a launch for this application. I'm going to keep on pushing forward"
+  ],
   "tags": [],
   "links": {
     "tiktok": "https://www.tiktok.com/@manrajtalks/video/7681811018279898390"
@@ -17,5 +20,18 @@
   "slides": [],
   "cover": "/notes/day-13-building-the-best-travel-social-app/cover.jpg",
   "views": 718,
-  "guide": null
+  "guide": [
+    "Share a travel app with a read-only demo, a launch page and a feedback loop so investors, tech fans and early users can try it without signing up.",
+    "You need: a working web app, a hosting account such as Vercel, a database such as Supabase, and a Product Hunt account.",
+    "1. Build the app with ChatGPT (Codex) or Claude Code, hosting it on Vercel with Supabase for the database and sign-in.",
+    "1. Create a demo account in Supabase and give it read-only access, using row-level security policies that allow SELECT and block every write.",
+    "1. Add a \"Try demo account\" button on the landing page that signs visitors into that account, so they see the full app without registering.",
+    "1. Put your most distinctive feature first in the demo, so it is the first thing a visitor sees.",
+    "1. Prepare a Product Hunt launch page with a short tagline, screenshots, a demo link and a clear first comment explaining who it is for.",
+    "1. Publish the page, then share the link in short videos or posts aimed at technology fans and people interested in investing.",
+    "1. Collect feedback from comments and messages, note what people liked, and fix what they mention before the next update.",
+    "Watch out: Give the demo account read access only, and test that it cannot edit or delete anything, otherwise visitors can change real data.",
+    "## Prompt to build your own",
+    "```\nYou are helping me set up a safe public demo and a Product Hunt launch for my web app. The app is <describe your app in one sentence>. It is hosted on <Vercel or other host> and uses <Supabase or other database> for data and sign-in.\nPlease do the following:\n1. Create a demo user and write row-level security policies so that this user can read the data needed to show <your standout feature> but cannot insert, update or delete anything.\n2. Add a \"Try demo account\" button to the landing page that signs visitors into the demo user without asking for an email or password.\n3. Write tests that confirm the demo user is blocked from every write action.\n4. Draft the Product Hunt listing: a tagline under 60 characters, a description of about 250 words for <target audience>, a list of screenshots to capture, and a first comment from the maker.\nConstraints: do not expose service keys in the browser, keep the demo data free of real customer information, and explain each change in plain English.\nReturn the code changes, the SQL policies, the test results and the Product Hunt text.\n```"
+  ]
 }

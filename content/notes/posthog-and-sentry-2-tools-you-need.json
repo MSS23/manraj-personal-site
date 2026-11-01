@@ -7,9 +7,12 @@
   "episode": null,
   "pillar": "AI & automation",
   "hook": "",
-  "keyword": null,
-  "summary": "",
-  "body": [],
+  "keyword": "TRACK",
+  "summary": "TikTok caption: PostHog and Sentry Are 2 Tools You Need To use #travel #fyp #brown #tech #app",
+  "body": [
+    "TikTok caption: PostHog and Sentry Are 2 Tools You Need To use #travel #fyp #brown #tech #app",
+    "Transcript (auto, from the TikTok video): As I continue this quest to build one of the best web applications or applications in general when it comes to travelling and going around the globe, you can see people's globes, you can see people's digital passports and see how compatible you are with the people who are travelling. This journey has been great. I've learned a lot in terms of using post-hoc, which has been a great tool for tracking and being able to see people's sessions and analysing where there's bugs and how people interact with the tool. And also using sentries. Those are the two main things that I would say you should have as a part of a tool, whether it's a web application, and I'm also looking to move onto the App Store and also onto the Android Google Play Store as well. So keep an eye out for that. That's where we are on our journey. Those are the two tools I massively recommend if you are starting out building your own application because those would just save you tons of hours of work when it comes to knowing how you're using gauges with a tool and if there are any errors with it as well. Thank you."
+  ],
   "tags": [],
   "links": {
     "tiktok": "https://www.tiktok.com/@manrajtalks/video/7678079469273369878"
@@ -17,5 +20,18 @@
   "slides": [],
   "cover": "/notes/posthog-and-sentry-2-tools-you-need/cover.jpg",
   "views": 262,
-  "guide": null
+  "guide": [
+    "This setup shows you how people use your app and alerts you when it breaks, using PostHog for behaviour and Sentry for errors. You need a working web app, a free PostHog account and a free Sentry account.",
+    "1. Create a PostHog project and copy its project API key from the project settings.",
+    "1. Install the PostHog JavaScript library in your web app and initialise it once at start-up with that key.",
+    "1. Turn on session recordings in PostHog so you can watch real visits and see where people get stuck.",
+    "1. Add custom events for the actions that matter, such as signing up or finishing a key task, so you can see how people use each feature.",
+    "1. Create a Sentry project for your framework and install its SDK, using the DSN (the project's address) it gives you.",
+    "1. Initialise Sentry at start-up, then trigger a deliberate test error to confirm it appears in your Sentry dashboard.",
+    "1. Deploy to Vercel (or your host), adding both keys as environment variables there, and set Sentry to email you on new errors.",
+    "1. Each week, watch a few PostHog recordings and read new Sentry issues, then fix the biggest problem first.",
+    "Watch out: Never commit your keys to the code or send personal details such as names or emails as event data. Add them as environment variables and only send what you need.",
+    "## Prompt to build your own",
+    "```\nYou are helping me add product analytics and error tracking to my existing web app. Build it step by step and explain each change briefly.\nMy stack: <framework, for example Next.js or React>. I host on <Vercel or other host>. I have free accounts with PostHog and Sentry.\nDo the following:\n1. Install and initialise the PostHog JavaScript SDK using an environment variable for the project API key. Enable session recordings.\n2. Add custom event tracking for these actions: <list 3 to 5 key actions, for example sign up, create profile, share link>.\n3. Install and initialise the Sentry SDK for my framework using an environment variable for the DSN. Add a temporary test button that throws an error so I can confirm it reaches Sentry.\n4. Do not include any personal data such as names, emails or exact locations in events or error reports. Mask text inputs in recordings.\n5. Keep all keys out of the code and list the environment variables I need to add to my host and to a local env file.\nReturn the changed files, the exact install commands, the environment variables to set, and a short checklist for testing that both tools are receiving data before I deploy.\n```"
+  ]
 }

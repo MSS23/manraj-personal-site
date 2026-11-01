@@ -7,9 +7,12 @@
   "episode": null,
   "pillar": "Building in public",
   "hook": "",
-  "keyword": null,
-  "summary": "",
-  "body": [],
+  "keyword": "GLOBE",
+  "summary": "TikTok caption: Day 10: Building the biggest globe app in the world!  #desi #travelapp #app #traveltok #southasian",
+  "body": [
+    "TikTok caption: Day 10: Building the biggest globe app in the world!  #desi #travelapp #app #traveltok #southasian",
+    "Transcript (auto, from the TikTok video): Day 10 something very similar. We encountered a few bugs and I did fix those on the application A lot of people have given me feedback and a lot of people are really engaging with the possible Element of the application where you can scan someone's possible connectors friends They're really loving that people are really enjoying that part of it if there is any feedback the application could add sloria I'll put it in the comments of this tick tock video is day 10 and we're making great momentum and I just want to shout out everyone who's really been supporting and pushing out like this application with me as well It really means a lot and hundreds onwards and upwards. That's what we're looking for We're trying to make the best globe travel app of all time and I'm on that journey to do it"
+  ],
   "tags": [],
   "links": {
     "tiktok": "https://www.tiktok.com/@manrajtalks/video/7680661708867734806"
@@ -17,5 +20,17 @@
   "slides": [],
   "cover": "/notes/day-10-biggest-globe-app/cover.jpg",
   "views": 669,
-  "guide": null
+  "guide": [
+    "This is a build-in-public log for a travel app built around an interactive globe: you ship a small version, collect feedback, fix bugs and repeat. You need an AI coding assistant (ChatGPT with Codex, or Claude Code), a free Vercel account to host it, and somewhere to collect feedback, such as the comments under your posts.",
+    "1. Describe the app in one paragraph and ask Claude Code or Codex to build the smallest version that works, such as a globe you can spin and tap.",
+    "1. Put the code on GitHub and deploy it to Vercel so you get a live link you can share.",
+    "1. Add one social feature at a time, for example a way to see people you might connect with, and test it yourself before showing anyone.",
+    "1. Share a short update on each build day and ask people directly what the app should add.",
+    "1. Copy every bug report and feature request into one list, and tick them off as you fix them.",
+    "1. Paste each bug into your assistant with the exact steps that cause it, fix one at a time, and redeploy.",
+    "1. Keep the features people say they like, and plan the next day's work around the most-requested idea.",
+    "Watch out: Fix the bugs people report before you add anything new, because a buggy app loses the people who are giving you feedback.",
+    "## Prompt to build your own",
+    "```\nYou are my coding assistant. Help me build a first version of a travel app called <app name> that centres on an interactive 3D globe. I am a <beginner / some experience> and I will be using <ChatGPT Codex / Claude Code>, GitHub and Vercel.\nBuild the smallest working version first: a globe I can spin and zoom, with a tap on a country or city showing <what the user should see>. Then add one social feature: <for example, suggesting people to connect with>. Use a simple web stack that deploys to Vercel with no paid services.\nConstraints: explain every step in plain English, tell me which commands to run and in what order, keep the code in small files I can read, and do not add features I have not asked for. Do not ask me to paste any secrets into the chat.\nReturn: the project structure, the full code for each file, the commands to run it locally, the steps to deploy to Vercel, and a short checklist of bugs to test before I share the link. Finish by suggesting three small features I could add next, ranked by how easy they are.\n```"
+  ]
 }

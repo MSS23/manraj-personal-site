@@ -7,9 +7,12 @@
   "episode": null,
   "pillar": "Lifestyle",
   "hook": "",
-  "keyword": null,
-  "summary": "",
-  "body": [],
+  "keyword": "START",
+  "summary": "TikTok caption: Little insight to the person behind the camera 🫡 #punjabi #brown #desi #southasian #pokemon",
+  "body": [
+    "TikTok caption: Little insight to the person behind the camera 🫡 #punjabi #brown #desi #southasian #pokemon",
+    "Transcript (auto, from the TikTok video): This figure is a little bit different. This is a bit more about me, like who I am. My name is Munroj. I work at AI as a developer and also like a consultant. And a lot of the work that I do is around building out AI applications and applications that either embed AI or have supplemented or use AI within them. And that's kind of what I do. And in my own time, I spend time building out applications. I've got my website, some of the applications, if I'm honest, I'm a massive Pokemon fan. So I've got like these Pokemon apps I've got in the background, which are related to the application I'm doing currently, which is currently what I took on my Tickle page, which is a social media travel app. But I'm really invested in that kind of piece of work as well. I have these other applications that I have spinning in the background. And to be honest with you, the page of what I'm aiming to do is share that kind of knowledge with people around what I know about AI, what I've learned, what I've done and how much I've probably spent on Claude to be able to give people the insight, what it's been able to, how it's changed my life, how it's augmented things that I've done previously, how it's impacted the relationships or the people I've met along the way and what it's done for me and how it can supercharge your life. And I think that's the important part. We have a lot of autonomy and sovereignty when it comes to what we want from our lives. And I'm a massive personal development, being a better person and encouraging people to grow and be disciplined and work really hard. And to be honest, it's kind of like an athlete mindset, but I want to be elite and at the top level. And that's personally what I care about. And I hope that this page finds the right people who are on the same wavelength and want to use their skills and talents to create for the world and the universe and push out stuff, whether that be content, whether that be applications. I think we all have something to share. And I think with AI, we can definitely share something that we care about. And for some people, it's many different. For some people, they care about how people interact with their beauty website. Some people care about how they can use AI for their business. And what my page is aiming to do is share those AI insights and what I do with AI and what I'm building. And I hope that all the learnings you hear from me and what I'm doing today today, a bit more around some of the technology I'll also be speaking about and what I do can be the reason that you start your journey. And also to help me be a part of it, to extent, because I quite like to find that, I can be a part of it. And that's what I'm about. I'm just a Punjabi guy that's trying to make things work, using AI and teaching other people and sharing my insights. And that's what I love about what I do."
+  ],
   "tags": [],
   "links": {
     "tiktok": "https://www.tiktok.com/@manrajtalks/video/7683669997440322819"
@@ -17,5 +20,17 @@
   "slides": [],
   "cover": "/notes/the-person-behind-the-camera/cover.jpg",
   "views": 263,
-  "guide": null
+  "guide": [
+    "This post is a personal introduction, so there is nothing to build from it directly. What you can do is turn your own background into a first small AI project and share it publicly. You need a ChatGPT or Claude account, a free Vercel account and one idea you care about.",
+    "1. Write three plain sentences in a note: who you are, what you do, and one thing you wish was easier in your work or hobby.",
+    "1. Pick that one thing as your first project, such as a small app for a hobby or a tool that saves your business a repetitive task.",
+    "1. Ask Claude Code or ChatGPT (Codex) to build the smallest working version, and tell it your three sentences so it knows who the project is for.",
+    "1. Put it online with Vercel so you can send people a link instead of a screenshot.",
+    "1. Add a simple page on the same site that says what you are building and what you have learned so far.",
+    "1. Share each small step as you finish it, and note what worked, what failed and what it cost you in AI subscriptions.",
+    "Watch out: do not wait until the project is polished or you have a big idea. Start with one small thing you care about, because that is what attracts people with the same interests.",
+    "## Prompt to build your own",
+    "```\nYou are a patient senior developer helping a beginner build and publish a first project. I am <your name>, I work in <your field or hobby>, and the problem I want to solve is <one thing that is slow or annoying>.\nBuild the smallest working version of a simple web app that solves this for <who will use it>. I have a <ChatGPT / Claude> account and a free Vercel account, and I am not an experienced coder. Use common, well-documented tools such as Next.js and avoid anything that needs a paid service.\nConstraints: keep it to one main feature, explain each step in plain English, and tell me exactly what to run or click next. Do not ask me to paste secrets into the chat; show me how to store them as environment variables.\nReturn: 1) a short plan in no more than five steps, 2) the full code for each file with its file name, 3) the commands to run it locally, 4) step-by-step instructions to deploy it on Vercel, and 5) a simple \"about this project\" page I can add, with placeholders for what I have learned.\n```",
+    "Skipped: I invented no details beyond the post (no figures, no named apps). The post is a story, so the steps are advice for the reader and not a replica of anything Manraj built."
+  ]
 }

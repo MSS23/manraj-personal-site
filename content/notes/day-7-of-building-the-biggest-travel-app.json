@@ -7,9 +7,12 @@
   "episode": null,
   "pillar": "Building in public",
   "hook": "",
-  "keyword": null,
-  "summary": "",
-  "body": [],
+  "keyword": "TRAVEL APP",
+  "summary": "TikTok caption: Day 7 of building the biggest travel app in the world #traveltok #travel #app #brown #desi",
+  "body": [
+    "TikTok caption: Day 7 of building the biggest travel app in the world #traveltok #travel #app #brown #desi",
+    "Transcript (auto, from the TikTok video): This is day seven of building the greatest and the biggest social media platform for people who travel. I've really been enjoying the process. A lot of things have changed today. I've actually updated a lot of the UI. I realize it's not really super intuitive to upload a picture of memories and a lot of my friends have been testing it and have told me ways to improve the applications that I've been able to do. There's a couple bugs I had to fix up as well. I'm really glad that I've started building up this cadence of getting real-time feedback and being able to fix this application. I'm really happy with how the user interface looks outside of the uploading of an album and the Spotify-wrapped version works as intended with yourself adding more albums onto the application. A lot of the functionality is definitely there and we're going to continue to build this out and I'd love to hear in the comments below what you think to add to this application and really enjoying the process."
+  ],
   "tags": [],
   "links": {
     "tiktok": "https://www.tiktok.com/@manrajtalks/video/7678857535079664918"
@@ -17,5 +20,17 @@
   "slides": [],
   "cover": "/notes/day-7-of-building-the-biggest-travel-app/cover.jpg",
   "views": 252,
-  "guide": null
+  "guide": [
+    "Build a travel-memories app where friends upload photo albums and get a yearly \"wrapped\" style summary. You need ChatGPT (Codex) or Claude Code, a free Supabase account and a free Vercel account.",
+    "1. Describe the app to Claude Code or ChatGPT (Codex) in plain English: users, photo albums, and a summary page built from those albums.",
+    "1. Create a Supabase project and let the assistant set up the tables for users, albums and photos, plus file storage for the images.",
+    "1. Ask the assistant to build the web app (a Next.js front end works well) with album upload, an album list and the summary page.",
+    "1. Deploy it to Vercel so it has a public link.",
+    "1. Send the link to a few friends and ask them to try uploading an album.",
+    "1. Write down every confusing screen or bug they report, then paste that list back into the assistant to fix.",
+    "1. Redeploy to Vercel and repeat the loop daily, so each version is tested by real people.",
+    "Watch out: the album upload was the least intuitive screen, so test it with someone who has never seen the app before you add more features.",
+    "## Prompt to build your own",
+    "```\nYou are helping me build a travel-memories web app. I am <your experience level> and I use <ChatGPT Codex or Claude Code>.\nBuild a Next.js app with Supabase for the database, photo storage and sign-in, deployed on Vercel. Users can create an account, create an album with a title, a destination and a date, and upload several photos to it. Add a summary page that shows each user's albums as a \"wrapped\" style recap: <number of albums, places visited, a featured photo>.\nConstraints: keep the interface simple enough for a first-time user to upload an album without instructions; keep all secret keys in environment variables, never in the code; use Supabase row-level security so people only see what they should.\nReturn: the folder structure, the SQL for the tables and storage bucket, the full code for each page, and step-by-step instructions to deploy on Vercel. Then list three things my friends are likely to find confusing, so I can test them.\n```"
+  ]
 }

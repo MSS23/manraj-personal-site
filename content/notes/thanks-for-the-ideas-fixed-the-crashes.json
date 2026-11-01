@@ -7,9 +7,12 @@
   "episode": null,
   "pillar": "Building in public",
   "hook": "",
-  "keyword": null,
-  "summary": "",
-  "body": [],
+  "keyword": "FEEDBACK",
+  "summary": "TikTok caption: Thank you all for the ideas you've shared about the app and how to take it forward! Fixed the crashes! atlaria.app #app #traveltok #southasian #punjabi #brown",
+  "body": [
+    "TikTok caption: Thank you all for the ideas you've shared about the app and how to take it forward! Fixed the crashes! atlaria.app #app #traveltok #southasian #punjabi #brown",
+    "Transcript (auto, from the TikTok video): Day 15 of building the best and biggest social media app in the world for travel and I got feedback I said on politic. I sent out around 200 plus What's that messages we send as a broadcast to everyone? I kind of knew my contacts. So yeah, this is an apple This is what I've got a lot of people actually came back with a lot of feedback and additional Things they thought would be really cool to add the application shout says people are able to reply and check it out I just try in general a lot people because the website actually lucky Christ, which is good because it just shows that there's a lot of requests That we're going in that was awesome. And that's part of the learning journey and like I said Yesterday is all about like being a bit shameless just asking for that helpful asking for people to support and today's gonna be a little bit different There's a lot more around Taking that advice and taking on board what people have said given that you've asked for things and what you've received People have to back at that and using that information to make the experience and the application a lot better And that's what I'm doing and what phase I'm in right now"
+  ],
   "tags": [],
   "links": {
     "tiktok": "https://www.tiktok.com/@manrajtalks/video/7682536816720743702"
@@ -17,5 +20,18 @@
   "slides": [],
   "cover": "/notes/thanks-for-the-ideas-fixed-the-crashes/cover.jpg",
   "views": 726,
-  "guide": null
+  "guide": [
+    "This turns a batch of messages from people you know into a fixed app: you ask for feedback, collect the replies, and have an AI coding assistant fix the crashes first. You need a working app, a contact list, WhatsApp, a spreadsheet or Notion, and ChatGPT (Codex) or Claude Code.",
+    "1. Write one short message that says what the app is, links to it, and asks two questions: what broke, and what would you add.",
+    "1. Send it to your contacts with WhatsApp's broadcast list feature, so each person gets it as a private message and replies to you directly.",
+    "1. Copy every reply into one Notion database or Google Sheets table, with a column for the person, the message and a label of crash, bug, feature or other.",
+    "1. Group the crash reports first and note the device, the screen and what the person was doing when it broke.",
+    "1. Paste each group into ChatGPT (Codex) or Claude Code, along with your code, and ask it to find the cause and propose a fix.",
+    "1. Test the fix yourself on a real phone, then deploy it with your host, for example Vercel.",
+    "1. Rank the feature requests by how many people asked for each one, and pick the top few for the next round.",
+    "1. Message the people who helped to say what you changed.",
+    "Watch out: Send the broadcast to people who already have your number, since WhatsApp only delivers broadcasts to contacts who have saved yours. Don't build every feature request, because the crashes come first.",
+    "## Prompt to build your own",
+    "```\nYou are helping me turn user feedback into fixes for my app, <app name>, which is built with <framework and hosting, e.g. Next.js on Vercel>.\nI have collected feedback from about <number> people over WhatsApp and stored it in <Notion database or Google Sheet>. I will paste the rows below.\nDo the following:\n1. Sort every item into crash, bug, feature request or other.\n2. Group items that describe the same problem and count how many people reported each.\n3. For each crash, list the likely cause based on the code I paste, the files involved, and the smallest fix.\n4. Give me a short test checklist I can run on a real phone to confirm each fix.\n5. Rank the feature requests by how many people asked for them and suggest the top three for the next release.\nConstraints: change as little code as possible, don't add new dependencies unless a fix needs one, and tell me if you are unsure about a cause rather than guessing.\nReturn: a table of grouped feedback, the proposed code changes as diffs, the test checklist, and a short message I can send back to the people who helped.\nFeedback: <paste rows here>\nCode: <paste relevant files here>\n```"
+  ]
 }

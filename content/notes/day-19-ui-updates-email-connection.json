@@ -7,9 +7,12 @@
   "episode": null,
   "pillar": "Building in public",
   "hook": "",
-  "keyword": null,
-  "summary": "",
-  "body": [],
+  "keyword": "TRAVEL APP",
+  "summary": "TikTok caption: Day 19: lots of UI updates and email connection sorted!  #app #southasian #traveltok #brown #ai",
+  "body": [
+    "TikTok caption: Day 19: lots of UI updates and email connection sorted!  #app #southasian #traveltok #brown #ai",
+    "Transcript (auto, from the TikTok video): Day 19 of building the biggest and best travel social media app in the world We just cleaned up some of the UI and some of the like toggle and the bars at the bottom They just needed a bit of cleaning I did a bit of that work on the UI today and a lot of Feedbacks come through a lot of people like the wrapped feature a lot of bugs have also been discovered by some friend Thank you and shout out to those people who have been testing the application We have the Google integration working for the application so you can now log in with a Gmail account as well A lot of progress being made in today's by day 19 and a lot of updates being pushed The next steps are really to continue to build this out And I think the features wise where I'm happy with them and they just need to be implemented into iOS and Android Stay tuned to talk about more of the child and tribulation that come with mobile development"
+  ],
   "tags": [],
   "links": {
     "tiktok": "https://www.tiktok.com/@manrajtalks/video/7684044115968888087"
@@ -17,5 +20,19 @@
   "slides": [],
   "cover": "/notes/day-19-ui-updates-email-connection/cover.jpg",
   "views": 693,
-  "guide": null
+  "guide": [
+    "This is a build-in-public log of a travel social app, and you can run your own the same way. It covers UI cleanup, Google sign-in and testing with friends. You need an AI coding assistant, a Google account and a few friends willing to test.",
+    "1. Describe your app in one paragraph in ChatGPT (Codex) or Claude Code, and ask it to propose a feature list and a screen layout.",
+    "1. Build the first version in your coding assistant, one screen at a time, and run it on your own phone or in a simulator after each change.",
+    "1. Set up Google sign-in in the Google Cloud Console by creating an OAuth client, then connect it to your app's login screen.",
+    "1. Use a hosted back end such as Supabase for user accounts and data, and turn on its Google provider with your OAuth client details.",
+    "1. Tidy the interface in short passes, such as toggles, bottom navigation bars and spacing, and re-test after each pass.",
+    "1. Send the app to a few friends through TestFlight (iOS) or Google Play internal testing (Android) and ask them to report bugs.",
+    "1. Keep a running list of the bugs and feedback, fix the most repeated ones first, and note which features people liked.",
+    "1. Film a short update after each day of work, so you have a record of what changed.",
+    "Watch out: a feature that works in a web build can behave differently on iOS and Android, so test each platform before you call it done.",
+    "## Prompt to build your own",
+    "```\nYou are my senior mobile developer. Help me build a first version of <app idea in one sentence> for <target users>. I am a beginner and use <ChatGPT/Codex or Claude Code>. Start by proposing a short feature list and the screens needed, then wait for my approval. After that, build the app one screen at a time using <React Native with Expo, or another framework I name>. Add sign-in with Google using <Supabase or Firebase> as the back end, and explain each Google Cloud Console step I must do by hand. Keep the interface simple, with a bottom navigation bar and clear toggles. After each change, tell me exactly how to run it and what I should see. Do not store any keys in the code; use environment variables and tell me where to put them. Finish by giving me a checklist for sending the app to <5 friends> for testing on iOS and Android, and a template for collecting their bug reports.\n```",
+    "Skipped: nothing checked against the app itself; the post gives no stack, so the tool names are common choices, not what was used."
+  ]
 }

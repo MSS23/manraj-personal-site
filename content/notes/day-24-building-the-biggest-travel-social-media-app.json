@@ -7,9 +7,12 @@
   "episode": null,
   "pillar": "Building in public",
   "hook": "",
-  "keyword": null,
-  "summary": "",
-  "body": [],
+  "keyword": "TRAVEL APP",
+  "summary": "TikTok caption: Day 24: Building The Biggest Travel Social Media App #app #punjabi #southasian #travel #startup",
+  "body": [
+    "TikTok caption: Day 24: Building The Biggest Travel Social Media App #app #punjabi #southasian #travel #startup",
+    "Transcript (auto, from the TikTok video): This is day 24 of building the biggest and greatest travel social media app in the world. Today I just looked at some of the requirements for the Google Play Store because I'm currently recording this on a Google Pixel and the application at the moment is a beta phase and has been used in that sense on my phone to check how it works on mobile. If it's seamless, I made a lot of updates and upgrades. I noticed that there wasn't an offline mode, so I've actually tried to implement that as well. At the point now where I feel the UI is really good, it's really great, it's really seamless and everything works as intended, I've just looked at the Google requirements, you need to pay like $25 US dollars for registering an account and you need up to 12 test users before you are able to upload it to the Google Play Store. That's what's next in the docket, that's what we're working towards and we're looking for an APK release of this AdStore application soon."
+  ],
   "tags": [],
   "links": {
     "tiktok": "https://www.tiktok.com/@manrajtalks/video/7687009449546059030"
@@ -17,5 +20,18 @@
   "slides": [],
   "cover": "/notes/day-24-building-the-biggest-travel-social-media-app/cover.jpg",
   "views": 719,
-  "guide": null
+  "guide": [
+    "This is a build-in-public update: you take a working mobile app from beta testing to a Google Play release. You need an Android phone, your app project, and a Google Play Console developer account.",
+    "1. Install a beta build of your app on a real Android phone and use it as a normal user would, noting anything that feels slow or broken.",
+    "1. Add offline support so the app still opens and shows saved content without a signal, for example by caching recent data on the device.",
+    "1. Fix the issues you found, then retest on the phone until the screens behave as intended.",
+    "1. Read the Google Play Console requirements for new apps, including the registration fee (a one-off US$25 payment) and the closed-testing rule.",
+    "1. Register a Google Play Console developer account and pay the fee.",
+    "1. Recruit up to 12 testers, add their Google accounts to a closed testing track and have them install the app.",
+    "1. Build a signed Android release file (an APK or an Android App Bundle) with your framework's build tools.",
+    "1. Upload it to the closed testing track, then move to production once Google's testing requirements are met.",
+    "Watch out: Google requires test users before you can publish, so start recruiting testers early rather than waiting until the app is finished.",
+    "## Prompt to build your own",
+    "```\nYou are helping me take my mobile app from beta to a Google Play release. My app is <app name>, built with <framework, for example React Native, Flutter or native Android>, and I test it on <Android phone model>. I have <or do not yet have> a Google Play Console developer account.\nFirst, review the project and add basic offline support, so the app opens and shows previously loaded content when there is no connection. Explain which data you cache and when it refreshes.\nThen give me a release checklist covering: the Google Play Console registration fee, the closed-testing requirement for new developer accounts (testers needed, how long they must stay opted in), setting up a closed testing track, inviting testers by Google account, creating a signed release build, and uploading it.\nConstraints: do not change features I have not asked about, keep secrets and signing keys out of the repository, and check Google's current Play Console documentation for requirements that may have changed.\nReturn the code changes for offline mode, the exact build commands for my framework, and a numbered checklist I can follow.\n```"
+  ]
 }

@@ -7,9 +7,12 @@
   "episode": null,
   "pillar": "Lifestyle",
   "hook": "",
-  "keyword": null,
-  "summary": "",
-  "body": [],
+  "keyword": "ACCOUNTABLE",
+  "summary": "TikTok caption: #desi #advice #growth #goals #fyp",
+  "body": [
+    "TikTok caption: #desi #advice #growth #goals #fyp",
+    "Transcript (auto, from the TikTok video): I probably shouldn't be unmaking this, but I think you on the journey of going through your goals and your dreams You should be slightly embarrassed or slightly nervous or stutter or have those kind of emotions Because you are challenging the self image and the person you think you are today And by saying that to other people and they're going to hold you to account as well You're basically challenging your own self image. Don't let your self image dictate the life you wish to live Because of the life you have to sacrifice that you're currently living to get to that point Just remember that when you're on that journey of making these new apps, making these new things Making these new active changes whether it's going to gym You're constantly going to challenge your self image and constantly feel those kind of emotions Don't let that deter you and let that help you determine the path that you're going to go on"
+  ],
   "tags": [],
   "links": {
     "tiktok": "https://www.tiktok.com/@manrajtalks/video/7676257175118974230"
@@ -17,5 +20,14 @@
   "slides": [],
   "cover": "/notes/no-caption-advice-growth/cover.jpg",
   "views": 299,
-  "guide": null
+  "guide": [
+    "This turns the idea in the post into a small accountability setup: you name a goal, tell someone, and log what you ship. You need a Notion account, a Telegram chat with one or two people you trust, and ChatGPT or Claude.",
+    "1. Write your goal in one sentence in a new Notion page, with the thing you will have finished and a date.",
+    "1. Send that sentence to one or two people in a Telegram chat and ask them to check in with you every week.",
+    "1. Add a Notion database with one row per week, holding what you built or did and what scared you about it.",
+    "1. Paste the week's rows into ChatGPT or Claude and ask it to point out where you held back and what you avoided.",
+    "Watch out: the embarrassed, nervous feeling in the post means you are challenging your self-image, so don't treat it as a reason to stop or to shrink the goal.",
+    "## Prompt to build your own",
+    "```\nYou are my accountability coach and set-up assistant. I want to work towards <my goal, for example \"launch my first app\" or \"go to the gym three times a week\"> by <date>.\nTools I have: Notion, Telegram, and this chat.\nPlease do the following:\n1. Help me rewrite my goal as one clear sentence with a finish line and a date.\n2. Design a simple Notion database for weekly check-ins with these columns: week, what I did, what made me nervous or embarrassed, and what I will do next.\n3. Write the short message I will send to <names of one or two people I trust> on Telegram, asking them to hold me to account each week.\n4. Each week I will paste my Notion rows here. Reply with where I avoided something uncomfortable, and one action for the coming week.\nConstraints: keep it plain and practical. Do not give me motivational speeches. Tell me directly when my goal is too small or too vague.\nReturn: the rewritten goal, the Notion column list, the Telegram message, and the exact wording I should paste in each week.\n```"
+  ]
 }

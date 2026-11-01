@@ -7,9 +7,12 @@
   "episode": null,
   "pillar": "Building in public",
   "hook": "",
-  "keyword": null,
-  "summary": "",
-  "body": [],
+  "keyword": "LAUNCH",
+  "summary": "TikTok caption: DAY 23: Building The Biggest Travel Social Media App in the world  #travel #southasian #punjabi #app #startup",
+  "body": [
+    "TikTok caption: DAY 23: Building The Biggest Travel Social Media App in the world  #travel #southasian #punjabi #app #startup",
+    "Transcript (auto, from the TikTok video): This is day 23 of building the biggest travel social media app in the world today is a lot more about distribution There's a github repository called Places to post your startup. This is just a github repo link that I use today to be able to start Distributing what my application is all about a given that I want to release it very soon It's already got like a working or alpha version on the web but I do want to look to build it into mobile and also into iOS and Android devices. I wanted a bit more feedback. We've got a lot of feedback. My friend gave me some feedback Just before the doji dishonor concert to be fair, which is kind of funny But a point was is that I'm getting people giving me constant feedback And now at the point where we want a lot more feedback and a lot more people asking for certain features And what they do to use this tool and that is why the distribution of this application is pivotal to the success of it I hope you guys enjoyed the journey and continue to follow along for what's happening in the next videos"
+  ],
   "tags": [],
   "links": {
     "tiktok": "https://www.tiktok.com/@manrajtalks/video/7686222645339409667"
@@ -17,5 +20,17 @@
   "slides": [],
   "cover": "/notes/day-23-building-the-biggest-travel-social-media-app/cover.jpg",
   "views": 264,
-  "guide": null
+  "guide": [
+    "Get your early app in front of real users by working through a public GitHub list of places to post a startup, and collect feedback in one place. You need a working alpha you can share by link, a GitHub account, and a spreadsheet or Notion database.",
+    "1. Search GitHub for a repository that lists places to post your startup, and open the README.",
+    "1. Copy the list into a Notion database or Google Sheet with columns for site, link, audience, rules, status and date posted.",
+    "1. Ask ChatGPT or Claude to draft one short description of your app (what it is, who it is for, the link to the live alpha), then adapt it to each site's rules.",
+    "1. Post to a few places at a time, and tick them off in your sheet as you go.",
+    "1. Create one feedback form (Google Forms or Notion) and put its link next to your app link everywhere you post.",
+    "1. Log every piece of feedback and every feature request in the same database, and tag repeated requests.",
+    "1. Use the repeated requests to decide what to build next, such as a mobile version for iOS and Android.",
+    "Watch out: feedback only helps you decide once enough different people are using the app, so spreading it to more places comes before polishing features.",
+    "## Prompt to build your own",
+    "```\nYou are helping me launch my early-stage app, <app name>. It is a <one-line description> for <target users>, currently live as an alpha at <link>. I use <ChatGPT or Claude Code>, Google Sheets or Notion, and GitHub.\nBuild me a distribution kit with these parts:\n1. A tracker template (Notion database or Google Sheet) with columns: site, link, audience, posting rules, status, date posted, response, and feedback received.\n2. A step-by-step method to find a GitHub repository listing places to post a startup, and to turn its entries into rows in my tracker.\n3. A short app description in three lengths (one line, one paragraph, a longer post), written in plain English without hype, which I can adapt for each site's rules.\n4. A feedback form with five questions, covering what people tried, what confused them, and which feature they want most.\n5. A simple way to tag repeated feature requests and rank them by how often they appear.\nConstraints: no paid tools, no automated posting, and I post everything manually. Return the tracker structure, the three descriptions, the form questions and the ranking method, each under its own heading.\n```"
+  ]
 }

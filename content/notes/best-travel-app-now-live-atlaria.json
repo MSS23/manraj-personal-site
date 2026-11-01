@@ -7,9 +7,12 @@
   "episode": null,
   "pillar": "Building in public",
   "hook": "",
-  "keyword": null,
-  "summary": "",
-  "body": [],
+  "keyword": "TRAVEL APP",
+  "summary": "TikTok caption: Best TRAVEL APP NOW LIVE - Atlaria #fyp #brown #desi #travel #app",
+  "body": [
+    "TikTok caption: Best TRAVEL APP NOW LIVE - Atlaria #fyp #brown #desi #travel #app",
+    "Transcript (auto, from the TikTok video): This is showing that the application I've built is now live. This is just a fake picture and stuff It's a real picture, but just all of it's kind of like a mock for the application Just to show you guys how it works. You see a profile, you're possible, where you've been, you will see a possible scan there at the stamp But the app is now live and we are ready for people to join it"
+  ],
   "tags": [],
   "links": {
     "tiktok": "https://www.tiktok.com/@manrajtalks/video/7677330618543394070"
@@ -17,5 +20,18 @@
   "slides": [],
   "cover": "/notes/best-travel-app-now-live-atlaria/cover.jpg",
   "views": 276,
-  "guide": null
+  "guide": [
+    "Build and launch a travel app where people keep a profile of places they have been and collect a stamp for each one; you need an AI coding assistant (ChatGPT / Codex or Claude Code), a free Supabase account and a free Vercel account.",
+    "1. Write down the core idea in two sentences: who the app is for, and the one thing they do (here, log a place and collect a stamp for it).",
+    "1. Ask Claude Code or Codex to scaffold a Next.js app with a profile page, a \"places I've been\" list and a stamp for each place.",
+    "1. Create a Supabase project and add tables for users, places and stamps, with sign-in switched on.",
+    "1. Connect the app to Supabase using the project URL and public key, and keep any secret keys out of the code.",
+    "1. Make a mock version first with sample photos and fake data so you can see how the profile and stamps look before real users arrive.",
+    "1. Record a short screen video of the mock walking through the profile, the places and the stamps, so you can show people what it does.",
+    "1. Deploy the app to Vercel from your Git repository and test sign-up on your phone.",
+    "1. Open it to your first users and post the video with the link.",
+    "Watch out: the video used mock data and stock-style pictures, so say plainly that it is a demo, and never put real users' details or photos in a recording.",
+    "## Prompt to build your own",
+    "```\nYou are a senior full-stack developer. Build a simple travel-passport web app called <app name> for <target audience>. Users sign up, build a profile, add places they have visited with a photo and date, and receive a visual stamp for each place, shown on their profile. I have a <ChatGPT/Codex or Claude Code> account, a free Supabase account and a free Vercel account, and I am a beginner, so explain each step briefly. Use Next.js for the front end, Supabase for sign-in, the database and photo storage, and deploy to Vercel. Create the database tables and row-level security so each user can only edit their own data. Add a seed script with clearly fake sample data so I can record a demo. Keep secret keys in environment variables and never in the code. Return the project structure, the SQL for the tables, the key files, and a short checklist for deploying and testing sign-up on a phone. Ask me up to three questions first if anything is unclear.\n```"
+  ]
 }

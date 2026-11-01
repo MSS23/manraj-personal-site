@@ -7,9 +7,12 @@
   "episode": null,
   "pillar": "Building in public",
   "hook": "",
-  "keyword": null,
-  "summary": "",
-  "body": [],
+  "keyword": "DEMO",
+  "summary": "TikTok caption: Day 12: Building the biggest travel social media app atlaria.app demo account is available to be used and see the features! #desi #business #southasian #app #travel",
+  "body": [
+    "TikTok caption: Day 12: Building the biggest travel social media app atlaria.app demo account is available to be used and see the features! #desi #business #southasian #app #travel",
+    "Transcript (auto, from the TikTok video): We're back and this is day 12 of the Building the best and bigger social media for travel. You can see in the background I've got myself on the application. I created demo accounts Everyone can see what's going on and how this works and this is the wrapped feature on the demo account You can see here There are no trips for 20 to a 6 but you can view all your trips you've been to and on this demo account You're able to see that someone's phone from Paris to Santorini Santorini back towards Reykjavik Which is in Iceland and then they jump over to Tokyo in Japan and this is kind of what I wanted to showcase to people This is the power of the app. This is what you can do This is basically your Spotify rap for your travel journeys for from all time and you can have that yearly as well But this is a cool feature. I want to share with you. This is what's going on"
+  ],
   "tags": [],
   "links": {
     "tiktok": "https://www.tiktok.com/@manrajtalks/video/7681431009107217686"
@@ -17,5 +20,18 @@
   "slides": [],
   "cover": "/notes/day-12-demo-account-available/cover.jpg",
   "views": 260,
-  "guide": null
+  "guide": [
+    "Shows a travel app's demo account and its \"Wrapped\" feature: a Spotify-style recap of every trip you have taken. You need an AI coding assistant (ChatGPT Codex or Claude Code), a database such as Supabase, and a host such as Vercel.",
+    "1. Describe the app in one paragraph to Claude Code or Codex: who it is for, and the single feature you want to show first.",
+    "1. Create a Supabase project and add tables for users, trips (place, country, start date, end date) and the order of stops.",
+    "1. Build the recap view: group a user's trips by year and by all time, and list the stops in order, for example Paris, Santorini, Reykjavik, Tokyo.",
+    "1. Add a demo account with made-up trips, so anyone can try the app without signing up or sharing their own data.",
+    "1. Add a clear \"Demo\" label and make the demo account read-only, so visitors cannot change or delete the sample data.",
+    "1. Deploy the app to Vercel and test the demo login from a phone and a laptop.",
+    "1. Screen-record a walkthrough of the recap and post it, saying plainly that it is a demo account.",
+    "Watch out: use invented trips and a throwaway email for the demo account, never a real person's travel history, and lock the demo to read-only so visitors cannot break it.",
+    "## Prompt to build your own",
+    "```\nYou are helping me build a travel app with a \"Wrapped\" style recap, similar to a Spotify year-in-review but for trips. I use <Claude Code or Codex>, Supabase for the database and login, and Vercel for hosting. My app is called <app name> and is for <audience>.\nBuild this:\n1. A database schema in Supabase with users, trips (place, country, start date, end date) and ordered stops.\n2. A recap page that shows a user's trips for a chosen year and for all time, with the stops listed in order.\n3. A demo account filled with invented trips, such as <city 1>, <city 2> and <city 3>. It must be read-only, clearly labelled \"Demo\", and use Supabase row-level security so visitors cannot edit or delete data.\n4. A \"Try the demo\" button on the home page that logs visitors straight into the demo account.\nConstraints: use no real personal data, keep secrets in environment variables and out of the code, and make the pages work well on a phone.\nReturn the full file list, the SQL for the tables and security rules, the code for each file, and step-by-step instructions to deploy on Vercel.\n```",
+    "Skipped: no checks against a live app; the steps are inferred from the transcript, which describes only the demo and Wrapped view."
+  ]
 }

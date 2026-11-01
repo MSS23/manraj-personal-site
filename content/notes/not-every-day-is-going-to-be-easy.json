@@ -7,9 +7,12 @@
   "episode": null,
   "pillar": "Building in public",
   "hook": "",
-  "keyword": null,
-  "summary": "",
-  "body": [],
+  "keyword": "BUILD",
+  "summary": "TikTok caption: Not everyday is going to be easy #tech #app #travelapp #travel #brown",
+  "body": [
+    "TikTok caption: Not everyday is going to be easy #tech #app #travelapp #travel #brown",
+    "Transcript (auto, from the TikTok video): This is day six of the building of the best social globe app in the world I'll be honest. I'm like Hovered from my night routine and my application actually stopped working So I had to like fix it. This is the truth when it comes to the building these things Sometimes it goes really well There's a few things that you can put each thoughts out and there's oftentimes where I'm just getting emails Your uptime bot is telling you that your website's not running and there's a few bugs you need to fix and that's around the situation And I wanted to be as raw and as honest as possible Like I said, I'm Hovered from my night routine and I've literally got something to fix and that's part of the journey And one thing I implore everyone to do is just to enjoy this process I'm one like a journey myself to build something great and I know it requires a lot of work And I just wanted to be completely real with you guys forward to bed. Thank you so much. And this is your update"
+  ],
   "tags": [],
   "links": {
     "tiktok": "https://www.tiktok.com/@manrajtalks/video/7678475427593080086"
@@ -17,5 +20,18 @@
   "slides": [],
   "cover": "/notes/not-every-day-is-going-to-be-easy/cover.jpg",
   "views": 716,
-  "guide": null
+  "guide": [
+    "This is a story about the honest side of building an app in public, so the steps below are what you can do to keep a project running when something breaks. You need a live app, an uptime monitor, and an AI coding assistant.",
+    "1. Put your app on a host such as Vercel, with Supabase or a similar service for the database, so it runs without your laptop.",
+    "1. Set up an uptime monitor such as UptimeRobot or Better Stack to email you when the site stops responding.",
+    "1. When an alert arrives, open the host's deployment and runtime logs to find the first error, not the last.",
+    "1. Paste the error, the failing file and what you changed last into Claude Code or Codex, and ask for the cause before asking for a fix.",
+    "1. Test the fix locally, deploy it, and wait for the monitor to report the site as up again.",
+    "1. Write one line in a notes page, such as Notion, with what broke and what fixed it, so the same bug is quicker next time.",
+    "1. Film or write the update as it happened, including the bug, because it shows the real process.",
+    "Watch out: Do not push a fix you have not run, as a rushed change at night can break the site again, so confirm the monitor is green before you stop.",
+    "## Prompt to build your own",
+    "```\nYou are helping me keep my web app running and fix it when it breaks. My app is <app name>, built with <framework>, hosted on <Vercel or other host>, with <Supabase or other database>. I use <UptimeRobot or Better Stack> to watch <my site URL> and it emails me when the site is down.\nDo the following:\n1. Read my project and list the most likely causes of downtime, such as failed builds, missing environment variables, database limits, or unhandled errors.\n2. Add a simple health-check route at <path> that returns a short status message and checks the database connection.\n3. Show me how to point the uptime monitor at that route.\n4. When I paste an error log, explain the likely cause in plain English first, then propose the smallest fix, and tell me how to test it locally before deploying.\n5. Draft a short template for a notes page with fields for date, symptom, cause and fix.\nDo not change anything unrelated to the bug. Do not add new dependencies unless you explain why. Return the health-check code, the monitor setup steps and the notes template.\n```",
+    "Skipped: I did not check the source for which uptime monitor or host the post used, so I named common public ones. Risk: step 7 is my addition, drawn from the post's \"be raw and honest\" point rather than a build step."
+  ]
 }

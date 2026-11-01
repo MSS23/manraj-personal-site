@@ -7,9 +7,12 @@
   "episode": null,
   "pillar": "Building in public",
   "hook": "",
-  "keyword": null,
-  "summary": "",
-  "body": [],
+  "keyword": "TRAVEL APP",
+  "summary": "TikTok caption: Day 26: Building The Biggest Travel Social Media App In The World. #app #punjabi #southasian #travel #startup",
+  "body": [
+    "TikTok caption: Day 26: Building The Biggest Travel Social Media App In The World. #app #punjabi #southasian #travel #startup",
+    "Transcript (auto, from the TikTok video): Welcome to day 26 of building the biggest travel social media app in the world. I just some research I was looking into putting this application on to the Android Play Store I actually have an Android version running on my own device and debugging it. It looks really good It has four buttons. You have the globe button It's possible button you have the homepage and the feed and then you can see like everyone else's globe Should you choose to click on that and then you have a profile button as well Which means that you can see your wrapped version and the passport and you're able to show people your QR codes If you want to connect with each other feel free to scan the QR code on the camera To see like a pseudo version of this if you you type in the link above my head Which is at Laurier app and just use the mobile version It will look like what the future application will look like. If anyone's got any feedback, please share with me Thank you so much"
+  ],
   "tags": [],
   "links": {
     "tiktok": "https://www.tiktok.com/@manrajtalks/video/7688483784093748502"
@@ -17,5 +20,18 @@
   "slides": [],
   "cover": "/notes/day-26-building-the-biggest-travel-social-media-app/cover.jpg",
   "views": 743,
-  "guide": null
+  "guide": [
+    "This turns a mobile-first web app into an Android app and puts it on Google Play for testing. You need a Google Play Console developer account, a computer with Android Studio, an Android phone, and ChatGPT (Codex) or Claude Code.",
+    "1. Build the app as a mobile web app first, with Next.js or a similar framework, and host it on Vercel so anyone can try it from a phone browser.",
+    "1. Keep the main screens to a few bottom tabs, for example a globe of visited places, a feed, other people's globes and a profile.",
+    "1. Store users, places and posts in Supabase, and let people sign in with it.",
+    "1. Put a QR code on the profile page that encodes a link to that user, and use the phone camera to scan another user's code and connect.",
+    "1. Wrap the web app as a native Android app with Capacitor, then turn on USB debugging on your phone and run it from Android Studio to find bugs on a real device.",
+    "1. Read Google Play's current requirements for new apps, such as testing rules and the store listing, before you plan a release.",
+    "1. Upload a signed build to a Google Play Console testing track and invite a few people to try it.",
+    "1. Share the browser version publicly in the meantime and ask for feedback.",
+    "Watch out: do not rely on the emulator alone, because camera access for QR scanning and layouts behave differently on a real phone, so test on one before you submit anything to Google Play.",
+    "## Prompt to build your own",
+    "```\nYou are a senior mobile and web developer. Help me build a travel social app as a mobile-first web app, then wrap it as an Android app with Capacitor.\nMy idea: <describe your app, for example a map or globe of places each user has visited>.\nTools I have: <ChatGPT or Claude Code>, Node.js, Android Studio, an Android phone, a Vercel account, a Supabase account and a Google Play Console developer account.\nBuild this:\n1. A Next.js app with four bottom tabs: <tab 1, for example Globe>, <tab 2, for example Feed>, <tab 3, for example Explore other users>, <tab 4, for example Profile>.\n2. Supabase for sign-in and for storing users, visited places and posts.\n3. A profile QR code that links to the user's page, plus a scanner that opens another user's page and sends a connection request.\n4. Capacitor configuration to produce an Android build, with the camera permission set up for scanning.\nConstraints: keep it simple, use only free tiers to start, never put secret keys in the client code, and explain each step in plain English.\nReturn: the folder structure, the commands to run in order, the key code files, how to test on my phone with USB debugging, and a checklist for uploading to a Google Play testing track.\n```"
+  ]
 }

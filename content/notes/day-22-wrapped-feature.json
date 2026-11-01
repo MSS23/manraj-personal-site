@@ -7,9 +7,12 @@
   "episode": null,
   "pillar": "Building in public",
   "hook": "",
-  "keyword": null,
-  "summary": "",
-  "body": [],
+  "keyword": "GLOBE",
+  "summary": "TikTok caption: Day 22, what's your thoughts on the wrapped feature of the app!  #traveltok #punjabi #southasian #startup #app",
+  "body": [
+    "TikTok caption: Day 22, what's your thoughts on the wrapped feature of the app!  #traveltok #punjabi #southasian #startup #app",
+    "Transcript (auto, from the TikTok video): This is day 22 of building the best travel social media application in the world You see all these albums in Morocco, Argentina, Bali. This is what the app is all about You have a globe you can share where you've been and you can also watch your globe Like travel timeline in real time and this is an all-time seven years journey where someone's been bigger from Paris to Santorini Santorini to Reykjavik and then they just jump all over the place and for me personally I've loved traveling I really enjoy traveling but I find it so difficult trying to share all the pictures and places I've been to and I wanted to make a platform where someone could just look at all the places I've been to and have those albums really accessible and readily accessible in that sense To be able to just see where I've been around the world"
+  ],
   "tags": [],
   "links": {
     "tiktok": "https://www.tiktok.com/@manrajtalks/video/7685526787912240406"
@@ -17,5 +20,18 @@
   "slides": [],
   "cover": "/notes/day-22-wrapped-feature/cover.jpg",
   "views": 717,
-  "guide": null
+  "guide": [
+    "This is a travel app that shows where someone has been on an interactive globe, with albums per place and a replayable travel timeline. You need an AI coding assistant (ChatGPT / Codex or Claude Code), a free Supabase project and a free Vercel account.",
+    "1. Write down what the app is for in one sentence, for example \"one place to show every trip as albums on a globe\", and list the three screens you need: globe, album and timeline.",
+    "1. Ask ChatGPT (Codex) or Claude Code to scaffold a Next.js app and deploy it to Vercel so you have a live link from day one.",
+    "1. Create a Supabase project with tables for trips (place, latitude, longitude, date) and photos (trip, image file), and use Supabase Storage for the images.",
+    "1. Build the globe screen with an open-source 3D globe library such as globe.gl or react-globe.gl, plotting one pin per trip.",
+    "1. Make tapping a pin open that place's album, showing its photos in date order.",
+    "1. Build the timeline by sorting trips by date and animating the globe from one pin to the next, with an arc drawn between them.",
+    "1. Add a \"wrapped\" screen that totals the trips, countries and years across all dates and shows them as a short summary card.",
+    "1. Test it with your own real trips first, then commit and let Vercel redeploy each time you change something.",
+    "Watch out: the problem here was that sharing travel photos and places is a hassle, so keep adding a trip down to a place, a date and a few photos, or nobody will keep it up to date.",
+    "## Prompt to build your own",
+    "```\nYou are my senior full-stack developer. Build a travel-sharing web app called <app name> that shows where I have been on an interactive 3D globe.\nTools I have: <ChatGPT/Codex or Claude Code>, a Supabase account, a Vercel account and Node installed.\nBuild it with Next.js and TypeScript, using Supabase for the database and image storage and a free open-source globe library such as react-globe.gl.\nFeatures:\n1. A globe with one pin per trip.\n2. Tapping a pin opens that place's photo album, in date order.\n3. A timeline mode that animates the globe from trip to trip in date order, drawing arcs between places.\n4. A \"wrapped\" summary screen showing totals for trips, countries and years.\n5. An add-trip form needing only a place, a date and photos.\nConstraints: keep it mobile first, keep API keys in environment variables and never in the code, and keep the first version small enough to finish in one day.\nReturn the Supabase table schema as SQL, the project file structure, the code for each screen, and step-by-step instructions to deploy to Vercel. Ask me before assuming anything about <my trips or design preferences>.\n```"
+  ]
 }

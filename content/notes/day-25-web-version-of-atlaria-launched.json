@@ -7,9 +7,12 @@
   "episode": null,
   "pillar": "Building in public",
   "hook": "",
-  "keyword": null,
-  "summary": "",
-  "body": [],
+  "keyword": "LAUNCH",
+  "summary": "TikTok caption: DAY 25: We've officially launched the web version for Atlaria.app #startup #travel #southasian #punjabi #app",
+  "body": [
+    "TikTok caption: DAY 25: We've officially launched the web version for Atlaria.app #startup #travel #southasian #punjabi #app",
+    "Transcript (auto, from the TikTok video): this is day 25 of building the biggest and best travel social media application in the world we have actually released the application the web version on product hunt which basically is a platform used by other people building up apps or startups and having these kind of crazy ideas of building something great and i've put it on that platform i've had it there for a few weeks and now it's the official launch day so the web version is available to be used we've had some people using it and we've actually encountered some extra bugs that weren't actually prevalent when we were testing and that's been the great thing about putting this on a product launch website there's a lot more traffic a lot more people using it and we have seen an upticking usage and on top of that seen some developments which we weren't aware of but i have been using these two tools which is called sentry for the error logging and also on top of that we have been using linear to create tickets on what needs to be fixed and i'd recommend using those if you're building an application"
+  ],
   "tags": [],
   "links": {
     "tiktok": "https://www.tiktok.com/@manrajtalks/video/7687375136864947478"
@@ -17,5 +20,18 @@
   "slides": [],
   "cover": "/notes/day-25-web-version-of-atlaria-launched/cover.jpg",
   "views": 763,
-  "guide": null
+  "guide": [
+    "Launch a web app on Product Hunt and use error logging and a ticket board to fix the bugs real users find. You need a working web app, a Product Hunt account, Sentry and Linear.",
+    "1. Deploy your web app to a public URL, for example on Vercel, with a database such as Supabase if it needs one.",
+    "1. Create a Product Hunt listing with a clear tagline, screenshots and a short demo video, and set the launch date.",
+    "1. Add Sentry to your app by installing its SDK for your framework, so every error users hit is logged with where it happened.",
+    "1. Set Sentry to alert you when a new error appears, so you hear about problems the day they start.",
+    "1. Create a Linear team for the app and turn each real Sentry error into a ticket with the steps to reproduce it.",
+    "1. Launch on Product Hunt and watch Sentry as the extra traffic arrives, because bugs that never appeared in your own testing will show up.",
+    "1. Fix the tickets in order of how many users each one affects, redeploy, and close them in Linear.",
+    "Watch out: Test with your own account before launch day, because the bugs from real traffic only show up once strangers use the app, so have error logging switched on before they arrive.",
+    "## Prompt to build your own",
+    "```\nYou are helping me prepare a web app for a public launch and set up a way to catch and fix bugs afterwards. My app is <app name>, built with <framework>, hosted on <hosting provider>. I have accounts for Sentry, Linear and Product Hunt.\nPlease do the following:\n1. Add the Sentry SDK for <framework> to my project, with the setup code and where each file goes, and make sure it does not log users' passwords or personal data.\n2. Show me how to configure a Sentry alert that emails me when a new error appears.\n3. Give me a simple template for a Linear bug ticket: title, steps to reproduce, the Sentry link, how many users are affected, and priority.\n4. Write a launch-day checklist covering deployment, environment variables, error logging and a plan for triaging bugs in the first 48 hours.\nKeep the setup minimal and explain each step in plain English. Do not add any services beyond Sentry and Linear. Return the code changes first, then the template, then the checklist.\n```",
+    "Not checked: I wrote this from the transcript only, so I did not check the details of Sentry's or Linear's current setup screens."
+  ]
 }

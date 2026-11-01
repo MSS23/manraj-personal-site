@@ -7,9 +7,12 @@
   "episode": null,
   "pillar": "Building in public",
   "hook": "",
-  "keyword": null,
-  "summary": "",
-  "body": [],
+  "keyword": "PASSPORT",
+  "summary": "TikTok caption: Here's a new feature on my travel app #brown #desi #app #travelapp #tech",
+  "body": [
+    "TikTok caption: Here's a new feature on my travel app #brown #desi #app #travelapp #tech",
+    "Transcript (auto, from the TikTok video): This is showcasing the possible features the application can see there. It shows my like countries, cities I've been to. Well, the Explorer, I'm a rising Explorer running on two places, 1% of the world. Travel stands for different locations, shows the contents, the countries you enter in the content. Then you have a digital passport which has a QR code. If you scan that QR code, you're gonna jump into a section here. You get to see your compatibility between you and the person you scan the QR code with. We've been to four countries. We've not been to the same countries. Clearly, we're not compatible with a little coefficient application."
+  ],
   "tags": [],
   "links": {
     "tiktok": "https://www.tiktok.com/@manrajtalks/video/7675412858204622102"
@@ -17,5 +20,17 @@
   "slides": [],
   "cover": "/notes/new-feature-on-my-travel-app/cover.jpg",
   "views": 315,
-  "guide": null
+  "guide": [
+    "This is a travel app that tracks the countries and cities you have visited, scores how much of the world you have seen, and gives each user a digital passport with a QR code that, when scanned by another user, compares your trips and shows a compatibility score. You need an AI coding assistant (ChatGPT / Codex or Claude Code), a free Supabase account and a Vercel account.",
+    "1. Write down the screens you want: a map of visited countries and cities, a \"percentage of the world\" score, and a passport page with a QR code.",
+    "1. Create a Supabase project with tables for users and visited places (country, city, date), and turn on Supabase Auth so each person has an account.",
+    "1. Ask Claude Code or Codex to build a web app (for example with Next.js) that lets a user add places and shows them on a map.",
+    "1. Calculate the world score by dividing the number of countries visited by the total number of countries, and show it with a label such as \"Explorer\".",
+    "1. Add a passport page that generates a QR code containing a link to the user's profile, using an open-source QR library.",
+    "1. Build the compatibility page that opens from that link, loads both users' visited places, and compares them using the countries you share and the number of countries each of you has been to.",
+    "1. Deploy the app to Vercel and test the QR code by scanning it with a second phone and a second account.",
+    "Watch out: turn on Supabase row-level security so the scanning user can only read the visited places the other person chose to share, not their whole account.",
+    "## Prompt to build your own",
+    "```\nYou are my senior full-stack developer. Build a travel-tracking web app that works on a phone.\nTools I have: <ChatGPT/Codex or Claude Code>, a Supabase project, a Vercel account, and Node installed on <Windows/Mac>.\nFeatures:\n1. Sign-up and login with Supabase Auth.\n2. Let a user add countries and cities they have visited, with a date, and show them on a map.\n3. Show a \"percentage of the world visited\" score based on countries visited, with a rank label such as \"Explorer\".\n4. Give each user a digital passport page with a QR code that links to their public profile at <my-domain>.\n5. When a signed-in user opens another person's passport link, show a compatibility page: countries in common, countries each has visited, and a simple compatibility score. If the two share no countries, show a friendly low-score message.\nConstraints: use Supabase row-level security so people can only read the places another user has chosen to share. Keep the design simple and mobile-first. Deploy to Vercel.\nReturn: the database schema as SQL, the project file structure, the code for each page, the environment variables I need to set, and step-by-step deployment instructions.\n```"
+  ]
 }

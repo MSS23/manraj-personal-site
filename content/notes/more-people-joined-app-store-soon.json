@@ -7,9 +7,12 @@
   "episode": null,
   "pillar": "Building in public",
   "hook": "",
-  "keyword": null,
-  "summary": "",
-  "body": [],
+  "keyword": "ASTORIA",
+  "summary": "TikTok caption: More people have joined the journey and more fixes have taken place, app store version soon! #traveltok #travel #tech #app #brown",
+  "body": [
+    "TikTok caption: More people have joined the journey and more fixes have taken place, app store version soon! #traveltok #travel #tech #app #brown",
+    "Transcript (auto, from the TikTok video): We're on day of releasing this global social media application. It's been going really well I've made a few edits and changes to the application to make sure it's working as intended There were a few bugs that have been identified by myself and a couple of my friends But the other journey is steady There's a few people that she signed up extra people and Now I'm at the point now I'm quite happy with where the application is and I've got some really cool things I've added to it to make sure It's working like the wrapped feature the travel blend to show the similarity between yourself and your friends who have traveled to similar places and Also, just looking at the point now where the application is very stable and I'm looking to Mark it a lot more and that's the process I'm in currently with the state of the application And on top of that looking to start building out the Apple and Google Play version of this tool If you haven't tried it already, it's called Astoria and we are now just over a week through this journey"
+  ],
   "tags": [],
   "links": {
     "tiktok": "https://www.tiktok.com/@manrajtalks/video/7679221532740062486"
@@ -17,5 +20,17 @@
   "slides": [],
   "cover": "/notes/more-people-joined-app-store-soon/cover.jpg",
   "views": 673,
-  "guide": null
+  "guide": [
+    "This is a build-in-public update on a travel social app: a small group of real users, bug fixes, two headline features (a year-in-review \"wrapped\" and a \"travel blend\" that compares your trips with a friend's), and the next step of moving to the Apple and Google Play stores. You need a coding assistant (ChatGPT / Codex or Claude Code), a free Supabase project and a Vercel account.",
+    "1. Write a one-page spec in plain English covering sign-up, a profile, a list of places visited, and friends.",
+    "1. Ask Claude Code or Codex to scaffold a Next.js web app and deploy it to Vercel, so you have a live link from day one.",
+    "1. Create a Supabase project for sign-in and a database, with tables for users, trips and friendships.",
+    "1. Build the \"wrapped\" screen: query each user's trips for the year and show totals such as countries, cities and most-visited place.",
+    "1. Build the \"travel blend\": compare two friends' visited places, work out the overlap as a percentage, and list the shared destinations.",
+    "1. Invite a handful of friends to sign up, log every bug they report, and have your assistant fix them in small batches before you invite more people.",
+    "1. When the web version is stable, wrap it for the stores, for example with Capacitor, then set up an Apple Developer account and a Google Play Console account to submit it.",
+    "Watch out: do not push for wider marketing until the app is stable, because early users who hit bugs rarely come back.",
+    "## Prompt to build your own",
+    "```\nYou are my senior full-stack developer. Help me build a social travel app called <app name> where people log the places they have visited and compare trips with friends.\nI have: <your assistant, e.g. Claude Code or Codex>, a Supabase account, a Vercel account and a GitHub account. I am <your experience level>.\nBuild, in this order:\n1. A Next.js web app with email sign-in using Supabase Auth.\n2. Database tables for profiles, trips (place, country, date) and friendships, with row-level security so users only see their own data and their friends' trips.\n3. A \"wrapped\" page that summarises one user's year: number of countries and cities, most-visited place, and a shareable summary card.\n4. A \"travel blend\" page that takes two friends and shows a similarity percentage and the destinations they share.\n5. A simple bug-report button that saves feedback to a Supabase table.\nConstraints: keep it small, use free tiers, explain each step in plain English, and commit to GitHub after each working feature. Deploy to Vercel and give me the live link. Finish by listing what I need to do to publish it to the Apple App Store and Google Play, using <Capacitor or another wrapper>.\n```"
+  ]
 }

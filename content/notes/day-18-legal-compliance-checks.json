@@ -7,9 +7,12 @@
   "episode": null,
   "pillar": "Building in public",
   "hook": "",
-  "keyword": null,
-  "summary": "",
-  "body": [],
+  "keyword": "CHECKLIST",
+  "summary": "TikTok caption: Make sure your legal and compliance checks are done! Day 18 #southasian #traveltok #AI #advice #app",
+  "body": [
+    "TikTok caption: Make sure your legal and compliance checks are done! Day 18 #southasian #traveltok #AI #advice #app",
+    "Transcript (auto, from the TikTok video): Welcome to day 18 of building the best and biggest social media travel app in the world. Today's videos are a bit around governance and the compliance work that's done for these applications. Core is amazing at building out this application and the UI and the backends and having all those connections and making sure that everything works as intended. However, when it comes to the compliance side of things, that's kind of where you need to use core as a means to be able to build our checklists and that's what I've done. I've built a cloud artifact that has a pre-launch checklist to be like, these are all the things required for this application to ensure that it is ready to be launched. That's like legal reviews, privacy policies, quantum task pages, reply for support, cookies, policies and just ensuring that everything that I've done on the side from my side is legally compliant and this application is ready to go and that's a lot around what I've been doing now in day 18 to get all the groundwork ready for when I want to release this on Android and iOS. There is currently a web version available and a lot of that work is being done currently and has been done previously so you will notice that on the side you'll see all of these extra pages on the side and the link for that will be above here and so if you haven't had a look at it, it's called Ataloria. It's a travel social media application. If you haven't signed up, I'd recommend signing up. If you just want to take a look at what the application looks like, there's a demo account I can use to play around with and this is the application I'm building and I'm super proud of it."
+  ],
   "tags": [],
   "links": {
     "tiktok": "https://www.tiktok.com/@manrajtalks/video/7683673464330407190"
@@ -17,5 +20,18 @@
   "slides": [],
   "cover": "/notes/day-18-legal-compliance-checks/cover.jpg",
   "views": 671,
-  "guide": null
+  "guide": [
+    "Turn an AI coding assistant into a pre-launch compliance checklist for your app, so legal and privacy groundwork is done before you release. You need an AI assistant (Claude, ChatGPT or Codex), a web version of your app, and a place to host the pages.",
+    "1. Open Claude and ask it to produce a pre-launch checklist as an artifact, covering what your app type needs before release.",
+    "1. Make sure the list includes legal review, a privacy policy, terms of service, a cookie policy and a support or contact page.",
+    "1. Ask the assistant to mark each item as done, missing or needs a lawyer, based on what your app actually does with user data.",
+    "1. Have Claude Code or Codex build the missing pages (privacy, terms, cookies, support) in your web app and link them from the footer or sidebar.",
+    "1. Deploy the updated site to a host such as Vercel so the pages have public URLs.",
+    "1. Add a demo account so reviewers and early users can look around without signing up.",
+    "1. Re-run the checklist before each release, including the Android and iOS store submissions, and tick items off as you finish them.",
+    "Watch out: an AI-written checklist and policy pages are a starting point, not legal advice, so have a qualified person review anything that carries legal weight.",
+    "## Prompt to build your own",
+    "```\nYou are helping me prepare my app for public launch. The app is <app name>, a <one-line description>. It runs as a <web app / mobile app> built with <tech stack>, hosted on <host>. It collects <types of user data, e.g. email, location, photos> and I plan to release on <web / Android / iOS> in <country or region>.\nFirst, produce a pre-launch compliance checklist as a single document I can tick through. Cover at least: legal review, privacy policy, terms of service, cookie policy, a support or contact page, data deletion and account removal, and app store requirements for <stores>. Mark each item as done, missing or needs a professional, based on what the app does.\nThen, for every missing page, write a first draft in plain English and add it to my codebase as a route linked from the footer. Do not invent company details; use placeholders like <company name> and <contact email>.\nReturn the checklist, the list of files you changed, and a short note on which items I should have a lawyer review.\n```",
+    "Skipped: I haven't checked the claims against the live app. The guide assumes a generic web stack, since the source doesn't name Ataloria's."
+  ]
 }

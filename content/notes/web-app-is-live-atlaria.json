@@ -7,9 +7,12 @@
   "episode": null,
   "pillar": "Building in public",
   "hook": "",
-  "keyword": null,
-  "summary": "",
-  "body": [],
+  "keyword": "ATLARIA",
+  "summary": "TikTok caption: The Web App is live it's called: Atlaria LINK: atlaria.app  #fyp #traveltok  #desi #travel #app",
+  "body": [
+    "TikTok caption: The Web App is live it's called: Atlaria LINK: atlaria.app  #fyp #traveltok  #desi #travel #app",
+    "Transcript (auto, from the TikTok video): Thank you so much everyone. Today's the release of the application is called Atalaria and if I'm honest with you I've been doing the social media thing for a while and it's been on and off and I wasn't sure I'm just a Punjabi boy trying to navigate the world and build applications and use AI and tools at that I do it somewhat for work as a tech group and to be honest with you I wasn't sure how it's gonna land and a lot of people have seen the app and a lot of people per se in real life and give me real-time feedback and now it's at the point where I feel like I'm comfortable releasing it to the web or Online so this is a web version of it There will be a mobile version on Apple and on Android. I'll be working on that in the background But it's any feedback or anything you think I need you to prove Let me know I'm happy to add those features in or made those changes It will be paid in some aspects or components of it at the moment. It's not but I'm just like in the future will be But this is the start of a journey of a new global social media app and I want to be at the forefront of it And I hope you guys can join me on my journey. Thank you"
+  ],
   "tags": [],
   "links": {
     "tiktok": "https://www.tiktok.com/@manrajtalks/video/7677203293319269654"
@@ -17,5 +20,18 @@
   "slides": [],
   "cover": "/notes/web-app-is-live-atlaria/cover.jpg",
   "views": 271,
-  "guide": null
+  "guide": [
+    "This post is a web app launch: a social app built with AI tools, shown to people in person first, then released online. You need an idea, an AI coding assistant (ChatGPT / Codex or Claude Code), a free Vercel account and a domain name.",
+    "1. Write down what the app does for one person in one sentence, then list the three screens it needs to do that.",
+    "1. Ask ChatGPT (Codex) or Claude Code to build those screens as a Next.js web app and run it on your own computer.",
+    "1. Add sign-in and a database with Supabase, so people can create accounts and save what they post.",
+    "1. Show the app to real people in person and write down what they ask for or get stuck on.",
+    "1. Fix the top two or three points from that feedback before you share anything publicly.",
+    "1. Deploy the app to Vercel from your code repository and connect your domain name to it.",
+    "1. Share the link, collect feedback in one place, and decide later which parts to charge for.",
+    "Watch out: Release the web version first and test it on real people, because the mobile apps for Apple and Android take longer to build and get approved.",
+    "## Prompt to build your own",
+    "```\nYou are my senior full-stack developer. Help me build and launch a web app called <app name> that does this for the user: <one-sentence description>.\nI have: <ChatGPT / Codex or Claude Code>, a Vercel account, a Supabase account, a GitHub account and the domain <my domain>. I am not an experienced developer, so explain each step in plain English before you do it.\nBuild:\n- A Next.js web app with these screens: <screen 1>, <screen 2>, <screen 3>.\n- Sign-up and sign-in using Supabase Auth.\n- A Supabase database for <what users create or save>, with row-level security so each user only sees what they should.\n- A simple feedback form so testers can send me comments.\nConstraints:\n- Keep it to the smallest version that works.\n- Do not add payments yet, but leave room to charge for some features later.\n- Keep all keys in environment variables, never in the code.\nReturn: the project structure, the commands to run it locally, the Supabase tables and policies to create, and step-by-step instructions to deploy it on Vercel and connect my domain.\n```",
+    "Skipped: nothing checked against the live app. The source gives no tech stack, so the tools named are suggestions the reader can swap."
+  ]
 }
