@@ -25,5 +25,19 @@
   },
   "slides": [],
   "cover": "/notes/claude-edits-my-reels-now-5-jobs-a-2-min-re-render-motion/cover.jpg",
-  "views": null
+  "views": null,
+  "guide": [
+    "Edit talking-head reels with an AI assistant doing the repetitive cutting, so a change is a quick re-render instead of a manual re-edit. You need raw clips of yourself talking, an AI coding assistant (Claude Code, or ChatGPT with Codex), ffmpeg, and a speech-to-text tool with word timings such as OpenAI Whisper.",
+    "1. Record each line of your script as one or more takes, and keep all the raw clips in a single folder.",
+    "1. Transcribe every clip with Whisper so each word has a start and end time.",
+    "1. Ask Claude Code to compare the takes of each line and keep the cleanest one, meaning the fewest stumbles and fillers.",
+    "1. Have it cut the dead air between lines with ffmpeg, using the word timings to trim the silence and nothing else.",
+    "1. Generate captions from the same transcript, one word at a time, and add a custom word list so names and brand terms are spelled correctly.",
+    "1. Add motion graphics (word pops, counters, title cards) as an overlay rendered from HTML or a video library, then composite them over the footage with ffmpeg.",
+    "1. Extract a frame at every cut and check that no caption, face or graphic sits outside the platform's safe zone.",
+    "1. Re-render the whole reel from one command, so each tweak costs about two minutes, then watch it in full before you post it in CapCut, Metricool or the app itself.",
+    "Watch out: never post without watching the finished reel yourself, because automated cuts and captions can still clip a word or misread a name.",
+    "## Prompt to build your own",
+    "```\nYou are my video-editing assistant. Build a command-line pipeline that turns raw vertical (9:16) talking-head clips into a finished short-form reel.\nTools I have: <AI assistant, e.g. Claude Code>, ffmpeg, Python, and <speech-to-text tool, e.g. OpenAI Whisper>. My clips are in <folder path>, and my script has <number> lines.\nBuild these stages, each runnable on its own:\n1. Transcribe every clip with word-level timings.\n2. Match takes to script lines, then pick the cleanest take of each line (fewest fillers, restarts and stumbles).\n3. Cut dead air between lines using the word timings.\n4. Burn in word-by-word captions, using this list of names and terms to spell correctly: <my brand and product names>.\n5. Add simple motion graphics at the moments I mark: <list of moments and what to show>.\n6. Export frames at every cut and flag any text or face outside the safe zone of <platform, e.g. Instagram and TikTok>.\n7. Render the final reel from a single command, with a cache so a small edit only re-renders what changed.\nReturn the code, a short README with the run command, and a list of anything you could not check automatically so I can review it by eye.\n```"
+  ]
 }
