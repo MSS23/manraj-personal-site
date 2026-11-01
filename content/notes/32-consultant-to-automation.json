@@ -32,5 +32,15 @@
     "/notes/32-consultant-to-automation/7.jpg"
   ],
   "cover": "/notes/32-consultant-to-automation/cover.jpg",
-  "style": "ai_herway"
+  "style": "ai_herway",
+  "guide": [
+    "## Slides",
+    "1. What companies pay consultants for that you can automate",
+    "1. A lot of consulting is repeat work",
+    "1. Anything that follows a template",
+    "1. The judgement calls",
+    "1. Free up people for the good work",
+    "1. Pick your most boring recurring task",
+    "1. What eats your week?"
+  ]
 }

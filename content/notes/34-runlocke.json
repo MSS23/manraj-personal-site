@@ -33,5 +33,15 @@
     "/notes/34-runlocke/7.jpg"
   ],
   "cover": "/notes/34-runlocke/cover.jpg",
-  "style": "manrajtalks"
+  "style": "manrajtalks",
+  "guide": [
+    "## Slides",
+    "1. I built the Nuzlocke tracker I always wanted",
+    "1. Nuzlocke runs live in notes apps",
+    "1. Quick Nuzlocke refresher",
+    "1. Built for Nuzlocke and Kaizo runs",
+    "1. Niche first, features second",
+    "1. Start your next run with it",
+    "1. Doing a run right now?"
+  ]
 }

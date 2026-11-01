@@ -32,5 +32,15 @@
     "/notes/17-pre-mortem/7.jpg"
   ],
   "cover": "/notes/17-pre-mortem/cover.jpg",
-  "style": "manrajtalks"
+  "style": "manrajtalks",
+  "guide": [
+    "## Slides",
+    "1. The pre-mortem: find out why it failed before it does",
+    "1. Imagine it already failed",
+    "1. Turn each cause into a guardrail",
+    "1. Decisions worth an hour of thought",
+    "1. A side-project launch",
+    "1. Don't let it scare you off",
+    "1. Save this one"
+  ]
 }

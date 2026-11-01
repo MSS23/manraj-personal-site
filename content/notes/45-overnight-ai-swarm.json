@@ -33,5 +33,15 @@
     "/notes/45-overnight-ai-swarm/7.jpg"
   ],
   "cover": "/notes/45-overnight-ai-swarm/cover.jpg",
-  "style": "manrajtalks"
+  "style": "manrajtalks",
+  "guide": [
+    "## Slides",
+    "1. AI agents work on my app while I sleep",
+    "1. Wake up to finished work",
+    "1. Two waves, one branch",
+    "1. Connected through MCP",
+    "1. Nothing ships without me",
+    "1. Your first overnight agent",
+    "1. Want the full setup?"
+  ]
 }

@@ -34,5 +34,15 @@
     "/notes/19-agents-explained/7.jpg"
   ],
   "cover": "/notes/19-agents-explained/cover.jpg",
-  "style": "manrajtalks"
+  "style": "manrajtalks",
+  "guide": [
+    "## Slides",
+    "1. AI agents, explained without the hype",
+    "1. A chatbot answers",
+    "1. A workflow follows your steps",
+    "1. An agent chooses its own steps",
+    "1. Most tasks don't need an agent",
+    "1. Build the boring version first",
+    "1. Questions about agents?"
+  ]
 }

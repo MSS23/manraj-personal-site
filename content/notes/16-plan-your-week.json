@@ -33,5 +33,15 @@
     "/notes/16-plan-your-week/7.jpg"
   ],
   "cover": "/notes/16-plan-your-week/cover.jpg",
-  "style": "manrajtalks"
+  "style": "manrajtalks",
+  "guide": [
+    "## Slides",
+    "1. Plan a realistic week in 10 minutes",
+    "1. Your to-do list assumes you are a robot",
+    "1. Give it your real constraints",
+    "1. \"Tell me what to drop\"",
+    "1. Add energy, not just time",
+    "1. 10 minutes, once a week",
+    "1. Save this one"
+  ]
 }

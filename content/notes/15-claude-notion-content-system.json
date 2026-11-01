@@ -33,5 +33,15 @@
     "/notes/15-claude-notion-content-system/7.jpg"
   ],
   "cover": "/notes/15-claude-notion-content-system/cover.jpg",
-  "style": "manrajtalks"
+  "style": "manrajtalks",
+  "guide": [
+    "## Slides",
+    "1. My content system: Notion + Claude",
+    "1. Every idea is a card that moves",
+    "1. The boring parts, not the creative ones",
+    "1. Every post gets a real score",
+    "1. App on screen wins",
+    "1. Set up your own in an evening",
+    "1. Want the template?"
+  ]
 }

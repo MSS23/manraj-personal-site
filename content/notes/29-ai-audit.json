@@ -35,5 +35,15 @@
     "/notes/29-ai-audit/7.jpg"
   ],
   "cover": "/notes/29-ai-audit/cover.jpg",
-  "style": "manrajtalks"
+  "style": "manrajtalks",
+  "guide": [
+    "## Slides",
+    "1. Where should a small business start with AI?",
+    "1. \"We should use AI\" is not a plan",
+    "1. Map a normal week",
+    "1. Score each task",
+    "1. Automate one thing properly",
+    "1. Measure, then repeat",
+    "1. Want me to do this for you?"
+  ]
 }

@@ -33,5 +33,15 @@
     "/notes/08-cv-feedback/7.jpg"
   ],
   "cover": "/notes/08-cv-feedback/cover.jpg",
-  "style": "manrajtalks"
+  "style": "manrajtalks",
+  "guide": [
+    "## Slides",
+    "1. Get brutal CV feedback before a recruiter does",
+    "1. Friends are too nice about your CV",
+    "1. Make it play a specific reader",
+    "1. Ask for the 30-second scan",
+    "1. Fix the bullets that do nothing",
+    "1. Keep it honest",
+    "1. Save this one"
+  ]
 }

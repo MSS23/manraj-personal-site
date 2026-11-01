@@ -33,5 +33,15 @@
     "/notes/23-weekly-report/7.jpg"
   ],
   "cover": "/notes/23-weekly-report/cover.jpg",
-  "style": "manrajtalks"
+  "style": "manrajtalks",
+  "guide": [
+    "## Slides",
+    "1. The weekly report that writes itself",
+    "1. Friday afternoon, copying numbers into slides",
+    "1. Data in, summary out",
+    "1. Ask for \"so what\", not a recap",
+    "1. Numbers come from code, words from AI",
+    "1. Start with one report",
+    "1. Got a boring task?"
+  ]
 }

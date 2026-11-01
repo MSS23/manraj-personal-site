@@ -34,5 +34,15 @@
     "/notes/37-card-shop-crm/7.jpg"
   ],
   "cover": "/notes/37-card-shop-crm/cover.jpg",
-  "style": "manrajtalks"
+  "style": "manrajtalks",
+  "guide": [
+    "## Slides",
+    "1. Building a CRM for Pokémon card shops",
+    "1. Card shops run on memory",
+    "1. Three features came straight from the owner",
+    "1. Want-list matching",
+    "1. No importing anyone's chats",
+    "1. Spec first, AI second",
+    "1. Follow the build"
+  ]
 }

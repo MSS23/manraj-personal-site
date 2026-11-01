@@ -34,5 +34,15 @@
     "/notes/12-spreadsheets/7.jpg"
   ],
   "cover": "/notes/12-spreadsheets/cover.jpg",
-  "style": "manrajtalks"
+  "style": "manrajtalks",
+  "guide": [
+    "## Slides",
+    "1. Never google an Excel formula again",
+    "1. Spreadsheets are full of things you half-remember",
+    "1. Write formulas from plain English",
+    "1. Explain a formula someone else wrote",
+    "1. Clean messy data",
+    "1. Test before you trust it",
+    "1. Save this one"
+  ]
 }

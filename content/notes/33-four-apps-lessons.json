@@ -30,5 +30,15 @@
     "/notes/33-four-apps-lessons/7.jpg"
   ],
   "cover": "/notes/33-four-apps-lessons/cover.jpg",
-  "style": "manrajtalks"
+  "style": "manrajtalks",
+  "guide": [
+    "## Slides",
+    "1. I shipped 4 apps with a full-time job. Here's what nobody tells you.",
+    "1. Build for a niche you're already in",
+    "1. AI types. You decide what good looks like.",
+    "1. Ship it ugly",
+    "1. People want the mess, not the polish",
+    "1. Start your first one this weekend",
+    "1. Which one should I break down?"
+  ]
 }

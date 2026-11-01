@@ -30,5 +30,15 @@
     "/notes/27-mcp-explained/7.jpg"
   ],
   "cover": "/notes/27-mcp-explained/cover.jpg",
-  "style": "manrajtalks"
+  "style": "manrajtalks",
+  "guide": [
+    "## Slides",
+    "1. MCP: why AI can suddenly use your tools",
+    "1. AI was stuck in a chat box",
+    "1. A standard plug between AI and tools",
+    "1. Your tools become AI tools",
+    "1. An MCP server for Pokémon damage calcs",
+    "1. You are probably one click away",
+    "1. Want to see it work?"
+  ]
 }

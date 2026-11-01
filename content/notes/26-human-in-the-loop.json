@@ -32,5 +32,15 @@
     "/notes/26-human-in-the-loop/7.jpg"
   ],
   "cover": "/notes/26-human-in-the-loop/cover.jpg",
-  "style": "manrajtalks"
+  "style": "manrajtalks",
+  "guide": [
+    "## Slides",
+    "1. The one rule I follow for every AI automation",
+    "1. Fully automatic sounds great until it isn't",
+    "1. Draft automatically, approve manually",
+    "1. Earn full automation",
+    "1. Anything you can't take back",
+    "1. One tap, on your phone",
+    "1. Got a boring task?"
+  ]
 }

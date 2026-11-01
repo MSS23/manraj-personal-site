@@ -32,5 +32,15 @@
     "/notes/46-gelato-index/7.jpg"
   ],
   "cover": "/notes/46-gelato-index/cover.jpg",
-  "style": "manrajtalks"
+  "style": "manrajtalks",
+  "guide": [
+    "## Slides",
+    "1. Rating London gelato like a data scientist",
+    "1. Every \"best gelato\" list is vibes",
+    "1. Four scores, weighted",
+    "1. Keeping it fair",
+    "1. AI picks, I verify",
+    "1. Updated every episode",
+    "1. Where should I go first?"
+  ]
 }

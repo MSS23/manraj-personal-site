@@ -33,5 +33,15 @@
     "/notes/36-ship-fast-stack/7.jpg"
   ],
   "cover": "/notes/36-ship-fast-stack/cover.jpg",
-  "style": "manrajtalks"
+  "style": "manrajtalks",
+  "guide": [
+    "## Slides",
+    "1. The stack I use to ship side projects fast",
+    "1. Pick boring tools you already know",
+    "1. Next.js + TypeScript",
+    "1. Supabase does the boring parts",
+    "1. Vercel + monitoring from day one",
+    "1. How I use Claude while building",
+    "1. Follow the build"
+  ]
 }

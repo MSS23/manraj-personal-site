@@ -34,5 +34,15 @@
     "/notes/01-claude-prompts-that-push-back/7.jpg"
   ],
   "cover": "/notes/01-claude-prompts-that-push-back/cover.jpg",
-  "style": "manrajtalks"
+  "style": "manrajtalks",
+  "guide": [
+    "## Slides",
+    "1. Most people use Claude like a search bar. Do this instead.",
+    "1. Out of the box, AI is a yes-man",
+    "1. Find the patterns you keep missing",
+    "1. Make it argue against your plan",
+    "1. Shrink the goal until you can't fail",
+    "1. The prompt matters less than this",
+    "1. Try one tonight"
+  ]
 }

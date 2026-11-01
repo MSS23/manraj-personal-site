@@ -33,5 +33,15 @@
     "/notes/11-learn-anything-faster/7.jpg"
   ],
   "cover": "/notes/11-learn-anything-faster/cover.jpg",
-  "style": "manrajtalks"
+  "style": "manrajtalks",
+  "guide": [
+    "## Slides",
+    "1. Use Claude as a tutor, not an answer machine",
+    "1. Getting answers is not learning",
+    "1. Make it teach, not tell",
+    "1. Three follow-ups that work",
+    "1. Learn from more than one place",
+    "1. One topic, one week",
+    "1. Save this one"
+  ]
 }

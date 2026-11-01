@@ -29,5 +29,15 @@
     "/notes/41-vgc-mcp/7.jpg"
   ],
   "cover": "/notes/41-vgc-mcp/cover.jpg",
-  "style": "manrajtalks"
+  "style": "manrajtalks",
+  "guide": [
+    "## Slides",
+    "1. I gave Claude a Pokémon damage calculator",
+    "1. AI is confidently wrong at damage calcs",
+    "1. Give it a real calculator",
+    "1. Built for competitive VGC",
+    "1. Open source, heavily tested",
+    "1. Not just for Pokémon",
+    "1. Want to try it?"
+  ]
 }

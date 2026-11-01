@@ -32,5 +32,15 @@
     "/notes/07-voice-note-to-post/7.jpg"
   ],
   "cover": "/notes/07-voice-note-to-post/cover.jpg",
-  "style": "manrajtalks"
+  "style": "manrajtalks",
+  "guide": [
+    "## Slides",
+    "1. Talk for 3 minutes. Get a finished post.",
+    "1. Talking is easier than typing",
+    "1. Record yourself explaining one idea",
+    "1. Let Claude shape it",
+    "1. Keep your words, lose the waffle",
+    "1. Make it a habit",
+    "1. Save this one"
+  ]
 }

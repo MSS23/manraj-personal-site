@@ -34,5 +34,15 @@
     "/notes/40-new-ai-job-14-days/7.jpg"
   ],
   "cover": "/notes/40-new-ai-job-14-days/cover.jpg",
-  "style": "manrajtalks"
+  "style": "manrajtalks",
+  "guide": [
+    "## Slides",
+    "1. I start a new AI job in 14 days. I've never used LangGraph.",
+    "1. New job, new framework",
+    "1. Fundamentals first",
+    "1. Build one real agent",
+    "1. Claude as tutor, docs as truth",
+    "1. Daily posts until I start",
+    "1. Learn agents with me"
+  ]
 }

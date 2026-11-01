@@ -33,5 +33,15 @@
     "/notes/22-meeting-notes-to-tasks/7.jpg"
   ],
   "cover": "/notes/22-meeting-notes-to-tasks/cover.jpg",
-  "style": "manrajtalks"
+  "style": "manrajtalks",
+  "guide": [
+    "## Slides",
+    "1. Meeting ends. Tasks are already assigned.",
+    "1. Great meeting, nothing happens",
+    "1. From call to task list",
+    "1. Ask for structure",
+    "1. Only real commitments",
+    "1. Set it up once",
+    "1. Got a boring task?"
+  ]
 }

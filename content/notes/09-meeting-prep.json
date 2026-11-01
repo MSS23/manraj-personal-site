@@ -33,5 +33,15 @@
     "/notes/09-meeting-prep/7.jpg"
   ],
   "cover": "/notes/09-meeting-prep/cover.jpg",
-  "style": "manrajtalks"
+  "style": "manrajtalks",
+  "guide": [
+    "## Slides",
+    "1. Prep for any meeting in 5 minutes",
+    "1. Most people prep by re-reading the agenda",
+    "1. Three things, in under a minute",
+    "1. Prep for the other person too",
+    "1. Turn notes into actions",
+    "1. 5 minutes before every meeting",
+    "1. Save this one"
+  ]
 }

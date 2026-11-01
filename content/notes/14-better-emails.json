@@ -34,5 +34,15 @@
     "/notes/14-better-emails/7.jpg"
   ],
   "cover": "/notes/14-better-emails/cover.jpg",
-  "style": "manrajtalks"
+  "style": "manrajtalks",
+  "guide": [
+    "## Slides",
+    "1. One prompt for emails people actually reply to",
+    "1. Most emails bury the ask",
+    "1. Four things at once",
+    "1. Saying no, chasing, pushing back",
+    "1. Same email, half the length",
+    "1. Then you do the last bit",
+    "1. Save this one"
+  ]
 }

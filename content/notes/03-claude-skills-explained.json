@@ -30,5 +30,15 @@
     "/notes/03-claude-skills-explained/7.jpg"
   ],
   "cover": "/notes/03-claude-skills-explained/cover.jpg",
-  "style": "manrajtalks"
+  "style": "manrajtalks",
+  "guide": [
+    "## Slides",
+    "1. Claude Skills, explained in 60 seconds",
+    "1. A skill is a folder of instructions",
+    "1. What goes in the folder",
+    "1. When to make one",
+    "1. Skills worth building first",
+    "1. Build your first one in 15 minutes",
+    "1. Save this one"
+  ]
 }

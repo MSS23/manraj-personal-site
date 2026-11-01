@@ -32,5 +32,15 @@
     "/notes/25-signs-to-automate/7.jpg"
   ],
   "cover": "/notes/25-signs-to-automate/cover.jpg",
-  "style": "manrajtalks"
+  "style": "manrajtalks",
+  "guide": [
+    "## Slides",
+    "1. 5 signs a task should be automated",
+    "1. It happens every week",
+    "1. Same rules, copy-paste between apps",
+    "1. It starts with an event",
+    "1. Mistakes are annoying, not fatal",
+    "1. 3 or more? Automate it.",
+    "1. What scored highest?"
+  ]
 }

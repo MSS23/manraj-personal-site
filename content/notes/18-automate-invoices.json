@@ -33,5 +33,15 @@
     "/notes/18-automate-invoices/7.jpg"
   ],
   "cover": "/notes/18-automate-invoices/cover.jpg",
-  "style": "manrajtalks"
+  "style": "manrajtalks",
+  "guide": [
+    "## Slides",
+    "1. Companies pay consultants for this. It's 4 nodes in n8n.",
+    "1. Every invoice, by hand",
+    "1. One email in. The rest runs on its own.",
+    "1. Ask for data, not a paragraph",
+    "1. Email in, spreadsheet out",
+    "1. Set it up this afternoon",
+    "1. Want the workflow?"
+  ]
 }

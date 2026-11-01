@@ -33,5 +33,15 @@
     "/notes/43-claude-vgc-team/7.jpg"
   ],
   "cover": "/notes/43-claude-vgc-team/cover.jpg",
-  "style": "manrajtalks"
+  "style": "manrajtalks",
+  "guide": [
+    "## Slides",
+    "1. Using Claude to build a VGC team (the right way)",
+    "1. Don't trust AI on numbers",
+    "1. Brainstorming and threats",
+    "1. Exact calcs and speed tiers",
+    "1. Connect a calculator",
+    "1. How I'd build a team",
+    "1. What is your core?"
+  ]
 }

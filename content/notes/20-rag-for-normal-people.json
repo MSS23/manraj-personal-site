@@ -32,5 +32,15 @@
     "/notes/20-rag-for-normal-people/7.jpg"
   ],
   "cover": "/notes/20-rag-for-normal-people/cover.jpg",
-  "style": "manrajtalks"
+  "style": "manrajtalks",
+  "guide": [
+    "## Slides",
+    "1. How to make AI answer from your own documents",
+    "1. AI doesn't know your stuff",
+    "1. Look it up first, then answer",
+    "1. You don't need to train a model",
+    "1. Anywhere people ask the same questions",
+    "1. It is only as good as your docs",
+    "1. Want a demo?"
+  ]
 }

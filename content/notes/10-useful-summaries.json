@@ -32,5 +32,15 @@
     "/notes/10-useful-summaries/7.jpg"
   ],
   "cover": "/notes/10-useful-summaries/cover.jpg",
-  "style": "manrajtalks"
+  "style": "manrajtalks",
+  "guide": [
+    "## Slides",
+    "1. Stop asking AI to \"summarise this\"",
+    "1. A summary is just a shorter wall of text",
+    "1. Ask for the useful parts only",
+    "1. Ask what it means for you",
+    "1. Make it show its working",
+    "1. Things you skim every week",
+    "1. Save this one"
+  ]
 }

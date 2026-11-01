@@ -34,5 +34,15 @@
     "/notes/13-where-ai-gets-it-wrong/7.jpg"
   ],
   "cover": "/notes/13-where-ai-gets-it-wrong/cover.jpg",
-  "style": "leadwithzoe"
+  "style": "leadwithzoe",
+  "guide": [
+    "## Slides",
+    "1. 4 ways AI gets things wrong (and how to check)",
+    "1. Tone is not evidence",
+    "1. Always click the link",
+    "1. Let it use a calculator",
+    "1. Check anything that changes",
+    "1. Use AI for drafts, not final answers",
+    "1. Save this one"
+  ]
 }

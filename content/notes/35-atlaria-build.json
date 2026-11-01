@@ -33,5 +33,15 @@
     "/notes/35-atlaria-build/7.jpg"
   ],
   "cover": "/notes/35-atlaria-build/cover.jpg",
-  "style": "manrajtalks"
+  "style": "manrajtalks",
+  "guide": [
+    "## Slides",
+    "1. Building a travel app in public: the honest version",
+    "1. Your travels on a 3D globe",
+    "1. How one person ships web and mobile",
+    "1. Crashes, right after launch",
+    "1. Showing the app on screen",
+    "1. If you are building in public",
+    "1. Follow the build"
+  ]
 }

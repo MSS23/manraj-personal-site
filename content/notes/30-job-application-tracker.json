@@ -33,5 +33,15 @@
     "/notes/30-job-application-tracker/7.jpg"
   ],
   "cover": "/notes/30-job-application-tracker/cover.jpg",
-  "style": "manrajtalks"
+  "style": "manrajtalks",
+  "guide": [
+    "## Slides",
+    "1. Job hunting? Let your inbox track it for you",
+    "1. 30 applications, no idea where any of them are",
+    "1. Your inbox does the admin",
+    "1. Classify and extract",
+    "1. Prep notes for every interview",
+    "1. Build it in one evening",
+    "1. Got a boring task?"
+  ]
 }

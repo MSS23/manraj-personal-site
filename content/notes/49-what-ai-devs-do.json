@@ -32,5 +32,15 @@
     "/notes/49-what-ai-devs-do/7.jpg"
   ],
   "cover": "/notes/49-what-ai-devs-do/cover.jpg",
-  "style": "manrajtalks"
+  "style": "manrajtalks",
+  "guide": [
+    "## Slides",
+    "1. What an AI developer actually does all day",
+    "1. Not training giant models",
+    "1. What fills the day",
+    "1. Checking the output",
+    "1. If you want this job",
+    "1. How I'd start today",
+    "1. Questions about the job?"
+  ]
 }

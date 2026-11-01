@@ -32,5 +32,15 @@
     "/notes/38-pitch-a-redesign/7.jpg"
   ],
   "cover": "/notes/38-pitch-a-redesign/cover.jpg",
-  "style": "michaelai"
+  "style": "michaelai",
+  "guide": [
+    "## Slides",
+    "1. I redesigned a local business's website before they asked",
+    "1. A demo beats a proposal",
+    "1. Go there and take photos",
+    "1. Build it fast with AI",
+    "1. Send a short, human message",
+    "1. Do it respectfully",
+    "1. Follow the build"
+  ]
 }

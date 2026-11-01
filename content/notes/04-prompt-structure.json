@@ -30,5 +30,15 @@
     "/notes/04-prompt-structure/7.jpg"
   ],
   "cover": "/notes/04-prompt-structure/cover.jpg",
-  "style": "ai_herway"
+  "style": "ai_herway",
+  "guide": [
+    "## Slides",
+    "1. The 5-part prompt I use for almost everything",
+    "1. Vague prompt in, vague answer out",
+    "1. Five parts, in this order",
+    "1. Same request, very different result",
+    "1. The example does the heavy lifting",
+    "1. Use it on your next task",
+    "1. Save this one"
+  ]
 }

@@ -33,5 +33,15 @@
     "/notes/42-vgc-team-report/7.jpg"
   ],
   "cover": "/notes/42-vgc-team-report/cover.jpg",
-  "style": "michaelai"
+  "style": "michaelai",
+  "guide": [
+    "## Slides",
+    "1. I built a tool for competitive Pokémon players. 100+ signed up.",
+    "1. Sharing teams is messy",
+    "1. Team reports the community can use",
+    "1. AI works on it overnight",
+    "1. Small communities are a great start",
+    "1. Try VGC Team Report",
+    "1. Play VGC?"
+  ]
 }

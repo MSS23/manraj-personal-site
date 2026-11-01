@@ -32,5 +32,15 @@
     "/notes/44-draftpokemon/7.jpg"
   ],
   "cover": "/notes/44-draftpokemon/cover.jpg",
-  "style": "manrajtalks"
+  "style": "manrajtalks",
+  "guide": [
+    "## Slides",
+    "1. Draft leagues shouldn't run on broken spreadsheets",
+    "1. The spreadsheet always breaks",
+    "1. A tool built just for draft leagues",
+    "1. Talking to users directly",
+    "1. Your users are your roadmap",
+    "1. Try it for your next season",
+    "1. Commissioners, I need you"
+  ]
 }

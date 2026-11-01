@@ -30,5 +30,15 @@
     "/notes/02-claude-projects/7.jpg"
   ],
   "cover": "/notes/02-claude-projects/cover.jpg",
-  "style": "manrajtalks"
+  "style": "manrajtalks",
+  "guide": [
+    "## Slides",
+    "1. Stop re-explaining yourself to Claude every chat",
+    "1. Every new chat starts from zero",
+    "1. A Project is a workspace with memory built in",
+    "1. Three things make the biggest difference",
+    "1. My content project instructions",
+    "1. One project per area of your life",
+    "1. Save this one"
+  ]
 }

@@ -37,5 +37,15 @@
     "/notes/06-plan-a-month-of-content/9.jpg"
   ],
   "cover": "/notes/06-plan-a-month-of-content/cover.jpg",
-  "style": "manrajtalks"
+  "style": "manrajtalks",
+  "guide": [
+    "## Slides",
+    "1. Plan a month of content in one afternoon",
+    "1. Most content plans die on a blank page",
+    "1. Turn your pillars into 30 ideas",
+    "1. One idea, four formats",
+    "1. Plan around your real week",
+    "1. Batch, then forget about it",
+    "1. Save this one"
+  ]
 }
