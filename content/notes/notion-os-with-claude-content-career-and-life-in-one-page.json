@@ -30,6 +30,7 @@
     "1. Build a travel itinerary as its own Notion page listing where you will be and when, then use Notion's Share option to send it to people.",
     "1. Open the hub on your phone, tap through each area, and ask Claude to fix anything that is missing or in the wrong place.",
     "Watch out: let Claude build the structure rather than dragging blocks by hand, and only share the travel page, never the hub, since the hub holds your money and goals.",
-    "## Prompt to build your own"
+    "## Prompt to build your own",
+    "```\nYou are helping me build a personal operating system in Notion. I have a Notion account and you are connected to my workspace through Notion's connector. Create one hub page called <hub name> that links to separate databases for: content ideas, money, goals, apps and travel. For content ideas, give each row properties for hook, script, shots and camera angles, platform and status, plus a place for notes on what other creators in <my niche> are posting. For money, create one row per month with a checkbox for whether I hit my savings target of <amount>. For goals, track one quarterly goal, <my goal>, and this week's experiment. For apps, track bugs and features grouped by project: <my projects>. For travel, create a shareable itinerary page for <trip>, with dates, areas and locations. Use sensible property types, add two example rows to each database, and keep the hub readable on a phone. Do not share anything publicly. When finished, list what you created and anything you were unable to do.\n```"
   ]
 }
