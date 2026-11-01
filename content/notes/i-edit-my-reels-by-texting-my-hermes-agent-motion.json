@@ -7,7 +7,7 @@
   "episode": null,
   "pillar": "AI & automation",
   "hook": "I edit my reels by texting my Hermes agent.",
-  "keyword": "VIDEO",
+  "keyword": "VIDEO EDIT",
   "summary": "Metricool: scheduled Thu 29 Oct 18:00 IG + TikTok",
   "body": [
     "Metricool: scheduled Thu 29 Oct 18:00 IG + TikTok"
@@ -20,5 +20,21 @@
   "slides": [],
   "cover": "/notes/i-edit-my-reels-by-texting-my-hermes-agent-motion/cover.jpg",
   "views": 781,
-  "guide": []
+  "guide": [
+    "What you are building: you film on your phone, drop the clip in a Google Drive folder, and an agent at home turns it into a captioned reel, sends you a preview on Telegram, takes your notes as a reply, and re-cuts it. You only do the final audio pass in CapCut.",
+    "1. Tools (all free tiers work): a Windows or Mac PC that stays on at home; Google Drive for Desktop; Claude Code (claude.ai/code, log in with a Claude Pro or Max plan, no API key); Hermes Agent (github.com/NousResearch/hermes-agent) as the Telegram bot; ffmpeg; CapCut on your phone.",
+    "1. Telegram bot: open @BotFather in Telegram, send /newbot, copy the token. Install Hermes Agent, run `hermes setup`, paste the token, add your own Telegram user id as the only allowed user. Start it with `hermes gateway run`. Send it 'hello' from your phone to check it answers.",
+    "1. Drive folders: in Google Drive make `ManrajTalks/Raw` (phone uploads go here, the Google Drive app on the phone does it), `ManrajTalks/Reels for CapCut` (finished cuts) and `ManrajTalks/CapCut Post Audio edit` (your CapCut export). Google Drive for Desktop mirrors them on the PC as a drive letter.",
+    "1. The watcher: one Python script run by Hermes's cron every 10 minutes (hermes cron: `every 10m`, no agent). It lists Raw, skips clips it has seen (a JSON of names + sizes), waits until the file size has stopped changing, then starts one Claude Code session per new clip.",
+    "1. The edit session, as the watcher starts it:",
+    "```\nclaude -p --output-format json --dangerously-skip-permissions \\\n  \"Edit the reel at <clip path>. Transcribe it with whisper, keep the cleanest take of every line, cut dead air,\n  burn word captions inside the TikTok and Instagram safe zone, open on the hook in the first frame, end on a\n  'comment KEYWORD' card. Write reel.mp4 and captions.txt into <Drive>/Reels for CapCut/<slug>/.\n  Reply with the last lines: FULL: <path of reel.mp4>, HOOK: <first line>, SLUG: <kebab-case name>.\"\n```",
+    "The JSON output carries a session_id. Save it next to the clip name: that is what lets you send notes later.",
+    "1. The preview card: when the session ends, the script posts the finished mp4 to Telegram (sendVideo) with three buttons: ✏️ Notes, ✅ Ship, 🔁 Alt hook. A 720p copy keeps it under Telegram's 50 MB limit (`ffmpeg -i reel.mp4 -vf scale=720:-2 -crf 28 phone.mp4`).",
+    "1. Notes = the same session, resumed. Your next Telegram message after tapping ✏️ Notes is passed back into the SAME Claude Code session, so it still knows the project:",
+    "```\nclaude -p --resume <session_id> \"Manraj's notes on this cut: <your message>. Apply them, re-render, reply with FULL: and HOOK: again.\"\n```",
+    "A voice note works too: Hermes transcribes it first, then the text goes in as the notes. Each round lands as version 2, 3, 4 in the same Drive folder.",
+    "1. Finish on the phone: open the reel from `Reels for CapCut` in CapCut, do the audio pass (that part stays human), export, save the export into `CapCut Post Audio edit`. The watcher sees it there, matches it to the reel by name, and schedules it on Instagram and TikTok through Metricool's API (or posts the file to you if you prefer to publish by hand).",
+    "1. Guardrails that saved me: never let the pipeline touch the voice track (it sounds robotic); one Claude session per clip, resumed, never a fresh one per note; every message the bot sends is one line plus the file; a dead-man ping (a GitHub Actions cron that alerts Telegram when the PC stops checking in).",
+    "1. Want the exact prompts and the watcher script? Comment VIDEO EDIT on the reel or DM @manrajtalks and I will send this page plus the script."
+  ]
 }
