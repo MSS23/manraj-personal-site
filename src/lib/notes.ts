@@ -1,6 +1,6 @@
 import fs from "node:fs";
 import path from "node:path";
-import type { Note } from "@/lib/note-types";
+import { keywordSlug, type Note } from "@/lib/note-types";
 import { WORST_NOTES } from "@/data/notes-worst";
 
 export * from "@/lib/note-types";
@@ -27,6 +27,12 @@ export function getNotes(): Note[] {
 
 export function getNote(slug: string): Note | undefined {
   return getNotes().find((n) => n.slug === slug);
+}
+
+/** The newest note whose comment keyword matches (any case, spaces or hyphens): what /r/<keyword> redirects to. */
+export function getNoteByKeyword(keyword: string): Note | undefined {
+  const key = keywordSlug(keyword);
+  return key ? getNotes().find((n) => n.keyword && keywordSlug(n.keyword) === key) : undefined;
 }
 
 export function getSeries(): string[] {

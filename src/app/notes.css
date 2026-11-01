@@ -128,3 +128,19 @@
 .deck-dots button.is-on::after { transform: translate(-50%, -50%) scaleX(1.6); background: var(--color-ink); }
 .deck-dots button:focus-visible { outline: 2px solid var(--color-focus); outline-offset: 0; }
 .deck-hint { text-align: center; font-size: var(--text-xs); color: var(--color-muted); }
+
+/* Guide: the steps a comment keyword unlocks (/r/<keyword> lands here) */
+.note-guide { display: grid; gap: var(--space-sm); max-width: 62ch; padding: var(--space-lg); border: var(--rule-hair) solid var(--color-ink); border-radius: var(--radius-card); background: var(--color-paper-hi); box-shadow: var(--shadow-sheet); color: var(--color-ink-2); line-height: 1.65; }
+.note-guide h2 { margin: 0; font-family: var(--font-display); font-weight: var(--display-weight); font-size: var(--text-lg); line-height: 1.2; letter-spacing: var(--tracking-display); color: var(--color-ink); }
+.note-guide h3 { margin: 0; font-size: var(--text-sm); color: var(--color-muted); text-transform: uppercase; letter-spacing: 0.04em; }
+.note-guide p { margin: 0; }
+.note-guide ol { margin: 0; padding-left: 1.4em; display: grid; gap: var(--space-xs); }
+.note-guide a { color: var(--color-ink); overflow-wrap: anywhere; }
+.note-guide pre { margin: 0; padding: var(--space-sm); overflow-x: auto; font-size: var(--text-sm); white-space: pre-wrap; overflow-wrap: anywhere; border: var(--rule-hair) solid var(--color-rule); border-radius: var(--radius-card); }
+
+/* /r: every keyword and the note it unlocks */
+.resources { list-style: none; margin: 0; padding: 0; max-width: 62ch; }
+.resources a { display: grid; gap: var(--space-2xs); padding-block: var(--space-md); border-top: var(--rule-hair) solid var(--color-rule); color: inherit; text-decoration: none; }
+.resources strong { font-family: var(--font-display); font-weight: var(--display-weight); font-size: var(--text-lg); line-height: 1.2; letter-spacing: var(--tracking-display); }
+.resources span { font-size: var(--text-sm); color: var(--color-muted); }
+@media (hover: hover) and (pointer: fine) { .resources a:hover strong { text-decoration: underline; text-decoration-color: var(--color-accent); text-decoration-thickness: 1px; } }

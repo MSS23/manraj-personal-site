@@ -16,6 +16,7 @@ export type Note = {
   pillar?: string | null;
   hook?: string | null;
   keyword?: string | null;
+  guide?: string[] | null; // "How to build it": the steps the comment keyword unlocks (site.py: captions.txt GUIDE: or the Notion row body)
   summary: string;
   body: string[];
   tags: string[];
@@ -43,6 +44,9 @@ export function formatDate(iso: string): string {
     year: "numeric",
   });
 }
+
+/** "VIDEO EDIT" -> "video-edit": the /r/<keyword> short link the comment-keyword DM sends. */
+export const keywordSlug = (k: string) => (k.toLowerCase().match(/[a-z0-9]+/g) ?? []).join("-");
 
 /** TikTok video id from a post URL, for the embed player. */
 export function tiktokId(url?: string): string | undefined {

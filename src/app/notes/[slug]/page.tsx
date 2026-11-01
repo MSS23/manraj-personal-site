@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import type { ReactNode } from "react";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Colophon } from "@/components/Colophon";
@@ -49,6 +50,28 @@ function Para({ text }: { text: string }) {
       )}
     </p>
   );
+}
+
+/** Guide lines (site.py): "## " headings, "- " / "1. " steps, ``` code, else a paragraph; a block of step lines becomes one list. */
+function Guide({ lines }: { lines: string[] }) {
+  const out: ReactNode[] = [];
+  let steps: string[] = [];
+  const flush = (key: string) => {
+    if (steps.length) out.push(<ol key={key}>{steps.map((s, i) => <li key={i}><Para text={s} /></li>)}</ol>);
+    steps = [];
+  };
+  lines
+    .flatMap((b) => (b.startsWith("```") ? [b] : b.split("\n")))
+    .forEach((raw, i) => {
+      const step = raw.match(/^(?:-|\d+[.)])\s+(.*)$/);
+      if (step) return void steps.push(step[1]);
+      flush(`l${i}`);
+      if (raw.startsWith("```")) out.push(<pre key={i}><code>{raw.replace(/^```\w*\n?/, "").replace(/\n?```$/, "")}</code></pre>);
+      else if (raw.startsWith("#")) out.push(<h3 key={i}>{raw.replace(/^#+\s*/, "")}</h3>);
+      else if (raw.trim()) out.push(<Para key={i} text={raw} />);
+    });
+  flush("end");
+  return <>{out}</>;
 }
 
 const PLATFORMS: { key: "tiktok" | "instagram" | "linkedin" | "substack"; label: string }[] = [
@@ -116,7 +139,14 @@ export default async function NotePage({ params }: { params: Promise<Params> }) 
                 ))}
               </div>
 
-              {note.keyword && (
+              {note.guide && note.guide.length > 0 && (
+                <section className="note-guide" id="guide" aria-labelledby="guide-title">
+                  <h2 id="guide-title">How to build it</h2>
+                  <Guide lines={note.guide} />
+                </section>
+              )}
+
+              {note.keyword && !note.guide?.length && (
                 <aside className="note-keyword" aria-label="Comment keyword">
                   <span className="note-keyword-label">Want the full version?</span>
                   <span className="note-keyword-word">{note.keyword}</span>
