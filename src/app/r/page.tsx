@@ -24,7 +24,8 @@ export default function ResourcesPage() {
         <section className="container notes-head">
           <h1>Resources</h1>
           <p className="lead">
-            Comment the word on a reel and the guide lands in your DMs. Or pick it straight from here.
+            Comment the word on a reel and the guide lands in your DMs. Or pick it straight from here. Each guide explains the
+            setup with tools you can get yourself and ends with a prompt to paste into ChatGPT or Claude Code to build your own.
           </p>
         </section>
         <section className="container notes-body" aria-label="Guides by keyword">
