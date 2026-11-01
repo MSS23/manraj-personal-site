@@ -35,6 +35,12 @@ export function getNoteByKeyword(keyword: string): Note | undefined {
   return key ? getNotes().find((n) => n.keyword && keywordSlug(n.keyword) === key) : undefined;
 }
 
+/** The note that links this Instagram shortcode or TikTok video id: what /r/<keyword>/<post> resolves first. */
+export function getNoteByPost(id: string): Note | undefined {
+  if (!/^[\w-]{5,}$/.test(id)) return undefined;
+  return getNotes().find((n) => [n.links.instagram, n.links.tiktok].some((u) => u && (u.includes(`/${id}/`) || u.endsWith(`/${id}`))));
+}
+
 export function getSeries(): string[] {
   const counts = new Map<string, number>();
   for (const n of getNotes()) if (n.series) counts.set(n.series, (counts.get(n.series) ?? 0) + 1);
