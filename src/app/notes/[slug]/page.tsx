@@ -153,19 +153,25 @@ export default async function NotePage({ params }: { params: Promise<Params> }) 
               <aside className="note-keyword" aria-label="Resources">
                 <span className="note-keyword-label">Resources</span>
                 <span className="note-keyword-desc">
-                  {note.guide?.length
-                    ? "The build steps are above. The prompts, blueprints, checklists and setups behind every video live in my Notion library."
-                    : "The prompts, blueprints, checklists and setups behind every video live in my Notion library."}
+                  {note.guideUrl
+                    ? "This guide is a standalone Notion page you can send to anyone. The prompts, blueprints, checklists and setups behind every video are in the library."
+                    : note.guide?.length
+                      ? "The build steps are above. The prompts, blueprints, checklists and setups behind every video live in my Notion library."
+                      : "The prompts, blueprints, checklists and setups behind every video live in my Notion library."}
                 </span>
                 <span className="note-keyword-actions">
-                  <a className="btn" href={RESOURCES_URL} target="_blank" rel="noopener noreferrer">
-                    Open the resource library
+                  <a className="btn" href={note.guideUrl ?? RESOURCES_URL} target="_blank" rel="noopener noreferrer">
+                    {note.guideUrl ? "Open this guide in Notion" : "Open the resource library"}
                   </a>
-                  {note.guide && note.guide.length > 0 && (
+                  {note.guideUrl ? (
+                    <a className="btn btn-quiet" href={RESOURCES_URL} target="_blank" rel="noopener noreferrer">
+                      All resources
+                    </a>
+                  ) : note.guide && note.guide.length > 0 ? (
                     <a className="btn btn-quiet" href="#guide">
                       How to build it
                     </a>
-                  )}
+                  ) : null}
                 </span>
               </aside>
 

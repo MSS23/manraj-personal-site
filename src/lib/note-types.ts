@@ -17,6 +17,7 @@ export type Note = {
   hook?: string | null;
   keyword?: string | null;
   guide?: string[] | null; // "How to build it": the steps the comment keyword unlocks (site.py: captions.txt GUIDE: or the Notion row body)
+  guideUrl?: string | null; // the same guide as a standalone public Notion page (guides.py public_page), sendable on its own
   summary: string;
   body: string[];
   tags: string[];
