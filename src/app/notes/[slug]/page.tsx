@@ -10,6 +10,7 @@ import { SlideDeck } from "@/components/SlideDeck";
 import { SubstackForm } from "@/components/SubstackForm";
 import { TikTokEmbed } from "@/components/TikTokEmbed";
 import { formatDate, getNote, getNotes, isVideo, KIND_LABEL, reelEmbed } from "@/lib/notes";
+import { RESOURCES_URL, stripCta } from "@/lib/note-types";
 
 type Params = { slug: string };
 
@@ -21,7 +22,7 @@ export async function generateMetadata({ params }: { params: Promise<Params> }):
   const note = getNote((await params).slug);
   if (!note) return {};
   const url = `https://manrajssidhu.com/notes/${note.slug}`;
-  const description = note.summary || note.hook || note.title;
+  const description = stripCta(note.summary) || note.hook || note.title;
   const image = note.cover ? `https://manrajssidhu.com${note.cover}` : "https://manrajssidhu.com/assets/og-image.png";
   return {
     title: `${note.title} · Manraj Sidhu`,
@@ -134,9 +135,12 @@ export default async function NotePage({ params }: { params: Promise<Params> }) 
               {note.hook && note.hook !== note.title && <p className="note-hook">{note.hook}</p>}
 
               <div className="note-body">
-                {note.body.map((p, i) => (
-                  <Para key={i} text={p} />
-                ))}
+                {note.body
+                  .map(stripCta)
+                  .filter(Boolean)
+                  .map((p, i) => (
+                    <Para key={i} text={p} />
+                  ))}
               </div>
 
               {note.guide && note.guide.length > 0 && (
@@ -146,15 +150,24 @@ export default async function NotePage({ params }: { params: Promise<Params> }) 
                 </section>
               )}
 
-              {note.keyword && !note.guide?.length && (
-                <aside className="note-keyword" aria-label="Comment keyword">
-                  <span className="note-keyword-label">Want the full version?</span>
-                  <span className="note-keyword-word">{note.keyword}</span>
-                  <span className="note-keyword-desc">
-                    {`Comment it on the ${live[0]?.label ?? "Instagram"} post and I'll DM it to you.`}
-                  </span>
-                </aside>
-              )}
+              <aside className="note-keyword" aria-label="Resources">
+                <span className="note-keyword-label">Resources</span>
+                <span className="note-keyword-desc">
+                  {note.guide?.length
+                    ? "The build steps are above. The prompts, blueprints, checklists and setups behind every video live in my Notion library."
+                    : "The prompts, blueprints, checklists and setups behind every video live in my Notion library."}
+                </span>
+                <span className="note-keyword-actions">
+                  <a className="btn" href={RESOURCES_URL} target="_blank" rel="noopener noreferrer">
+                    Open the resource library
+                  </a>
+                  {note.guide && note.guide.length > 0 && (
+                    <a className="btn btn-quiet" href="#guide">
+                      How to build it
+                    </a>
+                  )}
+                </span>
+              </aside>
 
               {live.length > 0 && (
                 <div className="note-platforms">

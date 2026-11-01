@@ -45,6 +45,16 @@ export function formatDate(iso: string): string {
   });
 }
 
+/** The public Notion page with every pack (prompts, blueprints, checklists, setups): where a note sends people instead of "comment X". */
+export const RESOURCES_URL = "https://www.notion.so/3f10d01124e481fa9ecce9c83cfd0232";
+
+/** Caption text without its comment-keyword call to action: on the site the resources are one click away, not a DM. */
+export function stripCta(text: string): string {
+  return text
+    .replace(/(?:^|(?<=[.!?]\s+))Comment\s+["\u201c']?[A-Z]+(?: [A-Z]+)*["\u201d']?[^.!?\n]*[.!?]?\s*/g, "")
+    .trim();
+}
+
 /** "VIDEO EDIT" -> "video-edit": the /r/<keyword> short link the comment-keyword DM sends. */
 export const keywordSlug = (k: string) => (k.toLowerCase().match(/[a-z0-9]+/g) ?? []).join("-");
 

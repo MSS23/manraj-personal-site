@@ -88,6 +88,7 @@
 .note-keyword-label { font-size: var(--text-sm); color: var(--color-muted); }
 .note-keyword-word { overflow-wrap: anywhere; font-family: var(--font-display); font-size: var(--text-2xl); line-height: 1.1; }
 .note-keyword-desc { font-size: var(--text-sm); color: var(--color-ink-2); max-width: 36ch; }
+.note-keyword-actions { display: flex; flex-wrap: wrap; gap: var(--space-sm); margin-top: var(--space-2xs); }
 .note-platforms { display: flex; flex-wrap: wrap; gap: var(--space-sm); }
 .note-tags > li { min-width: 0; overflow-wrap: anywhere; }
 .note-tags { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: var(--space-xs) var(--space-md); font-size: var(--text-sm); color: var(--color-muted); }

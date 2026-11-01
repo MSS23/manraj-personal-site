@@ -3,6 +3,7 @@ import Link from "next/link";
 import { Colophon } from "@/components/Colophon";
 import { Masthead } from "@/components/Masthead";
 import { getNotes, keywordSlug } from "@/lib/notes";
+import { RESOURCES_URL } from "@/lib/note-types";
 import "@/app/notes.css";
 
 export const metadata: Metadata = {
@@ -26,6 +27,11 @@ export default function ResourcesPage() {
           <p className="lead">
             Comment the word on a reel and the guide lands in your DMs. Or pick it straight from here. Each guide explains the
             setup with tools you can get yourself and ends with a prompt to paste into ChatGPT or Claude Code to build your own.
+            The packs themselves (prompts, blueprints, checklists, setups) are in the{" "}
+            <a href={RESOURCES_URL} target="_blank" rel="noopener noreferrer">
+              Notion resource library
+            </a>
+            .
           </p>
         </section>
         <section className="container notes-body" aria-label="Guides by keyword">
