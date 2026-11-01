@@ -33,5 +33,15 @@
     "/notes/05-write-like-you/7.jpg"
   ],
   "cover": "/notes/05-write-like-you/cover.jpg",
-  "style": "manrajtalks"
+  "style": "manrajtalks",
+  "guide": [
+    "## Slides",
+    "1. How to make Claude actually write like you",
+    "1. AI writing sounds like everyone",
+    "1. Feed it your best writing",
+    "1. Turn the rules into a style guide",
+    "1. Use it every time",
+    "1. Always do one human pass",
+    "1. Save this one"
+  ]
 }
