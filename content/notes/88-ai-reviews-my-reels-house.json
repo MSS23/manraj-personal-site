@@ -20,5 +20,17 @@
   "slides": [],
   "cover": null,
   "views": 254,
-  "guide": []
+  "guide": [
+    "This setup has an AI compare your own reels with your competitors' reels and tell you what to change. You need a few of your own reels, a few competitors' reels you can legally get at (links or files you've downloaded), and ChatGPT (Codex) or Claude.",
+    "1. Pick 3 to 5 of your own reels and 3 to 5 reels from competitors who are doing well in your niche.",
+    "1. Get a transcript of each reel, using the platform's own captions or a transcription tool such as OpenAI Whisper.",
+    "1. Note the numbers you can see for each reel: length, views, likes and comments.",
+    "1. Paste your transcripts and the competitors' transcripts into ChatGPT or Claude as two labelled sets, together with the numbers.",
+    "1. Ask it to compare the hooks, structure, length and call to action across the two sets, and to quote the line from each reel that supports every point.",
+    "1. Ask it for a short list of changes to your next reel, ranked by how likely they are to matter.",
+    "1. Save the list somewhere you will see it before you film, such as a Notion page, and tick off each change as you use it.",
+    "Watch out: a handful of reels is a small sample, so treat the AI's review as ideas to test, not as proof of what the algorithm rewards.",
+    "## Prompt to build your own",
+    "```\nYou are a short-form video analyst. I will give you two sets of reel transcripts: Set A is mine and Set B is from competitors in <my niche>. Each reel comes with its length, views, likes and comments.\nCompare the two sets on four things: the opening hook, the structure, the length, and the call to action. For every point you make, quote the exact line from the transcript that supports it, and say whether it comes from Set A or Set B. Do not invent details that are not in the transcripts or numbers.\nThen give me a ranked list of no more than five changes to make to my next reel, with the most likely to matter first. For each change, give a one-sentence reason and an example rewrite of one of my own hooks or lines.\nBe clear about how small the sample is and where you are guessing. Use plain British English, with no hype.\nI will use <ChatGPT or Claude> and can paste the transcripts as text. Here are my reels: <paste Set A with numbers>. Here are the competitor reels: <paste Set B with numbers>.\n```"
+  ]
 }

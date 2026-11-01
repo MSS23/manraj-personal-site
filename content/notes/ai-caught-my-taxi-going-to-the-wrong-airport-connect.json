@@ -7,7 +7,7 @@
   "episode": null,
   "pillar": "AI & automation",
   "hook": "AI caught my taxi going to the wrong airport.",
-  "keyword": null,
+  "keyword": "AIRPORT",
   "summary": "Found in Metricool, was not in the calendar. Second TikTok carousel version of the wrong-airport story, posted 14 Oct 19:03. No Instagram twin found.",
   "body": [
     "Found in Metricool, was not in the calendar. Second TikTok carousel version of the wrong-airport story, posted 14 Oct 19:03. No Instagram twin found."
@@ -19,5 +19,16 @@
   "slides": [],
   "cover": null,
   "views": 283,
-  "guide": []
+  "guide": [
+    "This is a quick cross-check: you give an AI assistant your taxi booking and your flight details, and it flags anything that doesn't match, such as the wrong airport. You need ChatGPT or Claude, your taxi confirmation and your flight confirmation.",
+    "1. Open your taxi confirmation (email, app screen or text) and copy the pickup, drop-off, date and time.",
+    "1. Open your flight or train confirmation and copy the departure airport, terminal, date and time.",
+    "1. Paste both into ChatGPT or Claude and ask it to compare them line by line.",
+    "1. Ask it to list every mismatch (airport, terminal, date, time) and to say \"unclear\" where the text doesn't tell it, rather than guess.",
+    "1. Check any mismatch against the official booking with the taxi firm or airline, and correct it with them directly.",
+    "1. Repeat the check whenever a booking changes, and before any trip where a mistake would be costly.",
+    "Watch out: the assistant only knows what you paste in, and it can misread similar airport names, so treat its answer as a prompt to check the original booking, not as proof.",
+    "## Prompt to build your own",
+    "```\nYou are helping me check a journey booking for mistakes before I travel. I will paste two things: my taxi or transfer confirmation and my <flight, train or ferry> confirmation.\nCompare them and return a table with these rows: pickup location, drop-off location (including the exact airport or station name and terminal), date, time, and passenger name. For each row, show what each document says and mark it as Match, Mismatch or Unclear.\nRules: use only the text I give you. If something is missing or ambiguous, mark it Unclear and say what I should look up. Do not guess, and do not assume two similarly named airports or stations are the same place. Pay particular attention to cities with more than one airport.\nAfter the table, give a short list of the mismatches in order of urgency, and a one-line message I could send to <taxi company or airline> to correct each one. Keep the language plain and British English.\nHere are my documents:\nTaxi: <paste taxi confirmation>\nTravel: <paste flight or train confirmation>\n```"
+  ]
 }

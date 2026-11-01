@@ -20,5 +20,17 @@
   "slides": [],
   "cover": "/notes/carousel-same-prompt-every-week-turn-it-into-a-claude-skill/cover.jpg",
   "views": 709,
-  "guide": []
+  "guide": [
+    "A Claude skill is a saved set of instructions that Claude Code loads on demand, so you stop retyping the same prompt each week. You need Claude Code and a task you repeat.",
+    "1. Pick one task you have typed a prompt for more than twice, such as a weekly report or a client reply.",
+    "1. Write down the steps and the result you want, as if briefing a new colleague.",
+    "1. Create a folder for the skill in Claude Code's skills directory, and add one file in it called SKILL.md.",
+    "1. Give SKILL.md three parts: a name, a short description saying when to use it, and the instructions Claude should follow.",
+    "1. Add any reference files the task needs, such as a template or a style guide, beside SKILL.md in the same folder.",
+    "1. Start a new Claude Code session and run the skill by its name, or let Claude pick it up from the description.",
+    "1. Check the output against what you wanted, then tighten the instructions and run it again until the result is the same each time.",
+    "Watch out: only turn a task into a skill once you repeat it; a one-off prompt does not need one, and a vague description means Claude will not know when to use it.",
+    "## Prompt to build your own",
+    "```\nYou are helping me turn a task I repeat into a Claude skill for Claude Code. The task is: <describe the task, for example writing my weekly client update>. I use <tools or files involved>, and the result should look like <describe or paste a good example>.\nBuild a skill folder containing a SKILL.md file with three parts: a name, a one-line description that says when the skill should be used, and clear step-by-step instructions. Add any supporting files the task needs, such as a template or style guide, and mention them in the instructions.\nConstraints: keep the instructions short and specific, use plain English, do not include any passwords, keys or private details, and make the skill produce the same kind of result every time.\nReturn the full contents of every file, the folder structure, and where to place the folder so Claude Code finds it. Then give me one example request I can use to test it, and tell me what to check in the output.\n```"
+  ]
 }

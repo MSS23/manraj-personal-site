@@ -7,7 +7,7 @@
   "episode": null,
   "pillar": "AI & automation",
   "hook": "There's been months where I've spent a lot more money than I expected on Vercel",
-  "keyword": "VERCEL",
+  "keyword": "reduce Vercel build minutes",
   "summary": "Metricool: scheduled Sat 24 Oct 11:00 IG + TikTok",
   "body": [
     "Metricool: scheduled Sat 24 Oct 11:00 IG + TikTok"
@@ -20,5 +20,18 @@
   "slides": [],
   "cover": "/notes/reduce-vercel-build-minutes-stop-the-surprise-bill/cover.jpg",
   "views": 391,
-  "guide": []
+  "guide": [
+    "This cuts your Vercel bill by lowering the build machine size and stopping every GitHub push from triggering a build. You need a Vercel account with a project connected to a GitHub repository.",
+    "1. Open the Vercel dashboard, go to Usage and look at build minutes per project to find which projects spend the most.",
+    "1. Open that project's Settings, go to the build and deployment section and find the build machine setting.",
+    "1. Change the build machine from the fastest option (turbo) to the lowest one if you can wait a little longer for each deploy.",
+    "1. Decide which pushes deserve a build, for example only the main branch, or only commits that change the app itself rather than notes or docs.",
+    "1. Add that rule to the project with Vercel's Ignored Build Step, a short script or command that tells Vercel to skip the build when a push doesn't need one.",
+    "1. Push a small change on a branch you excluded and check that Vercel skips the deployment.",
+    "1. Push a real change to the branch you kept and check that it still builds and deploys.",
+    "1. Look at build minutes again after a week or two to confirm the numbers have dropped.",
+    "Watch out: the fastest build machine is the default on new projects and the minutes add up quickly, so check both settings when you first create a site, not after a surprise bill.",
+    "## Prompt to build your own",
+    "```\nYou are helping me reduce my Vercel build minutes without breaking deployments. I use Vercel with a GitHub repository, and my project is <project name> using <framework, e.g. Next.js>.\nDo the following:\n1. Explain where to find the build machine setting in the Vercel project settings, and which option is the cheapest. I am happy to wait longer for deploys.\n2. Write an Ignored Build Step script for my project that skips the build unless the push is to <branch to always build> or changes files in <folders that affect the app>. It must exit with the code Vercel expects for skip and build, and must still build if it cannot work out what changed.\n3. Show me exactly where to paste the script in the Vercel dashboard, or how to set it in the project config file if that is cleaner.\n4. Give me a short test plan: one push that should be skipped and one that should build.\n5. Tell me which Vercel usage page to check afterwards to confirm build minutes fell.\nKeep the explanation in plain English, number the steps, and warn me about anything that could stop a needed deploy from running.\n```"
+  ]
 }

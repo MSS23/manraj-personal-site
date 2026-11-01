@@ -29,5 +29,18 @@
   "slides": [],
   "cover": "/notes/texting-a-bot-edits-motion/cover.jpg",
   "views": 345,
-  "guide": []
+  "guide": [
+    "This lets you drop raw clips in a cloud folder and get edited reels back in a chat app, without sitting at a desk. You need a computer that stays switched on, Google Drive, a Telegram account, Claude Code, ffmpeg and an open-source agent framework such as Hermes Agent.",
+    "1. Install Google Drive for desktop on the always-on computer, and make one folder for raw clips that syncs to your phone.",
+    "1. Create a Telegram bot with BotFather, which gives you a bot token, and message it once so it knows your chat.",
+    "1. Install an open-source agent framework such as Hermes Agent and connect it to your Telegram bot, so messages you send reach the agent and its replies come back.",
+    "1. Write a Claude Code skill (a saved instruction file) that tells Claude how to edit a reel: cut dead air, add captions, export vertical video with ffmpeg.",
+    "1. Tell the agent to watch the Drive folder, and to run the skill on each new clip or batch, with several edits running in parallel.",
+    "1. Have the agent send Telegram progress messages with the time left, then the finished reel when it's done.",
+    "1. Reply in the same chat with what you want changed, such as \"cut the intro\" or \"bigger captions\", and have the agent re-run the edit with that note.",
+    "1. Finish in CapCut or your scheduler, for example Metricool, if you want a sound or a post time.",
+    "Watch out: the whole chain only runs while the computer is on, awake and online, so the agent stops when it sleeps and clips wait until it wakes.",
+    "## Prompt to build your own",
+    "```\nYou are helping me build a phone-controlled video editing workflow. I work on <Windows/Mac/Linux> and have Google Drive for desktop, Telegram, ffmpeg and <Claude Code / ChatGPT Codex> installed. My raw clips will land in a synced Drive folder called <folder name>.\nBuild this:\n1. A Claude Code skill (or equivalent instruction file) that edits a raw clip into a vertical 9:16 reel: remove silence and dead air, add word-level captions, and export with ffmpeg. My style is <describe: caption look, length limit, music or silent>.\n2. An agent script, using <Hermes Agent / another open-source agent framework>, that watches the Drive folder and runs the skill on each new clip. Allow up to <3> edits at once.\n3. A Telegram bot integration, using my bot token stored in an environment variable and restricted to my chat id only, that sends me progress with an estimated time left and delivers the finished file.\n4. A feedback path: if I reply with changes, re-run the edit with my note and send the new version, keeping the old one.\nNever hard-code secrets. Log errors and message me on failure. Return the full file list, setup steps, and a short test plan using one sample clip.\n```"
+  ]
 }

@@ -26,5 +26,18 @@
   "slides": [],
   "cover": "/notes/claude-stopped-guessing-my-vgc-team-motion/cover.jpg",
   "views": 374,
-  "guide": []
+  "guide": [
+    "This gives Claude real Pokémon VGC calculators to call, so its answers come from calculations instead of guesses. You need Claude (Claude Code or the Claude app with connectors), a way to host a small MCP server, and a damage-calculation library.",
+    "1. Pick a damage-calculation library and a usage-statistics source, and wrap them as tools in an MCP (Model Context Protocol) server, using the official MCP SDK in Python or TypeScript.",
+    "1. Write one tool per job: damage calcs, speed tiers, usage stats, replay analysis, spread building and team legality. The post's server ended up with 157 tools.",
+    "1. Add a tool that takes a pasted team and finds the three threats it loses to, by running damage calcs against common opposing sets.",
+    "1. Add a speed-tier tool that shows who outspeeds whom, and a usage tool that returns what players actually run.",
+    "1. Add a replay tool that reads a battle log and breaks down why you lost, and a spread tool that returns exact EVs for one Pokémon.",
+    "1. Have Claude finish by writing the lead pair and game plan from those tool results.",
+    "1. Deploy the server somewhere reachable, such as Vercel, and add it to Claude as a custom connector or to Claude Code as an MCP server.",
+    "1. Paste one team and check that each of the six steps returns tool output rather than prose.",
+    "Watch out: Claude sounds sure of itself, but damage is maths, so make it call the calculators for every number and keep the final team choice with you.",
+    "## Prompt to build your own",
+    "```\nYou are helping me build an MCP server that gives Claude real Pokémon VGC calculators, so it stops guessing about my team.\nI use <Claude Code or Claude app> and I am comfortable with <Python or TypeScript>. I will host it on <Vercel or another host>.\nBuild the server with the official MCP SDK. Use an open-source damage calculator, <damage library>, and usage statistics from <usage data source>. Expose these tools: damage calcs, speed comparison, usage stats, replay analysis from a pasted battle log, an exact-EV spread builder for one Pokémon, and team legality checks.\nAdd a prepare-team tool that takes a pasted team and returns the three threats it loses to, who outspeeds whom, what opponents actually run, and one suggested spread with exact EVs. Claude then writes a lead pair and game plan from those results.\nConstraints: every number must come from a calculation, never from the model. Make clear in tool descriptions that the user chooses the final team. Keep each tool small with typed inputs.\nReturn the project structure, the code, setup steps, how to deploy it, how to connect it to <my Claude client>, and a test using <my sample team>.\n```"
+  ]
 }

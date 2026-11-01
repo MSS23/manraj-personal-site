@@ -7,7 +7,7 @@
   "episode": null,
   "pillar": "AI & automation",
   "hook": "Stop tool hopping.",
-  "keyword": "START",
+  "keyword": "START (auto-DM: starter prompt template)",
   "summary": "How to start with AI as a beginner: pick one tool and use it every day for a month.\nStop tool hopping. Pick ONE tool (Claude or ChatGPT, I don't mind which), list the tasks you hate doing and hand the repeatable ones to AI, then give it context: talk to it like a colleague and show it examples of what you want. Do that for a month and AI gets a lot easier than you thought.\nI'm Manraj Sidhu, AI developer, and this is what I tell every friend who asks how to start.\nWorks with @claudeai or @openai.\nComment START and I'll send you my starter prompt template. Follow @manrajtalks",
   "body": [
     "How to start with AI as a beginner: pick one tool and use it every day for a month.\nStop tool hopping. Pick ONE tool (Claude or ChatGPT, I don't mind which), list the tasks you hate doing and hand the repeatable ones to AI, then give it context: talk to it like a colleague and show it examples of what you want. Do that for a month and AI gets a lot easier than you thought.\nI'm Manraj Sidhu, AI developer, and this is what I tell every friend who asks how to start.\nWorks with @claudeai or @openai.\nComment START and I'll send you my starter prompt template. Follow @manrajtalks"
@@ -26,5 +26,18 @@
   "slides": [],
   "cover": "/notes/one-ai-tool-30-days-motion/cover.jpg",
   "views": 254,
-  "guide": []
+  "guide": [
+    "This is a one-month routine for getting comfortable with AI: you need one account with ChatGPT or Claude, and a list of tasks you dislike.",
+    "1. Pick one assistant, either ChatGPT (OpenAI) or Claude (Anthropic), and use only that one for the next 30 days.",
+    "1. Open it at least once a day, even for something small, so using it becomes a habit.",
+    "1. Write a list of the tasks you hate doing, such as replying to similar emails, summarising notes or tidying spreadsheets.",
+    "1. Mark the ones that repeat, and hand those to the assistant first.",
+    "1. Give it context before each task: say who you are, what the task is for and who will read the result, as you would brief a colleague.",
+    "1. Paste in one or two examples of what a good result looks like, so it can match the style and format.",
+    "1. When a prompt works, save it in a note (Notion or any notes app) so you can reuse it next time.",
+    "1. After a month, look back at your list and see which tasks now take you far less time.",
+    "Watch out: trying a new AI tool every week resets what you have learned, so stay with one tool until the month is over.",
+    "## Prompt to build your own",
+    "```\nYou are my AI onboarding coach. I am a beginner and I want to use one AI tool every day for 30 days. My tool is <ChatGPT or Claude>. My job or situation is <your role>. The tasks I dislike doing are <list 3 to 5 tasks>.\nPlease do the following:\n1. Work out which of my tasks repeat and are best handed to AI first, and rank them.\n2. For the top three, write a starter prompt template I can reuse. Each template must set the context (who I am, what the task is for, who reads the result), leave a place for me to paste one or two examples of what I want, and state the format of the answer.\n3. Give me a simple 30-day plan with one small task per day, building from easy to harder.\n4. Tell me how to keep a list of prompts that worked.\nConstraints: plain English, British spelling, no jargon, and do not suggest I add other AI tools. Return the ranked task list, the three templates with <placeholders> I can fill in, and the 30-day plan as a table.\n```"
+  ]
 }

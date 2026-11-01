@@ -20,5 +20,18 @@
   "slides": [],
   "cover": "/notes/claude-builds-better-when-it-interviews-you-first-motion/cover.jpg",
   "views": 326,
-  "guide": []
+  "guide": [
+    "Interview Claude about your idea before it builds anything, so the requirements exist before the code does. You need ChatGPT (Codex) or Claude Code, and one sentence describing the finished result.",
+    "1. Write one sentence describing what your project should do when it works.",
+    "1. Paste that sentence into Claude Code, or ChatGPT (Codex), and ask it to interview you backwards from that goal, one question at a time.",
+    "1. Have it ask four things: what the architecture is, who the users are, what goes in and what comes out, and which cloud (AWS, Google Cloud or Microsoft Azure) you will run on.",
+    "1. Answer each question in plain English, and say \"I don't know yet\" where that is true so the assistant can suggest options.",
+    "1. Ask it to turn your answers into a written requirements document, and read it through for anything wrong.",
+    "1. Correct any mistakes, then save the requirements as a file in your project.",
+    "1. Only then send the requirements back and ask it to build, starting with the smallest working version.",
+    "Watch out: skipping the interview means you end up debugging a structure you never chose, so do not let the assistant start building until the requirements are written and you have read them.",
+    "## Prompt to build your own",
+    "```\nYou are helping me plan a software project before any code is written. My end goal, in one sentence: <what the finished project does when it works>.\nDo not build anything yet. Interview me backwards from that goal, asking one question at a time and waiting for my answer. Cover these four areas in order:\n1. The architecture: what the main parts are and how they talk to each other.\n2. The users: who will use it and how.\n3. Inputs and outputs: what goes in and what comes out.\n4. The cloud: which provider I will use (<AWS, Google Cloud or Microsoft Azure>).\nMy experience level is <beginner / some coding / experienced>, and the tools I already have are <list tools, e.g. Google Drive, Notion, Vercel, Supabase>. If I say I don't know, suggest two options with a short pros and cons for each, and recommend one.\nWhen the four areas are covered, write a requirements document in plain English with a heading for each area, plus a short list of anything still undecided. Return only that document and ask me to confirm or correct it. Once I confirm, build the smallest working version from it and explain each part as you go.\n```",
+    "Skipped: the post gave no tool names beyond Claude and the three clouds, so steps 6 and 7 stay generic. I haven't checked the output length against the 80 to 200 word limit. It is within it on a rough count, but I didn't count it exactly."
+  ]
 }

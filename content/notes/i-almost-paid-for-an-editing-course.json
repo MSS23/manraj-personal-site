@@ -28,5 +28,17 @@
   "slides": [],
   "cover": "/notes/i-almost-paid-for-an-editing-course/cover.jpg",
   "views": 927,
-  "guide": []
+  "guide": [
+    "This shows how to have Claude add icons, on-screen text, motion graphics and transitions to a talking-head video, so you don't need an editing course. You need Claude Code (or ChatGPT/Codex), ffmpeg, your raw clip and CapCut for the final polish.",
+    "1. Film your clip as normal and save it to one folder on your computer, along with any logos or icons you want to use.",
+    "1. Install ffmpeg, then open Claude Code in that folder so it can read your clip and run commands.",
+    "1. Ask Claude to transcribe the clip with a speech-to-text tool, so it has the words with timestamps.",
+    "1. Describe the look you want (icons, captions, background elements, transitions) and ask Claude to write the motion graphics as code, such as HTML and CSS animation, rendered to video frames.",
+    "1. Have Claude use ffmpeg to lay those graphics over your clip, timed to the words it transcribed.",
+    "1. Watch the result, tell Claude what to change (timing, size, wording), and rerun until it looks right.",
+    "1. Open the final file in CapCut for any last touches, then export for Instagram and TikTok.",
+    "Watch out: The post says the newest Claude model (Opus 5.5) is what makes the motion design good, so use the strongest model available and check every cut yourself before posting.",
+    "## Prompt to build your own",
+    "```\nYou are my video-editing assistant. I have a vertical talking-head clip at <path to clip> and want you to turn it into a finished short-form reel with icons, on-screen text, background graphics and transitions.\nTools I have: <Claude Code or ChatGPT/Codex>, ffmpeg installed, and CapCut for final touches.\nPlease do this:\n1. Transcribe the clip with word-level timestamps, using <speech-to-text tool you prefer>.\n2. Propose a short edit plan: which words get captions, where icons or background graphics appear, and where transitions go. Wait for my approval.\n3. Build the graphics as code (for example HTML and CSS animation rendered to a transparent video or image sequence) in the style of <describe the look, colours and fonts>.\n4. Use ffmpeg to overlay the graphics on my clip, timed to the transcript, and export a 9:16 file at <resolution>.\n5. Keep captions inside the area that platform interface buttons do not cover.\nReturn the final video file, the commands you ran, and a list of settings I can change to adjust timing, size and style. Do not overwrite my original clip.\n```"
+  ]
 }

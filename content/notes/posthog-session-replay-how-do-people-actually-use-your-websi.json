@@ -7,7 +7,7 @@
   "episode": null,
   "pillar": "AI & automation",
   "hook": "How do people actually use your website?",
-  "keyword": "POSTHOG",
+  "keyword": "PostHog session replay",
   "summary": "Metricool: scheduled Wed 14 Oct 11:00 IG + TikTok\nv3 ready 2026-10-10 23:10 ·",
   "body": [
     "Metricool: scheduled Wed 14 Oct 11:00 IG + TikTok\nv3 ready 2026-10-10 23:10 ·"
@@ -20,5 +20,19 @@
   "slides": [],
   "cover": "/notes/posthog-session-replay-how-do-people-actually-use-your-websi/cover.jpg",
   "views": 789,
-  "guide": []
+  "guide": [
+    "Add PostHog to your app so you can watch recordings of real visitors using it. You need a website or app, a free PostHog account and a way to add a script or package to your site.",
+    "1. Create a free account at PostHog and make a project for your site.",
+    "1. Copy the project's API key from PostHog's project settings.",
+    "1. Install PostHog's JavaScript library (posthog-js) in your app, or paste PostHog's snippet into your site's head tag.",
+    "1. Initialise PostHog with your project key when the page loads.",
+    "1. In PostHog, open Session replay in the project settings and switch recording on.",
+    "1. Visit your own site and click around so a first recording is captured.",
+    "1. Open Session replay in PostHog and watch the recording to see what was clicked, what was ignored and any errors.",
+    "1. Note the pages people leave or skip and fix those first.",
+    "Watch out: replays can capture what people type, so mask form fields and sensitive inputs in PostHog's privacy settings before you go live, and check you are within the free plan's limits.",
+    "## Prompt to build your own",
+    "```\nYou are helping me add PostHog session replay to my website. My site is built with <framework, e.g. Next.js, plain HTML or React> and hosted on <host, e.g. Vercel>. I use <package manager, e.g. npm> and I am on PostHog's free plan.\nPlease:\n1. Show me how to install and initialise PostHog (posthog-js) in this framework, reading the project key from an environment variable called <env variable name>.\n2. Turn on session recording and explain where to switch it on in PostHog's settings.\n3. Mask all password fields and any input I list here: <sensitive fields, e.g. email, card number>.\n4. Show how to confirm that events and recordings are arriving.\n5. Add a short checklist for what to look for when watching replays: where people click, what they skip, and any errors.\nKeep the code minimal, use only PostHog's documented options, and tell me which files to change. Do not add any other analytics tools. Return the code changes first, then the checklist.\n```",
+    "Skipped: I didn't check PostHog's current free-plan limits or setting names. Step 8 goes slightly beyond the post, so cut it if you want strict fidelity."
+  ]
 }

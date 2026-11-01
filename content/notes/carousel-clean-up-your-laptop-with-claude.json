@@ -7,7 +7,7 @@
   "episode": null,
   "pillar": "Claude & skills",
   "hook": "Stop buying laptops to fix slow ones.",
-  "keyword": "CLEAN",
+  "keyword": "CLEAN UP",
   "summary": "Metricool: scheduled Sat 17 Oct 13:00 IG + TikTok",
   "body": [
     "Metricool: scheduled Sat 17 Oct 13:00 IG + TikTok",
@@ -21,5 +21,17 @@
   "slides": [],
   "cover": "/notes/carousel-clean-up-your-laptop-with-claude/cover.jpg",
   "views": 719,
-  "guide": []
+  "guide": [
+    "Clean out a slow laptop and a cluttered Google Drive with Claude Code, without deleting anything you can't get back. You need Claude Code, a laptop, and Google Drive for desktop.",
+    "1. Install Claude Code from Anthropic and open it in the folder you want sorted, such as Downloads or Documents.",
+    "1. Install Google Drive for desktop so your Drive appears as a normal folder Claude Code can read.",
+    "1. Ask Claude Code to list what is taking up space and to group files into duplicates, old installers, large files and unused folders.",
+    "1. Have it create a folder called \"To be deleted\" and move anything doubtful into it, rather than deleting.",
+    "1. Tell it to tidy the files you are keeping into clearly named folders, on the laptop and in Google Drive.",
+    "1. Open the \"To be deleted\" folder yourself, check what is in it, and delete by hand what you don't need.",
+    "1. Restart the laptop and see whether it feels faster before you spend money on a new one.",
+    "Watch out: never let Claude Code delete anything itself; moving doubtful files into a \"To be deleted\" folder keeps every decision with you.",
+    "## Prompt to build your own",
+    "```\nYou are helping me clean up a slow laptop and my Google Drive. Work only inside <folders to sort, e.g. Downloads and Documents> and my Google Drive for desktop folder at <Drive folder location>.\nDo not delete anything. Do not move anything outside those folders.\nSteps:\n1. List what is using the most space, and find duplicates, old installers, very large files and folders I have not opened in <number> months.\n2. Create a folder called \"To be deleted\" in each location.\n3. Move anything doubtful into \"To be deleted\" instead of removing it. Leave anything you are sure I need where it is.\n4. Tidy the files that remain into clearly named folders.\n5. Write a plain-English summary of what you moved, how much space it frees, and why each group went into \"To be deleted\".\nI use <Windows or Mac> and <ChatGPT/Codex or Claude Code>. Show me the plan and wait for my approval before you move any files. Return the summary as a list I can check before I delete anything by hand.\n```"
+  ]
 }

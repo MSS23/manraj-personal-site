@@ -24,5 +24,17 @@
   "slides": [],
   "cover": "/notes/ai-isn-t-just-for-coders/cover.jpg",
   "views": 441,
-  "guide": []
+  "guide": [
+    "Use Claude's connectors to hand three everyday admin jobs (Google Drive tidying, a Notion dashboard clean-up and email triage) to an assistant you talk to; you need a Claude account, a Google account, a Notion workspace and, optionally, Wispr Flow for voice.",
+    "1. Open Claude and turn on the Google Drive connector in its connector settings, signing in with the Google account you want it to read.",
+    "1. Connect the Notion connector the same way, and share with it only the pages you want tidied.",
+    "1. Ask Claude to sort a messy Drive folder into folders and to list the files you should review before deleting, rather than deleting anything.",
+    "1. Ask Claude to tidy your Notion content and planning pages, for example merging duplicates, grouping related pages and naming them clearly.",
+    "1. Connect your email through Claude's Gmail connector, then ask it to read your inbox and list the messages that need a reply.",
+    "1. Install Wispr Flow and speak your instructions to Claude instead of typing them.",
+    "Watch out: Have Claude flag files for review and never delete them itself, and check each change before you accept it.",
+    "## Prompt to build your own",
+    "```\nYou are helping me set up Claude to handle everyday admin without any coding. I use <Google Drive / Notion / Gmail> and I want to work by talking, using <Wispr Flow or typing>.\nGive me a short, numbered plan for three jobs:\n1. Tidy a messy Google Drive folder called <folder name> into sensible folders, and list files I should review before deleting. Do not delete or move anything until I approve the list.\n2. Clean up my Notion workspace for <what the pages are used for, for example content planning>, merging duplicates and naming pages clearly, with a summary of the changes before you make them.\n3. Read my inbox from <time period> and list only the emails that need a reply, with one line on why each does.\nFor each job, tell me which Claude connector to switch on, which permissions to grant and which to withhold, and the exact first message to say to Claude. Keep the language plain, assume I have never coded, and finish with a short checklist for reviewing Claude's work before I accept it.\n```",
+    "Not checked: I used the caption and transcript only; I did not verify that Claude's connector menus or names match your current version."
+  ]
 }

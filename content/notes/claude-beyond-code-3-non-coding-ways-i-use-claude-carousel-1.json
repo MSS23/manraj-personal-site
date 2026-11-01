@@ -7,7 +7,7 @@
   "episode": null,
   "pillar": "Claude & skills",
   "hook": "",
-  "keyword": null,
+  "keyword": "CLAUDE",
   "summary": "Metricool: scheduled Mon 12 Oct 13:00 IG + IG trial reel + TikTok. 3 ways I use Claude that aren't coding.",
   "body": [
     "Metricool: scheduled Mon 12 Oct 13:00 IG + IG trial reel + TikTok. 3 ways I use Claude that aren't coding."
@@ -20,5 +20,17 @@
   "slides": [],
   "cover": "/notes/claude-beyond-code-3-non-coding-ways-i-use-claude-carousel-1/cover.jpg",
   "views": 766,
-  "guide": []
+  "guide": [
+    "This shows three everyday, non-coding jobs you can give Claude, such as writing, planning and sorting information. You need a Claude account (claude.ai) and a few real tasks of your own.",
+    "1. Pick three jobs from your week that involve words or information rather than code, such as replying to emails, planning a project or summarising a long document.",
+    "1. Open Claude at claude.ai and start a new Project for each job so it keeps its own instructions and files.",
+    "1. Add context to each Project: upload a few examples of your own work and write a short note on tone and audience.",
+    "1. Paste in the real task and ask Claude for a first draft or plan.",
+    "1. Reply with specific corrections (\"shorter\", \"less formal\", \"add the deadline\") rather than starting again.",
+    "1. Save the version you like as a reusable instruction in the Project so the next run starts from it.",
+    "1. Check the result against the source before you send or publish it.",
+    "Watch out: Claude can sound confident when it is wrong, so read every figure, name and date yourself before using the output.",
+    "## Prompt to build your own",
+    "```\nYou are helping me set up Claude for non-coding work. My role is <your role>. I want to use Claude for three jobs: <job 1>, <job 2> and <job 3>. I have access to <Claude plan, for example the free tier or Pro> and I can upload <file types I have, for example Word documents, PDFs or notes>.\nFor each job, do the following:\n1. Write a short set of Project instructions I can paste into Claude, covering tone, audience, length and anything it must never do.\n2. List which example files or notes I should upload so Claude learns my style.\n3. Give me one starter prompt I can use on a real task straight away.\n4. Give me a short checklist for reviewing the output before I use it.\nKeep everything in plain English, with no jargon. Use British spelling. Do not invent facts about my business; if you need information, ask me first. Return the three jobs as separate sections, each with the four items above in order.\n```"
+  ]
 }

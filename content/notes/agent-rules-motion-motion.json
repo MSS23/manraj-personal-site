@@ -7,7 +7,7 @@
   "episode": null,
   "pillar": null,
   "hook": "The 5 things my AI agents are banned from doing",
-  "keyword": "RULES",
+  "keyword": "AI agent guardrails",
   "summary": "24 AI agents ran overnight. One draft PR by breakfast. Zero writes to main.\nAI agent guardrails are the whole product: these are the 5 things my agents are banned from doing.",
   "body": [
     "24 AI agents ran overnight. One draft PR by breakfast. Zero writes to main.\nAI agent guardrails are the whole product: these are the 5 things my agents are banned from doing.",
@@ -30,5 +30,17 @@
   "slides": [],
   "cover": "/notes/agent-rules-motion-motion/cover.jpg",
   "views": 742,
-  "guide": []
+  "guide": [
+    "This guide shows how to set guardrails so AI agents can work unattended without touching anything they shouldn't. You need an AI coding agent such as Claude Code or Codex, a GitHub account, and a way to message yourself, such as Telegram.",
+    "1. Create a GitHub branch protection rule on main in your repository's settings, requiring a pull request before anything can be merged.",
+    "1. Give each agent its own working branch and instruct it to open a pull request when finished, so you are the only person who merges.",
+    "1. In your agent's settings (for Claude Code, the permissions file), deny delete commands and any database statement that removes rows.",
+    "1. Have the agent write drafts to a holding area, such as a Notion page or a Google Drive folder, instead of publishing to anything live.",
+    "1. Send yourself a Telegram message with the draft and an approve button, and publish through a scheduler such as Metricool only after you tap it.",
+    "1. Leave payment details and messaging accounts out of the agent's environment, and write the exact tasks it may do into its instructions file.",
+    "1. Run the agent on your own machine, and tell it never to paste emails, client names or numbers into web search or other online tools.",
+    "Watch out: A rule written only in the instructions can be ignored, so back each one with a real permission or a protected branch that the agent cannot override.",
+    "## Prompt to build your own",
+    "```\nYou are helping me set up guardrails for AI coding agents that run unattended. I use <agent tool, e.g. Claude Code or Codex>, <code host, e.g. GitHub>, and <messaging app, e.g. Telegram> on <operating system>.\nBuild the following and return the exact settings and files:\n1. A branch protection setup so no agent can write to <main branch name> and every change arrives as a pull request I merge myself.\n2. A permissions or settings file for the agent that denies deleting files and deleting database rows, and denies any network request that sends my local data to search or web tools.\n3. An instructions file listing the only tasks the agent may do, and stating it must never pay for anything or message a person unless I ask for that exact thing.\n4. A draft-and-approve flow: the agent writes drafts to <draft location, e.g. a Notion page>, sends me a <messaging app> message with an approve option, and only publishes through <scheduler, e.g. Metricool> after I approve.\nExplain each rule in one sentence and say which parts are enforced by a real permission rather than by instruction alone. Ask me before assuming anything about my setup.\n```"
+  ]
 }

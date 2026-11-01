@@ -29,5 +29,16 @@
   "slides": [],
   "cover": "/notes/how-i-know-when-my-app-breaks-not-more-testing-sentry-motion/cover.jpg",
   "views": 740,
-  "guide": []
+  "guide": [
+    "Set up error and uptime monitoring so you hear about a broken app from a tool, not from a user. You need a live web app (for example on Vercel), a free Sentry account and a Slack workspace or an email address.",
+    "1. Create a project in Sentry for your framework and run the Sentry install wizard in your app's folder.",
+    "1. Add an uptime monitor in Sentry that checks your live URL, so you are told if the site stops being reachable.",
+    "1. Send alerts to Slack or email so a failure reaches you without you opening a dashboard.",
+    "1. Upload source maps so errors point to your real code rather than minified output.",
+    "1. Throw a deliberate test error in the app and confirm it appears in Sentry and triggers an alert.",
+    "1. Stop a test deployment on Vercel and confirm the \"no longer reachable\" alert arrives.",
+    "Watch out: tests only check your code once, before it ships, so don't treat a passing test run as a sign the live app is healthy.",
+    "## Prompt to build your own",
+    "```\nYou are helping me add live error and uptime monitoring to my web app using Sentry. Do not just suggest more tests.\nMy app: <describe the app and framework, e.g. Next.js>. It is hosted on <hosting provider, e.g. Vercel>. I want alerts sent to <Slack channel or email address>.\nWalk me through, and write any code or config needed for:\n1. Running the Sentry install wizard for my framework.\n2. Adding an uptime monitor for <my live URL>.\n3. Routing alerts to my chosen channel.\n4. Uploading source maps as part of my build.\n5. Adding a safe test error I can trigger and then remove.\nConstraints: use only the free tier features unless I say otherwise, keep secrets such as the Sentry auth token in environment variables and never in code, and tell me exactly which commands to run and where. Finish with a short checklist I can use to confirm each alert actually arrives.\n```"
+  ]
 }

@@ -27,5 +27,17 @@
   "slides": [],
   "cover": "/notes/four-claude-skills-run-my-content-pipeline-motion/cover.jpg",
   "views": 366,
-  "guide": []
+  "guide": [
+    "Four Claude Code skills, each a reusable slash command, can run a content pipeline: script, reel edit, carousel and motion video. You need a Claude plan that includes Claude Code, a cloud folder such as Google Drive for the output, and ffmpeg installed.",
+    "1. Install Claude Code and create a skills folder, with one skill per job: script, video edit, carousel and motion reel.",
+    "1. Write the script skill in Claude Code so it reads your past scripts or transcripts and drafts the next one in your voice.",
+    "1. Write the video edit skill so it uses ffmpeg to pick the cleanest take of each line and cut the dead air from your raw clips.",
+    "1. Write the carousel skill so it builds slides as HTML and exports each one as an image sized for Instagram and TikTok.",
+    "1. Write the motion reel skill so it draws each scene in code and renders a video with ffmpeg, with no camera needed.",
+    "1. Point all four skills at one Google Drive folder so every script, reel and carousel lands in the same place.",
+    "1. Run each skill by typing its slash command in Claude Code, then review the output before you post it.",
+    "Watch out: the skills are only text files and cost nothing, but Claude Code needs a paid Claude plan to run them.",
+    "## Prompt to build your own",
+    "```\nYou are helping me build a set of four Claude Code skills that run my content pipeline. I use Claude Code on a paid Claude plan, ffmpeg, and Google Drive. My niche is <my niche> and my voice is <describe my tone>.\nCreate four skills, each as its own SKILL.md file that I can call with a slash command:\n1. script: reads my past scripts or transcripts in <folder> and writes the next script in my voice about <topic>.\n2. video edit: takes raw clips from <folder>, uses ffmpeg to choose the cleanest take of each line and remove dead air, and outputs one reel.\n3. carousel: builds slides as HTML and exports each as an image for Instagram (4:5) and TikTok (9:16).\n4. motion reel: draws each scene in code and renders a video with ffmpeg, with no camera.\nAll outputs should save to <Google Drive folder>. Keep each skill short and give it clear inputs and outputs. Do not post anything automatically; I review everything first. Return the folder layout, the full text of each SKILL.md, and the commands I need to install ffmpeg and test each skill once.\n```"
+  ]
 }

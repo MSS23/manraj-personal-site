@@ -20,5 +20,18 @@
   "slides": [],
   "cover": null,
   "views": 252,
-  "guide": []
+  "guide": [
+    "Cut the build minutes Vercel bills you for by changing two project settings. You need a Vercel project connected to a Git repository.",
+    "1. Open your project in the Vercel dashboard and go to Settings, then the build and deployment section.",
+    "1. Check which build machine the project uses, and switch off the Turbo (faster, higher-priced) build machine if you don't need it.",
+    "1. Rebuild once on the standard machine and compare the build time and cost with the Turbo run before you decide to keep it off.",
+    "1. In the Git settings, find the Ignored Build Step and set a command that tells Vercel when to skip a build.",
+    "1. Make that command skip builds when nothing the site uses has changed, for example only a README or notes file.",
+    "1. Push a change that should be skipped and one that shouldn't, and check in the Deployments tab that the first is cancelled and the second builds.",
+    "1. Look at your usage and billing page after a few days to confirm the build minutes are falling.",
+    "Watch out: an Ignored Build Step that is too broad will skip builds you need, so test it on both kinds of change before you rely on it.",
+    "## Prompt to build your own",
+    "```\nYou are helping me reduce my Vercel build costs. I have a Vercel project called <project name> connected to a <GitHub/GitLab/Bitbucket> repository, and my app is built with <framework, e.g. Next.js>. I am not an expert, so explain each step in plain English.\nDo three things:\n1. Tell me exactly where in the Vercel dashboard to check which build machine my project uses, and how to switch from a Turbo build machine to the standard one.\n2. Write an Ignored Build Step command for my repository that skips a deployment when the only files changed are <files or folders that don't affect the site, e.g. docs, README, notes>. Explain how Vercel reads the command's exit code, and where in the project settings I paste it.\n3. Give me a short test plan: one change that should be skipped, one that should build, and what I should see in the Deployments tab for each.\nConstraints: use only standard Vercel settings, don't change my application code, and warn me of any case where the command could skip a build I need. Return the command in one code block, then the numbered steps.\n```",
+    "I wrote this from the post's two settings only. I haven't checked the current Vercel dashboard wording for the build machine setting, so the menu names may differ slightly."
+  ]
 }

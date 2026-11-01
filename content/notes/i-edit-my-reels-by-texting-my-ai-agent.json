@@ -7,7 +7,7 @@
   "episode": null,
   "pillar": "AI & automation",
   "hook": "I've got my Hermes agent to be able to edit my videos via text.",
-  "keyword": "VIDEO",
+  "keyword": "VIDEO EDIT AI",
   "summary": "AI video editing by text: I reply to my reel on Telegram and my AI agent re-edits it while I'm out.",
   "body": [
     "AI video editing by text: I reply to my reel on Telegram and my AI agent re-edits it while I'm out.",
@@ -22,5 +22,17 @@
   "slides": [],
   "cover": "/notes/i-edit-my-reels-by-texting-my-ai-agent/cover.jpg",
   "views": 846,
-  "guide": []
+  "guide": [
+    "Edit your videos by replying to a preview in Telegram, with an AI agent running a coding assistant on a computer at home to make the changes. You need a Telegram bot, an always-on computer with Claude Code and ffmpeg installed, an agent framework that can call Claude Code, and Google Drive.",
+    "1. Create a Telegram bot with BotFather and connect it to an open-source agent framework running on your home computer.",
+    "1. Install Claude Code and ffmpeg on that computer, and give the agent permission to start Claude Code in a folder that holds your video project.",
+    "1. Have the agent send each draft to you in Telegram as a numbered version, such as version 3.",
+    "1. Reply to that video in Telegram with what you want changed, for example \"cut the pause after the hook\".",
+    "1. Make the agent pass your reply and the current version to Claude Code, which edits the video with ffmpeg and saves it as the next version.",
+    "1. Have the agent send the new version back to you in Telegram and upload it to a Google Drive folder you have set aside for finishing in CapCut.",
+    "1. Open that file in CapCut, clean up or enhance the voice, and post.",
+    "Watch out: Only let the bot answer your own Telegram account, and keep Claude Code limited to the video project folder, so nobody else can send commands to your computer.",
+    "## Prompt to build your own",
+    "```\nYou are helping me build a Telegram-controlled video editing assistant. I have an always-on computer at home running <Windows, Mac or Linux> with Claude Code, ffmpeg and <agent framework> installed, plus a Telegram bot token from BotFather and access to Google Drive.\nBuild an agent that does the following:\n1. Sends me each draft video in Telegram, labelled with a version number.\n2. When I reply to a video with an edit request, takes my reply text and the version I replied to.\n3. Starts Claude Code in my project folder <project folder>, passes it those details, and lets it edit the video with ffmpeg and save the result as the next version number.\n4. Sends the new version back to me in Telegram.\n5. Uploads the new version to a Google Drive folder called <Drive folder name>.\nConstraints: the bot must only respond to my Telegram user ID <my Telegram user ID>. Claude Code must only read and write inside <project folder>. Never overwrite an earlier version. Keep tokens and keys in environment variables, not in code.\nReturn the full code, a step-by-step setup guide, and a short test plan I can run with one sample video.\n```"
+  ]
 }

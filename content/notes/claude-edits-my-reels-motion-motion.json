@@ -7,7 +7,7 @@
   "episode": null,
   "pillar": "Claude & skills",
   "hook": "Stop paying for editing courses",
-  "keyword": "CLAUDE",
+  "keyword": "Claude edits my reels",
   "summary": "Claude edits my reels, so I'm not paying for an editing course.",
   "body": [
     "Claude edits my reels, so I'm not paying for an editing course.",
@@ -28,5 +28,17 @@
   "slides": [],
   "cover": "/notes/claude-edits-my-reels-motion-motion/cover.jpg",
   "views": 718,
-  "guide": []
+  "guide": [
+    "Use Claude Code to cut a talking-head take down to a tighter reel from one prompt, then finish it in CapCut. You need Claude Code, a recorded take, and CapCut.",
+    "1. Record your take on your phone or camera and save it as a video file in a folder Claude Code can open.",
+    "1. Install HyperFrames, the open-source video tool, and Claude Code, then open the folder in Claude Code.",
+    "1. Ask Claude Code to transcribe the take so it can see where each line starts and ends.",
+    "1. Give it one prompt: keep the best line each time, remove pauses and repeats, and target a set length.",
+    "1. Let Claude Code and HyperFrames render the cut with the motion graphics and icons you asked for.",
+    "1. Check the length and the number of cuts against your target, then ask for changes in plain English.",
+    "1. Import the render into CapCut for the final polish, such as captions and a sound.",
+    "Watch out: Do not judge by how fast it was; check that the cuts land on whole sentences and that nothing important was trimmed before you post.",
+    "## Prompt to build your own",
+    "```\nYou are helping me turn a talking-head video into a tighter short-form reel. I use Claude Code and HyperFrames, and I will finish the edit in CapCut.\nMy source file is <path to my video>. The take runs <length of take> and I want a reel of about <target length>, with roughly <number of cuts> cuts.\nDo this:\n1. Transcribe the video and show me the transcript with timestamps.\n2. Choose the best delivery of each line, and remove pauses, filler words and repeats.\n3. Add simple motion graphics and icons that match <my topic>, in <my brand colours>.\n4. Render the result as a vertical 9:16 video using HyperFrames.\nConstraints: cut only on whole sentences, keep the original audio untouched, and do not add facts that are not in my script.\nReturn the rendered file path, the final length, the number of cuts, and a list of what you removed so I can check it.\n```"
+  ]
 }

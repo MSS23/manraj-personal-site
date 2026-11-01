@@ -26,5 +26,17 @@
   "slides": [],
   "cover": "/notes/how-do-you-build-a-notion-os-with-claude-motion/cover.jpg",
   "views": 270,
-  "guide": []
+  "guide": [
+    "This sets up a Notion workspace where one board holds every idea and Claude drafts the script, on-screen shots and camera angle for each; you need a Notion account and Claude (the app or Claude Code) with access to Notion.",
+    "1. In Notion, create one database called \"Ideas\" with properties for status, type (content, career, learning, travel) and a link field.",
+    "1. Add a short template page to each entry with headings for Script, On-screen shots and Camera angle.",
+    "1. Connect Claude to your Notion workspace using the Notion connector (MCP), and give it access to that database only.",
+    "1. Ask Claude to build the rest of the workspace: separate sections for content, career, learning and travel, each linked back to the Ideas board.",
+    "1. Whenever you drop a new idea on the board, ask Claude to fill in the Script, On-screen shots and Camera angle sections on that page.",
+    "1. Add a second database listing the creators you follow, and have Claude check their latest posts and write a short summary for each into Notion.",
+    "1. Create trip pages in the travel section and use Notion's share option to send any page to someone as a link.",
+    "Watch out: Claude can edit anything you give it access to, so share only the databases it needs and duplicate your workspace as a backup before the first big build.",
+    "## Prompt to build your own",
+    "```\nYou are helping me build a personal operating system in Notion, using the Notion connector you have access to. I have a Notion account and I use <Claude or ChatGPT>. Please do the following, and show me the plan before you change anything.\n1. Create an \"Ideas\" database with properties for status, type (<content, career, learning, travel>) and link. Give every new entry a page template with the headings Script, On-screen shots and Camera angle.\n2. Create a section for each type: <list your sections>. Link each one back to the Ideas database.\n3. Create a \"Creators\" database for <the creators or accounts I follow>, with a field for their latest posts and a short summary.\n4. Create a \"Trips\" section where each trip is its own page I can share by link.\nConstraints: only touch pages inside <name of the parent Notion page>; do not delete or rename anything that already exists; ask me before any change that affects more than ten pages.\nReturn a short summary of every database and page you created, with its link, and a note on what I should check by hand.\n```"
+  ]
 }

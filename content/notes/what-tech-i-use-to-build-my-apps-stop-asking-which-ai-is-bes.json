@@ -20,5 +20,17 @@
   "slides": [],
   "cover": null,
   "views": 51,
-  "guide": []
+  "guide": [
+    "Use one AI model to build your app and a second, cheaper one for a single narrow job, instead of hunting for the \"best\" AI. You need Claude Code (or ChatGPT / Codex), an OpenAI API key and a small project to build.",
+    "1. Pick the one job your app needs an AI to do at run time, such as summarising a message or tagging an email.",
+    "1. Open Claude Code and have it build the app itself: the screens, the database and the glue between them.",
+    "1. Create an API key on the OpenAI platform and keep it in your host's environment settings, not in your code.",
+    "1. Ask Claude Code to add one function that sends the input to a GPT model with a short instruction and returns a fixed, structured answer.",
+    "1. Keep GPT out of everything else, so the rest of the app never depends on a model's judgement.",
+    "1. Deploy the app on Vercel, with Supabase for the data if you need a database.",
+    "1. Test the single GPT call with ten real inputs and tighten the instruction until the answers stay consistent.",
+    "Watch out: do not give one model every job; Claude builds the app, GPT gets one defined task, and a vague task is where the answers go wrong.",
+    "## Prompt to build your own",
+    "```\nYou are my senior developer. Build a small web app that does <what the app does> for <who uses it>.\nTools I have: Claude Code or ChatGPT (Codex), an OpenAI API key, a Vercel account and optionally a Supabase project.\nRequirements:\n- You write the whole app: pages, data storage and the glue between them.\n- Add exactly one AI feature: <the single job, e.g. \"tag each incoming message as urgent, normal or low\">. Put it in one function that calls a GPT model with a short, fixed instruction and returns a structured answer (JSON with a small set of allowed values).\n- No other part of the app may depend on a model's output. If the call fails or returns something invalid, fall back to a safe default and log the error.\n- Read the API key from an environment variable. Never put it in the code or in the repository.\n- Deploy to Vercel and give me the environment variable names to set.\nReturn: the project structure, the code for each file, the instruction text you send to the model, and ten example inputs with expected outputs so I can test the AI call before launch. Ask me before you assume anything about <my data or workflow>.\n```"
+  ]
 }

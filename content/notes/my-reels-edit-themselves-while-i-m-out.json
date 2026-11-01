@@ -23,5 +23,17 @@
   "slides": [],
   "cover": "/notes/my-reels-edit-themselves-while-i-m-out/cover.jpg",
   "views": 1156,
-  "guide": []
+  "guide": [
+    "Text a bot from your phone and have it edit your videos for you. You need a Telegram account, Google Drive, a PC that stays on, Claude Code and an open-source agent framework such as Hermes.",
+    "1. Ask Claude Code in the terminal to build you a Telegram bot on top of an open-source agent framework, and create the bot token with Telegram's BotFather.",
+    "1. Write your editing steps as a Claude Code skill (cutting dead air, captions, framing), using ffmpeg for the video work.",
+    "1. Create a Google Drive folder for raw clips and make it the only place the bot looks for new files.",
+    "1. Have the bot check that folder on a timer and start the skill whenever a new clip appears.",
+    "1. Run up to three edits at once and send a Telegram message when each starts, with how many are processing and roughly how long they will take.",
+    "1. Send the finished video back to the chat, and let the bot take replies such as \"make the captions bigger\" and re-run the edit with that change.",
+    "1. Leave the PC on with the bot running, because the editing happens on that machine.",
+    "Watch out: the bot only works while your PC is on and the bot is running, so test with one short clip before you trust it with a batch.",
+    "## Prompt to build your own",
+    "```\nYou are helping me build a Telegram bot that edits my videos automatically. I use <Windows/Mac/Linux> and have Claude Code (or ChatGPT Codex), Python or Node, ffmpeg, a Google account and a Telegram account.\nBuild this for me step by step:\n1. A Telegram bot, created with BotFather, that only replies to my own Telegram user ID <my Telegram user ID>.\n2. A watcher that checks a Google Drive folder named <folder name> every <number> minutes and downloads any new video file.\n3. An editing skill, written as a Claude Code skill or a script, that applies my style: <describe your edits, for example cut silences, add word-by-word captions, crop to 9:16>.\n4. A queue that processes up to <number> videos at the same time and messages me when each one starts, with how many are in progress and an estimate of how long it will take.\n5. When an edit finishes, upload the result to a Drive folder named <output folder> and send me the link in Telegram.\n6. If I reply with a change request, re-run the edit with that change and send the new version.\nKeep all tokens and keys in environment variables, never in the code. Ask me for anything you are missing, then return the full project, the commands to run it, and a short test plan using one short clip.\n```"
+  ]
 }

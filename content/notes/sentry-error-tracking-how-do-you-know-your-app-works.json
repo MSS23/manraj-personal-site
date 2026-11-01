@@ -7,7 +7,7 @@
   "episode": null,
   "pillar": "Building in public",
   "hook": "You're not going to know whether your application works or not.",
-  "keyword": "SENTRY",
+  "keyword": "Sentry error tracking",
   "summary": "Metricool: scheduled Wed 2026-10-28 11:00 IG + TikTok",
   "body": [
     "Metricool: scheduled Wed 2026-10-28 11:00 IG + TikTok"
@@ -20,5 +20,17 @@
   "slides": [],
   "cover": "/notes/sentry-error-tracking-how-do-you-know-your-app-works/cover.jpg",
   "views": 610,
-  "guide": []
+  "guide": [
+    "Add error tracking to your app so you hear about breakages before your users do. You need a deployed web app (for example on Vercel) and a free Sentry account.",
+    "1. Create a free account at Sentry and add a new project for your app's framework (for example Next.js).",
+    "1. Install the Sentry SDK in your app by following the setup steps Sentry shows for that framework.",
+    "1. Add the project's DSN (the key Sentry gives you) as an environment variable in your host, such as Vercel, then redeploy.",
+    "1. Trigger a test error on purpose and check that it appears in the Sentry Issues list.",
+    "1. Add an uptime monitor in Sentry for your site's URL, so you are alerted when it stops responding.",
+    "1. Set up email alerts for new issues and for the uptime monitor.",
+    "1. Break something deliberately, such as pausing the project on Vercel, and confirm the \"site not reachable\" alert arrives.",
+    "Watch out: testing alone will not tell you whether your app works for real people, so confirm alerts actually reach you before you rely on them, and never publish your DSN-linked environment variables in public code.",
+    "## Prompt to build your own",
+    "```\nYou are helping me add error tracking and uptime alerts to my web app using Sentry. My app is built with <framework, e.g. Next.js> and deployed on <hosting, e.g. Vercel>. My code lives in <repository or local folder>.\nPlease:\n1. Give me the exact steps and commands to install and configure the Sentry SDK for my framework.\n2. Show me where to store the Sentry DSN as an environment variable in my host, without hard-coding it in the code.\n3. Write a small test route or button that throws a deliberate error so I can confirm it reaches Sentry.\n4. Explain how to set up a Sentry uptime monitor for <my site URL> and email alerts to <my email address>.\n5. List how to check that errors in the part of my app that users rely on most, <key feature, e.g. a map or dashboard>, are being captured.\nConstraints: keep changes minimal, use the free plan where possible, never print or commit secrets, and explain each step in plain English. Return the code changes as a short list of files to edit, then a checklist I can tick off to confirm everything works.\n```"
+  ]
 }

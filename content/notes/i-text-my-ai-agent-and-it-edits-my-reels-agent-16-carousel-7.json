@@ -7,7 +7,7 @@
   "episode": null,
   "pillar": "AI & automation",
   "hook": "",
-  "keyword": "VIDEO",
+  "keyword": "VIDEO EDIT",
   "summary": "Metricool: scheduled Fri 30 Oct 13:00 IG + TikTok",
   "body": [
     "Metricool: scheduled Fri 30 Oct 13:00 IG + TikTok"
@@ -20,5 +20,17 @@
   "slides": [],
   "cover": null,
   "views": 695,
-  "guide": []
+  "guide": [
+    "An AI agent you message from your phone that trims and captions your short videos, then schedules the finished reel. You need a Telegram account, an AI coding assistant (Claude Code or Codex), ffmpeg, a Google Drive folder, and a Metricool account.",
+    "1. Create a Telegram bot with BotFather and keep its token somewhere private, not in your code.",
+    "1. Make a Google Drive folder for raw clips and a second one for finished videos.",
+    "1. In Claude Code or Codex, build a small program that listens to your bot and treats your messages as editing instructions, such as \"cut the pauses\" or \"add captions\".",
+    "1. Have the program download the clip from Google Drive and run ffmpeg to cut, resize to 9:16 and burn in the captions.",
+    "1. Save the result to the finished folder and send a preview back to Telegram so you can approve it or ask for changes.",
+    "1. Once you approve, have the program create the scheduled post through Metricool for Instagram and TikTok, with your caption and a time.",
+    "1. Make the program reply with what it changed on each version, so you can check it from your phone.",
+    "Watch out: let the agent schedule only after you approve the preview, and keep your tokens in environment variables, never in the code or in chat.",
+    "## Prompt to build your own",
+    "```\nYou are helping me build a personal video-editing agent that I control by text message. I use <operating system> and have <Claude Code or Codex>, ffmpeg, a Telegram account, Google Drive and a Metricool account on <plan name>.\nBuild a small program in <Python or Node> that does this:\n1. Listens to my Telegram bot, but only replies to my own user ID.\n2. When I send an instruction such as \"cut the pauses and add captions\", it fetches the newest clip from my Google Drive folder <raw clips folder>.\n3. Edits the clip with ffmpeg: trims silence, converts to 9:16, and adds captions from a transcript.\n4. Saves the result to <finished folder> and sends me a preview in Telegram with a short list of what changed.\n5. Only after I reply \"approve\" does it schedule the video through the Metricool API for <Instagram and TikTok> at <time>, using <my caption>.\nConstraints: read all tokens from environment variables, never hard-code them, keep every previous version of a video, and log each step in plain English.\nReturn the project structure, the full code, setup steps for each service, and how to test it with one sample clip before connecting Metricool.\n```"
+  ]
 }

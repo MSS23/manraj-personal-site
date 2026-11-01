@@ -7,7 +7,7 @@
   "episode": null,
   "pillar": "Career & tech",
   "hook": "AI has really changed the game",
-  "keyword": "FOOTBALL",
+  "keyword": "AI and football",
   "summary": "Metricool: scheduled Mon 2026-10-26 11:00 IG + TikTok\nAI and football: how to use them together. Predict player market prices with machine learning, or predict the other team's formation, starting with Premier League data.\nMaster: Drive > Reels for CapCut > ai-and-football > reel.mp4",
   "body": [
     "Metricool: scheduled Mon 2026-10-26 11:00 IG + TikTok\nAI and football: how to use them together. Predict player market prices with machine learning, or predict the other team's formation, starting with Premier League data.\nMaster: Drive > Reels for CapCut > ai-and-football > reel.mp4"
@@ -20,5 +20,18 @@
   "slides": [],
   "cover": "/notes/ai-and-football-2-project-ideas/cover.jpg",
   "views": 431,
-  "guide": []
+  "guide": [
+    "This guide shows how to point machine learning at football. You need a laptop, a free ChatGPT or Claude account (or Codex or Claude Code), and a football dataset you can download.",
+    "1. Pick one of the two projects: predict a player's market value, or predict the formation the other team will play.",
+    "1. Find a public Premier League dataset, such as a downloadable CSV of player stats and market values or of match lineups, and save it in a Google Drive folder.",
+    "1. Ask ChatGPT (Codex) or Claude Code to open the file and describe the columns, the missing values and what each row represents.",
+    "1. Decide what you are predicting (the market value, or the formation) and which columns the model may use as inputs.",
+    "1. Ask the assistant to split the data into training and test sets, then train a simple model in Python with scikit-learn.",
+    "1. Compare the model's predictions with the real values on the test set and ask the assistant to explain which inputs mattered most.",
+    "1. Improve one thing at a time, such as adding a new input or trying a different model, and re-run the same comparison.",
+    "1. Put the results in a chart and a short write-up so someone else can follow what you did.",
+    "Watch out: Premier League data is far easier to find than lower-league data, so start there, and never judge the model on the same rows it trained on.",
+    "## Prompt to build your own",
+    "```\nYou are helping me build a small machine learning project that combines AI and football. I am a beginner and I use <ChatGPT/Codex or Claude Code>.\nProject: <predict a player's market value / predict the opposition's formation>, using Premier League data.\nMy data: <describe your CSV file or paste the column names>. If I have not got data yet, tell me which public Premier League datasets suit this project and what to download.\nPlease do the following:\n1. Inspect the data and list the columns, missing values and anything that looks wrong.\n2. Ask me which column is the target and which columns are allowed as inputs.\n3. Split the data into training and test sets.\n4. Train a simple baseline model in Python with scikit-learn, then one stronger model.\n5. Measure both on the test set only, and explain the results in plain English.\n6. Show which inputs mattered most, and draw one clear chart.\nKeep the code short, comment each step, and tell me exactly how to run it on <Windows/Mac>. Do not invent data. If something is unclear, ask me before continuing.\n```"
+  ]
 }

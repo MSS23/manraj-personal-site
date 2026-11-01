@@ -7,7 +7,7 @@
   "episode": null,
   "pillar": "Claude & skills",
   "hook": "If you're asking Claude to do the same thing ten times every week, you should be using a Claude skill.",
-  "keyword": "SKILL",
+  "keyword": "what is a Claude skill",
   "summary": "Metricool: scheduled Thu 15 Oct 11:00 IG + TikTok\nv2 ready 2026-10-10 22:26 ·",
   "body": [
     "Metricool: scheduled Thu 15 Oct 11:00 IG + TikTok\nv2 ready 2026-10-10 22:26 ·"
@@ -20,5 +20,17 @@
   "slides": [],
   "cover": "/notes/what-is-a-claude-skill/cover.jpg",
   "views": 304,
-  "guide": []
+  "guide": [
+    "A Claude skill is a folder of instructions that lets Claude repeat a task the same way every time. You need a Claude account (Claude Code or Claude.ai), a task you repeat, and a few examples of your own past work.",
+    "1. Pick one task you ask Claude to do again and again, such as writing LinkedIn posts in your own voice.",
+    "1. Collect three to five of your best past examples of that task, written the way you want it done.",
+    "1. Create a markdown file for the skill, for example \"linkedin-writer.md\", in a folder for that skill.",
+    "1. Write about seven short, clear instructions in the file covering tone, structure, length and anything to avoid.",
+    "1. Paste your example posts below the instructions so Claude can copy the style.",
+    "1. Install the folder as a skill in Claude Code or Claude.ai, following Anthropic's skills documentation.",
+    "1. Ask Claude to use the skill each time, give it only the new topic, and then edit the skill when the output drifts.",
+    "Watch out: keep the instructions short and the examples genuinely your own, because vague rules or borrowed examples make Claude repeat the wrong style.",
+    "## Prompt to build your own",
+    "```\nYou are helping me create a reusable Claude skill for a task I repeat often. The task is <describe the task, for example writing LinkedIn posts>. I use <Claude Code or Claude.ai> and I will paste three to five examples of my own past work below.\nBuild me a skill folder containing one markdown file named <skill-name>.md. The file must have a short description of when to use the skill, about seven clear instructions covering tone of voice, structure, length and things to avoid, and my examples included as reference material. Base the instructions only on patterns you can see in my examples, and do not invent rules I have not shown.\nConstraints: plain English, British spelling, no hype, and keep the instructions under 200 words in total.\nReturn the full contents of the markdown file, then tell me, in three short steps, how to install it as a skill and how to ask Claude to use it for a new topic.\nMy examples:\n<paste examples here>\n```"
+  ]
 }

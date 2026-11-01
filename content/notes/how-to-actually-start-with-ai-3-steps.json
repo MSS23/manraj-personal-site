@@ -24,5 +24,17 @@
   "slides": [],
   "cover": "/notes/how-to-actually-start-with-ai-3-steps/cover.jpg",
   "views": 371,
-  "guide": []
+  "guide": [
+    "This is a beginner's method for getting comfortable with AI in a month. You need a free or paid account with one assistant, either ChatGPT or Claude, and a notes app or a sheet of paper.",
+    "1. Choose one assistant, ChatGPT or Claude, and commit to using only that one every day for a month.",
+    "1. Write down the tasks you do in a normal week, then mark the ones you dislike doing.",
+    "1. Circle the disliked tasks that repeat, such as replying to similar emails, summarising notes or drafting the same document.",
+    "1. Pick one circled task and tell the assistant who you are, what the task is and who the result is for, as you would brief a new colleague.",
+    "1. Paste in two or three real examples of a good result, and say what makes each one good.",
+    "1. Ask for the task, correct what it gets wrong, then save the final wording as a reusable prompt in your notes app.",
+    "1. Add one new task each week, reusing the same context and examples, and keep your best prompts in one place.",
+    "Watch out: Don't switch tools when a result disappoints you, because the fix is usually more context and better examples, and show only good examples, since the assistant copies whatever you give it.",
+    "## Prompt to build your own",
+    "```\nYou are helping me get started with AI as a complete beginner. I will use only <ChatGPT or Claude> for the next month.\nStep 1: Ask me up to 8 short questions about my job, my week and the tasks I dislike. Wait for my answers.\nStep 2: From my answers, list the tasks that repeat and rank them by how much time they cost me. Recommend the three best to hand to AI first.\nStep 3: For the top task, write a starter prompt template with these labelled sections: who I am, what the task is, who the output is for, tone and length, and a place for me to paste two or three good examples.\nStep 4: Ask me for those examples, then show me one draft result using the template.\nStep 5: Tell me how to improve the template based on what I correct.\nConstraints: plain English, British spelling, no jargon, and no tools beyond <ChatGPT or Claude>. My role is <my job>. The task I most want to hand over is <my task>.\nReturn: the ranked task list, the finished template ready to copy, and a simple weekly plan for adding one new task at a time.\n```"
+  ]
 }

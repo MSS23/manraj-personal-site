@@ -7,7 +7,7 @@
   "episode": null,
   "pillar": "Claude & skills",
   "hook": "Stop re-prompting Claude. Make a skill.",
-  "keyword": "SKILL",
+  "keyword": "what is a Claude skill",
   "summary": "Metricool: scheduled Thu 18:00 IG + TikTok\nSilent no-face reel, 40 s. IG booked without a sound (Metricool audio catalog returned 403): add a trending sound by hand. TikTok is a push-notification post (autoPublish off): finish it in the app.\nDrive: G:/My Drive/06 Content Creation/ManrajTalks/carousel-reels/linkedin-writer-skill/",
   "body": [
     "Metricool: scheduled Thu 18:00 IG + TikTok\nSilent no-face reel, 40 s. IG booked without a sound (Metricool audio catalog returned 403): add a trending sound by hand. TikTok is a push-notification post (autoPublish off): finish it in the app.\nDrive: G:/My Drive/06 Content Creation/ManrajTalks/carousel-reels/linkedin-writer-skill/"
@@ -20,5 +20,17 @@
   "slides": [],
   "cover": "/notes/what-is-a-claude-skill-and-why-stop-re-prompting-motion/cover.jpg",
   "views": 818,
-  "guide": []
+  "guide": [
+    "A Claude skill is a folder of instructions and examples that Claude reads each time you call it, so you stop retyping the same prompt. You need Claude Code (or another Claude app that supports skills), plus a few examples of your own work.",
+    "1. Pick one task you repeat every week, such as writing a LinkedIn post, and write down the steps you take each time.",
+    "1. Collect 3 to 5 finished examples of that task that you are happy with, such as posts you have already published.",
+    "1. Create a folder for the skill and add a SKILL.md file with a short name, a one-line description of when to use it, and your rules written as plain instructions.",
+    "1. Put your examples in the same folder, or paste them into SKILL.md, so Claude can copy the tone and structure.",
+    "1. Open Claude Code in the project and ask for the task by calling the skill by name in one line.",
+    "1. Read the result against your examples, then tighten any rule Claude missed in SKILL.md.",
+    "1. Repeat the edit-and-test loop until the output matches your voice without extra prompting.",
+    "Watch out: A skill is only as good as its examples and rules, so keep it to one task and only use examples you are happy to have copied.",
+    "## Prompt to build your own",
+    "```\nYou are helping me build a Claude skill for Claude Code. The skill automates one task I repeat often: <task, e.g. writing a LinkedIn post>.\nWhat I have: Claude Code installed, a project folder at <folder name>, and <3 to 5> finished examples of the task that I will paste below.\nPlease do the following:\n1. Create a skill folder called <skill-name> containing a SKILL.md file.\n2. In SKILL.md, add a name, a one-line description of when the skill should be used, and a clear set of rules for tone, length and structure. Base the rules only on my examples and my notes below.\n3. Save my examples inside the folder in a separate file and reference it from SKILL.md.\n4. Show me the folder structure and the full contents of SKILL.md.\n5. Give me one example one-line request I can type to call the skill, and explain how to test it.\nMy rules and notes: <your rules, for example audience, voice, words to avoid, length>.\nMy examples: <paste examples here>.\nDo not invent rules I have not given you. If something is unclear, ask me before writing the file.\n```"
+  ]
 }

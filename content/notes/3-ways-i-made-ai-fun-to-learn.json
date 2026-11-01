@@ -20,5 +20,18 @@
   "slides": [],
   "cover": "/notes/3-ways-i-made-ai-fun-to-learn/cover.jpg",
   "views": 821,
-  "guide": []
+  "guide": [
+    "Build a small app or site around something you already care about, using an AI coding assistant to do the heavy lifting. You need ChatGPT (Codex) or Claude Code, and an idea from your own interests.",
+    "1. Pick one thing you love, such as travel, collectables, food, finance or fashion, and write down the single problem you want solved.",
+    "1. Describe the project to ChatGPT (Codex) or Claude Code in plain English and ask for the smallest working version first.",
+    "1. Choose a simple shape: a social app for travel, a tracker that totals what a collection is worth, or a website for a local business you like.",
+    "1. Run what the assistant builds on your own computer and tell it what is wrong or missing, one change at a time.",
+    "1. Store your data (for example your collection and what you paid) in a database such as Supabase, so the tracker can add up value and cost.",
+    "1. Put the finished site online with Vercel so you can share a real link.",
+    "1. Keep going on the same project, since a project you care about is what keeps you learning.",
+    "Watch out: Don't learn AI just to learn it; pick a project you care about first, or you will stop when it gets hard.",
+    "## Prompt to build your own",
+    "```\nYou are helping me build my first AI-assisted project. I am not a professional developer, so explain each step in plain English and keep the code simple.\nProject: <describe the thing you want, e.g. a tracker for my <collection> that shows what it is worth, or a website for <local business I like>>.\nMy interest: <the topic I care about>.\nTools I have: <ChatGPT (Codex) or Claude Code>, a computer that can run <Node.js or Python>, and accounts on <Supabase for data, Vercel for hosting, or none yet>.\nWhat to build: the smallest working version first, with these features only: <feature 1>, <feature 2>, <feature 3>. Do not add anything else until I ask.\nConstraints: free tiers only, no secrets pasted into code, and keep the folder structure easy to follow.\nReturn: a short plan, the exact commands to run on my computer, the files with full code, how to test that it works, and the next three improvements I could ask for.\n```",
+    "I left out any step about going viral or posting the project, since the source only covers building it. Step 5 and 6 (Supabase, Vercel) are my suggestions as common routes. The post doesn't say which tools Manraj used for these three projects."
+  ]
 }

@@ -21,5 +21,18 @@
   "slides": [],
   "cover": null,
   "views": 690,
-  "guide": []
+  "guide": [
+    "Replace a hand-built backend with Supabase for the database, sign-in and file storage, plus a host like Vercel, so you run no servers of your own. You need a Supabase account, a Vercel account, and ChatGPT (Codex) or Claude Code.",
+    "1. Write down what your app must store and who can see it, in plain sentences, before you open any tool.",
+    "1. Create a new project in Supabase and note its project URL and publishable key.",
+    "1. Ask Claude Code or Codex to turn your sentences into database tables, then apply them as a migration in Supabase.",
+    "1. Turn on Supabase Auth and Row Level Security for every table, so each user can only read and change their own rows.",
+    "1. Connect your front end to Supabase with the official client library, using only the publishable key in browser code.",
+    "1. Deploy the front end to Vercel and add the Supabase URL and key as environment variables in the Vercel project settings.",
+    "1. Run Supabase's built-in security and performance advisors, then fix every warning before you share the link.",
+    "Watch out: never put the service role key in front-end code or a public repository, and never leave a table without Row Level Security.",
+    "## Prompt to build your own",
+    "```\nYou are helping me build a small app with no servers of my own to maintain. I use Supabase for the database, authentication and storage, and Vercel for hosting. I have accounts on both, and I work in <Claude Code or Codex>.\nThe app does this: <one-sentence description of the app>. It stores: <list of things to store, for example customers, orders, notes>. Each signed-in user should only see and change their own data: <any exceptions>.\nPlease do the following:\n1. Propose the database tables and columns, and show them to me before changing anything.\n2. Write the SQL migration, including Row Level Security policies for every table.\n3. Set up Supabase Auth with <email and password, or magic link>.\n4. Build a simple <framework, for example Next.js> front end that signs users in and lists, adds and edits their records.\n5. Use only the publishable key in browser code. Keep the service role key out of the code and out of the repository.\n6. Explain how to deploy to Vercel and which environment variables to set.\n7. Finish by listing any security or performance warnings I should check in the Supabase advisors.\nKeep it as small as possible and explain each step in plain English.\n```",
+    "I added no checks beyond what the source supports. The source only names \"2 tools\" and \"0 servers\", so I chose Supabase plus Vercel as the pair. The migration, Auth and Row Level Security steps are standard Supabase practice, not details from the post."
+  ]
 }

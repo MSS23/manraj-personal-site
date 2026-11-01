@@ -20,5 +20,17 @@
   "slides": [],
   "cover": null,
   "views": 712,
-  "guide": []
+  "guide": [
+    "Claude Code does the repetitive part of editing a talking-head reel (cutting, captioning, checking the frames), and you finish and schedule it yourself. You need Claude Code, ffmpeg, Google Drive, CapCut and Metricool.",
+    "1. Record your clips on your phone and put them in a Google Drive folder, or a local folder that syncs to Drive.",
+    "1. Install ffmpeg and open Claude Code in a working folder that holds a copy of the clips.",
+    "1. Ask Claude Code to transcribe each clip, choose the cleanest take of every line and cut the dead air with ffmpeg.",
+    "1. Have it add word-by-word captions and a hook on the first frame, and export a vertical 9:16 file.",
+    "1. Ask it to pull still frames at each cut and check that captions and text sit clear of the app's top and bottom interface areas.",
+    "1. Save the result to a Drive folder, open it in CapCut for the final polish, and export.",
+    "1. Schedule the finished file for Instagram and TikTok in Metricool.",
+    "Watch out: Check the stills after every render, because captions that look fine in the editor can sit under the platform's buttons on the phone.",
+    "## Prompt to build your own",
+    "```\nYou are helping me edit short vertical talking-head videos. I have Claude Code or Codex, ffmpeg installed, a folder of raw 9:16 phone clips at <clips folder>, and CapCut for the final polish.\nBuild a small, repeatable workflow in this folder that does the following for each clip:\n1. Transcribe the audio with <transcription tool, e.g. Whisper> and save the transcript with word timestamps.\n2. Where I repeat a line, choose the cleanest take and cut silences longer than <pause length> seconds.\n3. Burn in word-by-word captions in <font and colour> and put a hook line of <hook text> on the first frame.\n4. Export a 1080x1920 MP4 at <frame rate> fps.\n5. Extract a still frame at every cut and flag any text that sits in the top or bottom <percentage>% of the frame, where Instagram and TikTok draw their buttons.\nUse ffmpeg commands and a short script I can rerun. Do not overwrite my original clips; write outputs to a separate folder. Return the script, the exact commands to run it, and a short list of anything you could not check automatically.\n```"
+  ]
 }

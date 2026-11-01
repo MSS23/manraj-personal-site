@@ -7,7 +7,7 @@
   "episode": null,
   "pillar": "AI & automation",
   "hook": "AI was the reason I worked out I'd booked a taxi to the wrong airport.",
-  "keyword": null,
+  "keyword": "CONNECT AI",
   "summary": "AI travel planning in Notion just saved my flight home.",
   "body": [
     "AI travel planning in Notion just saved my flight home.",
@@ -27,6 +27,19 @@
   "guide": [
     "Cover title: AI caught my wrong-airport taxi",
     "Copy file: Ready for CapCut/ai-wrong-airport-copy.txt",
-    "Best time: Fri 9 Oct, 10:00 UK (Metricool top weekday slot on TikTok + Instagram)"
+    "Best time: Fri 9 Oct, 10:00 UK (Metricool top weekday slot on TikTok + Instagram)",
+    "This sets up an AI travel planner in Notion that reads your itinerary and bookings and flags problems for you to check. You need a Notion account, your trip details, and ChatGPT or Claude.",
+    "1. Create a trip page in Notion with a day-by-day plan, and add your flights, hotels, taxis and other bookings as linked entries or a database.",
+    "1. Paste in or link the booking confirmations, including airport names, terminals, dates and times for both outbound and return legs.",
+    "1. Connect an AI assistant to your Notion workspace, using Notion's own AI or the Notion connector in Claude or ChatGPT, so it can read the trip page and bookings.",
+    "1. Ask it to review the whole trip and add a \"Things to check\" section at the bottom of the page, covering documents, packing, and any booking that does not match another (for example, a taxi pick-up point against a flight's airport).",
+    "1. Tell it to flag only. It should write findings on the page and never rebook, cancel or message anyone.",
+    "1. Read the checklist a week before you travel and again the day before, and correct anything it got wrong.",
+    "1. Re-run the review whenever you add or change a booking, so the checks stay current.",
+    "Watch out: Keep the assistant read-only and flag-only; a flag you confirm yourself is safe, but an agent acting on a wrong guess can cause a real booking error.",
+    "## Prompt to build your own",
+    "```\nYou are helping me build an AI trip checker in Notion. I have a Notion workspace and a paid <ChatGPT / Claude> account.\nTask: design a setup where the assistant reads my trip page and its linked bookings (<flights, hotels, taxis, other>) and writes a \"Things to check\" section at the bottom of the page.\nRequirements:\n- The assistant must have read access to the trip page and bookings, and write access only to that one section.\n- It must never book, cancel, edit or send anything. It only flags.\n- Each flag should name the booking, the date, what looks wrong, and why (for example, a taxi pick-up point that does not match the departure airport).\n- Include the standard checks: passport validity, visas, packing, check-in times, and transfers between each leg.\n- Say clearly when it is unsure, rather than guessing.\nReturn: a Notion page structure for my trip, the exact instructions to give the assistant, a short review prompt I can re-run after every change, and a step-by-step guide for connecting <Notion AI / Claude / ChatGPT> to my workspace. My trip: <destination and dates>.\n```",
+    "---",
+    "Skipped: no check of current Notion connector setup steps. Risk: connector names and permissions vary by plan, so confirm them before publishing."
   ]
 }

@@ -20,5 +20,16 @@
   "slides": [],
   "cover": "/notes/agent-notes-18-ai-caught-my-wrong-airport-taxi-agent-18-caro/cover.jpg",
   "views": 259,
-  "guide": []
+  "guide": [
+    "This sets up Notion AI to check your travel bookings against each other before you travel. You need a Notion account with Notion AI and your booking confirmations.",
+    "1. Create a Notion page for the trip with the dates, the flights and the place you are staying.",
+    "1. Paste each booking confirmation onto that page, including the taxi, transfer or train home.",
+    "1. Add a short list of what you expect, such as the airport you fly into and the time you land.",
+    "1. Open Notion AI on the page and ask it to compare every booking against the flights and flag anything that does not match.",
+    "1. Ask it to name the exact line it is worried about, so you can check it against the original confirmation yourself.",
+    "1. Fix the booking with the provider, then rerun the check on the corrected page.",
+    "Watch out: in the post, the taxi was booked to the wrong airport and I missed it, so do not rely on your own read of the confirmation, and confirm any flagged mismatch against the original booking before you change anything.",
+    "## Prompt to build your own",
+    "```\nYou are helping me check my travel bookings for mistakes before I travel. I use Notion with Notion AI and have no coding background.\nWrite me a step-by-step setup that I can follow in Notion:\n1. A trip page template with sections for flights, accommodation, transfers (taxi, train, coach) and \"what I expect\" (arrival airport, arrival time, final address).\n2. A single prompt I can paste into Notion AI that compares every booking on the page against my flights and lists any mismatch, such as the wrong airport, wrong date, wrong time or wrong passenger name.\n3. A rule that for each mismatch it quotes the exact line from the booking and says which other line it conflicts with.\n4. A short checklist for fixing the booking with the provider and rerunning the check.\nMy trip: <destination and dates>. My bookings: <flights, hotel, taxi or train>. Tools I have: <Notion plan, email, phone>.\nKeep the language plain and British English. Do not invent details about my bookings. If something is missing, ask me for it before you write the prompt. Return the template and the prompt as copy-and-paste text.\n```"
+  ]
 }

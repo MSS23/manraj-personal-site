@@ -29,5 +29,18 @@
   "slides": [],
   "cover": "/notes/plugin-guardrails-explainer-motion/cover.jpg",
   "views": 403,
-  "guide": []
+  "guide": [
+    "Make Claude Code check every commit before it can become a pull request. You need Claude Code, a GitHub repository and a few checks your team already trusts (tests, linting, a type check).",
+    "1. Decide what \"working\" means for your repo, such as passing tests, a clean linter run and a successful build.",
+    "1. Write those checks down as commands you can run from the project folder.",
+    "1. Package the checks, plus the rules you want Claude to follow, as a Claude Code plugin so the whole team loads the same set.",
+    "1. Install the plugin for everyone on the team, so it loads whenever a Claude Code session is active.",
+    "1. Add a hook in the plugin that fires when Claude commits, and have it run your checks.",
+    "1. Make a failed check block the commit and show Claude the error, so it fixes the code and tries again.",
+    "1. Open the pull request on GitHub only after the checks pass, so reviewers read working code first.",
+    "Watch out: the checks only help if they run on every commit automatically, because anything that relies on someone remembering will be skipped.",
+    "## Prompt to build your own",
+    "```\nYou are helping me set up automatic code checks for Claude Code. I use <programming language> in a GitHub repository, and my team works in Claude Code.\nBuild a Claude Code plugin that does the following:\n- Includes a short set of project rules for Claude, covering <coding standards or conventions I care about>.\n- Adds a hook that runs whenever Claude makes a git commit.\n- The hook runs these checks in order: <test command>, <lint command>, <build or type-check command>.\n- If any check fails, the commit is blocked and the error output is passed back to Claude so it can fix the problem and retry.\n- Only when every check passes may the commit go through, so the pull request on GitHub contains working code.\nConstraints: keep it to the smallest number of files, make no changes to my application code, and explain how to install the plugin for everyone on <team size> people. Return the full plugin folder structure, the contents of every file, the install steps, and one way to test that a failing check really blocks a commit.\n```",
+    "Skipped: I didn't verify the current Claude Code plugin and hook syntax against the docs, so check the file names in the generated plugin. The source gave no detail on which checks the plugin runs, so steps 1 and 2 are generic."
+  ]
 }

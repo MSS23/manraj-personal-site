@@ -20,5 +20,18 @@
   "slides": [],
   "cover": null,
   "views": 719,
-  "guide": []
+  "guide": [
+    "This turns the AI into an interviewer, so it asks you questions before it builds anything. You need ChatGPT (Codex) or Claude Code, plus a few minutes to answer questions.",
+    "1. Open ChatGPT (Codex) or Claude Code and say what you want in one rough sentence, without describing how it should work.",
+    "1. Tell the assistant not to build anything yet and to ask you questions one at a time instead.",
+    "1. Answer in plain words, including who it is for, what it should do, and what \"done\" looks like.",
+    "1. Tell it to point out anything you have not decided, such as where the data lives, who can see it, and what happens when something fails.",
+    "1. Ask it to write a short spec in your own words and read it back to you.",
+    "1. Correct anything wrong in the spec, then tell it to build from the spec.",
+    "1. Test the result, and when something is off, answer one more round of its questions rather than rewriting your request.",
+    "Watch out: if you let it start building after your first sentence, it fills every gap with a guess, so keep the \"do not build yet\" instruction in place until you have approved the spec.",
+    "## Prompt to build your own",
+    "```\nYou are my interviewer before you are my builder. I want to make: <one-sentence idea>.\nDo not write any code or produce the final thing yet. Ask me questions one at a time, waiting for my answer each time. Cover who it is for, what it must do, what it must never do, the tools and accounts I already have (<tools I use, e.g. Google Drive, Notion, Telegram, Vercel>), where the data comes from and goes, and what could go wrong. If an answer is vague, ask a follow-up. Stop asking when you could build it without guessing, and tell me when you reach that point.\nThen write a plain-English spec of no more than one page: the goal, the steps in order, the tools involved, and anything still undecided. Ask me to confirm or correct it. Only after I say \"approved\" should you build it, step by step, telling me how to test each step.\nMy experience level is <beginner / some coding>. Use British spelling and avoid jargon.\n```",
+    "I only had the title, hook and a one-line description of the post. The steps are the general interview-first method, not anything specific from the slides."
+  ]
 }

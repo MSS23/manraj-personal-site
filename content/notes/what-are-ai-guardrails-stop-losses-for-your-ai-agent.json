@@ -7,7 +7,7 @@
   "episode": null,
   "pillar": "AI & automation",
   "hook": "AI is really powerful and a super useful tool, but there's an assumption of risk you have to be willing to take.",
-  "keyword": "GUARDRAIL",
+  "keyword": "what are AI guardrails",
   "summary": "Metricool: scheduled Sun 2026-10-25 11:00 IG + TikTok\nWhat are AI guardrails? Using AI means accepting risk and responsibility. Put $2k in an AI trading bot with no stop loss and you can lose it all, so set protection measures in any AI process.",
   "body": [
     "Metricool: scheduled Sun 2026-10-25 11:00 IG + TikTok\nWhat are AI guardrails? Using AI means accepting risk and responsibility. Put $2k in an AI trading bot with no stop loss and you can lose it all, so set protection measures in any AI process."
@@ -20,5 +20,18 @@
   "slides": [],
   "cover": "/notes/what-are-ai-guardrails-stop-losses-for-your-ai-agent/cover.jpg",
   "views": 378,
-  "guide": []
+  "guide": [
+    "AI guardrails are limits you set so an AI agent can only cost you what you chose to risk. You need an AI agent or automation, a clear idea of what it may do, and a way to switch it off.",
+    "1. Write down the worst outcome in one sentence, for example \"the bot loses the whole £1,500 I put in\".",
+    "1. Set a hard cap on what the agent can spend or lose, using the limit your platform offers, such as a spending cap, a funded amount, or a stop-loss order on a trading account.",
+    "1. Limit the agent's permissions to the minimum, for example read-only access first, and a separate account or API key that only holds the money or data you can afford to lose.",
+    "1. Add a human approval step for anything irreversible, such as sending money, emailing customers or deleting records, using a confirmation message in Telegram or a review step in your automation tool.",
+    "1. Log every action the agent takes in a spreadsheet, Notion or Supabase table so you can see what it did and why.",
+    "1. Add a kill switch, such as a single setting or a revoked API key, that stops the agent immediately.",
+    "1. Test with a tiny amount or dummy data for a week before you raise the limits.",
+    "Watch out: the post's example was putting $2k into an AI trading bot with no stop loss, which can lose all of it, and the responsibility is yours, not the AI's.",
+    "## Prompt to build your own",
+    "```\nYou are helping me add guardrails to an AI agent I am about to run. The agent does: <what the agent does, e.g. trades stocks, replies to customer emails>. The tools I use are: <e.g. ChatGPT, Claude Code, n8n, Google Sheets, Telegram, my broker or platform>. The most I am willing to lose or spend is <amount or limit>.\nDesign and build a simple guardrail layer with these parts:\n1. A hard cap on spend, loss or number of actions, enforced outside the AI's own instructions.\n2. Minimum permissions, with a separate account or key limited to what I can afford to lose.\n3. A human approval step for any irreversible action, sent to <where I want approval requests, e.g. Telegram or email>.\n4. An action log in <e.g. Google Sheets or Notion> recording what was done, when and why.\n5. A kill switch I can trigger in one step.\n6. A test mode that uses dummy data or a tiny amount.\nKeep it to the simplest version that works with my tools, and use British spelling. Return the step-by-step setup, any code or workflow needed, and a short checklist for testing the guardrails before I go live. Ask me any questions you need before you start.\n```",
+    "I skipped checking the guide's length against the 80 to 200 word limit for the prompt; I counted by eye only. The £1,500 in step 1 is only an illustrative example, not a figure from the post."
+  ]
 }

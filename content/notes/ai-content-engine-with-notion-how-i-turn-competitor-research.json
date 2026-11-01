@@ -7,7 +7,7 @@
   "episode": null,
   "pillar": "AI & automation",
   "hook": "I've been able to build out a content engine that helps me take information from my competitors and research",
-  "keyword": "ENGINE",
+  "keyword": "AI content engine with Notion",
   "summary": "Metricool: scheduled IG Wed 2026-10-14 10:00 + TikTok Thu 2026-10-15 10:00 (Europe/London). Myth: research means copying. How Hermes and Claude, connected to Notion, turn competitor research and trending topics into content in my own voice: the engine takes stories others have used, then I interview myself so each post is my version. Keyword: AI content engine with Notion.\nhouse version posts (13 Oct 2026)",
   "body": [
     "Metricool: scheduled IG Wed 2026-10-14 10:00 + TikTok Thu 2026-10-15 10:00 (Europe/London). Myth: research means copying. How Hermes and Claude, connected to Notion, turn competitor research and trending topics into content in my own voice: the engine takes stories others have used, then I interview myself so each post is my version. Keyword: AI content engine with Notion.\nhouse version posts (13 Oct 2026)"
@@ -20,5 +20,17 @@
   "slides": [],
   "cover": "/notes/ai-content-engine-with-notion-how-i-turn-competitor-research/cover.jpg",
   "views": 845,
-  "guide": []
+  "guide": [
+    "This builds a content engine that turns other creators' posts and trending topics into ideas written in your own voice. You need a Notion workspace, an AI assistant that can read and write to it (ChatGPT, Codex or Claude Code, or an open-source agent framework), and a few creators to learn from.",
+    "1. Create a Notion database with one row per idea, and add properties for source link, topic, status and your own angle.",
+    "1. Connect your AI assistant to Notion, for example through Notion's connector in Claude or ChatGPT, so it can read and write that database.",
+    "1. Add the creators you want to learn from and the topics you follow, then ask the assistant to pull in the stories and concepts they have used and save each as a row.",
+    "1. For each idea, have the assistant interview you with questions such as \"what does this look like for you?\" and \"what did you actually do?\".",
+    "1. Answer in your own words, and have the assistant save your answers into the row.",
+    "1. Ask the assistant to draft the post from your answers only, keeping the source idea as a topic and not as wording.",
+    "1. Review the draft, edit it, and set the row to ready.",
+    "Watch out: research is only the starting point, so never publish a draft that was not built from your own answers, or it becomes a copy of someone else's post.",
+    "## Prompt to build your own",
+    "```\nYou are my content assistant. Help me build a content engine in Notion that turns research into posts in my own voice.\nI use <assistant: ChatGPT / Codex / Claude Code> with a Notion connection to my workspace. My niche is <niche>. The creators and topics I follow are <list of creators and topics>. My background, skills and story are <short summary>.\nBuild this for me:\n1. A Notion database with properties for source link, topic, status (idea, interviewed, drafted, ready) and my angle.\n2. A research step: take the creators and topics above, find stories and concepts they have used, and save each as a row with its source link. Do not copy their wording.\n3. An interview step: for each idea, ask me up to five questions about what it looks like from my experience, one at a time, and save my answers to the row.\n4. A drafting step: write a short post for <platform> using only my answers, in plain English and my tone, and save it to the row.\nConstraints: never reuse another creator's phrasing, never publish anything, and always ask before changing existing rows.\nReturn the database setup, the exact prompts for each step, and a short guide to running it weekly.\n```"
+  ]
 }

@@ -20,5 +20,17 @@
   "slides": [],
   "cover": null,
   "views": 87,
-  "guide": []
+  "guide": [
+    "Put limits around an AI tool before it acts, so a mistake costs you little. You need an AI assistant (ChatGPT, Codex or Claude Code) and a clear idea of what the AI is and is not allowed to touch.",
+    "1. Write down what the AI is for, and list the actions it must never take on its own, such as sending emails, deleting files, spending money or publishing.",
+    "1. Give the AI the least access it needs: a single Google Drive folder or one Notion page, not your whole account.",
+    "1. Use a test copy or a draft area first, so early mistakes land somewhere harmless.",
+    "1. Add an approval step before anything outward-facing, for example the AI posts its proposed action to Telegram and waits for you to reply yes.",
+    "1. Set hard limits where the tool allows them, such as a spending cap, a daily run limit or read-only permissions.",
+    "1. Keep a simple log of what the AI did and when, so you can check it and undo it.",
+    "1. Review the log after the first few runs, then loosen the limits only where it has behaved well.",
+    "Watch out: the AI will not judge risk for you, because the risk stays with you, so set the guardrails before you run it, not after something goes wrong.",
+    "## Prompt to build your own",
+    "```\nYou are helping me set up guardrails for an AI workflow before I run it. The task I want the AI to do is <describe the task>. The tools I use are <for example ChatGPT, Claude Code, Google Drive, Notion, Telegram>.\nPlease produce:\n1. A list of actions the AI may do on its own, actions that need my approval, and actions it must never do, based on <what could go wrong, for example sending messages, deleting files, spending money>.\n2. The minimum permissions and access it needs in each tool, and how to set them up with the tools I named.\n3. An approval step for anything outward-facing, using <my approval channel, for example Telegram or email>, where the AI waits for my yes before acting.\n4. Hard limits I can set, such as <spending cap, daily run limit, read-only access>.\n5. A simple log format recording what the AI did, when, and how to undo it.\nKeep it in plain English and use only tools I already have. Start with a short checklist I can follow today, then give any setup steps or code I need. Do not assume the AI will manage risk for me.\n```"
+  ]
 }

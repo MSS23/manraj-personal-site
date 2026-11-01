@@ -7,7 +7,7 @@
   "episode": null,
   "pillar": "Claude & skills",
   "hook": "Stop hoping reviewers catch bugs",
-  "keyword": "PLUGIN",
+  "keyword": "Claude Code plugin",
   "summary": "Stop hoping reviewers catch bugs: a Claude Code plugin checks every commit before the PR goes to GitHub.",
   "body": [
     "Stop hoping reviewers catch bugs: a Claude Code plugin checks every commit before the PR goes to GitHub.",
@@ -30,5 +30,17 @@
   "slides": [],
   "cover": "/notes/plugin-guardrails-motion-motion/cover.jpg",
   "views": 352,
-  "guide": []
+  "guide": [
+    "A Claude Code plugin that checks every commit before the pull request goes up. You need Claude Code, a GitHub repository and a few minutes to write your checks.",
+    "1. Decide what \"correct\" means for your project: the tests, the linter, the type check and any rules your team keeps repeating in reviews.",
+    "1. Write those checks as a Claude Code plugin, a bundle of instructions, commands and tools that Claude loads at the start of every session.",
+    "1. Add a Claude Code hook that fires the plugin whenever Claude makes a commit.",
+    "1. Have the plugin run your checks, read the output and fix what fails, then re-run until everything passes.",
+    "1. Stop the pull request being opened until the checks pass, using the hook or a rule in the plugin.",
+    "1. Open the pull request on GitHub with the GitHub CLI once the commit is clean.",
+    "1. Share the plugin with your team so everyone gets the same checks.",
+    "Watch out: the plugin only helps if it blocks the pull request when a check fails, so test it against a deliberately broken commit first.",
+    "## Prompt to build your own",
+    "```\nYou are helping me build a Claude Code plugin that checks my code before any pull request is opened.\nMy project is <describe the project and language>, hosted on GitHub. My test command is <test command>, my linter is <linter or \"none yet\">, and my type check is <type check command or \"none\">. My team's review rules are: <list the mistakes reviewers keep finding>.\nBuild the plugin so that:\n- it contains the instructions and commands Claude should follow to run these checks;\n- a hook runs it every time Claude commits;\n- it reads the results, fixes any failures and re-runs until everything passes;\n- it refuses to open the pull request while any check is failing;\n- once clean, it opens the pull request with the GitHub CLI.\nReturn the full plugin folder with every file, how to install it, and a short test plan that uses a deliberately broken commit to prove the pull request is blocked. Ask me about anything unclear before you start. Do not add features I have not listed.\n```"
+  ]
 }

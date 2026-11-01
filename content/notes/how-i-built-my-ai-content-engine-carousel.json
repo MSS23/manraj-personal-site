@@ -20,5 +20,17 @@
   "slides": [],
   "cover": "/notes/how-i-built-my-ai-content-engine-carousel/cover.jpg",
   "views": 480,
-  "guide": []
+  "guide": [
+    "This reel is about building a content engine that learns why competitor posts worked and rewrites the idea in your own voice. You need ChatGPT (Codex) or Claude Code, plus a place to hold your drafts and your own post history.",
+    "1. Collect five to ten posts from competitors that performed well, saving the text or a transcript of each in a Google Drive folder or a Notion page.",
+    "1. Ask ChatGPT or Claude to explain why each post worked: the hook, the claim, the one thing it teaches and the format.",
+    "1. Write down your own voice in a short style note: how you speak, words you use, words you avoid and a few of your best posts as examples.",
+    "1. Give the assistant the \"why it worked\" notes and your style note, and ask it to draft a new post that makes the same point in your voice, not a copy.",
+    "1. Turn the draft into the format you post, such as a nine-slide carousel designed in Canva or a short video edited in CapCut.",
+    "1. Schedule the finished post with Metricool so it goes out on the days you choose.",
+    "1. Review how each post performed and add the results to your style note, so the next draft improves.",
+    "Watch out: the idea is to borrow the reason a post worked, never the wording, so check every draft for phrases lifted from the original.",
+    "## Prompt to build your own",
+    "```\nYou are helping me build a content engine that learns from competitors without copying them. I post about <my topic> for <my audience> on <platforms>. I have ChatGPT or Claude Code, <design tool such as Canva or CapCut> and <scheduler such as Metricool>.\nI will give you: (1) <number> competitor posts that performed well, and (2) a style note describing my voice, with <number> examples of my own posts.\nFor each competitor post, write a short analysis of why it worked: the hook, the single idea it teaches, and the format. Then draft one new post for each that makes the same point in my voice, using different wording and my own examples. Flag any phrase that is too close to the original and rewrite it.\nConstraints: plain English, British spelling, no hype, no hashtags. Each post must teach one thing only.\nReturn: a table of the analyses, the new drafts, and a list of the flagged phrases you rewrote. Ask me before you assume anything about my voice that is not in the style note.\n```"
+  ]
 }

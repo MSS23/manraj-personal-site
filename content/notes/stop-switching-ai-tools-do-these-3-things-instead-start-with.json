@@ -21,5 +21,17 @@
   "slides": [],
   "cover": null,
   "views": 69,
-  "guide": []
+  "guide": [
+    "The post argues you should stop hopping between AI tools and instead commit to one for 30 days. You need one AI assistant (ChatGPT, Claude or similar), a notes app such as Notion, and a few minutes a day.",
+    "1. Pick one assistant, such as ChatGPT or Claude, and write down the date you start.",
+    "1. Commit to using only that tool for 30 days, and ignore new launches until the 30 days are up.",
+    "1. List the tasks you dislike doing (drafting emails, summarising notes, tidying spreadsheets) and hand one of them to the assistant each day.",
+    "1. Talk to it as you would a colleague: say what you want, why you want it and who it is for, then reply with corrections instead of starting again.",
+    "1. Once a conversation produces a good result, ask the assistant to write a short context prompt covering your role, your audience and your preferred tone.",
+    "1. Save that prompt in Notion, or any notes app, and paste it at the start of future chats so you never begin from zero.",
+    "1. At day 30, review which tasks you handed off and decide whether to stay or switch with evidence.",
+    "Watch out: every time you switch tools you start again from day one, losing the habits and context you built, so do not switch before the 30 days are done.",
+    "## Prompt to build your own",
+    "```\nYou are my AI onboarding coach. I want to commit to a single AI assistant, <ChatGPT / Claude / other>, for 30 days instead of switching tools.\nAbout me: I work as <your role> and my audience is <who you write or work for>. The tasks I dislike most are <task 1>, <task 2> and <task 3>.\nBuild me a 30-day starter plan that:\n- gives me one small task to hand off each day, drawn from my list and getting gradually harder\n- shows me how to brief you like a colleague: the goal, the audience, the format and an example of good work\n- includes a reusable context prompt, written in the first person, that holds my role, audience, tone and rules, which I can paste at the start of any new chat\n- has a short review on day 30 so I can judge what saved me time\nKeep the plan in plain English, with no jargon. Return a day-by-day table, then the context prompt on its own, ready to copy into <Notion / my notes app>. Ask me up to five questions first if you need more detail.\n```"
+  ]
 }

@@ -20,5 +20,17 @@
   "slides": [],
   "cover": null,
   "views": 744,
-  "guide": []
+  "guide": [
+    "Turn one Notion page into a hub for your content, career and personal admin, with Claude reading and updating it for you. You need a Notion account, a Claude account and the Notion connector for Claude (or Claude Code with the Notion MCP server).",
+    "1. Create one top-level page in Notion and give it three sections: Content, Career and Life.",
+    "1. Add one database under each section, such as content ideas, job applications and personal tasks, each with a status and a date property.",
+    "1. Write a short \"How to use this page\" note at the top that says what each database is for and how you want entries named.",
+    "1. Connect Notion to Claude with the Notion connector in Claude's settings, or add the Notion MCP server in Claude Code, and share the page with that integration.",
+    "1. Ask Claude to read the page and the note first, then add, update or summarise entries in plain English, for example \"log this job application\" or \"what is due this week\".",
+    "1. Review what Claude changed in Notion after each session and correct anything wrong, so your note and databases stay the single source of truth.",
+    "1. Once the routine works, ask Claude for a weekly summary across all three sections and decide what to act on.",
+    "Watch out: only share the one hub page with the integration, not your whole workspace, and check each edit, because Claude will follow whatever the page and your note say.",
+    "## Prompt to build your own",
+    "```\nYou are helping me set up a Notion workspace that works as one hub for my <area 1, e.g. content>, <area 2, e.g. career> and <area 3, e.g. personal life>. I use <ChatGPT/Codex or Claude Code> and I have a Notion account with the Notion connector or MCP server available.\nBuild the structure for me: one top-level page called <page name> with a section for each area, one database per section with sensible properties (status, date, priority, notes), and a short \"How to use this page\" note at the top explaining naming and status rules.\nConstraints: only create items under <page name>, never touch other pages, ask before deleting or moving anything, and keep property names simple. Before making changes, show me the proposed structure and wait for my approval.\nReturn: the structure you created, the exact wording of the instructions note, five example prompts I can use to add and query entries, and a short weekly review prompt that summarises all three databases.\n```"
+  ]
 }

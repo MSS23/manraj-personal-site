@@ -7,7 +7,7 @@
   "episode": null,
   "pillar": "Claude & skills",
   "hook": "I wanted to use my old laptop and it was really struggling to work until I actually got Claude to clean up my laptop",
-  "keyword": "CLEANUP",
+  "keyword": "clean up my laptop with Claude",
   "summary": "Metricool: scheduled Fri 2026-10-16 11:00 IG + TikTok\nClean up my laptop with Claude: I used Claude in the terminal to sort the files on my old laptop and my Google Drive. Nothing is auto-deleted: a 'To Be Deleted' folder holds files I review and delete myself. Comment CLEANUP for the command. Master: Drive > Reels for CapCut > claude-cleans-laptop > reel.mp4 (v8).",
   "body": [
     "Metricool: scheduled Fri 2026-10-16 11:00 IG + TikTok\nClean up my laptop with Claude: I used Claude in the terminal to sort the files on my old laptop and my Google Drive. Nothing is auto-deleted: a 'To Be Deleted' folder holds files I review and delete myself. Comment CLEANUP for the command. Master: Drive > Reels for CapCut > claude-cleans-laptop > reel.mp4 (v8)."
@@ -20,5 +20,18 @@
   "slides": [],
   "cover": "/notes/clean-up-my-laptop-with-claude/cover.jpg",
   "views": 359,
-  "guide": []
+  "guide": [
+    "Use Claude Code in a terminal to sort the files on an old laptop and a Google Drive, while keeping a folder of files you review and delete yourself. You need Claude Code installed, a laptop with files to sort, and Google Drive for desktop so your Drive appears as a normal folder.",
+    "1. Install Claude Code from Anthropic and open a terminal in the folder you want tidied, such as Documents or Downloads.",
+    "1. Install Google Drive for desktop so your Drive shows up as a folder on the laptop that Claude Code can read.",
+    "1. Ask Claude Code to list what is there first: file types, sizes, duplicates and anything it cannot identify, without moving anything yet.",
+    "1. Create a folder called \"To Be Deleted\" and tell Claude Code to move files it thinks are junk or duplicates into it rather than deleting them.",
+    "1. Ask Claude Code to sort the remaining files into clear folders by type or project, and to explain each rule before it applies it.",
+    "1. Repeat the same process on your external hard drives, one at a time, with each drive plugged in.",
+    "1. Open \"To Be Deleted\" yourself, look through it, and delete what you are sure about.",
+    "Watch out: never give Claude Code permission to delete files, because the \"To Be Deleted\" folder is what keeps every final decision with you.",
+    "## Prompt to build your own",
+    "```\nYou are helping me tidy my files safely. I use <Windows or Mac> and I am working in the folder <folder path>. My Google Drive is available on this machine through Google Drive for desktop at <Drive folder path>.\nDo the following in order, and stop for my approval after each stage:\n1. Scan the folder and report file types, total sizes, obvious duplicates and files you cannot identify. Move nothing.\n2. Create a folder called \"To Be Deleted\" inside <folder path>. Propose which files belong there (duplicates, installers, temporary files, anything clearly junk) and wait for my yes.\n3. Move approved files into \"To Be Deleted\". Never delete, overwrite or rename anything permanently.\n4. Propose a simple folder structure for the remaining files, explain the rule behind each folder, then move the files once I approve.\nConstraints: no deletion commands of any kind, keep a log of every move so I can undo it, and ask me about any file you are unsure of. At the end, return a summary of what moved where and how much space is now sitting in \"To Be Deleted\".\n```",
+    "Not checked: the post never names the exact command Manraj sends, so the prompt is my own build from the described steps. Step 6 (hard drives) is inferred from the transcript's mention of them."
+  ]
 }

@@ -7,7 +7,7 @@
   "episode": null,
   "pillar": "AI & automation",
   "hook": "As an AI consultant, the one skill that's most impactful is getting really clear on my requirements.",
-  "keyword": "REQUIREMENTS",
+  "keyword": "write AI requirements",
   "summary": "Metricool: scheduled Tue 2026-10-27 11:00 IG + TikTok\nWrite AI requirements: state the end goal, let AI interview you backwards (cloud, architecture), then build from the finished requirements. Comment REQUIREMENTS. Master: Drive > Reels for CapCut > ai-interview-requirements > reel.mp4.",
   "body": [
     "Metricool: scheduled Tue 2026-10-27 11:00 IG + TikTok\nWrite AI requirements: state the end goal, let AI interview you backwards (cloud, architecture), then build from the finished requirements. Comment REQUIREMENTS. Master: Drive > Reels for CapCut > ai-interview-requirements > reel.mp4."
@@ -20,5 +20,17 @@
   "slides": [],
   "cover": "/notes/how-to-write-ai-requirements-let-ai-interview-you/cover.jpg",
   "views": 390,
-  "guide": []
+  "guide": [
+    "Use an AI assistant to interview you into a clear set of requirements before it builds anything. You need ChatGPT (Codex) or Claude Code, and a rough idea of what you want to end up with.",
+    "1. Write the end goal in one or two sentences: what the finished thing does and who uses it.",
+    "1. Open ChatGPT (Codex) or Claude Code and ask it to interview you, one question at a time, working backwards from that goal.",
+    "1. Answer its questions about the architecture: what the pieces are, what talks to what, and in what order.",
+    "1. Ask it to question you on the cloud platform too (AWS, Google Cloud or Microsoft Azure) and why that one fits.",
+    "1. Say \"I don't know\" when you are unsure and ask it to explain the options in plain English, so you understand the structure.",
+    "1. Ask it to write everything up as one requirements document, then read it and correct anything wrong.",
+    "1. Start a fresh chat or session, paste in the finished requirements and ask the assistant to build from them.",
+    "Watch out: if you let the AI decide everything without understanding the structure, you cannot diagnose problems later, so only accept answers you can explain back.",
+    "## Prompt to build your own",
+    "```\nYou are a senior consultant helping me write requirements before anything is built. Do not write code yet.\nMy end goal: <one or two sentences on what the finished thing does and who uses it>.\nWhat I already know: <tools, accounts, budget, deadline, or \"nothing yet\">.\nInterview me one question at a time, working backwards from the end goal. Cover the architecture (the main pieces, what talks to what, in what order), which cloud platform to use (<AWS, Google Cloud, Microsoft Azure, or undecided>) and why, what data is stored, who can access it, and what could go wrong. If I say I am unsure, explain the options in plain English and recommend one with your reasoning. Keep going until you have no open questions.\nThen return a single requirements document with these headings: goal, users, architecture, cloud platform, data, risks, and a numbered build order. Flag any assumption you made so I can check it.\nWhen I confirm the document, I will start a new session and ask you to build from it.\n```"
+  ]
 }

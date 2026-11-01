@@ -7,7 +7,7 @@
   "episode": null,
   "pillar": "Claude & skills",
   "hook": "In another episode of what technology do I use… one of them is actually quite funny",
-  "keyword": "AI",
+  "keyword": "Claude vs GPT for building apps",
   "summary": "Metricool: scheduled Tue 20 Oct 11:00 IG + TikTok",
   "body": [
     "Metricool: scheduled Tue 20 Oct 11:00 IG + TikTok"
@@ -20,5 +20,17 @@
   "slides": [],
   "cover": "/notes/claude-vs-gpt-for-building-apps/cover.jpg",
   "views": 881,
-  "guide": []
+  "guide": [
+    "Use one AI model for most of your app-building and a second only where it does one job better. You need a Claude plan (Claude Code or the Claude app), a ChatGPT subscription if you want a second model, and a place to host the app, such as Vercel.",
+    "1. List what your app needs to do, separating the build work (pages, logic, database) from any features that call an AI model while the app runs.",
+    "1. Pick one main model for the build work, such as Claude Code, and give it your whole project so it keeps one consistent style.",
+    "1. Choose a paid plan only once you hit usage limits on the free one, since heavy daily building is what justifies a higher tier such as Claude Max.",
+    "1. Ask the main model to build the app step by step, testing each page or feature before moving on.",
+    "1. For any single feature the main model handles badly, such as a simulation or a specific type of generated content, try the same task in ChatGPT and keep whichever result is better.",
+    "1. If you keep both, call the second model from your app through the OpenAI API, with the key stored as an environment variable in your host (for example Vercel).",
+    "1. Deploy with Vercel and test the feature that uses the second model on a live preview before you share it.",
+    "Watch out: Using two models adds cost and complexity, so only add the second one for a feature where you have seen it do clearly better, and never put API keys in code you publish.",
+    "## Prompt to build your own",
+    "```\nYou are helping me build a web app called <app name> that does <one-line description>. I use Claude Code as my main assistant and also have a ChatGPT subscription. Plan and build the app step by step, using <framework, for example Next.js> and hosting it on <host, for example Vercel>. Most of the work should be done by you, but one feature, <feature, for example a flight simulation or a summary generator>, should call the OpenAI API instead, because I want to compare the results. Keep the OpenAI key in an environment variable, never in the code, and add a clear comment where that call is made so I can swap the model later. Before writing code, list the pages and features you will build and the order you will build them in. After each step, tell me how to test it. At the end, return the file structure, the environment variables I need to set, and the steps to deploy.\n```"
+  ]
 }

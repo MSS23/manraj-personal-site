@@ -20,5 +20,18 @@
   "slides": [],
   "cover": null,
   "views": 58,
-  "guide": []
+  "guide": [
+    "This sets up a chat bot on your phone that edits your short videos for you: you send a clip and an instruction, and it sends back the finished reel. You need a Telegram account, a computer that stays on, an open-source agent framework (such as Hermes Agent) or Claude Code, ffmpeg, and a Google Drive account.",
+    "1. Create a bot in Telegram by messaging BotFather, and keep the token it gives you somewhere private.",
+    "1. Install an open-source agent framework or Claude Code on the computer that stays on, and connect it to your Telegram bot so messages from your phone reach it.",
+    "1. Restrict the bot to your own Telegram user so nobody else can send it commands.",
+    "1. Install ffmpeg and give the agent permission to run it for the cuts, captions, resizing to 9:16 and audio clean-up you usually do by hand.",
+    "1. Put your raw clips in a Google Drive folder, and have the agent read from it and save finished reels to a second folder.",
+    "1. Send the bot a message such as \"cut the dead air and add captions to the newest clip\", and have it reply with a preview video.",
+    "1. Reply with changes in plain English until you are happy, then open the file in CapCut for any last touches.",
+    "1. Post it from Metricool, or have the agent schedule it there once you approve the preview.",
+    "Watch out: keep a human approval step before anything is published, and never paste your bot token into a chat or a public repository.",
+    "## Prompt to build your own",
+    "```\nYou are helping me build a personal video-editing bot that I control from my phone. Build it with <agent framework, e.g. Hermes Agent or Claude Code> on <Windows/Mac/Linux>.\nWhat it must do:\n- Receive messages from my Telegram bot, but only from my own user ID <my Telegram user ID>.\n- When I send a video or name a clip in my Google Drive folder <input folder>, edit it with ffmpeg: <my edits, e.g. trim silences, add captions, crop to 9:16, normalise audio>.\n- Save the result to my Google Drive folder <output folder> and send me a preview in Telegram.\n- Accept follow-up instructions in plain English and re-render.\n- Never publish anything. Only schedule a post in Metricool if I explicitly approve it.\nConstraints:\n- Keep the bot token and API keys in environment variables, never in code.\n- Keep every earlier version of a render.\n- Show me an error message in Telegram if a step fails.\nReturn: the folder structure, the full code, step-by-step setup instructions for a beginner, and a short test I can run to confirm it works.\n```"
+  ]
 }
