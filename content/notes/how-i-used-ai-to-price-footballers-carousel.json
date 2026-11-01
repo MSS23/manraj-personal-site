@@ -21,16 +21,17 @@
   "cover": null,
   "views": 301,
   "guide": [
-    "This guide shows how to point machine learning at football. You need a laptop, a free ChatGPT or Claude account (or Codex or Claude Code), and a football dataset you can download.",
-    "1. Pick one of the two projects: predict a player's market value, or predict the formation the other team will play.",
-    "1. Find a public Premier League dataset, such as a downloadable CSV of player stats and market values or of match lineups, and save it in a Google Drive folder.",
-    "1. Ask ChatGPT (Codex) or Claude Code to open the file and describe the columns, the missing values and what each row represents.",
-    "1. Decide what you are predicting (the market value, or the formation) and which columns the model may use as inputs.",
-    "1. Ask the assistant to split the data into training and test sets, then train a simple model in Python with scikit-learn.",
-    "1. Compare the model's predictions with the real values on the test set and ask the assistant to explain which inputs mattered most.",
-    "1. Improve one thing at a time, such as adding a new input or trying a different model, and re-run the same comparison.",
-    "1. Put the results in a chart and a short write-up so someone else can follow what you did.",
-    "Watch out: Premier League data is far easier to find than lower-league data, so start there, and never judge the model on the same rows it trained on.",
-    "## Prompt to build your own"
+    "This shows how to get an AI model to put a price on a footballer from his numbers, then check that price against what the market says. You need a free ChatGPT or Claude account, a spreadsheet such as Google Sheets, and a public stats source.",
+    "1. Pick one position and one league, so every player you compare plays a similar role.",
+    "1. Copy 20 to 30 players' public stats (minutes, goals, assists, age, contract length) from a public stats site into a Google Sheets tab.",
+    "1. Add a column with each player's published market value from a public transfer-value site, and keep it hidden from the AI for now.",
+    "1. Paste the stats into ChatGPT or Claude and ask it to explain which numbers should matter most for that position, and why.",
+    "1. Ask it to give each player a price in pounds, with a one-line reason, using only the stats you gave it.",
+    "1. Put its prices beside the published values in the sheet and sort by the gap.",
+    "1. Read the biggest gaps one by one and ask the AI what the stats cannot show, such as injuries, wages or a club's need to sell.",
+    "1. Keep the sheet and run it again after the next batch of matches.",
+    "Watch out: an AI price is an estimate from the numbers you gave it, not a real valuation, so never present it as one, and check every stat against its source before you trust the result.",
+    "## Prompt to build your own",
+    "```\nYou are helping me price footballers from public stats, as a learning exercise rather than a real valuation.\nI have a Google Sheet with <number> players who all play as <position> in <league>. The columns are <list your columns, e.g. name, age, minutes, goals, assists, contract end>. I will paste the rows below.\nDo this in order:\n1. Tell me which of my columns matter most for <position>, and why, in plain English.\n2. Give each player an estimated transfer price in pounds, with a one-sentence reason that uses only my columns. Do not invent any stat that I have not given you.\n3. Return a table with the columns: name, estimated price, reason.\n4. Then list three things my stats cannot capture that could make your prices wrong.\nIf my data looks incomplete or inconsistent, say so before you price anything. Keep the language simple and show how confident you are for each player (low, medium or high).\nHere are my rows:\n<paste rows>\n```"
   ]
 }

@@ -7,7 +7,7 @@
   "episode": null,
   "pillar": "AI & automation",
   "hook": "Stop running AI without guardrails.",
-  "keyword": null,
+  "keyword": "GUARDRAILS",
   "summary": "Metricool: scheduled Mon 2026-10-26 13:00 IG + TikTok\nMyth: \"AI is smart enough to handle the risk for you.\"\nOne thing: the risk is on you, so set guardrails first.\nDrive: G:/My Drive/06 Content Creation/ManrajTalks/Carousels/1409-ai-risk-guardrails/",
   "body": [
     "Metricool: scheduled Mon 2026-10-26 13:00 IG + TikTok\nMyth: \"AI is smart enough to handle the risk for you.\"\nOne thing: the risk is on you, so set guardrails first.\nDrive: G:/My Drive/06 Content Creation/ManrajTalks/Carousels/1409-ai-risk-guardrails/"
@@ -21,15 +21,16 @@
   "cover": null,
   "views": 87,
   "guide": [
-    "AI guardrails are limits you set so an AI agent can only cost you what you chose to risk. You need an AI agent or automation, a clear idea of what it may do, and a way to switch it off.",
-    "1. Write down the worst outcome in one sentence, for example \"the bot loses the whole £1,500 I put in\".",
-    "1. Set a hard cap on what the agent can spend or lose, using the limit your platform offers, such as a spending cap, a funded amount, or a stop-loss order on a trading account.",
-    "1. Limit the agent's permissions to the minimum, for example read-only access first, and a separate account or API key that only holds the money or data you can afford to lose.",
-    "1. Add a human approval step for anything irreversible, such as sending money, emailing customers or deleting records, using a confirmation message in Telegram or a review step in your automation tool.",
-    "1. Log every action the agent takes in a spreadsheet, Notion or Supabase table so you can see what it did and why.",
-    "1. Add a kill switch, such as a single setting or a revoked API key, that stops the agent immediately.",
-    "1. Test with a tiny amount or dummy data for a week before you raise the limits.",
-    "Watch out: the post's example was putting $2k into an AI trading bot with no stop loss, which can lose all of it, and the responsibility is yours, not the AI's.",
-    "## Prompt to build your own"
+    "This guide shows how to put guardrails around an AI tool before it can act on your behalf. You need an AI assistant (ChatGPT, Codex or Claude Code) and a list of the things you would not want it to do unchecked.",
+    "1. List what could go wrong if the AI acts on its own, such as sending the wrong email, deleting a file, spending money or posting something public.",
+    "1. Sort each risk by how hard it is to undo, and mark anything irreversible as needing your approval first.",
+    "1. Give the AI only the access it needs, using read-only permissions or a separate test account where the tool allows it.",
+    "1. Write the rules into the assistant's instructions (a custom instruction in ChatGPT, or a CLAUDE.md file in Claude Code), including what it must never do and when it must stop and ask.",
+    "1. Add a human approval step before any action that sends, publishes, pays or deletes, for example by having the assistant draft the action and wait for your confirmation.",
+    "1. Test the rules with a deliberately risky request and check that the assistant refuses or asks before acting.",
+    "1. Review what the AI actually did after each run and tighten the rules wherever it came close to crossing a line.",
+    "Watch out: the AI does not take responsibility for the risk, you do, so set the guardrails before you give it any access.",
+    "## Prompt to build your own",
+    "```\nYou are helping me set up guardrails before I let an AI assistant work on <task, e.g. managing my inbox or publishing posts>. I use <ChatGPT, Codex or Claude Code>, and the assistant will have access to <tools or accounts it can touch>.\nFirst, list the realistic risks if the assistant acts without supervision, and rank each by how hard it is to undo. Then write a set of instructions I can paste into the assistant's settings. They must cover: what it may do freely, what it must never do, and which actions need my explicit approval before it proceeds (anything that sends, publishes, pays or deletes). Suggest the narrowest permissions I should grant for <tools or accounts>, such as read-only access or a test account.\nFinally, give me three deliberately risky test requests I can try to confirm the guardrails hold, and a short checklist for reviewing what the assistant did after each run. Keep everything in plain English, avoid jargon, and tell me clearly if any guardrail cannot be enforced by the tool and has to rely on my own checking.\n```"
   ]
 }

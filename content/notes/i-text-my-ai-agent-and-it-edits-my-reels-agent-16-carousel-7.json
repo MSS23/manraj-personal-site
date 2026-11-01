@@ -21,15 +21,16 @@
   "cover": null,
   "views": 695,
   "guide": [
-    "Edit your videos by replying to a preview in Telegram, with an AI agent running a coding assistant on a computer at home to make the changes. You need a Telegram bot, an always-on computer with Claude Code and ffmpeg installed, an agent framework that can call Claude Code, and Google Drive.",
-    "1. Create a Telegram bot with BotFather and connect it to an open-source agent framework running on your home computer.",
-    "1. Install Claude Code and ffmpeg on that computer, and give the agent permission to start Claude Code in a folder that holds your video project.",
-    "1. Have the agent send each draft to you in Telegram as a numbered version, such as version 3.",
-    "1. Reply to that video in Telegram with what you want changed, for example \"cut the pause after the hook\".",
-    "1. Make the agent pass your reply and the current version to Claude Code, which edits the video with ffmpeg and saves it as the next version.",
-    "1. Have the agent send the new version back to you in Telegram and upload it to a Google Drive folder you have set aside for finishing in CapCut.",
-    "1. Open that file in CapCut, clean up or enhance the voice, and post.",
-    "Watch out: Only let the bot answer your own Telegram account, and keep Claude Code limited to the video project folder, so nobody else can send commands to your computer.",
-    "## Prompt to build your own"
+    "Turn a chat message into an edited reel: you send raw clips and a short instruction to an AI agent, and it cuts, captions and returns a finished video. You need ChatGPT (Codex) or Claude Code, a Telegram bot, ffmpeg, and Google Drive.",
+    "1. Create a Telegram bot with BotFather and keep its token in an environment variable, not in your code.",
+    "1. Ask ChatGPT (Codex) or Claude Code to write a small script that listens to that bot and saves any video you send into a Google Drive folder.",
+    "1. Have the same script pass your text instruction and the saved clip to an AI agent, such as Claude Code run from the command line or an open-source agent framework.",
+    "1. Give the agent ffmpeg and tell it the edit steps: trim dead air, join the best takes, burn in captions, and export a vertical 9:16 file.",
+    "1. Let the agent send a short preview back to you in the Telegram chat before anything is final.",
+    "1. Reply with changes in plain English, and have the agent re-render and send the new version.",
+    "1. Finish in CapCut if you want extra polish, then schedule the post in Metricool.",
+    "Watch out: only let the bot answer your own Telegram account, and never auto-publish without a preview you have approved.",
+    "## Prompt to build your own",
+    "```\nYou are helping me build a Telegram-controlled video editing assistant. I use <my operating system> and have <ChatGPT Codex or Claude Code>, Python, ffmpeg, a Google Drive account and a Telegram bot token from BotFather.\nBuild a script that does the following:\n1. Listens to my Telegram bot, but only accepts messages from my own user ID, <my Telegram user ID>.\n2. Saves any video I send to a Google Drive folder called <folder name>.\n3. Reads my text instruction, for example \"cut the pauses and add captions\".\n4. Calls an AI agent to plan the edit, then runs ffmpeg to trim silences, join the chosen takes, burn in captions and export a 9:16 MP4.\n5. Sends a short preview back to me in Telegram and waits for my reply.\n6. If I reply with changes, re-renders and sends the new version, keeping the old one.\nConstraints: read all tokens and keys from environment variables, never publish anything automatically, and log each step in plain language so I can see what happened.\nReturn the full code, a list of the packages to install, the exact setup steps for the Telegram bot and Google Drive access, and a short test I can run with one sample clip.\n```"
   ]
 }
