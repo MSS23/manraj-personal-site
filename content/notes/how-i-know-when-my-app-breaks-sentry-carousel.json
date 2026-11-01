@@ -7,7 +7,7 @@
   "episode": null,
   "pillar": "Building in public",
   "hook": "Stop testing more to know when your app breaks.",
-  "keyword": null,
+  "keyword": "SENTRY",
   "summary": "Metricool: scheduled Thu 2026-10-29 13:00 IG + TikTok. Motion carousel, 7 slides x 7 s silent loops (1080x1350). Folder: G:/My Drive/06 Content Creation/ManrajTalks/carousel-reels/how-i-know-when/\n1. Stop testing harder. / Tests can't see what your users see. - Masked type\n2. Tested isn't monitored. (Test it, Ship it, It breaks) - Spring stack\n3. Who's watching it live? (focus on 'Nothing') - Glass focus\n4. I paused my site. Sentry caught it. - uptime bars + alert pill\n5. The globe broke. Sentry flagged it. - Card to workspace\n6. Set it up in one sitting. (wizard command + 5 steps) - Search to results\n7. CTA: SENTRY - house CTA",
   "body": [
     "Metricool: scheduled Thu 2026-10-29 13:00 IG + TikTok. Motion carousel, 7 slides x 7 s silent loops (1080x1350). Folder: G:/My Drive/06 Content Creation/ManrajTalks/carousel-reels/how-i-know-when/\n1. Stop testing harder. / Tests can't see what your users see. - Masked type\n2. Tested isn't monitored. (Test it, Ship it, It breaks) - Spring stack\n3. Who's watching it live? (focus on 'Nothing') - Glass focus\n4. I paused my site. Sentry caught it. - uptime bars + alert pill\n5. The globe broke. Sentry flagged it. - Card to workspace\n6. Set it up in one sitting. (wizard command + 5 steps) - Search to results\n7. CTA: SENTRY - house CTA"
@@ -21,15 +21,17 @@
   "cover": null,
   "views": 711,
   "guide": [
-    "Add error tracking to your app so you hear about breakages before your users do. You need a deployed web app (for example on Vercel) and a free Sentry account.",
-    "1. Create a free account at Sentry and add a new project for your app's framework (for example Next.js).",
-    "1. Install the Sentry SDK in your app by following the setup steps Sentry shows for that framework.",
-    "1. Add the project's DSN (the key Sentry gives you) as an environment variable in your host, such as Vercel, then redeploy.",
-    "1. Trigger a test error on purpose and check that it appears in the Sentry Issues list.",
-    "1. Add an uptime monitor in Sentry for your site's URL, so you are alerted when it stops responding.",
-    "1. Set up email alerts for new issues and for the uptime monitor.",
-    "1. Break something deliberately, such as pausing the project on Vercel, and confirm the \"site not reachable\" alert arrives.",
-    "Watch out: testing alone will not tell you whether your app works for real people, so confirm alerts actually reach you before you rely on them, and never publish your DSN-linked environment variables in public code.",
-    "## Prompt to build your own"
+    "Set up error monitoring so you hear about a broken site from an alert, not from a user. You need a live app, a free Sentry account and Claude Code or Codex.",
+    "1. Create a Sentry account and add a new project for your app's framework (Next.js, React, Node and so on).",
+    "1. Run Sentry's setup wizard from your project folder, which installs the SDK and adds the config files for you.",
+    "1. Add your project's Sentry DSN to your hosting provider's environment variables, for example in Vercel.",
+    "1. Deploy, then trigger a deliberate error on a page to confirm it appears in Sentry's Issues list.",
+    "1. Turn on uptime monitoring for your live URL so Sentry alerts you when the site stops responding.",
+    "1. Connect alerts to email or Slack so a failure reaches you the moment it happens.",
+    "1. Test it the way I did: pause the site, wait for the uptime alert, then bring it back.",
+    "Watch out: passing tests only prove the cases you thought of, so don't treat a green test run as the same thing as watching the live site.",
+    "## Prompt to build your own",
+    "```\nYou are helping me add error and uptime monitoring to my live web app using Sentry. My app is built with <framework, for example Next.js> and hosted on <hosting provider, for example Vercel>. I use <Claude Code or Codex> and can run commands in my project folder.\nPlease do the following:\n1. Explain how to create a Sentry project for <framework> and where to find the DSN.\n2. Give me the exact command for Sentry's setup wizard and tell me which files it will change.\n3. Show where to set the DSN as an environment variable on <hosting provider>, and make sure no secret is committed to my repository.\n4. Add a small test route or button that throws a deliberate error, so I can confirm Sentry receives it.\n5. Explain how to set up uptime monitoring for <my live URL> and how to send alerts to <email or Slack>.\n6. Give me a short checklist to test it end to end, including pausing the site to check the uptime alert fires.\nKeep changes minimal, explain each step in plain English, and finish by listing every file you changed.\n```",
+    "Skipped: I haven't checked Sentry's current wizard command or menu names, so the prompt tells the assistant to look them up."
   ]
 }
