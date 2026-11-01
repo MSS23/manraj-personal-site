@@ -32,5 +32,6 @@
     "Watch out: keep secret keys (the service role key) out of your front-end code and only ever put the public key in the browser.",
     "## Prompt to build your own",
     "```\nYou are helping me add a database backend to my web app using Supabase, deployed on Vercel. My app is <describe your app, e.g. a site where users create and view reports>, built with <framework, e.g. Next.js>. I have a Supabase account and a Vercel account, and my code is in <GitHub repo or local folder>.\nPlease:\n1. Design a simple table schema for <what I want to store> and give me the SQL to create it in Supabase.\n2. Show me how to install the Supabase JavaScript client and create a client using environment variables for the project URL and public anon key.\n3. Write the code to save a new <item> and to load the list of <items>.\n4. Explain exactly which environment variables to add in Vercel and where.\n5. Enable row level security on the table and write a basic policy that suits <who should read and write the data>.\nConstraints: never expose the service role key in browser code, keep the code beginner friendly, and explain each step in plain English. Return the SQL, the code files with their names, and a short checklist for testing after deploying.\n```"
-  ]
+  ],
+  "guideUrl": "https://www.notion.so/40b0d01124e4810b93abdc10acf6ffd9"
 }

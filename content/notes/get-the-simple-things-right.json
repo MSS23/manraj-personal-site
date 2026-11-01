@@ -32,5 +32,6 @@
     "Watch out: Building the hard, interesting parts first is tempting, but a broken password reset or sign-up loses users before they see any of it.",
     "## Prompt to build your own",
     "```\nYou are helping me harden the basics of my app before I add new features. My app is <describe the app in one sentence>, built with <your stack, for example Next.js and Supabase, or a mobile framework>. I have access to <your code editor or repository> and can run the app locally.\nDo the following:\n1. Read the codebase and list every basic user flow that exists, such as sign-up, log-in, forgotten password, email verification, log-out and account deletion.\n2. For each flow, say how it works, where the code lives, and what could fail (for example emails not sending, expired links, wrong redirects, or missing error messages).\n3. Write a plain-English manual test checklist for each flow that a non-technical tester can follow on a phone.\n4. Where it makes sense, write automated tests for the flows using <your test tool, or suggest one>.\n5. Point out any flow that looks broken or incomplete, and propose the smallest fix for each.\nConstraints: do not add new features, do not change anything until I approve, and keep explanations short and in plain English. Return the flow list, the checklists, any suggested tests and a ranked list of problems to fix first.\n```"
-  ]
+  ],
+  "guideUrl": "https://www.notion.so/40b0d01124e4811eb253f3dac4e2859a"
 }

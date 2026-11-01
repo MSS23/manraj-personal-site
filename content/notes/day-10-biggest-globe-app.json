@@ -32,5 +32,6 @@
     "Watch out: Fix the bugs people report before you add anything new, because a buggy app loses the people who are giving you feedback.",
     "## Prompt to build your own",
     "```\nYou are my coding assistant. Help me build a first version of a travel app called <app name> that centres on an interactive 3D globe. I am a <beginner / some experience> and I will be using <ChatGPT Codex / Claude Code>, GitHub and Vercel.\nBuild the smallest working version first: a globe I can spin and zoom, with a tap on a country or city showing <what the user should see>. Then add one social feature: <for example, suggesting people to connect with>. Use a simple web stack that deploys to Vercel with no paid services.\nConstraints: explain every step in plain English, tell me which commands to run and in what order, keep the code in small files I can read, and do not add features I have not asked for. Do not ask me to paste any secrets into the chat.\nReturn: the project structure, the full code for each file, the commands to run it locally, the steps to deploy to Vercel, and a short checklist of bugs to test before I share the link. Finish by suggesting three small features I could add next, ranked by how easy they are.\n```"
-  ]
+  ],
+  "guideUrl": "https://www.notion.so/40b0d01124e4811f8695c402ffc1c969"
 }

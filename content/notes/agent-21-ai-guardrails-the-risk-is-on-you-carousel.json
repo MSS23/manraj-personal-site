@@ -32,5 +32,6 @@
     "Watch out: the AI does not take responsibility for the risk, you do, so set the guardrails before you give it any access.",
     "## Prompt to build your own",
     "```\nYou are helping me set up guardrails before I let an AI assistant work on <task, e.g. managing my inbox or publishing posts>. I use <ChatGPT, Codex or Claude Code>, and the assistant will have access to <tools or accounts it can touch>.\nFirst, list the realistic risks if the assistant acts without supervision, and rank each by how hard it is to undo. Then write a set of instructions I can paste into the assistant's settings. They must cover: what it may do freely, what it must never do, and which actions need my explicit approval before it proceeds (anything that sends, publishes, pays or deletes). Suggest the narrowest permissions I should grant for <tools or accounts>, such as read-only access or a test account.\nFinally, give me three deliberately risky test requests I can try to confirm the guardrails hold, and a short checklist for reviewing what the assistant did after each run. Keep everything in plain English, avoid jargon, and tell me clearly if any guardrail cannot be enforced by the tool and has to rely on my own checking.\n```"
-  ]
+  ],
+  "guideUrl": "https://www.notion.so/40b0d01124e481a7b177e145ee191406"
 }

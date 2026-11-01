@@ -33,5 +33,6 @@
     "Watch out: do not rely on the emulator alone, because camera access for QR scanning and layouts behave differently on a real phone, so test on one before you submit anything to Google Play.",
     "## Prompt to build your own",
     "```\nYou are a senior mobile and web developer. Help me build a travel social app as a mobile-first web app, then wrap it as an Android app with Capacitor.\nMy idea: <describe your app, for example a map or globe of places each user has visited>.\nTools I have: <ChatGPT or Claude Code>, Node.js, Android Studio, an Android phone, a Vercel account, a Supabase account and a Google Play Console developer account.\nBuild this:\n1. A Next.js app with four bottom tabs: <tab 1, for example Globe>, <tab 2, for example Feed>, <tab 3, for example Explore other users>, <tab 4, for example Profile>.\n2. Supabase for sign-in and for storing users, visited places and posts.\n3. A profile QR code that links to the user's page, plus a scanner that opens another user's page and sends a connection request.\n4. Capacitor configuration to produce an Android build, with the camera permission set up for scanning.\nConstraints: keep it simple, use only free tiers to start, never put secret keys in the client code, and explain each step in plain English.\nReturn: the folder structure, the commands to run in order, the key code files, how to test on my phone with USB debugging, and a checklist for uploading to a Google Play testing track.\n```"
-  ]
+  ],
+  "guideUrl": "https://www.notion.so/40b0d01124e481bc8abae978075d3ff7"
 }

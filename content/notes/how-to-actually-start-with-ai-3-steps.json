@@ -36,5 +36,6 @@
     "Watch out: Don't switch tools when a result disappoints you, because the fix is usually more context and better examples, and show only good examples, since the assistant copies whatever you give it.",
     "## Prompt to build your own",
     "```\nYou are helping me get started with AI as a complete beginner. I will use only <ChatGPT or Claude> for the next month.\nStep 1: Ask me up to 8 short questions about my job, my week and the tasks I dislike. Wait for my answers.\nStep 2: From my answers, list the tasks that repeat and rank them by how much time they cost me. Recommend the three best to hand to AI first.\nStep 3: For the top task, write a starter prompt template with these labelled sections: who I am, what the task is, who the output is for, tone and length, and a place for me to paste two or three good examples.\nStep 4: Ask me for those examples, then show me one draft result using the template.\nStep 5: Tell me how to improve the template based on what I correct.\nConstraints: plain English, British spelling, no jargon, and no tools beyond <ChatGPT or Claude>. My role is <my job>. The task I most want to hand over is <my task>.\nReturn: the ranked task list, the finished template ready to copy, and a simple weekly plan for adding one new task at a time.\n```"
-  ]
+  ],
+  "guideUrl": "https://www.notion.so/40b0d01124e481a58805de6571d38c32"
 }

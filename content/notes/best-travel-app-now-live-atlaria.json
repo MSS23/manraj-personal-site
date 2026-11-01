@@ -33,5 +33,6 @@
     "Watch out: the video used mock data and stock-style pictures, so say plainly that it is a demo, and never put real users' details or photos in a recording.",
     "## Prompt to build your own",
     "```\nYou are a senior full-stack developer. Build a simple travel-passport web app called <app name> for <target audience>. Users sign up, build a profile, add places they have visited with a photo and date, and receive a visual stamp for each place, shown on their profile. I have a <ChatGPT/Codex or Claude Code> account, a free Supabase account and a free Vercel account, and I am a beginner, so explain each step briefly. Use Next.js for the front end, Supabase for sign-in, the database and photo storage, and deploy to Vercel. Create the database tables and row-level security so each user can only edit their own data. Add a seed script with clearly fake sample data so I can record a demo. Keep secret keys in environment variables and never in the code. Return the project structure, the SQL for the tables, the key files, and a short checklist for deploying and testing sign-up on a phone. Ask me up to three questions first if anything is unclear.\n```"
-  ]
+  ],
+  "guideUrl": "https://www.notion.so/40b0d01124e48127a986fd0b7370c73d"
 }

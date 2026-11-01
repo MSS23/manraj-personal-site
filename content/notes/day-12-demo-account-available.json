@@ -33,5 +33,6 @@
     "## Prompt to build your own",
     "```\nYou are helping me build a travel app with a \"Wrapped\" style recap, similar to a Spotify year-in-review but for trips. I use <Claude Code or Codex>, Supabase for the database and login, and Vercel for hosting. My app is called <app name> and is for <audience>.\nBuild this:\n1. A database schema in Supabase with users, trips (place, country, start date, end date) and ordered stops.\n2. A recap page that shows a user's trips for a chosen year and for all time, with the stops listed in order.\n3. A demo account filled with invented trips, such as <city 1>, <city 2> and <city 3>. It must be read-only, clearly labelled \"Demo\", and use Supabase row-level security so visitors cannot edit or delete data.\n4. A \"Try the demo\" button on the home page that logs visitors straight into the demo account.\nConstraints: use no real personal data, keep secrets in environment variables and out of the code, and make the pages work well on a phone.\nReturn the full file list, the SQL for the tables and security rules, the code for each file, and step-by-step instructions to deploy on Vercel.\n```",
     "Skipped: no checks against a live app; the steps are inferred from the transcript, which describes only the demo and Wrapped view."
-  ]
+  ],
+  "guideUrl": "https://www.notion.so/40b0d01124e481a0ba18e29d24db7f27"
 }

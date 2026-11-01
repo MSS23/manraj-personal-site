@@ -33,5 +33,6 @@
     "Watch out: dictate one specific change at a time and read the transcript before you send it, because a misheard word can send the assistant to the wrong part of the app.",
     "## Prompt to build your own",
     "```\nYou are helping me set up a voice-first way to build software. I use <speech-to-text app, e.g. Wispr Flow> on <Windows or Mac>, and I build <my app or website> with <ChatGPT/Codex or Claude Code>. I am a <beginner or experienced> builder and my typing is slower than my thinking.\nWrite me a one-page routine I can follow. Include:\n1. How to set up the dictation app, choose a push-to-talk hotkey and test the microphone.\n2. A short template for dictating one change request, covering which screen, which element, what is wrong and what I want instead.\n3. Three example dictated requests for <my app type>, written the way a person would say them aloud.\n4. A quick checklist to read the transcript before sending, including common misheard words to look out for.\n5. A rule for when I should type instead of dictate.\nKeep it in plain English with no jargon, and keep each step to one sentence. If you need anything else from me first, ask before you write.\n```"
-  ]
+  ],
+  "guideUrl": "https://www.notion.so/40b0d01124e4816794e8c03a1b8e094d"
 }

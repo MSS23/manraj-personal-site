@@ -32,5 +32,6 @@
     "Watch out: Subreddits remove posts that read as ads, so lead with the build and the question, and never use a demo account that exposes real user data.",
     "## Prompt to build your own",
     "```\nYou are helping me turn feedback from Reddit into a public demo for my app. I am not a developer, so explain each step plainly and give me copy-and-paste code.\nMy app is <describe the app in one sentence>. It is built with <tools, for example Next.js on Vercel with Supabase>. My audience is <who it is for>. The subreddit I plan to post in is <subreddit name>.\nPlease do three things:\n1. Draft a Reddit post for <subreddit name> that follows self-promotion etiquette: what I built, who it is for, what stage it is at, and one specific question asking for feedback. Keep it under 200 words and avoid sales language.\n2. Show me how to add a demo account to my app: a pre-made login with sample data only, read-only where possible, and no access to any real user's information. Give the exact steps for my stack.\n3. Write a short caption and a pinned-comment line that point to the demo link <demo URL>.\nReturn the three pieces separately, and finish with a short checklist of what to test before I share the demo publicly.\n```"
-  ]
+  ],
+  "guideUrl": "https://www.notion.so/40b0d01124e481e6941dd92a325448cf"
 }

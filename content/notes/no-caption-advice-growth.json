@@ -29,5 +29,6 @@
     "Watch out: the embarrassed, nervous feeling in the post means you are challenging your self-image, so don't treat it as a reason to stop or to shrink the goal.",
     "## Prompt to build your own",
     "```\nYou are my accountability coach and set-up assistant. I want to work towards <my goal, for example \"launch my first app\" or \"go to the gym three times a week\"> by <date>.\nTools I have: Notion, Telegram, and this chat.\nPlease do the following:\n1. Help me rewrite my goal as one clear sentence with a finish line and a date.\n2. Design a simple Notion database for weekly check-ins with these columns: week, what I did, what made me nervous or embarrassed, and what I will do next.\n3. Write the short message I will send to <names of one or two people I trust> on Telegram, asking them to hold me to account each week.\n4. Each week I will paste my Notion rows here. Reply with where I avoided something uncomfortable, and one action for the coming week.\nConstraints: keep it plain and practical. Do not give me motivational speeches. Tell me directly when my goal is too small or too vague.\nReturn: the rewritten goal, the Notion column list, the Telegram message, and the exact wording I should paste in each week.\n```"
-  ]
+  ],
+  "guideUrl": "https://www.notion.so/40b0d01124e48162bc78eb21ff04b09c"
 }

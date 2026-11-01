@@ -33,5 +33,6 @@
     "## Prompt to build your own",
     "```\nYou are my coding assistant. Help me build a small web app for people who share this interest: <my interest>. The app should do one useful thing: <the single thing users should be able to do>. I'm not a developer, so explain each step in plain English before you do it.\nTools I have: <ChatGPT (Codex) or Claude Code>, a free Vercel account and a free Supabase account.\nBuild it with Next.js and TypeScript, using Supabase for email sign-in and a table that stores each user's saved items. Keep to one feature and one screen to start. Do not add extras I haven't asked for.\nConstraints: keep all secret keys in environment variables, never in the code. Use Supabase row-level security so each user can only see their own data. Keep the design simple and mobile friendly.\nReturn: a short build plan, the full project code, the exact commands to run it locally, the Supabase table and security setup, and the steps to deploy it to Vercel. Finish with a list of three things I should test before sharing the link.\n```",
     "Skipped: nothing checked against live pages. Risk: the source never names the stack Manraj used, so the Next.js, Supabase and Vercel choices are my suggestion rather than his."
-  ]
+  ],
+  "guideUrl": "https://www.notion.so/40b0d01124e481b0b1e5d6d172dcfbb4"
 }

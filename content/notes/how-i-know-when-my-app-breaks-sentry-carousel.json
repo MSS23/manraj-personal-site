@@ -33,5 +33,6 @@
     "## Prompt to build your own",
     "```\nYou are helping me add error and uptime monitoring to my live web app using Sentry. My app is built with <framework, for example Next.js> and hosted on <hosting provider, for example Vercel>. I use <Claude Code or Codex> and can run commands in my project folder.\nPlease do the following:\n1. Explain how to create a Sentry project for <framework> and where to find the DSN.\n2. Give me the exact command for Sentry's setup wizard and tell me which files it will change.\n3. Show where to set the DSN as an environment variable on <hosting provider>, and make sure no secret is committed to my repository.\n4. Add a small test route or button that throws a deliberate error, so I can confirm Sentry receives it.\n5. Explain how to set up uptime monitoring for <my live URL> and how to send alerts to <email or Slack>.\n6. Give me a short checklist to test it end to end, including pausing the site to check the uptime alert fires.\nKeep changes minimal, explain each step in plain English, and finish by listing every file you changed.\n```",
     "Skipped: I haven't checked Sentry's current wizard command or menu names, so the prompt tells the assistant to look them up."
-  ]
+  ],
+  "guideUrl": "https://www.notion.so/40b0d01124e481369827fbd77e443a77"
 }

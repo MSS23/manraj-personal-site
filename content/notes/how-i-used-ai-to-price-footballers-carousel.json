@@ -33,5 +33,6 @@
     "Watch out: an AI price is an estimate from the numbers you gave it, not a real valuation, so never present it as one, and check every stat against its source before you trust the result.",
     "## Prompt to build your own",
     "```\nYou are helping me price footballers from public stats, as a learning exercise rather than a real valuation.\nI have a Google Sheet with <number> players who all play as <position> in <league>. The columns are <list your columns, e.g. name, age, minutes, goals, assists, contract end>. I will paste the rows below.\nDo this in order:\n1. Tell me which of my columns matter most for <position>, and why, in plain English.\n2. Give each player an estimated transfer price in pounds, with a one-sentence reason that uses only my columns. Do not invent any stat that I have not given you.\n3. Return a table with the columns: name, estimated price, reason.\n4. Then list three things my stats cannot capture that could make your prices wrong.\nIf my data looks incomplete or inconsistent, say so before you price anything. Keep the language simple and show how confident you are for each player (low, medium or high).\nHere are my rows:\n<paste rows>\n```"
-  ]
+  ],
+  "guideUrl": "https://www.notion.so/40b0d01124e481c988e0dabf27529711"
 }

@@ -39,5 +39,6 @@
     "Watch out: trying a new AI tool every week resets what you have learned, so stay with one tool until the month is over.",
     "## Prompt to build your own",
     "```\nYou are my AI onboarding coach. I am a beginner and I want to use one AI tool every day for 30 days. My tool is <ChatGPT or Claude>. My job or situation is <your role>. The tasks I dislike doing are <list 3 to 5 tasks>.\nPlease do the following:\n1. Work out which of my tasks repeat and are best handed to AI first, and rank them.\n2. For the top three, write a starter prompt template I can reuse. Each template must set the context (who I am, what the task is for, who reads the result), leave a place for me to paste one or two examples of what I want, and state the format of the answer.\n3. Give me a simple 30-day plan with one small task per day, building from easy to harder.\n4. Tell me how to keep a list of prompts that worked.\nConstraints: plain English, British spelling, no jargon, and do not suggest I add other AI tools. Return the ranked task list, the three templates with <placeholders> I can fill in, and the 30-day plan as a table.\n```"
-  ]
+  ],
+  "guideUrl": "https://www.notion.so/40b0d01124e4816cabefd576ec38a1af"
 }

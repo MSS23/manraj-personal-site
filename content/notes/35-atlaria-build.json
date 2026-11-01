@@ -43,5 +43,6 @@
     "1. Showing the app on screen",
     "1. If you are building in public",
     "1. Follow the build"
-  ]
+  ],
+  "guideUrl": null
 }

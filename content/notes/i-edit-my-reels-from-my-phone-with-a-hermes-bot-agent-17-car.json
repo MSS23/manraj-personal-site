@@ -33,5 +33,6 @@
     "Watch out: keep a human approval step before anything is published, and never paste your bot token into a chat or a public repository.",
     "## Prompt to build your own",
     "```\nYou are helping me build a personal video-editing bot that I control from my phone. Build it with <agent framework, e.g. Hermes Agent or Claude Code> on <Windows/Mac/Linux>.\nWhat it must do:\n- Receive messages from my Telegram bot, but only from my own user ID <my Telegram user ID>.\n- When I send a video or name a clip in my Google Drive folder <input folder>, edit it with ffmpeg: <my edits, e.g. trim silences, add captions, crop to 9:16, normalise audio>.\n- Save the result to my Google Drive folder <output folder> and send me a preview in Telegram.\n- Accept follow-up instructions in plain English and re-render.\n- Never publish anything. Only schedule a post in Metricool if I explicitly approve it.\nConstraints:\n- Keep the bot token and API keys in environment variables, never in code.\n- Keep every earlier version of a render.\n- Show me an error message in Telegram if a step fails.\nReturn: the folder structure, the full code, step-by-step setup instructions for a beginner, and a short test I can run to confirm it works.\n```"
-  ]
+  ],
+  "guideUrl": "https://www.notion.so/40b0d01124e48152993eceafa02b2580"
 }

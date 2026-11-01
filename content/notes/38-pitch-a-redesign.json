@@ -42,5 +42,6 @@
     "1. Send a short, human message",
     "1. Do it respectfully",
     "1. Follow the build"
-  ]
+  ],
+  "guideUrl": null
 }

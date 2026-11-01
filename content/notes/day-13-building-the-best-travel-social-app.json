@@ -33,5 +33,6 @@
     "Watch out: Give the demo account read access only, and test that it cannot edit or delete anything, otherwise visitors can change real data.",
     "## Prompt to build your own",
     "```\nYou are helping me set up a safe public demo and a Product Hunt launch for my web app. The app is <describe your app in one sentence>. It is hosted on <Vercel or other host> and uses <Supabase or other database> for data and sign-in.\nPlease do the following:\n1. Create a demo user and write row-level security policies so that this user can read the data needed to show <your standout feature> but cannot insert, update or delete anything.\n2. Add a \"Try demo account\" button to the landing page that signs visitors into the demo user without asking for an email or password.\n3. Write tests that confirm the demo user is blocked from every write action.\n4. Draft the Product Hunt listing: a tagline under 60 characters, a description of about 250 words for <target audience>, a list of screenshots to capture, and a first comment from the maker.\nConstraints: do not expose service keys in the browser, keep the demo data free of real customer information, and explain each change in plain English.\nReturn the code changes, the SQL policies, the test results and the Product Hunt text.\n```"
-  ]
+  ],
+  "guideUrl": "https://www.notion.so/40b0d01124e4816a97d2dd262d06292b"
 }

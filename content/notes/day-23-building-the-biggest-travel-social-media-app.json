@@ -32,5 +32,6 @@
     "Watch out: feedback only helps you decide once enough different people are using the app, so spreading it to more places comes before polishing features.",
     "## Prompt to build your own",
     "```\nYou are helping me launch my early-stage app, <app name>. It is a <one-line description> for <target users>, currently live as an alpha at <link>. I use <ChatGPT or Claude Code>, Google Sheets or Notion, and GitHub.\nBuild me a distribution kit with these parts:\n1. A tracker template (Notion database or Google Sheet) with columns: site, link, audience, posting rules, status, date posted, response, and feedback received.\n2. A step-by-step method to find a GitHub repository listing places to post a startup, and to turn its entries into rows in my tracker.\n3. A short app description in three lengths (one line, one paragraph, a longer post), written in plain English without hype, which I can adapt for each site's rules.\n4. A feedback form with five questions, covering what people tried, what confused them, and which feature they want most.\n5. A simple way to tag repeated feature requests and rank them by how often they appear.\nConstraints: no paid tools, no automated posting, and I post everything manually. Return the tracker structure, the three descriptions, the form questions and the ranking method, each under its own heading.\n```"
-  ]
+  ],
+  "guideUrl": "https://www.notion.so/40b0d01124e4810ea55ee4b7e4cf695c"
 }

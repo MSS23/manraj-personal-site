@@ -32,5 +32,6 @@
     "Watch out: Only let the bot answer your own Telegram account, and keep Claude Code limited to the video project folder, so nobody else can send commands to your computer.",
     "## Prompt to build your own",
     "```\nYou are helping me build a Telegram-controlled video editing assistant. I have an always-on computer at home running <Windows, Mac or Linux> with Claude Code, ffmpeg and <agent framework> installed, plus a Telegram bot token from BotFather and access to Google Drive.\nBuild an agent that does the following:\n1. Sends me each draft video in Telegram, labelled with a version number.\n2. When I reply to a video with an edit request, takes my reply text and the version I replied to.\n3. Starts Claude Code in my project folder <project folder>, passes it those details, and lets it edit the video with ffmpeg and save the result as the next version number.\n4. Sends the new version back to me in Telegram.\n5. Uploads the new version to a Google Drive folder called <Drive folder name>.\nConstraints: the bot must only respond to my Telegram user ID <my Telegram user ID>. Claude Code must only read and write inside <project folder>. Never overwrite an earlier version. Keep tokens and keys in environment variables, not in code.\nReturn the full code, a step-by-step setup guide, and a short test plan I can run with one sample video.\n```"
-  ]
+  ],
+  "guideUrl": "https://www.notion.so/40b0d01124e481968e3bc730b3a14198"
 }

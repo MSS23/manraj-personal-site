@@ -32,5 +32,6 @@
     "Watch out: Session replay records what visitors type, so mask password, payment and personal fields using PostHog's privacy settings before you publish.",
     "## Prompt to build your own",
     "```\nYou are helping me add PostHog session replay to my website. My site is <describe site, e.g. a Next.js app> and I deploy it with <hosting, e.g. Vercel>. I have a PostHog account and my project API key is <PROJECT_API_KEY>, stored as an environment variable rather than written into the code.\nPlease:\n1. Install and initialise the PostHog JavaScript library in the shared layout so it runs on every page.\n2. Enable session recording.\n3. Mask all input fields by default, and block recording on these pages or elements: <list pages or fields with personal or payment data>.\n4. Keep the API key in an environment variable and show me where to set it in <hosting>.\nReturn the exact code changes file by file, the settings I need to switch on in the PostHog dashboard, and a short checklist to confirm that a recording appears after I deploy. Do not add any tracking beyond page views and session recording.\n```"
-  ]
+  ],
+  "guideUrl": "https://www.notion.so/40b0d01124e48133a453cb1b7d833bd0"
 }

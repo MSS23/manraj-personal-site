@@ -33,5 +33,6 @@
     "## Prompt to build your own",
     "```\nYou are helping me prepare a web app for a public launch and set up a way to catch and fix bugs afterwards. My app is <app name>, built with <framework>, hosted on <hosting provider>. I have accounts for Sentry, Linear and Product Hunt.\nPlease do the following:\n1. Add the Sentry SDK for <framework> to my project, with the setup code and where each file goes, and make sure it does not log users' passwords or personal data.\n2. Show me how to configure a Sentry alert that emails me when a new error appears.\n3. Give me a simple template for a Linear bug ticket: title, steps to reproduce, the Sentry link, how many users are affected, and priority.\n4. Write a launch-day checklist covering deployment, environment variables, error logging and a plan for triaging bugs in the first 48 hours.\nKeep the setup minimal and explain each step in plain English. Do not add any services beyond Sentry and Linear. Return the code changes first, then the template, then the checklist.\n```",
     "Not checked: I wrote this from the transcript only, so I did not check the details of Sentry's or Linear's current setup screens."
-  ]
+  ],
+  "guideUrl": "https://www.notion.so/40b0d01124e48155ad65f3132b252773"
 }

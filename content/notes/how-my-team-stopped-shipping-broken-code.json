@@ -36,5 +36,6 @@
     "Watch out: a plugin only guards sessions where it is installed, so keep a matching check in GitHub Actions as a backstop for anyone who commits without it.",
     "## Prompt to build your own",
     "```\nYou are helping me set up a Claude Code plugin that stops broken code reaching GitHub. My project uses <language and framework>, my repository is hosted on GitHub, and my team works in Claude Code. The command that proves the code is healthy is <test, lint and build command>.\nBuild a plugin that contains: a short set of rules telling Claude to run that command before every commit and to fix failures instead of skipping them; a hook that runs the command when Claude attempts a commit and blocks the commit if it fails, returning the error output to Claude; and a manifest so the plugin can be installed from a shared marketplace or from the repository.\nConstraints: no secrets in the plugin files, use only the documented Claude Code plugin and hook formats, and keep the checks fast enough to run on every commit. If <my checks take longer than a minute>, suggest which to run on commit and which to leave to CI.\nReturn the full file tree, the contents of every file, the exact install steps for a teammate, and a short test I can run to prove a failing change is blocked.\n```"
-  ]
+  ],
+  "guideUrl": "https://www.notion.so/40b0d01124e48183963de879a839613f"
 }

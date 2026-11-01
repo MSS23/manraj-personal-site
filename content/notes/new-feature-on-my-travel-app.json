@@ -32,5 +32,6 @@
     "Watch out: turn on Supabase row-level security so the scanning user can only read the visited places the other person chose to share, not their whole account.",
     "## Prompt to build your own",
     "```\nYou are my senior full-stack developer. Build a travel-tracking web app that works on a phone.\nTools I have: <ChatGPT/Codex or Claude Code>, a Supabase project, a Vercel account, and Node installed on <Windows/Mac>.\nFeatures:\n1. Sign-up and login with Supabase Auth.\n2. Let a user add countries and cities they have visited, with a date, and show them on a map.\n3. Show a \"percentage of the world visited\" score based on countries visited, with a rank label such as \"Explorer\".\n4. Give each user a digital passport page with a QR code that links to their public profile at <my-domain>.\n5. When a signed-in user opens another person's passport link, show a compatibility page: countries in common, countries each has visited, and a simple compatibility score. If the two share no countries, show a friendly low-score message.\nConstraints: use Supabase row-level security so people can only read the places another user has chosen to share. Keep the design simple and mobile-first. Deploy to Vercel.\nReturn: the database schema as SQL, the project file structure, the code for each page, the environment variables I need to set, and step-by-step deployment instructions.\n```"
-  ]
+  ],
+  "guideUrl": "https://www.notion.so/40b0d01124e4814e842cd7bc66c57af2"
 }

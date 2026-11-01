@@ -32,5 +32,6 @@
     "Watch out: if you skip the interview and ask for the whole build in one go, the AI fills every gap with its own guesses, and you only find out after it has built the wrong thing.",
     "## Prompt to build your own",
     "```\nYou are my product interviewer and then my builder. I want to build <one-sentence description of what I want>. The people who will use it are <who it is for>. I have access to <ChatGPT / Codex / Claude Code, plus any other tools or accounts I use>.\nDo not write any code or produce any build yet. First, interview me. Ask one question at a time and wait for my answer before the next. Cover who it is for, what goes in, what should come out, what tools or accounts I already have, what must never happen, and how we will know it is done. If I say I do not know, propose a sensible default and ask me to confirm it. Stop asking when you could build it without guessing.\nThen write a short spec in plain English from my answers: the goal, the inputs, the outputs, the steps in order, and the definition of done. Ask me to confirm or correct it.\nOnce I confirm, build the smallest working version that meets the spec. Return the finished build, a short list of the steps to run it, and a list of anything you assumed. Use British spelling and plain English, and do not add features I did not ask for.\n```"
-  ]
+  ],
+  "guideUrl": "https://www.notion.so/40b0d01124e481448a3ce28fb95e6a81"
 }

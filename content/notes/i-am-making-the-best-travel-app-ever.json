@@ -33,5 +33,6 @@
     "Watch out: Photos can carry exact location data, so check what you store and turn on Supabase Row Level Security before sharing any link.",
     "## Prompt to build your own",
     "```\nYou are my senior full-stack developer. Build a web app called <app name> where I can record my travels and share them with <who I share with>. Use Next.js for the front end, Supabase for the database, authentication and photo storage, and deploy to Vercel. I have <Codex or Claude Code> and can run commands on <Windows, Mac or Linux>.\nFeatures: an interactive globe or map pinning every place I have visited; a timeline grouped by year so I can compare my trips across years and see how a place changed when I revisited; a page per trip with photos, dates and a short note; private share links; and a year-in-review page with counts of countries, cities and photos per year.\nConstraints: keep it simple and build in small steps, starting with the data model and one working trip page. Enable Supabase Row Level Security on every table. Strip or ignore photo location data unless I choose to keep it. Do not hard-code any keys; use environment variables and tell me where to set them.\nReturn the data model first and wait for my approval. Then give me the commands, the files and a short checklist to test it with <number> of my own trips.\n```"
-  ]
+  ],
+  "guideUrl": "https://www.notion.so/40b0d01124e481bcb42cfce971e98d8e"
 }

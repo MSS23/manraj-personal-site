@@ -32,5 +32,6 @@
     "Watch out: keep the instructions short and the examples genuinely your own, because vague rules or borrowed examples make Claude repeat the wrong style.",
     "## Prompt to build your own",
     "```\nYou are helping me create a reusable Claude skill for a task I repeat often. The task is <describe the task, for example writing LinkedIn posts>. I use <Claude Code or Claude.ai> and I will paste three to five examples of my own past work below.\nBuild me a skill folder containing one markdown file named <skill-name>.md. The file must have a short description of when to use the skill, about seven clear instructions covering tone of voice, structure, length and things to avoid, and my examples included as reference material. Base the instructions only on patterns you can see in my examples, and do not invent rules I have not shown.\nConstraints: plain English, British spelling, no hype, and keep the instructions under 200 words in total.\nReturn the full contents of the markdown file, then tell me, in three short steps, how to install it as a skill and how to ask Claude to use it for a new topic.\nMy examples:\n<paste examples here>\n```"
-  ]
+  ],
+  "guideUrl": "https://www.notion.so/40b0d01124e481ecb6a5e7c6c98ec42a"
 }

@@ -30,5 +30,6 @@
     "Watch out: the assistant only knows what you paste in, and it can misread similar airport names, so treat its answer as a prompt to check the original booking, not as proof.",
     "## Prompt to build your own",
     "```\nYou are helping me check a journey booking for mistakes before I travel. I will paste two things: my taxi or transfer confirmation and my <flight, train or ferry> confirmation.\nCompare them and return a table with these rows: pickup location, drop-off location (including the exact airport or station name and terminal), date, time, and passenger name. For each row, show what each document says and mark it as Match, Mismatch or Unclear.\nRules: use only the text I give you. If something is missing or ambiguous, mark it Unclear and say what I should look up. Do not guess, and do not assume two similarly named airports or stations are the same place. Pay particular attention to cities with more than one airport.\nAfter the table, give a short list of the mismatches in order of urgency, and a one-line message I could send to <taxi company or airline> to correct each one. Keep the language plain and British English.\nHere are my documents:\nTaxi: <paste taxi confirmation>\nTravel: <paste flight or train confirmation>\n```"
-  ]
+  ],
+  "guideUrl": "https://www.notion.so/40b0d01124e481f7b674dfdd69e94085"
 }

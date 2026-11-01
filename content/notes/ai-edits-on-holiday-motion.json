@@ -38,5 +38,6 @@
     "Watch out: running Claude Code directly from a phone was too finicky and struggled, so use Telegram as the phone-side control and keep the real work on the home PC.",
     "## Prompt to build your own",
     "```\nYou are helping me build a remote AI agent setup so my jobs keep running while I am away from home.\nMy setup: a PC at home that stays on, an old laptop I can carry, a Telegram account, and <list any other tools, e.g. Notion, ffmpeg, CapCut>. My main job to automate is <describe job, e.g. editing videos from raw clips>. My operating system is <Windows/macOS/Linux>.\nBuild this:\n1. An open-source agent framework, such as Hermes Agent, running on the home PC, with the job above set up as a task it can run.\n2. A secure remote connection from the old laptop to the home PC, so the PC does all the processing.\n3. A Telegram bot that the agent uses to send me updates and receive my replies.\n4. A step where every finished result is sent to me in Telegram as a preview, and nothing is published or changed until I reply yes. If I reply no, it should ask what to change.\nConstraints: keep every token and password in environment variables, never in the code. Only my Telegram account may control the bot. Explain each step in plain English and tell me how to test it.\nReturn the setup steps in order, any code or config files in full, and a short checklist to confirm it works while I am away.\n```"
-  ]
+  ],
+  "guideUrl": "https://www.notion.so/40b0d01124e4817b9ccbe6afcbf3c66f"
 }

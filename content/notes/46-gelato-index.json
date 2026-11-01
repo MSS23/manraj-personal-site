@@ -42,5 +42,6 @@
     "1. AI picks, I verify",
     "1. Updated every episode",
     "1. Where should I go first?"
-  ]
+  ],
+  "guideUrl": null
 }

@@ -33,5 +33,6 @@
     "Watch out: Send the broadcast to people who already have your number, since WhatsApp only delivers broadcasts to contacts who have saved yours. Don't build every feature request, because the crashes come first.",
     "## Prompt to build your own",
     "```\nYou are helping me turn user feedback into fixes for my app, <app name>, which is built with <framework and hosting, e.g. Next.js on Vercel>.\nI have collected feedback from about <number> people over WhatsApp and stored it in <Notion database or Google Sheet>. I will paste the rows below.\nDo the following:\n1. Sort every item into crash, bug, feature request or other.\n2. Group items that describe the same problem and count how many people reported each.\n3. For each crash, list the likely cause based on the code I paste, the files involved, and the smallest fix.\n4. Give me a short test checklist I can run on a real phone to confirm each fix.\n5. Rank the feature requests by how many people asked for them and suggest the top three for the next release.\nConstraints: change as little code as possible, don't add new dependencies unless a fix needs one, and tell me if you are unsure about a cause rather than guessing.\nReturn: a table of grouped feedback, the proposed code changes as diffs, the test checklist, and a short message I can send back to the people who helped.\nFeedback: <paste rows here>\nCode: <paste relevant files here>\n```"
-  ]
+  ],
+  "guideUrl": "https://www.notion.so/40b0d01124e481369cbaf118fafd33c0"
 }

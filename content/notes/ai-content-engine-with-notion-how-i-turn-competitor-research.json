@@ -32,5 +32,6 @@
     "Watch out: research is only the starting point, so never publish a draft that was not built from your own answers, or it becomes a copy of someone else's post.",
     "## Prompt to build your own",
     "```\nYou are my content assistant. Help me build a content engine in Notion that turns research into posts in my own voice.\nI use <assistant: ChatGPT / Codex / Claude Code> with a Notion connection to my workspace. My niche is <niche>. The creators and topics I follow are <list of creators and topics>. My background, skills and story are <short summary>.\nBuild this for me:\n1. A Notion database with properties for source link, topic, status (idea, interviewed, drafted, ready) and my angle.\n2. A research step: take the creators and topics above, find stories and concepts they have used, and save each as a row with its source link. Do not copy their wording.\n3. An interview step: for each idea, ask me up to five questions about what it looks like from my experience, one at a time, and save my answers to the row.\n4. A drafting step: write a short post for <platform> using only my answers, in plain English and my tone, and save it to the row.\nConstraints: never reuse another creator's phrasing, never publish anything, and always ask before changing existing rows.\nReturn the database setup, the exact prompts for each step, and a short guide to running it weekly.\n```"
-  ]
+  ],
+  "guideUrl": "https://www.notion.so/40b0d01124e4814292add6e176458ffe"
 }

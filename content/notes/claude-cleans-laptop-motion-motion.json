@@ -33,5 +33,6 @@
     "## Prompt to build your own",
     "```\nYou are helping me tidy my files safely. I use <Windows or Mac> and I am working in the folder <folder path>. My Google Drive is available on this machine through Google Drive for desktop at <Drive folder path>.\nDo the following in order, and stop for my approval after each stage:\n1. Scan the folder and report file types, total sizes, obvious duplicates and files you cannot identify. Move nothing.\n2. Create a folder called \"To Be Deleted\" inside <folder path>. Propose which files belong there (duplicates, installers, temporary files, anything clearly junk) and wait for my yes.\n3. Move approved files into \"To Be Deleted\". Never delete, overwrite or rename anything permanently.\n4. Propose a simple folder structure for the remaining files, explain the rule behind each folder, then move the files once I approve.\nConstraints: no deletion commands of any kind, keep a log of every move so I can undo it, and ask me about any file you are unsure of. At the end, return a summary of what moved where and how much space is now sitting in \"To Be Deleted\".\n```",
     "Not checked: the post never names the exact command Manraj sends, so the prompt is my own build from the described steps. Step 6 (hard drives) is inferred from the transcript's mention of them."
-  ]
+  ],
+  "guideUrl": "https://www.notion.so/40b0d01124e481149681f7f55980b26a"
 }

@@ -32,5 +32,6 @@
     "Watch out: only let the bot answer your own Telegram account, and never auto-publish without a preview you have approved.",
     "## Prompt to build your own",
     "```\nYou are helping me build a Telegram-controlled video editing assistant. I use <my operating system> and have <ChatGPT Codex or Claude Code>, Python, ffmpeg, a Google Drive account and a Telegram bot token from BotFather.\nBuild a script that does the following:\n1. Listens to my Telegram bot, but only accepts messages from my own user ID, <my Telegram user ID>.\n2. Saves any video I send to a Google Drive folder called <folder name>.\n3. Reads my text instruction, for example \"cut the pauses and add captions\".\n4. Calls an AI agent to plan the edit, then runs ffmpeg to trim silences, join the chosen takes, burn in captions and export a 9:16 MP4.\n5. Sends a short preview back to me in Telegram and waits for my reply.\n6. If I reply with changes, re-renders and sends the new version, keeping the old one.\nConstraints: read all tokens and keys from environment variables, never publish anything automatically, and log each step in plain language so I can see what happened.\nReturn the full code, a list of the packages to install, the exact setup steps for the Telegram bot and Google Drive access, and a short test I can run with one sample clip.\n```"
-  ]
+  ],
+  "guideUrl": "https://www.notion.so/40b0d01124e481a29042c028cd26bee8"
 }

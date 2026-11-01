@@ -32,5 +32,6 @@
     "Watch out: Using two models adds cost and complexity, so only add the second one for a feature where you have seen it do clearly better, and never put API keys in code you publish.",
     "## Prompt to build your own",
     "```\nYou are helping me build a web app called <app name> that does <one-line description>. I use Claude Code as my main assistant and also have a ChatGPT subscription. Plan and build the app step by step, using <framework, for example Next.js> and hosting it on <host, for example Vercel>. Most of the work should be done by you, but one feature, <feature, for example a flight simulation or a summary generator>, should call the OpenAI API instead, because I want to compare the results. Keep the OpenAI key in an environment variable, never in the code, and add a clear comment where that call is made so I can swap the model later. Before writing code, list the pages and features you will build and the order you will build them in. After each step, tell me how to test it. At the end, return the file structure, the environment variables I need to set, and the steps to deploy.\n```"
-  ]
+  ],
+  "guideUrl": "https://www.notion.so/40b0d01124e4819eb493c1e884fc70ce"
 }

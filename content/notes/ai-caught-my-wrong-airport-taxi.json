@@ -41,5 +41,6 @@
     "```\nYou are helping me build an AI trip checker in Notion. I have a Notion workspace and a paid <ChatGPT / Claude> account.\nTask: design a setup where the assistant reads my trip page and its linked bookings (<flights, hotels, taxis, other>) and writes a \"Things to check\" section at the bottom of the page.\nRequirements:\n- The assistant must have read access to the trip page and bookings, and write access only to that one section.\n- It must never book, cancel, edit or send anything. It only flags.\n- Each flag should name the booking, the date, what looks wrong, and why (for example, a taxi pick-up point that does not match the departure airport).\n- Include the standard checks: passport validity, visas, packing, check-in times, and transfers between each leg.\n- Say clearly when it is unsure, rather than guessing.\nReturn: a Notion page structure for my trip, the exact instructions to give the assistant, a short review prompt I can re-run after every change, and a step-by-step guide for connecting <Notion AI / Claude / ChatGPT> to my workspace. My trip: <destination and dates>.\n```",
     "---",
     "Skipped: no check of current Notion connector setup steps. Risk: connector names and permissions vary by plan, so confirm them before publishing."
-  ]
+  ],
+  "guideUrl": "https://www.notion.so/40b0d01124e481d0ad4fc9e647c09719"
 }

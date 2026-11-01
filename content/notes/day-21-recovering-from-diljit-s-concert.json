@@ -32,5 +32,6 @@
     "Watch out: install only an APK you built yourself, and don't spend a free evening on a big change you can't test on the phone.",
     "## Prompt to build your own",
     "```\nYou are helping me build a working Android build of my app and a simple progress log.\nMy setup: <app type, e.g. React Native / Expo / Flutter / native Android>, project folder <path to my project>, Windows or Mac <my computer>, Android phone <phone model>, Claude Code or Codex as the assistant.\nDo the following:\n1. Inspect the project and tell me the exact command to produce an Android debug APK. If the project needs tools installed first (Android Studio, Java, an Expo or EAS account), list them and ask before installing anything.\n2. Run the build once I agree, and tell me where the APK file is saved.\n3. Give me plain steps to move the APK to my phone and install it, including the Android \"Install unknown apps\" setting.\n4. Create a short file in the project called PROGRESS.md with three headings: Done today, Broken or unfinished, Next step. Fill it in from the current state of the code.\n5. Explain how I update PROGRESS.md at the end of each work session in under two minutes.\nConstraints: do not change my app code, do not publish anything to a store, and do not ask for passwords or keys. Return the commands, the file path of the APK, and the contents of PROGRESS.md.\n```"
-  ]
+  ],
+  "guideUrl": "https://www.notion.so/40b0d01124e481928485d16b8d9114e1"
 }

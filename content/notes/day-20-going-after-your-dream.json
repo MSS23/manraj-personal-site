@@ -33,5 +33,6 @@
     "## Prompt to build your own",
     "```\nYou are my coding assistant. Build a travel-sharing web app called <app name> where people pin places they have visited on a 3D globe and share photo albums with friends. I am a <beginner / developer> and I have <ChatGPT (Codex) / Claude Code>, a Supabase account and a Vercel account.\nRequirements:\n- Next.js with TypeScript, deployed to Vercel from a GitHub repository.\n- Supabase Auth for sign-in, a Postgres schema for users, places (name, latitude, longitude, date visited) and photos, and Supabase Storage for image uploads. Add row-level security so users can only edit their own data.\n- A globe view using react-globe.gl with a pin for each place; clicking a pin opens that place's photo album.\n- A friends feature so a user can follow another user and view their globe.\n- Work in small steps. Finish one step, tell me how to test it on my phone, then wait for me before the next.\nReturn the project plan first, then the SQL for the schema, then the code for step one, and list any accounts or keys I need to create, using placeholders rather than real secrets.\n```",
     "Skipped: nothing was checked against the app itself, since the source is only a spoken transcript; the globe, friends and storage steps are my reasonable build of what the post describes, not stated details."
-  ]
+  ],
+  "guideUrl": "https://www.notion.so/40b0d01124e4813498c8e447e100e863"
 }
