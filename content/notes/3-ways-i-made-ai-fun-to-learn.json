@@ -34,5 +34,5 @@
     "```\nYou are helping me build my first AI-assisted project. I am not a professional developer, so explain each step in plain English and keep the code simple.\nProject: <describe the thing you want, e.g. a tracker for my <collection> that shows what it is worth, or a website for <local business I like>>.\nMy interest: <the topic I care about>.\nTools I have: <ChatGPT (Codex) or Claude Code>, a computer that can run <Node.js or Python>, and accounts on <Supabase for data, Vercel for hosting, or none yet>.\nWhat to build: the smallest working version first, with these features only: <feature 1>, <feature 2>, <feature 3>. Do not add anything else until I ask.\nConstraints: free tiers only, no secrets pasted into code, and keep the folder structure easy to follow.\nReturn: a short plan, the exact commands to run on my computer, the files with full code, how to test that it works, and the next three improvements I could ask for.\n```",
     "I left out any step about going viral or posting the project, since the source only covers building it. Step 5 and 6 (Supabase, Vercel) are my suggestions as common routes. The post doesn't say which tools Manraj used for these three projects."
   ],
-  "guideUrl": "https://www.notion.so/40b0d01124e48112bb28e915bf3d90ca"
+  "guideUrl": "https://manraj-sidhu.notion.site/40b0d01124e48112bb28e915bf3d90ca"
 }

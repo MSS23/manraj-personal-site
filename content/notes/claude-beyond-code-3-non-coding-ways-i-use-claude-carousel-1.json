@@ -33,5 +33,5 @@
     "## Prompt to build your own",
     "```\nYou are helping me set up Claude for non-coding work. My role is <your role>. I want to use Claude for three jobs: <job 1>, <job 2> and <job 3>. I have access to <Claude plan, for example the free tier or Pro> and I can upload <file types I have, for example Word documents, PDFs or notes>.\nFor each job, do the following:\n1. Write a short set of Project instructions I can paste into Claude, covering tone, audience, length and anything it must never do.\n2. List which example files or notes I should upload so Claude learns my style.\n3. Give me one starter prompt I can use on a real task straight away.\n4. Give me a short checklist for reviewing the output before I use it.\nKeep everything in plain English, with no jargon. Use British spelling. Do not invent facts about my business; if you need information, ask me first. Return the three jobs as separate sections, each with the four items above in order.\n```"
   ],
-  "guideUrl": "https://www.notion.so/40b0d01124e4810399e3e3e2939e6103"
+  "guideUrl": "https://manraj-sidhu.notion.site/40b0d01124e4810399e3e3e2939e6103"
 }

@@ -34,5 +34,5 @@
     "## Prompt to build your own",
     "```\nYou are helping me clean up a slow laptop and my Google Drive. Work only inside <folders to sort, e.g. Downloads and Documents> and my Google Drive for desktop folder at <Drive folder location>.\nDo not delete anything. Do not move anything outside those folders.\nSteps:\n1. List what is using the most space, and find duplicates, old installers, very large files and folders I have not opened in <number> months.\n2. Create a folder called \"To be deleted\" in each location.\n3. Move anything doubtful into \"To be deleted\" instead of removing it. Leave anything you are sure I need where it is.\n4. Tidy the files that remain into clearly named folders.\n5. Write a plain-English summary of what you moved, how much space it frees, and why each group went into \"To be deleted\".\nI use <Windows or Mac> and <ChatGPT/Codex or Claude Code>. Show me the plan and wait for my approval before you move any files. Return the summary as a list I can check before I delete anything by hand.\n```"
   ],
-  "guideUrl": "https://www.notion.so/40b0d01124e481a7af28d33189a498f0"
+  "guideUrl": "https://manraj-sidhu.notion.site/40b0d01124e481a7af28d33189a498f0"
 }

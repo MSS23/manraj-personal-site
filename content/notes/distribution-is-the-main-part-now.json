@@ -34,5 +34,5 @@
     "```\nYou are helping me promote an app I have already built. My app is <app name>. It does <one sentence>, for <target user>. I use <ChatGPT / Claude Code>, CapCut, Metricool and Notion. Please do the following. First, write a one-sentence description of the app in plain English and check it makes sense to someone who has never heard of it. Second, suggest seven short video ideas, one per day, each showing a single feature, with a spoken script of no more than 60 words and a caption. Third, design a Notion database to record feedback with the columns date, platform, comment, feature requested and status, plus a simple weekly review routine that picks the most requested feature. Fourth, give me a posting checklist for Metricool covering platforms, times and captions. Use British spelling, no hype and no hashtags. Return the description, the seven ideas, the database layout and the checklist as separate sections.\n```",
     "Ponytail note: I only used the post's own content, so the steps are generic; I didn't check which platforms the source post actually used besides TikTok and side-project communities."
   ],
-  "guideUrl": "https://www.notion.so/40b0d01124e48101ab5ff2625af2e22f"
+  "guideUrl": "https://manraj-sidhu.notion.site/40b0d01124e48101ab5ff2625af2e22f"
 }

@@ -35,5 +35,5 @@
     "```\nYou are my senior mobile developer. Help me build a first version of <app idea in one sentence> for <target users>. I am a beginner and use <ChatGPT/Codex or Claude Code>. Start by proposing a short feature list and the screens needed, then wait for my approval. After that, build the app one screen at a time using <React Native with Expo, or another framework I name>. Add sign-in with Google using <Supabase or Firebase> as the back end, and explain each Google Cloud Console step I must do by hand. Keep the interface simple, with a bottom navigation bar and clear toggles. After each change, tell me exactly how to run it and what I should see. Do not store any keys in the code; use environment variables and tell me where to put them. Finish by giving me a checklist for sending the app to <5 friends> for testing on iOS and Android, and a template for collecting their bug reports.\n```",
     "Skipped: nothing checked against the app itself; the post gives no stack, so the tool names are common choices, not what was used."
   ],
-  "guideUrl": "https://www.notion.so/40b0d01124e481ed8eb4de0f113d6784"
+  "guideUrl": "https://manraj-sidhu.notion.site/40b0d01124e481ed8eb4de0f113d6784"
 }

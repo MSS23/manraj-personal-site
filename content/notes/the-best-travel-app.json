@@ -35,5 +35,5 @@
     "```\nYou are my coding assistant. Help me build and ship a first version of a travel app for <who it is for> that solves <one specific trip problem>. I have a <ChatGPT (Codex) or Claude Code> setup, a Vercel account and a Supabase account, and I am a <beginner/intermediate> developer.\nBuild a web app that works well on a phone. Include only these features: <feature 1>, <feature 2>, <feature 3>. Use Supabase for sign-in and to store <trips/places/saved items>. Do not add anything beyond this list.\nWork in small steps. First propose the file structure and the database tables, then wait for my approval. After that, build one screen at a time and tell me how to run it locally and check it works.\nWhen it is ready, walk me through deploying to Vercel and connecting the Supabase environment variables safely, without putting secrets in the code.\nFinish by giving me a short checklist for releasing version one on <release date> and a simple way to collect feedback from <number> friends.\n```",
     "Skipped: nothing checked against the repo, as this was a text-only task. Risk: the source gives no stack, so the tools named (Vercel, Supabase) are suggestions, not what the post used."
   ],
-  "guideUrl": "https://www.notion.so/40b0d01124e481b096e4e86db947a586"
+  "guideUrl": "https://manraj-sidhu.notion.site/40b0d01124e481b096e4e86db947a586"
 }

@@ -39,5 +39,5 @@
     "## Prompt to build your own",
     "```\nYou are my coding assistant. Help me build a small <web app or website> for <the thing I care about, for example my card collection, a local gelateria, travel plans>. I am <a beginner / have some coding experience> and I have <ChatGPT (Codex) or Claude Code>, a free Vercel account and <a Supabase project, or no database yet>.\nThe app should do this one thing: <one sentence describing the main job>. Start with only these screens or features: <screen or feature 1>, <screen or feature 2>, <screen or feature 3>. Do not add anything else yet.\nConstraints: keep the code simple and explain each step in plain English. Use a common stack such as Next.js. Store data in Supabase only if the app needs to remember things, and keep any keys out of the code by using environment variables. Build one feature at a time and tell me how to check each one works before moving on.\nReturn: the project structure, the commands to run it on my computer, the code for the first feature, and the steps to publish it on Vercel.\n```"
   ],
-  "guideUrl": "https://www.notion.so/40b0d01124e481f5a030f0b670ee3c7a"
+  "guideUrl": "https://manraj-sidhu.notion.site/40b0d01124e481f5a030f0b670ee3c7a"
 }

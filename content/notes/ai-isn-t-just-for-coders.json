@@ -37,5 +37,5 @@
     "```\nYou are helping me set up Claude to handle everyday admin without any coding. I use <Google Drive / Notion / Gmail> and I want to work by talking, using <Wispr Flow or typing>.\nGive me a short, numbered plan for three jobs:\n1. Tidy a messy Google Drive folder called <folder name> into sensible folders, and list files I should review before deleting. Do not delete or move anything until I approve the list.\n2. Clean up my Notion workspace for <what the pages are used for, for example content planning>, merging duplicates and naming pages clearly, with a summary of the changes before you make them.\n3. Read my inbox from <time period> and list only the emails that need a reply, with one line on why each does.\nFor each job, tell me which Claude connector to switch on, which permissions to grant and which to withhold, and the exact first message to say to Claude. Keep the language plain, assume I have never coded, and finish with a short checklist for reviewing Claude's work before I accept it.\n```",
     "Not checked: I used the caption and transcript only; I did not verify that Claude's connector menus or names match your current version."
   ],
-  "guideUrl": "https://www.notion.so/40b0d01124e48168af50d033aa9a04cd"
+  "guideUrl": "https://manraj-sidhu.notion.site/40b0d01124e48168af50d033aa9a04cd"
 }

@@ -34,5 +34,5 @@
     "```\nYou are helping me prepare my app for public launch. The app is <app name>, a <one-line description>. It runs as a <web app / mobile app> built with <tech stack>, hosted on <host>. It collects <types of user data, e.g. email, location, photos> and I plan to release on <web / Android / iOS> in <country or region>.\nFirst, produce a pre-launch compliance checklist as a single document I can tick through. Cover at least: legal review, privacy policy, terms of service, cookie policy, a support or contact page, data deletion and account removal, and app store requirements for <stores>. Mark each item as done, missing or needs a professional, based on what the app does.\nThen, for every missing page, write a first draft in plain English and add it to my codebase as a route linked from the footer. Do not invent company details; use placeholders like <company name> and <contact email>.\nReturn the checklist, the list of files you changed, and a short note on which items I should have a lawyer review.\n```",
     "Skipped: I haven't checked the claims against the live app. The guide assumes a generic web stack, since the source doesn't name Ataloria's."
   ],
-  "guideUrl": "https://www.notion.so/40b0d01124e4814ea196c1b02e48572f"
+  "guideUrl": "https://manraj-sidhu.notion.site/40b0d01124e4814ea196c1b02e48572f"
 }

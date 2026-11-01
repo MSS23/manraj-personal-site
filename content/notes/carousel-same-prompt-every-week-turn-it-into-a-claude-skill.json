@@ -33,5 +33,5 @@
     "## Prompt to build your own",
     "```\nYou are helping me turn a task I repeat into a Claude skill for Claude Code. The task is: <describe the task, for example writing my weekly client update>. I use <tools or files involved>, and the result should look like <describe or paste a good example>.\nBuild a skill folder containing a SKILL.md file with three parts: a name, a one-line description that says when the skill should be used, and clear step-by-step instructions. Add any supporting files the task needs, such as a template or style guide, and mention them in the instructions.\nConstraints: keep the instructions short and specific, use plain English, do not include any passwords, keys or private details, and make the skill produce the same kind of result every time.\nReturn the full contents of every file, the folder structure, and where to place the folder so Claude Code finds it. Then give me one example request I can use to test it, and tell me what to check in the output.\n```"
   ],
-  "guideUrl": "https://www.notion.so/40b0d01124e4812cbf1df84ce74f73da"
+  "guideUrl": "https://manraj-sidhu.notion.site/40b0d01124e4812cbf1df84ce74f73da"
 }

@@ -33,5 +33,5 @@
     "## Prompt to build your own",
     "```\nYou are my senior full-stack developer. Build the first version of a social travel app called <app name> where people sign up, create albums of places they have visited, and see a travel compatibility score with friends and family based on shared places. I use <ChatGPT Codex or Claude Code>. I have a Supabase account, a Vercel account and the domain <my domain>.\nPlease do the following:\n1. Propose a simple stack (web app, Supabase for auth and data) and list the tables you need for users, albums, places and friendships.\n2. Build sign-up, login, an album page where I can add places and photos, a friends list, and a compatibility page that compares two people's places.\n3. Show me how to connect the app to Supabase, keep keys in environment variables, and deploy to Vercel with my domain.\n4. Add basic checks so one user cannot see or edit another user's private albums.\nKeep it as small as possible and build one feature at a time, stopping for me to test after each. Return the file structure, the code, the exact setup steps, and a list of monthly costs I should expect for hosting, database and domain.\n```"
   ],
-  "guideUrl": "https://www.notion.so/40b0d01124e4817fab68c03394eef8e4"
+  "guideUrl": "https://manraj-sidhu.notion.site/40b0d01124e4817fab68c03394eef8e4"
 }

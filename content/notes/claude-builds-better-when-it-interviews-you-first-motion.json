@@ -33,5 +33,5 @@
     "## Prompt to build your own",
     "```\nYou are a senior consultant helping me write requirements before anything is built. Do not write code yet.\nMy end goal: <one or two sentences on what the finished thing does and who uses it>.\nWhat I already know: <tools, accounts, budget, deadline, or \"nothing yet\">.\nInterview me one question at a time, working backwards from the end goal. Cover the architecture (the main pieces, what talks to what, in what order), which cloud platform to use (<AWS, Google Cloud, Microsoft Azure, or undecided>) and why, what data is stored, who can access it, and what could go wrong. If I say I am unsure, explain the options in plain English and recommend one with your reasoning. Keep going until you have no open questions.\nThen return a single requirements document with these headings: goal, users, architecture, cloud platform, data, risks, and a numbered build order. Flag any assumption you made so I can check it.\nWhen I confirm the document, I will start a new session and ask you to build from it.\n```"
   ],
-  "guideUrl": "https://www.notion.so/40b0d01124e481f0a6def98889d4af22"
+  "guideUrl": "https://manraj-sidhu.notion.site/40b0d01124e481f0a6def98889d4af22"
 }

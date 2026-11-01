@@ -34,5 +34,5 @@
     "## Prompt to build your own",
     "```\nYou are helping me reduce my Vercel build minutes without breaking deployments. I use Vercel with a GitHub repository, and my project is <project name> using <framework, e.g. Next.js>.\nDo the following:\n1. Explain where to find the build machine setting in the Vercel project settings, and which option is the cheapest. I am happy to wait longer for deploys.\n2. Write an Ignored Build Step script for my project that skips the build unless the push is to <branch to always build> or changes files in <folders that affect the app>. It must exit with the code Vercel expects for skip and build, and must still build if it cannot work out what changed.\n3. Show me exactly where to paste the script in the Vercel dashboard, or how to set it in the project config file if that is cleaner.\n4. Give me a short test plan: one push that should be skipped and one that should build.\n5. Tell me which Vercel usage page to check afterwards to confirm build minutes fell.\nKeep the explanation in plain English, number the steps, and warn me about anything that could stop a needed deploy from running.\n```"
   ],
-  "guideUrl": "https://www.notion.so/40b0d01124e48173a2ccf8bf577fe042"
+  "guideUrl": "https://manraj-sidhu.notion.site/40b0d01124e48173a2ccf8bf577fe042"
 }

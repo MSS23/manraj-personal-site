@@ -39,5 +39,5 @@
     "## Prompt to build your own",
     "```\nYou are helping me build a personal operating system in Notion, using the Notion connector you have access to. I have a Notion account and I use <Claude or ChatGPT>. Please do the following, and show me the plan before you change anything.\n1. Create an \"Ideas\" database with properties for status, type (<content, career, learning, travel>) and link. Give every new entry a page template with the headings Script, On-screen shots and Camera angle.\n2. Create a section for each type: <list your sections>. Link each one back to the Ideas database.\n3. Create a \"Creators\" database for <the creators or accounts I follow>, with a field for their latest posts and a short summary.\n4. Create a \"Trips\" section where each trip is its own page I can share by link.\nConstraints: only touch pages inside <name of the parent Notion page>; do not delete or rename anything that already exists; ask me before any change that affects more than ten pages.\nReturn a short summary of every database and page you created, with its link, and a note on what I should check by hand.\n```"
   ],
-  "guideUrl": "https://www.notion.so/40b0d01124e4812dba43feb96bb588b1"
+  "guideUrl": "https://manraj-sidhu.notion.site/40b0d01124e4812dba43feb96bb588b1"
 }

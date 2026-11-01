@@ -40,5 +40,5 @@
     "## Prompt to build your own",
     "```\nYou are helping me build a set of four Claude Code skills that run my content pipeline. I use Claude Code on a paid Claude plan, ffmpeg, and Google Drive. My niche is <my niche> and my voice is <describe my tone>.\nCreate four skills, each as its own SKILL.md file that I can call with a slash command:\n1. script: reads my past scripts or transcripts in <folder> and writes the next script in my voice about <topic>.\n2. video edit: takes raw clips from <folder>, uses ffmpeg to choose the cleanest take of each line and remove dead air, and outputs one reel.\n3. carousel: builds slides as HTML and exports each as an image for Instagram (4:5) and TikTok (9:16).\n4. motion reel: draws each scene in code and renders a video with ffmpeg, with no camera.\nAll outputs should save to <Google Drive folder>. Keep each skill short and give it clear inputs and outputs. Do not post anything automatically; I review everything first. Return the folder layout, the full text of each SKILL.md, and the commands I need to install ffmpeg and test each skill once.\n```"
   ],
-  "guideUrl": "https://www.notion.so/40b0d01124e4811ea8c3d5209c4f70b7"
+  "guideUrl": "https://manraj-sidhu.notion.site/40b0d01124e4811ea8c3d5209c4f70b7"
 }

@@ -33,5 +33,5 @@
     "## Prompt to build your own",
     "```\nYou are helping me add error tracking and uptime alerts to my web app using Sentry. My app is built with <framework, e.g. Next.js> and deployed on <hosting, e.g. Vercel>. My code lives in <repository or local folder>.\nPlease:\n1. Give me the exact steps and commands to install and configure the Sentry SDK for my framework.\n2. Show me where to store the Sentry DSN as an environment variable in my host, without hard-coding it in the code.\n3. Write a small test route or button that throws a deliberate error so I can confirm it reaches Sentry.\n4. Explain how to set up a Sentry uptime monitor for <my site URL> and email alerts to <my email address>.\n5. List how to check that errors in the part of my app that users rely on most, <key feature, e.g. a map or dashboard>, are being captured.\nConstraints: keep changes minimal, use the free plan where possible, never print or commit secrets, and explain each step in plain English. Return the code changes as a short list of files to edit, then a checklist I can tick off to confirm everything works.\n```"
   ],
-  "guideUrl": "https://www.notion.so/40b0d01124e481b58281c78e9c19ab3f"
+  "guideUrl": "https://manraj-sidhu.notion.site/40b0d01124e481b58281c78e9c19ab3f"
 }

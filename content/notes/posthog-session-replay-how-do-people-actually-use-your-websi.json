@@ -35,5 +35,5 @@
     "```\nYou are helping me add PostHog session replay to my website. My site is built with <framework, e.g. Next.js, plain HTML or React> and hosted on <host, e.g. Vercel>. I use <package manager, e.g. npm> and I am on PostHog's free plan.\nPlease:\n1. Show me how to install and initialise PostHog (posthog-js) in this framework, reading the project key from an environment variable called <env variable name>.\n2. Turn on session recording and explain where to switch it on in PostHog's settings.\n3. Mask all password fields and any input I list here: <sensitive fields, e.g. email, card number>.\n4. Show how to confirm that events and recordings are arriving.\n5. Add a short checklist for what to look for when watching replays: where people click, what they skip, and any errors.\nKeep the code minimal, use only PostHog's documented options, and tell me which files to change. Do not add any other analytics tools. Return the code changes first, then the checklist.\n```",
     "Skipped: I didn't check PostHog's current free-plan limits or setting names. Step 8 goes slightly beyond the post, so cut it if you want strict fidelity."
   ],
-  "guideUrl": "https://www.notion.so/40b0d01124e48185ae2ecee1bcf2f846"
+  "guideUrl": "https://manraj-sidhu.notion.site/40b0d01124e48185ae2ecee1bcf2f846"
 }

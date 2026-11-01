@@ -33,5 +33,5 @@
     "## Prompt to build your own",
     "```\nYou are helping me build a Claude skill for Claude Code. The skill automates one task I repeat often: <task, e.g. writing a LinkedIn post>.\nWhat I have: Claude Code installed, a project folder at <folder name>, and <3 to 5> finished examples of the task that I will paste below.\nPlease do the following:\n1. Create a skill folder called <skill-name> containing a SKILL.md file.\n2. In SKILL.md, add a name, a one-line description of when the skill should be used, and a clear set of rules for tone, length and structure. Base the rules only on my examples and my notes below.\n3. Save my examples inside the folder in a separate file and reference it from SKILL.md.\n4. Show me the folder structure and the full contents of SKILL.md.\n5. Give me one example one-line request I can type to call the skill, and explain how to test it.\nMy rules and notes: <your rules, for example audience, voice, words to avoid, length>.\nMy examples: <paste examples here>.\nDo not invent rules I have not given you. If something is unclear, ask me before writing the file.\n```"
   ],
-  "guideUrl": "https://www.notion.so/40b0d01124e48105b2d7cb60e7a82e22"
+  "guideUrl": "https://manraj-sidhu.notion.site/40b0d01124e48105b2d7cb60e7a82e22"
 }

@@ -33,5 +33,5 @@
     "## Prompt to build your own",
     "```\nYou are helping me build a travel-memories web app. I am <your experience level> and I use <ChatGPT Codex or Claude Code>.\nBuild a Next.js app with Supabase for the database, photo storage and sign-in, deployed on Vercel. Users can create an account, create an album with a title, a destination and a date, and upload several photos to it. Add a summary page that shows each user's albums as a \"wrapped\" style recap: <number of albums, places visited, a featured photo>.\nConstraints: keep the interface simple enough for a first-time user to upload an album without instructions; keep all secret keys in environment variables, never in the code; use Supabase row-level security so people only see what they should.\nReturn: the folder structure, the SQL for the tables and storage bucket, the full code for each page, and step-by-step instructions to deploy on Vercel. Then list three things my friends are likely to find confusing, so I can test them.\n```"
   ],
-  "guideUrl": "https://www.notion.so/40b0d01124e48170be3fe786f00ad482"
+  "guideUrl": "https://manraj-sidhu.notion.site/40b0d01124e48170be3fe786f00ad482"
 }

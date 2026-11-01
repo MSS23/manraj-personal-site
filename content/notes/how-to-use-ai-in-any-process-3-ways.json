@@ -33,5 +33,5 @@
     "## Prompt to build your own",
     "```\nYou are helping me use AI in a process. The process is <describe the process in a few sentences>. I have access to <ChatGPT / Claude / Claude Code / n8n>. I have run this process <number> times before, and my main goal is <use AI inside it / understand it / build it>.\nFirst, ask me up to five short questions to fill any gaps. Then choose which of three approaches fits best: (1) put AI inside one repeatable step of the process, (2) explain the process to me in plain English, or (3) build the process as a small software tool, a Claude routine or an n8n automation.\nReturn: the approach you chose and why in two sentences, the numbered steps I should follow, the exact instructions or prompt to give the AI for each step, and a simple way to check the output against doing it by hand. If you recommend building something, list the tools I need and keep it to the smallest working version. Use plain English and British spelling, and do not assume I have technical experience. Use only the tools I have listed, and tell me before suggesting anything else.\n```"
   ],
-  "guideUrl": "https://www.notion.so/40b0d01124e481b7a792f5b88c210ca1"
+  "guideUrl": "https://manraj-sidhu.notion.site/40b0d01124e481b7a792f5b88c210ca1"
 }

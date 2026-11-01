@@ -34,5 +34,5 @@
     "## Prompt to build your own",
     "```\nYou are my AI onboarding coach. I want to commit to a single AI assistant, <ChatGPT / Claude / other>, for 30 days instead of switching tools.\nAbout me: I work as <your role> and my audience is <who you write or work for>. The tasks I dislike most are <task 1>, <task 2> and <task 3>.\nBuild me a 30-day starter plan that:\n- gives me one small task to hand off each day, drawn from my list and getting gradually harder\n- shows me how to brief you like a colleague: the goal, the audience, the format and an example of good work\n- includes a reusable context prompt, written in the first person, that holds my role, audience, tone and rules, which I can paste at the start of any new chat\n- has a short review on day 30 so I can judge what saved me time\nKeep the plan in plain English, with no jargon. Return a day-by-day table, then the context prompt on its own, ready to copy into <Notion / my notes app>. Ask me up to five questions first if you need more detail.\n```"
   ],
-  "guideUrl": "https://www.notion.so/40b0d01124e48162aa89c0163115ee12"
+  "guideUrl": "https://manraj-sidhu.notion.site/40b0d01124e48162aa89c0163115ee12"
 }

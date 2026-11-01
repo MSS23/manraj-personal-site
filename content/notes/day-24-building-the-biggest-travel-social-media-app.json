@@ -34,5 +34,5 @@
     "## Prompt to build your own",
     "```\nYou are helping me take my mobile app from beta to a Google Play release. My app is <app name>, built with <framework, for example React Native, Flutter or native Android>, and I test it on <Android phone model>. I have <or do not yet have> a Google Play Console developer account.\nFirst, review the project and add basic offline support, so the app opens and shows previously loaded content when there is no connection. Explain which data you cache and when it refreshes.\nThen give me a release checklist covering: the Google Play Console registration fee, the closed-testing requirement for new developer accounts (testers needed, how long they must stay opted in), setting up a closed testing track, inviting testers by Google account, creating a signed release build, and uploading it.\nConstraints: do not change features I have not asked about, keep secrets and signing keys out of the repository, and check Google's current Play Console documentation for requirements that may have changed.\nReturn the code changes for offline mode, the exact build commands for my framework, and a numbered checklist I can follow.\n```"
   ],
-  "guideUrl": "https://www.notion.so/40b0d01124e481e78135c47d8f1c166f"
+  "guideUrl": "https://manraj-sidhu.notion.site/40b0d01124e481e78135c47d8f1c166f"
 }

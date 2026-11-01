@@ -35,5 +35,5 @@
     "```\nYou are helping me ask my own contacts to try an app I have built. The app is <app name>, it does <one-line description>, and the link is <app URL>. There is a demo account: <demo login details, or \"none yet\">. My audience is <who the app is for>. I have my contacts in <Google Sheet / phone contacts / WhatsApp>.\nPlease do the following:\n1. Write three short WhatsApp messages (under 50 words each) in a warm, direct, non-salesy tone. Each should say what the app is, give the link, and make one clear ask: <sign up / try the demo / reply with feedback>.\n2. Suggest a simple Google Sheet layout with columns for name, group, message sent, replied, feedback and next step.\n3. Draft a short thank-you reply and a follow-up for people who do not answer after a week.\n4. Give me a checklist for sending manually, one person at a time, with no bulk-sending tools.\nUse British spelling. Do not use hype or emoji. Return the messages, the sheet columns and the checklist as separate sections.\n```",
     "Skipped: nothing checked beyond the source; the post is a story about asking, so steps 5–8 are my suggested way to act on it, not what he did."
   ],
-  "guideUrl": "https://www.notion.so/40b0d01124e4813da08dc76c2659adf0"
+  "guideUrl": "https://manraj-sidhu.notion.site/40b0d01124e4813da08dc76c2659adf0"
 }

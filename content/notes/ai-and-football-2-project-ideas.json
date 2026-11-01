@@ -34,5 +34,5 @@
     "## Prompt to build your own",
     "```\nYou are helping me build a small machine learning project that combines AI and football. I am a beginner and I use <ChatGPT/Codex or Claude Code>.\nProject: <predict a player's market value / predict the opposition's formation>, using Premier League data.\nMy data: <describe your CSV file or paste the column names>. If I have not got data yet, tell me which public Premier League datasets suit this project and what to download.\nPlease do the following:\n1. Inspect the data and list the columns, missing values and anything that looks wrong.\n2. Ask me which column is the target and which columns are allowed as inputs.\n3. Split the data into training and test sets.\n4. Train a simple baseline model in Python with scikit-learn, then one stronger model.\n5. Measure both on the test set only, and explain the results in plain English.\n6. Show which inputs mattered most, and draw one clear chart.\nKeep the code short, comment each step, and tell me exactly how to run it on <Windows/Mac>. Do not invent data. If something is unclear, ask me before continuing.\n```"
   ],
-  "guideUrl": "https://www.notion.so/40b0d01124e481ceab69c64e79d7cdd5"
+  "guideUrl": "https://manraj-sidhu.notion.site/40b0d01124e481ceab69c64e79d7cdd5"
 }

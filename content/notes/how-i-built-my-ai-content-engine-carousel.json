@@ -33,5 +33,5 @@
     "## Prompt to build your own",
     "```\nYou are helping me build a content engine that learns from competitors without copying them. I post about <my topic> for <my audience> on <platforms>. I have ChatGPT or Claude Code, <design tool such as Canva or CapCut> and <scheduler such as Metricool>.\nI will give you: (1) <number> competitor posts that performed well, and (2) a style note describing my voice, with <number> examples of my own posts.\nFor each competitor post, write a short analysis of why it worked: the hook, the single idea it teaches, and the format. Then draft one new post for each that makes the same point in my voice, using different wording and my own examples. Flag any phrase that is too close to the original and rewrite it.\nConstraints: plain English, British spelling, no hype, no hashtags. Each post must teach one thing only.\nReturn: a table of the analyses, the new drafts, and a list of the flagged phrases you rewrote. Ask me before you assume anything about my voice that is not in the style note.\n```"
   ],
-  "guideUrl": "https://www.notion.so/40b0d01124e481fbb598e095cabe7a4a"
+  "guideUrl": "https://manraj-sidhu.notion.site/40b0d01124e481fbb598e095cabe7a4a"
 }

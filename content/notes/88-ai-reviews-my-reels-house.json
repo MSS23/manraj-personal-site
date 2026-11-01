@@ -33,5 +33,5 @@
     "## Prompt to build your own",
     "```\nYou are my video coach. I make short videos about <your topic> for <platform>. I will give you material from creators I admire: <links, transcripts or recordings of their best videos>.\nStep 1: Analyse these videos and tell me what they have in common: how they open, how quickly they move, how they are edited and how they end.\nStep 2: Turn that into a checklist covering hooks, pacing and style. Keep it to no more than 10 items, each one a clear yes or no question I can check.\nStep 3: Review my video, <my transcript or recording>, against the checklist. Return two short lists, \"Do this\" and \"Stop doing this\". Tie each point to a specific moment in my video and say what to change.\nKeep my own voice and topic. Use the creators for structure and technique only, and do not copy their wording. Write in plain British English with no hype. If you cannot watch video, tell me and ask for transcripts instead.\n```"
   ],
-  "guideUrl": "https://www.notion.so/40b0d01124e481c09d74d92cfded3279"
+  "guideUrl": "https://manraj-sidhu.notion.site/40b0d01124e481c09d74d92cfded3279"
 }

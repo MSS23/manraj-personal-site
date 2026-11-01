@@ -34,5 +34,5 @@
     "## Prompt to build your own",
     "```\nYou are my senior full-stack developer. Build a travel-sharing web app called <app name> that shows where I have been on an interactive 3D globe.\nTools I have: <ChatGPT/Codex or Claude Code>, a Supabase account, a Vercel account and Node installed.\nBuild it with Next.js and TypeScript, using Supabase for the database and image storage and a free open-source globe library such as react-globe.gl.\nFeatures:\n1. A globe with one pin per trip.\n2. Tapping a pin opens that place's photo album, in date order.\n3. A timeline mode that animates the globe from trip to trip in date order, drawing arcs between places.\n4. A \"wrapped\" summary screen showing totals for trips, countries and years.\n5. An add-trip form needing only a place, a date and photos.\nConstraints: keep it mobile first, keep API keys in environment variables and never in the code, and keep the first version small enough to finish in one day.\nReturn the Supabase table schema as SQL, the project file structure, the code for each screen, and step-by-step instructions to deploy to Vercel. Ask me before assuming anything about <my trips or design preferences>.\n```"
   ],
-  "guideUrl": "https://www.notion.so/40b0d01124e4816ca9bcc444f2dbde95"
+  "guideUrl": "https://manraj-sidhu.notion.site/40b0d01124e4816ca9bcc444f2dbde95"
 }

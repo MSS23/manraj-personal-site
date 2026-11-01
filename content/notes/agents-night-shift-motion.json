@@ -39,5 +39,5 @@
     "## Prompt to build your own",
     "```\nYou are helping me set up an overnight multi-agent workflow in Claude Code. I use <ticket tracker, e.g. Linear>, <code host, e.g. GitHub> and <chat app, e.g. Discord>. My project lives in <repository name>.\nBuild a single saved slash command called <command name> that does the following in order:\n1. Fetch the open tickets labelled <label> from my tracker.\n2. Wave one: start one research sub-agent per ticket. Each reads the codebase and returns a short written plan. Agents must not edit files in this wave.\n3. Wave two: start one build sub-agent per plan, each working on its own branch, implementing only that plan and running the project's tests.\n4. Combine the passing branches into one branch and open a single draft pull request. Never push to or merge into main.\n5. Post the pull request link and a one-line summary per ticket to a <chat app> webhook.\nConstraints: cap the number of agents at <maximum agents>, stop and report if tests fail, and keep all secrets in environment variables, not in the command file.\nReturn the command file, any setup steps I must do by hand, and a short test plan I can run on two small tickets before trusting it.\n```"
   ],
-  "guideUrl": "https://www.notion.so/40b0d01124e481daac32de505992fadb"
+  "guideUrl": "https://manraj-sidhu.notion.site/40b0d01124e481daac32de505992fadb"
 }

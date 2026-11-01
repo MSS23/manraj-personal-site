@@ -47,7 +47,7 @@ export function formatDate(iso: string): string {
 }
 
 /** The public Notion page with every pack (prompts, blueprints, checklists, setups): where a note sends people instead of "comment X". */
-export const RESOURCES_URL = "https://www.notion.so/3f10d01124e481fa9ecce9c83cfd0232";
+export const RESOURCES_URL = "https://manraj-sidhu.notion.site/3f10d01124e481fa9ecce9c83cfd0232";
 
 /** Caption text without its comment-keyword call to action: on the site the resources are one click away, not a DM. */
 export function stripCta(text: string): string {

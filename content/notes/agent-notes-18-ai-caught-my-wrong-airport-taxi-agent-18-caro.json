@@ -32,5 +32,5 @@
     "## Prompt to build your own",
     "```\nYou are helping me check my travel bookings for mistakes before I travel. I use Notion with Notion AI and have no coding background.\nWrite me a step-by-step setup that I can follow in Notion:\n1. A trip page template with sections for flights, accommodation, transfers (taxi, train, coach) and \"what I expect\" (arrival airport, arrival time, final address).\n2. A single prompt I can paste into Notion AI that compares every booking on the page against my flights and lists any mismatch, such as the wrong airport, wrong date, wrong time or wrong passenger name.\n3. A rule that for each mismatch it quotes the exact line from the booking and says which other line it conflicts with.\n4. A short checklist for fixing the booking with the provider and rerunning the check.\nMy trip: <destination and dates>. My bookings: <flights, hotel, taxi or train>. Tools I have: <Notion plan, email, phone>.\nKeep the language plain and British English. Do not invent details about my bookings. If something is missing, ask me for it before you write the prompt. Return the template and the prompt as copy-and-paste text.\n```"
   ],
-  "guideUrl": "https://www.notion.so/40b0d01124e481918919ed475f56b21a"
+  "guideUrl": "https://manraj-sidhu.notion.site/40b0d01124e481918919ed475f56b21a"
 }
