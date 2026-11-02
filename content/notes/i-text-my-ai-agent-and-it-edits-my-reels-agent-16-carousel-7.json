@@ -19,7 +19,7 @@
   },
   "slides": [],
   "cover": null,
-  "views": 695,
+  "views": 698,
   "guide": [
     "Turn a chat message into an edited reel: you send raw clips and a short instruction to an AI agent, and it cuts, captions and returns a finished video. You need ChatGPT (Codex) or Claude Code, a Telegram bot, ffmpeg, and Google Drive.",
     "1. Create a Telegram bot with BotFather and keep its token in an environment variable, not in your code.",

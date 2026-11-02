@@ -25,7 +25,7 @@
   },
   "slides": [],
   "cover": "/notes/ai-football-two-ideas-motion/cover.jpg",
-  "views": 269,
+  "views": 270,
   "guide": [
     "This guide shows how to point machine learning at football. You need a laptop, a free ChatGPT or Claude account (or Codex or Claude Code), and a football dataset you can download.",
     "1. Pick one of the two projects: predict a player's market value, or predict the formation the other team will play.",

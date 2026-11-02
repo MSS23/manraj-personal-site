@@ -19,7 +19,7 @@
   },
   "slides": [],
   "cover": null,
-  "views": 58,
+  "views": 59,
   "guide": [
     "This sets up a chat bot on your phone that edits your short videos for you: you send a clip and an instruction, and it sends back the finished reel. You need a Telegram account, a computer that stays on, an open-source agent framework (such as Hermes Agent) or Claude Code, ffmpeg, and a Google Drive account.",
     "1. Create a bot in Telegram by messaging BotFather, and keep the token it gives you somewhere private.",

@@ -19,7 +19,7 @@
   },
   "slides": [],
   "cover": "/notes/what-are-ai-guardrails-stop-losses-for-your-ai-agent/cover.jpg",
-  "views": 378,
+  "views": 380,
   "guide": [
     "AI guardrails are limits you set so an AI agent can only cost you what you chose to risk. You need an AI agent or automation, a clear idea of what it may do, and a way to switch it off.",
     "1. Write down the worst outcome in one sentence, for example \"the bot loses the whole £1,500 I put in\".",

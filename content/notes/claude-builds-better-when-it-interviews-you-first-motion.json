@@ -19,7 +19,7 @@
   },
   "slides": [],
   "cover": "/notes/claude-builds-better-when-it-interviews-you-first-motion/cover.jpg",
-  "views": 326,
+  "views": 327,
   "guide": [
     "Use an AI assistant to interview you into a clear set of requirements before it builds anything. You need ChatGPT (Codex) or Claude Code, and a rough idea of what you want to end up with.",
     "1. Write the end goal in one or two sentences: what the finished thing does and who uses it.",

@@ -1,0 +1,35 @@
+{
+  "slug": "stop-adding-ai-to-everything-motion",
+  "title": "Stop adding AI to everything",
+  "kind": "motion",
+  "date": "2026-11-01",
+  "series": "Automate This",
+  "episode": null,
+  "pillar": "AI & automation",
+  "hook": "Stop adding AI to everything",
+  "keyword": "PROCESS",
+  "summary": "How to use AI in any process? Stop adding it to everything and pick the job first. There are three.",
+  "body": [
+    "How to use AI in any process? Stop adding it to everything and pick the job first. There are three.",
+    "1. Run it: put AI inside a process you repeat, and you check what it does.\n2. Explain it: new job or department? Ask Claude to walk you through the process step by step.\n3. Build it: a software tool, a Claude routine or an n8n automation that runs it for you.",
+    "Work out which of the three you need, then start. Save this for your next process.\nI'm Manraj Sidhu, AI developer, and this is what I use day to day.",
+    "Which expert myth would you call out? Tell me below. Comment PROCESS and I'll send you the prompts I use for all three.\nFollow @manrajtalks"
+  ],
+  "tags": [
+    "ai",
+    "aiautomation",
+    "claude",
+    "n8n",
+    "aitools",
+    "manrajtalks"
+  ],
+  "links": {
+    "tiktok": "https://www.tiktok.com/@manrajtalks/video/7703265239319596310",
+    "instagram": "https://www.instagram.com/reel/DfNg6FEDQPi/"
+  },
+  "slides": [],
+  "cover": "/notes/stop-adding-ai-to-everything-motion/cover.jpg",
+  "views": 750,
+  "guide": [],
+  "guideUrl": null
+}

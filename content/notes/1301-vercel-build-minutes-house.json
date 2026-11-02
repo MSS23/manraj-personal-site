@@ -19,7 +19,7 @@
   },
   "slides": [],
   "cover": null,
-  "views": 252,
+  "views": 258,
   "guide": [
     "This cuts your Vercel bill by lowering the build machine size and stopping every GitHub push from triggering a build. You need a Vercel account with a project connected to a GitHub repository.",
     "1. Open the Vercel dashboard, go to Usage and look at build minutes per project to find which projects spend the most.",

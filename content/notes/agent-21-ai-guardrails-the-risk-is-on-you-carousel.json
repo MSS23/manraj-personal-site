@@ -19,7 +19,7 @@
   },
   "slides": [],
   "cover": null,
-  "views": 87,
+  "views": 89,
   "guide": [
     "This guide shows how to put guardrails around an AI tool before it can act on your behalf. You need an AI assistant (ChatGPT, Codex or Claude Code) and a list of the things you would not want it to do unchecked.",
     "1. List what could go wrong if the AI acts on its own, such as sending the wrong email, deleting a file, spending money or posting something public.",
