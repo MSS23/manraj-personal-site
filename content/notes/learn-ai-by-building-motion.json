@@ -24,7 +24,7 @@
   },
   "slides": [],
   "cover": "/notes/learn-ai-by-building-motion/cover.jpg",
-  "views": 823,
+  "views": 828,
   "guide": [
     "Build a small app or site around something you already care about, using an AI coding assistant to do the heavy lifting. You need ChatGPT (Codex) or Claude Code, plus a free Vercel account and, if the app stores data, a free Supabase project.",
     "1. Pick one thing you care about (travel, a collection, a local shop, your money, your wardrobe) and write one sentence on what the app should do for it.",
