@@ -1,0 +1,25 @@
+{
+  "slug": "my-ai-agents-work-while-i-m-on-holiday",
+  "title": "My AI agents work while I'm on holiday",
+  "kind": "reel",
+  "date": "2026-11-04",
+  "series": "Automate This",
+  "episode": null,
+  "pillar": "AI & automation",
+  "hook": "I needed a remote system to help me with my video editing.",
+  "keyword": "TELEGRAM",
+  "summary": "How I run my AI agents from anywhere with Hermes + Telegram.\nGoing on holiday, I wanted to keep editing videos without my PC. Claude Code on my phone was too finicky, so:\n1. An old laptop connects remotely to my PC, so I get all its power and compute\n2. Hermes (an AI agent harness) runs my agents on it\n3. It's hooked up to Telegram, so I text it a job and it edits my reels, cleans up my Notion board and sends the previews straight back to my phone\nComment TELEGRAM and I'll send you exactly how I set up the bot.",
+  "body": [
+    "How I run my AI agents from anywhere with Hermes + Telegram.\nGoing on holiday, I wanted to keep editing videos without my PC. Claude Code on my phone was too finicky, so:\n1. An old laptop connects remotely to my PC, so I get all its power and compute\n2. Hermes (an AI agent harness) runs my agents on it\n3. It's hooked up to Telegram, so I text it a job and it edits my reels, cleans up my Notion board and sends the previews straight back to my phone\nComment TELEGRAM and I'll send you exactly how I set up the bot."
+  ],
+  "tags": [],
+  "links": {
+    "instagram": "https://www.instagram.com/reel/DfRvAwID29b/",
+    "tiktok": "https://www.tiktok.com/@manrajtalks/video/7703899081310997782"
+  },
+  "slides": [],
+  "cover": "/notes/my-ai-agents-work-while-i-m-on-holiday/cover.jpg",
+  "views": null,
+  "guide": [],
+  "guideUrl": null
+}
