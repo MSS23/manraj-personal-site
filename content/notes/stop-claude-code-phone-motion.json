@@ -1,0 +1,31 @@
+{
+  "slug": "stop-claude-code-phone-motion",
+  "title": "Stop running Claude Code on your phone",
+  "kind": "motion",
+  "date": "2026-11-03",
+  "series": "Agent Notes",
+  "episode": null,
+  "pillar": "AI & automation",
+  "hook": "Stop running Claude Code on your phone",
+  "keyword": "run AI agents from your phone on holiday",
+  "summary": "Stop running Claude Code on your phone. I tried it on holiday and it struggled.\nHow do you run AI agents while you're away? An old laptop connects to my PC at home, so all the power stays there. Hermes runs three jobs on top: video edits, my Notion board clean-up and Telegram messages. Every edit lands in Telegram as a preview and I say yes or no from my phone.\nI'm Manraj Sidhu, AI developer, and this is my real setup.\nBuilt with @claudeai @notionhq\nComment TELEGRAM and I'll show you how. Follow @manrajtalks",
+  "body": [
+    "Stop running Claude Code on your phone. I tried it on holiday and it struggled.\nHow do you run AI agents while you're away? An old laptop connects to my PC at home, so all the power stays there. Hermes runs three jobs on top: video edits, my Notion board clean-up and Telegram messages. Every edit lands in Telegram as a preview and I say yes or no from my phone.\nI'm Manraj Sidhu, AI developer, and this is my real setup.\nBuilt with @claudeai @notionhq\nComment TELEGRAM and I'll show you how. Follow @manrajtalks"
+  ],
+  "tags": [
+    "aiagents",
+    "claudecode",
+    "hermesagent",
+    "telegrambot",
+    "manrajtalks"
+  ],
+  "links": {
+    "instagram": "https://www.instagram.com/reel/DfSe-z5gQgj/",
+    "tiktok": "https://www.tiktok.com/@manrajtalks/video/7704007722492071190"
+  },
+  "slides": [],
+  "cover": "/notes/stop-claude-code-phone-motion/cover.jpg",
+  "views": null,
+  "guide": [],
+  "guideUrl": null
+}
