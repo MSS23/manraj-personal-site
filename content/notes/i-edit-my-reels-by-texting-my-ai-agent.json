@@ -21,7 +21,7 @@
   },
   "slides": [],
   "cover": "/notes/i-edit-my-reels-by-texting-my-ai-agent/cover.jpg",
-  "views": 846,
+  "views": 847,
   "guide": [
     "Edit your videos by replying to a preview in Telegram, with an AI agent running a coding assistant on a computer at home to make the changes. You need a Telegram bot, an always-on computer with Claude Code and ffmpeg installed, an agent framework that can call Claude Code, and Google Drive.",
     "1. Create a Telegram bot with BotFather and connect it to an open-source agent framework running on your home computer.",

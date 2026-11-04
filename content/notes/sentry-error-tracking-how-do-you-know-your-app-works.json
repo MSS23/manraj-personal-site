@@ -19,7 +19,7 @@
   },
   "slides": [],
   "cover": "/notes/sentry-error-tracking-how-do-you-know-your-app-works/cover.jpg",
-  "views": 610,
+  "views": 611,
   "guide": [
     "Add error tracking to your app so you hear about breakages before your users do. You need a deployed web app (for example on Vercel) and a free Sentry account.",
     "1. Create a free account at Sentry and add a new project for your app's framework (for example Next.js).",

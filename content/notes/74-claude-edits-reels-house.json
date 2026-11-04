@@ -19,7 +19,7 @@
   },
   "slides": [],
   "cover": null,
-  "views": 731,
+  "views": 734,
   "guide": [
     "This shows how to have Claude add icons, on-screen text, motion graphics and transitions to a talking-head video, so you don't need an editing course. You need Claude Code (or ChatGPT/Codex), ffmpeg, your raw clip and CapCut for the final polish.",
     "1. Film your clip as normal and save it to one folder on your computer, along with any logos or icons you want to use.",

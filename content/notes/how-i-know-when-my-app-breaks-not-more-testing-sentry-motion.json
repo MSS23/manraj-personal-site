@@ -28,7 +28,7 @@
   },
   "slides": [],
   "cover": "/notes/how-i-know-when-my-app-breaks-not-more-testing-sentry-motion/cover.jpg",
-  "views": 740,
+  "views": 741,
   "guide": [
     "Add error tracking to your app so you hear about breakages before your users do. You need a deployed web app (for example on Vercel) and a free Sentry account.",
     "1. Create a free account at Sentry and add a new project for your app's framework (for example Next.js).",

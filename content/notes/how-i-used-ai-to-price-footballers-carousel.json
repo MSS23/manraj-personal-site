@@ -19,7 +19,7 @@
   },
   "slides": [],
   "cover": null,
-  "views": 301,
+  "views": 303,
   "guide": [
     "This shows how to get an AI model to put a price on a footballer from his numbers, then check that price against what the market says. You need a free ChatGPT or Claude account, a spreadsheet such as Google Sheets, and a public stats source.",
     "1. Pick one position and one league, so every player you compare plays a similar role.",
