@@ -1,0 +1,34 @@
+{
+  "slug": "google-adk-agents-one-planner-beats-one-giant-agent-motion",
+  "title": "Google ADK agents: one planner beats one giant agent",
+  "kind": "motion",
+  "date": "2026-11-11",
+  "series": "The Stack",
+  "episode": null,
+  "pillar": "AI & automation",
+  "hook": "Stop building one giant agent.",
+  "keyword": "Google ADK agents",
+  "summary": "Google ADK agents: why one planner beats one giant agent.\nGoogle's open-source Agent Development Kit lets you plug in any model, connect MCP servers and add sub agents. Mine is a planning agent that calls a script-writing agent, a research agent and a posting agent (YouTube, TikTok, Instagram). One job each, so when something breaks you know which one.",
+  "body": [
+    "Google ADK agents: why one planner beats one giant agent.\nGoogle's open-source Agent Development Kit lets you plug in any model, connect MCP servers and add sub agents. Mine is a planning agent that calls a script-writing agent, a research agent and a posting agent (YouTube, TikTok, Instagram). One job each, so when something breaks you know which one.",
+    "I'm Manraj Sidhu, AI developer, and this is how I run my content work.",
+    "Comment GOOGLE and I'll send you the ADK and the docs. Follow @manrajtalks"
+  ],
+  "tags": [
+    "ai",
+    "aiagents",
+    "googleadk",
+    "manrajtalks"
+  ],
+  "links": {
+    "instagram": "https://www.instagram.com/reel/DfnFoNEBgWm/",
+    "tiktok": "https://www.tiktok.com/@manrajtalks/video/7706976848676146454"
+  },
+  "slides": [],
+  "cover": "/notes/google-adk-agents-one-planner-beats-one-giant-agent-motion/cover.jpg",
+  "views": null,
+  "guide": [
+    "1. Search \"Google Agent Development Kit (ADK)\" and open the official docs.\n2. Install the ADK and create your first agent with the quickstart.\n3. Pick the model you want to use; the ADK works with any model.\n4. Connect an MCP server if the agent needs outside tools.\n5. List every task in your workflow and group them into 3 jobs that need different instructions.\n6. Create one sub agent per job (for example script writing, research, posting) with a short prompt each.\n7. Create a planning agent and add the sub agents to it.\n8. Tell the planner only to decide who does what, never to do the work itself.\n9. Give the planner one idea and check which sub agent handled each step."
+  ],
+  "guideUrl": null
+}
