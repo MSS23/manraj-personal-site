@@ -1,0 +1,28 @@
+{
+  "slug": "ai-engineer-infrastructure-nxtlvl-motion",
+  "title": "Two weeks as an AI engineer. Infrastructure was harder than the agent.",
+  "kind": "motion",
+  "date": "2026-11-08",
+  "series": "Consultant to Builder",
+  "episode": null,
+  "pillar": "Career & tech",
+  "hook": "Two weeks as an AI engineer. Infrastructure was harder than the agent.",
+  "keyword": "AI engineer infrastructure",
+  "summary": "Metricool: scheduled Sun 8 Nov 18:00 IG + TikTok. Voiced no-face explainer, 43.7 s, his voice clone. Beats: hook marker card + DB tile, 5 chapter cards (tools connect, docs, data, agent, context), SuperRace vs enterprise, odometer 3 setups (PostgreSQL / separate machine / Azure), keyword CTA INFRA. Drive: G:/My Drive/06 Content Creation/ManrajTalks/carousel-reels/ai-engineer-infrastructure-nxtlvl/",
+  "body": [
+    "Metricool: scheduled Sun 8 Nov 18:00 IG + TikTok. Voiced no-face explainer, 43.7 s, his voice clone. Beats: hook marker card + DB tile, 5 chapter cards (tools connect, docs, data, agent, context), SuperRace vs enterprise, odometer 3 setups (PostgreSQL / separate machine / Azure), keyword CTA INFRA. Drive: G:/My Drive/06 Content Creation/ManrajTalks/carousel-reels/ai-engineer-infrastructure-nxtlvl/"
+  ],
+  "tags": [],
+  "links": {
+    "instagram": "https://www.instagram.com/reel/DffXSuRjJn8/",
+    "tiktok": "https://www.tiktok.com/@manrajtalks/video/7705862984324631830"
+  },
+  "slides": [],
+  "cover": "/notes/ai-engineer-infrastructure-nxtlvl-motion/cover.jpg",
+  "views": null,
+  "guide": [
+    "1. Write down every tool your agent will touch and what data goes in and out of each.\n2. Read the documentation of each tool before you connect it: what it needs to log in, what limits it has, what format it returns.\n3. Find where the data actually lives. Enterprise databases can sit on PostgreSQL, on a separate database machine, or in a cloud environment such as Azure.\n4. Map how your agent will reach each system: which connection, which credentials, which permissions.\n5. Give the agent the context to finish the task: the table meanings, the rules and one worked example.\n6. Run one small task end to end before you build more.\nWatch out: a personal project with one data source hides all of this. Do not assume the enterprise setup will behave the same way.",
+    "## Prompt to build your own\n```\nI am a developer starting as an AI engineer. I will build an agent that works with <my company's systems>.\nList the tools and data sources it must reach: <databases, APIs, docs>.\nFor each one, give me a checklist: where it lives (cloud, separate machine, local), how to connect, what access I need, and which parts of its documentation I must read first.\nThen draw a simple map of how the agent reaches each system, and list the context the agent needs to finish <the task>: definitions, rules, one worked example.\nReturn: the checklist per system, the map as a text diagram, and the context file as markdown. Keep each part short.\n```"
+  ],
+  "guideUrl": null
+}
