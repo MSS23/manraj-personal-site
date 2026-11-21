@@ -1,0 +1,27 @@
+{
+  "slug": "ai-agent-vs-chatbot-motion-motion",
+  "title": "Your chatbot is not an agent.",
+  "kind": "motion",
+  "date": "2026-11-07",
+  "series": null,
+  "episode": null,
+  "pillar": "AI & automation",
+  "hook": "Your chatbot is not an agent.",
+  "keyword": "AI agent vs chatbot",
+  "summary": "Metricool: scheduled Sat 7 Nov 18:00 IG + TikTok. Myth: an AI agent is just a chatbot with a nicer name. One thing: an agent acts outside the chat window. Silent no-face reel, 32 s. Source: Reels for CapCut/ai-agent-vs-chatbot. Folder: G:/My Drive/06 Content Creation/ManrajTalks/carousel-reels/ai-agent-vs-chatbot-motion/",
+  "body": [
+    "Metricool: scheduled Sat 7 Nov 18:00 IG + TikTok. Myth: an AI agent is just a chatbot with a nicer name. One thing: an agent acts outside the chat window. Silent no-face reel, 32 s. Source: Reels for CapCut/ai-agent-vs-chatbot. Folder: G:/My Drive/06 Content Creation/ManrajTalks/carousel-reels/ai-agent-vs-chatbot-motion/"
+  ],
+  "tags": [],
+  "links": {
+    "instagram": "https://www.instagram.com/reel/DfcyeOujIOk/",
+    "tiktok": "https://www.tiktok.com/@manrajtalks/video/7705491736759520534"
+  },
+  "slides": [],
+  "cover": "/notes/ai-agent-vs-chatbot-motion-motion/cover.jpg",
+  "views": null,
+  "guide": [
+    "1. Pick one boring job you repeat every week, for example turning tomorrow's to-do list into calendar blocks.\n2. Write the job as instructions: the input (your list), the rule (one block per item, mornings first) and the output (events in your calendar).\n3. Give an AI tool access to the one place the result must land, your calendar, and nothing else.\n4. Ask for the to-do list, then add one line: \"Schedule each item into my calendar tomorrow.\"\n5. Check the calendar, not the chat. If nothing changed outside the chat window, you still have a chatbot.\n6. Fix the instructions where it got a time or a title wrong, then run the same job again tomorrow.\n7. Only when it works twice in a row, add a second job."
+  ],
+  "guideUrl": null
+}
