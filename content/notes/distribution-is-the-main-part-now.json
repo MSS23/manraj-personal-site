@@ -20,19 +20,6 @@
   "slides": [],
   "cover": "/notes/distribution-is-the-main-part-now/cover.jpg",
   "views": 696,
-  "guide": [
-    "This post is about getting a finished app in front of people. You need an app you've built, a short video of it, and accounts on the platforms you want to post to.",
-    "1. Write down one clear sentence on what your app does and who it's for, so every post says the same thing.",
-    "1. Ask ChatGPT (Codex) or Claude Code to draft three short post ideas from that sentence, each showing one feature.",
-    "1. Record a short phone video of the feature working and trim it in CapCut.",
-    "1. Schedule the clip to your chosen platforms with Metricool so it goes out without you being at your phone.",
-    "1. Post the same story in the communities where your users already are, such as side-project groups.",
-    "1. Ask viewers directly what they'd change, and keep a list of the replies in Notion.",
-    "1. Review that list weekly and turn the most repeated request into your next feature.",
-    "Watch out: A good app that nobody has seen gets no feedback, so set a daily slot for posting and keep to it, even on a busy day.",
-    "## Prompt to build your own",
-    "```\nYou are helping me promote an app I have already built. My app is <app name>. It does <one sentence>, for <target user>. I use <ChatGPT / Claude Code>, CapCut, Metricool and Notion. Please do the following. First, write a one-sentence description of the app in plain English and check it makes sense to someone who has never heard of it. Second, suggest seven short video ideas, one per day, each showing a single feature, with a spoken script of no more than 60 words and a caption. Third, design a Notion database to record feedback with the columns date, platform, comment, feature requested and status, plus a simple weekly review routine that picks the most requested feature. Fourth, give me a posting checklist for Metricool covering platforms, times and captions. Use British spelling, no hype and no hashtags. Return the description, the seven ideas, the database layout and the checklist as separate sections.\n```",
-    "Ponytail note: I only used the post's own content, so the steps are generic; I didn't check which platforms the source post actually used besides TikTok and side-project communities."
-  ],
+  "guide": null,
   "guideUrl": "https://manraj-sidhu.notion.site/40b0d01124e48101ab5ff2625af2e22f"
 }

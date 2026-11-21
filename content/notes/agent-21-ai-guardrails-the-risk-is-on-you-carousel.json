@@ -20,18 +20,6 @@
   "slides": [],
   "cover": null,
   "views": 89,
-  "guide": [
-    "This guide shows how to put guardrails around an AI tool before it can act on your behalf. You need an AI assistant (ChatGPT, Codex or Claude Code) and a list of the things you would not want it to do unchecked.",
-    "1. List what could go wrong if the AI acts on its own, such as sending the wrong email, deleting a file, spending money or posting something public.",
-    "1. Sort each risk by how hard it is to undo, and mark anything irreversible as needing your approval first.",
-    "1. Give the AI only the access it needs, using read-only permissions or a separate test account where the tool allows it.",
-    "1. Write the rules into the assistant's instructions (a custom instruction in ChatGPT, or a CLAUDE.md file in Claude Code), including what it must never do and when it must stop and ask.",
-    "1. Add a human approval step before any action that sends, publishes, pays or deletes, for example by having the assistant draft the action and wait for your confirmation.",
-    "1. Test the rules with a deliberately risky request and check that the assistant refuses or asks before acting.",
-    "1. Review what the AI actually did after each run and tighten the rules wherever it came close to crossing a line.",
-    "Watch out: the AI does not take responsibility for the risk, you do, so set the guardrails before you give it any access.",
-    "## Prompt to build your own",
-    "```\nYou are helping me set up guardrails before I let an AI assistant work on <task, e.g. managing my inbox or publishing posts>. I use <ChatGPT, Codex or Claude Code>, and the assistant will have access to <tools or accounts it can touch>.\nFirst, list the realistic risks if the assistant acts without supervision, and rank each by how hard it is to undo. Then write a set of instructions I can paste into the assistant's settings. They must cover: what it may do freely, what it must never do, and which actions need my explicit approval before it proceeds (anything that sends, publishes, pays or deletes). Suggest the narrowest permissions I should grant for <tools or accounts>, such as read-only access or a test account.\nFinally, give me three deliberately risky test requests I can try to confirm the guardrails hold, and a short checklist for reviewing what the assistant did after each run. Keep everything in plain English, avoid jargon, and tell me clearly if any guardrail cannot be enforced by the tool and has to rely on my own checking.\n```"
-  ],
+  "guide": null,
   "guideUrl": "https://manraj-sidhu.notion.site/40b0d01124e481a7b177e145ee191406"
 }

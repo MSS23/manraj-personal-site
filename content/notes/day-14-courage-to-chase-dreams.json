@@ -20,20 +20,6 @@
   "slides": [],
   "cover": "/notes/day-14-courage-to-chase-dreams/cover.jpg",
   "views": 242,
-  "guide": [
-    "This is a repeatable way to turn a finished app into a short outreach message to your own contacts, so people can try it and give feedback. You need an app with a live link, a demo account, and your phone contacts or WhatsApp.",
-    "1. Put the app on a public link, for example by deploying it with Vercel.",
-    "1. Create a demo account in the app so a stranger can look around without signing up.",
-    "1. Write a two-sentence message: what the app is, and one clear thing you want (a sign-up or some feedback).",
-    "1. Ask ChatGPT or Claude to give you three versions of the message in your own voice, then pick the one that sounds like you.",
-    "1. Export your contacts into a Google Sheet and mark who the message suits, such as friends, former colleagues or people in your target audience.",
-    "1. Send each message in WhatsApp yourself, one person at a time, with their name at the top.",
-    "1. Log who replied and what they said in the same Google Sheet, and fix whatever they flag in the app.",
-    "1. Send a short thank-you to everyone who replied, then repeat with the next group.",
-    "Watch out: send every message by hand to people who know you; bulk-sending to a list breaks WhatsApp's rules and can get your number banned.",
-    "## Prompt to build your own",
-    "```\nYou are helping me ask my own contacts to try an app I have built. The app is <app name>, it does <one-line description>, and the link is <app URL>. There is a demo account: <demo login details, or \"none yet\">. My audience is <who the app is for>. I have my contacts in <Google Sheet / phone contacts / WhatsApp>.\nPlease do the following:\n1. Write three short WhatsApp messages (under 50 words each) in a warm, direct, non-salesy tone. Each should say what the app is, give the link, and make one clear ask: <sign up / try the demo / reply with feedback>.\n2. Suggest a simple Google Sheet layout with columns for name, group, message sent, replied, feedback and next step.\n3. Draft a short thank-you reply and a follow-up for people who do not answer after a week.\n4. Give me a checklist for sending manually, one person at a time, with no bulk-sending tools.\nUse British spelling. Do not use hype or emoji. Return the messages, the sheet columns and the checklist as separate sections.\n```",
-    "Skipped: nothing checked beyond the source; the post is a story about asking, so steps 5–8 are my suggested way to act on it, not what he did."
-  ],
+  "guide": null,
   "guideUrl": "https://manraj-sidhu.notion.site/40b0d01124e4813da08dc76c2659adf0"
 }
