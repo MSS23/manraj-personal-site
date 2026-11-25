@@ -26,7 +26,7 @@
   },
   "slides": [],
   "cover": "/notes/google-adk-agents-one-planner-beats-one-giant-agent-motion/cover.jpg",
-  "views": null,
+  "views": 728,
   "guide": [
     "1. Search \"Google Agent Development Kit (ADK)\" and open the official docs.\n2. Install the ADK and create your first agent with the quickstart.\n3. Pick the model you want to use; the ADK works with any model.\n4. Connect an MCP server if the agent needs outside tools.\n5. List every task in your workflow and group them into 3 jobs that need different instructions.\n6. Create one sub agent per job (for example script writing, research, posting) with a short prompt each.\n7. Create a planning agent and add the sub agents to it.\n8. Tell the planner only to decide who does what, never to do the work itself.\n9. Give the planner one idea and check which sub agent handled each step."
   ],

@@ -19,7 +19,7 @@
   },
   "slides": [],
   "cover": "/notes/ai-agent-vs-chatbot-motion-motion/cover.jpg",
-  "views": null,
+  "views": 861,
   "guide": [
     "1. Pick one boring job you repeat every week, for example turning tomorrow's to-do list into calendar blocks.\n2. Write the job as instructions: the input (your list), the rule (one block per item, mornings first) and the output (events in your calendar).\n3. Give an AI tool access to the one place the result must land, your calendar, and nothing else.\n4. Ask for the to-do list, then add one line: \"Schedule each item into my calendar tomorrow.\"\n5. Check the calendar, not the chat. If nothing changed outside the chat window, you still have a chatbot.\n6. Fix the instructions where it got a time or a title wrong, then run the same job again tomorrow.\n7. Only when it works twice in a row, add a second job."
   ],
