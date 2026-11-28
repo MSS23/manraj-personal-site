@@ -42,5 +42,5 @@
     "## Prompt to build your own",
     "```\nBuild a result checker for my scheduled <Claude Code or Codex> jobs in <language>, running on <operating system>. Each job starts with its own session ID and a recorded start time. When a run exits with an error or returns nothing, read that session's transcript and accept only a final assistant answer, with the turn ended, written after the start time. If the job should create <file type>, confirm the file exists, was written during this run and passes these checks: <your checks>. Otherwise retry at most <number> times, then send one alert to <Telegram or email> and stop. Never rerun a job whose output already passed. Return the code, one small test for each failure case, and the steps to add it to my current scheduler.\n```"
   ],
-  "guideUrl": null
+  "guideUrl": "https://manraj-sidhu.notion.site/4260d01124e481d4a367f6f754629ab1"
 }
