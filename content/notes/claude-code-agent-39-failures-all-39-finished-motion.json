@@ -1,0 +1,46 @@
+{
+  "slug": "claude-code-agent-39-failures-all-39-finished-motion",
+  "title": "Claude Code agent: 39 failures, all 39 finished",
+  "kind": "motion",
+  "date": "2026-11-28",
+  "series": "Agent Notes",
+  "episode": null,
+  "pillar": "AI & automation",
+  "hook": "My Claude Code agent reported 39 failures. All 39 had finished.",
+  "keyword": "PROOF",
+  "summary": "My Claude Code agent reported 39 failures. All 39 had finished.",
+  "body": [
+    "My Claude Code agent reported 39 failures. All 39 had finished.",
+    "Seeing a failed run? Check whether the work is already done. My video pipeline logged 39 errors from 8 to 11 October, and each run had written its final answer 3 to 6 seconds before the error.",
+    "1. Read the transcript before the error\n2. Only count answers from this run\n3. Find the file on disk\n4. Make the file pass your checks\n5. Cap the retries (mine: 3 for an empty reply), then get warned",
+    "A pass proves the file exists. It still needs a review. Save this for your next failed run.",
+    "I'm Manraj Sidhu, AI developer, and this is the real build.\nBuilt with @claudeai",
+    "Comment PROOF and I'll send you the five checks and the build prompt. Follow @manrajtalks"
+  ],
+  "tags": [
+    "ai",
+    "aiagents",
+    "claudecode",
+    "aiautomation",
+    "manrajtalks"
+  ],
+  "links": {
+    "instagram": "https://www.instagram.com/reel/DgSZX66IzSL/",
+    "tiktok": "https://www.tiktok.com/@manrajtalks/video/7713218586289917206"
+  },
+  "slides": [],
+  "cover": "/notes/claude-code-agent-39-failures-all-39-finished-motion/cover.jpg",
+  "views": null,
+  "guide": [
+    "1. Start every headless Claude Code run with your own session ID, ask for JSON output, and record the start time: claude -p \"<task>\" --session-id <new uuid> --output-format json",
+    "1. When a run exits with an error or returns nothing, open that session's transcript before you retry. Claude Code keeps one JSONL file per session.",
+    "1. Accept a recovered answer only if it is an assistant message that ended its turn (stop_reason \"end_turn\") and was written after this run started.",
+    "1. If the job should make a file, look for the file itself. A reply that says done with no file is a failed run.",
+    "1. Run checks a script can decide. For my videos: no black ending (ffmpeg's blackdetect filter finds it), and captions that name a comment keyword and carry a written guide.",
+    "1. If there is still no result, retry a limited number of times (mine: 3 for an empty reply, 1 for other failures), then send yourself one message, for example on Telegram, and stop.",
+    "Watch out: a pass proves the work exists, not that it is good, so review it before it goes out. Claude Code also deletes old transcripts (30 days by default), so check soon after the run.",
+    "## Prompt to build your own",
+    "```\nBuild a result checker for my scheduled <Claude Code or Codex> jobs in <language>, running on <operating system>. Each job starts with its own session ID and a recorded start time. When a run exits with an error or returns nothing, read that session's transcript and accept only a final assistant answer, with the turn ended, written after the start time. If the job should create <file type>, confirm the file exists, was written during this run and passes these checks: <your checks>. Otherwise retry at most <number> times, then send one alert to <Telegram or email> and stop. Never rerun a job whose output already passed. Return the code, one small test for each failure case, and the steps to add it to my current scheduler.\n```"
+  ],
+  "guideUrl": null
+}
